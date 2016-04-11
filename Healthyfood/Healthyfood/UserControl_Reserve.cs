@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Healthyfood
 {
-    public partial class UserControl_Provision : UserControl
+    public partial class UserControl_Reserve : UserControl
     {
-        public UserControl_Provision()
+        public UserControl_Reserve()
         {
             InitializeComponent();
         }

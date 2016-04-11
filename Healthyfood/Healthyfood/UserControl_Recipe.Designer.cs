@@ -1,6 +1,6 @@
 ﻿namespace Healthyfood
 {
-    partial class UserControl_Recette
+    partial class UserControl_Recipe
     {
         /// <summary> 
         /// Variable nécessaire au concepteur.
