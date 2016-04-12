@@ -37,6 +37,7 @@
             // button_Add_Remove
             // 
             this.button_Add_Remove.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Add_Remove.BackgroundImage")));
+            this.button_Add_Remove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Add_Remove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Add_Remove.Location = new System.Drawing.Point(288, 139);
             this.button_Add_Remove.Margin = new System.Windows.Forms.Padding(4);
@@ -50,6 +51,7 @@
             // button_Show
             // 
             this.button_Show.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Show.BackgroundImage")));
+            this.button_Show.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Show.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Show.Location = new System.Drawing.Point(288, 250);
             this.button_Show.Margin = new System.Windows.Forms.Padding(4);
