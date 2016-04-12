@@ -36,8 +36,10 @@
             // 
             // button_Add_Remove
             // 
+            this.button_Add_Remove.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Add_Remove.BackgroundImage")));
+            this.button_Add_Remove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Add_Remove.Location = new System.Drawing.Point(288, 139);
-            this.button_Add_Remove.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Add_Remove.Margin = new System.Windows.Forms.Padding(4);
             this.button_Add_Remove.Name = "button_Add_Remove";
             this.button_Add_Remove.Size = new System.Drawing.Size(296, 71);
             this.button_Add_Remove.TabIndex = 0;
@@ -47,8 +49,10 @@
             // 
             // button_Show
             // 
+            this.button_Show.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Show.BackgroundImage")));
+            this.button_Show.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Show.Location = new System.Drawing.Point(288, 250);
-            this.button_Show.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Show.Margin = new System.Windows.Forms.Padding(4);
             this.button_Show.Name = "button_Show";
             this.button_Show.Size = new System.Drawing.Size(296, 71);
             this.button_Show.TabIndex = 1;
@@ -59,7 +63,7 @@
             // button_Back
             // 
             this.button_Back.Location = new System.Drawing.Point(704, 446);
-            this.button_Back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Back.Margin = new System.Windows.Forms.Padding(4);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(100, 28);
             this.button_Back.TabIndex = 2;
@@ -76,7 +80,7 @@
             this.Controls.Add(this.button_Back);
             this.Controls.Add(this.button_Show);
             this.Controls.Add(this.button_Add_Remove);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControl_Reserve";
             this.Size = new System.Drawing.Size(872, 510);
             this.ResumeLayout(false);
