@@ -16,5 +16,15 @@ namespace Healthyfood
         {
             InitializeComponent();
         }
+
+        private void button_Save_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Back_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
     }
 }

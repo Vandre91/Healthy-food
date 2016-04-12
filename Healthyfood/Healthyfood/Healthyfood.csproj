@@ -82,6 +82,12 @@
     <EmbeddedResource Include="UserControl_Profil.resx">
       <DependentUpon>UserControl_Profil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Recipe.resx">
+      <DependentUpon>UserControl_Recipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Reserve.resx">
+      <DependentUpon>UserControl_Reserve.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
