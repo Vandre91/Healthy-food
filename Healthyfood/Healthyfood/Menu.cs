@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace Healthyfood
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
+        }
+
+        private void button_Utilisateur_Click(object sender, EventArgs e)
+        {
+            userControl_Profil1.Visible = true;
+        }
+
+        private void button_Provisions_Click(object sender, EventArgs e)
+        {
+            userControl_Reserve1.Visible = true;
+        }
+
+        private void button_Recette_Click(object sender, EventArgs e)
+        {
+            userControl_Recipe1.Visible = true;
         }
     }
 }
