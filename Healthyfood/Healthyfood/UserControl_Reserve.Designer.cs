@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Reserve));
             this.button_Add_Remove = new System.Windows.Forms.Button();
             this.button_Show = new System.Windows.Forms.Button();
             this.button_Back = new System.Windows.Forms.Button();
@@ -35,9 +36,10 @@
             // 
             // button_Add_Remove
             // 
-            this.button_Add_Remove.Location = new System.Drawing.Point(216, 113);
+            this.button_Add_Remove.Location = new System.Drawing.Point(288, 139);
+            this.button_Add_Remove.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_Add_Remove.Name = "button_Add_Remove";
-            this.button_Add_Remove.Size = new System.Drawing.Size(222, 58);
+            this.button_Add_Remove.Size = new System.Drawing.Size(296, 71);
             this.button_Add_Remove.TabIndex = 0;
             this.button_Add_Remove.Text = "Ajouter/Retirer";
             this.button_Add_Remove.UseVisualStyleBackColor = true;
@@ -45,9 +47,10 @@
             // 
             // button_Show
             // 
-            this.button_Show.Location = new System.Drawing.Point(216, 203);
+            this.button_Show.Location = new System.Drawing.Point(288, 250);
+            this.button_Show.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_Show.Name = "button_Show";
-            this.button_Show.Size = new System.Drawing.Size(222, 58);
+            this.button_Show.Size = new System.Drawing.Size(296, 71);
             this.button_Show.TabIndex = 1;
             this.button_Show.Text = "Visualiser";
             this.button_Show.UseVisualStyleBackColor = true;
@@ -55,9 +58,10 @@
             // 
             // button_Back
             // 
-            this.button_Back.Location = new System.Drawing.Point(528, 362);
+            this.button_Back.Location = new System.Drawing.Point(704, 446);
+            this.button_Back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_Back.Name = "button_Back";
-            this.button_Back.Size = new System.Drawing.Size(75, 23);
+            this.button_Back.Size = new System.Drawing.Size(100, 28);
             this.button_Back.TabIndex = 2;
             this.button_Back.Text = "Retour";
             this.button_Back.UseVisualStyleBackColor = true;
@@ -65,13 +69,16 @@
             // 
             // UserControl_Reserve
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.button_Back);
             this.Controls.Add(this.button_Show);
             this.Controls.Add(this.button_Add_Remove);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UserControl_Reserve";
-            this.Size = new System.Drawing.Size(654, 414);
+            this.Size = new System.Drawing.Size(872, 510);
             this.ResumeLayout(false);
 
         }
