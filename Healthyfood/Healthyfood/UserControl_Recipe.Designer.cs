@@ -28,12 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.button_Back = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // button_Back
+            // 
+            this.button_Back.Location = new System.Drawing.Point(490, 383);
+            this.button_Back.Name = "button_Back";
+            this.button_Back.Size = new System.Drawing.Size(75, 23);
+            this.button_Back.TabIndex = 0;
+            this.button_Back.Text = "Retour";
+            this.button_Back.UseVisualStyleBackColor = true;
+            this.button_Back.Click += new System.EventHandler(this.button_Back_Click);
             // 
             // UserControl_Recipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button_Back);
             this.Name = "UserControl_Recipe";
             this.Size = new System.Drawing.Size(623, 447);
             this.ResumeLayout(false);
@@ -41,5 +53,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button_Back;
     }
 }
