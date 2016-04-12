@@ -38,7 +38,7 @@
             // button_Back
             // 
             this.button_Back.Location = new System.Drawing.Point(653, 471);
-            this.button_Back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Back.Margin = new System.Windows.Forms.Padding(4);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(100, 28);
             this.button_Back.TabIndex = 0;
@@ -91,7 +91,7 @@
             this.Controls.Add(this.button2_yours_recipes);
             this.Controls.Add(this.button1_recipe_health);
             this.Controls.Add(this.button_Back);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControl_Recipe";
             this.Size = new System.Drawing.Size(831, 550);
             this.ResumeLayout(false);
