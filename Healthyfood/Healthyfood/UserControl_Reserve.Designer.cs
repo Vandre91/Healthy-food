@@ -33,6 +33,7 @@
             this.button_Show = new System.Windows.Forms.Button();
             this.button_Back = new System.Windows.Forms.Button();
             this.userControl_Reserve_Add_Remove1 = new Healthyfood.UserControl_Reserve_Add_Remove();
+            this.userControl_Show1 = new Healthyfood.UserControl_Show();
             this.SuspendLayout();
             // 
             // button_Add_Remove
@@ -80,12 +81,22 @@
             this.userControl_Reserve_Add_Remove1.TabIndex = 3;
             this.userControl_Reserve_Add_Remove1.Visible = false;
             // 
+            // userControl_Show1
+            // 
+            this.userControl_Show1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl_Show1.Location = new System.Drawing.Point(0, 0);
+            this.userControl_Show1.Name = "userControl_Show1";
+            this.userControl_Show1.Size = new System.Drawing.Size(654, 414);
+            this.userControl_Show1.TabIndex = 4;
+            this.userControl_Show1.Visible = false;
+            // 
             // UserControl_Reserve
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.userControl_Show1);
             this.Controls.Add(this.userControl_Reserve_Add_Remove1);
             this.Controls.Add(this.button_Back);
             this.Controls.Add(this.button_Show);
@@ -102,5 +113,6 @@
         private System.Windows.Forms.Button button_Show;
         private System.Windows.Forms.Button button_Back;
         private UserControl_Reserve_Add_Remove userControl_Reserve_Add_Remove1;
+        private UserControl_Show userControl_Show1;
     }
 }

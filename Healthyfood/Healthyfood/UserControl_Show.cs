@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Healthyfood
 {
-    public partial class UserControl_Reserve : UserControl
+    public partial class UserControl_Show : UserControl
     {
-        public UserControl_Reserve()
+        public UserControl_Show()
         {
             InitializeComponent();
         }
@@ -22,14 +22,9 @@ namespace Healthyfood
             this.Visible = false;
         }
 
-        private void button_Show_Click(object sender, EventArgs e)
+        private void button_Remove_Click(object sender, EventArgs e)
         {
-            userControl_Show1.Visible = true;
-        }
 
-        private void button_Add_Remove_Click(object sender, EventArgs e)
-        {
-            userControl_Reserve_Add_Remove1.Visible = true;
         }
     }
 }
