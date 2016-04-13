@@ -72,6 +72,12 @@
     <Compile Include="UserControl_Recipe.Designer.cs">
       <DependentUpon>UserControl_Recipe.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_Reserve_Add_Remove.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Reserve_Add_Remove.Designer.cs">
+      <DependentUpon>UserControl_Reserve_Add_Remove.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Reserve.resx">
       <DependentUpon>UserControl_Reserve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Reserve_Add_Remove.resx">
+      <DependentUpon>UserControl_Reserve_Add_Remove.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
