@@ -33,7 +33,7 @@
             this.button_Show = new System.Windows.Forms.Button();
             this.button_Back = new System.Windows.Forms.Button();
             this.userControl_Reserve_Add_Remove1 = new Healthyfood.UserControl_Reserve_Add_Remove();
-            this.userControl_Show1 = new Healthyfood.UserControl_Show();
+            this.userControl_Show1 = new Healthyfood.UserControl_Show_Reserve();
             this.SuspendLayout();
             // 
             // button_Add_Remove
@@ -113,6 +113,6 @@
         private System.Windows.Forms.Button button_Show;
         private System.Windows.Forms.Button button_Back;
         private UserControl_Reserve_Add_Remove userControl_Reserve_Add_Remove1;
-        private UserControl_Show userControl_Show1;
+        private UserControl_Show_Reserve userControl_Show1;
     }
 }

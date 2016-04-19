@@ -60,6 +60,12 @@
     <Compile Include="UserControl_Profil.Designer.cs">
       <DependentUpon>UserControl_Profil.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_Recipe_Healthy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Recipe_Healthy.Designer.cs">
+      <DependentUpon>UserControl_Recipe_Healthy.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_Reserve.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -78,11 +84,23 @@
     <Compile Include="UserControl_Reserve_Add_Remove.Designer.cs">
       <DependentUpon>UserControl_Reserve_Add_Remove.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl_Show.cs">
+    <Compile Include="UserControl_Show_Reserve.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl_Show.Designer.cs">
-      <DependentUpon>UserControl_Show.cs</DependentUpon>
+    <Compile Include="UserControl_Show_Reserve.Designer.cs">
+      <DependentUpon>UserControl_Show_Reserve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_World_Recipe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_World_Recipe.Designer.cs">
+      <DependentUpon>UserControl_World_Recipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Your_Recipes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Your_Recipes.Designer.cs">
+      <DependentUpon>UserControl_Your_Recipes.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -97,14 +115,23 @@
     <EmbeddedResource Include="UserControl_Recipe.resx">
       <DependentUpon>UserControl_Recipe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Recipe_Healthy.resx">
+      <DependentUpon>UserControl_Recipe_Healthy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Reserve.resx">
       <DependentUpon>UserControl_Reserve.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Reserve_Add_Remove.resx">
       <DependentUpon>UserControl_Reserve_Add_Remove.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl_Show.resx">
-      <DependentUpon>UserControl_Show.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl_Show_Reserve.resx">
+      <DependentUpon>UserControl_Show_Reserve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_World_Recipe.resx">
+      <DependentUpon>UserControl_World_Recipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Your_Recipes.resx">
+      <DependentUpon>UserControl_Your_Recipes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
