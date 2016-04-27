@@ -18,6 +18,9 @@ namespace Healthyfood
 
         Profil_Utilisateur (string firstName, string lastName, int age , int weight, double height , bool isFemale)
         {
+            if (firstName == null || firstName == string.Empty || string.IsNullOrWhiteSpace(firstName)) throw new ArgumentException("The name must not be empty", nameof(firstName));
+            if (lastName == null || lastName == string.Empty || string.IsNullOrWhiteSpace(lastName)) throw new ArgumentException("The name must not be empty", nameof(lastName));
+            if (height < 1.0 || height > 2.3) throw new ArgumentException("The height does not match", nameof(height));
             _firstName = firstName;
             _lastName = lastName;
             _age = age;
