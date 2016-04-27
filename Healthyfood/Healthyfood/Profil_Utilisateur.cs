@@ -18,7 +18,7 @@ namespace Healthyfood
         int _weight; 
         double _height; // un réel de tel sorte que 1.8 correspond à 180 cm
         bool _isFemale;
-        int _imc;
+        double _imc;
 
         internal Profil_Utilisateur (string firstName, string lastName, int age , int weight, double height , bool isFemale)
         {
@@ -40,7 +40,15 @@ namespace Healthyfood
                 formatter.Serialize(file, this);
             }
         }
-        
+        public static Profil_Utilisateur Load(string path)
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            using (FileStream file = new FileStream(path, FileMode.Open, FileAccess.Read))
+            {
+                return (Profil_Utilisateur)formatter.Deserialize(file);
+            }
+        }
+
         string FirstName
         { get { return _firstName; }
             set { _firstName = value; }
@@ -69,7 +77,7 @@ namespace Healthyfood
 
         double Imc
         {
-            get { return (_weight / (_height * _height)) ; }
+            get { return (_weight / (_height * _height)/100) ; }
         }
     }
 }
