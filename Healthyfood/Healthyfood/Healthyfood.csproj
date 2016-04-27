@@ -103,6 +103,7 @@
     <Compile Include="UserControl_Your_Recipes.Designer.cs">
       <DependentUpon>UserControl_Your_Recipes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utilisateurs.cs" />
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
