@@ -34,7 +34,7 @@ namespace Healthyfood
 
         private void button_Heat_Click(object sender, EventArgs e)
         {
-            //fiozhfoizh
+            
         }
 
         private void listView1_MouseClick(object sender, MouseEventArgs e)
