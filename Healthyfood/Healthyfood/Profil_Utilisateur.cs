@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 using System.Threading.Tasks;
+
 
 namespace Healthyfood
 {
+    [Serializable]
     public class Profil_Utilisateur
     {
         string _firstName;
@@ -28,7 +32,15 @@ namespace Healthyfood
             _height = height;
             _isFemale = isFemale;
         }
-
+        public void save(string path)
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            using (FileStream file = new System.IO.FileStream(path, FileMode.Create, FileAccess.Write))
+            {
+                formatter.Serialize(file, this);
+            }
+        }
+        
         string FirstName
         { get { return _firstName; } }
 
