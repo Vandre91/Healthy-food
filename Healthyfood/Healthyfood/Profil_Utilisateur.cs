@@ -51,28 +51,43 @@ namespace Healthyfood
 
         string FirstName
         { get { return _firstName; }
-            set { _firstName = value; }
+            set {
+                if (value == null || value == string.Empty || string.IsNullOrWhiteSpace(value)) throw new ArgumentException("The name must not be empty", nameof(value));
+                _firstName = value;
+                }
         }
 
         string LastName
         {
             get { return _lastName; }
-            set { _lastName = value; }
+            set {
+                if (value == null || value == string.Empty || string.IsNullOrWhiteSpace(value)) throw new ArgumentException("The name must not be empty", nameof(value));
+                _lastName = value;
+                }
         }
 
         int Age
         { get { return _age; }
-          set { _age = value; }
+          set {
+                if (value < 0 || value > 130) throw new ArgumentException("The age must be more than 0 and less than 130", nameof(value));
+                _age = value;
+              }
         }
 
         int Weight
         { get { return _weight; }
-            set { _weight = value; }
+            set {
+                if (value < 2 || value > 230) throw new ArgumentException("The weight must be more than 2 and less than 230", nameof(value));
+                _weight = value;
+                }
         }
 
         double Height
         { get { return _height; }
-            set { _height = value; }
+            set {
+                if (value < 30 || value > 250) throw new ArgumentException("The weight must be more than 30 and less than 250", nameof(value));
+                _height = value;
+                }
         }
 
         double Imc
