@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace Healthyfood
 {
+    [Serializable]
     class Utilisateurs
     {
         Dictionary<string, Profil_Utilisateur> Famille;
@@ -14,6 +17,14 @@ namespace Healthyfood
         internal Utilisateurs ()
         {
             Famille = new Dictionary<string, Profil_Utilisateur>() ;
+        }
+        public void save(string path)
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            using (FileStream file = new System.IO.FileStream(path, FileMode.Create, FileAccess.Write))
+            {
+                formatter.Serialize(file, this);
+            }
         }
 
         public Profil_Utilisateur CreateUser (string firstName, string lastName, int age, int weight, double height, bool isFemale)
