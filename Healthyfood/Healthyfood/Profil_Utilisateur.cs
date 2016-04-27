@@ -42,19 +42,30 @@ namespace Healthyfood
         }
         
         string FirstName
-        { get { return _firstName; } }
+        { get { return _firstName; }
+            set { _firstName = value; }
+        }
 
         string LastName
-        { get { return _lastName; } }
+        {
+            get { return _lastName; }
+            set { _lastName = value; }
+        }
 
         int Age
-        { get { return _age; } }
+        { get { return _age; }
+          set { _age = value; }
+        }
 
         int Weight
-        { get { return _weight; } }
+        { get { return _weight; }
+            set { _weight = value; }
+        }
 
         double Height
-        { get { return _height; } }
+        { get { return _height; }
+            set { _height = value; }
+        }
 
         double Imc
         {
