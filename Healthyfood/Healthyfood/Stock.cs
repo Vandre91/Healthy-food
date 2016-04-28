@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace Healthyfood
 {
+    [Serializable]
     public class Stock
     {
         string _name;
@@ -24,6 +27,14 @@ namespace Healthyfood
             _amount = amount;
             _expirationDate = expirationDate;
 
+        }
+        public void save(string path)
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            using (FileStream file = new System.IO.FileStream(path, FileMode.Create, FileAccess.Write))
+            {
+                formatter.Serialize(file, this);
+            }
         }
         string Name
         {
