@@ -17,8 +17,8 @@ namespace Healthyfood
         public Stock(string name, int number, double amount, DateTime expirationDate)
         {
             if (name == null || name == string.Empty || string.IsNullOrWhiteSpace(name)) throw new ArgumentException("The name must no be empty ", nameof(name));
-            if(number < 1) throw new ArgumentException("The height does not match", nameof(number));
-            if (amount == 0.0) throw new ArgumentException("The height does not match", nameof(amount));
+            if(number < 1) throw new ArgumentException("The number does not match", nameof(number));
+            if (amount == 0.0) throw new ArgumentException("The amount does not match", nameof(amount));
             _name = name;
             _number = number;
             _amount = amount;
