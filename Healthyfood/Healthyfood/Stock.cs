@@ -72,6 +72,7 @@ namespace Healthyfood
          {
             if (amount == 0.0)
                 throw new ArgumentException("The amount of food you add must be greater than 0.", "amount");
+            _balance += amount;
         }
 
         public void RemoveFood(double amount, string name)
