@@ -78,6 +78,15 @@ namespace StockFood
                 throw new ArgumentException("you can remove because you don't put name of meat");
 
             double result = _balance - amount;
+
+            if (result < 0)
+            {
+                Console.WriteLine(" you don't have enough meat");
+            }
+
+            else
+                _balance = result;
+            }
         }
     }
-}
+
