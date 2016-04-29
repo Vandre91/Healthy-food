@@ -55,6 +55,7 @@
     <Compile Include="Profil_Utilisateur.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stock.cs" />
     <Compile Include="UserControl_Profil.cs">
       <SubType>UserControl</SubType>
     </Compile>
