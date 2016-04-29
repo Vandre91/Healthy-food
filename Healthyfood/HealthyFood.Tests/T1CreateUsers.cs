@@ -70,7 +70,7 @@ namespace HealthyFoodTests
         }
 
         [Test]
-        public void t6_create_five_users_max()
+        public void t7_create_five_users_max()
         {
             Utilisateurs users = new Utilisateurs();
             users.CreateUser("ab", "cd", 10, 10, 180, false);
@@ -79,6 +79,31 @@ namespace HealthyFoodTests
             users.CreateUser("abe", "cd", 10, 10, 180, false);
             users.CreateUser("abf", "cd", 10, 10, 180, false);
             Assert.Throws<ArgumentException>(() => users.CreateUser("abg", "cd", 10, 10, 180, false));
+
+        }
+
+        [Test]
+        public void t8_find_users()
+        {
+            Utilisateurs users = new Utilisateurs();
+            Profil_Utilisateur u = users.CreateUser("ab", "cd", 10, 10, 180, false);
+            users.CreateUser("abc", "cd", 10, 10, 180, false);
+            users.CreateUser("abd", "cd", 10, 10, 180, false);
+            Assert.Throws<ArgumentException>(() => users.FindUser("abg","cd"));
+            Assert.That(users.FindUser("ab","cd"), Is.EqualTo(u));
+
+        }
+
+        [Test]
+        public void t9_remove_users()
+        {
+            Utilisateurs users = new Utilisateurs();
+            users.CreateUser("ab", "cd", 10, 10, 180, false);
+            users.CreateUser("abc", "cd", 10, 10, 180, true);
+            users.CreateUser("abd", "cd", 10, 10, 180, false);
+            users.RemoveUser("ab", "cd");
+            Assert.Throws<ArgumentException>(() => users.FindUser("ab", "cd"));
+            Assert.Throws<ArgumentException>(() => users.RemoveUser("aassb", "cd"));
 
         }
     }
