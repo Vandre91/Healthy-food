@@ -29,199 +29,134 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Profil));
-            this.button_Back = new System.Windows.Forms.Button();
-            this.textBox_Name = new System.Windows.Forms.TextBox();
-            this.label_Name = new System.Windows.Forms.Label();
-            this.label_Firstname = new System.Windows.Forms.Label();
-            this.label3_Age = new System.Windows.Forms.Label();
-            this.label4_Sex = new System.Windows.Forms.Label();
-            this.label_height = new System.Windows.Forms.Label();
-            this.label6_Weight = new System.Windows.Forms.Label();
-            this.comboBox_Sex = new System.Windows.Forms.ComboBox();
-            this.textBox_Fisrtname = new System.Windows.Forms.TextBox();
-            this.textBox_Age = new System.Windows.Forms.TextBox();
-            this.textBox_Height = new System.Windows.Forms.TextBox();
-            this.textBox_Weight = new System.Windows.Forms.TextBox();
-            this.button_Save = new System.Windows.Forms.Button();
+            this.button_Add = new System.Windows.Forms.Button();
+            this.button_Modify = new System.Windows.Forms.Button();
+            this.button_Delete = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader_LastName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader_Firstname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader_Age = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button_back = new System.Windows.Forms.Button();
+            this.userControl_Modify_Profil1 = new Healthyfood.UserControl_Modify_Profil();
+            this.userControl_Show_Profil1 = new Healthyfood.UserControl_Show_Profil();
             this.SuspendLayout();
             // 
-            // button_Back
+            // button_Add
             // 
-            this.button_Back.Location = new System.Drawing.Point(631, 460);
-            this.button_Back.Margin = new System.Windows.Forms.Padding(4);
-            this.button_Back.Name = "button_Back";
-            this.button_Back.Size = new System.Drawing.Size(100, 28);
-            this.button_Back.TabIndex = 0;
-            this.button_Back.Text = "Retour";
-            this.button_Back.UseVisualStyleBackColor = true;
-            this.button_Back.Click += new System.EventHandler(this.button_Back_Click);
+            this.button_Add.Location = new System.Drawing.Point(85, 349);
+            this.button_Add.Name = "button_Add";
+            this.button_Add.Size = new System.Drawing.Size(75, 23);
+            this.button_Add.TabIndex = 0;
+            this.button_Add.Text = "Ajouter";
+            this.button_Add.UseVisualStyleBackColor = true;
+            this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
             // 
-            // textBox_Name
+            // button_Modify
             // 
-            this.textBox_Name.Location = new System.Drawing.Point(116, 64);
-            this.textBox_Name.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox_Name.Name = "textBox_Name";
-            this.textBox_Name.Size = new System.Drawing.Size(132, 22);
-            this.textBox_Name.TabIndex = 1;
+            this.button_Modify.Location = new System.Drawing.Point(206, 349);
+            this.button_Modify.Name = "button_Modify";
+            this.button_Modify.Size = new System.Drawing.Size(75, 23);
+            this.button_Modify.TabIndex = 1;
+            this.button_Modify.Text = "Modifier";
+            this.button_Modify.UseVisualStyleBackColor = true;
+            this.button_Modify.Click += new System.EventHandler(this.button_Modify_Click);
             // 
-            // label_Name
+            // button_Delete
             // 
-            this.label_Name.AutoSize = true;
-            this.label_Name.Location = new System.Drawing.Point(25, 71);
-            this.label_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_Name.Name = "label_Name";
-            this.label_Name.Size = new System.Drawing.Size(45, 17);
-            this.label_Name.TabIndex = 2;
-            this.label_Name.Text = "Nom :";
+            this.button_Delete.Location = new System.Drawing.Point(320, 349);
+            this.button_Delete.Name = "button_Delete";
+            this.button_Delete.Size = new System.Drawing.Size(75, 23);
+            this.button_Delete.TabIndex = 2;
+            this.button_Delete.Text = "Suprimer";
+            this.button_Delete.UseVisualStyleBackColor = true;
+            this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
             // 
-            // label_Firstname
+            // listView1
             // 
-            this.label_Firstname.AutoSize = true;
-            this.label_Firstname.Location = new System.Drawing.Point(25, 129);
-            this.label_Firstname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_Firstname.Name = "label_Firstname";
-            this.label_Firstname.Size = new System.Drawing.Size(65, 17);
-            this.label_Firstname.TabIndex = 3;
-            this.label_Firstname.Text = "Prenom :";
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader_LastName,
+            this.columnHeader_Firstname,
+            this.columnHeader_Age});
+            this.listView1.Location = new System.Drawing.Point(59, 59);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(477, 238);
+            this.listView1.TabIndex = 3;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // label3_Age
+            // columnHeader_LastName
             // 
-            this.label3_Age.AutoSize = true;
-            this.label3_Age.Location = new System.Drawing.Point(25, 183);
-            this.label3_Age.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3_Age.Name = "label3_Age";
-            this.label3_Age.Size = new System.Drawing.Size(41, 17);
-            this.label3_Age.TabIndex = 4;
-            this.label3_Age.Text = "Age :";
+            this.columnHeader_LastName.Text = "Nom";
+            this.columnHeader_LastName.Width = 203;
             // 
-            // label4_Sex
+            // columnHeader_Firstname
             // 
-            this.label4_Sex.AutoSize = true;
-            this.label4_Sex.Location = new System.Drawing.Point(25, 239);
-            this.label4_Sex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4_Sex.Name = "label4_Sex";
-            this.label4_Sex.Size = new System.Drawing.Size(47, 17);
-            this.label4_Sex.TabIndex = 5;
-            this.label4_Sex.Text = "Sexe :";
+            this.columnHeader_Firstname.Text = "Prenom";
+            this.columnHeader_Firstname.Width = 210;
             // 
-            // label_height
+            // columnHeader_Age
             // 
-            this.label_height.AutoSize = true;
-            this.label_height.Location = new System.Drawing.Point(25, 290);
-            this.label_height.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_height.Name = "label_height";
-            this.label_height.Size = new System.Drawing.Size(50, 17);
-            this.label_height.TabIndex = 6;
-            this.label_height.Text = "Taille :";
+            this.columnHeader_Age.Text = "Age";
+            this.columnHeader_Age.Width = 48;
             // 
-            // label6_Weight
+            // button_back
             // 
-            this.label6_Weight.AutoSize = true;
-            this.label6_Weight.Location = new System.Drawing.Point(25, 352);
-            this.label6_Weight.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6_Weight.Name = "label6_Weight";
-            this.label6_Weight.Size = new System.Drawing.Size(51, 17);
-            this.label6_Weight.TabIndex = 7;
-            this.label6_Weight.Text = "Poids :";
+            this.button_back.Location = new System.Drawing.Point(430, 349);
+            this.button_back.Name = "button_back";
+            this.button_back.Size = new System.Drawing.Size(75, 23);
+            this.button_back.TabIndex = 5;
+            this.button_back.Text = "Retour";
+            this.button_back.UseVisualStyleBackColor = true;
+            this.button_back.Click += new System.EventHandler(this.button_back_Click_1);
             // 
-            // comboBox_Sex
+            // userControl_Modify_Profil1
             // 
-            this.comboBox_Sex.FormattingEnabled = true;
-            this.comboBox_Sex.Items.AddRange(new object[] {
-            "Masculin",
-            "Féminin"});
-            this.comboBox_Sex.Location = new System.Drawing.Point(116, 228);
-            this.comboBox_Sex.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox_Sex.Name = "comboBox_Sex";
-            this.comboBox_Sex.Size = new System.Drawing.Size(160, 24);
-            this.comboBox_Sex.TabIndex = 8;
+            this.userControl_Modify_Profil1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl_Modify_Profil1.Location = new System.Drawing.Point(0, 0);
+            this.userControl_Modify_Profil1.Name = "userControl_Modify_Profil1";
+            this.userControl_Modify_Profil1.Size = new System.Drawing.Size(603, 426);
+            this.userControl_Modify_Profil1.TabIndex = 7;
+            this.userControl_Modify_Profil1.Visible = false;
             // 
-            // textBox_Fisrtname
+            // userControl_Show_Profil1
             // 
-            this.textBox_Fisrtname.Location = new System.Drawing.Point(116, 126);
-            this.textBox_Fisrtname.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox_Fisrtname.Name = "textBox_Fisrtname";
-            this.textBox_Fisrtname.Size = new System.Drawing.Size(132, 22);
-            this.textBox_Fisrtname.TabIndex = 9;
-            // 
-            // textBox_Age
-            // 
-            this.textBox_Age.Location = new System.Drawing.Point(116, 180);
-            this.textBox_Age.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox_Age.Name = "textBox_Age";
-            this.textBox_Age.Size = new System.Drawing.Size(132, 22);
-            this.textBox_Age.TabIndex = 10;
-            // 
-            // textBox_Height
-            // 
-            this.textBox_Height.Location = new System.Drawing.Point(116, 282);
-            this.textBox_Height.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox_Height.Name = "textBox_Height";
-            this.textBox_Height.Size = new System.Drawing.Size(132, 22);
-            this.textBox_Height.TabIndex = 11;
-            // 
-            // textBox_Weight
-            // 
-            this.textBox_Weight.Location = new System.Drawing.Point(116, 348);
-            this.textBox_Weight.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox_Weight.Name = "textBox_Weight";
-            this.textBox_Weight.Size = new System.Drawing.Size(132, 22);
-            this.textBox_Weight.TabIndex = 12;
-            // 
-            // button_Save
-            // 
-            this.button_Save.Location = new System.Drawing.Point(493, 460);
-            this.button_Save.Margin = new System.Windows.Forms.Padding(4);
-            this.button_Save.Name = "button_Save";
-            this.button_Save.Size = new System.Drawing.Size(100, 28);
-            this.button_Save.TabIndex = 13;
-            this.button_Save.Text = "Enregistrer";
-            this.button_Save.UseVisualStyleBackColor = true;
-            this.button_Save.Click += new System.EventHandler(this.button_Save_Click);
+            this.userControl_Show_Profil1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl_Show_Profil1.Location = new System.Drawing.Point(0, 0);
+            this.userControl_Show_Profil1.Name = "userControl_Show_Profil1";
+            this.userControl_Show_Profil1.Size = new System.Drawing.Size(603, 426);
+            this.userControl_Show_Profil1.TabIndex = 6;
+            this.userControl_Show_Profil1.Visible = false;
             // 
             // UserControl_Profil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.button_Save);
-            this.Controls.Add(this.textBox_Weight);
-            this.Controls.Add(this.textBox_Height);
-            this.Controls.Add(this.textBox_Age);
-            this.Controls.Add(this.textBox_Fisrtname);
-            this.Controls.Add(this.comboBox_Sex);
-            this.Controls.Add(this.label6_Weight);
-            this.Controls.Add(this.label_height);
-            this.Controls.Add(this.label4_Sex);
-            this.Controls.Add(this.label3_Age);
-            this.Controls.Add(this.label_Firstname);
-            this.Controls.Add(this.label_Name);
-            this.Controls.Add(this.textBox_Name);
-            this.Controls.Add(this.button_Back);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Controls.Add(this.userControl_Modify_Profil1);
+            this.Controls.Add(this.userControl_Show_Profil1);
+            this.Controls.Add(this.button_back);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.button_Delete);
+            this.Controls.Add(this.button_Modify);
+            this.Controls.Add(this.button_Add);
             this.Name = "UserControl_Profil";
-            this.Size = new System.Drawing.Size(804, 524);
+            this.Size = new System.Drawing.Size(603, 426);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button_Back;
-        private System.Windows.Forms.TextBox textBox_Name;
-        private System.Windows.Forms.Label label_Name;
-        private System.Windows.Forms.Label label_Firstname;
-        private System.Windows.Forms.Label label3_Age;
-        private System.Windows.Forms.Label label4_Sex;
-        private System.Windows.Forms.Label label_height;
-        private System.Windows.Forms.Label label6_Weight;
-        private System.Windows.Forms.ComboBox comboBox_Sex;
-        private System.Windows.Forms.TextBox textBox_Fisrtname;
-        private System.Windows.Forms.TextBox textBox_Age;
-        private System.Windows.Forms.TextBox textBox_Height;
-        private System.Windows.Forms.TextBox textBox_Weight;
-        private System.Windows.Forms.Button button_Save;
+        private System.Windows.Forms.Button button_Add;
+        private System.Windows.Forms.Button button_Modify;
+        private System.Windows.Forms.Button button_Delete;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader_LastName;
+        private System.Windows.Forms.ColumnHeader columnHeader_Firstname;
+        private System.Windows.Forms.ColumnHeader columnHeader_Age;
+        private System.Windows.Forms.Button button_back;
+        private UserControl_Show_Profil userControl_Show_Profil1;
+        private UserControl_Modify_Profil userControl_Modify_Profil1;
     }
 }
