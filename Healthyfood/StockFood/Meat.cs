@@ -11,10 +11,10 @@ namespace StockFood
         string _name;
         double _amount; //viande à ajouter
         double _balance; // viande dispo
-        DateTime _dayOfbuy;
+        
         DateTime _expirationDay;
 
-        public Meat(string name, double amount, double balance, DateTime dayOfbuy, DateTime expirationDay)
+        public Meat(string name, double amount, double balance,  DateTime expirationDay)
         {
             if (name == null || name == string.Empty || string.IsNullOrWhiteSpace(name)) throw new ArgumentException("The name must no be empty ", nameof(name));
             if (amount == 0.0) throw new ArgumentException(" The amount does not match", nameof(amount));
@@ -23,7 +23,6 @@ namespace StockFood
             _name = name;
             _amount = amount;
             _balance = balance;
-            _dayOfbuy = dayOfbuy;
             _expirationDay = expirationDay;
         }
 
@@ -41,30 +40,28 @@ namespace StockFood
             get { return _balance; }
 
         }
-        public double GetAmount
+        public double Amount
         {
             get { return _amount; }
             set
             {
                 if ( value == 0.0) throw new ArgumentException("where is meat for add???", nameof(value));
+                _amount = value;
             }
         }
 
-        public DateTime GetDayOfbuy
-        {
-            get { return _dayOfbuy;  }
-        }
-
-        public DateTime GetExpirationday
+        
+        public DateTime Expirationday
         {
             get { return _expirationDay; }
             set { _expirationDay = value; }
         }
 
-        public void AddMeat(double amount)
+        public void AddMeat(double amount, double balance)
         {
             if (amount == 0.0)
                 throw new ArgumentException("the amount of meat you add must be greater than 0.", " amount ");
+            else if (balance < 1.0)
             _balance += amount;
         }
         
@@ -78,6 +75,15 @@ namespace StockFood
                 throw new ArgumentException("you can remove because you don't put name of meat");
 
             double result = _balance - amount;
+
+            if (result < 0)
+            {
+                Console.WriteLine(" you don't have enough meat");
+            }
+
+            else
+                _balance = result;
+            }
         }
     }
-}
+
