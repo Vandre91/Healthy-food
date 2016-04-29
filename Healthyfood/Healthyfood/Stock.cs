@@ -13,18 +13,21 @@ namespace Healthyfood
     {
         string _name;
         int _number; // nombre des fruits
-        double _amount;
-        double _balance; //Quantite de viande autorisE à retirer
+        double _amount; // QuantitE de viande 
+        double _balance; //Quantite de viande disponible
+        DateTime _dayOfbuy;
         DateTime _expirationDate;
 
-        public Stock(string name, int number, double amount, DateTime expirationDate)
+        public Stock(string name, int number, double amount,DateTime dayOfbuy,  DateTime expirationDate)
         {
             if (name == null || name == string.Empty || string.IsNullOrWhiteSpace(name)) throw new ArgumentException("The name must no be empty ", nameof(name));
             if(number < 1) throw new ArgumentException("The number does not match", nameof(number));
             if (amount == 0.0) throw new ArgumentException("The amount does not match", nameof(amount));
+            
             _name = name;
             _number = number;
             _amount = amount;
+            _dayOfbuy = dayOfbuy;
             _expirationDate = expirationDate;
 
         }
@@ -67,13 +70,25 @@ namespace Healthyfood
             get { return _expirationDate; }
         }
 
+        DateTime DateofBuy
+        {
+            get { return _dayOfbuy; }
+            
+            set
+            {
+                _dayOfbuy = value;
+            }
+        }
+
         public void AddFood(double amount)
 
          {
             if (amount == 0.0)
                 throw new ArgumentException("The amount of food you add must be greater than 0.", "amount");
+            _balance += amount;
         }
 
+        
         public void RemoveFood(double amount, string name)
         {
             if (amount == 0.0)

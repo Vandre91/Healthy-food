@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Healthyfood
 {
     [Serializable]
-    class Utilisateurs
+    public class Utilisateurs
     {
         Dictionary<string, Profil_Utilisateur> Famille;
         int _count; // cinq utilisateurs au maximum
