@@ -41,30 +41,33 @@ namespace StockFood
             get { return _balance; }
 
         }
-        public double GetAmount
+        public double Amount
         {
             get { return _amount; }
             set
             {
                 if ( value == 0.0) throw new ArgumentException("where is meat for add???", nameof(value));
+                _amount = value;
             }
         }
 
-        public DateTime GetDayOfbuy
+        public DateTime DayOfbuy
         {
             get { return _dayOfbuy;  }
+            set { _dayOfbuy = value; }
         }
 
-        public DateTime GetExpirationday
+        public DateTime Expirationday
         {
             get { return _expirationDay; }
             set { _expirationDay = value; }
         }
 
-        public void AddMeat(double amount)
+        public void AddMeat(double amount, double balance)
         {
             if (amount == 0.0)
                 throw new ArgumentException("the amount of meat you add must be greater than 0.", " amount ");
+            else if (balance < 1.0)
             _balance += amount;
         }
         
