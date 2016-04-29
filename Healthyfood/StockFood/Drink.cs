@@ -76,8 +76,11 @@ namespace StockFood
             _numberflask++;    
 
         } 
-        public void RemoveFlask(int numberflask)
-        {
+        public void RemoveFlask(int numberflask, string name)
+        { 
+             if (_nameflask == null || _nameflask == " ")
+                throw new ArgumentException("you can remove because you don't put name of drink"); 
+
             if (numberflask > 10)
                 Console.WriteLine("you can take flask");
             _numberflask --;
