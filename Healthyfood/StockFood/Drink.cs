@@ -12,10 +12,10 @@ namespace StockFood
         double _amountflask; // boisson a ajouter
         int _numberflask;
         double _balanceflask; // quantite boisson disponible
-        DateTime _dayOfbuy;
+       
         DateTime _expirationday;
 
-        public Drink(string nameflask, int numberflask, double amountflask, double balanceflask, DateTime dayOfbuy, DateTime expirationday)
+        public Drink(string nameflask, int numberflask, double amountflask, double balanceflask, DateTime expirationday)
         {
             if (nameflask == null || nameflask == string.Empty || string.IsNullOrWhiteSpace(nameflask)) throw new ArgumentException("The name must no be empty", nameof(nameflask));
             if (amountflask == 0.0) throw new ArgumentException("the amountflask does not match", nameof(amountflask));
@@ -25,7 +25,7 @@ namespace StockFood
             _numberflask = numberflask;
             _amountflask = amountflask;
             _balanceflask = balanceflask;
-            _dayOfbuy = dayOfbuy;
+            
             _expirationday = expirationday;
         }
 
@@ -53,14 +53,7 @@ namespace StockFood
                 _amountflask = value;
             }
         }
-        public DateTime DayofBuy
-        {
-            get { return _dayOfbuy; }
-            set
-            {
-                _dayOfbuy = value;
-            }
-        }
+        
         public DateTime Expirationday
         {
             get { return _expirationday; }

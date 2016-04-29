@@ -11,10 +11,10 @@ namespace StockFood
         string _name;
         double _amount; //viande à ajouter
         double _balance; // viande dispo
-        DateTime _dayOfbuy;
+        
         DateTime _expirationDay;
 
-        public Meat(string name, double amount, double balance, DateTime dayOfbuy, DateTime expirationDay)
+        public Meat(string name, double amount, double balance,  DateTime expirationDay)
         {
             if (name == null || name == string.Empty || string.IsNullOrWhiteSpace(name)) throw new ArgumentException("The name must no be empty ", nameof(name));
             if (amount == 0.0) throw new ArgumentException(" The amount does not match", nameof(amount));
@@ -23,7 +23,6 @@ namespace StockFood
             _name = name;
             _amount = amount;
             _balance = balance;
-            _dayOfbuy = dayOfbuy;
             _expirationDay = expirationDay;
         }
 
@@ -51,12 +50,7 @@ namespace StockFood
             }
         }
 
-        public DateTime DayOfbuy
-        {
-            get { return _dayOfbuy;  }
-            set { _dayOfbuy = value; }
-        }
-
+        
         public DateTime Expirationday
         {
             get { return _expirationDay; }
