@@ -30,7 +30,6 @@ namespace Healthyfood
         private void button_Recette_Click(object sender, EventArgs e)
         {
             userControl_Recipe1.Visible = true;
-            //abdul
         }
     }
 }
