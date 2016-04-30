@@ -21,6 +21,7 @@ namespace HealthyFoodTests
             Assert.Throws<ArgumentException>(() => users.CreateUser(" ", "ab", 10, 30, 30, true));
             Assert.Throws<ArgumentException>(() => users.CreateUser(" \t\r\n", "ab", 10, 30, 30, true));
             Profil_Utilisateur u= users.CreateUser("cd", "ab", 10, 30, 30, true);
+            Assert.Throws<ArgumentException>(() => u.FirstName = "") ;
             Assert.Throws<ArgumentException>(() => u.FirstName = null);
             Assert.Throws<ArgumentException>(() => u.FirstName = " ");
             Assert.Throws<ArgumentException>(() => u.FirstName = " \t\r\n");
