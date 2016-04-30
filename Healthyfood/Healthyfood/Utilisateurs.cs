@@ -31,6 +31,7 @@ namespace Healthyfood
         {
 
             if (_count == 5) throw new ArgumentException("users must be less than five", nameof(_count));
+            if (age < 0 || age > 130) throw new ArgumentException("Age must be between 0 and 130", nameof(age));
             if (firstName == null || firstName == string.Empty || string.IsNullOrWhiteSpace(firstName)) throw new ArgumentException("The name must not be empty", nameof(firstName));
             if (lastName == null || lastName == string.Empty || string.IsNullOrWhiteSpace(lastName)) throw new ArgumentException("The name must not be empty", nameof(lastName));
             if (Famille.ContainsKey(naming(firstName,lastName))) throw new ArgumentException("this name must be different because it already exists", nameof(lastName));

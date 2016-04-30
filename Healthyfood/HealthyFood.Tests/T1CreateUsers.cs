@@ -13,31 +13,44 @@ namespace HealthyFoodTests
     public class T1CreateUsers
     {
         [Test]
-        public void t1_create_user_with_correct_firstname()
+        public void t1_create_or_modify_user_with_correct_firstname()
         {
             Utilisateurs users = new Utilisateurs();
-            Assert.Throws<ArgumentException>(() => users.CreateUser("", "ab", 10, 10, 10, true));
-            Assert.Throws<ArgumentException>(() => users.CreateUser(null, "ab", 10, 10, 10, true));
-            Assert.Throws<ArgumentException>(() => users.CreateUser(" ", "ab", 10, 10, 10, true));
-            Assert.Throws<ArgumentException>(() => users.CreateUser(" \t\r\n", "ab", 10, 10, 10, true));
+            Assert.Throws<ArgumentException>(() => users.CreateUser("", "ab", 10, 30, 30, true));
+            Assert.Throws<ArgumentException>(() => users.CreateUser(null, "ab", 10, 30, 30, true));
+            Assert.Throws<ArgumentException>(() => users.CreateUser(" ", "ab", 10, 30, 30, true));
+            Assert.Throws<ArgumentException>(() => users.CreateUser(" \t\r\n", "ab", 10, 30, 30, true));
+            Profil_Utilisateur u= users.CreateUser("cd", "ab", 10, 30, 30, true);
+            Assert.Throws<ArgumentException>(() => u.FirstName = null);
+            Assert.Throws<ArgumentException>(() => u.FirstName = " ");
+            Assert.Throws<ArgumentException>(() => u.FirstName = " \t\r\n");
+
         }
 
         [Test]
-        public void t2_create_user_with_correct_lastname()
+        public void t2_create_or_modify_user_with_correct_lastname()
         {
             Utilisateurs users = new Utilisateurs();
-            Assert.Throws<ArgumentException>(() => users.CreateUser("ab", null, 10, 10, 10, true));
-            Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "", 10, 10, 10, true));
-            Assert.Throws<ArgumentException>(() => users.CreateUser("ab ", " ", 10, 10, 10, true));
-            Assert.Throws<ArgumentException>(() => users.CreateUser("ab", " \t\r\n", 10, 10, 10, true));
+            Assert.Throws<ArgumentException>(() => users.CreateUser("ab", null, 10, 30, 30, true));
+            Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "", 10, 30, 30, true));
+            Assert.Throws<ArgumentException>(() => users.CreateUser("ab ", " ", 10, 30, 30, true));
+            Assert.Throws<ArgumentException>(() => users.CreateUser("ab", " \t\r\n", 10, 30, 30, true));
+            Profil_Utilisateur u = users.CreateUser("cd", "ab", 10, 30, 30, true);
+            Assert.Throws<ArgumentException>(() => u.LastName = "");
+            Assert.Throws<ArgumentException>(() => u.LastName = null);
+            Assert.Throws<ArgumentException>(() => u.LastName = " ");
+            Assert.Throws<ArgumentException>(() => u.LastName = " \t\r\n");
         }
 
         [Test]
-        public void t3_create_user_with_correct_age()
+        public void t3_create_or_modify_user_with_correct_age()
         {
             Utilisateurs users = new Utilisateurs();
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cd", -1, 10, 10, true));
-            Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cd", 130, 10, 10, true));
+            Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cd", 129, 10, 10, true));
+            Profil_Utilisateur u = users.CreateUser("cd", "ab", 10, 30, 30, true);
+            Assert.Throws<ArgumentException>(() => u.Age = -1);
+            Assert.Throws<ArgumentException>(() => u.Age = 131);
 
         }
 
@@ -47,6 +60,9 @@ namespace HealthyFoodTests
             Utilisateurs users = new Utilisateurs();
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cd", 10, -1, 10, true));
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cd", 10, 231, 10, true));
+            Profil_Utilisateur u = users.CreateUser("cd", "ab", 10, 30, 30, true);
+            Assert.Throws<ArgumentException>(() => u.Weight = -1);
+            Assert.Throws<ArgumentException>(() => u.Weight = 231);
 
         }
 
@@ -56,6 +72,9 @@ namespace HealthyFoodTests
             Utilisateurs users = new Utilisateurs();
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cd", 10, 10, 29, true));
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cd", 10, 10, 251, true));
+            Profil_Utilisateur u = users.CreateUser("cd", "ab", 10, 30, 30, true);
+            Assert.Throws<ArgumentException>(() => u.Height = 29);
+            Assert.Throws<ArgumentException>(() => u.Height = 251);
 
         }
 
