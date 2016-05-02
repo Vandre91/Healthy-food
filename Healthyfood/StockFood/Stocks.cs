@@ -19,5 +19,55 @@ namespace StockFood
         {
             return (Convert.ToString(Ingredients.Category) + " " + Convert.ToString(Ingredients.Expiration_Date));
         }
+
+        public void AddIngredient(Ingredients._Category category, double balance, DateTime expiration_date)
+        {
+
+            Ingredients ingred = new Ingredients(category, balance, expiration_date);
+            if (_stock.ContainsKey(naming(ingred)))
+            {
+                _stock[naming(ingred)].Balance = balance;
+            }
+            else
+            {
+                _stock[naming(ingred)] = ingred;
+            }
+        }
+
+        public void RemoveIngredient(Ingredients._Category category, double balance, double amount, DateTime expiration_date)
+
+        {
+            Ingredients ingred = new Ingredients(category, balance, expiration_date);
+            if (_stock.ContainsKey(naming(ingred)))
+            {
+                _stock.Remove(naming(ingred));
+            }
+            else
+            {
+                throw new ArgumentException("This ingredient does not exist", nameof(category));
+            }
+        }
+
+        public void ReduceIngredient(Ingredients._Category category, double balance,  DateTime expiration_date)
+        {
+            Ingredients ingred = new Ingredients(category, balance, expiration_date);
+            if (_stock.ContainsKey(naming(ingred)))
+            {
+                if (balance > _stock[naming(ingred)].Balance)
+                {
+                    throw new ArgumentException(" ");
+                }
+                else
+                {
+                    _stock[naming(ingred)].Reduce = balance;
+                }
+            }
+            else
+            {
+                throw new ArgumentException("this ingredient does not exist", nameof(category));
+            }
+        }
+                    
+        }
     }
-}
+
