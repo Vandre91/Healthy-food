@@ -27,16 +27,17 @@ namespace Healthyfood
             }
         }
 
-        public Profil_Utilisateur CreateUser(string firstName, string lastName, int age, int weigth, double heigth, bool isFemale)
+        public Profil_Utilisateur CreateUser(string firstName, string lastName, int age, int weigth, double heigth, bool isFemale, bool isVegetarian)
         {
 
             if (_count == 5) throw new ArgumentException("users must be less than five", nameof(_count));
+            if (age < 0 || age > 130) throw new ArgumentException("Age must be between 0 and 130", nameof(age));
             if (firstName == null || firstName == string.Empty || string.IsNullOrWhiteSpace(firstName)) throw new ArgumentException("The name must not be empty", nameof(firstName));
             if (lastName == null || lastName == string.Empty || string.IsNullOrWhiteSpace(lastName)) throw new ArgumentException("The name must not be empty", nameof(lastName));
             if (Famille.ContainsKey(naming(firstName,lastName))) throw new ArgumentException("this name must be different because it already exists", nameof(lastName));
             if (heigth < 30 || heigth > 230) throw new ArgumentException("The height does not match", nameof(heigth));
             if (weigth < 0 || weigth > 250) throw new ArgumentException("The height does not match", nameof(weigth));
-            Profil_Utilisateur u = new Profil_Utilisateur(firstName, lastName, age, weigth, heigth, isFemale);
+            Profil_Utilisateur u = new Profil_Utilisateur(firstName, lastName, age, weigth, heigth, isFemale, isVegetarian);
             Famille[naming(firstName, lastName)] = u;
             _count++;
             return u;
