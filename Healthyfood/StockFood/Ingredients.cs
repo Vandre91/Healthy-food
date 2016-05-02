@@ -18,5 +18,19 @@ namespace StockFood
             _balance = balance;
             _expiration_date = expiration_date;
         }
+
+        public DateTime ExpirationDate
+        {
+            get { return _expiration_date; }
+            set { _expiration_date = value; }
+        }
+
+        public double Balance
+        {
+            get { return _balance; }
+            set { _balance= value; }
+        }
+
+       
     }
 }
