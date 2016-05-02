@@ -18,17 +18,23 @@ namespace Healthyfood
         int _weight;
         double _height; // un réel de tel sorte que 1.8 correspond à 180 cm
         bool _isFemale;
+        bool _isVegetarian;
         double _imc;
 
-        internal Profil_Utilisateur(string firstName, string lastName, int age, int weight, double height, bool isFemale)
+        internal Profil_Utilisateur(string firstName, string lastName, int age, int weigth, double heigth, bool isFemale, bool isVegetarian)
         {
-
+            if (age < 0 || age > 130) throw new ArgumentException("Age must be between 0 and 130", nameof(age));
+            if (firstName == null || firstName == string.Empty || string.IsNullOrWhiteSpace(firstName)) throw new ArgumentException("The name must not be empty", nameof(firstName));
+            if (lastName == null || lastName == string.Empty || string.IsNullOrWhiteSpace(lastName)) throw new ArgumentException("The name must not be empty", nameof(lastName));
+            if (heigth < 30 || heigth > 230) throw new ArgumentException("The height does not match", nameof(heigth));
+            if (weigth < 0 || weigth > 250) throw new ArgumentException("The height does not match", nameof(weigth));
             _firstName = firstName;
             _lastName = lastName;
             _age = age;
-            _weight = weight;
-            _height = height;
+            _weight = weigth;
+            _height = heigth;
             _isFemale = isFemale;
+            _isVegetarian = isVegetarian;
         }
         public void save(string path)
         {
@@ -47,7 +53,7 @@ namespace Healthyfood
             }
         }
 
-        string FirstName
+        public string FirstName
         {
             get { return _firstName; }
             set
@@ -57,7 +63,7 @@ namespace Healthyfood
             }
         }
 
-        internal string LastName
+        public string LastName
         {
             get { return _lastName; }
             set
@@ -67,7 +73,7 @@ namespace Healthyfood
             }
         }
 
-        int Age
+        public int Age
         {
             get { return _age; }
             set
@@ -77,7 +83,7 @@ namespace Healthyfood
             }
         }
 
-        int Weight
+        public int Weight
         {
             get { return _weight; }
             set
@@ -87,7 +93,7 @@ namespace Healthyfood
             }
         }
 
-        double Height
+        public double Height
         {
             get { return _height; }
             set
@@ -97,7 +103,25 @@ namespace Healthyfood
             }
         }
 
-        double Imc
+        public bool IsFemale
+        {
+            get { return _isFemale; }
+            set
+            {
+                _isFemale = value;
+            }
+        }
+
+        public bool IsVegetarian
+        {
+            get { return _isVegetarian; }
+            set
+            {
+                _isVegetarian = value;
+            }
+        }
+
+        public double Imc
         {
             get { return (_weight / (_height * _height) / 100); }
         }
