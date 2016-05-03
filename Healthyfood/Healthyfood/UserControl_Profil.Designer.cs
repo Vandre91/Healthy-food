@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Profil));
             this.button_Add = new System.Windows.Forms.Button();
             this.button_Modify = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@
             this.columnHeader_Firstname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader_Age = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button_back = new System.Windows.Forms.Button();
+            this.timer_refresh = new System.Windows.Forms.Timer(this.components);
             this.userControl_Modify_Profil1 = new Healthyfood.UserControl_Modify_Profil();
             this.userControl_Show_Profil1 = new Healthyfood.UserControl_Show_Profil();
             this.SuspendLayout();
@@ -109,6 +111,11 @@
             this.button_back.UseVisualStyleBackColor = true;
             this.button_back.Click += new System.EventHandler(this.button_back_Click_1);
             // 
+            // timer_refresh
+            // 
+            this.timer_refresh.Interval = 5000;
+            this.timer_refresh.Tick += new System.EventHandler(this.timer_refresh_Tick);
+            // 
             // userControl_Modify_Profil1
             // 
             this.userControl_Modify_Profil1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -158,5 +165,6 @@
         private System.Windows.Forms.Button button_back;
         private UserControl_Show_Profil userControl_Show_Profil1;
         private UserControl_Modify_Profil userControl_Modify_Profil1;
+        private System.Windows.Forms.Timer timer_refresh;
     }
 }

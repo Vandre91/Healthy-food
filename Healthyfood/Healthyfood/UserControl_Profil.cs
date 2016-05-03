@@ -15,6 +15,7 @@ namespace Healthyfood
         public UserControl_Profil()
         {
             InitializeComponent();
+            timer_refresh.Start();
         }
 
         private void button_Add_Click(object sender, EventArgs e)
@@ -37,6 +38,14 @@ namespace Healthyfood
 
         }
 
-       
+        private void timer_refresh_Tick(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+
+            foreach (var p in Global.Utilisateur.IUtilisateur)
+            {
+                listView1.Items.Add(p.FirstName);
+            }
+        }
     }
 }

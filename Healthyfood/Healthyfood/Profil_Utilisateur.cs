@@ -16,12 +16,12 @@ namespace Healthyfood
         string _lastName;
         int _age;
         int _weight;
-        double _height; // un réel de tel sorte que 1.8 correspond à 180 cm
+        int _height; // un réel de tel sorte que 1.8 correspond à 180 cm
         bool _isFemale;
         bool _isVegetarian;
-        double _imc;
+        int _imc;
 
-        internal Profil_Utilisateur(string firstName, string lastName, int age, int weigth, double heigth, bool isFemale, bool isVegetarian)
+        internal Profil_Utilisateur(string firstName, string lastName, int age, int weigth, int heigth, bool isFemale, bool isVegetarian)
         {
             if (age < 0 || age > 130) throw new ArgumentException("Age must be between 0 and 130", nameof(age));
             if (firstName == null || firstName == string.Empty || string.IsNullOrWhiteSpace(firstName)) throw new ArgumentException("The name must not be empty", nameof(firstName));
@@ -93,7 +93,7 @@ namespace Healthyfood
             }
         }
 
-        public double Height
+        public int Height
         {
             get { return _height; }
             set
@@ -121,7 +121,7 @@ namespace Healthyfood
             }
         }
 
-        public double Imc
+        public int Imc
         {
             get { return (_weight / (_height * _height) / 100); }
         }

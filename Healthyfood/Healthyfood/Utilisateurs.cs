@@ -27,7 +27,7 @@ namespace Healthyfood
             }
         }
 
-        public Profil_Utilisateur CreateUser(string firstName, string lastName, int age, int weigth, double heigth, bool isFemale, bool isVegetarian)
+        public Profil_Utilisateur CreateUser(string firstName, string lastName, int age, int weigth, int heigth, bool isFemale, bool isVegetarian)
         {
 
             if (_count == 5) throw new ArgumentException("users must be less than five", nameof(_count));
@@ -63,5 +63,10 @@ namespace Healthyfood
 
         public string naming (string firstName, string LastName)
         { return (firstName + " " + LastName); }
+
+        public ICollection<Profil_Utilisateur> IUtilisateur
+        {
+            get { return Famille.Values; }
+        }
     }
 }
