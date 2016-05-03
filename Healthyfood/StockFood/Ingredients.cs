@@ -11,7 +11,8 @@ namespace StockFood
         static DateTime _expiration_date;
         double _amount; // viande a ajouter ou retirer
         double _balance;
-        public  enum _Category { viande_de_boeuf, oeuf, riz, viande_de_mouton, fromage, lait, soda, couscous};
+        public  enum _Category { viande, poisson, crustace, dessert_sucrerie, boisson, volaille, legume, fruit, produit_laitier, matiere_grasse, féculent_boulangerie, herbe_plante};
+        public enum Viande { steak_de_boeuf}
         public static _Category _category;
         public Ingredients (_Category category, double balance, DateTime expiration_date)
         {
