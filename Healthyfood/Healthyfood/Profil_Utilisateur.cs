@@ -16,10 +16,10 @@ namespace Healthyfood
         string _lastName;
         int _age;
         int _weight;
-        int _height; 
+        int _height;
         bool _isFemale;
         bool _isVegetarian;
-        double _imc;
+        int _imc;
 
         internal Profil_Utilisateur(string firstName, string lastName, int age, int weigth, int heigth, bool isFemale, bool isVegetarian)
         {
@@ -121,7 +121,7 @@ namespace Healthyfood
             }
         }
 
-        public double Imc
+        public int Imc
         {
             get { return (_weight / (_height * _height) / 100); }
         }

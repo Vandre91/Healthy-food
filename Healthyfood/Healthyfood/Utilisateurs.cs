@@ -63,5 +63,10 @@ namespace Healthyfood
 
         public string naming (string firstName, string LastName)
         { return (firstName + " " + LastName); }
+
+        public ICollection<Profil_Utilisateur> IUtilisateur
+        {
+            get { return Famille.Values; }
+        }
     }
 }

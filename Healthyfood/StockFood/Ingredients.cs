@@ -17,6 +17,8 @@ namespace StockFood
         public enum Volaille {blanc_de_poulet, cuisses_de_poulet, pattes_de_poulet, pilons_de_poulet, ailes_de_poulet, gesier_de_poulet, foie_de_poulet, coeur_de_poulet, blanc_de_dinde, aiguillette_de_dinde, escalope_de_dinde, filet_de_dinde, supreme_de_dinde, aileron_de_dinde, manchon_de_dinde, cuisses_de_dinde, pilon_de_dinde, aiguillettes_de_canard, cuisses_de_canard, filet_de_canard, tournedos_de_canard, aiguillettes_de_pintade, cuisses_de_pintade, filet_de_pintade, tournedos_de_pintade}
         public static _Category _category;
         public enum _Poisson { anchois, anguille, brochet, cabillaud, colin, daurade_royale, flétan, loup_de_mer, merlan, omble_chevalier, perche, plie, raie, rascasse_du_nord, rouget_barbet, sandre, sardine, saumon, sole, thon};
+        public enum _Boisson {lait, absinthe, allasch, amaro, amoroso, café, calvados, champagne, cognac, eau_de_vie, frambroise, irish_mist, prunelle, sirop, tequila, vin, vodka, whisky};
+        public enum _Volaille { poules, dindes, canards, pintades};
         public Ingredients (_Category category, double balance, DateTime expiration_date)
         {
             _category = category;
