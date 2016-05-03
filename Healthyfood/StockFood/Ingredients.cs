@@ -16,6 +16,7 @@ namespace StockFood
         public static _Category _category;
         public enum _Poisson { anchois, anguille, brochet, cabillaud, colin, daurade_royale, flétan, loup_de_mer, merlan, omble_chevalier, perche, plie, raie, rascasse_du_nord, rouget_barbet, sandre, sardine, saumon, sole, thon};
         public enum _Boisson {lait, absinthe, allasch, amaro, amoroso, café, calvados, champagne, cognac, eau_de_vie, frambroise, irish_mist, prunelle, sirop, tequila, vin, vodka, whisky};
+        public enum _Volaille { poules, dindes, canards, pintades};
         public Ingredients (_Category category, double balance, DateTime expiration_date)
         {
             _category = category;
