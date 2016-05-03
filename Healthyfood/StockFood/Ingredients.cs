@@ -14,6 +14,7 @@ namespace StockFood
         public  enum _Category { viande, poisson, crustace, dessert_sucrerie, boisson, volaille, legume, fruit, produit_laitier, matiere_grasse, féculent_boulangerie, herbe_plante};
         public enum Viande { steak_de_boeuf}
         public static _Category _category;
+        public enum _Poisson { anchois, anguille, brochet, cabillaud, colin, daurade_royale, flétan, loup_de_mer, merlan, omble_chevalier, perche, plie, raie, rascasse_du_nord, rouget_barbet, sandre, sardine, saumon, sole, thon};
         public Ingredients (_Category category, double balance, DateTime expiration_date)
         {
             _category = category;
