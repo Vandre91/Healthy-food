@@ -16,7 +16,7 @@ namespace Healthyfood
         string _lastName;
         int _age;
         int _weight;
-        int _height; // un réel de tel sorte que 1.8 correspond à 180 cm
+        int _height;
         bool _isFemale;
         bool _isVegetarian;
         int _imc;
