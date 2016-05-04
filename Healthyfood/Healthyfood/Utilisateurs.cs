@@ -11,12 +11,12 @@ namespace Healthyfood
     [Serializable]
     public class Utilisateurs
     {
-        Dictionary<string, Profil_Utilisateur> Famille;
+        public Dictionary<string, Profil_Utilisateur> Famille;
         int _count; // cinq utilisateurs au maximum
 
         public Utilisateurs()
         {
-            Famille = new Dictionary<string, Profil_Utilisateur>();
+             Famille = new Dictionary<string, Profil_Utilisateur>();
         }
         public void save(string path)
         {
@@ -61,6 +61,55 @@ namespace Healthyfood
             else throw new ArgumentException("This user does not exist", nameof(firstName));
         }
 
+        public void modify_firstname (Profil_Utilisateur u, string firstname)
+        {
+            if (firstname == null || firstname == string.Empty || string.IsNullOrWhiteSpace(firstname)) throw new ArgumentException("The name must not be empty", nameof(firstname));
+            if (Famille.ContainsKey(naming(firstname, u.LastName))) throw new ArgumentException("this name does exists", nameof(firstname));
+            else
+            {
+                u.FirstName = firstname;
+            }
+
+        }
+
+        public void modify_lastname(Profil_Utilisateur u, string lastname)
+        {
+            if (lastname == null || lastname == string.Empty || string.IsNullOrWhiteSpace(lastname)) throw new ArgumentException("The name must not be empty", nameof(lastname));
+            if (Famille.ContainsKey(naming(u.FirstName, lastname))) throw new ArgumentException("this name does exists", nameof(lastname));
+            else
+            {
+                u.LastName = lastname;
+            }
+
+        }
+
+        public void modify_age (Profil_Utilisateur u, int age)
+        {
+            if (age < 0 || age > 130) throw new ArgumentException("Age must be between 0 and 130", nameof(age));
+            u.Age = age;
+        }
+
+        public void modify_weigth (Profil_Utilisateur u, int weigth)
+        {
+            if (weigth < 0 || weigth > 250) throw new ArgumentException("The height does not match", nameof(weigth));
+            u.Weight = weigth;
+        }
+
+        public void modify_heigth(Profil_Utilisateur u, int heigth)
+        {
+            if (heigth< 30 || heigth > 230) throw new ArgumentException("The height does not match", nameof(heigth));
+            u.Height = heigth;
+        }
+
+        public void modify_isfemale (Profil_Utilisateur u, bool isfemale)
+        {
+            u.IsFemale = isfemale;
+        }
+
+        public void modify_isvegetarian(Profil_Utilisateur u, bool isvegetarian)
+        {
+            u.IsVegetarian = isvegetarian;
+        }
         public string naming (string firstName, string LastName)
         { return (firstName + " " + LastName); }
 
