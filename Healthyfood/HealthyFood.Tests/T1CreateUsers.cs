@@ -51,7 +51,20 @@ namespace HealthyFoodTests
             Assert.That(u.IsFemale, Is.EqualTo(false));
             users.modify_isvegetarian(u, true);
             Assert.That(u.IsVegetarian, Is.EqualTo(true));
-
+            Assert.Throws<ArgumentException>(() => users.modify_firstname(u, ""));
+            Assert.Throws<ArgumentException>(() => users.modify_firstname(u, null));
+            Assert.Throws<ArgumentException>(() => users.modify_firstname(u, " "));
+            Assert.Throws<ArgumentException>(() => users.modify_firstname(u, " \t\r\n"));
+            Assert.Throws<ArgumentException>(() => users.modify_lastname(u, ""));
+            Assert.Throws<ArgumentException>(() => users.modify_lastname(u, null));
+            Assert.Throws<ArgumentException>(() => users.modify_lastname(u, " "));
+            Assert.Throws<ArgumentException>(() => users.modify_lastname(u, " \t\r\n"));
+            Assert.Throws<ArgumentException>(() => users.modify_age(u, -1));
+            Assert.Throws<ArgumentException>(() => users.modify_age(u, 131));
+            Assert.Throws<ArgumentException>(() => users.modify_heigth(u, 29));
+            Assert.Throws<ArgumentException>(() => users.modify_heigth(u, 231));
+            Assert.Throws<ArgumentException>(() => users.modify_weigth(u, -1));
+            Assert.Throws<ArgumentException>(() => users.modify_weigth(u, 251));
 
         }
 
