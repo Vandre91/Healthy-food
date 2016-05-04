@@ -28,66 +28,72 @@ namespace HealthyFoodTests
             Assert.That(u.Height, Is.EqualTo(30));
             Assert.That(u.IsFemale, Is.EqualTo(true));
             Assert.That(u.IsVegetarian, Is.EqualTo(false));
-            Assert.Throws<ArgumentException>(() => u.FirstName = "") ;
-            Assert.Throws<ArgumentException>(() => u.FirstName = null);
-            Assert.Throws<ArgumentException>(() => u.FirstName = " ");
-            Assert.Throws<ArgumentException>(() => u.FirstName = " \t\r\n");
+
 
         }
 
         [Test]
-        public void t02_create_or_modify_user_with_correct_lastname()
+        public void t02_modify_created_users()
+        {
+            Utilisateurs users = new Utilisateurs();
+            Profil_Utilisateur u =users.CreateUser("cd", "ab", 10, 30, 30, true, false);
+            users.modify_firstname(u, "dc");
+            Assert.That(u.FirstName, Is.EqualTo("dc"));
+            users.modify_lastname(u, "dc");
+            Assert.That(u.LastName, Is.EqualTo("dc"));
+            users.modify_age(u, 40);
+            Assert.That(u.Age, Is.EqualTo(40));
+            users.modify_heigth(u, 120);
+            Assert.That(u.Height, Is.EqualTo(120));
+            users.modify_weigth(u, 200);
+            Assert.That(u.Weight, Is.EqualTo(200));
+            users.modify_isfemale(u, false);
+            Assert.That(u.IsFemale, Is.EqualTo(false));
+            users.modify_isvegetarian(u, true);
+            Assert.That(u.IsVegetarian, Is.EqualTo(true));
+
+
+        }
+
+        [Test]
+        public void t03_create_or_modify_user_with_correct_lastname()
         {
             Utilisateurs users = new Utilisateurs();
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", null, 10, 30, 30, true, false));
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "", 10, 30, 30, true, false));
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab ", " ", 10, 30, 30, true, false));
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", " \t\r\n", 10, 30, 30, true, false));
-            Profil_Utilisateur u = users.CreateUser("cd", "ab", 10, 30, 30, true, false);
-            Assert.Throws<ArgumentException>(() => u.LastName = "");
-            Assert.Throws<ArgumentException>(() => u.LastName = null);
-            Assert.Throws<ArgumentException>(() => u.LastName = " ");
-            Assert.Throws<ArgumentException>(() => u.LastName = " \t\r\n");
         }
 
         [Test]
-        public void t03_create_or_modify_user_with_correct_age()
+        public void t04_create_or_modify_user_with_correct_age()
         {
             Utilisateurs users = new Utilisateurs();
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cd", -1, 10, 10, true, false));
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cd", 129, 10, 10, true, false));
-            Profil_Utilisateur u = users.CreateUser("cd", "ab", 10, 30, 30, true, false);
-            Assert.Throws<ArgumentException>(() => u.Age = -1);
-            Assert.Throws<ArgumentException>(() => u.Age = 131);
 
         }
 
         [Test]
-        public void t04_create_user_with_correct_weight()
+        public void t05_create_user_with_correct_weight()
         {
             Utilisateurs users = new Utilisateurs();
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cd", 10, -1, 10, true, false));
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cd", 10, 231, 10, true, false));
-            Profil_Utilisateur u = users.CreateUser("cd", "ab", 10, 30, 30, true, false);
-            Assert.Throws<ArgumentException>(() => u.Weight = -1);
-            Assert.Throws<ArgumentException>(() => u.Weight = 231);
 
         }
 
         [Test]
-        public void t05_create_user_with_correct_height()
+        public void t06_create_user_with_correct_height()
         {
             Utilisateurs users = new Utilisateurs();
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cd", 10, 10, 29, true, false));
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cd", 10, 10, 251, true, false));
-            Profil_Utilisateur u = users.CreateUser("cd", "ab", 10, 30, 30, true, false);
-            Assert.Throws<ArgumentException>(() => u.Height = 29);
-            Assert.Throws<ArgumentException>(() => u.Height = 251);
 
         }
 
         [Test]
-        public void t06_create_a_user_with_a_different_name_and_first_name_of_another_user()
+        public void t07_create_a_user_with_a_different_name_and_first_name_of_another_user()
         {
             Utilisateurs users = new Utilisateurs();
             users.CreateUser("ab", "cd", 10, 10, 180, false, false);
@@ -97,7 +103,7 @@ namespace HealthyFoodTests
         }
 
         [Test]
-        public void t07_create_five_users_max()
+        public void t08_create_five_users_max()
         {
             Utilisateurs users = new Utilisateurs();
             users.CreateUser("ab", "cd", 10, 10, 180, false, false);
@@ -110,7 +116,7 @@ namespace HealthyFoodTests
         }
 
         [Test]
-        public void t08_find_users()
+        public void t09_find_users()
         {
             Utilisateurs users = new Utilisateurs();
             Profil_Utilisateur u = users.CreateUser("ab", "cd", 10, 10, 180, false, false);
@@ -122,7 +128,7 @@ namespace HealthyFoodTests
         }
 
         [Test]
-        public void t09_remove_users()
+        public void t10_remove_users()
         {
             Utilisateurs users = new Utilisateurs();
             users.CreateUser("ab", "cd", 10, 10, 180, false, false);
@@ -135,7 +141,7 @@ namespace HealthyFoodTests
         }
 
         [Test]
-        public void t10_modify_isfemale_and_isvegeterian()
+        public void t11_modify_isfemale_and_isvegeterian()
         {
             Utilisateurs users = new Utilisateurs();
             Profil_Utilisateur u =users.CreateUser("ab", "cd", 10, 10, 180, false, false);
@@ -143,7 +149,6 @@ namespace HealthyFoodTests
             Assert.That(u.IsFemale, Is.EqualTo(true));
             u.IsVegetarian = true;
             Assert.That(u.IsVegetarian, Is.EqualTo(true));
-
         }
     }
 }
