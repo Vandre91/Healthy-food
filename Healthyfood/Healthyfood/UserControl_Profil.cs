@@ -30,7 +30,18 @@ namespace Healthyfood
 
         private void button_Modify_Click(object sender, EventArgs e)
         {
-            userControl_Modify_Profil1.Visible = true;
+            if (listView1.Items.Count <= 0)
+            {
+                button_Modify.Enabled = true;
+            }
+            else
+            {
+                string name = listView1.SelectedItems[0].SubItems[0].Text;
+                string lastname = listView1.SelectedItems[0].SubItems[1].Text;
+                Profil_Utilisateur profil = Global.Utilisateur.FindUser(name, lastname);
+                Global.Profil = profil;
+                userControl_Modify_Profil1.Visible = true;
+            }
         }
 
         private void button_Delete_Click(object sender, EventArgs e)
@@ -42,9 +53,12 @@ namespace Healthyfood
         {
             listView1.Items.Clear();
 
+      
             foreach (var p in Global.Utilisateur.IUtilisateur)
             {
-                listView1.Items.Add(p.FirstName);
+                string[] row = { p.FirstName, p.LastName,p.Age.ToString() };
+                ListViewItem item = new ListViewItem(row);
+                listView1.Items.Add(item);
             }
         }
     }
