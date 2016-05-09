@@ -20,7 +20,7 @@ namespace StockFood
             return (Convert.ToString(Ingredients.Category) + " " + Convert.ToString(Ingredients.Expiration_Date));
         }
 
-        public void AddIngredient(Ingredients._Category category,Ingredients._Name name, double balance, DateTime expiration_date)
+        public void AddIngredient(Ingredients._Category category,string name, double balance, DateTime expiration_date)
         {
 
             Ingredients ingred = new Ingredients(category, name, balance, expiration_date);
@@ -34,7 +34,7 @@ namespace StockFood
             }
         }
 
-        public void RemoveIngredient(Ingredients._Category category,Ingredients._Name name, double balance, double amount, DateTime expiration_date)
+        public void RemoveIngredient(Ingredients._Category category,string name, double balance, double amount, DateTime expiration_date)
 
         {
             Ingredients ingred = new Ingredients(category, name, balance, expiration_date);
@@ -48,7 +48,7 @@ namespace StockFood
             }
         }
 
-        public void ReduceIngredient(Ingredients._Category category,Ingredients._Name name, double balance,  DateTime expiration_date)
+        public void ReduceIngredient(Ingredients._Category category,string name, double balance,  DateTime expiration_date)
         {
             Ingredients ingred = new Ingredients(category, name, balance, expiration_date);
             if (_stock.ContainsKey(naming(ingred)))
