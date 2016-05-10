@@ -25,6 +25,7 @@ namespace HealthyFoodTests
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient(" \t\r\n", "lait", 100, date));
             Ingredients i = stocks.AddIngredient("viande", "lait", 100, date);
             Assert.That(Stocks._stock.ContainsKey(Stocks.naming(i)), Is.EqualTo(true));
+            Assert.That(Stocks._stock[Stocks.naming(i)].Category, Is.EqualTo("viande"));
         }
 
         [Test]
@@ -37,6 +38,9 @@ namespace HealthyFoodTests
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", " ", 100, date));
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", null, 100, date));
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", " \t\r\n", 100, date));
+            Ingredients i = stocks.AddIngredient("viande", "Steak de boeuf", 100, date);
+            Assert.That(Stocks._stock[Stocks.naming(i)].Name, Is.EqualTo("Steak de boeuf"));
+
         }
 
         [Test]
@@ -45,9 +49,16 @@ namespace HealthyFoodTests
             Stocks stocks = new Stocks();
             DateTime date = new DateTime(2017, 10, 10);
             DateTime date1 = new DateTime(2008, 10, 10);
-            Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", "steak de boeuf", 0, date));
-            Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", "steak de boeuf", -10, date));
-            Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", "steak de boeuf", 100, date1));
+            DateTime date2 = DateTime.Today;
+            DateTime date3 = new DateTime(2018, 10, 10);
+            Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", "Steak de boeuf", 0, date));
+            Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", "Steak de boeuf", -10, date));
+            Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", "Steak de boeuf", 100, date1));
+            Ingredients i = stocks.AddIngredient("viande", "Steak de boeuf", 100, date2);
+            Assert.That(Stocks._stock[Stocks.naming(i)].Expiration_Date, Is.EqualTo(DateTime.Today));
+            Assert.That(Stocks._stock[Stocks.naming(i)].Balance, Is.EqualTo(100));
+            Ingredients u = stocks.AddIngredient("viande", "Steak de boeuf", 100, date3);
+            Assert.That(Stocks._stock[Stocks.naming(u)].Expiration_Date, Is.EqualTo(date3));
 
         }
 

@@ -17,7 +17,7 @@ namespace StockFood
 
        public static string naming (Ingredients ingred)
         {
-            return ((Ingredients.Name) + " " + Convert.ToString(Ingredients.Expiration_Date));
+            return ((ingred.Name()) + " " + Convert.ToString(ingred.Expiration_Date()));
         }
 
         public Ingredients AddIngredient(string category,string name, double balance, DateTime expiration_date)
