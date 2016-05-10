@@ -50,20 +50,20 @@ namespace StockFood
             _expiration_date = expiration_date;
         }
 
-        public static string Category
+        public string Category ()
         {
-            get { return _category; }
+           return _category;
         }
        
 
-        public static DateTime Expiration_Date
+        public DateTime Expiration_Date()
         {
-            get { return _expiration_date; }
+            return _expiration_date; 
         }
 
-        public static string Name
+        public string Name ()
         {
-            get { return _name; }
+            return _name; 
         }
 
         public double Balance

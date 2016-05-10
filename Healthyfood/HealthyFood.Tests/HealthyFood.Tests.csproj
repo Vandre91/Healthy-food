@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="T1CreateUsers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="T2Stocks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -54,6 +55,10 @@
     <ProjectReference Include="..\Healthyfood\Healthyfood.csproj">
       <Project>{5155cc87-0506-4cad-b1db-d84462f19412}</Project>
       <Name>Healthyfood</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockFood\StockFood.csproj">
+      <Project>{d00722a5-a98b-4402-a9bc-5058f907cfd2}</Project>
+      <Name>StockFood</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

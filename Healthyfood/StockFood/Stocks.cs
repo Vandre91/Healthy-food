@@ -6,23 +6,29 @@ using System.Threading.Tasks;
 
 namespace StockFood
 {
-    class Stocks
+    public class Stocks
     {
-        public Dictionary<string, Ingredients> _stock;
+       public static Dictionary<string, Ingredients> _stock;
 
         public Stocks ()
         {
             _stock = new Dictionary<string, Ingredients>();
         }
 
-        string naming (Ingredients ingred)
+       public static string naming (Ingredients ingred)
         {
-            return ((Ingredients.Name) + " " + Convert.ToString(Ingredients.Expiration_Date));
+            return ((ingred.Name()) + " " + Convert.ToString(ingred.Expiration_Date()));
         }
 
-        public void AddIngredient(string category,string name, double balance, DateTime expiration_date)
+        public Ingredients AddIngredient(string category,string name, double balance, DateTime expiration_date)
         {
 
+            if (category == null || category == string.Empty || string.IsNullOrWhiteSpace(category)) throw new ArgumentException("The name must not be empty", nameof(category));
+            if (name == null || name == string.Empty || string.IsNullOrWhiteSpace(name)) throw new ArgumentException("The name must not be empty", nameof(name));
+            if (!(Ingredients._Category.Contains(category))) throw new ArgumentException("This category does not exist", nameof(category));
+            if (!(Ingredients._Name.Contains(name))) throw new ArgumentException("This name of ingredient does not exist", nameof(name));
+            if (expiration_date < DateTime.Today) throw new ArgumentException("This ingredient is obsolete", nameof(expiration_date));
+            if (balance <= 0) throw new ArgumentException("The balance must be more than 0", nameof(balance));
             Ingredients ingred = new Ingredients(category, name, balance, expiration_date);
             if (_stock.ContainsKey(naming(ingred)))
             {
@@ -32,6 +38,8 @@ namespace StockFood
             {
                 _stock[naming(ingred)] = ingred;
             }
+
+            return ingred;
         }
 
         public void RemoveIngredient(string category,string name, double balance, double amount, DateTime expiration_date)
