@@ -17,10 +17,10 @@ namespace StockFood
 
         string naming (Ingredients ingred)
         {
-            return (Convert.ToString(Ingredients.Category) + " " + Convert.ToString(Ingredients.Expiration_Date));
+            return ((Ingredients.Name) + " " + Convert.ToString(Ingredients.Expiration_Date));
         }
 
-        public void AddIngredient(Ingredients._Category category,string name, double balance, DateTime expiration_date)
+        public void AddIngredient(string category,string name, double balance, DateTime expiration_date)
         {
 
             Ingredients ingred = new Ingredients(category, name, balance, expiration_date);
@@ -34,7 +34,7 @@ namespace StockFood
             }
         }
 
-        public void RemoveIngredient(Ingredients._Category category,string name, double balance, double amount, DateTime expiration_date)
+        public void RemoveIngredient(string category,string name, double balance, double amount, DateTime expiration_date)
 
         {
             Ingredients ingred = new Ingredients(category, name, balance, expiration_date);
@@ -48,7 +48,7 @@ namespace StockFood
             }
         }
 
-        public void ReduceIngredient(Ingredients._Category category,string name, double balance,  DateTime expiration_date)
+        public void ReduceIngredient(string category,string name, double balance,  DateTime expiration_date)
         {
             Ingredients ingred = new Ingredients(category, name, balance, expiration_date);
             if (_stock.ContainsKey(naming(ingred)))
@@ -67,7 +67,28 @@ namespace StockFood
                 throw new ArgumentException("this ingredient does not exist", nameof(category));
             }
         }
-                    
-        }
+
+        public void CreateIngredient (string category, string name )
+        {
+            if (Ingredients._Name.Contains(name)) throw new ArgumentException("This ingredient does already exist", nameof(name));
+            else
+            {
+                Ingredients._Name.Add(name);
+                if (category == "viande" ) Ingredients.viande.Add(name);
+                if (category == "poisson") Ingredients.poisson.Add(name);
+                if (category == "crustace") Ingredients.crustace.Add(name);
+                if (category == "dessert_sucrerie") Ingredients.dessert_sucrerie.Add(name);
+                if (category == "boisson") Ingredients.boisson.Add(name);
+                if (category == "volaille") Ingredients.volaille.Add(name);
+                if (category == "legume") Ingredients.legume.Add(name);
+                if (category == "fruit") Ingredients.fruit.Add(name);
+                if (category == "produit_laitier") Ingredients.produit_laitier.Add(name);
+                if (category == "matiere_grasse") Ingredients.matiere_grasse.Add(name);
+                if (category == "feculent") Ingredients.feculent.Add(name);
+                if (category == "boulangerie") Ingredients.boulangerie.Add(name);
+                if (category == "herbe_plante") Ingredients.herbe_plante.Add(name);
+            }
+        }                    
     }
+ }
 

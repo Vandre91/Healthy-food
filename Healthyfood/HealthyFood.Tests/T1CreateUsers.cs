@@ -106,13 +106,15 @@ namespace HealthyFoodTests
         }
 
         [Test]
-        public void t07_create_a_user_with_a_different_name_and_first_name_of_another_user()
+        public void t07_create_or_modify__a_user_with_a_different_name_and_first_name_of_another_user()
         {
             Utilisateurs users = new Utilisateurs();
-            users.CreateUser("ab", "cd", 10, 10, 180, false, false);
+            Profil_Utilisateur u = users.CreateUser("ab", "cd", 10, 10, 180, false, false);
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cd", 10, 10, 180, false, false));
-            users.CreateUser("ab", "cde", 10, 10, 180, false, false);
+            Profil_Utilisateur v = users.CreateUser("ab", "cde", 10, 10, 180, false, false);
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cde", 10, 10, 180, false, false));
+            Profil_Utilisateur w = users.CreateUser("cd", "cd", 10, 10, 180, false, false);
+            Assert.Throws<ArgumentException>(() => users.modify_firstname(w, "ab"));
         }
 
         [Test]
