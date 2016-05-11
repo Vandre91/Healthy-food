@@ -39,14 +39,18 @@ namespace Healthyfood
                 string name = listView1.SelectedItems[0].SubItems[0].Text;
                 string lastname = listView1.SelectedItems[0].SubItems[1].Text;
                 Profil_Utilisateur profil = Global.Utilisateur.FindUser(name, lastname);
-                Global.Profil = profil;
+                Global.Profil = profil; 
                 userControl_Modify_Profil1.Visible = true;
+                userControl_Modify_Profil1.Focus();
             }
         }
 
         private void button_Delete_Click(object sender, EventArgs e)
         {
-
+            string name = listView1.SelectedItems[0].SubItems[0].Text;
+            string lastname = listView1.SelectedItems[0].SubItems[1].Text;
+            Global.Utilisateur.RemoveUser(name, lastname);
+            listView1.Items.RemoveAt(listView1.SelectedIndices[0]);
         }
 
         private void timer_refresh_Tick(object sender, EventArgs e)

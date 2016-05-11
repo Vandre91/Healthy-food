@@ -113,7 +113,7 @@
             // 
             // timer_refresh
             // 
-            this.timer_refresh.Interval = 5000;
+            this.timer_refresh.Interval = 10000;
             this.timer_refresh.Tick += new System.EventHandler(this.timer_refresh_Tick);
             // 
             // userControl_Modify_Profil1
