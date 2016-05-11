@@ -160,7 +160,7 @@
             this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader27 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tabPage_Backerie = new System.Windows.Forms.TabPage();
+            this.tabPage_Féculent = new System.Windows.Forms.TabPage();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -186,6 +186,19 @@
             this.columnHeader31 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader32 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader33 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabPage_Fat_Boulangerie = new System.Windows.Forms.TabPage();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.listView13 = new System.Windows.Forms.ListView();
+            this.columnHeader34 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader35 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader36 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl_Add_Remove.SuspendLayout();
             this.tabPage_Beef.SuspendLayout();
             this.tabPage_Drink.SuspendLayout();
@@ -197,8 +210,9 @@
             this.tabPage_Fruit.SuspendLayout();
             this.tabPage_Milk_product.SuspendLayout();
             this.tabPage_Fat_Content.SuspendLayout();
-            this.tabPage_Backerie.SuspendLayout();
+            this.tabPage_Féculent.SuspendLayout();
             this.tabPage_Herbes_Plants.SuspendLayout();
+            this.tabPage_Fat_Boulangerie.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView1
@@ -244,8 +258,9 @@
             this.tabControl_Add_Remove.Controls.Add(this.tabPage_Fruit);
             this.tabControl_Add_Remove.Controls.Add(this.tabPage_Milk_product);
             this.tabControl_Add_Remove.Controls.Add(this.tabPage_Fat_Content);
-            this.tabControl_Add_Remove.Controls.Add(this.tabPage_Backerie);
+            this.tabControl_Add_Remove.Controls.Add(this.tabPage_Féculent);
             this.tabControl_Add_Remove.Controls.Add(this.tabPage_Herbes_Plants);
+            this.tabControl_Add_Remove.Controls.Add(this.tabPage_Fat_Boulangerie);
             this.tabControl_Add_Remove.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl_Add_Remove.Location = new System.Drawing.Point(0, 0);
             this.tabControl_Add_Remove.Name = "tabControl_Add_Remove";
@@ -1455,23 +1470,23 @@
             this.columnHeader27.Text = "Calories";
             this.columnHeader27.Width = 67;
             // 
-            // tabPage_Backerie
+            // tabPage_Féculent
             // 
-            this.tabPage_Backerie.Controls.Add(this.label28);
-            this.tabPage_Backerie.Controls.Add(this.label29);
-            this.tabPage_Backerie.Controls.Add(this.label30);
-            this.tabPage_Backerie.Controls.Add(this.button19);
-            this.tabPage_Backerie.Controls.Add(this.button20);
-            this.tabPage_Backerie.Controls.Add(this.textBox29);
-            this.tabPage_Backerie.Controls.Add(this.textBox30);
-            this.tabPage_Backerie.Controls.Add(this.textBox31);
-            this.tabPage_Backerie.Controls.Add(this.listView11);
-            this.tabPage_Backerie.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_Backerie.Name = "tabPage_Backerie";
-            this.tabPage_Backerie.Size = new System.Drawing.Size(568, 380);
-            this.tabPage_Backerie.TabIndex = 10;
-            this.tabPage_Backerie.Text = "Féculent/boulangerie";
-            this.tabPage_Backerie.UseVisualStyleBackColor = true;
+            this.tabPage_Féculent.Controls.Add(this.label28);
+            this.tabPage_Féculent.Controls.Add(this.label29);
+            this.tabPage_Féculent.Controls.Add(this.label30);
+            this.tabPage_Féculent.Controls.Add(this.button19);
+            this.tabPage_Féculent.Controls.Add(this.button20);
+            this.tabPage_Féculent.Controls.Add(this.textBox29);
+            this.tabPage_Féculent.Controls.Add(this.textBox30);
+            this.tabPage_Féculent.Controls.Add(this.textBox31);
+            this.tabPage_Féculent.Controls.Add(this.listView11);
+            this.tabPage_Féculent.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_Féculent.Name = "tabPage_Féculent";
+            this.tabPage_Féculent.Size = new System.Drawing.Size(568, 380);
+            this.tabPage_Féculent.TabIndex = 10;
+            this.tabPage_Féculent.Text = "Féculent";
+            this.tabPage_Féculent.UseVisualStyleBackColor = true;
             // 
             // label28
             // 
@@ -1556,9 +1571,9 @@
             this.columnHeader28,
             this.columnHeader29,
             this.columnHeader30});
-            this.listView11.Location = new System.Drawing.Point(3, -1);
+            this.listView11.Location = new System.Drawing.Point(12, 3);
             this.listView11.Name = "listView11";
-            this.listView11.Size = new System.Drawing.Size(341, 378);
+            this.listView11.Size = new System.Drawing.Size(332, 371);
             this.listView11.TabIndex = 9;
             this.listView11.UseCompatibleStateImageBehavior = false;
             this.listView11.View = System.Windows.Forms.View.Details;
@@ -1701,6 +1716,125 @@
             this.columnHeader33.Text = "Calories";
             this.columnHeader33.Width = 67;
             // 
+            // tabPage_Fat_Boulangerie
+            // 
+            this.tabPage_Fat_Boulangerie.Controls.Add(this.button24);
+            this.tabPage_Fat_Boulangerie.Controls.Add(this.button23);
+            this.tabPage_Fat_Boulangerie.Controls.Add(this.textBox37);
+            this.tabPage_Fat_Boulangerie.Controls.Add(this.textBox36);
+            this.tabPage_Fat_Boulangerie.Controls.Add(this.textBox35);
+            this.tabPage_Fat_Boulangerie.Controls.Add(this.label36);
+            this.tabPage_Fat_Boulangerie.Controls.Add(this.label35);
+            this.tabPage_Fat_Boulangerie.Controls.Add(this.label34);
+            this.tabPage_Fat_Boulangerie.Controls.Add(this.listView13);
+            this.tabPage_Fat_Boulangerie.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_Fat_Boulangerie.Name = "tabPage_Fat_Boulangerie";
+            this.tabPage_Fat_Boulangerie.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_Fat_Boulangerie.Size = new System.Drawing.Size(568, 380);
+            this.tabPage_Fat_Boulangerie.TabIndex = 12;
+            this.tabPage_Fat_Boulangerie.Text = "Boulangérie";
+            this.tabPage_Fat_Boulangerie.UseVisualStyleBackColor = true;
+            // 
+            // button24
+            // 
+            this.button24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button24.Location = new System.Drawing.Point(462, 304);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(100, 70);
+            this.button24.TabIndex = 8;
+            this.button24.Text = "Retour";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // button23
+            // 
+            this.button23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button23.Location = new System.Drawing.Point(352, 304);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(97, 70);
+            this.button23.TabIndex = 7;
+            this.button23.Text = "Enregistrer";
+            this.button23.UseVisualStyleBackColor = true;
+            // 
+            // textBox37
+            // 
+            this.textBox37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox37.Location = new System.Drawing.Point(462, 111);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.Size = new System.Drawing.Size(100, 20);
+            this.textBox37.TabIndex = 6;
+            // 
+            // textBox36
+            // 
+            this.textBox36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox36.Location = new System.Drawing.Point(462, 73);
+            this.textBox36.Name = "textBox36";
+            this.textBox36.Size = new System.Drawing.Size(100, 20);
+            this.textBox36.TabIndex = 5;
+            // 
+            // textBox35
+            // 
+            this.textBox35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox35.Location = new System.Drawing.Point(462, 33);
+            this.textBox35.Name = "textBox35";
+            this.textBox35.Size = new System.Drawing.Size(100, 20);
+            this.textBox35.TabIndex = 4;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(349, 118);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(100, 13);
+            this.label36.TabIndex = 3;
+            this.label36.Text = "Date de péremption";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(349, 80);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(53, 13);
+            this.label35.TabIndex = 2;
+            this.label35.Text = "Quantité :";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(349, 40);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(35, 13);
+            this.label34.TabIndex = 1;
+            this.label34.Text = "Nom :";
+            // 
+            // listView13
+            // 
+            this.listView13.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader34,
+            this.columnHeader35,
+            this.columnHeader36});
+            this.listView13.Location = new System.Drawing.Point(6, 6);
+            this.listView13.Name = "listView13";
+            this.listView13.Size = new System.Drawing.Size(337, 371);
+            this.listView13.TabIndex = 0;
+            this.listView13.UseCompatibleStateImageBehavior = false;
+            this.listView13.View = System.Windows.Forms.View.Details;
+            this.listView13.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView13_MouseClick);
+            // 
+            // columnHeader34
+            // 
+            this.columnHeader34.Text = "Nom";
+            this.columnHeader34.Width = 99;
+            // 
+            // columnHeader35
+            // 
+            this.columnHeader35.Text = "Quantité";
+            this.columnHeader35.Width = 151;
+            // 
+            // columnHeader36
+            // 
+            this.columnHeader36.Text = "Calories";
+            this.columnHeader36.Width = 92;
+            // 
             // UserControl_Reserve_Add_Remove
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1729,10 +1863,12 @@
             this.tabPage_Milk_product.PerformLayout();
             this.tabPage_Fat_Content.ResumeLayout(false);
             this.tabPage_Fat_Content.PerformLayout();
-            this.tabPage_Backerie.ResumeLayout(false);
-            this.tabPage_Backerie.PerformLayout();
+            this.tabPage_Féculent.ResumeLayout(false);
+            this.tabPage_Féculent.PerformLayout();
             this.tabPage_Herbes_Plants.ResumeLayout(false);
             this.tabPage_Herbes_Plants.PerformLayout();
+            this.tabPage_Fat_Boulangerie.ResumeLayout(false);
+            this.tabPage_Fat_Boulangerie.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1870,7 +2006,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader25;
         private System.Windows.Forms.ColumnHeader columnHeader26;
         private System.Windows.Forms.ColumnHeader columnHeader27;
-        private System.Windows.Forms.TabPage tabPage_Backerie;
+        private System.Windows.Forms.TabPage tabPage_Féculent;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
@@ -1896,5 +2032,18 @@
         private System.Windows.Forms.ColumnHeader columnHeader31;
         private System.Windows.Forms.ColumnHeader columnHeader32;
         private System.Windows.Forms.ColumnHeader columnHeader33;
+        private System.Windows.Forms.TabPage tabPage_Fat_Boulangerie;
+        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.TextBox textBox36;
+        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.ListView listView13;
+        private System.Windows.Forms.ColumnHeader columnHeader34;
+        private System.Windows.Forms.ColumnHeader columnHeader35;
+        private System.Windows.Forms.ColumnHeader columnHeader36;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button23;
     }
 }

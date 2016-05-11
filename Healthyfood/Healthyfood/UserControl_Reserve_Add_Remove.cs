@@ -26,5 +26,10 @@ namespace Healthyfood
         {
             textBox_Name.Text = listView1.SelectedItems[0].Text;
         }
+
+        private void listView13_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
