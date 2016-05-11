@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Steak");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Steak");
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader_Quantity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader_Calories = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl_Add_Remove = new System.Windows.Forms.TabControl();
             this.tabPage_Beef = new System.Windows.Forms.TabPage();
             this.label_Date = new System.Windows.Forms.Label();
@@ -47,8 +45,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_back1 = new System.Windows.Forms.Button();
+            this.button_save_drink = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -218,11 +216,9 @@
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader_Name,
-            this.columnHeader_Quantity,
-            this.columnHeader_Calories});
+            this.columnHeader_Name});
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem4});
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(341, 378);
@@ -235,16 +231,6 @@
             // 
             this.columnHeader_Name.Text = "Nom";
             this.columnHeader_Name.Width = 196;
-            // 
-            // columnHeader_Quantity
-            // 
-            this.columnHeader_Quantity.Text = "Quantité";
-            this.columnHeader_Quantity.Width = 72;
-            // 
-            // columnHeader_Calories
-            // 
-            this.columnHeader_Calories.Text = "Calories";
-            this.columnHeader_Calories.Width = 67;
             // 
             // tabControl_Add_Remove
             // 
@@ -357,6 +343,7 @@
             // textBox_Name
             // 
             this.textBox_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_Name.Enabled = false;
             this.textBox_Name.Location = new System.Drawing.Point(459, 37);
             this.textBox_Name.Name = "textBox_Name";
             this.textBox_Name.Size = new System.Drawing.Size(100, 20);
@@ -367,8 +354,8 @@
             this.tabPage_Drink.Controls.Add(this.label1);
             this.tabPage_Drink.Controls.Add(this.label2);
             this.tabPage_Drink.Controls.Add(this.label3);
-            this.tabPage_Drink.Controls.Add(this.button1);
-            this.tabPage_Drink.Controls.Add(this.button2);
+            this.tabPage_Drink.Controls.Add(this.button_back1);
+            this.tabPage_Drink.Controls.Add(this.button_save_drink);
             this.tabPage_Drink.Controls.Add(this.textBox2);
             this.tabPage_Drink.Controls.Add(this.textBox3);
             this.tabPage_Drink.Controls.Add(this.textBox4);
@@ -411,25 +398,27 @@
             this.label3.TabIndex = 15;
             this.label3.Text = "Nom :";
             // 
-            // button1
+            // button_back1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(464, 302);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 68);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Retour";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_back1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_back1.Location = new System.Drawing.Point(464, 302);
+            this.button_back1.Name = "button_back1";
+            this.button_back1.Size = new System.Drawing.Size(98, 68);
+            this.button_back1.TabIndex = 14;
+            this.button_back1.Text = "Retour";
+            this.button_back1.UseVisualStyleBackColor = true;
+            this.button_back1.Click += new System.EventHandler(this.button_back1_Click);
             // 
-            // button2
+            // button_save_drink
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(359, 302);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 68);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Enregistrer";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_save_drink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_save_drink.Location = new System.Drawing.Point(359, 302);
+            this.button_save_drink.Name = "button_save_drink";
+            this.button_save_drink.Size = new System.Drawing.Size(99, 68);
+            this.button_save_drink.TabIndex = 13;
+            this.button_save_drink.Text = "Enregistrer";
+            this.button_save_drink.UseVisualStyleBackColor = true;
+            this.button_save_drink.Click += new System.EventHandler(this.button_save_drink_Click);
             // 
             // textBox2
             // 
@@ -1818,7 +1807,6 @@
             this.listView13.TabIndex = 0;
             this.listView13.UseCompatibleStateImageBehavior = false;
             this.listView13.View = System.Windows.Forms.View.Details;
-            this.listView13.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView13_MouseClick);
             // 
             // columnHeader34
             // 
@@ -1877,8 +1865,6 @@
 
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader_Name;
-        private System.Windows.Forms.ColumnHeader columnHeader_Quantity;
-        private System.Windows.Forms.ColumnHeader columnHeader_Calories;
         private System.Windows.Forms.TabControl tabControl_Add_Remove;
         private System.Windows.Forms.TabPage tabPage_Beef;
         private System.Windows.Forms.Label label_Date;
@@ -1893,8 +1879,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_back1;
+        private System.Windows.Forms.Button button_save_drink;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
