@@ -39,10 +39,10 @@ namespace StockFood
         static string _name;
         public static string _category;
         static DateTime _expiration_date;
-        double _balance;
+        int _balance;
 
 
-        public Ingredients (string category, string name, double balance, DateTime expiration_date)
+        public Ingredients (string category, string name, int balance, DateTime expiration_date)
         {
             _category = category;
             _name = name;
@@ -54,6 +54,9 @@ namespace StockFood
         {
            return _category;
         }
+
+        public string Category1
+        { get { return _category; } }
        
 
         public DateTime Expiration_Date()
@@ -66,17 +69,13 @@ namespace StockFood
             return _name; 
         }
 
-        public double Balance
+        public int Balance
         {
             get { return _balance; }
-            set { _balance =+ value; }
+            set { _balance = value; }
         }
 
-        public double Reduce
-        {
-            get { return _balance; }
-            set { _balance = -value; }
-        }
+  
        
     }
 }
