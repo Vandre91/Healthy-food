@@ -7,14 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StockFood;
 
 namespace Healthyfood
 {
     public partial class UserControl_Reserve_Add_Remove : UserControl
     {
+        static int count = Global.viande.Count;
+        string[] _beef = new string[count];
+        
         public UserControl_Reserve_Add_Remove()
         {
             InitializeComponent();
+            int i = 0;
+            Global.viande.CopyTo(_beef);
+            foreach (var p in _beef)
+            {
+                ListViewItem item = new ListViewItem(_beef[i]);
+                listView1.Items.Add(item);
+                i++;
+            }
         }
 
         private void button_Back_Click(object sender, EventArgs e)
@@ -27,9 +39,14 @@ namespace Healthyfood
             textBox_Name.Text = listView1.SelectedItems[0].Text;
         }
 
-        private void listView13_MouseClick(object sender, MouseEventArgs e)
+        private void button_save_drink_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button_back1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
         }
     }
 }
