@@ -113,19 +113,21 @@
             // 
             // timer_refresh
             // 
-            this.timer_refresh.Interval = 8000;
+            this.timer_refresh.Interval = 10000;
             this.timer_refresh.Tick += new System.EventHandler(this.timer_refresh_Tick);
             // 
             // userControl_Modify_Profil1
             // 
-            this.userControl_Modify_Profil1.Location = new System.Drawing.Point(320, 0);
+            this.userControl_Modify_Profil1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl_Modify_Profil1.Location = new System.Drawing.Point(0, 0);
             this.userControl_Modify_Profil1.Name = "userControl_Modify_Profil1";
-            this.userControl_Modify_Profil1.Size = new System.Drawing.Size(283, 175);
+            this.userControl_Modify_Profil1.Size = new System.Drawing.Size(603, 426);
             this.userControl_Modify_Profil1.TabIndex = 7;
             this.userControl_Modify_Profil1.Visible = false;
             // 
             // userControl_Show_Profil1
             // 
+            this.userControl_Show_Profil1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Show_Profil1.Location = new System.Drawing.Point(0, 0);
             this.userControl_Show_Profil1.Name = "userControl_Show_Profil1";
             this.userControl_Show_Profil1.Size = new System.Drawing.Size(603, 426);

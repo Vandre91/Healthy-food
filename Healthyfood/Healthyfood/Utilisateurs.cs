@@ -64,7 +64,6 @@ namespace Healthyfood
         public void modify_firstname (Profil_Utilisateur u, string firstname)
         {
             if (firstname == null || firstname == string.Empty || string.IsNullOrWhiteSpace(firstname)) throw new ArgumentException("The name must not be empty", nameof(firstname));
-            if (Famille.ContainsKey(naming(firstname, u.LastName))) throw new ArgumentException("this name does exists", nameof(firstname));
             else
             {
                 u.FirstName = firstname;
@@ -75,7 +74,6 @@ namespace Healthyfood
         public void modify_lastname(Profil_Utilisateur u, string lastname)
         {
             if (lastname == null || lastname == string.Empty || string.IsNullOrWhiteSpace(lastname)) throw new ArgumentException("The name must not be empty", nameof(lastname));
-            if (Famille.ContainsKey(naming(u.FirstName, lastname))) throw new ArgumentException("this name does exists", nameof(lastname));
             else
             {
                 u.LastName = lastname;
