@@ -9,6 +9,7 @@ using StockFood;
 
 namespace HealthyFoodTests
 {
+
     [TestFixture]
 
     public class T2Stocks
@@ -101,6 +102,9 @@ namespace HealthyFoodTests
             Assert.That(Stocks._stock[Stocks.naming(i)].Balance, Is.EqualTo(100));
             stocks.ReduceIngredient("Steak de boeuf", 50, date);
             Assert.That(Stocks._stock[Stocks.naming(i)].Balance, Is.EqualTo(50));
+            stocks.ReduceIngredient("Steak de boeuf", 50, date);
+            Assert.That(Stocks._stock.ContainsKey(Stocks.naming(i)), Is.EqualTo(false));
+
         }
 
         [Test]
@@ -111,6 +115,8 @@ namespace HealthyFoodTests
             Assert.Throws<ArgumentException>(() => stocks.CreateIngredient("viande", "lait"));
             stocks.CreateIngredient("viande", "steak de chien");
             Assert.That(Ingredients.viande.Contains("steak de chien"), Is.EqualTo(true));
+            stocks.CreateIngredient("boulangerie", "pain en forme de b du marais");
+            Assert.That(Ingredients.boulangerie.Contains("pain en forme de b du marais"), Is.EqualTo(true));
         }
     }
 }
