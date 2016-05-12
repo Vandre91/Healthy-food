@@ -17,7 +17,7 @@ namespace StockFood
 
        public static string naming (Ingredients ingred)
         {
-            return ((ingred.Name()) + " " + Convert.ToString(ingred.Expiration_Date()));
+            return ((ingred.Name) + " " + Convert.ToString(ingred.Expiration_Date));
         }
 
         public Ingredients AddIngredient(string category,string name, int balance, DateTime expiration_date)
@@ -26,7 +26,6 @@ namespace StockFood
             if (category == null || category == string.Empty || string.IsNullOrWhiteSpace(category)) throw new ArgumentException("The name must not be empty", nameof(category));
             if (name == null || name == string.Empty || string.IsNullOrWhiteSpace(name)) throw new ArgumentException("The name must not be empty", nameof(name));
             if (!(Ingredients._Category.Contains(category))) throw new ArgumentException("This category does not exist", nameof(category));
-            if (!(Ingredients._Name.Contains(name))) throw new ArgumentException("This name of ingredient does not exist", nameof(name));
             if (expiration_date < DateTime.Today) throw new ArgumentException("This ingredient is obsolete", nameof(expiration_date));
             if (balance <= 0) throw new ArgumentException("The balance must be more than 0", nameof(balance));
             Ingredients ingred = new Ingredients(category, name, balance, expiration_date);
@@ -82,13 +81,13 @@ namespace StockFood
             }
         }
 
-        public void CreateIngredient (string category, string name )
+        public void CreateIngredient(string category, string name)
         {
             if (Ingredients._Name.Contains(name)) throw new ArgumentException("This ingredient does already exist", nameof(name));
             else
             {
                 Ingredients._Name.Add(name);
-                if (category == "viande" ) Ingredients.viande.Add(name);
+                if (category == "viande") Ingredients.viande.Add(name);
                 if (category == "poisson") Ingredients.poisson.Add(name);
                 if (category == "crustace") Ingredients.crustace.Add(name);
                 if (category == "dessert_sucrerie") Ingredients.dessert_sucrerie.Add(name);
@@ -102,7 +101,11 @@ namespace StockFood
                 if (category == "boulangerie") Ingredients.boulangerie.Add(name);
                 if (category == "herbe_plante") Ingredients.herbe_plante.Add(name);
             }
-        }                    
+        }
+            public ICollection<Ingredients> IStock
+            {
+            get { return _stock.Values; }
+            }                   
     }
  }
 

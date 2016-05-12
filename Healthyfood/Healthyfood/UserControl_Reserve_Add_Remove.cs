@@ -28,6 +28,7 @@ namespace Healthyfood
             DateTime date = Convert.ToDateTime(textBox_Date.Text);
             int quantity = Int32.Parse(textBox_Quantity.Text);
             Global.Stocks.AddIngredient("viande",textBox_Name.Text,quantity,date);
+
             textBox_Name.Clear();
             textBox_Quantity.Clear();
             textBox_Date.Clear();
