@@ -15,8 +15,12 @@ namespace Healthyfood
     {
         static int countv = Global.viande.Count;
         static int countd = Global.boisson.Count;
+        static int countds = Global.dessert_sucrerie.Count;
+        static int countc = Global.crustace.Count;
+        string[] _sucrerie_dessert = new string[countds];
         string[] _beef = new string[countv];
         string[] _drink = new string[countd];
+        string[] _crustace = new string[countc];
 
 
         public UserControl_Reserve_Add_Remove()
@@ -57,8 +61,10 @@ namespace Healthyfood
         {
             int v = 0;
             int b = 0;
+            int s = 0;
             Global.viande.CopyTo(_beef);
             Global.boisson.CopyTo(_drink);
+            Global.dessert_sucrerie.CopyTo(_sucrerie_dessert);
             foreach (var p in _beef)
             {
                 ListViewItem item = new ListViewItem(_beef[v]);
@@ -70,6 +76,12 @@ namespace Healthyfood
                 ListViewItem item = new ListViewItem(_drink[b]);
                 listView2.Items.Add(item);
                 b++;
+            }
+            foreach (var p in _sucrerie_dessert)
+            {
+                ListViewItem item = new ListViewItem(_sucrerie_dessert[s]);
+                listView3.Items.Add(item);
+                s++;
             }
         }
 
