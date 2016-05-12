@@ -72,6 +72,7 @@ namespace StockFood
                     string category = _stock[name + " " + Convert.ToString(expiration_date)].Category1;
                     RemoveIngredient(name, expiration_date);
                    Ingredients i = AddIngredient(category, name, bal, expiration_date);
+                    if (bal == 0)  RemoveIngredient(name, expiration_date);
                    
                 }
             }
