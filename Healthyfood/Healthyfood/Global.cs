@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StockFood;
 
 namespace Healthyfood
 {
@@ -10,7 +11,13 @@ namespace Healthyfood
     {
         static Utilisateurs  _Utilisateur = new Utilisateurs();
         static Profil_Utilisateur _Profil;
-        public static List<string> viande = new List<string> { "Steak de boeuf", "Collier de boeuf", "Entrecote de boeuf", "cote de boeuf", "rumsteck de boeuf", "filet de boeuf", "jarret de boeuf", "onglet de boeuf", "flanchet de boeuf", "poitrine de boeuf", "bifteck de boeuf", "collier d'agneau", "cote d'agneau", "filet d'agneau", "gigot d'agneau", "poitrine d'agneau", "epaule d'agneau", "collier de veau", "cote de veau", "filet de veau", "poitrine de veau", "epaule de veau", "jarret de veau", "flanchet de veau", "tendron de veau", "echine de porc", "cote de porc", "filet de porc", "jambon de porc", "jarret de porc", "collier de cheval", "cote de cheval", "entrecote de cheval", "filet de cheval", "rumsteck de cheval", "gite de cheval", "merlan de cheval", "tranche de cheval", "jaret de cheval", "araignee de cheval", "onglet de cheval" };
+        static Stocks _Stocks = new Stocks();
+        public static List<string> viande = new List<string> { "Steak de boeuf", "Collier de boeuf", "Entrecote de boeuf", "Cote de boeuf", "Rumsteck de boeuf", "Filet de boeuf", "Jarret de boeuf", "Onglet de boeuf", "Flanchet de boeuf", "Poitrine de boeuf", "Bifteck de boeuf", "Collier d'agneau", "Cote d'agneau", "Filet d'agneau", "Gigot d'agneau", "Poitrine d'agneau", "Epaule d'agneau", "Collier de veau", "Cote de veau", "Filet de veau", "Poitrine de veau", "Epaule de veau", "Jarret de veau", "Flanchet de veau", "Tendron de veau", "Echine de porc", "Cote de porc", "Filet de porc", "Jambon de porc", "Jarret de porc", "Collier de cheval", "Cote de cheval", "Entrecote de cheval", "Filet de cheval", "Rumsteck de cheval", "Gite de cheval","Jaret de cheval", "Onglet de cheval" };
+        public static List<string> boisson = new List<string> { "lait", "absinthe", "allasch", "amaro", "amoroso", "café", "calvados", "champagne", "cognac", "eau de vie", "frambroise", "irish mist", "prunelle", "sirop", "tequila", "vin", "vodka", "whisky" };
+
+
+
+
         public static Utilisateurs Utilisateur
         {
             get { return _Utilisateur; }
@@ -20,6 +27,11 @@ namespace Healthyfood
         {
             get { return _Profil; }
             set {  _Profil = value; }
+        }
+        public static Stocks Stocks
+        {
+            get { return _Stocks; }
+            set { if (value == null) value = new Stocks(); }
         }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Steak");
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl_Add_Remove = new System.Windows.Forms.TabControl();
@@ -38,7 +37,7 @@
             this.label_Name = new System.Windows.Forms.Label();
             this.button_Back = new System.Windows.Forms.Button();
             this.button_Save = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_Date = new System.Windows.Forms.TextBox();
             this.textBox_Quantity = new System.Windows.Forms.TextBox();
             this.textBox_Name = new System.Windows.Forms.TextBox();
             this.tabPage_Drink = new System.Windows.Forms.TabPage();
@@ -49,11 +48,9 @@
             this.button_save_drink = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox_Name_drink = new System.Windows.Forms.TextBox();
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Dessert = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -217,8 +214,6 @@
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader_Name});
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(341, 378);
@@ -261,7 +256,7 @@
             this.tabPage_Beef.Controls.Add(this.label_Name);
             this.tabPage_Beef.Controls.Add(this.button_Back);
             this.tabPage_Beef.Controls.Add(this.button_Save);
-            this.tabPage_Beef.Controls.Add(this.textBox1);
+            this.tabPage_Beef.Controls.Add(this.textBox_Date);
             this.tabPage_Beef.Controls.Add(this.textBox_Quantity);
             this.tabPage_Beef.Controls.Add(this.textBox_Name);
             this.tabPage_Beef.Controls.Add(this.listView1);
@@ -323,14 +318,15 @@
             this.button_Save.TabIndex = 4;
             this.button_Save.Text = "Enregistrer";
             this.button_Save.UseVisualStyleBackColor = true;
+            this.button_Save.Click += new System.EventHandler(this.button_Save_Click);
             // 
-            // textBox1
+            // textBox_Date
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(459, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.textBox_Date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_Date.Location = new System.Drawing.Point(459, 113);
+            this.textBox_Date.Name = "textBox_Date";
+            this.textBox_Date.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Date.TabIndex = 3;
             // 
             // textBox_Quantity
             // 
@@ -358,7 +354,7 @@
             this.tabPage_Drink.Controls.Add(this.button_save_drink);
             this.tabPage_Drink.Controls.Add(this.textBox2);
             this.tabPage_Drink.Controls.Add(this.textBox3);
-            this.tabPage_Drink.Controls.Add(this.textBox4);
+            this.tabPage_Drink.Controls.Add(this.textBox_Name_drink);
             this.tabPage_Drink.Controls.Add(this.listView2);
             this.tabPage_Drink.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Drink.Name = "tabPage_Drink";
@@ -436,13 +432,14 @@
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 11;
             // 
-            // textBox4
+            // textBox_Name_drink
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(462, 36);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 10;
+            this.textBox_Name_drink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_Name_drink.Enabled = false;
+            this.textBox_Name_drink.Location = new System.Drawing.Point(462, 36);
+            this.textBox_Name_drink.Name = "textBox_Name_drink";
+            this.textBox_Name_drink.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Name_drink.TabIndex = 10;
             // 
             // listView2
             // 
@@ -450,30 +447,19 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
+            this.columnHeader1});
             this.listView2.Location = new System.Drawing.Point(3, -1);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(341, 378);
             this.listView2.TabIndex = 9;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
+            this.listView2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView2_MouseClick);
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "Nom";
             this.columnHeader1.Width = 196;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Quantité";
-            this.columnHeader2.Width = 72;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Calories";
-            this.columnHeader3.Width = 67;
             // 
             // tabPage_Dessert
             // 
@@ -1830,6 +1816,7 @@
             this.Controls.Add(this.tabControl_Add_Remove);
             this.Name = "UserControl_Reserve_Add_Remove";
             this.Size = new System.Drawing.Size(576, 406);
+            this.Enter += new System.EventHandler(this.UserControl_Reserve_Add_Remove_Enter);
             this.tabControl_Add_Remove.ResumeLayout(false);
             this.tabPage_Beef.ResumeLayout(false);
             this.tabPage_Beef.PerformLayout();
@@ -1872,7 +1859,7 @@
         private System.Windows.Forms.Label label_Name;
         private System.Windows.Forms.Button button_Back;
         private System.Windows.Forms.Button button_Save;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_Date;
         private System.Windows.Forms.TextBox textBox_Quantity;
         private System.Windows.Forms.TextBox textBox_Name;
         private System.Windows.Forms.TabPage tabPage_Drink;
@@ -1883,11 +1870,9 @@
         private System.Windows.Forms.Button button_save_drink;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox_Name_drink;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.TabPage tabPage_Dessert;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
