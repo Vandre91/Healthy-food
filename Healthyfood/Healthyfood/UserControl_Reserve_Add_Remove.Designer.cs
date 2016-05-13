@@ -69,10 +69,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.button_back_crustacean = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.btn_enreg_crustaceam = new System.Windows.Forms.Button();
+            this.txt_dateperemption_crust = new System.Windows.Forms.TextBox();
+            this.txt_quantity_crust = new System.Windows.Forms.TextBox();
+            this.txt_name_crust = new System.Windows.Forms.TextBox();
             this.listView4 = new System.Windows.Forms.ListView();
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -82,10 +82,10 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.button_Back_fish = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.btn_enreg_fish = new System.Windows.Forms.Button();
+            this.txt_dateperemption_fish = new System.Windows.Forms.TextBox();
+            this.txt_quantity_fish = new System.Windows.Forms.TextBox();
+            this.txt_name_fish = new System.Windows.Forms.TextBox();
             this.listView5 = new System.Windows.Forms.ListView();
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -95,10 +95,10 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.button_back_poultry = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.btn_enreg_poultry = new System.Windows.Forms.Button();
+            this.txt_dateperemtion_poultry = new System.Windows.Forms.TextBox();
+            this.txt_quantity_poultry = new System.Windows.Forms.TextBox();
+            this.txt_name_poultry = new System.Windows.Forms.TextBox();
             this.listView6 = new System.Windows.Forms.ListView();
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -108,10 +108,10 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.button_back_vegetable = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.btn_enreg_vegetable = new System.Windows.Forms.Button();
+            this.txt_dateperemtion_vegetable = new System.Windows.Forms.TextBox();
+            this.txt_quantity_vegetable = new System.Windows.Forms.TextBox();
+            this.txt_name_vegetable = new System.Windows.Forms.TextBox();
             this.listView7 = new System.Windows.Forms.ListView();
             this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -121,10 +121,10 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.button_back_fruit = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.btn_enreg_fruit = new System.Windows.Forms.Button();
+            this.txt_dateperemtion_fruit = new System.Windows.Forms.TextBox();
+            this.txt_quantity_fruit = new System.Windows.Forms.TextBox();
+            this.txt_name_fruit = new System.Windows.Forms.TextBox();
             this.listView8 = new System.Windows.Forms.ListView();
             this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -592,10 +592,10 @@
             this.tabPage_Crustacean.Controls.Add(this.label8);
             this.tabPage_Crustacean.Controls.Add(this.label9);
             this.tabPage_Crustacean.Controls.Add(this.button_back_crustacean);
-            this.tabPage_Crustacean.Controls.Add(this.button6);
-            this.tabPage_Crustacean.Controls.Add(this.textBox8);
-            this.tabPage_Crustacean.Controls.Add(this.textBox9);
-            this.tabPage_Crustacean.Controls.Add(this.textBox10);
+            this.tabPage_Crustacean.Controls.Add(this.btn_enreg_crustaceam);
+            this.tabPage_Crustacean.Controls.Add(this.txt_dateperemption_crust);
+            this.tabPage_Crustacean.Controls.Add(this.txt_quantity_crust);
+            this.tabPage_Crustacean.Controls.Add(this.txt_name_crust);
             this.tabPage_Crustacean.Controls.Add(this.listView4);
             this.tabPage_Crustacean.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Crustacean.Name = "tabPage_Crustacean";
@@ -645,39 +645,40 @@
             this.button_back_crustacean.UseVisualStyleBackColor = true;
             this.button_back_crustacean.Click += new System.EventHandler(this.button_back_crustacean_Click);
             // 
-            // button6
+            // btn_enreg_crustaceam
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.Location = new System.Drawing.Point(359, 302);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(99, 68);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Enregistrer";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btn_enreg_crustaceam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_enreg_crustaceam.Location = new System.Drawing.Point(359, 302);
+            this.btn_enreg_crustaceam.Name = "btn_enreg_crustaceam";
+            this.btn_enreg_crustaceam.Size = new System.Drawing.Size(99, 68);
+            this.btn_enreg_crustaceam.TabIndex = 13;
+            this.btn_enreg_crustaceam.Text = "Enregistrer";
+            this.btn_enreg_crustaceam.UseVisualStyleBackColor = true;
+            this.btn_enreg_crustaceam.Click += new System.EventHandler(this.btn_enreg_crustaceam_Click);
             // 
-            // textBox8
+            // txt_dateperemption_crust
             // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.Location = new System.Drawing.Point(462, 112);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 12;
+            this.txt_dateperemption_crust.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_dateperemption_crust.Location = new System.Drawing.Point(462, 112);
+            this.txt_dateperemption_crust.Name = "txt_dateperemption_crust";
+            this.txt_dateperemption_crust.Size = new System.Drawing.Size(100, 20);
+            this.txt_dateperemption_crust.TabIndex = 12;
             // 
-            // textBox9
+            // txt_quantity_crust
             // 
-            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox9.Location = new System.Drawing.Point(462, 74);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 11;
+            this.txt_quantity_crust.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_quantity_crust.Location = new System.Drawing.Point(462, 74);
+            this.txt_quantity_crust.Name = "txt_quantity_crust";
+            this.txt_quantity_crust.Size = new System.Drawing.Size(100, 20);
+            this.txt_quantity_crust.TabIndex = 11;
             // 
-            // textBox10
+            // txt_name_crust
             // 
-            this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox10.Location = new System.Drawing.Point(462, 36);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 10;
+            this.txt_name_crust.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_name_crust.Location = new System.Drawing.Point(462, 36);
+            this.txt_name_crust.Name = "txt_name_crust";
+            this.txt_name_crust.Size = new System.Drawing.Size(100, 20);
+            this.txt_name_crust.TabIndex = 10;
             // 
             // listView4
             // 
@@ -716,10 +717,10 @@
             this.tabPage_Fish.Controls.Add(this.label11);
             this.tabPage_Fish.Controls.Add(this.label12);
             this.tabPage_Fish.Controls.Add(this.button_Back_fish);
-            this.tabPage_Fish.Controls.Add(this.button8);
-            this.tabPage_Fish.Controls.Add(this.textBox11);
-            this.tabPage_Fish.Controls.Add(this.textBox12);
-            this.tabPage_Fish.Controls.Add(this.textBox13);
+            this.tabPage_Fish.Controls.Add(this.btn_enreg_fish);
+            this.tabPage_Fish.Controls.Add(this.txt_dateperemption_fish);
+            this.tabPage_Fish.Controls.Add(this.txt_quantity_fish);
+            this.tabPage_Fish.Controls.Add(this.txt_name_fish);
             this.tabPage_Fish.Controls.Add(this.listView5);
             this.tabPage_Fish.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Fish.Name = "tabPage_Fish";
@@ -769,39 +770,40 @@
             this.button_Back_fish.UseVisualStyleBackColor = true;
             this.button_Back_fish.Click += new System.EventHandler(this.button_Back_fish_Click);
             // 
-            // button8
+            // btn_enreg_fish
             // 
-            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button8.Location = new System.Drawing.Point(359, 302);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(99, 68);
-            this.button8.TabIndex = 13;
-            this.button8.Text = "Enregistrer";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btn_enreg_fish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_enreg_fish.Location = new System.Drawing.Point(359, 302);
+            this.btn_enreg_fish.Name = "btn_enreg_fish";
+            this.btn_enreg_fish.Size = new System.Drawing.Size(99, 68);
+            this.btn_enreg_fish.TabIndex = 13;
+            this.btn_enreg_fish.Text = "Enregistrer";
+            this.btn_enreg_fish.UseVisualStyleBackColor = true;
+            this.btn_enreg_fish.Click += new System.EventHandler(this.btn_enreg_fish_Click);
             // 
-            // textBox11
+            // txt_dateperemption_fish
             // 
-            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox11.Location = new System.Drawing.Point(462, 112);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 12;
+            this.txt_dateperemption_fish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_dateperemption_fish.Location = new System.Drawing.Point(462, 112);
+            this.txt_dateperemption_fish.Name = "txt_dateperemption_fish";
+            this.txt_dateperemption_fish.Size = new System.Drawing.Size(100, 20);
+            this.txt_dateperemption_fish.TabIndex = 12;
             // 
-            // textBox12
+            // txt_quantity_fish
             // 
-            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox12.Location = new System.Drawing.Point(462, 74);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 11;
+            this.txt_quantity_fish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_quantity_fish.Location = new System.Drawing.Point(462, 74);
+            this.txt_quantity_fish.Name = "txt_quantity_fish";
+            this.txt_quantity_fish.Size = new System.Drawing.Size(100, 20);
+            this.txt_quantity_fish.TabIndex = 11;
             // 
-            // textBox13
+            // txt_name_fish
             // 
-            this.textBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox13.Location = new System.Drawing.Point(462, 36);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 10;
+            this.txt_name_fish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_name_fish.Location = new System.Drawing.Point(462, 36);
+            this.txt_name_fish.Name = "txt_name_fish";
+            this.txt_name_fish.Size = new System.Drawing.Size(100, 20);
+            this.txt_name_fish.TabIndex = 10;
             // 
             // listView5
             // 
@@ -840,10 +842,10 @@
             this.tabPage_Poultry.Controls.Add(this.label14);
             this.tabPage_Poultry.Controls.Add(this.label15);
             this.tabPage_Poultry.Controls.Add(this.button_back_poultry);
-            this.tabPage_Poultry.Controls.Add(this.button10);
-            this.tabPage_Poultry.Controls.Add(this.textBox14);
-            this.tabPage_Poultry.Controls.Add(this.textBox15);
-            this.tabPage_Poultry.Controls.Add(this.textBox16);
+            this.tabPage_Poultry.Controls.Add(this.btn_enreg_poultry);
+            this.tabPage_Poultry.Controls.Add(this.txt_dateperemtion_poultry);
+            this.tabPage_Poultry.Controls.Add(this.txt_quantity_poultry);
+            this.tabPage_Poultry.Controls.Add(this.txt_name_poultry);
             this.tabPage_Poultry.Controls.Add(this.listView6);
             this.tabPage_Poultry.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Poultry.Name = "tabPage_Poultry";
@@ -893,39 +895,40 @@
             this.button_back_poultry.UseVisualStyleBackColor = true;
             this.button_back_poultry.Click += new System.EventHandler(this.button_poultry_Click);
             // 
-            // button10
+            // btn_enreg_poultry
             // 
-            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button10.Location = new System.Drawing.Point(359, 302);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(99, 68);
-            this.button10.TabIndex = 13;
-            this.button10.Text = "Enregistrer";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btn_enreg_poultry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_enreg_poultry.Location = new System.Drawing.Point(359, 302);
+            this.btn_enreg_poultry.Name = "btn_enreg_poultry";
+            this.btn_enreg_poultry.Size = new System.Drawing.Size(99, 68);
+            this.btn_enreg_poultry.TabIndex = 13;
+            this.btn_enreg_poultry.Text = "Enregistrer";
+            this.btn_enreg_poultry.UseVisualStyleBackColor = true;
+            this.btn_enreg_poultry.Click += new System.EventHandler(this.btn_enreg_poultry_Click);
             // 
-            // textBox14
+            // txt_dateperemtion_poultry
             // 
-            this.textBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox14.Location = new System.Drawing.Point(462, 112);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 12;
+            this.txt_dateperemtion_poultry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_dateperemtion_poultry.Location = new System.Drawing.Point(462, 112);
+            this.txt_dateperemtion_poultry.Name = "txt_dateperemtion_poultry";
+            this.txt_dateperemtion_poultry.Size = new System.Drawing.Size(100, 20);
+            this.txt_dateperemtion_poultry.TabIndex = 12;
             // 
-            // textBox15
+            // txt_quantity_poultry
             // 
-            this.textBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox15.Location = new System.Drawing.Point(462, 74);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 11;
+            this.txt_quantity_poultry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_quantity_poultry.Location = new System.Drawing.Point(462, 74);
+            this.txt_quantity_poultry.Name = "txt_quantity_poultry";
+            this.txt_quantity_poultry.Size = new System.Drawing.Size(100, 20);
+            this.txt_quantity_poultry.TabIndex = 11;
             // 
-            // textBox16
+            // txt_name_poultry
             // 
-            this.textBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox16.Location = new System.Drawing.Point(462, 36);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 10;
+            this.txt_name_poultry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_name_poultry.Location = new System.Drawing.Point(462, 36);
+            this.txt_name_poultry.Name = "txt_name_poultry";
+            this.txt_name_poultry.Size = new System.Drawing.Size(100, 20);
+            this.txt_name_poultry.TabIndex = 10;
             // 
             // listView6
             // 
@@ -964,10 +967,10 @@
             this.tabPage_Vegetables.Controls.Add(this.label17);
             this.tabPage_Vegetables.Controls.Add(this.label18);
             this.tabPage_Vegetables.Controls.Add(this.button_back_vegetable);
-            this.tabPage_Vegetables.Controls.Add(this.button12);
-            this.tabPage_Vegetables.Controls.Add(this.textBox17);
-            this.tabPage_Vegetables.Controls.Add(this.textBox18);
-            this.tabPage_Vegetables.Controls.Add(this.textBox19);
+            this.tabPage_Vegetables.Controls.Add(this.btn_enreg_vegetable);
+            this.tabPage_Vegetables.Controls.Add(this.txt_dateperemtion_vegetable);
+            this.tabPage_Vegetables.Controls.Add(this.txt_quantity_vegetable);
+            this.tabPage_Vegetables.Controls.Add(this.txt_name_vegetable);
             this.tabPage_Vegetables.Controls.Add(this.listView7);
             this.tabPage_Vegetables.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Vegetables.Name = "tabPage_Vegetables";
@@ -1017,39 +1020,40 @@
             this.button_back_vegetable.UseVisualStyleBackColor = true;
             this.button_back_vegetable.Click += new System.EventHandler(this.button_back_vegetable_Click);
             // 
-            // button12
+            // btn_enreg_vegetable
             // 
-            this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button12.Location = new System.Drawing.Point(359, 302);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(99, 68);
-            this.button12.TabIndex = 13;
-            this.button12.Text = "Enregistrer";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btn_enreg_vegetable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_enreg_vegetable.Location = new System.Drawing.Point(359, 302);
+            this.btn_enreg_vegetable.Name = "btn_enreg_vegetable";
+            this.btn_enreg_vegetable.Size = new System.Drawing.Size(99, 68);
+            this.btn_enreg_vegetable.TabIndex = 13;
+            this.btn_enreg_vegetable.Text = "Enregistrer";
+            this.btn_enreg_vegetable.UseVisualStyleBackColor = true;
+            this.btn_enreg_vegetable.Click += new System.EventHandler(this.btn_enreg_vegetable_Click);
             // 
-            // textBox17
+            // txt_dateperemtion_vegetable
             // 
-            this.textBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox17.Location = new System.Drawing.Point(462, 112);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
-            this.textBox17.TabIndex = 12;
+            this.txt_dateperemtion_vegetable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_dateperemtion_vegetable.Location = new System.Drawing.Point(462, 112);
+            this.txt_dateperemtion_vegetable.Name = "txt_dateperemtion_vegetable";
+            this.txt_dateperemtion_vegetable.Size = new System.Drawing.Size(100, 20);
+            this.txt_dateperemtion_vegetable.TabIndex = 12;
             // 
-            // textBox18
+            // txt_quantity_vegetable
             // 
-            this.textBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox18.Location = new System.Drawing.Point(462, 74);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 20);
-            this.textBox18.TabIndex = 11;
+            this.txt_quantity_vegetable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_quantity_vegetable.Location = new System.Drawing.Point(462, 74);
+            this.txt_quantity_vegetable.Name = "txt_quantity_vegetable";
+            this.txt_quantity_vegetable.Size = new System.Drawing.Size(100, 20);
+            this.txt_quantity_vegetable.TabIndex = 11;
             // 
-            // textBox19
+            // txt_name_vegetable
             // 
-            this.textBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox19.Location = new System.Drawing.Point(462, 36);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(100, 20);
-            this.textBox19.TabIndex = 10;
+            this.txt_name_vegetable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_name_vegetable.Location = new System.Drawing.Point(462, 36);
+            this.txt_name_vegetable.Name = "txt_name_vegetable";
+            this.txt_name_vegetable.Size = new System.Drawing.Size(100, 20);
+            this.txt_name_vegetable.TabIndex = 10;
             // 
             // listView7
             // 
@@ -1088,10 +1092,10 @@
             this.tabPage_Fruit.Controls.Add(this.label20);
             this.tabPage_Fruit.Controls.Add(this.label21);
             this.tabPage_Fruit.Controls.Add(this.button_back_fruit);
-            this.tabPage_Fruit.Controls.Add(this.button14);
-            this.tabPage_Fruit.Controls.Add(this.textBox20);
-            this.tabPage_Fruit.Controls.Add(this.textBox21);
-            this.tabPage_Fruit.Controls.Add(this.textBox22);
+            this.tabPage_Fruit.Controls.Add(this.btn_enreg_fruit);
+            this.tabPage_Fruit.Controls.Add(this.txt_dateperemtion_fruit);
+            this.tabPage_Fruit.Controls.Add(this.txt_quantity_fruit);
+            this.tabPage_Fruit.Controls.Add(this.txt_name_fruit);
             this.tabPage_Fruit.Controls.Add(this.listView8);
             this.tabPage_Fruit.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Fruit.Name = "tabPage_Fruit";
@@ -1141,39 +1145,40 @@
             this.button_back_fruit.UseVisualStyleBackColor = true;
             this.button_back_fruit.Click += new System.EventHandler(this.button_back_fruit_Click);
             // 
-            // button14
+            // btn_enreg_fruit
             // 
-            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button14.Location = new System.Drawing.Point(359, 302);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(99, 68);
-            this.button14.TabIndex = 13;
-            this.button14.Text = "Enregistrer";
-            this.button14.UseVisualStyleBackColor = true;
+            this.btn_enreg_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_enreg_fruit.Location = new System.Drawing.Point(359, 302);
+            this.btn_enreg_fruit.Name = "btn_enreg_fruit";
+            this.btn_enreg_fruit.Size = new System.Drawing.Size(99, 68);
+            this.btn_enreg_fruit.TabIndex = 13;
+            this.btn_enreg_fruit.Text = "Enregistrer";
+            this.btn_enreg_fruit.UseVisualStyleBackColor = true;
+            this.btn_enreg_fruit.Click += new System.EventHandler(this.btn_enreg_fruit_Click);
             // 
-            // textBox20
+            // txt_dateperemtion_fruit
             // 
-            this.textBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox20.Location = new System.Drawing.Point(462, 112);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 20);
-            this.textBox20.TabIndex = 12;
+            this.txt_dateperemtion_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_dateperemtion_fruit.Location = new System.Drawing.Point(462, 112);
+            this.txt_dateperemtion_fruit.Name = "txt_dateperemtion_fruit";
+            this.txt_dateperemtion_fruit.Size = new System.Drawing.Size(100, 20);
+            this.txt_dateperemtion_fruit.TabIndex = 12;
             // 
-            // textBox21
+            // txt_quantity_fruit
             // 
-            this.textBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox21.Location = new System.Drawing.Point(462, 74);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(100, 20);
-            this.textBox21.TabIndex = 11;
+            this.txt_quantity_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_quantity_fruit.Location = new System.Drawing.Point(462, 74);
+            this.txt_quantity_fruit.Name = "txt_quantity_fruit";
+            this.txt_quantity_fruit.Size = new System.Drawing.Size(100, 20);
+            this.txt_quantity_fruit.TabIndex = 11;
             // 
-            // textBox22
+            // txt_name_fruit
             // 
-            this.textBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox22.Location = new System.Drawing.Point(462, 36);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(100, 20);
-            this.textBox22.TabIndex = 10;
+            this.txt_name_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_name_fruit.Location = new System.Drawing.Point(462, 36);
+            this.txt_name_fruit.Name = "txt_name_fruit";
+            this.txt_name_fruit.Size = new System.Drawing.Size(100, 20);
+            this.txt_name_fruit.TabIndex = 10;
             // 
             // listView8
             // 
@@ -1903,10 +1908,10 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button_back_crustacean;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Button btn_enreg_crustaceam;
+        private System.Windows.Forms.TextBox txt_dateperemption_crust;
+        private System.Windows.Forms.TextBox txt_quantity_crust;
+        private System.Windows.Forms.TextBox txt_name_crust;
         private System.Windows.Forms.ListView listView4;
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
@@ -1916,10 +1921,10 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button_Back_fish;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Button btn_enreg_fish;
+        private System.Windows.Forms.TextBox txt_dateperemption_fish;
+        private System.Windows.Forms.TextBox txt_quantity_fish;
+        private System.Windows.Forms.TextBox txt_name_fish;
         private System.Windows.Forms.ListView listView5;
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.ColumnHeader columnHeader11;
@@ -1929,10 +1934,10 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button_back_poultry;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Button btn_enreg_poultry;
+        private System.Windows.Forms.TextBox txt_dateperemtion_poultry;
+        private System.Windows.Forms.TextBox txt_quantity_poultry;
+        private System.Windows.Forms.TextBox txt_name_poultry;
         private System.Windows.Forms.ListView listView6;
         private System.Windows.Forms.ColumnHeader columnHeader13;
         private System.Windows.Forms.ColumnHeader columnHeader14;
@@ -1942,10 +1947,10 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button_back_vegetable;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.Button btn_enreg_vegetable;
+        private System.Windows.Forms.TextBox txt_dateperemtion_vegetable;
+        private System.Windows.Forms.TextBox txt_quantity_vegetable;
+        private System.Windows.Forms.TextBox txt_name_vegetable;
         private System.Windows.Forms.ListView listView7;
         private System.Windows.Forms.ColumnHeader columnHeader16;
         private System.Windows.Forms.ColumnHeader columnHeader17;
@@ -1955,10 +1960,10 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button button_back_fruit;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.Button btn_enreg_fruit;
+        private System.Windows.Forms.TextBox txt_dateperemtion_fruit;
+        private System.Windows.Forms.TextBox txt_quantity_fruit;
+        private System.Windows.Forms.TextBox txt_name_fruit;
         private System.Windows.Forms.ListView listView8;
         private System.Windows.Forms.ColumnHeader columnHeader19;
         private System.Windows.Forms.ColumnHeader columnHeader20;
