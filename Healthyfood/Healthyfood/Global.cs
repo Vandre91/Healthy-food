@@ -57,7 +57,6 @@ namespace Healthyfood
                 if (category == "feculent") feculent.Add(name);
                 if (category == "boulangerie") boulangerie.Add(name);
                 if (category == "herbe_plante") herbe_plante.Add(name);
-            }
-        }
+         }
     }
 }
