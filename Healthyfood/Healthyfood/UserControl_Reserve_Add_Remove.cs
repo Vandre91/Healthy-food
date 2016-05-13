@@ -68,10 +68,7 @@ namespace Healthyfood
             textBox_Name.Text = listView1.SelectedItems[0].Text;
         }
 
-        private void button_save_drink_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button_back1_Click(object sender, EventArgs e)
         {
@@ -193,6 +190,112 @@ namespace Healthyfood
         private void listView2_MouseClick(object sender, MouseEventArgs e)
         {
             textBox_Name_drink.Text = listView2.SelectedItems[0].Text;
+        }
+
+        
+
+       
+
+        private void Btn_back_milk_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void Btn_back_fat_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void Btn_back_starchy_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void Btn_bacl_grass_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void Btn_back_bakery_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void button_back_dessert_Click_1(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void button_back_crustacean_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void button_Back_fish_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void button_poultry_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void button_back_vegetable_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void button_back_fruit_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void button_back_dairyproduct_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void button_back_starchyfood_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void button_back_fat_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void button_back_grass_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void button_back_bukery_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void button_save_drink_Click(object sender, EventArgs e)
+        {
+            DateTime date = Convert.ToDateTime(textbox_datePeremption.Text);
+            int quantity = Int32.Parse(textbox_quantity_drink.Text);
+            Global.Stocks.AddIngredient("boisson", textBox_Name_drink.Text, quantity, date);
+
+            textBox_Name_drink.Clear();
+            textbox_quantity_drink.Clear();
+            textbox_datePeremption.Clear();
+        }
+
+        private void btn_enregistrer_Click(object sender, EventArgs e)
+        {
+            DateTime date = Convert.ToDateTime(txt_dateperemtion_dessert.Text);
+            int quantity = Int32.Parse(txt_quantity_dessert.Text);
+            Global.Stocks.AddIngredient("dessert_sucrerie", txt_name_dessert.Text, quantity, date);
+
+            txt_name_dessert.Clear();
+            txt_quantity_dessert.Clear();
+            txt_dateperemtion_dessert.Clear();
         }
     }
 }
