@@ -46,8 +46,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button_back1 = new System.Windows.Forms.Button();
             this.button_save_drink = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textbox_datePeremption = new System.Windows.Forms.TextBox();
+            this.textbox_quantity_drink = new System.Windows.Forms.TextBox();
             this.textBox_Name_drink = new System.Windows.Forms.TextBox();
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -55,11 +55,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.button_back_dessert = new System.Windows.Forms.Button();
+            this.btn_enregistrer = new System.Windows.Forms.Button();
+            this.txt_dateperemtion_dessert = new System.Windows.Forms.TextBox();
+            this.txt_quantity_dessert = new System.Windows.Forms.TextBox();
+            this.txt_name_dessert = new System.Windows.Forms.TextBox();
             this.listView3 = new System.Windows.Forms.ListView();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -68,7 +68,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button_back_crustacean = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -81,7 +81,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
+            this.button_Back_fish = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -94,7 +94,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
+            this.button_back_poultry = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -107,7 +107,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
+            this.button_back_vegetable = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
@@ -120,7 +120,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.button13 = new System.Windows.Forms.Button();
+            this.button_back_fruit = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
@@ -133,7 +133,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.button15 = new System.Windows.Forms.Button();
+            this.button_back_dairyproduct = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
@@ -146,7 +146,7 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
+            this.button_back_fat = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.textBox27 = new System.Windows.Forms.TextBox();
@@ -159,7 +159,7 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.button19 = new System.Windows.Forms.Button();
+            this.button_back_starchyfood = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.textBox30 = new System.Windows.Forms.TextBox();
@@ -172,7 +172,7 @@
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.button21 = new System.Windows.Forms.Button();
+            this.button_back_grass = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.textBox32 = new System.Windows.Forms.TextBox();
             this.textBox33 = new System.Windows.Forms.TextBox();
@@ -182,7 +182,7 @@
             this.columnHeader32 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader33 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Fat_Boulangerie = new System.Windows.Forms.TabPage();
-            this.button24 = new System.Windows.Forms.Button();
+            this.button_back_bukery = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.textBox37 = new System.Windows.Forms.TextBox();
             this.textBox36 = new System.Windows.Forms.TextBox();
@@ -352,8 +352,8 @@
             this.tabPage_Drink.Controls.Add(this.label3);
             this.tabPage_Drink.Controls.Add(this.button_back1);
             this.tabPage_Drink.Controls.Add(this.button_save_drink);
-            this.tabPage_Drink.Controls.Add(this.textBox2);
-            this.tabPage_Drink.Controls.Add(this.textBox3);
+            this.tabPage_Drink.Controls.Add(this.textbox_datePeremption);
+            this.tabPage_Drink.Controls.Add(this.textbox_quantity_drink);
             this.tabPage_Drink.Controls.Add(this.textBox_Name_drink);
             this.tabPage_Drink.Controls.Add(this.listView2);
             this.tabPage_Drink.Location = new System.Drawing.Point(4, 22);
@@ -416,21 +416,21 @@
             this.button_save_drink.UseVisualStyleBackColor = true;
             this.button_save_drink.Click += new System.EventHandler(this.button_save_drink_Click);
             // 
-            // textBox2
+            // textbox_datePeremption
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(462, 112);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 12;
+            this.textbox_datePeremption.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textbox_datePeremption.Location = new System.Drawing.Point(462, 112);
+            this.textbox_datePeremption.Name = "textbox_datePeremption";
+            this.textbox_datePeremption.Size = new System.Drawing.Size(100, 20);
+            this.textbox_datePeremption.TabIndex = 12;
             // 
-            // textBox3
+            // textbox_quantity_drink
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(462, 74);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 11;
+            this.textbox_quantity_drink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textbox_quantity_drink.Location = new System.Drawing.Point(462, 74);
+            this.textbox_quantity_drink.Name = "textbox_quantity_drink";
+            this.textbox_quantity_drink.Size = new System.Drawing.Size(100, 20);
+            this.textbox_quantity_drink.TabIndex = 11;
             // 
             // textBox_Name_drink
             // 
@@ -466,11 +466,11 @@
             this.tabPage_Dessert.Controls.Add(this.label4);
             this.tabPage_Dessert.Controls.Add(this.label5);
             this.tabPage_Dessert.Controls.Add(this.label6);
-            this.tabPage_Dessert.Controls.Add(this.button3);
-            this.tabPage_Dessert.Controls.Add(this.button4);
-            this.tabPage_Dessert.Controls.Add(this.textBox5);
-            this.tabPage_Dessert.Controls.Add(this.textBox6);
-            this.tabPage_Dessert.Controls.Add(this.textBox7);
+            this.tabPage_Dessert.Controls.Add(this.button_back_dessert);
+            this.tabPage_Dessert.Controls.Add(this.btn_enregistrer);
+            this.tabPage_Dessert.Controls.Add(this.txt_dateperemtion_dessert);
+            this.tabPage_Dessert.Controls.Add(this.txt_quantity_dessert);
+            this.tabPage_Dessert.Controls.Add(this.txt_name_dessert);
             this.tabPage_Dessert.Controls.Add(this.listView3);
             this.tabPage_Dessert.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Dessert.Name = "tabPage_Dessert";
@@ -509,49 +509,51 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Nom :";
             // 
-            // button3
+            // button_back_dessert
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(464, 302);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(98, 68);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Retour";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_back_dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_back_dessert.Location = new System.Drawing.Point(464, 302);
+            this.button_back_dessert.Name = "button_back_dessert";
+            this.button_back_dessert.Size = new System.Drawing.Size(98, 68);
+            this.button_back_dessert.TabIndex = 14;
+            this.button_back_dessert.Text = "Retour";
+            this.button_back_dessert.UseVisualStyleBackColor = true;
+            this.button_back_dessert.Click += new System.EventHandler(this.button_back_dessert_Click_1);
             // 
-            // button4
+            // btn_enregistrer
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Location = new System.Drawing.Point(359, 302);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(99, 68);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Enregistrer";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_enregistrer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_enregistrer.Location = new System.Drawing.Point(359, 302);
+            this.btn_enregistrer.Name = "btn_enregistrer";
+            this.btn_enregistrer.Size = new System.Drawing.Size(99, 68);
+            this.btn_enregistrer.TabIndex = 13;
+            this.btn_enregistrer.Text = "Enregistrer";
+            this.btn_enregistrer.UseVisualStyleBackColor = true;
+            this.btn_enregistrer.Click += new System.EventHandler(this.btn_enregistrer_Click);
             // 
-            // textBox5
+            // txt_dateperemtion_dessert
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Location = new System.Drawing.Point(462, 112);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 12;
+            this.txt_dateperemtion_dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_dateperemtion_dessert.Location = new System.Drawing.Point(462, 112);
+            this.txt_dateperemtion_dessert.Name = "txt_dateperemtion_dessert";
+            this.txt_dateperemtion_dessert.Size = new System.Drawing.Size(100, 20);
+            this.txt_dateperemtion_dessert.TabIndex = 12;
             // 
-            // textBox6
+            // txt_quantity_dessert
             // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Location = new System.Drawing.Point(462, 74);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 11;
+            this.txt_quantity_dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_quantity_dessert.Location = new System.Drawing.Point(462, 74);
+            this.txt_quantity_dessert.Name = "txt_quantity_dessert";
+            this.txt_quantity_dessert.Size = new System.Drawing.Size(100, 20);
+            this.txt_quantity_dessert.TabIndex = 11;
             // 
-            // textBox7
+            // txt_name_dessert
             // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.Location = new System.Drawing.Point(462, 36);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 10;
+            this.txt_name_dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_name_dessert.Location = new System.Drawing.Point(462, 36);
+            this.txt_name_dessert.Name = "txt_name_dessert";
+            this.txt_name_dessert.Size = new System.Drawing.Size(100, 20);
+            this.txt_name_dessert.TabIndex = 10;
             // 
             // listView3
             // 
@@ -589,7 +591,7 @@
             this.tabPage_Crustacean.Controls.Add(this.label7);
             this.tabPage_Crustacean.Controls.Add(this.label8);
             this.tabPage_Crustacean.Controls.Add(this.label9);
-            this.tabPage_Crustacean.Controls.Add(this.button5);
+            this.tabPage_Crustacean.Controls.Add(this.button_back_crustacean);
             this.tabPage_Crustacean.Controls.Add(this.button6);
             this.tabPage_Crustacean.Controls.Add(this.textBox8);
             this.tabPage_Crustacean.Controls.Add(this.textBox9);
@@ -632,15 +634,16 @@
             this.label9.TabIndex = 15;
             this.label9.Text = "Nom :";
             // 
-            // button5
+            // button_back_crustacean
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.Location = new System.Drawing.Point(464, 302);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(98, 68);
-            this.button5.TabIndex = 14;
-            this.button5.Text = "Retour";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button_back_crustacean.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_back_crustacean.Location = new System.Drawing.Point(464, 302);
+            this.button_back_crustacean.Name = "button_back_crustacean";
+            this.button_back_crustacean.Size = new System.Drawing.Size(98, 68);
+            this.button_back_crustacean.TabIndex = 14;
+            this.button_back_crustacean.Text = "Retour";
+            this.button_back_crustacean.UseVisualStyleBackColor = true;
+            this.button_back_crustacean.Click += new System.EventHandler(this.button_back_crustacean_Click);
             // 
             // button6
             // 
@@ -712,7 +715,7 @@
             this.tabPage_Fish.Controls.Add(this.label10);
             this.tabPage_Fish.Controls.Add(this.label11);
             this.tabPage_Fish.Controls.Add(this.label12);
-            this.tabPage_Fish.Controls.Add(this.button7);
+            this.tabPage_Fish.Controls.Add(this.button_Back_fish);
             this.tabPage_Fish.Controls.Add(this.button8);
             this.tabPage_Fish.Controls.Add(this.textBox11);
             this.tabPage_Fish.Controls.Add(this.textBox12);
@@ -755,15 +758,16 @@
             this.label12.TabIndex = 15;
             this.label12.Text = "Nom :";
             // 
-            // button7
+            // button_Back_fish
             // 
-            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.Location = new System.Drawing.Point(464, 302);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(98, 68);
-            this.button7.TabIndex = 14;
-            this.button7.Text = "Retour";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button_Back_fish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_Back_fish.Location = new System.Drawing.Point(464, 302);
+            this.button_Back_fish.Name = "button_Back_fish";
+            this.button_Back_fish.Size = new System.Drawing.Size(98, 68);
+            this.button_Back_fish.TabIndex = 14;
+            this.button_Back_fish.Text = "Retour";
+            this.button_Back_fish.UseVisualStyleBackColor = true;
+            this.button_Back_fish.Click += new System.EventHandler(this.button_Back_fish_Click);
             // 
             // button8
             // 
@@ -835,7 +839,7 @@
             this.tabPage_Poultry.Controls.Add(this.label13);
             this.tabPage_Poultry.Controls.Add(this.label14);
             this.tabPage_Poultry.Controls.Add(this.label15);
-            this.tabPage_Poultry.Controls.Add(this.button9);
+            this.tabPage_Poultry.Controls.Add(this.button_back_poultry);
             this.tabPage_Poultry.Controls.Add(this.button10);
             this.tabPage_Poultry.Controls.Add(this.textBox14);
             this.tabPage_Poultry.Controls.Add(this.textBox15);
@@ -878,15 +882,16 @@
             this.label15.TabIndex = 15;
             this.label15.Text = "Nom :";
             // 
-            // button9
+            // button_back_poultry
             // 
-            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button9.Location = new System.Drawing.Point(464, 302);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(98, 68);
-            this.button9.TabIndex = 14;
-            this.button9.Text = "Retour";
-            this.button9.UseVisualStyleBackColor = true;
+            this.button_back_poultry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_back_poultry.Location = new System.Drawing.Point(464, 302);
+            this.button_back_poultry.Name = "button_back_poultry";
+            this.button_back_poultry.Size = new System.Drawing.Size(98, 68);
+            this.button_back_poultry.TabIndex = 14;
+            this.button_back_poultry.Text = "Retour";
+            this.button_back_poultry.UseVisualStyleBackColor = true;
+            this.button_back_poultry.Click += new System.EventHandler(this.button_poultry_Click);
             // 
             // button10
             // 
@@ -958,7 +963,7 @@
             this.tabPage_Vegetables.Controls.Add(this.label16);
             this.tabPage_Vegetables.Controls.Add(this.label17);
             this.tabPage_Vegetables.Controls.Add(this.label18);
-            this.tabPage_Vegetables.Controls.Add(this.button11);
+            this.tabPage_Vegetables.Controls.Add(this.button_back_vegetable);
             this.tabPage_Vegetables.Controls.Add(this.button12);
             this.tabPage_Vegetables.Controls.Add(this.textBox17);
             this.tabPage_Vegetables.Controls.Add(this.textBox18);
@@ -1001,15 +1006,16 @@
             this.label18.TabIndex = 15;
             this.label18.Text = "Nom :";
             // 
-            // button11
+            // button_back_vegetable
             // 
-            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button11.Location = new System.Drawing.Point(464, 302);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(98, 68);
-            this.button11.TabIndex = 14;
-            this.button11.Text = "Retour";
-            this.button11.UseVisualStyleBackColor = true;
+            this.button_back_vegetable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_back_vegetable.Location = new System.Drawing.Point(464, 302);
+            this.button_back_vegetable.Name = "button_back_vegetable";
+            this.button_back_vegetable.Size = new System.Drawing.Size(98, 68);
+            this.button_back_vegetable.TabIndex = 14;
+            this.button_back_vegetable.Text = "Retour";
+            this.button_back_vegetable.UseVisualStyleBackColor = true;
+            this.button_back_vegetable.Click += new System.EventHandler(this.button_back_vegetable_Click);
             // 
             // button12
             // 
@@ -1081,7 +1087,7 @@
             this.tabPage_Fruit.Controls.Add(this.label19);
             this.tabPage_Fruit.Controls.Add(this.label20);
             this.tabPage_Fruit.Controls.Add(this.label21);
-            this.tabPage_Fruit.Controls.Add(this.button13);
+            this.tabPage_Fruit.Controls.Add(this.button_back_fruit);
             this.tabPage_Fruit.Controls.Add(this.button14);
             this.tabPage_Fruit.Controls.Add(this.textBox20);
             this.tabPage_Fruit.Controls.Add(this.textBox21);
@@ -1124,15 +1130,16 @@
             this.label21.TabIndex = 15;
             this.label21.Text = "Nom :";
             // 
-            // button13
+            // button_back_fruit
             // 
-            this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button13.Location = new System.Drawing.Point(464, 302);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(98, 68);
-            this.button13.TabIndex = 14;
-            this.button13.Text = "Retour";
-            this.button13.UseVisualStyleBackColor = true;
+            this.button_back_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_back_fruit.Location = new System.Drawing.Point(464, 302);
+            this.button_back_fruit.Name = "button_back_fruit";
+            this.button_back_fruit.Size = new System.Drawing.Size(98, 68);
+            this.button_back_fruit.TabIndex = 14;
+            this.button_back_fruit.Text = "Retour";
+            this.button_back_fruit.UseVisualStyleBackColor = true;
+            this.button_back_fruit.Click += new System.EventHandler(this.button_back_fruit_Click);
             // 
             // button14
             // 
@@ -1204,7 +1211,7 @@
             this.tabPage_Milk_product.Controls.Add(this.label22);
             this.tabPage_Milk_product.Controls.Add(this.label23);
             this.tabPage_Milk_product.Controls.Add(this.label24);
-            this.tabPage_Milk_product.Controls.Add(this.button15);
+            this.tabPage_Milk_product.Controls.Add(this.button_back_dairyproduct);
             this.tabPage_Milk_product.Controls.Add(this.button16);
             this.tabPage_Milk_product.Controls.Add(this.textBox23);
             this.tabPage_Milk_product.Controls.Add(this.textBox24);
@@ -1247,15 +1254,16 @@
             this.label24.TabIndex = 15;
             this.label24.Text = "Nom :";
             // 
-            // button15
+            // button_back_dairyproduct
             // 
-            this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button15.Location = new System.Drawing.Point(464, 302);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(98, 68);
-            this.button15.TabIndex = 14;
-            this.button15.Text = "Retour";
-            this.button15.UseVisualStyleBackColor = true;
+            this.button_back_dairyproduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_back_dairyproduct.Location = new System.Drawing.Point(464, 302);
+            this.button_back_dairyproduct.Name = "button_back_dairyproduct";
+            this.button_back_dairyproduct.Size = new System.Drawing.Size(98, 68);
+            this.button_back_dairyproduct.TabIndex = 14;
+            this.button_back_dairyproduct.Text = "Retour";
+            this.button_back_dairyproduct.UseVisualStyleBackColor = true;
+            this.button_back_dairyproduct.Click += new System.EventHandler(this.button_back_dairyproduct_Click);
             // 
             // button16
             // 
@@ -1327,7 +1335,7 @@
             this.tabPage_Fat_Content.Controls.Add(this.label25);
             this.tabPage_Fat_Content.Controls.Add(this.label26);
             this.tabPage_Fat_Content.Controls.Add(this.label27);
-            this.tabPage_Fat_Content.Controls.Add(this.button17);
+            this.tabPage_Fat_Content.Controls.Add(this.button_back_fat);
             this.tabPage_Fat_Content.Controls.Add(this.button18);
             this.tabPage_Fat_Content.Controls.Add(this.textBox26);
             this.tabPage_Fat_Content.Controls.Add(this.textBox27);
@@ -1370,15 +1378,16 @@
             this.label27.TabIndex = 15;
             this.label27.Text = "Nom :";
             // 
-            // button17
+            // button_back_fat
             // 
-            this.button17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button17.Location = new System.Drawing.Point(464, 302);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(98, 68);
-            this.button17.TabIndex = 14;
-            this.button17.Text = "Retour";
-            this.button17.UseVisualStyleBackColor = true;
+            this.button_back_fat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_back_fat.Location = new System.Drawing.Point(464, 302);
+            this.button_back_fat.Name = "button_back_fat";
+            this.button_back_fat.Size = new System.Drawing.Size(98, 68);
+            this.button_back_fat.TabIndex = 14;
+            this.button_back_fat.Text = "Retour";
+            this.button_back_fat.UseVisualStyleBackColor = true;
+            this.button_back_fat.Click += new System.EventHandler(this.button_back_fat_Click);
             // 
             // button18
             // 
@@ -1450,7 +1459,7 @@
             this.tabPage_Féculent.Controls.Add(this.label28);
             this.tabPage_Féculent.Controls.Add(this.label29);
             this.tabPage_Féculent.Controls.Add(this.label30);
-            this.tabPage_Féculent.Controls.Add(this.button19);
+            this.tabPage_Féculent.Controls.Add(this.button_back_starchyfood);
             this.tabPage_Féculent.Controls.Add(this.button20);
             this.tabPage_Féculent.Controls.Add(this.textBox29);
             this.tabPage_Féculent.Controls.Add(this.textBox30);
@@ -1493,15 +1502,16 @@
             this.label30.TabIndex = 15;
             this.label30.Text = "Nom :";
             // 
-            // button19
+            // button_back_starchyfood
             // 
-            this.button19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button19.Location = new System.Drawing.Point(464, 302);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(98, 68);
-            this.button19.TabIndex = 14;
-            this.button19.Text = "Retour";
-            this.button19.UseVisualStyleBackColor = true;
+            this.button_back_starchyfood.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_back_starchyfood.Location = new System.Drawing.Point(464, 302);
+            this.button_back_starchyfood.Name = "button_back_starchyfood";
+            this.button_back_starchyfood.Size = new System.Drawing.Size(98, 68);
+            this.button_back_starchyfood.TabIndex = 14;
+            this.button_back_starchyfood.Text = "Retour";
+            this.button_back_starchyfood.UseVisualStyleBackColor = true;
+            this.button_back_starchyfood.Click += new System.EventHandler(this.button_back_starchyfood_Click);
             // 
             // button20
             // 
@@ -1573,7 +1583,7 @@
             this.tabPage_Herbes_Plants.Controls.Add(this.label31);
             this.tabPage_Herbes_Plants.Controls.Add(this.label32);
             this.tabPage_Herbes_Plants.Controls.Add(this.label33);
-            this.tabPage_Herbes_Plants.Controls.Add(this.button21);
+            this.tabPage_Herbes_Plants.Controls.Add(this.button_back_grass);
             this.tabPage_Herbes_Plants.Controls.Add(this.button22);
             this.tabPage_Herbes_Plants.Controls.Add(this.textBox32);
             this.tabPage_Herbes_Plants.Controls.Add(this.textBox33);
@@ -1616,15 +1626,16 @@
             this.label33.TabIndex = 15;
             this.label33.Text = "Nom :";
             // 
-            // button21
+            // button_back_grass
             // 
-            this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button21.Location = new System.Drawing.Point(464, 302);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(98, 68);
-            this.button21.TabIndex = 14;
-            this.button21.Text = "Retour";
-            this.button21.UseVisualStyleBackColor = true;
+            this.button_back_grass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_back_grass.Location = new System.Drawing.Point(464, 302);
+            this.button_back_grass.Name = "button_back_grass";
+            this.button_back_grass.Size = new System.Drawing.Size(98, 68);
+            this.button_back_grass.TabIndex = 14;
+            this.button_back_grass.Text = "Retour";
+            this.button_back_grass.UseVisualStyleBackColor = true;
+            this.button_back_grass.Click += new System.EventHandler(this.button_back_grass_Click);
             // 
             // button22
             // 
@@ -1693,7 +1704,7 @@
             // 
             // tabPage_Fat_Boulangerie
             // 
-            this.tabPage_Fat_Boulangerie.Controls.Add(this.button24);
+            this.tabPage_Fat_Boulangerie.Controls.Add(this.button_back_bukery);
             this.tabPage_Fat_Boulangerie.Controls.Add(this.button23);
             this.tabPage_Fat_Boulangerie.Controls.Add(this.textBox37);
             this.tabPage_Fat_Boulangerie.Controls.Add(this.textBox36);
@@ -1710,15 +1721,16 @@
             this.tabPage_Fat_Boulangerie.Text = "Boulangérie";
             this.tabPage_Fat_Boulangerie.UseVisualStyleBackColor = true;
             // 
-            // button24
+            // button_back_bukery
             // 
-            this.button24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button24.Location = new System.Drawing.Point(462, 304);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(100, 70);
-            this.button24.TabIndex = 8;
-            this.button24.Text = "Retour";
-            this.button24.UseVisualStyleBackColor = true;
+            this.button_back_bukery.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_back_bukery.Location = new System.Drawing.Point(462, 304);
+            this.button_back_bukery.Name = "button_back_bukery";
+            this.button_back_bukery.Size = new System.Drawing.Size(100, 70);
+            this.button_back_bukery.TabIndex = 8;
+            this.button_back_bukery.Text = "Retour";
+            this.button_back_bukery.UseVisualStyleBackColor = true;
+            this.button_back_bukery.Click += new System.EventHandler(this.button_back_bukery_Click);
             // 
             // button23
             // 
@@ -1868,8 +1880,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button_back1;
         private System.Windows.Forms.Button button_save_drink;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textbox_datePeremption;
+        private System.Windows.Forms.TextBox textbox_quantity_drink;
         private System.Windows.Forms.TextBox textBox_Name_drink;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.ColumnHeader columnHeader1;
@@ -1877,11 +1889,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button button_back_dessert;
+        private System.Windows.Forms.Button btn_enregistrer;
+        private System.Windows.Forms.TextBox txt_dateperemtion_dessert;
+        private System.Windows.Forms.TextBox txt_quantity_dessert;
+        private System.Windows.Forms.TextBox txt_name_dessert;
         private System.Windows.Forms.ListView listView3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
@@ -1890,7 +1902,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button_back_crustacean;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
@@ -1903,7 +1915,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button_Back_fish;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
@@ -1916,7 +1928,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button_back_poultry;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.TextBox textBox15;
@@ -1929,7 +1941,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button_back_vegetable;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.TextBox textBox18;
@@ -1942,7 +1954,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button_back_fruit;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.TextBox textBox21;
@@ -1955,7 +1967,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button_back_dairyproduct;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.TextBox textBox24;
@@ -1968,7 +1980,7 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button_back_fat;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.TextBox textBox26;
         private System.Windows.Forms.TextBox textBox27;
@@ -1981,7 +1993,7 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button_back_starchyfood;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.TextBox textBox29;
         private System.Windows.Forms.TextBox textBox30;
@@ -1994,7 +2006,7 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button_back_grass;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.TextBox textBox32;
         private System.Windows.Forms.TextBox textBox33;
@@ -2014,7 +2026,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader34;
         private System.Windows.Forms.ColumnHeader columnHeader35;
         private System.Windows.Forms.ColumnHeader columnHeader36;
-        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button_back_bukery;
         private System.Windows.Forms.Button button23;
     }
 }
