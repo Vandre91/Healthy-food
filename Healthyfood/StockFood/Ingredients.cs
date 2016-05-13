@@ -59,14 +59,16 @@ namespace StockFood
         { get { return _category; } }
        
 
-        public DateTime Expiration_Date()
+        public DateTime Expiration_Date
         {
-            return _expiration_date; 
+            get { return _expiration_date; }
+            set { _expiration_date = value; }
         }
 
-        public string Name ()
+        public string Name
         {
-            return _name; 
+            get { return _name; }
+            set { _name = value; }
         }
 
         public int Balance

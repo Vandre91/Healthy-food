@@ -185,6 +185,7 @@
             this.Name = "UserControl_Modify_Profil";
             this.Size = new System.Drawing.Size(570, 393);
             this.Load += new System.EventHandler(this.UserControl_Modify_Profil_Load);
+            this.Enter += new System.EventHandler(this.UserControl_Modify_Profil_Enter);
             this.ResumeLayout(false);
             this.PerformLayout();
 

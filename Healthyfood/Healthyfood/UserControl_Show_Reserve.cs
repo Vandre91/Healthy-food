@@ -27,5 +27,18 @@ namespace Healthyfood
         {
 
         }
+
+        private void UserControl_Show_Reserve_Enter(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+
+            foreach (var p in Global.Stocks.IStock)
+            {
+                string date = Convert.ToString(p.Expiration_Date);
+                string[] row = { p.Name, p.Balance.ToString(),date };
+                ListViewItem item = new ListViewItem(row);
+                listView1.Items.Add(item);
+            }
+        }
     }
 }

@@ -28,11 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Steak");
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader_Quantity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader_Calories = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl_Add_Remove = new System.Windows.Forms.TabControl();
             this.tabPage_Beef = new System.Windows.Forms.TabPage();
             this.label_Date = new System.Windows.Forms.Label();
@@ -40,22 +37,20 @@
             this.label_Name = new System.Windows.Forms.Label();
             this.button_Back = new System.Windows.Forms.Button();
             this.button_Save = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_Date = new System.Windows.Forms.TextBox();
             this.textBox_Quantity = new System.Windows.Forms.TextBox();
             this.textBox_Name = new System.Windows.Forms.TextBox();
             this.tabPage_Drink = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_back1 = new System.Windows.Forms.Button();
+            this.button_save_drink = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox_Name_drink = new System.Windows.Forms.TextBox();
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Dessert = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -218,11 +213,7 @@
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader_Name,
-            this.columnHeader_Quantity,
-            this.columnHeader_Calories});
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            this.columnHeader_Name});
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(341, 378);
@@ -235,16 +226,6 @@
             // 
             this.columnHeader_Name.Text = "Nom";
             this.columnHeader_Name.Width = 196;
-            // 
-            // columnHeader_Quantity
-            // 
-            this.columnHeader_Quantity.Text = "Quantité";
-            this.columnHeader_Quantity.Width = 72;
-            // 
-            // columnHeader_Calories
-            // 
-            this.columnHeader_Calories.Text = "Calories";
-            this.columnHeader_Calories.Width = 67;
             // 
             // tabControl_Add_Remove
             // 
@@ -275,7 +256,7 @@
             this.tabPage_Beef.Controls.Add(this.label_Name);
             this.tabPage_Beef.Controls.Add(this.button_Back);
             this.tabPage_Beef.Controls.Add(this.button_Save);
-            this.tabPage_Beef.Controls.Add(this.textBox1);
+            this.tabPage_Beef.Controls.Add(this.textBox_Date);
             this.tabPage_Beef.Controls.Add(this.textBox_Quantity);
             this.tabPage_Beef.Controls.Add(this.textBox_Name);
             this.tabPage_Beef.Controls.Add(this.listView1);
@@ -337,14 +318,15 @@
             this.button_Save.TabIndex = 4;
             this.button_Save.Text = "Enregistrer";
             this.button_Save.UseVisualStyleBackColor = true;
+            this.button_Save.Click += new System.EventHandler(this.button_Save_Click);
             // 
-            // textBox1
+            // textBox_Date
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(459, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.textBox_Date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_Date.Location = new System.Drawing.Point(459, 113);
+            this.textBox_Date.Name = "textBox_Date";
+            this.textBox_Date.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Date.TabIndex = 3;
             // 
             // textBox_Quantity
             // 
@@ -357,6 +339,7 @@
             // textBox_Name
             // 
             this.textBox_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_Name.Enabled = false;
             this.textBox_Name.Location = new System.Drawing.Point(459, 37);
             this.textBox_Name.Name = "textBox_Name";
             this.textBox_Name.Size = new System.Drawing.Size(100, 20);
@@ -367,11 +350,11 @@
             this.tabPage_Drink.Controls.Add(this.label1);
             this.tabPage_Drink.Controls.Add(this.label2);
             this.tabPage_Drink.Controls.Add(this.label3);
-            this.tabPage_Drink.Controls.Add(this.button1);
-            this.tabPage_Drink.Controls.Add(this.button2);
+            this.tabPage_Drink.Controls.Add(this.button_back1);
+            this.tabPage_Drink.Controls.Add(this.button_save_drink);
             this.tabPage_Drink.Controls.Add(this.textBox2);
             this.tabPage_Drink.Controls.Add(this.textBox3);
-            this.tabPage_Drink.Controls.Add(this.textBox4);
+            this.tabPage_Drink.Controls.Add(this.textBox_Name_drink);
             this.tabPage_Drink.Controls.Add(this.listView2);
             this.tabPage_Drink.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Drink.Name = "tabPage_Drink";
@@ -411,25 +394,27 @@
             this.label3.TabIndex = 15;
             this.label3.Text = "Nom :";
             // 
-            // button1
+            // button_back1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(464, 302);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 68);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Retour";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_back1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_back1.Location = new System.Drawing.Point(464, 302);
+            this.button_back1.Name = "button_back1";
+            this.button_back1.Size = new System.Drawing.Size(98, 68);
+            this.button_back1.TabIndex = 14;
+            this.button_back1.Text = "Retour";
+            this.button_back1.UseVisualStyleBackColor = true;
+            this.button_back1.Click += new System.EventHandler(this.button_back1_Click);
             // 
-            // button2
+            // button_save_drink
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(359, 302);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 68);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Enregistrer";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_save_drink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_save_drink.Location = new System.Drawing.Point(359, 302);
+            this.button_save_drink.Name = "button_save_drink";
+            this.button_save_drink.Size = new System.Drawing.Size(99, 68);
+            this.button_save_drink.TabIndex = 13;
+            this.button_save_drink.Text = "Enregistrer";
+            this.button_save_drink.UseVisualStyleBackColor = true;
+            this.button_save_drink.Click += new System.EventHandler(this.button_save_drink_Click);
             // 
             // textBox2
             // 
@@ -447,13 +432,14 @@
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 11;
             // 
-            // textBox4
+            // textBox_Name_drink
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(462, 36);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 10;
+            this.textBox_Name_drink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_Name_drink.Enabled = false;
+            this.textBox_Name_drink.Location = new System.Drawing.Point(462, 36);
+            this.textBox_Name_drink.Name = "textBox_Name_drink";
+            this.textBox_Name_drink.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Name_drink.TabIndex = 10;
             // 
             // listView2
             // 
@@ -461,30 +447,19 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
+            this.columnHeader1});
             this.listView2.Location = new System.Drawing.Point(3, -1);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(341, 378);
             this.listView2.TabIndex = 9;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
+            this.listView2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView2_MouseClick);
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "Nom";
             this.columnHeader1.Width = 196;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Quantité";
-            this.columnHeader2.Width = 72;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Calories";
-            this.columnHeader3.Width = 67;
             // 
             // tabPage_Dessert
             // 
@@ -1818,7 +1793,6 @@
             this.listView13.TabIndex = 0;
             this.listView13.UseCompatibleStateImageBehavior = false;
             this.listView13.View = System.Windows.Forms.View.Details;
-            this.listView13.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView13_MouseClick);
             // 
             // columnHeader34
             // 
@@ -1842,6 +1816,7 @@
             this.Controls.Add(this.tabControl_Add_Remove);
             this.Name = "UserControl_Reserve_Add_Remove";
             this.Size = new System.Drawing.Size(576, 406);
+            this.Enter += new System.EventHandler(this.UserControl_Reserve_Add_Remove_Enter);
             this.tabControl_Add_Remove.ResumeLayout(false);
             this.tabPage_Beef.ResumeLayout(false);
             this.tabPage_Beef.PerformLayout();
@@ -1877,8 +1852,6 @@
 
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader_Name;
-        private System.Windows.Forms.ColumnHeader columnHeader_Quantity;
-        private System.Windows.Forms.ColumnHeader columnHeader_Calories;
         private System.Windows.Forms.TabControl tabControl_Add_Remove;
         private System.Windows.Forms.TabPage tabPage_Beef;
         private System.Windows.Forms.Label label_Date;
@@ -1886,22 +1859,20 @@
         private System.Windows.Forms.Label label_Name;
         private System.Windows.Forms.Button button_Back;
         private System.Windows.Forms.Button button_Save;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_Date;
         private System.Windows.Forms.TextBox textBox_Quantity;
         private System.Windows.Forms.TextBox textBox_Name;
         private System.Windows.Forms.TabPage tabPage_Drink;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_back1;
+        private System.Windows.Forms.Button button_save_drink;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox_Name_drink;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.TabPage tabPage_Dessert;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;

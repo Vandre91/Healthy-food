@@ -33,7 +33,6 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader_Quantity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader_Calories = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // button_Remove
@@ -65,8 +64,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader_Name,
-            this.columnHeader_Quantity,
-            this.columnHeader_Calories});
+            this.columnHeader_Quantity});
             this.listView1.Location = new System.Drawing.Point(3, 3);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(351, 346);
@@ -84,20 +82,16 @@
             this.columnHeader_Quantity.Text = "Quantité";
             this.columnHeader_Quantity.Width = 72;
             // 
-            // columnHeader_Calories
-            // 
-            this.columnHeader_Calories.Text = "Calories";
-            this.columnHeader_Calories.Width = 67;
-            // 
-            // UserControl_Show
+            // UserControl_Show_Reserve
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.button_Back);
             this.Controls.Add(this.button_Remove);
-            this.Name = "UserControl_Show";
+            this.Name = "UserControl_Show_Reserve";
             this.Size = new System.Drawing.Size(582, 352);
+            this.Enter += new System.EventHandler(this.UserControl_Show_Reserve_Enter);
             this.ResumeLayout(false);
 
         }
@@ -109,6 +103,5 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader_Name;
         private System.Windows.Forms.ColumnHeader columnHeader_Quantity;
-        private System.Windows.Forms.ColumnHeader columnHeader_Calories;
     }
 }
