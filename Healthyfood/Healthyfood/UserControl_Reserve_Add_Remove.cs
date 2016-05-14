@@ -47,16 +47,9 @@ namespace Healthyfood
         {
             InitializeComponent();
         }
-        private void button_Save_Click(object sender, EventArgs e)
-        {
-            DateTime date = Convert.ToDateTime(textBox_Date.Text);
-            int quantity = Int32.Parse(textBox_Quantity.Text);
-            Global.Stocks.AddIngredient("viande",textBox_Name.Text,quantity,date);
+        
 
-            textBox_Name.Clear();
-            textBox_Quantity.Clear();
-            textBox_Date.Clear();
-        }
+        
 
         private void button_Back_Click(object sender, EventArgs e)
         {
@@ -65,7 +58,7 @@ namespace Healthyfood
 
         private void listView1_MouseClick(object sender, MouseEventArgs e)
         {
-            textBox_Name.Text = listView1.SelectedItems[0].Text;
+            text_name_meat.Text = listView1.SelectedItems[0].Text;
         }
 
        
@@ -189,12 +182,17 @@ namespace Healthyfood
 
         private void listView2_MouseClick(object sender, MouseEventArgs e)
         {
-            textBox_Name_drink.Text = listView2.SelectedItems[0].Text;
+            text_name_drink.Text = listView2.SelectedItems[0].Text;
         }
 
-        
+        private void listView3_MouseClick(object sender, MouseEventArgs e)
+        {
+            text_name_dessert.Text = listView3.SelectedItems[0].Text;
+        }
 
-       
+
+
+
 
         private void Btn_back_milk_Click(object sender, EventArgs e)
         {
@@ -276,81 +274,404 @@ namespace Healthyfood
             this.Visible = false;
         }
 
+        private void button_Save_Click(object sender, EventArgs e)
+        {
+            DateTime date;
+            if (!(DateTime.TryParse(textBox_Date.Text, out date)) || textBox_Quantity.Text == string.Empty)
+            {
+               text_error1.Text = "Le format est invalide";
+                
+            }
+            else
+            {
+                int quantity = Int32.Parse(textBox_Quantity.Text);
+                date = Convert.ToDateTime(textBox_Date.Text);
+                int x = 0;
+                verify_error(text_name_meat, textBox_Date, textBox_Quantity, text_error1, text_error2, text_error3, text_error4, x);
+                if (x == 1) Global.Stocks.AddIngredient("viande", text_name_meat.Text, quantity, date);
+            }
+        }
+
         private void button_save_drink_Click(object sender, EventArgs e)
         {
-            DateTime date = Convert.ToDateTime(textbox_datePeremption.Text);
-            int quantity = Int32.Parse(textbox_quantity_drink.Text);
-            Global.Stocks.AddIngredient("boisson", textBox_Name_drink.Text, quantity, date);
+            DateTime date;
+            if (!(DateTime.TryParse(textbox_datePeremption.Text, out date)) || textbox_quantity_drink.Text == string.Empty)
+            {
 
-            textBox_Name_drink.Clear();
-            textbox_quantity_drink.Clear();
-            textbox_datePeremption.Clear();
+                label37.Text = "Le format est invalide";
+                
+            }
+            else
+            {
+                int quantity = Int32.Parse(textbox_quantity_drink.Text);
+                int x = 0;
+                date = Convert.ToDateTime(textbox_datePeremption.Text);
+                verify_error(text_name_drink, textbox_datePeremption, textbox_quantity_drink, label37, label38, label39, label40, x);
+                if (x == 1) Global.Stocks.AddIngredient("boisson", text_name_drink.Text, quantity, date);
+            }
+
         }
 
         private void btn_enregistrer_Click(object sender, EventArgs e)
         {
-            DateTime date = Convert.ToDateTime(txt_dateperemtion_dessert.Text);
-            int quantity = Int32.Parse(txt_quantity_dessert.Text);
-            Global.Stocks.AddIngredient("dessert_sucrerie", txt_name_dessert.Text, quantity, date);
-
-            txt_name_dessert.Clear();
-            txt_quantity_dessert.Clear();
-            txt_dateperemtion_dessert.Clear();
+            DateTime date;
+            if (DateTime.TryParse(txt_dateperemtion_dessert.Text, out date) || txt_quantity_dessert.Text == string.Empty)
+            {
+                label41.Text = "Le format est invalide";
+                
+            }
+            else
+            {
+                int quantity = Int32.Parse(txt_quantity_dessert.Text);
+                int x = 0;
+                date = Convert.ToDateTime(txt_dateperemtion_dessert.Text);
+                verify_error(text_name_dessert, txt_dateperemtion_dessert, txt_quantity_dessert, label41, label42, label43, label44, x);
+                if (x == 1) Global.Stocks.AddIngredient("dessert_sucrerie", text_name_dessert.Text, quantity, date);
+            }
         }
 
         private void btn_enreg_crustaceam_Click(object sender, EventArgs e)
         {
-            DateTime date = Convert.ToDateTime(txt_dateperemption_crust.Text);
-            int quantity = Int32.Parse(txt_quantity_crust.Text);
-            Global.Stocks.AddIngredient("crustace", txt_name_crust.Text, quantity, date);
+            DateTime date;
+            if (DateTime.TryParse(txt_dateperemption_crust.Text, out date) || txt_quantity_crust.Text == string.Empty)
+            {
+                label45.Text = "Le format est invalide";
 
-            txt_name_crust.Clear();
-            txt_quantity_crust.Clear();
-            txt_dateperemption_crust.Clear();
+            }
+            else
+            {
+                int quantity = Int32.Parse(txt_quantity_crust.Text);
+                int x = 0;
+                date = Convert.ToDateTime(txt_dateperemption_crust.Text);
+
+                verify_error(txt_name_crust, txt_dateperemption_crust, txt_quantity_crust, label45, label46, label47, label48, x);
+                if (x == 1) Global.Stocks.AddIngredient("crustace", txt_name_crust.Text, quantity, date);
+            }
         }
 
         private void btn_enreg_fish_Click(object sender, EventArgs e)
         {
-            DateTime date = Convert.ToDateTime(txt_dateperemption_fish.Text);
-            int quantity = Int32.Parse(txt_quantity_fish.Text);
-            Global.Stocks.AddIngredient("poisson", txt_name_fish.Text, quantity, date);
+            DateTime date;
+            if (DateTime.TryParse(txt_dateperemption_fish.Text, out date) || txt_quantity_fish.Text == string.Empty)
+            {
+                label49.Text = "Le format est invalide";
 
-            txt_name_fish.Clear();
-            txt_quantity_fish.Clear();
-            txt_dateperemption_fish.Clear();
+            }
+            else
+            {
+                int quantity = Int32.Parse(txt_quantity_fish.Text);
+                int x = 0;
+                date = Convert.ToDateTime(txt_dateperemption_fish.Text);
+                verify_error(text_name_fish, txt_dateperemption_fish, txt_quantity_fish, label49, label50, label51, label52, x);
+                if (x == 1) Global.Stocks.AddIngredient("poisson", text_name_fish.Text, quantity, date);
+            }
         }
 
         private void btn_enreg_poultry_Click(object sender, EventArgs e)
         {
-            DateTime date = Convert.ToDateTime(txt_dateperemtion_poultry.Text);
-            int quantity = Int32.Parse(txt_quantity_poultry.Text);
-            Global.Stocks.AddIngredient("volaille", txt_name_poultry.Text, quantity, date);
+            DateTime date;
+            if (DateTime.TryParse(txt_dateperemtion_poultry.Text, out date) || txt_quantity_poultry.Text == string.Empty)
+            {
+                label53.Text = "Le format est invalide";
 
-            txt_name_poultry.Clear();
-            txt_quantity_poultry.Clear();
-            txt_dateperemtion_poultry.Clear();
+            }
+            else
+            {
+                int quantity = Int32.Parse(txt_quantity_poultry.Text);
+                int x = 0;
+                date = Convert.ToDateTime(txt_dateperemtion_poultry.Text);
+
+                verify_error(text_name_poultry, txt_dateperemtion_poultry, txt_quantity_poultry, label53, label54, label55, label56, x);
+                if (x == 1) Global.Stocks.AddIngredient("volaille", text_name_poultry.Text, quantity, date);
+            }
         }
 
         private void btn_enreg_vegetable_Click(object sender, EventArgs e)
         {
-            DateTime date = Convert.ToDateTime(txt_dateperemtion_vegetable.Text);
-            int quantity = Int32.Parse(txt_quantity_vegetable.Text);
-            Global.Stocks.AddIngredient("legume", txt_name_vegetable.Text, quantity, date);
+            DateTime date;
+            if (DateTime.TryParse(txt_dateperemtion_vegetable.Text, out date) || txt_quantity_vegetable.Text == string.Empty)
+            {
+                label57.Text = "Le format est invalide";
 
-            txt_name_vegetable.Clear();
-            txt_quantity_vegetable.Clear();
-            txt_dateperemtion_vegetable.Clear();
+            }
+            else
+            {
+                int quantity = Int32.Parse(txt_quantity_vegetable.Text);
+                int x = 0;
+                date = Convert.ToDateTime(txt_dateperemtion_vegetable.Text);
+
+                verify_error(text_name_vegetable, txt_dateperemtion_vegetable, txt_quantity_vegetable, label57, label58, label59, label60, x);
+                if (x == 1) Global.Stocks.AddIngredient("legume", text_name_vegetable.Text, quantity, date);
+            }
         }
 
         private void btn_enreg_fruit_Click(object sender, EventArgs e)
         {
-            DateTime date = Convert.ToDateTime(txt_dateperemtion_fruit.Text);
-            int quantity = Int32.Parse(txt_quantity_fruit.Text);
-            Global.Stocks.AddIngredient("fruit", txt_name_fruit.Text, quantity, date);
+            DateTime date;
+            if (DateTime.TryParse(txt_dateperemtion_fruit.Text, out date) || txt_quantity_fruit.Text == string.Empty)
+            {
+                label61.Text = "Le format est invalide";
 
-            txt_name_fruit.Clear();
-            txt_quantity_fruit.Clear();
-            txt_dateperemtion_fruit.Clear();
+            }
+            else
+            {
+                date = Convert.ToDateTime(txt_dateperemtion_fruit.Text);
+                int quantity = Int32.Parse(txt_quantity_fruit.Text);
+                int x = 0;
+
+                verify_error(text_name_fruit, txt_dateperemtion_fruit, txt_quantity_fruit, label61, label62, label63, label64, x);
+                if (x == 1) Global.Stocks.AddIngredient("fruit", text_name_fruit.Text, quantity, date);
+            }
+        }
+
+        private void listView4_MouseClick(object sender, MouseEventArgs e)
+        {
+            txt_name_crust.Text = listView4.SelectedItems[0].Text;
+
+        }
+
+        private void listView5_MouseClick(object sender, MouseEventArgs e)
+        {
+            text_name_fish.Text = listView5.SelectedItems[0].Text;
+        }
+
+        private void listView6_MouseClick(object sender, MouseEventArgs e)
+        {
+            text_name_poultry.Text = listView6.SelectedItems[0].Text;
+        }
+
+        private void listView7_MouseClick(object sender, MouseEventArgs e)
+        {
+            text_name_vegetable.Text = listView7.SelectedItems[0].Text;
+        }
+
+        private void listView8_MouseClick(object sender, MouseEventArgs e)
+        {
+            text_name_fruit.Text = listView8.SelectedItems[0].Text;
+        }
+
+        private void listView9_MouseClick(object sender, MouseEventArgs e)
+        {
+            text_name_milk.Text = listView9.SelectedItems[0].Text;
+        }
+
+        private void listView10_MouseClick(object sender, MouseEventArgs e)
+        {
+            text_name_fat.Text = listView10.SelectedItems[0].Text;
+        }
+
+        private void listView11_MouseClick(object sender, MouseEventArgs e)
+        {
+            text_name_starchy.Text = listView11.SelectedItems[0].Text;
+        }
+
+        private void listView12_MouseClick(object sender, MouseEventArgs e)
+        {
+            text_name_plant.Text = listView12.SelectedItems[0].Text;
+        }
+
+        private void listView13_MouseClick(object sender, MouseEventArgs e)
+        {
+            text_name_bakery.Text = listView13.SelectedItems[0].Text;
+        }
+
+
+        void verify_error(TextBox boxname, TextBox boxdate, TextBox boxquantity, Label error1, Label error2, Label error3, Label error4, int x)
+        {
+
+            DateTime date = Convert.ToDateTime(boxdate.Text);
+            int quantity = Int32.Parse(boxquantity.Text);
+            string text = string.Copy(boxname.Text);
+            if (date < DateTime.Today & quantity > 0 & text != string.Empty )
+            {
+                boxdate.BackColor = Color.Red;
+                boxquantity.BackColor = Color.White;
+                boxname.BackColor = Color.White;
+                error1.Text = "La date entrée est invalide";
+                error2.Text = null;
+                error3.Text = null;
+                error4.Text = null;
+                x = 0;
+            }
+            else if (date < DateTime.Today & quantity <= 0 & text != string.Empty)
+            {
+                boxdate.BackColor = Color.Red;
+                boxquantity.BackColor = Color.Red;
+                boxname.BackColor = Color.White;
+                error1.Text = "La date entrée est invalide";
+                error2.Text = "La quantité entrée est invalide";
+                error3.Text = null;
+                error4.Text = null;
+                x = 0;
+            }
+
+            else if (date < DateTime.Today & quantity > 0 & text == string.Empty)
+            {
+                boxdate.BackColor = Color.Red;
+                boxquantity.BackColor = Color.White;
+                boxname.BackColor = Color.Red;
+                error1.Text = "La date entrée est invalide";
+                error2.Text = null;
+                error3.Text = "Aucun aliment sélection";
+                error4.Text = null;
+                x = 0;
+            }
+            else if (date < DateTime.Today & quantity <= 0 & text == string.Empty)
+            {
+                boxdate.BackColor = Color.Red;
+                boxquantity.BackColor = Color.Red;
+                boxname.BackColor = Color.Red;
+                error1.Text = "La date entrée est invalide";
+                error2.Text = "La quantité entrée est invalide";
+                error3.Text = "Aucun aliment sélectionné";
+                error4.Text = null;
+                x = 0;
+            }
+            else if (date >= DateTime.Today & quantity <= 0 & text == string.Empty)
+            {
+                boxquantity.BackColor = Color.Red;
+                boxdate.BackColor = Color.White;
+                boxname.BackColor = Color.Red;
+                error2.Text = "La quantité entrée est invalide";
+                error1.Text = null;
+                error3.Text = "Aucun aliment sélectionné";
+                error4.Text = null;
+                x = 0;
+            }
+            else if (date >= DateTime.Today & quantity <= 0 & text != string.Empty)
+            {
+                boxquantity.BackColor = Color.Red;
+                boxdate.BackColor = Color.White;
+                boxname.BackColor = Color.White;
+                error2.Text = "La quantité entrée est invalide";
+                error1.Text = null;
+                error3.Text = null;
+                error4.Text = null;
+                x = 0;
+            }
+
+            else if (date >= DateTime.Today & quantity > 0 & text == string.Empty)
+            {
+                boxname.BackColor = Color.Red;
+                boxdate.BackColor = Color.White;
+                boxquantity.BackColor = Color.White;
+                error2.Text = null;
+                error1.Text = null;
+                error3.Text = "Aucun aliment sélectionné";
+                error4.Text = null;
+                x = 0;
+            }
+            else
+            {
+                Global.Stocks.AddIngredient("viande", text_name_meat.Text, quantity, date);
+
+                boxname.Clear();
+                boxquantity.Clear();
+                boxdate.Clear();
+                boxdate.BackColor = Color.White;
+                boxquantity.BackColor = Color.White;
+                boxname.BackColor = Color.White;
+                error1.Text = null;
+                error2.Text = null;
+                error3.Text = null;
+                error4.Text = "Aliment enregistré";
+                x = 1;
+            }
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            DateTime date;
+            if (DateTime.TryParse(textBox23.Text, out date) || textBox24.Text == string.Empty)
+            {
+                label65.Text = "Le format est invalide";
+
+            }
+            else
+            {
+                date = Convert.ToDateTime(textBox23.Text);
+                int quantity = Int32.Parse(textBox24.Text);
+                int x = 0;
+
+                verify_error(text_name_milk, textBox23, textBox24, label65, label66, label67, label68, x);
+                if (x == 1) Global.Stocks.AddIngredient("produit_laitier", text_name_milk.Text, quantity, date);
+            }
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            DateTime date;
+            if (DateTime.TryParse(textBox26.Text, out date) || textBox27.Text == string.Empty)
+            {
+                label69.Text = "Le format est invalide";
+
+            }
+            else
+            {
+                date = Convert.ToDateTime(textBox26.Text);
+                int quantity = Int32.Parse(textBox27.Text);
+                int x = 0;
+
+                verify_error(text_name_fat, textBox26, textBox27, label69, label70, label71, label72, x);
+                if (x == 1) Global.Stocks.AddIngredient("matiere_grasse", text_name_fat.Text, quantity, date);
+            }
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            DateTime date;
+            if (DateTime.TryParse(textBox29.Text, out date) || textBox30.Text == string.Empty)
+            {
+                label73.Text = "Le format est invalide";
+
+            }
+            else
+            {
+                date = Convert.ToDateTime(textBox29.Text);
+                int quantity = Int32.Parse(textBox30.Text);
+                int x = 0;
+
+                verify_error(text_name_starchy, textBox29, textBox30, label73, label74, label75, label76, x);
+                if (x == 1) Global.Stocks.AddIngredient("feculent", text_name_starchy.Text, quantity, date);
+            }
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            DateTime date;
+            if (DateTime.TryParse(textBox32.Text, out date) || textBox33.Text == string.Empty)
+            {
+                label77.Text = "Le format est invalide";
+
+            }
+            else
+            {
+                date = Convert.ToDateTime(textBox32.Text);
+                int quantity = Int32.Parse(textBox33.Text);
+                int x = 0;
+
+                verify_error(text_name_plant, textBox32, textBox33, label77, label78, label79, label80, x);
+                if (x == 1) Global.Stocks.AddIngredient("herbe_plante", text_name_plant.Text, quantity, date);
+            }
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            DateTime date;
+            if (DateTime.TryParse(textBox37.Text, out date) || textBox36.Text == string.Empty)
+            {
+                label81.Text = "Le format est invalide";
+
+            }
+            else
+            {
+                date = Convert.ToDateTime(textBox37.Text);
+            int quantity = Int32.Parse(textBox36.Text);
+            int x = 0;
+
+            verify_error(text_name_bakery, textBox36, textBox37, label81, label82, label83, label84, x);
+            if (x == 1) Global.Stocks.AddIngredient("boulangerie", text_name_bakery.Text, quantity, date);
+            }
         }
     }
 }
