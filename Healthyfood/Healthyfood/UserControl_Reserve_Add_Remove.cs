@@ -297,5 +297,60 @@ namespace Healthyfood
             txt_quantity_dessert.Clear();
             txt_dateperemtion_dessert.Clear();
         }
+
+        private void btn_enreg_crustaceam_Click(object sender, EventArgs e)
+        {
+            DateTime date = Convert.ToDateTime(txt_dateperemption_crust.Text);
+            int quantity = Int32.Parse(txt_quantity_crust.Text);
+            Global.Stocks.AddIngredient("crustace", txt_name_crust.Text, quantity, date);
+
+            txt_name_crust.Clear();
+            txt_quantity_crust.Clear();
+            txt_dateperemption_crust.Clear();
+        }
+
+        private void btn_enreg_fish_Click(object sender, EventArgs e)
+        {
+            DateTime date = Convert.ToDateTime(txt_dateperemption_fish.Text);
+            int quantity = Int32.Parse(txt_quantity_fish.Text);
+            Global.Stocks.AddIngredient("poisson", txt_name_fish.Text, quantity, date);
+
+            txt_name_fish.Clear();
+            txt_quantity_fish.Clear();
+            txt_dateperemption_fish.Clear();
+        }
+
+        private void btn_enreg_poultry_Click(object sender, EventArgs e)
+        {
+            DateTime date = Convert.ToDateTime(txt_dateperemtion_poultry.Text);
+            int quantity = Int32.Parse(txt_quantity_poultry.Text);
+            Global.Stocks.AddIngredient("volaille", txt_name_poultry.Text, quantity, date);
+
+            txt_name_poultry.Clear();
+            txt_quantity_poultry.Clear();
+            txt_dateperemtion_poultry.Clear();
+        }
+
+        private void btn_enreg_vegetable_Click(object sender, EventArgs e)
+        {
+            DateTime date = Convert.ToDateTime(txt_dateperemtion_vegetable.Text);
+            int quantity = Int32.Parse(txt_quantity_vegetable.Text);
+            Global.Stocks.AddIngredient("legume", txt_name_vegetable.Text, quantity, date);
+
+            txt_name_vegetable.Clear();
+            txt_quantity_vegetable.Clear();
+            txt_dateperemtion_vegetable.Clear();
+        }
+
+        private void btn_enreg_fruit_Click(object sender, EventArgs e)
+        {
+            DateTime date = Convert.ToDateTime(txt_dateperemtion_fruit.Text);
+            int quantity = Int32.Parse(txt_quantity_fruit.Text);
+            Global.Stocks.AddIngredient("fruit", txt_name_fruit.Text, quantity, date);
+
+            txt_name_fruit.Clear();
+            txt_quantity_fruit.Clear();
+            txt_dateperemtion_fruit.Clear();
+        }
     }
 }
