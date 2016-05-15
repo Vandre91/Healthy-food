@@ -328,7 +328,7 @@ namespace Healthyfood
         }
 
 
-        void verify_error(TextBox boxname, TextBox boxdate, TextBox boxquantity, Label error1, Label error2, Label error3, Label error4, int x)
+        int verify_error(TextBox boxname, TextBox boxdate, TextBox boxquantity, Label error1, Label error2, Label error3, Label error4)
         {
 
             DateTime date = Convert.ToDateTime(boxdate.Text);
@@ -343,7 +343,7 @@ namespace Healthyfood
                 error2.Text = null;
                 error3.Text = null;
                 error4.Text = null;
-                x = 0;
+                return 0;
             }
             else if (date < DateTime.Today & quantity <= 0 & text != string.Empty)
             {
@@ -354,7 +354,7 @@ namespace Healthyfood
                 error2.Text = "La quantité entrée est invalide";
                 error3.Text = null;
                 error4.Text = null;
-                x = 0;
+                return 0;
             }
 
             else if (date < DateTime.Today & quantity > 0 & text == string.Empty)
@@ -366,7 +366,7 @@ namespace Healthyfood
                 error2.Text = null;
                 error3.Text = "Aucun aliment sélection";
                 error4.Text = null;
-                x = 0;
+                return 0;
             }
             else if (date < DateTime.Today & quantity <= 0 & text == string.Empty)
             {
@@ -377,7 +377,7 @@ namespace Healthyfood
                 error2.Text = "La quantité entrée est invalide";
                 error3.Text = "Aucun aliment sélectionné";
                 error4.Text = null;
-                x = 0;
+                return 0;
             }
             else if (date >= DateTime.Today & quantity <= 0 & text == string.Empty)
             {
@@ -388,7 +388,7 @@ namespace Healthyfood
                 error1.Text = null;
                 error3.Text = "Aucun aliment sélectionné";
                 error4.Text = null;
-                x = 0;
+                return 0;
             }
             else if (date >= DateTime.Today & quantity <= 0 & text != string.Empty)
             {
@@ -399,7 +399,7 @@ namespace Healthyfood
                 error1.Text = null;
                 error3.Text = null;
                 error4.Text = null;
-                x = 0;
+                return 0;
             }
 
             else if (date >= DateTime.Today & quantity > 0 & text == string.Empty)
@@ -411,13 +411,10 @@ namespace Healthyfood
                 error1.Text = null;
                 error3.Text = "Aucun aliment sélectionné";
                 error4.Text = null;
-                x = 0;
+                return 0;
             }
             else
             {
-                Global.Stocks.AddIngredient("viande", text_name_meat.Text, quantity, date);
-
-                boxname.Clear();
                 boxquantity.Clear();
                 boxdate.Clear();
                 boxdate.BackColor = Color.White;
@@ -427,7 +424,7 @@ namespace Healthyfood
                 error2.Text = null;
                 error3.Text = null;
                 error4.Text = "Aliment enregistré";
-                x = 1;
+                return 1;
             }
         }
 
@@ -445,7 +442,7 @@ namespace Healthyfood
                 quantity = Int32.Parse(textBox_Quantity.Text);
                 date = Convert.ToDateTime(textBox_Date.Text);
                 int x = 0;
-                verify_error(text_name_meat, textBox_Date, textBox_Quantity, text_error1, text_error2, text_error3, text_error4, x);
+                x= verify_error(text_name_meat, textBox_Date, textBox_Quantity, text_error1, text_error2, text_error3, text_error4);
                 if (x == 1) Global.Stocks.AddIngredient("viande", text_name_meat.Text, quantity, date);
             }
         }
@@ -465,7 +462,7 @@ namespace Healthyfood
                 quantity = Int32.Parse(textbox_quantity_drink.Text);
                 int x = 0;
                 date = Convert.ToDateTime(textbox_datePeremption.Text);
-                verify_error(text_name_drink, textbox_datePeremption, textbox_quantity_drink, label37, label38, label39, label40, x);
+                x = verify_error(text_name_drink, textbox_datePeremption, textbox_quantity_drink, label37, label38, label39, label40);
                 if (x == 1) Global.Stocks.AddIngredient("boisson", text_name_drink.Text, quantity, date);
             }
 
@@ -485,7 +482,7 @@ namespace Healthyfood
                 quantity = Int32.Parse(txt_quantity_dessert.Text);
                 int x = 0;
                 date = Convert.ToDateTime(txt_dateperemtion_dessert.Text);
-                verify_error(text_name_dessert, txt_dateperemtion_dessert, txt_quantity_dessert, label41, label42, label43, label44, x);
+                x = verify_error(text_name_dessert, txt_dateperemtion_dessert, txt_quantity_dessert, label41, label42, label43, label44);
                 if (x == 1) Global.Stocks.AddIngredient("dessert_sucrerie", text_name_dessert.Text, quantity, date);
             }
         }
@@ -505,7 +502,7 @@ namespace Healthyfood
                 int x = 0;
                 date = Convert.ToDateTime(txt_dateperemption_crust.Text);
 
-                verify_error(txt_name_crust, txt_dateperemption_crust, txt_quantity_crust, label45, label46, label47, label48, x);
+                x = verify_error(txt_name_crust, txt_dateperemption_crust, txt_quantity_crust, label45, label46, label47, label48);
                 if (x == 1) Global.Stocks.AddIngredient("crustace", txt_name_crust.Text, quantity, date);
             }
         }
@@ -524,7 +521,7 @@ namespace Healthyfood
                 quantity = Int32.Parse(txt_quantity_fish.Text);
                 int x = 0;
                 date = Convert.ToDateTime(txt_dateperemption_fish.Text);
-                verify_error(text_name_fish, txt_dateperemption_fish, txt_quantity_fish, label49, label50, label51, label52, x);
+                x = verify_error(text_name_fish, txt_dateperemption_fish, txt_quantity_fish, label49, label50, label51, label52);
                 if (x == 1) Global.Stocks.AddIngredient("poisson", text_name_fish.Text, quantity, date);
             }
         }
@@ -533,7 +530,7 @@ namespace Healthyfood
         {
             DateTime date;
             int quantity;
-            if (!(DateTime.TryParse(txt_dateperemtion_poultry.Text, out date)) || !(Int32.TryParse(txt_dateperemtion_poultry.Text, out quantity)))
+            if (!(DateTime.TryParse(txt_dateperemtion_poultry.Text, out date)) || !(Int32.TryParse(txt_quantity_poultry.Text, out quantity)))
             {
                 label53.Text = "Le format est invalide";
 
@@ -544,7 +541,7 @@ namespace Healthyfood
                 int x = 0;
                 date = Convert.ToDateTime(txt_dateperemtion_poultry.Text);
 
-                verify_error(text_name_poultry, txt_dateperemtion_poultry, txt_quantity_poultry, label53, label54, label55, label56, x);
+                x = verify_error(text_name_poultry, txt_dateperemtion_poultry, txt_quantity_poultry, label53, label54, label55, label56);
                 if (x == 1) Global.Stocks.AddIngredient("volaille", text_name_poultry.Text, quantity, date);
             }
         }
@@ -564,7 +561,7 @@ namespace Healthyfood
                 int x = 0;
                 date = Convert.ToDateTime(txt_dateperemtion_vegetable.Text);
 
-                verify_error(text_name_vegetable, txt_dateperemtion_vegetable, txt_quantity_vegetable, label57, label58, label59, label60, x);
+                x = verify_error(text_name_vegetable, txt_dateperemtion_vegetable, txt_quantity_vegetable, label57, label58, label59, label60);
                 if (x == 1) Global.Stocks.AddIngredient("legume", text_name_vegetable.Text, quantity, date);
             }
         }
@@ -584,7 +581,7 @@ namespace Healthyfood
                 quantity = Int32.Parse(txt_quantity_fruit.Text);
                 int x = 0;
 
-                verify_error(text_name_fruit, txt_dateperemtion_fruit, txt_quantity_fruit, label61, label62, label63, label64, x);
+                x = verify_error(text_name_fruit, txt_dateperemtion_fruit, txt_quantity_fruit, label61, label62, label63, label64);
                 if (x == 1) Global.Stocks.AddIngredient("fruit", text_name_fruit.Text, quantity, date);
             }
         }
@@ -604,7 +601,7 @@ namespace Healthyfood
                 quantity = Int32.Parse(textBox24.Text);
                 int x = 0;
 
-                verify_error(text_name_milk, textBox23, textBox24, label65, label66, label67, label68, x);
+                x = verify_error(text_name_milk, textBox23, textBox24, label65, label66, label67, label68);
                 if (x == 1) Global.Stocks.AddIngredient("produit_laitier", text_name_milk.Text, quantity, date);
             }
         }
@@ -624,7 +621,7 @@ namespace Healthyfood
                 quantity = Int32.Parse(textBox27.Text);
                 int x = 0;
 
-                verify_error(text_name_fat, textBox26, textBox27, label69, label70, label71, label72, x);
+                x = verify_error(text_name_fat, textBox26, textBox27, label69, label70, label71, label72);
                 if (x == 1) Global.Stocks.AddIngredient("matiere_grasse", text_name_fat.Text, quantity, date);
             }
         }
@@ -644,7 +641,7 @@ namespace Healthyfood
                 quantity = Int32.Parse(textBox30.Text);
                 int x = 0;
 
-                verify_error(text_name_starchy, textBox29, textBox30, label73, label74, label75, label76, x);
+                x = verify_error(text_name_starchy, textBox29, textBox30, label73, label74, label75, label76);
                 if (x == 1) Global.Stocks.AddIngredient("feculent", text_name_starchy.Text, quantity, date);
             }
         }
@@ -664,7 +661,7 @@ namespace Healthyfood
                 quantity = Int32.Parse(textBox33.Text);
                 int x = 0;
 
-                verify_error(text_name_plant, textBox32, textBox33, label77, label78, label79, label80, x);
+                x = verify_error(text_name_plant, textBox32, textBox33, label77, label78, label79, label80);
                 if (x == 1) Global.Stocks.AddIngredient("herbe_plante", text_name_plant.Text, quantity, date);
             }
         }
@@ -684,7 +681,7 @@ namespace Healthyfood
             quantity = Int32.Parse(textBox36.Text);
             int x = 0;
 
-            verify_error(text_name_bakery, textBox36, textBox37, label81, label82, label83, label84, x);
+                x = verify_error(text_name_bakery, textBox36, textBox37, label81, label82, label83, label84);
             if (x == 1) Global.Stocks.AddIngredient("boulangerie", text_name_bakery.Text, quantity, date);
             }
         }
