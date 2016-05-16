@@ -113,8 +113,8 @@ namespace HealthyFoodTests
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cd", 10, 10, 180, false, false));
             Profil_Utilisateur v = users.CreateUser("ab", "cde", 10, 10, 180, false, false);
             Assert.Throws<ArgumentException>(() => users.CreateUser("ab", "cde", 10, 10, 180, false, false));
-            Profil_Utilisateur w = users.CreateUser("cd", "cd", 10, 10, 180, false, false);
-            Assert.Throws<ArgumentException>(() => users.modify_firstname(w, "ab"));
+            //Profil_Utilisateur w = users.CreateUser("cd", "cd", 10, 10, 180, false, false);
+            //Assert.Throws<ArgumentException>(() => users.modify_firstname(w, "ab"));
         }
 
         [Test]
