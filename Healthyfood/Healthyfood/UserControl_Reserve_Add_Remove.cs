@@ -13,43 +13,13 @@ namespace Healthyfood
 {
     public partial class UserControl_Reserve_Add_Remove : UserControl
     {
-        static int countv = Global.viande.Count;
-        static int countd = Global.boisson.Count;
-        static int countds = Global.dessert_sucrerie.Count;
-        static int countc = Global.crustace.Count;
-        static int countp = Global.poisson.Count;
-        static int countvo = Global.volaille.Count;
-        static int countl = Global.legume.Count;
-        static int countf = Global.fruit.Count;
-        static int countpf = Global.produit_laitier.Count;
-        static int countmg = Global.matiere_grasse.Count;
-        static int countfe = Global.feculent.Count;
-        static int counthp = Global.herbe_plante.Count;
-        static int countbl = Global.boulangerie.Count;
-        
-        string[] _beef = new string[countv];
-        string[] _drink = new string[countd];
-        string[] _sucrerie_dessert = new string[countds];
-        string[] _crustace = new string[countc];
-        string[] _poisson = new string[countp];
-        string[] _volaile = new string[countvo];
-        string[] _legume = new string[countl];
-        string[] _fruit = new string[countf];
-        string[] _produit_laitier = new string[countpf];
-        string[] _matière_grasse = new string[countmg];
-        string[] _feculent = new string[countfe];
-        string[] _herbe_plante = new string[counthp];
-        string[] _boulangerie = new string[countbl];
-
-
+        object _s;
+        EventArgs _e;
 
         public UserControl_Reserve_Add_Remove()
         {
             InitializeComponent();
         }
-        
-
-        
 
         private void button_Back_Click(object sender, EventArgs e)
         {
@@ -61,15 +31,58 @@ namespace Healthyfood
             text_name_meat.Text = listView1.SelectedItems[0].Text;
         }
 
-       
-
         private void button_back1_Click(object sender, EventArgs e)
         {
             this.Visible = false;
         }
 
-        private void UserControl_Reserve_Add_Remove_Enter(object sender, EventArgs e)
+        public void UserControl_Reserve_Add_Remove_Enter(object sender, EventArgs e)
         {
+            _s = sender;
+            _e = e;
+
+            listView1.Items.Clear();
+            listView2.Items.Clear();
+            listView3.Items.Clear();
+            listView4.Items.Clear();
+            listView5.Items.Clear();
+            listView6.Items.Clear();
+            listView7.Items.Clear();
+            listView8.Items.Clear();
+            listView9.Items.Clear();
+            listView10.Items.Clear();
+            listView11.Items.Clear();
+            listView12.Items.Clear();
+            listView13.Items.Clear();
+
+            int countv = Global.viande.Count;
+            int countd = Global.boisson.Count;
+            int countds = Global.dessert_sucrerie.Count;
+            int countc = Global.crustace.Count;
+            int countp = Global.poisson.Count;
+            int countvo = Global.volaille.Count;
+            int countl = Global.legume.Count;
+            int countf = Global.fruit.Count;
+            int countpf = Global.produit_laitier.Count;
+            int countmg = Global.matiere_grasse.Count;
+            int countfe = Global.feculent.Count;
+            int counthp = Global.herbe_plante.Count;
+            int countbl = Global.boulangerie.Count;
+
+            string[] _beef = new string[countv];
+            string[] _drink = new string[countd];
+            string[] _sucrerie_dessert = new string[countds];
+            string[] _crustace = new string[countc];
+            string[] _poisson = new string[countp];
+            string[] _volaile = new string[countvo];
+            string[] _legume = new string[countl];
+            string[] _fruit = new string[countf];
+            string[] _produit_laitier = new string[countpf];
+            string[] _matière_grasse = new string[countmg];
+            string[] _feculent = new string[countfe];
+            string[] _herbe_plante = new string[counthp];
+            string[] _boulangerie = new string[countbl];
+
             int v = 0;
             int b = 0;
             int s = 0;
@@ -684,6 +697,162 @@ namespace Healthyfood
                 x = verify_error(text_name_bakery, textBox36, textBox37, label81, label82, label83, label84);
             if (x == 1) Global.Stocks.AddIngredient("boulangerie", text_name_bakery.Text, quantity, date);
             }
+        }
+
+        private void button_ajouter_viande_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = true;
+        }
+
+        private void button_ajouter_boisson_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+        }
+
+        private void button_ajouter_dessert_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+        }
+
+        private void button_ajouter_crustacé_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = true;
+        }
+
+        private void button_ajouter_poisson_Click(object sender, EventArgs e)
+        {
+            panel5.Visible = true;
+        }
+
+        private void button_ajouter_volailles_Click(object sender, EventArgs e)
+        {
+            panel6.Visible = true;
+        }
+
+        private void button_ajouter_legumes_Click(object sender, EventArgs e)
+        {
+            panel7.Visible = true;
+        }
+
+        private void button_ajouter_fruit_Click(object sender, EventArgs e)
+        {
+            panel8.Visible = true;
+        }
+
+        private void button_ajouter_produit_laitier_Click(object sender, EventArgs e)
+        {
+            panel9.Visible = true;
+        }
+
+        private void button_ajouter_matiére_grasse_Click(object sender, EventArgs e)
+        {
+            panel10.Visible = true;
+        }
+
+        private void button_ajouter_feculent_Click(object sender, EventArgs e)
+        {
+            panel11.Visible = true;
+        }
+
+        private void button_ajout_boulangerie_Click(object sender, EventArgs e)
+        {
+            panel13.Visible = true;
+        }
+
+        private void button_ajouter_herbe_Click(object sender, EventArgs e)
+        {
+            panel12.Visible = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Global.CreateIngredient("boisson", textBox1.Text);
+            panel1.Visible = false;
+            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Global.CreateIngredient("viande", textBox2.Text);
+            panel2.Visible = false;
+            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Global.CreateIngredient("dessert_sucrerie", textBox3.Text);
+            panel3.Visible = false;
+            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Global.CreateIngredient("crustace", textBox4.Text);
+            panel4.Visible = false;
+            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Global.CreateIngredient("poisson", textBox5.Text);
+            panel5.Visible = false;
+            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Global.CreateIngredient("volaille", textBox6.Text);
+            panel6.Visible = false;
+            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Global.CreateIngredient("legume", textBox7.Text);
+            panel7.Visible = false;
+            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Global.CreateIngredient("fruit", textBox8.Text);
+            panel8.Visible = false;
+            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Global.CreateIngredient("produit_laitier", textBox9.Text);
+            panel9.Visible = false;
+            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Global.CreateIngredient("matiere_grasse", textBox10.Text);
+            panel10.Visible = false;
+            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Global.CreateIngredient("feculent", textBox11.Text);
+            panel11.Visible = false;
+            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Global.CreateIngredient("herbe_plante", textBox12.Text);
+            panel12.Visible = false;
+            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Global.CreateIngredient("boulangerie", textBox13.Text);
+            panel13.Visible = false;
+            UserControl_Reserve_Add_Remove_Enter(_s, _e);
         }
     }
 }
