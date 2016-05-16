@@ -10,9 +10,9 @@ namespace StockFood
     {
         public static List<string> _Category = new List<string> {"viande", "poisson", "crustace", "dessert_sucrerie", "boisson", "volaille", "legume", "fruit", "produit_laitier", "matiere_grasse", "feculent", "boulangerie", "herbe_plante" };
 
-        static string _name;
-        public static string _category;
-        static DateTime _expiration_date;
+        string _name;
+        public  string _category;
+        DateTime _expiration_date;
         int _balance;
 
 

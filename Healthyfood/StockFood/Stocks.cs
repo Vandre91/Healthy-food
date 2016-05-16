@@ -8,7 +8,7 @@ namespace StockFood
 {
     public class Stocks
     {
-       public static Dictionary<string, Ingredients> _stock;
+       public Dictionary<string, Ingredients> _stock;
 
         public Stocks ()
         {
@@ -34,13 +34,15 @@ namespace StockFood
                 int bal = _stock[name + " " + Convert.ToString(expiration_date)].Balance + balance;
                 RemoveIngredient(name, expiration_date);
                 Ingredients i = AddIngredient(category, name, bal, expiration_date);
+                return i;
             }
             else
             {
                 _stock[naming(ingred)] = ingred;
+
+                return ingred;
             }
 
-            return ingred;
         }
 
         public void RemoveIngredient(string name, DateTime expiration_date)
@@ -57,7 +59,7 @@ namespace StockFood
             
         }
 
-        public void ReduceIngredient(string name, int balance,  DateTime expiration_date)
+        public Ingredients ReduceIngredient(string name, int balance,  DateTime expiration_date)
         {
             if (balance <= 0) throw new ArgumentException("The balance must be more than 0", nameof(balance));
             if (_stock.ContainsKey(name + " " + Convert.ToString(expiration_date)))
@@ -73,6 +75,7 @@ namespace StockFood
                     RemoveIngredient(name, expiration_date);
                    Ingredients i = AddIngredient(category, name, bal, expiration_date);
                     if (bal == 0)  RemoveIngredient(name, expiration_date);
+                    return i;
                    
                 }
             }
