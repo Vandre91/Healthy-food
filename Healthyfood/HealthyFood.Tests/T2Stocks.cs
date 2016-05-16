@@ -24,8 +24,7 @@ namespace HealthyFoodTests
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("", "lait", 100, date));
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient(" \t\r\n", "lait", 100, date));
             Ingredients i = stocks.AddIngredient("viande", "lait", 100, date);
-            Assert.That(Stocks._stock.ContainsKey(Stocks.naming(i)), Is.EqualTo(true));
-            Assert.That(Stocks._stock[Stocks.naming(i)].Category, Is.EqualTo("viande"));
+            Assert.That(i.Category, Is.EqualTo("viande"));
         }
 
         [Test]
@@ -33,13 +32,12 @@ namespace HealthyFoodTests
         {
             Stocks stocks = new Stocks();
             DateTime date = new DateTime(2017, 10, 10);
-            Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", "poussin", 100, date));
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", "", 100, date));
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", " ", 100, date));
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", null, 100, date));
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", " \t\r\n", 100, date));
             Ingredients i = stocks.AddIngredient("viande", "Steak de boeuf", 100, date);
-            Assert.That(Stocks._stock[Stocks.naming(i)].Name, Is.EqualTo("Steak de boeuf"));
+            Assert.That(i.Name, Is.EqualTo("Steak de boeuf"));
 
         }
 
@@ -55,10 +53,10 @@ namespace HealthyFoodTests
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", "Steak de boeuf", -10, date));
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", "Steak de boeuf", 100, date1));
             Ingredients i = stocks.AddIngredient("viande", "Steak de boeuf", 100, date2);
-            Assert.That(Stocks._stock[Stocks.naming(i)].Expiration_Date, Is.EqualTo(DateTime.Today));
-            Assert.That(Stocks._stock[Stocks.naming(i)].Balance, Is.EqualTo(100));
+            Assert.That(i.Expiration_Date, Is.EqualTo(DateTime.Today));
+            Assert.That(i.Balance, Is.EqualTo(100));
             Ingredients u = stocks.AddIngredient("viande", "Steak de boeuf", 100, date3);
-            Assert.That(Stocks._stock[Stocks.naming(u)].Expiration_Date, Is.EqualTo(date3));
+            Assert.That(u.Expiration_Date, Is.EqualTo(date3));
 
         }
 
@@ -84,8 +82,8 @@ namespace HealthyFoodTests
             Stocks stocks = new Stocks();
             DateTime date = new DateTime(2017, 10, 10);
             Ingredients i = stocks.AddIngredient("viande", "Steak de boeuf", 100, date);
-            stocks.AddIngredient("viande", "Steak de boeuf", 150, date);
-            Assert.That(Stocks._stock[Stocks.naming(i)].Balance, Is.EqualTo(250));
+            i= stocks.AddIngredient("viande", "Steak de boeuf", 150, date);
+            Assert.That(i.Balance, Is.EqualTo(250));
         }
 
         [Test]
@@ -98,9 +96,9 @@ namespace HealthyFoodTests
             Assert.Throws<ArgumentException>(() => stocks.ReduceIngredient("Steak de boeuf",200, date));
             Assert.Throws<ArgumentException>(() => stocks.ReduceIngredient("Steak de chat", 200, date));
             Assert.Throws<ArgumentException>(() => stocks.ReduceIngredient("Steak de boeuf", -1, date));
-            Assert.That(Stocks._stock[Stocks.naming(i)].Balance, Is.EqualTo(100));
-            stocks.ReduceIngredient("Steak de boeuf", 50, date);
-            Assert.That(Stocks._stock[Stocks.naming(i)].Balance, Is.EqualTo(50));
+            Assert.That(i.Balance, Is.EqualTo(100));
+            i= stocks.ReduceIngredient("Steak de boeuf", 50, date);
+            Assert.That(i.Balance, Is.EqualTo(50));
         }
 
         [Test]
