@@ -769,6 +769,7 @@ namespace Healthyfood
             if (Global.boisson.Contains(textBox1.Text))
             {
                 textBox1.BackColor = Color.Red;
+                label88.Text = "Ingrédient déjà existant";
             }
             else
             {
@@ -783,9 +784,11 @@ namespace Healthyfood
             if (Global.viande.Contains(textBox2.Text))
             {
                 textBox2.BackColor = Color.Red;
+                label87.Text = "Ingrédient déjà existant";
             }
             else
             {
+                label85.Text = null;
                 Global.CreateIngredient("viande", textBox2.Text);
                 panel2.Visible = false;
                 UserControl_Reserve_Add_Remove_Enter(_s, _e);
@@ -797,6 +800,7 @@ namespace Healthyfood
             if (Global.dessert_sucrerie.Contains(textBox3.Text))
             {
                 textBox3.BackColor = Color.Red;
+                label85.Text = "Ingrédient déjà existant";
             }
             else
             {
@@ -811,6 +815,7 @@ namespace Healthyfood
             if (Global.crustace.Contains(textBox4.Text))
             {
                 textBox4.BackColor = Color.Red;
+                label86.Text = "Ingrédient déjà existant";
             }
             else
             {
@@ -825,6 +830,7 @@ namespace Healthyfood
             if (Global.poisson.Contains(textBox5.Text))
             {
                 textBox5.BackColor = Color.Red;
+                label89.Text = "Ingrédient déjà existant";
             }
             else
             {
@@ -839,6 +845,7 @@ namespace Healthyfood
             if (Global.volaille.Contains(textBox6.Text))
             {
                 textBox6.BackColor = Color.Red;
+                label90.Text = "Ingrédient déjà existant";
             }
             else
             {
@@ -854,6 +861,7 @@ namespace Healthyfood
             if (Global.legume.Contains(textBox7.Text))
             {
                 textBox7.BackColor = Color.Red;
+                label91.Text = "Ingrédient déjà existant";
             }
             else
             {
@@ -868,6 +876,7 @@ namespace Healthyfood
             if (Global.fruit.Contains(textBox8.Text))
             {
                 textBox8.BackColor = Color.Red;
+                label92.Text = "Ingrédient déjà existant";
             }
             else
             {
@@ -882,6 +891,7 @@ namespace Healthyfood
             if (Global.produit_laitier.Contains(textBox9.Text))
             {
                 textBox9.BackColor = Color.Red;
+                label93.Text = "Ingrédient déjà existant";
             }
             else
             {
@@ -896,6 +906,7 @@ namespace Healthyfood
             if (Global.matiere_grasse.Contains(textBox10.Text))
             {
                 textBox10.BackColor = Color.Red;
+                label94.Text = "Ingrédient déjà existant";
             }
             else
             {
@@ -910,6 +921,7 @@ namespace Healthyfood
             if (Global.feculent.Contains(textBox11.Text))
             {
                 textBox11.BackColor = Color.Red;
+                label95.Text = "Ingrédient déjà existant";
             }
             else
             {
@@ -924,6 +936,7 @@ namespace Healthyfood
             if (Global.herbe_plante.Contains(textBox12.Text))
             {
                 textBox12.BackColor = Color.Red;
+                label96.Text = "Ingrédient déjà existant";
             }
             else
             {
@@ -938,6 +951,7 @@ namespace Healthyfood
             if (Global.boulangerie.Contains(textBox13.Text))
             {
                 textBox13.BackColor = Color.Red;
+                label97.Text = "Ingrédient déjà existant";
             }
             else
             {
