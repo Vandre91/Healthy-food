@@ -766,93 +766,185 @@ namespace Healthyfood
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Global.CreateIngredient("boisson", textBox1.Text);
-            panel1.Visible = false;
-            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            if (Global.boisson.Contains(textBox1.Text))
+            {
+                textBox1.BackColor = Color.Red;
+            }
+            else
+            {
+                Global.CreateIngredient("boisson", textBox1.Text);
+                panel1.Visible = false;
+                UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Global.CreateIngredient("viande", textBox2.Text);
-            panel2.Visible = false;
-            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            if (Global.viande.Contains(textBox2.Text))
+            {
+                textBox2.BackColor = Color.Red;
+            }
+            else
+            {
+                Global.CreateIngredient("viande", textBox2.Text);
+                panel2.Visible = false;
+                UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Global.CreateIngredient("dessert_sucrerie", textBox3.Text);
-            panel3.Visible = false;
-            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            if (Global.dessert_sucrerie.Contains(textBox3.Text))
+            {
+                textBox3.BackColor = Color.Red;
+            }
+            else
+            {
+                Global.CreateIngredient("dessert_sucrerie", textBox3.Text);
+                panel3.Visible = false;
+                UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Global.CreateIngredient("crustace", textBox4.Text);
-            panel4.Visible = false;
-            UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            if (Global.crustace.Contains(textBox4.Text))
+            {
+                textBox4.BackColor = Color.Red;
+            }
+            else
+            {
+                Global.CreateIngredient("crustace", textBox4.Text);
+                panel4.Visible = false;
+                UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Global.CreateIngredient("poisson", textBox5.Text);
+            if (Global.poisson.Contains(textBox5.Text))
+            {
+                textBox5.BackColor = Color.Red;
+            }
+            else
+            {
+                Global.CreateIngredient("poisson", textBox5.Text);
             panel5.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
-        }
+            }
+         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Global.CreateIngredient("volaille", textBox6.Text);
+            if (Global.volaille.Contains(textBox6.Text))
+            {
+                textBox6.BackColor = Color.Red;
+            }
+            else
+            {
+                Global.CreateIngredient("volaille", textBox6.Text);
             panel6.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            }
+
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Global.CreateIngredient("legume", textBox7.Text);
+            if (Global.legume.Contains(textBox7.Text))
+            {
+                textBox7.BackColor = Color.Red;
+            }
+            else
+            {
+                Global.CreateIngredient("legume", textBox7.Text);
             panel7.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Global.CreateIngredient("fruit", textBox8.Text);
+            if (Global.fruit.Contains(textBox8.Text))
+            {
+                textBox8.BackColor = Color.Red;
+            }
+            else
+            {
+                Global.CreateIngredient("fruit", textBox8.Text);
             panel8.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Global.CreateIngredient("produit_laitier", textBox9.Text);
+            if (Global.produit_laitier.Contains(textBox9.Text))
+            {
+                textBox9.BackColor = Color.Red;
+            }
+            else
+            {
+                Global.CreateIngredient("produit_laitier", textBox9.Text);
             panel9.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            }
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            Global.CreateIngredient("matiere_grasse", textBox10.Text);
+            if (Global.matiere_grasse.Contains(textBox10.Text))
+            {
+                textBox10.BackColor = Color.Red;
+            }
+            else
+            {
+                Global.CreateIngredient("matiere_grasse", textBox10.Text);
             panel10.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            }
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            Global.CreateIngredient("feculent", textBox11.Text);
+            if (Global.feculent.Contains(textBox11.Text))
+            {
+                textBox11.BackColor = Color.Red;
+            }
+            else
+            {
+                Global.CreateIngredient("feculent", textBox11.Text);
             panel11.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            }
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            Global.CreateIngredient("herbe_plante", textBox12.Text);
+            if (Global.herbe_plante.Contains(textBox12.Text))
+            {
+                textBox12.BackColor = Color.Red;
+            }
+            else
+            {
+                Global.CreateIngredient("herbe_plante", textBox12.Text);
             panel12.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            }
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            Global.CreateIngredient("boulangerie", textBox13.Text);
+            if (Global.boulangerie.Contains(textBox13.Text))
+            {
+                textBox13.BackColor = Color.Red;
+            }
+            else
+            {
+                Global.CreateIngredient("boulangerie", textBox13.Text);
             panel13.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
+            }
         }
     }
 }
