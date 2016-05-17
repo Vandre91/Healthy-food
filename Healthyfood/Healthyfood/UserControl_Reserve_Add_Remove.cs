@@ -694,7 +694,7 @@ namespace Healthyfood
             quantity = Int32.Parse(textBox36.Text);
             int x = 0;
 
-                x = verify_error(text_name_bakery, textBox36, textBox37, label81, label82, label83, label84);
+                x = verify_error(text_name_bakery, textBox37, textBox36, label81, label82, label83, label84);
             if (x == 1) Global.Stocks.AddIngredient("boulangerie", text_name_bakery.Text, quantity, date);
             }
         }
