@@ -3057,47 +3057,46 @@
             // 
             this.label85.AutoSize = true;
             this.label85.ForeColor = System.Drawing.Color.Red;
-            this.label85.Location = new System.Drawing.Point(81, 51);
+            this.label85.Location = new System.Drawing.Point(81, 59);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(54, 17);
+            this.label85.Size = new System.Drawing.Size(0, 17);
             this.label85.TabIndex = 2;
-            this.label85.Text = "label85";
             // 
             // label87
             // 
             this.label87.AutoSize = true;
+            this.label87.ForeColor = System.Drawing.Color.Red;
             this.label87.Location = new System.Drawing.Point(84, 58);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(54, 17);
+            this.label87.Size = new System.Drawing.Size(0, 17);
             this.label87.TabIndex = 2;
-            this.label87.Text = "label87";
             // 
             // label88
             // 
             this.label88.AutoSize = true;
+            this.label88.ForeColor = System.Drawing.Color.Red;
             this.label88.Location = new System.Drawing.Point(87, 58);
             this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(54, 17);
+            this.label88.Size = new System.Drawing.Size(0, 17);
             this.label88.TabIndex = 2;
-            this.label88.Text = "label88";
             // 
             // label86
             // 
             this.label86.AutoSize = true;
+            this.label86.ForeColor = System.Drawing.Color.Red;
             this.label86.Location = new System.Drawing.Point(88, 59);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(54, 17);
+            this.label86.Size = new System.Drawing.Size(0, 17);
             this.label86.TabIndex = 2;
-            this.label86.Text = "label86";
             // 
             // label89
             // 
             this.label89.AutoSize = true;
+            this.label89.ForeColor = System.Drawing.Color.Red;
             this.label89.Location = new System.Drawing.Point(91, 58);
             this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(54, 17);
+            this.label89.Size = new System.Drawing.Size(0, 17);
             this.label89.TabIndex = 2;
-            this.label89.Text = "label89";
             // 
             // label90
             // 
