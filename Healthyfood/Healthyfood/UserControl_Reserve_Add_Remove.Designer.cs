@@ -276,6 +276,19 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl_Add_Remove = new System.Windows.Forms.TabControl();
+            this.label85 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label94 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.label96 = new System.Windows.Forms.Label();
+            this.label97 = new System.Windows.Forms.Label();
             this.tabPage_Fat_Boulangerie.SuspendLayout();
             this.panel13.SuspendLayout();
             this.tabPage_Herbes_Plants.SuspendLayout();
@@ -323,9 +336,9 @@
             this.tabPage_Fat_Boulangerie.Controls.Add(this.label34);
             this.tabPage_Fat_Boulangerie.Controls.Add(this.listView13);
             this.tabPage_Fat_Boulangerie.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_Fat_Boulangerie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Fat_Boulangerie.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Fat_Boulangerie.Name = "tabPage_Fat_Boulangerie";
-            this.tabPage_Fat_Boulangerie.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Fat_Boulangerie.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage_Fat_Boulangerie.Size = new System.Drawing.Size(760, 471);
             this.tabPage_Fat_Boulangerie.TabIndex = 12;
             this.tabPage_Fat_Boulangerie.Text = "Boulangérie";
@@ -333,10 +346,11 @@
             // 
             // panel13
             // 
+            this.panel13.Controls.Add(this.label97);
             this.panel13.Controls.Add(this.button13);
             this.panel13.Controls.Add(this.textBox13);
             this.panel13.Location = new System.Drawing.Point(469, 199);
-            this.panel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(267, 123);
             this.panel13.TabIndex = 24;
@@ -345,7 +359,7 @@
             // button13
             // 
             this.button13.Location = new System.Drawing.Point(84, 80);
-            this.button13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button13.Margin = new System.Windows.Forms.Padding(4);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(100, 28);
             this.button13.TabIndex = 1;
@@ -356,7 +370,7 @@
             // textBox13
             // 
             this.textBox13.Location = new System.Drawing.Point(84, 25);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(4);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(132, 22);
             this.textBox13.TabIndex = 0;
@@ -364,7 +378,7 @@
             // button_ajout_boulangerie
             // 
             this.button_ajout_boulangerie.Location = new System.Drawing.Point(469, 334);
-            this.button_ajout_boulangerie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajout_boulangerie.Margin = new System.Windows.Forms.Padding(4);
             this.button_ajout_boulangerie.Name = "button_ajout_boulangerie";
             this.button_ajout_boulangerie.Size = new System.Drawing.Size(249, 28);
             this.button_ajout_boulangerie.TabIndex = 14;
@@ -412,7 +426,7 @@
             // 
             this.button_back_bukery.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_back_bukery.Location = new System.Drawing.Point(616, 374);
-            this.button_back_bukery.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_back_bukery.Margin = new System.Windows.Forms.Padding(4);
             this.button_back_bukery.Name = "button_back_bukery";
             this.button_back_bukery.Size = new System.Drawing.Size(133, 86);
             this.button_back_bukery.TabIndex = 8;
@@ -424,7 +438,7 @@
             // 
             this.button23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button23.Location = new System.Drawing.Point(469, 374);
-            this.button23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button23.Margin = new System.Windows.Forms.Padding(4);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(129, 86);
             this.button23.TabIndex = 7;
@@ -436,7 +450,7 @@
             // 
             this.textBox37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox37.Location = new System.Drawing.Point(616, 137);
-            this.textBox37.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox37.Margin = new System.Windows.Forms.Padding(4);
             this.textBox37.Name = "textBox37";
             this.textBox37.Size = new System.Drawing.Size(132, 22);
             this.textBox37.TabIndex = 6;
@@ -445,7 +459,7 @@
             // 
             this.textBox36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox36.Location = new System.Drawing.Point(616, 90);
-            this.textBox36.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox36.Margin = new System.Windows.Forms.Padding(4);
             this.textBox36.Name = "textBox36";
             this.textBox36.Size = new System.Drawing.Size(132, 22);
             this.textBox36.TabIndex = 5;
@@ -455,7 +469,7 @@
             this.text_name_bakery.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_bakery.Enabled = false;
             this.text_name_bakery.Location = new System.Drawing.Point(616, 41);
-            this.text_name_bakery.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.text_name_bakery.Margin = new System.Windows.Forms.Padding(4);
             this.text_name_bakery.Name = "text_name_bakery";
             this.text_name_bakery.Size = new System.Drawing.Size(132, 22);
             this.text_name_bakery.TabIndex = 4;
@@ -495,7 +509,7 @@
             this.listView13.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader34});
             this.listView13.Location = new System.Drawing.Point(8, 7);
-            this.listView13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView13.Margin = new System.Windows.Forms.Padding(4);
             this.listView13.Name = "listView13";
             this.listView13.Size = new System.Drawing.Size(296, 456);
             this.listView13.TabIndex = 0;
@@ -526,7 +540,7 @@
             this.tabPage_Herbes_Plants.Controls.Add(this.text_name_plant);
             this.tabPage_Herbes_Plants.Controls.Add(this.listView12);
             this.tabPage_Herbes_Plants.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_Herbes_Plants.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Herbes_Plants.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Herbes_Plants.Name = "tabPage_Herbes_Plants";
             this.tabPage_Herbes_Plants.Size = new System.Drawing.Size(760, 471);
             this.tabPage_Herbes_Plants.TabIndex = 11;
@@ -535,10 +549,11 @@
             // 
             // panel12
             // 
+            this.panel12.Controls.Add(this.label96);
             this.panel12.Controls.Add(this.button12);
             this.panel12.Controls.Add(this.textBox12);
             this.panel12.Location = new System.Drawing.Point(471, 192);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(267, 123);
             this.panel12.TabIndex = 24;
@@ -547,7 +562,7 @@
             // button12
             // 
             this.button12.Location = new System.Drawing.Point(84, 80);
-            this.button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button12.Margin = new System.Windows.Forms.Padding(4);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(100, 28);
             this.button12.TabIndex = 1;
@@ -558,7 +573,7 @@
             // textBox12
             // 
             this.textBox12.Location = new System.Drawing.Point(84, 25);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(132, 22);
             this.textBox12.TabIndex = 0;
@@ -566,7 +581,7 @@
             // button_ajouter_herbe
             // 
             this.button_ajouter_herbe.Location = new System.Drawing.Point(479, 336);
-            this.button_ajouter_herbe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouter_herbe.Margin = new System.Windows.Forms.Padding(4);
             this.button_ajouter_herbe.Name = "button_ajouter_herbe";
             this.button_ajouter_herbe.Size = new System.Drawing.Size(249, 28);
             this.button_ajouter_herbe.TabIndex = 22;
@@ -647,7 +662,7 @@
             // 
             this.button_back_grass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_back_grass.Location = new System.Drawing.Point(619, 372);
-            this.button_back_grass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_back_grass.Margin = new System.Windows.Forms.Padding(4);
             this.button_back_grass.Name = "button_back_grass";
             this.button_back_grass.Size = new System.Drawing.Size(131, 84);
             this.button_back_grass.TabIndex = 14;
@@ -659,7 +674,7 @@
             // 
             this.button22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button22.Location = new System.Drawing.Point(479, 372);
-            this.button22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button22.Margin = new System.Windows.Forms.Padding(4);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(132, 84);
             this.button22.TabIndex = 13;
@@ -671,7 +686,7 @@
             // 
             this.textBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox32.Location = new System.Drawing.Point(616, 138);
-            this.textBox32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox32.Margin = new System.Windows.Forms.Padding(4);
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(132, 22);
             this.textBox32.TabIndex = 12;
@@ -680,7 +695,7 @@
             // 
             this.textBox33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox33.Location = new System.Drawing.Point(616, 91);
-            this.textBox33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox33.Margin = new System.Windows.Forms.Padding(4);
             this.textBox33.Name = "textBox33";
             this.textBox33.Size = new System.Drawing.Size(132, 22);
             this.textBox33.TabIndex = 11;
@@ -690,7 +705,7 @@
             this.text_name_plant.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_plant.Enabled = false;
             this.text_name_plant.Location = new System.Drawing.Point(616, 44);
-            this.text_name_plant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.text_name_plant.Margin = new System.Windows.Forms.Padding(4);
             this.text_name_plant.Name = "text_name_plant";
             this.text_name_plant.Size = new System.Drawing.Size(132, 22);
             this.text_name_plant.TabIndex = 10;
@@ -703,7 +718,7 @@
             this.listView12.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader31});
             this.listView12.Location = new System.Drawing.Point(4, -1);
-            this.listView12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView12.Margin = new System.Windows.Forms.Padding(4);
             this.listView12.Name = "listView12";
             this.listView12.Size = new System.Drawing.Size(253, 464);
             this.listView12.TabIndex = 9;
@@ -734,7 +749,7 @@
             this.tabPage_Féculent.Controls.Add(this.text_name_starchy);
             this.tabPage_Féculent.Controls.Add(this.listView11);
             this.tabPage_Féculent.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_Féculent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Féculent.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Féculent.Name = "tabPage_Féculent";
             this.tabPage_Féculent.Size = new System.Drawing.Size(760, 471);
             this.tabPage_Féculent.TabIndex = 10;
@@ -743,10 +758,11 @@
             // 
             // panel11
             // 
+            this.panel11.Controls.Add(this.label95);
             this.panel11.Controls.Add(this.button11);
             this.panel11.Controls.Add(this.textBox11);
             this.panel11.Location = new System.Drawing.Point(476, 194);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(267, 123);
             this.panel11.TabIndex = 24;
@@ -755,7 +771,7 @@
             // button11
             // 
             this.button11.Location = new System.Drawing.Point(84, 80);
-            this.button11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button11.Margin = new System.Windows.Forms.Padding(4);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(100, 28);
             this.button11.TabIndex = 1;
@@ -766,7 +782,7 @@
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(84, 25);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(132, 22);
             this.textBox11.TabIndex = 0;
@@ -774,7 +790,7 @@
             // button_ajouter_feculent
             // 
             this.button_ajouter_feculent.Location = new System.Drawing.Point(479, 336);
-            this.button_ajouter_feculent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouter_feculent.Margin = new System.Windows.Forms.Padding(4);
             this.button_ajouter_feculent.Name = "button_ajouter_feculent";
             this.button_ajouter_feculent.Size = new System.Drawing.Size(249, 28);
             this.button_ajouter_feculent.TabIndex = 22;
@@ -855,7 +871,7 @@
             // 
             this.button_back_starchyfood.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_back_starchyfood.Location = new System.Drawing.Point(619, 372);
-            this.button_back_starchyfood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_back_starchyfood.Margin = new System.Windows.Forms.Padding(4);
             this.button_back_starchyfood.Name = "button_back_starchyfood";
             this.button_back_starchyfood.Size = new System.Drawing.Size(131, 84);
             this.button_back_starchyfood.TabIndex = 14;
@@ -867,7 +883,7 @@
             // 
             this.button20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button20.Location = new System.Drawing.Point(479, 372);
-            this.button20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button20.Margin = new System.Windows.Forms.Padding(4);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(132, 84);
             this.button20.TabIndex = 13;
@@ -879,7 +895,7 @@
             // 
             this.textBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox29.Location = new System.Drawing.Point(616, 138);
-            this.textBox29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox29.Margin = new System.Windows.Forms.Padding(4);
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(132, 22);
             this.textBox29.TabIndex = 12;
@@ -888,7 +904,7 @@
             // 
             this.textBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox30.Location = new System.Drawing.Point(616, 91);
-            this.textBox30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox30.Margin = new System.Windows.Forms.Padding(4);
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(132, 22);
             this.textBox30.TabIndex = 11;
@@ -898,7 +914,7 @@
             this.text_name_starchy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_starchy.Enabled = false;
             this.text_name_starchy.Location = new System.Drawing.Point(616, 44);
-            this.text_name_starchy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.text_name_starchy.Margin = new System.Windows.Forms.Padding(4);
             this.text_name_starchy.Name = "text_name_starchy";
             this.text_name_starchy.Size = new System.Drawing.Size(132, 22);
             this.text_name_starchy.TabIndex = 10;
@@ -911,7 +927,7 @@
             this.listView11.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader28});
             this.listView11.Location = new System.Drawing.Point(16, 4);
-            this.listView11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView11.Margin = new System.Windows.Forms.Padding(4);
             this.listView11.Name = "listView11";
             this.listView11.Size = new System.Drawing.Size(267, 456);
             this.listView11.TabIndex = 9;
@@ -942,7 +958,7 @@
             this.tabPage_Fat_Content.Controls.Add(this.text_name_fat);
             this.tabPage_Fat_Content.Controls.Add(this.listView10);
             this.tabPage_Fat_Content.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_Fat_Content.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Fat_Content.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Fat_Content.Name = "tabPage_Fat_Content";
             this.tabPage_Fat_Content.Size = new System.Drawing.Size(760, 471);
             this.tabPage_Fat_Content.TabIndex = 9;
@@ -951,10 +967,11 @@
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.label94);
             this.panel10.Controls.Add(this.button10);
             this.panel10.Controls.Add(this.textBox10);
             this.panel10.Location = new System.Drawing.Point(479, 180);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(267, 123);
             this.panel10.TabIndex = 24;
@@ -963,7 +980,7 @@
             // button10
             // 
             this.button10.Location = new System.Drawing.Point(84, 80);
-            this.button10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(100, 28);
             this.button10.TabIndex = 1;
@@ -974,7 +991,7 @@
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(84, 25);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(132, 22);
             this.textBox10.TabIndex = 0;
@@ -982,7 +999,7 @@
             // button_ajouter_matiére_grasse
             // 
             this.button_ajouter_matiére_grasse.Location = new System.Drawing.Point(481, 336);
-            this.button_ajouter_matiére_grasse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouter_matiére_grasse.Margin = new System.Windows.Forms.Padding(4);
             this.button_ajouter_matiére_grasse.Name = "button_ajouter_matiére_grasse";
             this.button_ajouter_matiére_grasse.Size = new System.Drawing.Size(249, 28);
             this.button_ajouter_matiére_grasse.TabIndex = 22;
@@ -1063,7 +1080,7 @@
             // 
             this.button_back_fat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_back_fat.Location = new System.Drawing.Point(619, 372);
-            this.button_back_fat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_back_fat.Margin = new System.Windows.Forms.Padding(4);
             this.button_back_fat.Name = "button_back_fat";
             this.button_back_fat.Size = new System.Drawing.Size(131, 84);
             this.button_back_fat.TabIndex = 14;
@@ -1075,7 +1092,7 @@
             // 
             this.button18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button18.Location = new System.Drawing.Point(479, 372);
-            this.button18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button18.Margin = new System.Windows.Forms.Padding(4);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(132, 84);
             this.button18.TabIndex = 13;
@@ -1087,7 +1104,7 @@
             // 
             this.textBox26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox26.Location = new System.Drawing.Point(616, 138);
-            this.textBox26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox26.Margin = new System.Windows.Forms.Padding(4);
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(132, 22);
             this.textBox26.TabIndex = 12;
@@ -1096,7 +1113,7 @@
             // 
             this.textBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox27.Location = new System.Drawing.Point(616, 91);
-            this.textBox27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox27.Margin = new System.Windows.Forms.Padding(4);
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(132, 22);
             this.textBox27.TabIndex = 11;
@@ -1106,7 +1123,7 @@
             this.text_name_fat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_fat.Enabled = false;
             this.text_name_fat.Location = new System.Drawing.Point(616, 44);
-            this.text_name_fat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.text_name_fat.Margin = new System.Windows.Forms.Padding(4);
             this.text_name_fat.Name = "text_name_fat";
             this.text_name_fat.Size = new System.Drawing.Size(132, 22);
             this.text_name_fat.TabIndex = 10;
@@ -1119,7 +1136,7 @@
             this.listView10.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader25});
             this.listView10.Location = new System.Drawing.Point(4, -1);
-            this.listView10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView10.Margin = new System.Windows.Forms.Padding(4);
             this.listView10.Name = "listView10";
             this.listView10.Size = new System.Drawing.Size(255, 464);
             this.listView10.TabIndex = 9;
@@ -1150,7 +1167,7 @@
             this.tabPage_Milk_product.Controls.Add(this.text_name_milk);
             this.tabPage_Milk_product.Controls.Add(this.listView9);
             this.tabPage_Milk_product.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_Milk_product.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Milk_product.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Milk_product.Name = "tabPage_Milk_product";
             this.tabPage_Milk_product.Size = new System.Drawing.Size(760, 471);
             this.tabPage_Milk_product.TabIndex = 8;
@@ -1159,10 +1176,11 @@
             // 
             // panel9
             // 
+            this.panel9.Controls.Add(this.label93);
             this.panel9.Controls.Add(this.button9);
             this.panel9.Controls.Add(this.textBox9);
             this.panel9.Location = new System.Drawing.Point(479, 183);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(267, 123);
             this.panel9.TabIndex = 24;
@@ -1171,7 +1189,7 @@
             // button9
             // 
             this.button9.Location = new System.Drawing.Point(84, 80);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(100, 28);
             this.button9.TabIndex = 1;
@@ -1182,7 +1200,7 @@
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(84, 25);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(132, 22);
             this.textBox9.TabIndex = 0;
@@ -1190,7 +1208,7 @@
             // button_ajouter_produit_laitier
             // 
             this.button_ajouter_produit_laitier.Location = new System.Drawing.Point(483, 336);
-            this.button_ajouter_produit_laitier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouter_produit_laitier.Margin = new System.Windows.Forms.Padding(4);
             this.button_ajouter_produit_laitier.Name = "button_ajouter_produit_laitier";
             this.button_ajouter_produit_laitier.Size = new System.Drawing.Size(249, 28);
             this.button_ajouter_produit_laitier.TabIndex = 22;
@@ -1271,7 +1289,7 @@
             // 
             this.button_back_dairyproduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_back_dairyproduct.Location = new System.Drawing.Point(619, 372);
-            this.button_back_dairyproduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_back_dairyproduct.Margin = new System.Windows.Forms.Padding(4);
             this.button_back_dairyproduct.Name = "button_back_dairyproduct";
             this.button_back_dairyproduct.Size = new System.Drawing.Size(131, 84);
             this.button_back_dairyproduct.TabIndex = 14;
@@ -1283,7 +1301,7 @@
             // 
             this.button16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button16.Location = new System.Drawing.Point(479, 372);
-            this.button16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button16.Margin = new System.Windows.Forms.Padding(4);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(132, 84);
             this.button16.TabIndex = 13;
@@ -1295,7 +1313,7 @@
             // 
             this.textBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox23.Location = new System.Drawing.Point(616, 138);
-            this.textBox23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox23.Margin = new System.Windows.Forms.Padding(4);
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(132, 22);
             this.textBox23.TabIndex = 12;
@@ -1304,7 +1322,7 @@
             // 
             this.textBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox24.Location = new System.Drawing.Point(616, 91);
-            this.textBox24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox24.Margin = new System.Windows.Forms.Padding(4);
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(132, 22);
             this.textBox24.TabIndex = 11;
@@ -1314,7 +1332,7 @@
             this.text_name_milk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_milk.Enabled = false;
             this.text_name_milk.Location = new System.Drawing.Point(616, 44);
-            this.text_name_milk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.text_name_milk.Margin = new System.Windows.Forms.Padding(4);
             this.text_name_milk.Name = "text_name_milk";
             this.text_name_milk.Size = new System.Drawing.Size(132, 22);
             this.text_name_milk.TabIndex = 10;
@@ -1327,7 +1345,7 @@
             this.listView9.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader22});
             this.listView9.Location = new System.Drawing.Point(4, -1);
-            this.listView9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView9.Margin = new System.Windows.Forms.Padding(4);
             this.listView9.Name = "listView9";
             this.listView9.Size = new System.Drawing.Size(260, 464);
             this.listView9.TabIndex = 9;
@@ -1358,7 +1376,7 @@
             this.tabPage_Fruit.Controls.Add(this.text_name_fruit);
             this.tabPage_Fruit.Controls.Add(this.listView8);
             this.tabPage_Fruit.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_Fruit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Fruit.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Fruit.Name = "tabPage_Fruit";
             this.tabPage_Fruit.Size = new System.Drawing.Size(760, 471);
             this.tabPage_Fruit.TabIndex = 7;
@@ -1367,10 +1385,11 @@
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.label92);
             this.panel8.Controls.Add(this.button8);
             this.panel8.Controls.Add(this.textBox8);
             this.panel8.Location = new System.Drawing.Point(479, 194);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(267, 123);
             this.panel8.TabIndex = 24;
@@ -1379,7 +1398,7 @@
             // button8
             // 
             this.button8.Location = new System.Drawing.Point(84, 80);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(100, 28);
             this.button8.TabIndex = 1;
@@ -1390,7 +1409,7 @@
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(84, 25);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(132, 22);
             this.textBox8.TabIndex = 0;
@@ -1398,7 +1417,7 @@
             // button_ajouter_fruit
             // 
             this.button_ajouter_fruit.Location = new System.Drawing.Point(480, 336);
-            this.button_ajouter_fruit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouter_fruit.Margin = new System.Windows.Forms.Padding(4);
             this.button_ajouter_fruit.Name = "button_ajouter_fruit";
             this.button_ajouter_fruit.Size = new System.Drawing.Size(249, 28);
             this.button_ajouter_fruit.TabIndex = 22;
@@ -1479,7 +1498,7 @@
             // 
             this.button_back_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_back_fruit.Location = new System.Drawing.Point(619, 372);
-            this.button_back_fruit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_back_fruit.Margin = new System.Windows.Forms.Padding(4);
             this.button_back_fruit.Name = "button_back_fruit";
             this.button_back_fruit.Size = new System.Drawing.Size(131, 84);
             this.button_back_fruit.TabIndex = 14;
@@ -1491,7 +1510,7 @@
             // 
             this.btn_enreg_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_enreg_fruit.Location = new System.Drawing.Point(479, 372);
-            this.btn_enreg_fruit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_enreg_fruit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_enreg_fruit.Name = "btn_enreg_fruit";
             this.btn_enreg_fruit.Size = new System.Drawing.Size(132, 84);
             this.btn_enreg_fruit.TabIndex = 13;
@@ -1503,7 +1522,7 @@
             // 
             this.txt_dateperemtion_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_dateperemtion_fruit.Location = new System.Drawing.Point(616, 138);
-            this.txt_dateperemtion_fruit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dateperemtion_fruit.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dateperemtion_fruit.Name = "txt_dateperemtion_fruit";
             this.txt_dateperemtion_fruit.Size = new System.Drawing.Size(132, 22);
             this.txt_dateperemtion_fruit.TabIndex = 12;
@@ -1512,7 +1531,7 @@
             // 
             this.txt_quantity_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_quantity_fruit.Location = new System.Drawing.Point(616, 91);
-            this.txt_quantity_fruit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_quantity_fruit.Margin = new System.Windows.Forms.Padding(4);
             this.txt_quantity_fruit.Name = "txt_quantity_fruit";
             this.txt_quantity_fruit.Size = new System.Drawing.Size(132, 22);
             this.txt_quantity_fruit.TabIndex = 11;
@@ -1522,7 +1541,7 @@
             this.text_name_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_fruit.Enabled = false;
             this.text_name_fruit.Location = new System.Drawing.Point(616, 44);
-            this.text_name_fruit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.text_name_fruit.Margin = new System.Windows.Forms.Padding(4);
             this.text_name_fruit.Name = "text_name_fruit";
             this.text_name_fruit.Size = new System.Drawing.Size(132, 22);
             this.text_name_fruit.TabIndex = 10;
@@ -1535,7 +1554,7 @@
             this.listView8.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader19});
             this.listView8.Location = new System.Drawing.Point(4, -1);
-            this.listView8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView8.Margin = new System.Windows.Forms.Padding(4);
             this.listView8.Name = "listView8";
             this.listView8.Size = new System.Drawing.Size(263, 464);
             this.listView8.TabIndex = 9;
@@ -1566,7 +1585,7 @@
             this.tabPage_Vegetables.Controls.Add(this.text_name_vegetable);
             this.tabPage_Vegetables.Controls.Add(this.listView7);
             this.tabPage_Vegetables.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_Vegetables.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Vegetables.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Vegetables.Name = "tabPage_Vegetables";
             this.tabPage_Vegetables.Size = new System.Drawing.Size(760, 471);
             this.tabPage_Vegetables.TabIndex = 6;
@@ -1575,10 +1594,11 @@
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.label91);
             this.panel7.Controls.Add(this.button7);
             this.panel7.Controls.Add(this.textBox7);
             this.panel7.Location = new System.Drawing.Point(477, 198);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(267, 123);
             this.panel7.TabIndex = 24;
@@ -1587,7 +1607,7 @@
             // button7
             // 
             this.button7.Location = new System.Drawing.Point(84, 80);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(100, 28);
             this.button7.TabIndex = 1;
@@ -1598,7 +1618,7 @@
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(84, 25);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(132, 22);
             this.textBox7.TabIndex = 0;
@@ -1606,7 +1626,7 @@
             // button_ajouter_legumes
             // 
             this.button_ajouter_legumes.Location = new System.Drawing.Point(480, 336);
-            this.button_ajouter_legumes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouter_legumes.Margin = new System.Windows.Forms.Padding(4);
             this.button_ajouter_legumes.Name = "button_ajouter_legumes";
             this.button_ajouter_legumes.Size = new System.Drawing.Size(249, 28);
             this.button_ajouter_legumes.TabIndex = 22;
@@ -1687,7 +1707,7 @@
             // 
             this.button_back_vegetable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_back_vegetable.Location = new System.Drawing.Point(619, 372);
-            this.button_back_vegetable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_back_vegetable.Margin = new System.Windows.Forms.Padding(4);
             this.button_back_vegetable.Name = "button_back_vegetable";
             this.button_back_vegetable.Size = new System.Drawing.Size(131, 84);
             this.button_back_vegetable.TabIndex = 14;
@@ -1699,7 +1719,7 @@
             // 
             this.btn_enreg_vegetable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_enreg_vegetable.Location = new System.Drawing.Point(479, 372);
-            this.btn_enreg_vegetable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_enreg_vegetable.Margin = new System.Windows.Forms.Padding(4);
             this.btn_enreg_vegetable.Name = "btn_enreg_vegetable";
             this.btn_enreg_vegetable.Size = new System.Drawing.Size(132, 84);
             this.btn_enreg_vegetable.TabIndex = 13;
@@ -1711,7 +1731,7 @@
             // 
             this.txt_dateperemtion_vegetable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_dateperemtion_vegetable.Location = new System.Drawing.Point(616, 138);
-            this.txt_dateperemtion_vegetable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dateperemtion_vegetable.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dateperemtion_vegetable.Name = "txt_dateperemtion_vegetable";
             this.txt_dateperemtion_vegetable.Size = new System.Drawing.Size(132, 22);
             this.txt_dateperemtion_vegetable.TabIndex = 12;
@@ -1720,7 +1740,7 @@
             // 
             this.txt_quantity_vegetable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_quantity_vegetable.Location = new System.Drawing.Point(616, 91);
-            this.txt_quantity_vegetable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_quantity_vegetable.Margin = new System.Windows.Forms.Padding(4);
             this.txt_quantity_vegetable.Name = "txt_quantity_vegetable";
             this.txt_quantity_vegetable.Size = new System.Drawing.Size(132, 22);
             this.txt_quantity_vegetable.TabIndex = 11;
@@ -1730,7 +1750,7 @@
             this.text_name_vegetable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_vegetable.Enabled = false;
             this.text_name_vegetable.Location = new System.Drawing.Point(616, 44);
-            this.text_name_vegetable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.text_name_vegetable.Margin = new System.Windows.Forms.Padding(4);
             this.text_name_vegetable.Name = "text_name_vegetable";
             this.text_name_vegetable.Size = new System.Drawing.Size(132, 22);
             this.text_name_vegetable.TabIndex = 10;
@@ -1743,7 +1763,7 @@
             this.listView7.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader16});
             this.listView7.Location = new System.Drawing.Point(4, -1);
-            this.listView7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView7.Margin = new System.Windows.Forms.Padding(4);
             this.listView7.Name = "listView7";
             this.listView7.Size = new System.Drawing.Size(263, 464);
             this.listView7.TabIndex = 9;
@@ -1774,7 +1794,7 @@
             this.tabPage_Poultry.Controls.Add(this.text_name_poultry);
             this.tabPage_Poultry.Controls.Add(this.listView6);
             this.tabPage_Poultry.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_Poultry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Poultry.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Poultry.Name = "tabPage_Poultry";
             this.tabPage_Poultry.Size = new System.Drawing.Size(760, 471);
             this.tabPage_Poultry.TabIndex = 5;
@@ -1783,10 +1803,11 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.label90);
             this.panel6.Controls.Add(this.button6);
             this.panel6.Controls.Add(this.textBox6);
             this.panel6.Location = new System.Drawing.Point(471, 192);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(267, 123);
             this.panel6.TabIndex = 24;
@@ -1795,7 +1816,7 @@
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(84, 80);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(100, 28);
             this.button6.TabIndex = 1;
@@ -1806,7 +1827,7 @@
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(84, 25);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(132, 22);
             this.textBox6.TabIndex = 0;
@@ -1814,7 +1835,7 @@
             // button_ajouter_volailles
             // 
             this.button_ajouter_volailles.Location = new System.Drawing.Point(483, 336);
-            this.button_ajouter_volailles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouter_volailles.Margin = new System.Windows.Forms.Padding(4);
             this.button_ajouter_volailles.Name = "button_ajouter_volailles";
             this.button_ajouter_volailles.Size = new System.Drawing.Size(249, 28);
             this.button_ajouter_volailles.TabIndex = 22;
@@ -1895,7 +1916,7 @@
             // 
             this.button_back_poultry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_back_poultry.Location = new System.Drawing.Point(619, 372);
-            this.button_back_poultry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_back_poultry.Margin = new System.Windows.Forms.Padding(4);
             this.button_back_poultry.Name = "button_back_poultry";
             this.button_back_poultry.Size = new System.Drawing.Size(131, 84);
             this.button_back_poultry.TabIndex = 14;
@@ -1907,7 +1928,7 @@
             // 
             this.btn_enreg_poultry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_enreg_poultry.Location = new System.Drawing.Point(479, 372);
-            this.btn_enreg_poultry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_enreg_poultry.Margin = new System.Windows.Forms.Padding(4);
             this.btn_enreg_poultry.Name = "btn_enreg_poultry";
             this.btn_enreg_poultry.Size = new System.Drawing.Size(132, 84);
             this.btn_enreg_poultry.TabIndex = 13;
@@ -1919,7 +1940,7 @@
             // 
             this.txt_dateperemtion_poultry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_dateperemtion_poultry.Location = new System.Drawing.Point(616, 138);
-            this.txt_dateperemtion_poultry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dateperemtion_poultry.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dateperemtion_poultry.Name = "txt_dateperemtion_poultry";
             this.txt_dateperemtion_poultry.Size = new System.Drawing.Size(132, 22);
             this.txt_dateperemtion_poultry.TabIndex = 12;
@@ -1928,7 +1949,7 @@
             // 
             this.txt_quantity_poultry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_quantity_poultry.Location = new System.Drawing.Point(616, 91);
-            this.txt_quantity_poultry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_quantity_poultry.Margin = new System.Windows.Forms.Padding(4);
             this.txt_quantity_poultry.Name = "txt_quantity_poultry";
             this.txt_quantity_poultry.Size = new System.Drawing.Size(132, 22);
             this.txt_quantity_poultry.TabIndex = 11;
@@ -1938,7 +1959,7 @@
             this.text_name_poultry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_poultry.Enabled = false;
             this.text_name_poultry.Location = new System.Drawing.Point(616, 44);
-            this.text_name_poultry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.text_name_poultry.Margin = new System.Windows.Forms.Padding(4);
             this.text_name_poultry.Name = "text_name_poultry";
             this.text_name_poultry.Size = new System.Drawing.Size(132, 22);
             this.text_name_poultry.TabIndex = 10;
@@ -1951,7 +1972,7 @@
             this.listView6.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader13});
             this.listView6.Location = new System.Drawing.Point(4, -1);
-            this.listView6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView6.Margin = new System.Windows.Forms.Padding(4);
             this.listView6.Name = "listView6";
             this.listView6.Size = new System.Drawing.Size(253, 464);
             this.listView6.TabIndex = 9;
@@ -1982,7 +2003,7 @@
             this.tabPage_Fish.Controls.Add(this.text_name_fish);
             this.tabPage_Fish.Controls.Add(this.listView5);
             this.tabPage_Fish.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_Fish.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Fish.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Fish.Name = "tabPage_Fish";
             this.tabPage_Fish.Size = new System.Drawing.Size(760, 471);
             this.tabPage_Fish.TabIndex = 4;
@@ -1991,10 +2012,11 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.label89);
             this.panel5.Controls.Add(this.button5);
             this.panel5.Controls.Add(this.textBox5);
             this.panel5.Location = new System.Drawing.Point(471, 188);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(267, 123);
             this.panel5.TabIndex = 24;
@@ -2003,7 +2025,7 @@
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(84, 80);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(100, 28);
             this.button5.TabIndex = 1;
@@ -2014,7 +2036,7 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(84, 25);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(132, 22);
             this.textBox5.TabIndex = 0;
@@ -2022,7 +2044,7 @@
             // button_ajouter_poisson
             // 
             this.button_ajouter_poisson.Location = new System.Drawing.Point(479, 336);
-            this.button_ajouter_poisson.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouter_poisson.Margin = new System.Windows.Forms.Padding(4);
             this.button_ajouter_poisson.Name = "button_ajouter_poisson";
             this.button_ajouter_poisson.Size = new System.Drawing.Size(249, 28);
             this.button_ajouter_poisson.TabIndex = 22;
@@ -2103,7 +2125,7 @@
             // 
             this.button_Back_fish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Back_fish.Location = new System.Drawing.Point(619, 372);
-            this.button_Back_fish.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Back_fish.Margin = new System.Windows.Forms.Padding(4);
             this.button_Back_fish.Name = "button_Back_fish";
             this.button_Back_fish.Size = new System.Drawing.Size(131, 84);
             this.button_Back_fish.TabIndex = 14;
@@ -2115,7 +2137,7 @@
             // 
             this.btn_enreg_fish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_enreg_fish.Location = new System.Drawing.Point(479, 372);
-            this.btn_enreg_fish.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_enreg_fish.Margin = new System.Windows.Forms.Padding(4);
             this.btn_enreg_fish.Name = "btn_enreg_fish";
             this.btn_enreg_fish.Size = new System.Drawing.Size(132, 84);
             this.btn_enreg_fish.TabIndex = 13;
@@ -2127,7 +2149,7 @@
             // 
             this.txt_dateperemption_fish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_dateperemption_fish.Location = new System.Drawing.Point(616, 138);
-            this.txt_dateperemption_fish.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dateperemption_fish.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dateperemption_fish.Name = "txt_dateperemption_fish";
             this.txt_dateperemption_fish.Size = new System.Drawing.Size(132, 22);
             this.txt_dateperemption_fish.TabIndex = 12;
@@ -2136,7 +2158,7 @@
             // 
             this.txt_quantity_fish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_quantity_fish.Location = new System.Drawing.Point(616, 91);
-            this.txt_quantity_fish.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_quantity_fish.Margin = new System.Windows.Forms.Padding(4);
             this.txt_quantity_fish.Name = "txt_quantity_fish";
             this.txt_quantity_fish.Size = new System.Drawing.Size(132, 22);
             this.txt_quantity_fish.TabIndex = 11;
@@ -2146,7 +2168,7 @@
             this.text_name_fish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_fish.Enabled = false;
             this.text_name_fish.Location = new System.Drawing.Point(616, 44);
-            this.text_name_fish.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.text_name_fish.Margin = new System.Windows.Forms.Padding(4);
             this.text_name_fish.Name = "text_name_fish";
             this.text_name_fish.Size = new System.Drawing.Size(132, 22);
             this.text_name_fish.TabIndex = 10;
@@ -2159,7 +2181,7 @@
             this.listView5.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader10});
             this.listView5.Location = new System.Drawing.Point(4, -1);
-            this.listView5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView5.Margin = new System.Windows.Forms.Padding(4);
             this.listView5.Name = "listView5";
             this.listView5.Size = new System.Drawing.Size(256, 464);
             this.listView5.TabIndex = 9;
@@ -2190,7 +2212,7 @@
             this.tabPage_Crustacean.Controls.Add(this.txt_name_crust);
             this.tabPage_Crustacean.Controls.Add(this.listView4);
             this.tabPage_Crustacean.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_Crustacean.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Crustacean.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Crustacean.Name = "tabPage_Crustacean";
             this.tabPage_Crustacean.Size = new System.Drawing.Size(760, 471);
             this.tabPage_Crustacean.TabIndex = 3;
@@ -2199,10 +2221,11 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.label86);
             this.panel4.Controls.Add(this.button4);
             this.panel4.Controls.Add(this.textBox4);
             this.panel4.Location = new System.Drawing.Point(479, 186);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(267, 123);
             this.panel4.TabIndex = 24;
@@ -2211,7 +2234,7 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(84, 80);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 28);
             this.button4.TabIndex = 1;
@@ -2222,7 +2245,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(84, 25);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(132, 22);
             this.textBox4.TabIndex = 0;
@@ -2230,7 +2253,7 @@
             // button_ajouter_crustacé
             // 
             this.button_ajouter_crustacé.Location = new System.Drawing.Point(479, 336);
-            this.button_ajouter_crustacé.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouter_crustacé.Margin = new System.Windows.Forms.Padding(4);
             this.button_ajouter_crustacé.Name = "button_ajouter_crustacé";
             this.button_ajouter_crustacé.Size = new System.Drawing.Size(249, 28);
             this.button_ajouter_crustacé.TabIndex = 22;
@@ -2311,7 +2334,7 @@
             // 
             this.button_back_crustacean.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_back_crustacean.Location = new System.Drawing.Point(619, 372);
-            this.button_back_crustacean.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_back_crustacean.Margin = new System.Windows.Forms.Padding(4);
             this.button_back_crustacean.Name = "button_back_crustacean";
             this.button_back_crustacean.Size = new System.Drawing.Size(131, 84);
             this.button_back_crustacean.TabIndex = 14;
@@ -2323,7 +2346,7 @@
             // 
             this.btn_enreg_crustaceam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_enreg_crustaceam.Location = new System.Drawing.Point(479, 372);
-            this.btn_enreg_crustaceam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_enreg_crustaceam.Margin = new System.Windows.Forms.Padding(4);
             this.btn_enreg_crustaceam.Name = "btn_enreg_crustaceam";
             this.btn_enreg_crustaceam.Size = new System.Drawing.Size(132, 84);
             this.btn_enreg_crustaceam.TabIndex = 13;
@@ -2335,7 +2358,7 @@
             // 
             this.txt_dateperemption_crust.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_dateperemption_crust.Location = new System.Drawing.Point(616, 138);
-            this.txt_dateperemption_crust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dateperemption_crust.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dateperemption_crust.Name = "txt_dateperemption_crust";
             this.txt_dateperemption_crust.Size = new System.Drawing.Size(132, 22);
             this.txt_dateperemption_crust.TabIndex = 12;
@@ -2344,7 +2367,7 @@
             // 
             this.txt_quantity_crust.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_quantity_crust.Location = new System.Drawing.Point(616, 91);
-            this.txt_quantity_crust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_quantity_crust.Margin = new System.Windows.Forms.Padding(4);
             this.txt_quantity_crust.Name = "txt_quantity_crust";
             this.txt_quantity_crust.Size = new System.Drawing.Size(132, 22);
             this.txt_quantity_crust.TabIndex = 11;
@@ -2354,7 +2377,7 @@
             this.txt_name_crust.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_name_crust.Enabled = false;
             this.txt_name_crust.Location = new System.Drawing.Point(616, 44);
-            this.txt_name_crust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_name_crust.Margin = new System.Windows.Forms.Padding(4);
             this.txt_name_crust.Name = "txt_name_crust";
             this.txt_name_crust.Size = new System.Drawing.Size(132, 22);
             this.txt_name_crust.TabIndex = 10;
@@ -2367,7 +2390,7 @@
             this.listView4.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader7});
             this.listView4.Location = new System.Drawing.Point(-4, 0);
-            this.listView4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView4.Margin = new System.Windows.Forms.Padding(4);
             this.listView4.Name = "listView4";
             this.listView4.Size = new System.Drawing.Size(307, 464);
             this.listView4.TabIndex = 9;
@@ -2398,7 +2421,7 @@
             this.tabPage_Dessert.Controls.Add(this.text_name_dessert);
             this.tabPage_Dessert.Controls.Add(this.listView3);
             this.tabPage_Dessert.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_Dessert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Dessert.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Dessert.Name = "tabPage_Dessert";
             this.tabPage_Dessert.Size = new System.Drawing.Size(760, 471);
             this.tabPage_Dessert.TabIndex = 2;
@@ -2407,10 +2430,11 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label85);
             this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Location = new System.Drawing.Point(465, 191);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(267, 123);
             this.panel3.TabIndex = 24;
@@ -2419,7 +2443,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(84, 80);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 28);
             this.button3.TabIndex = 1;
@@ -2430,7 +2454,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(84, 25);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(132, 22);
             this.textBox3.TabIndex = 0;
@@ -2438,7 +2462,7 @@
             // button_ajouter_dessert
             // 
             this.button_ajouter_dessert.Location = new System.Drawing.Point(483, 336);
-            this.button_ajouter_dessert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouter_dessert.Margin = new System.Windows.Forms.Padding(4);
             this.button_ajouter_dessert.Name = "button_ajouter_dessert";
             this.button_ajouter_dessert.Size = new System.Drawing.Size(249, 28);
             this.button_ajouter_dessert.TabIndex = 22;
@@ -2519,7 +2543,7 @@
             // 
             this.button_back_dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_back_dessert.Location = new System.Drawing.Point(619, 372);
-            this.button_back_dessert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_back_dessert.Margin = new System.Windows.Forms.Padding(4);
             this.button_back_dessert.Name = "button_back_dessert";
             this.button_back_dessert.Size = new System.Drawing.Size(131, 84);
             this.button_back_dessert.TabIndex = 14;
@@ -2531,7 +2555,7 @@
             // 
             this.btn_enregistrer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_enregistrer.Location = new System.Drawing.Point(479, 372);
-            this.btn_enregistrer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_enregistrer.Margin = new System.Windows.Forms.Padding(4);
             this.btn_enregistrer.Name = "btn_enregistrer";
             this.btn_enregistrer.Size = new System.Drawing.Size(132, 84);
             this.btn_enregistrer.TabIndex = 13;
@@ -2543,7 +2567,7 @@
             // 
             this.txt_dateperemtion_dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_dateperemtion_dessert.Location = new System.Drawing.Point(616, 138);
-            this.txt_dateperemtion_dessert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dateperemtion_dessert.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dateperemtion_dessert.Name = "txt_dateperemtion_dessert";
             this.txt_dateperemtion_dessert.Size = new System.Drawing.Size(132, 22);
             this.txt_dateperemtion_dessert.TabIndex = 12;
@@ -2552,7 +2576,7 @@
             // 
             this.txt_quantity_dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_quantity_dessert.Location = new System.Drawing.Point(616, 91);
-            this.txt_quantity_dessert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_quantity_dessert.Margin = new System.Windows.Forms.Padding(4);
             this.txt_quantity_dessert.Name = "txt_quantity_dessert";
             this.txt_quantity_dessert.Size = new System.Drawing.Size(132, 22);
             this.txt_quantity_dessert.TabIndex = 11;
@@ -2562,7 +2586,7 @@
             this.text_name_dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_dessert.Enabled = false;
             this.text_name_dessert.Location = new System.Drawing.Point(616, 44);
-            this.text_name_dessert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.text_name_dessert.Margin = new System.Windows.Forms.Padding(4);
             this.text_name_dessert.Name = "text_name_dessert";
             this.text_name_dessert.Size = new System.Drawing.Size(132, 22);
             this.text_name_dessert.TabIndex = 10;
@@ -2575,7 +2599,7 @@
             this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader4});
             this.listView3.Location = new System.Drawing.Point(0, 0);
-            this.listView3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView3.Margin = new System.Windows.Forms.Padding(4);
             this.listView3.Name = "listView3";
             this.listView3.Size = new System.Drawing.Size(295, 464);
             this.listView3.TabIndex = 9;
@@ -2606,9 +2630,9 @@
             this.tabPage_Drink.Controls.Add(this.text_name_drink);
             this.tabPage_Drink.Controls.Add(this.listView2);
             this.tabPage_Drink.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_Drink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Drink.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Drink.Name = "tabPage_Drink";
-            this.tabPage_Drink.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Drink.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage_Drink.Size = new System.Drawing.Size(760, 471);
             this.tabPage_Drink.TabIndex = 1;
             this.tabPage_Drink.Text = "Boisson";
@@ -2616,10 +2640,11 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label88);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Location = new System.Drawing.Point(471, 204);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(267, 123);
             this.panel1.TabIndex = 23;
@@ -2628,7 +2653,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(84, 80);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 1;
@@ -2639,7 +2664,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(84, 25);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 0;
@@ -2647,7 +2672,7 @@
             // button_ajouter_boisson
             // 
             this.button_ajouter_boisson.Location = new System.Drawing.Point(479, 336);
-            this.button_ajouter_boisson.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouter_boisson.Margin = new System.Windows.Forms.Padding(4);
             this.button_ajouter_boisson.Name = "button_ajouter_boisson";
             this.button_ajouter_boisson.Size = new System.Drawing.Size(249, 28);
             this.button_ajouter_boisson.TabIndex = 22;
@@ -2728,7 +2753,7 @@
             // 
             this.button_back1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_back1.Location = new System.Drawing.Point(619, 372);
-            this.button_back1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_back1.Margin = new System.Windows.Forms.Padding(4);
             this.button_back1.Name = "button_back1";
             this.button_back1.Size = new System.Drawing.Size(131, 84);
             this.button_back1.TabIndex = 14;
@@ -2740,7 +2765,7 @@
             // 
             this.button_save_drink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_save_drink.Location = new System.Drawing.Point(479, 372);
-            this.button_save_drink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_save_drink.Margin = new System.Windows.Forms.Padding(4);
             this.button_save_drink.Name = "button_save_drink";
             this.button_save_drink.Size = new System.Drawing.Size(132, 84);
             this.button_save_drink.TabIndex = 13;
@@ -2752,7 +2777,7 @@
             // 
             this.textbox_datePeremption.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textbox_datePeremption.Location = new System.Drawing.Point(616, 138);
-            this.textbox_datePeremption.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textbox_datePeremption.Margin = new System.Windows.Forms.Padding(4);
             this.textbox_datePeremption.Name = "textbox_datePeremption";
             this.textbox_datePeremption.Size = new System.Drawing.Size(132, 22);
             this.textbox_datePeremption.TabIndex = 12;
@@ -2761,7 +2786,7 @@
             // 
             this.textbox_quantity_drink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textbox_quantity_drink.Location = new System.Drawing.Point(616, 91);
-            this.textbox_quantity_drink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textbox_quantity_drink.Margin = new System.Windows.Forms.Padding(4);
             this.textbox_quantity_drink.Name = "textbox_quantity_drink";
             this.textbox_quantity_drink.Size = new System.Drawing.Size(132, 22);
             this.textbox_quantity_drink.TabIndex = 11;
@@ -2771,7 +2796,7 @@
             this.text_name_drink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_drink.Enabled = false;
             this.text_name_drink.Location = new System.Drawing.Point(616, 44);
-            this.text_name_drink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.text_name_drink.Margin = new System.Windows.Forms.Padding(4);
             this.text_name_drink.Name = "text_name_drink";
             this.text_name_drink.Size = new System.Drawing.Size(132, 22);
             this.text_name_drink.TabIndex = 10;
@@ -2784,7 +2809,7 @@
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1});
             this.listView2.Location = new System.Drawing.Point(4, -1);
-            this.listView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView2.Margin = new System.Windows.Forms.Padding(4);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(295, 468);
             this.listView2.TabIndex = 9;
@@ -2815,9 +2840,9 @@
             this.tabPage_Beef.Controls.Add(this.text_name_meat);
             this.tabPage_Beef.Controls.Add(this.listView1);
             this.tabPage_Beef.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_Beef.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Beef.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Beef.Name = "tabPage_Beef";
-            this.tabPage_Beef.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_Beef.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage_Beef.Size = new System.Drawing.Size(760, 471);
             this.tabPage_Beef.TabIndex = 0;
             this.tabPage_Beef.Text = "Viande";
@@ -2825,10 +2850,11 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label87);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Location = new System.Drawing.Point(475, 191);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(267, 123);
             this.panel2.TabIndex = 24;
@@ -2837,7 +2863,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(84, 80);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 1;
@@ -2848,7 +2874,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(84, 25);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(132, 22);
             this.textBox2.TabIndex = 0;
@@ -2856,7 +2882,7 @@
             // button_ajouter_viande
             // 
             this.button_ajouter_viande.Location = new System.Drawing.Point(481, 337);
-            this.button_ajouter_viande.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_ajouter_viande.Margin = new System.Windows.Forms.Padding(4);
             this.button_ajouter_viande.Name = "button_ajouter_viande";
             this.button_ajouter_viande.Size = new System.Drawing.Size(249, 28);
             this.button_ajouter_viande.TabIndex = 13;
@@ -2937,7 +2963,7 @@
             // 
             this.button_Back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Back.Location = new System.Drawing.Point(615, 373);
-            this.button_Back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Back.Margin = new System.Windows.Forms.Padding(4);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(131, 84);
             this.button_Back.TabIndex = 5;
@@ -2949,7 +2975,7 @@
             // 
             this.button_Save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Save.Location = new System.Drawing.Point(475, 373);
-            this.button_Save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Save.Margin = new System.Windows.Forms.Padding(4);
             this.button_Save.Name = "button_Save";
             this.button_Save.Size = new System.Drawing.Size(132, 84);
             this.button_Save.TabIndex = 4;
@@ -2962,7 +2988,7 @@
             this.textBox_Date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_Date.BackColor = System.Drawing.SystemColors.Window;
             this.textBox_Date.Location = new System.Drawing.Point(612, 139);
-            this.textBox_Date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Date.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Date.Name = "textBox_Date";
             this.textBox_Date.Size = new System.Drawing.Size(132, 22);
             this.textBox_Date.TabIndex = 3;
@@ -2971,7 +2997,7 @@
             // 
             this.textBox_Quantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_Quantity.Location = new System.Drawing.Point(612, 92);
-            this.textBox_Quantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Quantity.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Quantity.Name = "textBox_Quantity";
             this.textBox_Quantity.Size = new System.Drawing.Size(132, 22);
             this.textBox_Quantity.TabIndex = 2;
@@ -2981,7 +3007,7 @@
             this.text_name_meat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_meat.Enabled = false;
             this.text_name_meat.Location = new System.Drawing.Point(612, 46);
-            this.text_name_meat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.text_name_meat.Margin = new System.Windows.Forms.Padding(4);
             this.text_name_meat.Name = "text_name_meat";
             this.text_name_meat.Size = new System.Drawing.Size(132, 22);
             this.text_name_meat.TabIndex = 1;
@@ -2991,7 +3017,7 @@
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader_Name});
             this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(453, 464);
             this.listView1.TabIndex = 0;
@@ -3021,18 +3047,135 @@
             this.tabControl_Add_Remove.Controls.Add(this.tabPage_Fat_Boulangerie);
             this.tabControl_Add_Remove.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl_Add_Remove.Location = new System.Drawing.Point(0, 0);
-            this.tabControl_Add_Remove.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl_Add_Remove.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl_Add_Remove.Name = "tabControl_Add_Remove";
             this.tabControl_Add_Remove.SelectedIndex = 0;
             this.tabControl_Add_Remove.Size = new System.Drawing.Size(768, 500);
             this.tabControl_Add_Remove.TabIndex = 1;
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.ForeColor = System.Drawing.Color.Red;
+            this.label85.Location = new System.Drawing.Point(81, 59);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(0, 17);
+            this.label85.TabIndex = 2;
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.ForeColor = System.Drawing.Color.Red;
+            this.label87.Location = new System.Drawing.Point(84, 58);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(0, 17);
+            this.label87.TabIndex = 2;
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.ForeColor = System.Drawing.Color.Red;
+            this.label88.Location = new System.Drawing.Point(87, 58);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(0, 17);
+            this.label88.TabIndex = 2;
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.ForeColor = System.Drawing.Color.Red;
+            this.label86.Location = new System.Drawing.Point(88, 59);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(0, 17);
+            this.label86.TabIndex = 2;
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.ForeColor = System.Drawing.Color.Red;
+            this.label89.Location = new System.Drawing.Point(91, 58);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(0, 17);
+            this.label89.TabIndex = 2;
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.ForeColor = System.Drawing.Color.Red;
+            this.label90.Location = new System.Drawing.Point(87, 55);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(0, 17);
+            this.label90.TabIndex = 2;
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.ForeColor = System.Drawing.Color.Red;
+            this.label91.Location = new System.Drawing.Point(85, 54);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(0, 17);
+            this.label91.TabIndex = 2;
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.ForeColor = System.Drawing.Color.Red;
+            this.label92.Location = new System.Drawing.Point(86, 58);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(0, 17);
+            this.label92.TabIndex = 2;
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.ForeColor = System.Drawing.Color.Red;
+            this.label93.Location = new System.Drawing.Point(86, 56);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(0, 17);
+            this.label93.TabIndex = 2;
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.ForeColor = System.Drawing.Color.Red;
+            this.label94.Location = new System.Drawing.Point(86, 56);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(0, 17);
+            this.label94.TabIndex = 2;
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.ForeColor = System.Drawing.Color.Red;
+            this.label95.Location = new System.Drawing.Point(89, 56);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(0, 17);
+            this.label95.TabIndex = 2;
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.ForeColor = System.Drawing.Color.Red;
+            this.label96.Location = new System.Drawing.Point(85, 54);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(0, 17);
+            this.label96.TabIndex = 2;
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.ForeColor = System.Drawing.Color.Red;
+            this.label97.Location = new System.Drawing.Point(85, 60);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(0, 17);
+            this.label97.TabIndex = 2;
             // 
             // UserControl_Reserve_Add_Remove
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl_Add_Remove);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControl_Reserve_Add_Remove";
             this.Size = new System.Drawing.Size(768, 500);
             this.Enter += new System.EventHandler(this.UserControl_Reserve_Add_Remove_Enter);
@@ -3343,5 +3486,18 @@
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.Label label86;
     }
 }
