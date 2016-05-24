@@ -7,7 +7,7 @@ using System.IO;
 using System.Threading.Tasks;
 
 
-namespace Healthyfood
+namespace StockFood
 {
     [Serializable]
     public class Profil_Utilisateur

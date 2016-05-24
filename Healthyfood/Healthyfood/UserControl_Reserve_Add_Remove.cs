@@ -20,6 +20,10 @@ namespace Healthyfood
         {
             InitializeComponent();
         }
+        public Menu Root
+        {
+            get { return (Menu)FindForm(); }
+        }
 
         private void button_Back_Click(object sender, EventArgs e)
         {
@@ -55,19 +59,19 @@ namespace Healthyfood
             listView12.Items.Clear();
             listView13.Items.Clear();
 
-            int countv = Global.viande.Count;
-            int countd = Global.boisson.Count;
-            int countds = Global.dessert_sucrerie.Count;
-            int countc = Global.crustace.Count;
-            int countp = Global.poisson.Count;
-            int countvo = Global.volaille.Count;
-            int countl = Global.legume.Count;
-            int countf = Global.fruit.Count;
-            int countpf = Global.produit_laitier.Count;
-            int countmg = Global.matiere_grasse.Count;
-            int countfe = Global.feculent.Count;
-            int counthp = Global.herbe_plante.Count;
-            int countbl = Global.boulangerie.Count;
+            int countv = Root.Healthy._viande.Count;
+            int countd = Root.Healthy._boisson.Count;
+            int countds = Root.Healthy._dessert_sucrerie.Count;
+            int countc = Root.Healthy._crustace.Count;
+            int countp = Root.Healthy._poisson.Count;
+            int countvo = Root.Healthy._volaille.Count;
+            int countl = Root.Healthy._legume.Count;
+            int countf = Root.Healthy._fruit.Count;
+            int countpf = Root.Healthy._produit_laitier.Count;
+            int countmg = Root.Healthy._matiere_grasse.Count;
+            int countfe = Root.Healthy._feculent.Count;
+            int counthp = Root.Healthy._herbe_plante.Count;
+            int countbl = Root.Healthy._boulangerie.Count;
 
             string[] _beef = new string[countv];
             string[] _drink = new string[countd];
@@ -97,20 +101,20 @@ namespace Healthyfood
             int hp = 0;
             int bl = 0;
 
-            Global.viande.CopyTo(_beef);
-            Global.crustace.CopyTo(_crustace);
-            Global.boisson.CopyTo(_drink);
-            Global.dessert_sucrerie.CopyTo(_sucrerie_dessert);
-            Global.poisson.CopyTo(_poisson);
-            Global.volaille.CopyTo(_volaile);
-            Global.legume.CopyTo(_legume);
-            Global.fruit.CopyTo(_fruit);
-            Global.produit_laitier.CopyTo(_produit_laitier);
+            Root.Healthy._viande.CopyTo(_beef);
+            Root.Healthy._crustace.CopyTo(_crustace);
+            Root.Healthy._boisson.CopyTo(_drink);
+            Root.Healthy._dessert_sucrerie.CopyTo(_sucrerie_dessert);
+            Root.Healthy._poisson.CopyTo(_poisson);
+            Root.Healthy._volaille.CopyTo(_volaile);
+            Root.Healthy._legume.CopyTo(_legume);
+            Root.Healthy._fruit.CopyTo(_fruit);
+            Root.Healthy._produit_laitier.CopyTo(_produit_laitier);
 
-            Global.matiere_grasse.CopyTo(_matière_grasse);
-            Global.feculent.CopyTo(_feculent);
-            Global.herbe_plante.CopyTo(_herbe_plante);
-            Global.boulangerie.CopyTo(_boulangerie);
+            Root.Healthy._matiere_grasse.CopyTo(_matière_grasse);
+            Root.Healthy._feculent.CopyTo(_feculent);
+            Root.Healthy._herbe_plante.CopyTo(_herbe_plante);
+            Root.Healthy._boulangerie.CopyTo(_boulangerie);
 
             foreach (var p in _beef)
             {
@@ -456,7 +460,7 @@ namespace Healthyfood
                 date = Convert.ToDateTime(textBox_Date.Text);
                 int x = 0;
                 x= verify_error(text_name_meat, textBox_Date, textBox_Quantity, text_error1, text_error2, text_error3, text_error4);
-                if (x == 1) Global.Stocks.AddIngredient("viande", text_name_meat.Text, quantity, date);
+                if (x == 1) Root.Healthy.Stocks.AddIngredient("viande", text_name_meat.Text, quantity, date);
             }
         }
 
@@ -476,7 +480,7 @@ namespace Healthyfood
                 int x = 0;
                 date = Convert.ToDateTime(textbox_datePeremption.Text);
                 x = verify_error(text_name_drink, textbox_datePeremption, textbox_quantity_drink, label37, label38, label39, label40);
-                if (x == 1) Global.Stocks.AddIngredient("boisson", text_name_drink.Text, quantity, date);
+                if (x == 1) Root.Healthy.Stocks.AddIngredient("boisson", text_name_drink.Text, quantity, date);
             }
 
         }
@@ -496,7 +500,7 @@ namespace Healthyfood
                 int x = 0;
                 date = Convert.ToDateTime(txt_dateperemtion_dessert.Text);
                 x = verify_error(text_name_dessert, txt_dateperemtion_dessert, txt_quantity_dessert, label41, label42, label43, label44);
-                if (x == 1) Global.Stocks.AddIngredient("dessert_sucrerie", text_name_dessert.Text, quantity, date);
+                if (x == 1) Root.Healthy.Stocks.AddIngredient("dessert_sucrerie", text_name_dessert.Text, quantity, date);
             }
         }
 
@@ -516,7 +520,7 @@ namespace Healthyfood
                 date = Convert.ToDateTime(txt_dateperemption_crust.Text);
 
                 x = verify_error(txt_name_crust, txt_dateperemption_crust, txt_quantity_crust, label45, label46, label47, label48);
-                if (x == 1) Global.Stocks.AddIngredient("crustace", txt_name_crust.Text, quantity, date);
+                if (x == 1) Root.Healthy.Stocks.AddIngredient("crustace", txt_name_crust.Text, quantity, date);
             }
         }
 
@@ -535,7 +539,7 @@ namespace Healthyfood
                 int x = 0;
                 date = Convert.ToDateTime(txt_dateperemption_fish.Text);
                 x = verify_error(text_name_fish, txt_dateperemption_fish, txt_quantity_fish, label49, label50, label51, label52);
-                if (x == 1) Global.Stocks.AddIngredient("poisson", text_name_fish.Text, quantity, date);
+                if (x == 1) Root.Healthy.Stocks.AddIngredient("poisson", text_name_fish.Text, quantity, date);
             }
         }
 
@@ -555,7 +559,7 @@ namespace Healthyfood
                 date = Convert.ToDateTime(txt_dateperemtion_poultry.Text);
 
                 x = verify_error(text_name_poultry, txt_dateperemtion_poultry, txt_quantity_poultry, label53, label54, label55, label56);
-                if (x == 1) Global.Stocks.AddIngredient("volaille", text_name_poultry.Text, quantity, date);
+                if (x == 1) Root.Healthy.Stocks.AddIngredient("volaille", text_name_poultry.Text, quantity, date);
             }
         }
 
@@ -575,7 +579,7 @@ namespace Healthyfood
                 date = Convert.ToDateTime(txt_dateperemtion_vegetable.Text);
 
                 x = verify_error(text_name_vegetable, txt_dateperemtion_vegetable, txt_quantity_vegetable, label57, label58, label59, label60);
-                if (x == 1) Global.Stocks.AddIngredient("legume", text_name_vegetable.Text, quantity, date);
+                if (x == 1) Root.Healthy.Stocks.AddIngredient("legume", text_name_vegetable.Text, quantity, date);
             }
         }
 
@@ -595,7 +599,7 @@ namespace Healthyfood
                 int x = 0;
 
                 x = verify_error(text_name_fruit, txt_dateperemtion_fruit, txt_quantity_fruit, label61, label62, label63, label64);
-                if (x == 1) Global.Stocks.AddIngredient("fruit", text_name_fruit.Text, quantity, date);
+                if (x == 1) Root.Healthy.Stocks.AddIngredient("fruit", text_name_fruit.Text, quantity, date);
             }
         }
 
@@ -615,7 +619,7 @@ namespace Healthyfood
                 int x = 0;
 
                 x = verify_error(text_name_milk, textBox23, textBox24, label65, label66, label67, label68);
-                if (x == 1) Global.Stocks.AddIngredient("produit_laitier", text_name_milk.Text, quantity, date);
+                if (x == 1) Root.Healthy.Stocks.AddIngredient("produit_laitier", text_name_milk.Text, quantity, date);
             }
         }
 
@@ -635,7 +639,7 @@ namespace Healthyfood
                 int x = 0;
 
                 x = verify_error(text_name_fat, textBox26, textBox27, label69, label70, label71, label72);
-                if (x == 1) Global.Stocks.AddIngredient("matiere_grasse", text_name_fat.Text, quantity, date);
+                if (x == 1) Root.Healthy.Stocks.AddIngredient("matiere_grasse", text_name_fat.Text, quantity, date);
             }
         }
 
@@ -655,7 +659,7 @@ namespace Healthyfood
                 int x = 0;
 
                 x = verify_error(text_name_starchy, textBox29, textBox30, label73, label74, label75, label76);
-                if (x == 1) Global.Stocks.AddIngredient("feculent", text_name_starchy.Text, quantity, date);
+                if (x == 1) Root.Healthy.Stocks.AddIngredient("feculent", text_name_starchy.Text, quantity, date);
             }
         }
 
@@ -675,7 +679,7 @@ namespace Healthyfood
                 int x = 0;
 
                 x = verify_error(text_name_plant, textBox32, textBox33, label77, label78, label79, label80);
-                if (x == 1) Global.Stocks.AddIngredient("herbe_plante", text_name_plant.Text, quantity, date);
+                if (x == 1) Root.Healthy.Stocks.AddIngredient("herbe_plante", text_name_plant.Text, quantity, date);
             }
         }
 
@@ -695,7 +699,7 @@ namespace Healthyfood
             int x = 0;
 
                 x = verify_error(text_name_bakery, textBox37, textBox36, label81, label82, label83, label84);
-            if (x == 1) Global.Stocks.AddIngredient("boulangerie", text_name_bakery.Text, quantity, date);
+            if (x == 1) Root.Healthy.Stocks.AddIngredient("boulangerie", text_name_bakery.Text, quantity, date);
             }
         }
 
@@ -766,14 +770,14 @@ namespace Healthyfood
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Global.boisson.Contains(textBox1.Text))
+            if (Root.Healthy._boisson.Contains(textBox1.Text))
             {
                 textBox1.BackColor = Color.Red;
                 label88.Text = "Ingrédient déjà existant";
             }
             else
             {
-                Global.CreateIngredient("boisson", textBox1.Text);
+                Root.Healthy.CreateIngredient("boisson", textBox1.Text);
                 panel1.Visible = false;
                 UserControl_Reserve_Add_Remove_Enter(_s, _e);
             }
@@ -781,7 +785,7 @@ namespace Healthyfood
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (Global.viande.Contains(textBox2.Text))
+            if (Root.Healthy._viande.Contains(textBox2.Text))
             {
                 textBox2.BackColor = Color.Red;
                 label87.Text = "Ingrédient déjà existant";
@@ -789,7 +793,7 @@ namespace Healthyfood
             else
             {
                 label85.Text = null;
-                Global.CreateIngredient("viande", textBox2.Text);
+                Root.Healthy.CreateIngredient("viande", textBox2.Text);
                 panel2.Visible = false;
                 UserControl_Reserve_Add_Remove_Enter(_s, _e);
             }
@@ -797,14 +801,14 @@ namespace Healthyfood
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (Global.dessert_sucrerie.Contains(textBox3.Text))
+            if (Root.Healthy._dessert_sucrerie.Contains(textBox3.Text))
             {
                 textBox3.BackColor = Color.Red;
                 label85.Text = "Ingrédient déjà existant";
             }
             else
             {
-                Global.CreateIngredient("dessert_sucrerie", textBox3.Text);
+                Root.Healthy.CreateIngredient("dessert_sucrerie", textBox3.Text);
                 panel3.Visible = false;
                 UserControl_Reserve_Add_Remove_Enter(_s, _e);
             }
@@ -812,14 +816,14 @@ namespace Healthyfood
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (Global.crustace.Contains(textBox4.Text))
+            if (Root.Healthy._crustace.Contains(textBox4.Text))
             {
                 textBox4.BackColor = Color.Red;
                 label86.Text = "Ingrédient déjà existant";
             }
             else
             {
-                Global.CreateIngredient("crustace", textBox4.Text);
+                Root.Healthy.CreateIngredient("crustace", textBox4.Text);
                 panel4.Visible = false;
                 UserControl_Reserve_Add_Remove_Enter(_s, _e);
             }
@@ -827,14 +831,14 @@ namespace Healthyfood
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (Global.poisson.Contains(textBox5.Text))
+            if (Root.Healthy._poisson.Contains(textBox5.Text))
             {
                 textBox5.BackColor = Color.Red;
                 label89.Text = "Ingrédient déjà existant";
             }
             else
             {
-                Global.CreateIngredient("poisson", textBox5.Text);
+                Root.Healthy.CreateIngredient("poisson", textBox5.Text);
             panel5.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
             }
@@ -842,14 +846,14 @@ namespace Healthyfood
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (Global.volaille.Contains(textBox6.Text))
+            if (Root.Healthy._volaille.Contains(textBox6.Text))
             {
                 textBox6.BackColor = Color.Red;
                 label90.Text = "Ingrédient déjà existant";
             }
             else
             {
-                Global.CreateIngredient("volaille", textBox6.Text);
+                Root.Healthy.CreateIngredient("volaille", textBox6.Text);
             panel6.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
             }
@@ -858,14 +862,14 @@ namespace Healthyfood
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (Global.legume.Contains(textBox7.Text))
+            if (Root.Healthy._legume.Contains(textBox7.Text))
             {
                 textBox7.BackColor = Color.Red;
                 label91.Text = "Ingrédient déjà existant";
             }
             else
             {
-                Global.CreateIngredient("legume", textBox7.Text);
+                Root.Healthy.CreateIngredient("legume", textBox7.Text);
             panel7.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
             }
@@ -873,14 +877,14 @@ namespace Healthyfood
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (Global.fruit.Contains(textBox8.Text))
+            if (Root.Healthy._fruit.Contains(textBox8.Text))
             {
                 textBox8.BackColor = Color.Red;
                 label92.Text = "Ingrédient déjà existant";
             }
             else
             {
-                Global.CreateIngredient("fruit", textBox8.Text);
+                Root.Healthy.CreateIngredient("fruit", textBox8.Text);
             panel8.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
             }
@@ -888,14 +892,14 @@ namespace Healthyfood
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if (Global.produit_laitier.Contains(textBox9.Text))
+            if (Root.Healthy._produit_laitier.Contains(textBox9.Text))
             {
                 textBox9.BackColor = Color.Red;
                 label93.Text = "Ingrédient déjà existant";
             }
             else
             {
-                Global.CreateIngredient("produit_laitier", textBox9.Text);
+                Root.Healthy.CreateIngredient("produit_laitier", textBox9.Text);
             panel9.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
             }
@@ -903,14 +907,14 @@ namespace Healthyfood
 
         private void button10_Click(object sender, EventArgs e)
         {
-            if (Global.matiere_grasse.Contains(textBox10.Text))
+            if (Root.Healthy._matiere_grasse.Contains(textBox10.Text))
             {
                 textBox10.BackColor = Color.Red;
                 label94.Text = "Ingrédient déjà existant";
             }
             else
             {
-                Global.CreateIngredient("matiere_grasse", textBox10.Text);
+                Root.Healthy.CreateIngredient("matiere_grasse", textBox10.Text);
             panel10.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
             }
@@ -918,14 +922,14 @@ namespace Healthyfood
 
         private void button11_Click(object sender, EventArgs e)
         {
-            if (Global.feculent.Contains(textBox11.Text))
+            if (Root.Healthy._feculent.Contains(textBox11.Text))
             {
                 textBox11.BackColor = Color.Red;
                 label95.Text = "Ingrédient déjà existant";
             }
             else
             {
-                Global.CreateIngredient("feculent", textBox11.Text);
+                Root.Healthy.CreateIngredient("feculent", textBox11.Text);
             panel11.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
             }
@@ -933,14 +937,14 @@ namespace Healthyfood
 
         private void button12_Click(object sender, EventArgs e)
         {
-            if (Global.herbe_plante.Contains(textBox12.Text))
+            if (Root.Healthy._herbe_plante.Contains(textBox12.Text))
             {
                 textBox12.BackColor = Color.Red;
                 label96.Text = "Ingrédient déjà existant";
             }
             else
             {
-                Global.CreateIngredient("herbe_plante", textBox12.Text);
+                Root.Healthy.CreateIngredient("herbe_plante", textBox12.Text);
             panel12.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
             }
@@ -948,14 +952,14 @@ namespace Healthyfood
 
         private void button13_Click(object sender, EventArgs e)
         {
-            if (Global.boulangerie.Contains(textBox13.Text))
+            if (Root.Healthy._boulangerie.Contains(textBox13.Text))
             {
                 textBox13.BackColor = Color.Red;
                 label97.Text = "Ingrédient déjà existant";
             }
             else
             {
-                Global.CreateIngredient("boulangerie", textBox13.Text);
+                Root.Healthy.CreateIngredient("boulangerie", textBox13.Text);
             panel13.Visible = false;
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
             }

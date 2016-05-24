@@ -17,6 +17,10 @@ namespace Healthyfood
         {
             InitializeComponent();
         }
+        public Menu Root
+        {
+            get { return (Menu)FindForm(); }
+        }
 
         private void button_Back_Click(object sender, EventArgs e)
         {
@@ -98,7 +102,7 @@ namespace Healthyfood
                 int Weight = Int32.Parse(textBox_Weight.Text);
                 int Height = Int32.Parse(textBox_Height.Text);
 
-                Global.Utilisateur.CreateUser(textBox_Name.Text, textBox_Fisrtname.Text, Age, Weight, Height, false, false);
+                Root.Healthy.Utilisateur.CreateUser(textBox_Name.Text, textBox_Fisrtname.Text, Age, Weight, Height, false, false);
 
                 textBox_Name.Clear();
                 textBox_Fisrtname.Clear();

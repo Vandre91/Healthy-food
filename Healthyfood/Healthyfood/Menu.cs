@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StockFood;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +13,17 @@ namespace Healthyfood
 {
     public partial class Menu : Form
     {
-       
+        healthyfood _food ;
         public Menu()
         {
             InitializeComponent();
+            _food = new healthyfood();
         }
-        
+        public healthyfood Healthy
+        {
+            get { return _food; }
+            set { _food = value; }
+        }
         private void button_Utilisateur_Click(object sender, EventArgs e)
         {
             userControl_Profil1.Visible = true;

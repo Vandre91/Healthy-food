@@ -9,16 +9,18 @@ namespace StockFood
     public class Recipe
     {
         public Dictionary<string, Ingredients> Recette;
-        Double _Quantity;
+        string  _describe;
 
         public Recipe()
         {
             Recette = new Dictionary<string, Ingredients>();
+
         }
 
-        public Double Quantity
+        public string Describe
         {
-            get { return _Quantity; }
+            get { return _describe; }
+            set { _describe = value; }
         }
 
         public ICollection<Ingredients> IRecipe

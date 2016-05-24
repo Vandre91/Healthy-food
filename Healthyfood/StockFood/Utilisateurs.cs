@@ -6,7 +6,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace Healthyfood
+namespace StockFood
 {
     [Serializable]
     public class Utilisateurs

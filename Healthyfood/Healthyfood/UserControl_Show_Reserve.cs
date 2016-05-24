@@ -17,6 +17,10 @@ namespace Healthyfood
         {
             InitializeComponent();
         }
+        public Menu Root
+        {
+            get { return (Menu)FindForm(); }
+        }
 
         private void button_Back_Click(object sender, EventArgs e)
         {
@@ -32,7 +36,7 @@ namespace Healthyfood
         {
             listView1.Items.Clear();
 
-            foreach (var p in Global.Stocks.IStock)
+            foreach (var p in Root.Healthy.Stocks.IStock)
             {
                 string date = Convert.ToString(p.Expiration_Date);
                 string[] row = { p.Name, p.Balance.ToString(),date };
