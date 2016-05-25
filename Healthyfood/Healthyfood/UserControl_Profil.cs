@@ -60,15 +60,15 @@ namespace Healthyfood
 
         private void timer_refresh_Tick(object sender, EventArgs e)
         {
-            listView1.Items.Clear();
+            //listView1.Items.Clear();
 
       
-            foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
-            {
-                string[] row = { p.FirstName, p.LastName,p.Age.ToString() };
-                ListViewItem item = new ListViewItem(row);
-                listView1.Items.Add(item);
-            }
+            //foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
+            //{
+            //    string[] row = { p.FirstName, p.LastName,p.Age.ToString() };
+            //    ListViewItem item = new ListViewItem(row);
+            //    listView1.Items.Add(item);
+            //}
         }
     }
 }

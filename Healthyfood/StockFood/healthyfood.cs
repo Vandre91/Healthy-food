@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace StockFood
 {
@@ -44,6 +46,22 @@ namespace StockFood
 
             _Utilisateur = new Utilisateurs();
             _Stocks = new Stocks();
+        }
+        public void Save(string path)
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            using (Stream file = new System.IO.FileStream(path, FileMode.Create, FileAccess.Write))
+            {
+                formatter.Serialize(file, this);
+            }
+        }
+        public static healthyfood Load(string path)
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            using (Stream file = new FileStream(path, FileMode.Open, FileAccess.Read))
+            {
+                return (healthyfood)formatter.Deserialize(file);
+            }
         }
         public Utilisateurs Utilisateur
         {
