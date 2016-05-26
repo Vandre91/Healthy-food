@@ -47,11 +47,25 @@ namespace Healthyfood
             textBox_Weight.Clear();
             textBox_Height.Clear();
 
-            textBox_Name.Text = Root.Healthy.Profil.LastName;
-            textBox_Fisrtname.Text = Root.Healthy.Profil.FirstName;
-            textBox_Age.Text = Root.Healthy.Profil.Age.ToString();
-            textBox_Weight.Text = Root.Healthy.Profil.Weight.ToString();
-            textBox_Height.Text = Root.Healthy.Profil.Height.ToString();
+            if (DesignMode) { }
+            else { }
+            if (Root == null || Root.Healthy == null || Root.Healthy.Profil == null
+                || Root.Healthy.Profil.LastName == null || Root.Healthy.Profil.FirstName == null || Root.Healthy.Profil.Age == 0 || Root.Healthy.Profil.Weight == 0 || Root.Healthy.Profil.Height == 0)
+            {
+                textBox_Name.Text = "";
+                textBox_Fisrtname.Text = "";
+                textBox_Age.Text = "";
+                textBox_Weight.Text = "";
+                textBox_Height.Text = "";
+            }
+            else
+            {
+                textBox_Name.Text = Root.Healthy.Profil.LastName;
+                textBox_Fisrtname.Text = Root.Healthy.Profil.FirstName;
+                textBox_Age.Text = Root.Healthy.Profil.Age.ToString();
+                textBox_Weight.Text = Root.Healthy.Profil.Weight.ToString();
+                textBox_Height.Text = Root.Healthy.Profil.Height.ToString();
+            }
         }
 
         private void UserControl_Modify_Profil_Enter(object sender, EventArgs e)

@@ -32,8 +32,8 @@
             this.button_Add_Remove = new System.Windows.Forms.Button();
             this.button_Show = new System.Windows.Forms.Button();
             this.button_Back = new System.Windows.Forms.Button();
-            this.userControl_Reserve_Add_Remove1 = new Healthyfood.UserControl_Reserve_Add_Remove();
             this.userControl_Show1 = new Healthyfood.UserControl_Show_Reserve();
+            this.userControl_Reserve_Add_Remove1 = new Healthyfood.UserControl_Reserve_Add_Remove();
             this.SuspendLayout();
             // 
             // button_Add_Remove
@@ -72,23 +72,23 @@
             this.button_Back.UseVisualStyleBackColor = true;
             this.button_Back.Click += new System.EventHandler(this.button_Back_Click);
             // 
-            // userControl_Reserve_Add_Remove1
-            // 
-            this.userControl_Reserve_Add_Remove1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl_Reserve_Add_Remove1.Location = new System.Drawing.Point(0, 0);
-            this.userControl_Reserve_Add_Remove1.Name = "userControl_Reserve_Add_Remove1";
-            this.userControl_Reserve_Add_Remove1.Size = new System.Drawing.Size(654, 414);
-            this.userControl_Reserve_Add_Remove1.TabIndex = 3;
-            this.userControl_Reserve_Add_Remove1.Visible = false;
-            // 
             // userControl_Show1
             // 
             this.userControl_Show1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Show1.Location = new System.Drawing.Point(0, 0);
             this.userControl_Show1.Name = "userControl_Show1";
-            this.userControl_Show1.Size = new System.Drawing.Size(654, 414);
+            this.userControl_Show1.Size = new System.Drawing.Size(647, 406);
             this.userControl_Show1.TabIndex = 4;
             this.userControl_Show1.Visible = false;
+            // 
+            // userControl_Reserve_Add_Remove1
+            // 
+            this.userControl_Reserve_Add_Remove1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl_Reserve_Add_Remove1.Location = new System.Drawing.Point(0, 0);
+            this.userControl_Reserve_Add_Remove1.Name = "userControl_Reserve_Add_Remove1";
+            this.userControl_Reserve_Add_Remove1.Size = new System.Drawing.Size(647, 406);
+            this.userControl_Reserve_Add_Remove1.TabIndex = 3;
+            this.userControl_Reserve_Add_Remove1.Visible = false;
             // 
             // UserControl_Reserve
             // 
@@ -102,7 +102,7 @@
             this.Controls.Add(this.button_Show);
             this.Controls.Add(this.button_Add_Remove);
             this.Name = "UserControl_Reserve";
-            this.Size = new System.Drawing.Size(654, 414);
+            this.Size = new System.Drawing.Size(647, 406);
             this.ResumeLayout(false);
 
         }

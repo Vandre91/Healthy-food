@@ -16,7 +16,6 @@ namespace Healthyfood
         public UserControl_Profil()
         {
             InitializeComponent();
-            timer_refresh.Start();
         }
         public Menu Root
         {
@@ -31,6 +30,7 @@ namespace Healthyfood
         private void button_back_Click_1(object sender, EventArgs e)
         {
             this.Visible = false;
+            timer_refesh.Stop();
         }
 
         private void button_Modify_Click(object sender, EventArgs e)
@@ -57,15 +57,28 @@ namespace Healthyfood
             Root.Healthy.Utilisateur.RemoveUser(name, lastname);
             listView1.Items.RemoveAt(listView1.SelectedIndices[0]);
         }
+        
+        public void UserControl_Profil_Enter(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+            timer_refesh.Start();
 
-        private void timer_refresh_Tick(object sender, EventArgs e)
+            foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
+            {
+                string[] row = { p.FirstName, p.LastName, p.Age.ToString() };
+                ListViewItem item = new ListViewItem(row);
+                listView1.Items.Add(item);
+            }
+        }
+
+        private void timer_refesh_Tick(object sender, EventArgs e)
         {
             listView1.Items.Clear();
 
-      
+
             foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
             {
-                string[] row = { p.FirstName, p.LastName,p.Age.ToString() };
+                string[] row = { p.FirstName, p.LastName, p.Age.ToString() };
                 ListViewItem item = new ListViewItem(row);
                 listView1.Items.Add(item);
             }
