@@ -17,6 +17,10 @@ namespace StockFood
             Recette = new Dictionary<string, Ingredients>();
 
         }
+        //public Recipe CreateRecipe()
+        //{
+
+        //}
 
         public string Describe
         {

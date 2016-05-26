@@ -18,14 +18,6 @@ namespace StockFood
         {
              Famille = new Dictionary<string, Profil_Utilisateur>();
         }
-        public void save(string path)
-        {
-            BinaryFormatter formatter = new BinaryFormatter();
-            using (FileStream file = new System.IO.FileStream(path, FileMode.Create, FileAccess.Write))
-            {
-                formatter.Serialize(file, this);
-            }
-        }
 
         public Profil_Utilisateur CreateUser(string firstName, string lastName, int age, int weigth, int heigth, bool isFemale, bool isVegetarian)
         {
