@@ -38,7 +38,7 @@
             // button_Remove
             // 
             this.button_Remove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Remove.Location = new System.Drawing.Point(360, 290);
+            this.button_Remove.Location = new System.Drawing.Point(304, 321);
             this.button_Remove.Name = "button_Remove";
             this.button_Remove.Size = new System.Drawing.Size(105, 59);
             this.button_Remove.TabIndex = 1;
@@ -49,7 +49,7 @@
             // button_Back
             // 
             this.button_Back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Back.Location = new System.Drawing.Point(471, 290);
+            this.button_Back.Location = new System.Drawing.Point(415, 321);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(105, 59);
             this.button_Back.TabIndex = 2;
@@ -67,7 +67,7 @@
             this.columnHeader_Quantity});
             this.listView1.Location = new System.Drawing.Point(3, 3);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(351, 346);
+            this.listView1.Size = new System.Drawing.Size(295, 377);
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -90,7 +90,7 @@
             this.Controls.Add(this.button_Back);
             this.Controls.Add(this.button_Remove);
             this.Name = "UserControl_Show_Reserve";
-            this.Size = new System.Drawing.Size(582, 352);
+            this.Size = new System.Drawing.Size(526, 383);
             this.Enter += new System.EventHandler(this.UserControl_Show_Reserve_Enter);
             this.ResumeLayout(false);
 

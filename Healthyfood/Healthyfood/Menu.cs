@@ -30,16 +30,19 @@ namespace Healthyfood
         private void button_Utilisateur_Click(object sender, EventArgs e)
         {
             userControl_Profil1.Visible = true;
+            userControl_Profil1.Focus();
         }
 
         private void button_Provisions_Click(object sender, EventArgs e)
         {
             userControl_Reserve1.Visible = true;
+            userControl_Reserve1.Focus();
         }
 
         private void button_Recette_Click(object sender, EventArgs e)
         {
             userControl_Recipe1.Visible = true;
+            userControl_Recipe1.Focus();
         }
     }
 }
