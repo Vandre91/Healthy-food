@@ -35,6 +35,11 @@
             this.userControl_Profil1 = new Healthyfood.UserControl_Profil();
             this.userControl_Reserve1 = new Healthyfood.UserControl_Reserve();
             this.userControl_Recipe1 = new Healthyfood.UserControl_Recipe();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saugarderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chargerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_Provisions
@@ -82,30 +87,69 @@
             // 
             // userControl_Profil1
             // 
+            this.userControl_Profil1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_Profil1.BackgroundImage")));
+            this.userControl_Profil1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.userControl_Profil1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl_Profil1.Location = new System.Drawing.Point(0, 0);
+            this.userControl_Profil1.Location = new System.Drawing.Point(0, 24);
             this.userControl_Profil1.Name = "userControl_Profil1";
-            this.userControl_Profil1.Size = new System.Drawing.Size(698, 473);
+            this.userControl_Profil1.Size = new System.Drawing.Size(698, 449);
             this.userControl_Profil1.TabIndex = 3;
             this.userControl_Profil1.Visible = false;
             // 
             // userControl_Reserve1
             // 
+            this.userControl_Reserve1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_Reserve1.BackgroundImage")));
+            this.userControl_Reserve1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.userControl_Reserve1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl_Reserve1.Location = new System.Drawing.Point(0, 0);
+            this.userControl_Reserve1.Location = new System.Drawing.Point(0, 24);
             this.userControl_Reserve1.Name = "userControl_Reserve1";
-            this.userControl_Reserve1.Size = new System.Drawing.Size(698, 473);
+            this.userControl_Reserve1.Size = new System.Drawing.Size(698, 449);
             this.userControl_Reserve1.TabIndex = 4;
             this.userControl_Reserve1.Visible = false;
             // 
             // userControl_Recipe1
             // 
+            this.userControl_Recipe1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_Recipe1.BackgroundImage")));
+            this.userControl_Recipe1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.userControl_Recipe1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl_Recipe1.Location = new System.Drawing.Point(0, 0);
+            this.userControl_Recipe1.Location = new System.Drawing.Point(0, 24);
             this.userControl_Recipe1.Name = "userControl_Recipe1";
-            this.userControl_Recipe1.Size = new System.Drawing.Size(698, 473);
+            this.userControl_Recipe1.Size = new System.Drawing.Size(698, 449);
             this.userControl_Recipe1.TabIndex = 5;
             this.userControl_Recipe1.Visible = false;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fichierToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(698, 24);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fichierToolStripMenuItem
+            // 
+            this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saugarderToolStripMenuItem,
+            this.chargerToolStripMenuItem});
+            this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
+            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.fichierToolStripMenuItem.Text = "Fichier";
+            // 
+            // saugarderToolStripMenuItem
+            // 
+            this.saugarderToolStripMenuItem.Name = "saugarderToolStripMenuItem";
+            this.saugarderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saugarderToolStripMenuItem.Text = "Saugarder";
+            this.saugarderToolStripMenuItem.Click += new System.EventHandler(this.saugarderToolStripMenuItem_Click);
+            // 
+            // chargerToolStripMenuItem
+            // 
+            this.chargerToolStripMenuItem.Name = "chargerToolStripMenuItem";
+            this.chargerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.chargerToolStripMenuItem.Text = "Charger";
+            this.chargerToolStripMenuItem.Click += new System.EventHandler(this.chargerToolStripMenuItem_Click);
             // 
             // Menu
             // 
@@ -120,9 +164,14 @@
             this.Controls.Add(this.button_Recette);
             this.Controls.Add(this.button_Provisions);
             this.Controls.Add(this.button_Utilisateur);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Menu";
             this.Text = "Menu";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -134,6 +183,10 @@
         private UserControl_Profil userControl_Profil1;
         private UserControl_Reserve userControl_Reserve1;
         private UserControl_Recipe userControl_Recipe1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fichierToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saugarderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem chargerToolStripMenuItem;
     }
 }
 

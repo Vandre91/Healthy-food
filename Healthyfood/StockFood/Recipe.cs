@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace StockFood
 {
+    [Serializable]
     public class Recipe
     {
         public Dictionary<string, Ingredients> Recette;

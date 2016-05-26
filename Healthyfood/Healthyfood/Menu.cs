@@ -14,6 +14,7 @@ namespace Healthyfood
     public partial class Menu : Form
     {
         healthyfood _food ;
+        string _currentFileName;
 
         public Menu()
         {
@@ -43,6 +44,34 @@ namespace Healthyfood
         {
             userControl_Recipe1.Visible = true;
             userControl_Recipe1.Focus();
+        }
+
+        private void saugarderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (_currentFileName == null)
+            {
+                using (var d = new SaveFileDialog())
+                {
+                    d.OverwritePrompt = true;
+                    if (d.ShowDialog() == DialogResult.OK)
+                    {
+                        _currentFileName = d.FileName;
+                    }
+                    else return;
+                }
+            }
+            Healthy.Save(_currentFileName);
+        }
+
+        private void chargerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var d = new OpenFileDialog())
+            {
+                if (d.ShowDialog() == DialogResult.OK)
+                {
+                    Healthy = healthyfood.Load(d.FileName);
+                }
+            }
         }
     }
 }
