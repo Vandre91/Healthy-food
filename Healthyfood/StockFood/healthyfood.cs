@@ -8,6 +8,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace StockFood
 {
+    [Serializable]
     public class healthyfood
     {
         Utilisateurs _Utilisateur;

@@ -38,9 +38,9 @@
             this.columnHeader_Firstname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader_Age = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button_back = new System.Windows.Forms.Button();
+            this.timer_refesh = new System.Windows.Forms.Timer(this.components);
             this.userControl_Modify_Profil1 = new Healthyfood.UserControl_Modify_Profil();
             this.userControl_Show_Profil1 = new Healthyfood.UserControl_Show_Profil();
-            this.timer_refesh = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // button_Add
@@ -111,26 +111,28 @@
             this.button_back.UseVisualStyleBackColor = true;
             this.button_back.Click += new System.EventHandler(this.button_back_Click_1);
             // 
+            // timer_refesh
+            // 
+            this.timer_refesh.Interval = 10000;
+            this.timer_refesh.Tick += new System.EventHandler(this.timer_refesh_Tick);
+            // 
             // userControl_Modify_Profil1
             // 
+            this.userControl_Modify_Profil1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Modify_Profil1.Location = new System.Drawing.Point(0, 0);
             this.userControl_Modify_Profil1.Name = "userControl_Modify_Profil1";
-            this.userControl_Modify_Profil1.Size = new System.Drawing.Size(576, 423);
+            this.userControl_Modify_Profil1.Size = new System.Drawing.Size(603, 426);
             this.userControl_Modify_Profil1.TabIndex = 7;
             this.userControl_Modify_Profil1.Visible = false;
             // 
             // userControl_Show_Profil1
             // 
+            this.userControl_Show_Profil1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Show_Profil1.Location = new System.Drawing.Point(0, 0);
             this.userControl_Show_Profil1.Name = "userControl_Show_Profil1";
-            this.userControl_Show_Profil1.Size = new System.Drawing.Size(587, 423);
+            this.userControl_Show_Profil1.Size = new System.Drawing.Size(603, 426);
             this.userControl_Show_Profil1.TabIndex = 6;
             this.userControl_Show_Profil1.Visible = false;
-            // 
-            // timer_refesh
-            // 
-            this.timer_refesh.Interval = 10000;
-            this.timer_refesh.Tick += new System.EventHandler(this.timer_refesh_Tick);
             // 
             // UserControl_Profil
             // 

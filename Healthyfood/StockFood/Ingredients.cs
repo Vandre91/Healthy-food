@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace StockFood
 {
+    [Serializable]
     public class Ingredients
     {
         public static List<string> _Category = new List<string> {"viande", "poisson", "crustace", "dessert_sucrerie", "boisson", "volaille", "legume", "fruit", "produit_laitier", "matiere_grasse", "feculent", "boulangerie", "herbe_plante" };
