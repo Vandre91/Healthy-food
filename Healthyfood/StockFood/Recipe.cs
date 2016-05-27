@@ -22,14 +22,6 @@ namespace StockFood
             _describe = describe;
 
         }
-        public void save(string path)
-        {
-            BinaryFormatter formatter = new BinaryFormatter();
-            using (FileStream file = new System.IO.FileStream(path, FileMode.Create, FileAccess.Write))
-            {
-                formatter.Serialize(file, this);
-            }
-        }
         public string Name
         {
             get { return _name; }
