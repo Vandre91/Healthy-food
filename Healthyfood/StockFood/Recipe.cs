@@ -9,14 +9,21 @@ namespace StockFood
     [Serializable]
     public class Recipe
     {
-        public Dictionary<string, Ingredients> _recette;
+        public List<Ingredients> _recette;
+        string _name;
         string  _describe;
 
-        public Recipe(Ingredients ing,string describe)
+        public Recipe(string name,List<Ingredients> ing,string describe)
         {
+            _name = name;
+            _recette = new List<Ingredients>(ing);
+            _describe = describe;
 
-            _recette = new Dictionary<string, Ingredients>();
-
+        }
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
         }
 
         public string Describe
@@ -25,11 +32,11 @@ namespace StockFood
             set { _describe = value; }
         }
 
-        public ICollection<Ingredients> IRecipe
+        public IList<Ingredients> IRecipe
         {
-            get { return _recette.Values; }
+            get { return _recette; }
         }
-
+        
     }
 
 }
