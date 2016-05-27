@@ -36,22 +36,6 @@ namespace StockFood
             _isFemale = isFemale;
             _isVegetarian = isVegetarian;
         }
-        public void save(string path)
-        {
-            BinaryFormatter formatter = new BinaryFormatter();
-            using (FileStream file = new System.IO.FileStream(path, FileMode.Create, FileAccess.Write))
-            {
-                formatter.Serialize(file, this);
-            }
-        }
-        public static Profil_Utilisateur Load(string path)
-        {
-            BinaryFormatter formatter = new BinaryFormatter();
-            using (FileStream file = new FileStream(path, FileMode.Open, FileAccess.Read))
-            {
-                return (Profil_Utilisateur)formatter.Deserialize(file);
-            }
-        }
 
         public string FirstName
         {

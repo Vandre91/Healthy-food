@@ -22,6 +22,7 @@ namespace StockFood
             _describe = describe;
 
         }
+<<<<<<< HEAD
         public void save(string path)
         {
             BinaryFormatter formatter = new BinaryFormatter();
@@ -29,11 +30,12 @@ namespace StockFood
             {
                 formatter.Serialize(file, this);
             }
-        }
+=======
         public string Name
         {
             get { return _name; }
             set { _name = value; }
+>>>>>>> Vic
         }
 
         public string Describe
