@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Reserve_Add_Remove));
             this.tabPage_Fat_Boulangerie = new System.Windows.Forms.TabPage();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label97 = new System.Windows.Forms.Label();
@@ -1134,11 +1135,13 @@
             this.listView10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listView10.BackgroundImage")));
             this.listView10.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader25});
+            this.listView10.GridLines = true;
             this.listView10.Location = new System.Drawing.Point(3, -1);
             this.listView10.Name = "listView10";
-            this.listView10.Size = new System.Drawing.Size(192, 378);
+            this.listView10.Size = new System.Drawing.Size(269, 378);
             this.listView10.TabIndex = 9;
             this.listView10.UseCompatibleStateImageBehavior = false;
             this.listView10.View = System.Windows.Forms.View.Details;
@@ -1343,8 +1346,10 @@
             this.listView9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listView9.BackgroundImage")));
             this.listView9.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader22});
+            this.listView9.GridLines = true;
             this.listView9.Location = new System.Drawing.Point(3, -1);
             this.listView9.Name = "listView9";
             this.listView9.Size = new System.Drawing.Size(196, 378);
@@ -1552,8 +1557,10 @@
             this.listView8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listView8.BackgroundImage")));
             this.listView8.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader19});
+            this.listView8.GridLines = true;
             this.listView8.Location = new System.Drawing.Point(3, -1);
             this.listView8.Name = "listView8";
             this.listView8.Size = new System.Drawing.Size(198, 378);
@@ -1761,8 +1768,10 @@
             this.listView7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listView7.BackgroundImage")));
             this.listView7.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader16});
+            this.listView7.GridLines = true;
             this.listView7.Location = new System.Drawing.Point(3, -1);
             this.listView7.Name = "listView7";
             this.listView7.Size = new System.Drawing.Size(198, 378);
@@ -1970,8 +1979,10 @@
             this.listView6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listView6.BackgroundImage")));
             this.listView6.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader13});
+            this.listView6.GridLines = true;
             this.listView6.Location = new System.Drawing.Point(3, -1);
             this.listView6.Name = "listView6";
             this.listView6.Size = new System.Drawing.Size(191, 378);
@@ -2179,8 +2190,10 @@
             this.listView5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listView5.BackgroundImage")));
             this.listView5.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader10});
+            this.listView5.GridLines = true;
             this.listView5.Location = new System.Drawing.Point(3, -1);
             this.listView5.Name = "listView5";
             this.listView5.Size = new System.Drawing.Size(193, 378);
@@ -2388,8 +2401,10 @@
             this.listView4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listView4.BackgroundImage")));
             this.listView4.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader7});
+            this.listView4.GridLines = true;
             this.listView4.Location = new System.Drawing.Point(-3, 0);
             this.listView4.Name = "listView4";
             this.listView4.Size = new System.Drawing.Size(231, 378);
@@ -2597,11 +2612,13 @@
             this.listView3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listView3.BackgroundImage")));
             this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader4});
+            this.listView3.GridLines = true;
             this.listView3.Location = new System.Drawing.Point(0, 0);
             this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(222, 378);
+            this.listView3.Size = new System.Drawing.Size(200, 378);
             this.listView3.TabIndex = 9;
             this.listView3.UseCompatibleStateImageBehavior = false;
             this.listView3.View = System.Windows.Forms.View.Details;
@@ -2807,11 +2824,13 @@
             this.listView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listView2.BackgroundImage")));
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1});
+            this.listView2.GridLines = true;
             this.listView2.Location = new System.Drawing.Point(3, -1);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(222, 381);
+            this.listView2.Size = new System.Drawing.Size(199, 381);
             this.listView2.TabIndex = 9;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -3015,11 +3034,13 @@
             // 
             // listView1
             // 
+            this.listView1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listView1.BackgroundImage")));
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader_Name});
+            this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(341, 378);
+            this.listView1.Size = new System.Drawing.Size(200, 378);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
