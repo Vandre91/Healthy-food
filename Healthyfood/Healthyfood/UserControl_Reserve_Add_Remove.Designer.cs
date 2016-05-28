@@ -508,8 +508,10 @@
             // 
             // listView13
             // 
+            this.listView13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listView13.BackgroundImage")));
             this.listView13.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader34});
+            this.listView13.GridLines = true;
             this.listView13.Location = new System.Drawing.Point(6, 6);
             this.listView13.Name = "listView13";
             this.listView13.Size = new System.Drawing.Size(223, 371);
@@ -717,8 +719,10 @@
             this.listView12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listView12.BackgroundImage")));
             this.listView12.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader31});
+            this.listView12.GridLines = true;
             this.listView12.Location = new System.Drawing.Point(3, -1);
             this.listView12.Name = "listView12";
             this.listView12.Size = new System.Drawing.Size(191, 378);
@@ -926,8 +930,10 @@
             this.listView11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listView11.BackgroundImage")));
             this.listView11.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader28});
+            this.listView11.GridLines = true;
             this.listView11.Location = new System.Drawing.Point(12, 3);
             this.listView11.Name = "listView11";
             this.listView11.Size = new System.Drawing.Size(201, 371);
