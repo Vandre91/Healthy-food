@@ -8,6 +8,7 @@ namespace StockFood
 {
     class Calories
     {
+
         public Dictionary<string, int> Cal = new Dictionary<string, int>
         {
         {"Steak de boeuf", 148},{"Collier de boeuf",124},{"Entrecote de boeuf", 192}, {"Cote de boeuf",355}, { "Rumsteck de boeuf", 123},
@@ -60,5 +61,5 @@ namespace StockFood
     }
         ;
 
-    } 
+    }
 }
