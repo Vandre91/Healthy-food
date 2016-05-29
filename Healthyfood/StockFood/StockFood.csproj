@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AllRecipe.cs" />
+    <Compile Include="Calories.cs" />
     <Compile Include="healthyfood.cs" />
     <Compile Include="Ingredients.cs" />
     <Compile Include="Profil_Utilisateur.cs" />
