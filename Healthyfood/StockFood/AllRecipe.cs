@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StockFood
 {
-    class AllRecipe
+    public class AllRecipe
     {
         public Dictionary<string, Recipe> _healthyrecipe;
         public Dictionary<string, Recipe> _yourrecipe;
