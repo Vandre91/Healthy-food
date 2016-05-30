@@ -14,6 +14,7 @@ namespace StockFood
         Utilisateurs _Utilisateur;
         Profil_Utilisateur _Profil;
         Stocks _Stocks;
+        AllRecipe _Allrecipe;
 
         public List<string> _viande;
         public List<string> _boisson;
@@ -47,6 +48,8 @@ namespace StockFood
 
             _Utilisateur = new Utilisateurs();
             _Stocks = new Stocks();
+            _Allrecipe = new AllRecipe();
+            CreateRecipes();
         }
         public void Save(string path)
         {
@@ -67,7 +70,7 @@ namespace StockFood
         public Utilisateurs Utilisateur
         {
             get { return _Utilisateur; }
-            set { if (value == null) value = new Utilisateurs(); }
+            set { _Utilisateur = value; }
         }
         public Profil_Utilisateur Profil
         {
@@ -77,7 +80,12 @@ namespace StockFood
         public Stocks Stocks
         {
             get { return _Stocks; }
-            set { if (value == null) value = new Stocks(); }
+            set { _Stocks = value; }
+        }
+        public AllRecipe AllRecipe
+        {
+            get { return _Allrecipe; }
+            set { _Allrecipe = value; }
         }
         public void CreateIngredient(string category, string name)
         {
@@ -94,6 +102,15 @@ namespace StockFood
             if (category == "feculent") _feculent.Add(name);
             if (category == "boulangerie") _boulangerie.Add(name);
             if (category == "herbe_plante") _herbe_plante.Add(name);
+        }
+        public void CreateRecipes()
+        {
+            Ingredients a = new Ingredients("legume", "Tomate", 4, DateTime.Today);
+            Ingredients b = new Ingredients("matiere_grasse", "Chévre", 2, DateTime.Today);
+            Ingredients c = new Ingredients("herbe_plante", "Poivre", 2, DateTime.Today);
+            Ingredients d = new Ingredients("herbe_plante", "Salade", 100, DateTime.Today);
+            List<Ingredients> recipes = new List<Ingredients> { a,b,c,d };
+            _Allrecipe.AddHealthyrecipe("Tomates au chèvre frais", recipes, "Evider les tomates et conserver le chapeau. les remplir de chèvre, fermer avec le chapeau de la tomate.Mettre à four moyen une vingtaine de minutes.Servir avec une salade.");
         }
     }
 }

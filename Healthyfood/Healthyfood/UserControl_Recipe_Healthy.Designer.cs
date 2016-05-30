@@ -37,10 +37,10 @@
             this.columnHeader_Note = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button_Back = new System.Windows.Forms.Button();
             this.panel_Show_Recipes = new System.Windows.Forms.Panel();
-            this.button_Back_Panel = new System.Windows.Forms.Button();
-            this.button_Heat = new System.Windows.Forms.Button();
-            this.button_Read = new System.Windows.Forms.Button();
             this.label_Describes = new System.Windows.Forms.Label();
+            this.button_Read = new System.Windows.Forms.Button();
+            this.button_Heat = new System.Windows.Forms.Button();
+            this.button_Back_Panel = new System.Windows.Forms.Button();
             this.panel_Show_Recipes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,25 +101,14 @@
             this.panel_Show_Recipes.TabIndex = 2;
             this.panel_Show_Recipes.Visible = false;
             // 
-            // button_Back_Panel
+            // label_Describes
             // 
-            this.button_Back_Panel.Location = new System.Drawing.Point(276, 188);
-            this.button_Back_Panel.Name = "button_Back_Panel";
-            this.button_Back_Panel.Size = new System.Drawing.Size(75, 23);
-            this.button_Back_Panel.TabIndex = 0;
-            this.button_Back_Panel.Text = "Retour";
-            this.button_Back_Panel.UseVisualStyleBackColor = true;
-            this.button_Back_Panel.Click += new System.EventHandler(this.button_Back_Panel_Click);
-            // 
-            // button_Heat
-            // 
-            this.button_Heat.Location = new System.Drawing.Point(30, 188);
-            this.button_Heat.Name = "button_Heat";
-            this.button_Heat.Size = new System.Drawing.Size(75, 23);
-            this.button_Heat.TabIndex = 1;
-            this.button_Heat.Text = "Manger";
-            this.button_Heat.UseVisualStyleBackColor = true;
-            this.button_Heat.Click += new System.EventHandler(this.button_Heat_Click);
+            this.label_Describes.AutoSize = true;
+            this.label_Describes.Location = new System.Drawing.Point(30, 25);
+            this.label_Describes.Name = "label_Describes";
+            this.label_Describes.Size = new System.Drawing.Size(60, 13);
+            this.label_Describes.TabIndex = 3;
+            this.label_Describes.Text = "Déscription";
             // 
             // button_Read
             // 
@@ -131,14 +120,25 @@
             this.button_Read.UseVisualStyleBackColor = true;
             this.button_Read.Click += new System.EventHandler(this.button_Read_Click);
             // 
-            // label_Describes
+            // button_Heat
             // 
-            this.label_Describes.AutoSize = true;
-            this.label_Describes.Location = new System.Drawing.Point(30, 25);
-            this.label_Describes.Name = "label_Describes";
-            this.label_Describes.Size = new System.Drawing.Size(60, 13);
-            this.label_Describes.TabIndex = 3;
-            this.label_Describes.Text = "Déscription";
+            this.button_Heat.Location = new System.Drawing.Point(30, 188);
+            this.button_Heat.Name = "button_Heat";
+            this.button_Heat.Size = new System.Drawing.Size(75, 23);
+            this.button_Heat.TabIndex = 1;
+            this.button_Heat.Text = "Manger";
+            this.button_Heat.UseVisualStyleBackColor = true;
+            this.button_Heat.Click += new System.EventHandler(this.button_Heat_Click);
+            // 
+            // button_Back_Panel
+            // 
+            this.button_Back_Panel.Location = new System.Drawing.Point(276, 188);
+            this.button_Back_Panel.Name = "button_Back_Panel";
+            this.button_Back_Panel.Size = new System.Drawing.Size(75, 23);
+            this.button_Back_Panel.TabIndex = 0;
+            this.button_Back_Panel.Text = "Retour";
+            this.button_Back_Panel.UseVisualStyleBackColor = true;
+            this.button_Back_Panel.Click += new System.EventHandler(this.button_Back_Panel_Click);
             // 
             // UserControl_Recipe_Healthy
             // 
@@ -149,6 +149,7 @@
             this.Controls.Add(this.listView1);
             this.Name = "UserControl_Recipe_Healthy";
             this.Size = new System.Drawing.Size(574, 342);
+            this.Enter += new System.EventHandler(this.UserControl_Recipe_Healthy_Enter);
             this.panel_Show_Recipes.ResumeLayout(false);
             this.panel_Show_Recipes.PerformLayout();
             this.ResumeLayout(false);
