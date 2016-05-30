@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StockFood;
 
 namespace Healthyfood
 {
@@ -28,7 +29,15 @@ namespace Healthyfood
 
         private void listView1_MouseClick(object sender, MouseEventArgs e)
         {
+            
+            string name = listView1.SelectedItems[0].SubItems[0].Text;
+            Recipe recipe = Root.Healthy.AllRecipe.FindHealthyrecipe(name);
+
+            label_Name.Text = recipe.Name;
+            richTextBox_Describe.Text = recipe.Describe;
             panel_Show_Recipes.Visible = true;
+            panel_Show_Recipes.Focus();
+            
         }
 
         private void button_Back_Panel_Click(object sender, EventArgs e)
