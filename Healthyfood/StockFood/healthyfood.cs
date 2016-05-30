@@ -105,12 +105,24 @@ namespace StockFood
         }
         public void CreateRecipes()
         {
+            #region Tomates au chévre
             Ingredients a = new Ingredients("legume", "Tomate", 4, DateTime.Today);
             Ingredients b = new Ingredients("matiere_grasse", "Chévre", 2, DateTime.Today);
             Ingredients c = new Ingredients("herbe_plante", "Poivre", 2, DateTime.Today);
             Ingredients d = new Ingredients("herbe_plante", "Salade", 100, DateTime.Today);
             List<Ingredients> recipes = new List<Ingredients> { a,b,c,d };
             _Allrecipe.AddHealthyrecipe("Tomates au chèvre frais", recipes, "Evider les tomates et conserver le chapeau. les remplir de chèvre, fermer avec le chapeau de la tomate.Mettre à four moyen une vingtaine de minutes.Servir avec une salade.");
+            #endregion
+            #region cote de porc
+            Ingredients e = new Ingredients("viande", "Côtes de porc ", 2, DateTime.Today);
+            Ingredients f = new Ingredients("matiere_grasse", "Beurre", 100, DateTime.Today);
+            Ingredients g = new Ingredients("herbe_plante", "Poivre", 2, DateTime.Today);
+            Ingredients h = new Ingredients("herbe_plante", "Sel", 2, DateTime.Today);
+            List<Ingredients> recipe = new List<Ingredients> { e, f, g, h };
+            _Allrecipe.AddHealthyrecipe("Côtes de porc au citron", recipes, "Faire cuire les 2 côtes de porc dans la magarine. 10 minutes avant la fin de la cuisson, saler, poivrer, couper le citron en 2, arroser les côtes avec son jus.Mettre aussi les 2 bouts de citrons dans la poêle, ça donnera plus de goût. S'accompagne très bien avec des frites. ");
+            #endregion
+
+
         }
     }
 }

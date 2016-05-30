@@ -37,10 +37,11 @@
             this.columnHeader_Note = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button_Back = new System.Windows.Forms.Button();
             this.panel_Show_Recipes = new System.Windows.Forms.Panel();
-            this.label_Describes = new System.Windows.Forms.Label();
             this.button_Read = new System.Windows.Forms.Button();
             this.button_Heat = new System.Windows.Forms.Button();
             this.button_Back_Panel = new System.Windows.Forms.Button();
+            this.label_Name = new System.Windows.Forms.Label();
+            this.richTextBox_Describe = new System.Windows.Forms.RichTextBox();
             this.panel_Show_Recipes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,7 +92,8 @@
             // 
             // panel_Show_Recipes
             // 
-            this.panel_Show_Recipes.Controls.Add(this.label_Describes);
+            this.panel_Show_Recipes.Controls.Add(this.richTextBox_Describe);
+            this.panel_Show_Recipes.Controls.Add(this.label_Name);
             this.panel_Show_Recipes.Controls.Add(this.button_Read);
             this.panel_Show_Recipes.Controls.Add(this.button_Heat);
             this.panel_Show_Recipes.Controls.Add(this.button_Back_Panel);
@@ -100,15 +102,6 @@
             this.panel_Show_Recipes.Size = new System.Drawing.Size(366, 227);
             this.panel_Show_Recipes.TabIndex = 2;
             this.panel_Show_Recipes.Visible = false;
-            // 
-            // label_Describes
-            // 
-            this.label_Describes.AutoSize = true;
-            this.label_Describes.Location = new System.Drawing.Point(30, 25);
-            this.label_Describes.Name = "label_Describes";
-            this.label_Describes.Size = new System.Drawing.Size(60, 13);
-            this.label_Describes.TabIndex = 3;
-            this.label_Describes.Text = "Déscription";
             // 
             // button_Read
             // 
@@ -140,6 +133,23 @@
             this.button_Back_Panel.UseVisualStyleBackColor = true;
             this.button_Back_Panel.Click += new System.EventHandler(this.button_Back_Panel_Click);
             // 
+            // label_Name
+            // 
+            this.label_Name.AutoSize = true;
+            this.label_Name.Location = new System.Drawing.Point(27, 25);
+            this.label_Name.Name = "label_Name";
+            this.label_Name.Size = new System.Drawing.Size(35, 13);
+            this.label_Name.TabIndex = 4;
+            this.label_Name.Text = "Name";
+            // 
+            // richTextBox_Describe
+            // 
+            this.richTextBox_Describe.Location = new System.Drawing.Point(30, 58);
+            this.richTextBox_Describe.Name = "richTextBox_Describe";
+            this.richTextBox_Describe.Size = new System.Drawing.Size(304, 98);
+            this.richTextBox_Describe.TabIndex = 5;
+            this.richTextBox_Describe.Text = "";
+            // 
             // UserControl_Recipe_Healthy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -164,9 +174,10 @@
         private System.Windows.Forms.ColumnHeader columnHeader_Note;
         private System.Windows.Forms.Button button_Back;
         private System.Windows.Forms.Panel panel_Show_Recipes;
-        private System.Windows.Forms.Label label_Describes;
         private System.Windows.Forms.Button button_Read;
         private System.Windows.Forms.Button button_Heat;
         private System.Windows.Forms.Button button_Back_Panel;
+        private System.Windows.Forms.RichTextBox richTextBox_Describe;
+        private System.Windows.Forms.Label label_Name;
     }
 }
