@@ -39,7 +39,7 @@ namespace Healthyfood
         {
             this.Visible = false;
         }
-
+        #region Refresh
         public void UserControl_Reserve_Add_Remove_Enter(object sender, EventArgs e)
         {
             _s = sender;
@@ -196,7 +196,7 @@ namespace Healthyfood
                 bl++;
             }
         }
-
+        #endregion
         private void listView2_MouseClick(object sender, MouseEventArgs e)
         {
             text_name_drink.Text = listView2.SelectedItems[0].Text;
@@ -208,8 +208,7 @@ namespace Healthyfood
         }
 
 
-
-
+        #region BtnBack
 
         private void Btn_back_milk_Click(object sender, EventArgs e)
         {
@@ -290,9 +289,9 @@ namespace Healthyfood
         {
             this.Visible = false;
         }
+        #endregion
 
-       
-
+        #region Listview_Mouseclick
         private void listView4_MouseClick(object sender, MouseEventArgs e)
         {
             txt_name_crust.Text = listView4.SelectedItems[0].Text;
@@ -343,8 +342,8 @@ namespace Healthyfood
         {
             text_name_bakery.Text = listView13.SelectedItems[0].Text;
         }
-
-
+        #endregion
+        #region Verrif_error
         int verify_error(TextBox boxname, TextBox boxdate, TextBox boxquantity, Label error1, Label error2, Label error3, Label error4)
         {
 
@@ -444,7 +443,8 @@ namespace Healthyfood
                 return 1;
             }
         }
-
+        #endregion
+        #region BtnSave
         private void button_Save_Click(object sender, EventArgs e)
         {
             DateTime date;
@@ -702,72 +702,74 @@ namespace Healthyfood
             if (x == 1) Root.Healthy.Stocks.AddIngredient("boulangerie", text_name_bakery.Text, quantity, date);
             }
         }
+        #endregion
+        #region BtnAdd
+                private void button_ajouter_viande_Click(object sender, EventArgs e)
+                {
+                    panel2.Visible = true;
+                }
 
-        private void button_ajouter_viande_Click(object sender, EventArgs e)
-        {
-            panel2.Visible = true;
-        }
+                private void button_ajouter_boisson_Click(object sender, EventArgs e)
+                {
+                    panel1.Visible = true;
+                }
 
-        private void button_ajouter_boisson_Click(object sender, EventArgs e)
-        {
-            panel1.Visible = true;
-        }
+                private void button_ajouter_dessert_Click(object sender, EventArgs e)
+                {
+                    panel3.Visible = true;
+                }
 
-        private void button_ajouter_dessert_Click(object sender, EventArgs e)
-        {
-            panel3.Visible = true;
-        }
+                private void button_ajouter_crustacé_Click(object sender, EventArgs e)
+                {
+                    panel4.Visible = true;
+                }
 
-        private void button_ajouter_crustacé_Click(object sender, EventArgs e)
-        {
-            panel4.Visible = true;
-        }
+                private void button_ajouter_poisson_Click(object sender, EventArgs e)
+                {
+                    panel5.Visible = true;
+                }
 
-        private void button_ajouter_poisson_Click(object sender, EventArgs e)
-        {
-            panel5.Visible = true;
-        }
+                private void button_ajouter_volailles_Click(object sender, EventArgs e)
+                {
+                    panel6.Visible = true;
+                }
 
-        private void button_ajouter_volailles_Click(object sender, EventArgs e)
-        {
-            panel6.Visible = true;
-        }
+                private void button_ajouter_legumes_Click(object sender, EventArgs e)
+                {
+                    panel7.Visible = true;
+                }
 
-        private void button_ajouter_legumes_Click(object sender, EventArgs e)
-        {
-            panel7.Visible = true;
-        }
+                private void button_ajouter_fruit_Click(object sender, EventArgs e)
+                {
+                    panel8.Visible = true;
+                }
 
-        private void button_ajouter_fruit_Click(object sender, EventArgs e)
-        {
-            panel8.Visible = true;
-        }
+                private void button_ajouter_produit_laitier_Click(object sender, EventArgs e)
+                {
+                    panel9.Visible = true;
+                }
 
-        private void button_ajouter_produit_laitier_Click(object sender, EventArgs e)
-        {
-            panel9.Visible = true;
-        }
+                private void button_ajouter_matiére_grasse_Click(object sender, EventArgs e)
+                {
+                    panel10.Visible = true;
+                }
 
-        private void button_ajouter_matiére_grasse_Click(object sender, EventArgs e)
-        {
-            panel10.Visible = true;
-        }
+                private void button_ajouter_feculent_Click(object sender, EventArgs e)
+                {
+                    panel11.Visible = true;
+                }
 
-        private void button_ajouter_feculent_Click(object sender, EventArgs e)
-        {
-            panel11.Visible = true;
-        }
+                private void button_ajout_boulangerie_Click(object sender, EventArgs e)
+                {
+                    panel13.Visible = true;
+                }
 
-        private void button_ajout_boulangerie_Click(object sender, EventArgs e)
-        {
-            panel13.Visible = true;
-        }
-
-        private void button_ajouter_herbe_Click(object sender, EventArgs e)
-        {
-            panel12.Visible = true;
-        }
-
+                private void button_ajouter_herbe_Click(object sender, EventArgs e)
+                {
+                    panel12.Visible = true;
+                }
+        #endregion
+        #region BtnOk
         private void button1_Click(object sender, EventArgs e)
         {
             if (Root.Healthy._boisson.Contains(textBox1.Text))
@@ -964,5 +966,6 @@ namespace Healthyfood
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
             }
         }
+#endregion
     }
 }
