@@ -58,14 +58,14 @@ namespace Healthyfood
         private void UserControl_Recipe_Healthy_Enter(object sender, EventArgs e)
         {
             listView1.Items.Clear();
-
-
+            
             foreach (var p in Root.Healthy.AllRecipe.Healthyrecipe)
             {
                 string[] row = { p.Name, p.Describe };
                 ListViewItem item = new ListViewItem(row);
                 listView1.Items.Add(item);
             }
+
         }
     }
 }

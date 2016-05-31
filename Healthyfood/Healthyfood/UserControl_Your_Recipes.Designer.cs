@@ -149,6 +149,7 @@
             this.Controls.Add(this.listView1);
             this.Name = "UserControl_Your_Recipes";
             this.Size = new System.Drawing.Size(655, 409);
+            this.Enter += new System.EventHandler(this.UserControl_Your_Recipes_Enter);
             this.panel_Show_Recipes.ResumeLayout(false);
             this.panel_Show_Recipes.PerformLayout();
             this.ResumeLayout(false);
