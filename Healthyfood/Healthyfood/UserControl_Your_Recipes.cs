@@ -48,11 +48,6 @@ namespace Healthyfood
 
         private void UserControl_Your_Recipes_Enter(object sender, EventArgs e)
         {
-            //bool verif = false;
-            //int count = 0;
-            //Dictionary<string,int> list1 = new Dictionary<string,int>();
-            //Dictionary<string,int> list2 = new Dictionary<string, int>();
-
             foreach (var p in Root.Healthy.AllRecipe.Healthyrecipe)
             {
                 bool toutfrigo = true;
@@ -81,40 +76,6 @@ namespace Healthyfood
                     ListViewItem item = new ListViewItem(row);
                     listView1.Items.Add(item);
                 }
-                //foreach (var s in Root.Healthy.Stocks.IStock)
-                //{
-                //    list2.Add(s.Name,s.Balance);
-                //}
-                //foreach(var i in list1)
-                //{
-                //    if(list1[count] == list)
-                //}
-                //if (list1.)
-                //{
-
-                //}
-                //foreach (var i in list1 )
-                //{
-                //    foreach (var l in list2)
-                //    {
-                //        if (i[countt] == l[countt])
-                //        {
-                //            verif = true;
-                //        }
-                //        else
-                //        {
-                //            verif = false;
-                //        }
-                //        countt++;
-                //        break;
-                //    }
-                //}
-                //if (verif == true)
-                //{
-                //    string[] row = { p.Name, p.Describe };
-                //    ListViewItem item = new ListViewItem(row);
-                //    listView1.Items.Add(item);
-                //}
             }
         }
     }
