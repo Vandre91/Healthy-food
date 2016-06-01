@@ -122,6 +122,29 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe("Côtes de porc au citron", recipe, "Faire cuire les 2 côtes de porc dans la magarine. 10 minutes avant la fin de la cuisson, saler, poivrer, couper le citron en 2, arroser les côtes avec son jus.Mettre aussi les 2 bouts de citrons dans la poêle, ça donnera plus de goût. S'accompagne très bien avec des frites. ");
             #endregion
 
+            #region Salade de tomates,  de haricots verts et d'aiglefin poché au vin 
+            Ingredients salade1 = new Ingredients("poisson", "aiglefin frais",225, DateTime.Today);
+            Ingredients salade2 = new Ingredients("boisson", "vin blanc", 60, DateTime.Today);
+            Ingredients salade3 = new Ingredients("feculent", "haricots_verts", 225, DateTime.Today);
+            Ingredients salade4 = new Ingredients("legume", "tomates cerises multicolores coupées", 350, DateTime.Today);
+            Ingredients salade5 = new Ingredients("herbe_plante", "coriande fraiches ciselée", 30, DateTime.Today);
+            Ingredients salade6 = new Ingredients("herbe_plante", "ciboulette ciselée", 30, DateTime.Today);
+            Ingredients salade7 = new Ingredients("boisson", "jus de citron", 30, DateTime.Today);
+            Ingredients salade8 = new Ingredients("matiere grasse", "huile de Olive", 15, DateTime.Today);
+            Ingredients salade9 = new Ingredients("viande", "oeufs durs coupés en deux", 2, DateTime.Today);
+            Ingredients salade10 = new Ingredients("legume", "sel et poivre", 30, DateTime.Today);
+            List<Ingredients> recipesalade = new List<Ingredients> { salade1, salade2, salade3, salade4, salade5, salade6, salade7, salade8, salade9, salade10 };
+            _Allrecipe.AddHealthyrecipe(" Salade de tomates, de haricots verts et d'aiglefin poché au vin", recipesalade, "Dans une poêle antiadhésive, placer l’aiglefin et le vin blanc. Couvrir et porter à ébullition. Laisser mijoter environ 4 minutes ou jusqu’à ce que le poisson soit cuit et qu’il se défasse en gros flocons., Dans une casserole d’eau bouillante salée, cuire les haricots jusqu’à ce qu’ils soient tendres. Plonger dans l’eau glacée et égoutter. Séparer les haricots en deux sur la longueur si désiré.,Dans un bol, mélanger les haricots, les tomates, les herbes, le jus de citron et l’huile d’olive. Saler et poivrer. Répartir dans 4 assiettes. Garnir de gros flocons de poisson et d’un demi-oeuf dur.");
+            #endregion
+
+            #region couscous au jus  de carotte
+            Ingredients Couscous1 = new Ingredients("dessert_sucrerie", "jus de carotte", 500, DateTime.Today);
+            Ingredients Couscous2 = new Ingredients("dessert_sucrerie", "miel", 15, DateTime.Today);
+            Ingredients couscous3 = new Ingredients("legume", "poivre noir concassé", 2, DateTime.Today);
+            Ingredients couscous4 = new Ingredients("herbe_plante", " couscous", 400, DateTime.Today);
+            List<Ingredients> recipecouscous = new List<Ingredients> { Couscous1, Couscous2, couscous3, couscous4 };
+            _Allrecipe.AddHealthyrecipe("couscous au jus de carotte", recipecouscous, "Dans un bol, mélanger le couscous, les carottes et les petits pois. Ajouter l'eau bouillante, couvrir et laisser reposer pendant 5 minutes ou jusqu'à ce que les légumes soient tendres mais encore croquants et que l'eau soit absorbée. À l'aide d'une fourchette, détacher les grains de couscous.,");
+            #endregion
 
         }
     }
