@@ -34,14 +34,14 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader_Description = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader_Note = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader_calories = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button_Back = new System.Windows.Forms.Button();
             this.panel_Show_Recipes = new System.Windows.Forms.Panel();
+            this.richTextBox_Describe = new System.Windows.Forms.RichTextBox();
+            this.label_Name = new System.Windows.Forms.Label();
             this.button_Read = new System.Windows.Forms.Button();
             this.button_Heat = new System.Windows.Forms.Button();
             this.button_Back_Panel = new System.Windows.Forms.Button();
-            this.label_Name = new System.Windows.Forms.Label();
-            this.richTextBox_Describe = new System.Windows.Forms.RichTextBox();
             this.panel_Show_Recipes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +53,7 @@
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader_Name,
             this.columnHeader_Description,
-            this.columnHeader_Note});
+            this.columnHeader_calories});
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1});
             this.listView1.Location = new System.Drawing.Point(0, 0);
@@ -72,12 +72,11 @@
             // columnHeader_Description
             // 
             this.columnHeader_Description.Text = "Déscription";
-            this.columnHeader_Description.Width = 458;
+            this.columnHeader_Description.Width = 232;
             // 
-            // columnHeader_Note
+            // columnHeader_calories
             // 
-            this.columnHeader_Note.Text = "Note";
-            this.columnHeader_Note.Width = 43;
+            this.columnHeader_calories.Text = "Calories";
             // 
             // button_Back
             // 
@@ -102,6 +101,23 @@
             this.panel_Show_Recipes.Size = new System.Drawing.Size(366, 227);
             this.panel_Show_Recipes.TabIndex = 2;
             this.panel_Show_Recipes.Visible = false;
+            // 
+            // richTextBox_Describe
+            // 
+            this.richTextBox_Describe.Location = new System.Drawing.Point(30, 58);
+            this.richTextBox_Describe.Name = "richTextBox_Describe";
+            this.richTextBox_Describe.Size = new System.Drawing.Size(304, 98);
+            this.richTextBox_Describe.TabIndex = 5;
+            this.richTextBox_Describe.Text = "";
+            // 
+            // label_Name
+            // 
+            this.label_Name.AutoSize = true;
+            this.label_Name.Location = new System.Drawing.Point(27, 25);
+            this.label_Name.Name = "label_Name";
+            this.label_Name.Size = new System.Drawing.Size(35, 13);
+            this.label_Name.TabIndex = 4;
+            this.label_Name.Text = "Name";
             // 
             // button_Read
             // 
@@ -133,23 +149,6 @@
             this.button_Back_Panel.UseVisualStyleBackColor = true;
             this.button_Back_Panel.Click += new System.EventHandler(this.button_Back_Panel_Click);
             // 
-            // label_Name
-            // 
-            this.label_Name.AutoSize = true;
-            this.label_Name.Location = new System.Drawing.Point(27, 25);
-            this.label_Name.Name = "label_Name";
-            this.label_Name.Size = new System.Drawing.Size(35, 13);
-            this.label_Name.TabIndex = 4;
-            this.label_Name.Text = "Name";
-            // 
-            // richTextBox_Describe
-            // 
-            this.richTextBox_Describe.Location = new System.Drawing.Point(30, 58);
-            this.richTextBox_Describe.Name = "richTextBox_Describe";
-            this.richTextBox_Describe.Size = new System.Drawing.Size(304, 98);
-            this.richTextBox_Describe.TabIndex = 5;
-            this.richTextBox_Describe.Text = "";
-            // 
             // UserControl_Recipe_Healthy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,7 +170,6 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader_Name;
         private System.Windows.Forms.ColumnHeader columnHeader_Description;
-        private System.Windows.Forms.ColumnHeader columnHeader_Note;
         private System.Windows.Forms.Button button_Back;
         private System.Windows.Forms.Panel panel_Show_Recipes;
         private System.Windows.Forms.Button button_Read;
@@ -179,5 +177,6 @@
         private System.Windows.Forms.Button button_Back_Panel;
         private System.Windows.Forms.RichTextBox richTextBox_Describe;
         private System.Windows.Forms.Label label_Name;
+        private System.Windows.Forms.ColumnHeader columnHeader_calories;
     }
 }

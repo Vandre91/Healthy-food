@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StockFood;
+using System.IO;
 
 namespace Healthyfood
 {
     public partial class UserControl_Recipe_Healthy : UserControl
     {
+        
         public UserControl_Recipe_Healthy()
         {
             InitializeComponent();
@@ -61,7 +63,24 @@ namespace Healthyfood
             
             foreach (var p in Root.Healthy.AllRecipe.Healthyrecipe)
             {
-                string[] row = { p.Name, p.Describe };
+                double _allcalories = 0.0;
+                foreach (var r in p.IRecipe)
+                {
+                    foreach (KeyValuePair<string, int> Currentpair in Root.Healthy.Calories.Cal )
+                    {
+                        if (Currentpair.Key == r.Name)
+                        {
+                            double cal = Currentpair.Value;
+                            double quantity = r.Balance;
+                            double allcal = Root.Healthy.CalculCal(quantity,cal);
+                            _allcalories += allcal;
+                            break;
+                        }
+                    }
+
+                }
+
+                string[] row = { p.Name, p.Describe,_allcalories.ToString() };
                 ListViewItem item = new ListViewItem(row);
                 listView1.Items.Add(item);
             }

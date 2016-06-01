@@ -48,6 +48,7 @@ namespace Healthyfood
 
         private void UserControl_Your_Recipes_Enter(object sender, EventArgs e)
         {
+            listView1.Items.Clear();
             foreach (var p in Root.Healthy.AllRecipe.Healthyrecipe)
             {
                 bool toutfrigo = true;
@@ -71,7 +72,6 @@ namespace Healthyfood
                 }
                 if (toutfrigo)
                 {
-                    listView1.Items.Clear();
                     string[] row = { p.Name, p.Describe };
                     ListViewItem item = new ListViewItem(row);
                     listView1.Items.Add(item);
