@@ -169,7 +169,7 @@ namespace StockFood
             Ingredients chou8 = new Ingredients("herbe_plante", "menthe", 15, DateTime.Today);
             Ingredients chou9 = new Ingredients("herbe_plante", "basilic", 15, DateTime.Today);
             Ingredients chou10 = new Ingredients("legume", "sel et poivre", 30, DateTime.Today);
-            List<Ingredients> recipechou = new List<Ingredients { chou1, chou2, chou3, chou4, chou5, chou6, chou7, chou8, chou9, chou10 };
+            List<Ingredients> recipechou = new List<Ingredients> { chou1, chou2, chou3, chou4, chou5, chou6, chou7, chou8, chou9, chou10 };
             _Allrecipe.AddHealthyrecipe(" salade de chou-fleur et de petits pois", recipechou, "xxxx");
             #endregion
         }
