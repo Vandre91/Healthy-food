@@ -146,6 +146,20 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe("couscous au jus de carotte", recipecouscous, "Dans un bol, mélanger le couscous, les carottes et les petits pois. Ajouter l'eau bouillante, couvrir et laisser reposer pendant 5 minutes ou jusqu'à ce que les légumes soient tendres mais encore croquants et que l'eau soit absorbée. À l'aide d'une fourchette, détacher les grains de couscous.,");
             #endregion
 
+            #region salade de chou-fleur et de petits pois
+            Ingredients chou1 = new Ingredients("legume", "chou-fleur", 600, DateTime.Today);
+            Ingredients chou2 = new Ingredients("legume", "tomates cerises", 280, DateTime.Today);
+            Ingredients chou3 = new Ingredients("legume", "oignons vert", 2, DateTime.Today);
+            Ingredients chou4 = new Ingredients("fruit", "citron", 1, DateTime.Today);
+            Ingredients chou5 = new Ingredients("matiere_grasse", "huile d'olive", 45, DateTime.Today);
+            Ingredients chou6 = new Ingredients("matiere_grasse", "huile d'olive", 30, DateTime.Today);
+            Ingredients chou7 = new Ingredients("herbe_plante", "moutarcde", 15, DateTime.Today);
+            Ingredients chou8 = new Ingredients("herbe_plante", "menthe", 15, DateTime.Today);
+            Ingredients chou9 = new Ingredients("herbe_plante", "basilic", 15, DateTime.Today);
+            Ingredients chou10 = new Ingredients("legume", "sel et poivre", 30, DateTime.Today);
+            List<Ingredients> recipechou = new List<Ingredients { chou1, chou2, chou3, chou4, chou5, chou6, chou7, chou8, chou9, chou10 };
+            _Allrecipe.AddHealthyrecipe(" salade de chou-fleur et de petits pois", recipechou, "xxxx");
+            #endregion
         }
     }
 }
