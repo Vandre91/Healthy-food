@@ -11,7 +11,7 @@ namespace HealthyFoodTests
 {
     [TestFixture]
 
-    public class T1CreateUsers
+    public class TCreateUsers
     {
         [Test]
         public void t01_create_or_modify_user_with_correct_firstname()

@@ -11,7 +11,7 @@ namespace HealthyFoodTests
 {
     [TestFixture]
 
-    public class T2Stocks
+    public class TStocks
     {
         [Test]
         public void t01_add_ingredient_with_correct_category()

@@ -11,7 +11,7 @@ namespace HealthyFoodTests
 {
     [TestFixture]
 
-    public class T3CreateRecipe
+    public class TCreateRecipe
 
     {
         [Test]
