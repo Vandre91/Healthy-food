@@ -11,14 +11,14 @@ namespace StockFood
     [Serializable]
     public class Recipe
     {
-        public List<Ingredients> _recette;
+        public List<Ingredient> _recette;
         string _name;
         string  _describe;
 
-        public Recipe(string name,List<Ingredients> ing,string describe)
+        public Recipe(string name,List<Ingredient> ing,string describe)
         {
             _name = name;
-            _recette = new List<Ingredients>(ing);
+            _recette = new List<Ingredient>(ing);
             _describe = describe;
 
         }
@@ -34,7 +34,7 @@ namespace StockFood
             set { _describe = value; }
         }
 
-        public IList<Ingredients> IRecipe
+        public IList<Ingredient> IRecipe
         {
             get { return _recette; }
         }

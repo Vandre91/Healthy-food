@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace StockFood
 {
     [Serializable]
-    public class Profil_Utilisateur
+    public class UserProfile
     {
         string _firstName;
         string _lastName;
@@ -21,7 +21,7 @@ namespace StockFood
         bool _isVegetarian;
         int _imc;
 
-        internal Profil_Utilisateur(string firstName, string lastName, int age, int weigth, int heigth, bool isFemale, bool isVegetarian)
+        internal UserProfile(string firstName, string lastName, int age, int weigth, int heigth, bool isFemale, bool isVegetarian)
         {
             if (age < 0 || age > 130) throw new ArgumentException("Age must be between 0 and 130", nameof(age));
             if (firstName == null || firstName == string.Empty || string.IsNullOrWhiteSpace(firstName)) throw new ArgumentException("The name must not be empty", nameof(firstName));
