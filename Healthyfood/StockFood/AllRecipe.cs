@@ -20,7 +20,7 @@ namespace StockFood
             _worldrecipe = new Dictionary<string, Recipe>();
         }
 
-        public Recipe AddHealthyrecipe(string name,List<Ingredients> ing,string describe)
+        public Recipe AddHealthyrecipe(string name,List<Ingredient> ing,string describe)
         {
             if (string.IsNullOrWhiteSpace(name))
             {
@@ -74,7 +74,7 @@ namespace StockFood
         {
             get { return _healthyrecipe.Values; }
         }
-        public Recipe AddYourrecipe(string name, List<Ingredients> ing, string describe)
+        public Recipe AddYourrecipe(string name, List<Ingredient> ing, string describe)
         {
             if (string.IsNullOrWhiteSpace(name))
             {
@@ -129,7 +129,7 @@ namespace StockFood
             get { return _yourrecipe.Values; }
         }
 
-        public Recipe AddWorldrecipe(string name, List<Ingredients> ing, string describe)
+        public Recipe AddWorldrecipe(string name, List<Ingredient> ing, string describe)
         {
             if (string.IsNullOrWhiteSpace(name))
             {

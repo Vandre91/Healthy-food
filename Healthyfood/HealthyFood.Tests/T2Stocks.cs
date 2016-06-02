@@ -23,7 +23,7 @@ namespace HealthyFoodTests
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient(null, "lait", 100, date));
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("", "lait", 100, date));
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient(" \t\r\n", "lait", 100, date));
-            Ingredients i = stocks.AddIngredient("viande", "lait", 100, date);
+            Ingredient i = stocks.AddIngredient("viande", "lait", 100, date);
             Assert.That(i.Category, Is.EqualTo("viande"));
         }
 
@@ -36,7 +36,7 @@ namespace HealthyFoodTests
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", " ", 100, date));
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", null, 100, date));
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", " \t\r\n", 100, date));
-            Ingredients i = stocks.AddIngredient("viande", "Steak de boeuf", 100, date);
+            Ingredient i = stocks.AddIngredient("viande", "Steak de boeuf", 100, date);
             Assert.That(i.Name, Is.EqualTo("Steak de boeuf"));
 
         }
@@ -52,10 +52,10 @@ namespace HealthyFoodTests
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", "Steak de boeuf", 0, date));
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", "Steak de boeuf", -10, date));
             Assert.Throws<ArgumentException>(() => stocks.AddIngredient("viande", "Steak de boeuf", 100, date1));
-            Ingredients i = stocks.AddIngredient("viande", "Steak de boeuf", 100, date2);
+            Ingredient i = stocks.AddIngredient("viande", "Steak de boeuf", 100, date2);
             Assert.That(i.Expiration_Date, Is.EqualTo(DateTime.Today));
             Assert.That(i.Balance, Is.EqualTo(100));
-            Ingredients u = stocks.AddIngredient("viande", "Steak de boeuf", 100, date3);
+            Ingredient u = stocks.AddIngredient("viande", "Steak de boeuf", 100, date3);
             Assert.That(u.Expiration_Date, Is.EqualTo(date3));
 
         }
@@ -66,8 +66,8 @@ namespace HealthyFoodTests
             Stocks stocks = new Stocks();
             DateTime date = new DateTime(2017, 10, 10);
             DateTime date1 = new DateTime(2018, 10, 10);
-            Ingredients i = stocks.AddIngredient("viande", "Steak de boeuf", 100, date);
-            Ingredients u = new Ingredients("viande", "cote de boeuf", 100, date);
+            Ingredient i = stocks.AddIngredient("viande", "Steak de boeuf", 100, date);
+            Ingredient u = new Ingredient("viande", "cote de boeuf", 100, date);
             Assert.Throws<ArgumentException>(() => stocks.RemoveIngredient("cote de boeuf", date));
             Assert.Throws<ArgumentException>(() => stocks.RemoveIngredient("Steak de boeuf", date1));
             stocks.RemoveIngredient("Steak de boeuf", date);
@@ -81,7 +81,7 @@ namespace HealthyFoodTests
         {
             Stocks stocks = new Stocks();
             DateTime date = new DateTime(2017, 10, 10);
-            Ingredients i = stocks.AddIngredient("viande", "Steak de boeuf", 100, date);
+            Ingredient i = stocks.AddIngredient("viande", "Steak de boeuf", 100, date);
             i= stocks.AddIngredient("viande", "Steak de boeuf", 150, date);
             Assert.That(i.Balance, Is.EqualTo(250));
         }
@@ -91,8 +91,8 @@ namespace HealthyFoodTests
         {
             Stocks stocks = new Stocks();
             DateTime date = new DateTime(2017, 10, 10);
-            Ingredients i = stocks.AddIngredient("viande", "Steak de boeuf", 100, date);
-            Ingredients u = stocks.AddIngredient("viande", "cote de boeuf", 100, date);
+            Ingredient i = stocks.AddIngredient("viande", "Steak de boeuf", 100, date);
+            Ingredient u = stocks.AddIngredient("viande", "cote de boeuf", 100, date);
             Assert.Throws<ArgumentException>(() => stocks.ReduceIngredient("Steak de boeuf",200, date));
             Assert.Throws<ArgumentException>(() => stocks.ReduceIngredient("Steak de chat", 200, date));
             Assert.Throws<ArgumentException>(() => stocks.ReduceIngredient("Steak de boeuf", -1, date));
