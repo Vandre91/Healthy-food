@@ -156,7 +156,7 @@ namespace StockFood
             Ingredients couscous3 = new Ingredients("legume", "poivre noir concassé", 2, DateTime.Today);
             Ingredients couscous4 = new Ingredients("herbe_plante", " couscous", 400, DateTime.Today);
             List<Ingredients> recipecouscous = new List<Ingredients> { Couscous1, Couscous2, couscous3, couscous4 };
-            _Allrecipe.AddHealthyrecipe("couscous au jus de carotte", recipecouscous, "Dans un bol, mélanger le couscous, les carottes et les petits pois. Ajouter l'eau bouillante, couvrir et laisser reposer pendant 5 minutes ou jusqu'à ce que les légumes soient tendres mais encore croquants et que l'eau soit absorbée. À l'aide d'une fourchette, détacher les grains de couscous.,");
+            _Allrecipe.AddHealthyrecipe("couscous au jus de carotte", recipecouscous, "Dans un bol, mélanger le couscous, les carottes et les petits pois. Ajouter l'eau bouillante, couvrir et laisser reposer pendant 5 minutes ou jusqu'à ce que les légumes soient tendres mais encore croquants et que l'eau soit absorbée. À l'aide d'une fourchette, détacher les grains de couscous.");
             #endregion
             #region salade de chou-fleur et de petits pois
             Ingredients chou1 = new Ingredients("legume", "chou-fleur", 600, DateTime.Today);
@@ -170,8 +170,23 @@ namespace StockFood
             Ingredients chou9 = new Ingredients("herbe_plante", "basilic", 15, DateTime.Today);
             Ingredients chou10 = new Ingredients("legume", "sel et poivre", 30, DateTime.Today);
             List<Ingredients> recipechou = new List<Ingredients> { chou1, chou2, chou3, chou4, chou5, chou6, chou7, chou8, chou9, chou10 };
-            _Allrecipe.AddHealthyrecipe(" salade de chou-fleur et de petits pois", recipechou, "xxxx");
+            _Allrecipe.AddHealthyrecipe(" salade de chou-fleur et de petits pois", recipechou, "1.Dans une casserole d'eau bouillante salée, cuire le chou-fleur environ  2 minutes ou jusqu'à ce qu'il soit al dente. Refroidir dans le bol d'eau glacée.Egoutter et réservé dans un bol.2 Ajouter le rester  des ingrédients.Saler et poivrer.Mélanger");
             #endregion
+
+            #region Haricots vert  rémoulade
+
+            Ingredients haricot1 = new Ingredients("feculent", "haricots verts parés", 454, DateTime.Today);
+            Ingredients haricot2 = new Ingredients("matiere_grasse", "mayonnaise", 30, DateTime.Today);
+            Ingredients haricot3 = new Ingredients("herbe_plante", "thé de moutarde de Dijon", 10, DateTime.Today);
+            Ingredients haricot4 = new Ingredients("boisson", "vinaigre de vin blanc", 10, DateTime.Today);
+            Ingredients haricot5 = new Ingredients("legume", "capres hachées", 5, DateTime.Today);
+            Ingredients haricot6 = new Ingredients("legume", "purée de raifort", 3, DateTime.Today);
+            Ingredients haricot7 = new Ingredients("legume", "oignons verts", 2, DateTime.Today);
+            Ingredients haricot8 = new Ingredients("legume", "sel et poivre", 30, DateTime.Today);
+            List<Ingredients> recipeharicot = new List<Ingredients> { haricot1, haricot2, haricot3, haricot4, haricot5, haricot6, haricot7, haricot8 };
+            _Allrecipe.AddHealthyrecipe("haricots vert rémoulade", recipeharicot, "1.Dans une casserole d'eau bouillante salée, cuire les haricots environ 5 minutes ou jusqu'à ce qu'ils soient tendres.Refroidir dans l'eau glacé. 2  si désiré, sur un plan  de travail, diviser les haricots en deux dans le sens de la longueur(voir  note).3 Dans un grand bol,mélanger la mayonnaise, la moutarde,le vinaigre, les capres et le raifort.Ajouter les haricots.Saler, poivrer et mélanger ");
+            #endregion
+
         }
     }
 }
