@@ -43,7 +43,7 @@ namespace Healthyfood
             {
                 string name = listView1.SelectedItems[0].SubItems[0].Text;
                 string lastname = listView1.SelectedItems[0].SubItems[1].Text;
-                Profil_Utilisateur profil = Root.Healthy.Utilisateur.FindUser(name, lastname);
+                UserProfile profil = Root.Healthy.Utilisateur.FindUser(name, lastname);
                 Root.Healthy.Profil = profil; 
                 userControl_Modify_Profil1.Visible = true;
                 userControl_Modify_Profil1.Focus();

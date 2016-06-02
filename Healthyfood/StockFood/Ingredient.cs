@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace StockFood
 {
     [Serializable]
-    public class Ingredients
+    public class Ingredient
     {
         public static List<string> _Category = new List<string> {"viande", "poisson", "crustace", "dessert_sucrerie", "boisson", "volaille", "legume", "fruit", "produit_laitier", "matiere_grasse", "feculent", "boulangerie", "herbe_plante" };
 
@@ -17,7 +17,7 @@ namespace StockFood
         int _balance;
 
 
-        public Ingredients (string category, string name, int balance, DateTime expiration_date)
+        public Ingredient (string category, string name, int balance, DateTime expiration_date)
         {
             _category = category;
             _name = name;

@@ -9,32 +9,32 @@ namespace StockFood
     [Serializable]
     public class Stocks
     {
-       public Dictionary<string, Ingredients> _stock;
+       public Dictionary<string, Ingredient> _stock;
 
         public Stocks ()
         {
-            _stock = new Dictionary<string, Ingredients>();
+            _stock = new Dictionary<string, Ingredient>();
         }
 
-       public static string naming (Ingredients ingred)
+       public static string naming (Ingredient ingred)
         {
             return ((ingred.Name) + " " + Convert.ToString(ingred.Expiration_Date));
         }
 
-        public Ingredients AddIngredient(string category,string name, int balance, DateTime expiration_date)
+        public Ingredient AddIngredient(string category,string name, int balance, DateTime expiration_date)
         {
 
             if (category == null || category == string.Empty || string.IsNullOrWhiteSpace(category)) throw new ArgumentException("The name must not be empty", nameof(category));
             if (name == null || name == string.Empty || string.IsNullOrWhiteSpace(name)) throw new ArgumentException("The name must not be empty", nameof(name));
-            if (!(Ingredients._Category.Contains(category))) throw new ArgumentException("This category does not exist", nameof(category));
+            if (!(Ingredient._Category.Contains(category))) throw new ArgumentException("This category does not exist", nameof(category));
             if (expiration_date < DateTime.Today) throw new ArgumentException("This ingredient is obsolete", nameof(expiration_date));
             if (balance <= 0) throw new ArgumentException("The balance must be more than 0", nameof(balance));
-            Ingredients ingred = new Ingredients(category, name, balance, expiration_date);
+            Ingredient ingred = new Ingredient(category, name, balance, expiration_date);
             if (_stock.ContainsKey(naming(ingred)))
             {
                 int bal = _stock[name + " " + Convert.ToString(expiration_date)].Balance + balance;
                 RemoveIngredient(name, expiration_date);
-                Ingredients i = AddIngredient(category, name, bal, expiration_date);
+                Ingredient i = AddIngredient(category, name, bal, expiration_date);
                 return i;
             }
             else
@@ -60,7 +60,7 @@ namespace StockFood
             
         }
 
-        public Ingredients ReduceIngredient(string name, int balance,  DateTime expiration_date)
+        public Ingredient ReduceIngredient(string name, int balance,  DateTime expiration_date)
         {
             if (balance <= 0) throw new ArgumentException("The balance must be more than 0", nameof(balance));
             if (_stock.ContainsKey(name + " " + Convert.ToString(expiration_date)))
@@ -74,7 +74,7 @@ namespace StockFood
                     int bal = _stock[name + " " + Convert.ToString(expiration_date)].Balance - balance;
                     string category = _stock[name + " " + Convert.ToString(expiration_date)].Category1;
                     RemoveIngredient(name, expiration_date);
-                   Ingredients i = AddIngredient(category, name, bal, expiration_date);
+                   Ingredient i = AddIngredient(category, name, bal, expiration_date);
                     if (bal == 0)  RemoveIngredient(name, expiration_date);
                     return i;
                    
@@ -86,7 +86,7 @@ namespace StockFood
             }
         }
         
-            public ICollection<Ingredients> IStock
+            public ICollection<Ingredient> IStock
             {
             get { return _stock.Values; }
             }                   
