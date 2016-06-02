@@ -175,15 +175,15 @@ namespace StockFood
 
             #region Haricots vert  rémoulade
 
-            Ingredients haricot1 = new Ingredients("feculent", "haricots verts parés", 454, DateTime.Today);
-            Ingredients haricot2 = new Ingredients("matiere_grasse", "mayonnaise", 30, DateTime.Today);
-            Ingredients haricot3 = new Ingredients("herbe_plante", "thé de moutarde de Dijon", 10, DateTime.Today);
-            Ingredients haricot4 = new Ingredients("boisson", "vinaigre de vin blanc", 10, DateTime.Today);
-            Ingredients haricot5 = new Ingredients("legume", "capres hachées", 5, DateTime.Today);
-            Ingredients haricot6 = new Ingredients("legume", "purée de raifort", 3, DateTime.Today);
-            Ingredients haricot7 = new Ingredients("legume", "oignons verts", 2, DateTime.Today);
-            Ingredients haricot8 = new Ingredients("legume", "sel et poivre", 30, DateTime.Today);
-            List<Ingredients> recipeharicot = new List<Ingredients> { haricot1, haricot2, haricot3, haricot4, haricot5, haricot6, haricot7, haricot8 };
+            Ingredient haricot1 = new Ingredient("feculent", "haricots verts parés", 454, DateTime.Today);
+            Ingredient haricot2 = new Ingredient("matiere_grasse", "mayonnaise", 30, DateTime.Today);
+            Ingredient haricot3 = new Ingredient("herbe_plante", "thé de moutarde de Dijon", 10, DateTime.Today);
+            Ingredient haricot4 = new Ingredient("boisson", "vinaigre de vin blanc", 10, DateTime.Today);
+            Ingredient haricot5 = new Ingredient("legume", "capres hachées", 5, DateTime.Today);
+            Ingredient haricot6 = new Ingredient("legume", "purée de raifort", 3, DateTime.Today);
+            Ingredient haricot7 = new Ingredient("legume", "oignons verts", 2, DateTime.Today);
+            Ingredient haricot8 = new Ingredient("legume", "sel et poivre", 30, DateTime.Today);
+            List<Ingredient> recipeharicot = new List<Ingredient> { haricot1, haricot2, haricot3, haricot4, haricot5, haricot6, haricot7, haricot8 };
             _Allrecipe.AddHealthyrecipe("haricots vert rémoulade", recipeharicot, "1.Dans une casserole d'eau bouillante salée, cuire les haricots environ 5 minutes ou jusqu'à ce qu'ils soient tendres.Refroidir dans l'eau glacé. 2  si désiré, sur un plan  de travail, diviser les haricots en deux dans le sens de la longueur(voir  note).3 Dans un grand bol,mélanger la mayonnaise, la moutarde,le vinaigre, les capres et le raifort.Ajouter les haricots.Saler, poivrer et mélanger ");
             #endregion
 
