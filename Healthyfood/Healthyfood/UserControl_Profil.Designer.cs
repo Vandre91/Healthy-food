@@ -39,6 +39,7 @@
             this.columnHeader_Age = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button_back = new System.Windows.Forms.Button();
             this.timer_refesh = new System.Windows.Forms.Timer(this.components);
+            this.label7 = new System.Windows.Forms.Label();
             this.userControl_Modify_Profil1 = new Healthyfood.UserControl_Modify_Profil();
             this.userControl_Show_Profil1 = new Healthyfood.UserControl_Show_Profil();
             this.SuspendLayout();
@@ -75,11 +76,13 @@
             // 
             // listView1
             // 
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader_LastName,
             this.columnHeader_Firstname,
             this.columnHeader_Age});
-            this.listView1.Location = new System.Drawing.Point(59, 59);
+            this.listView1.Location = new System.Drawing.Point(66, 51);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(477, 238);
             this.listView1.TabIndex = 3;
@@ -116,12 +119,25 @@
             this.timer_refesh.Interval = 5000;
             this.timer_refesh.Tick += new System.EventHandler(this.timer_refesh_Tick);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Lime;
+            this.label7.Location = new System.Drawing.Point(203, 304);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 24);
+            this.label7.TabIndex = 35;
+            this.label7.Visible = false;
+            // 
             // userControl_Modify_Profil1
             // 
             this.userControl_Modify_Profil1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Modify_Profil1.Location = new System.Drawing.Point(0, 0);
             this.userControl_Modify_Profil1.Name = "userControl_Modify_Profil1";
-            this.userControl_Modify_Profil1.Size = new System.Drawing.Size(603, 426);
+            this.userControl_Modify_Profil1.Size = new System.Drawing.Size(609, 402);
             this.userControl_Modify_Profil1.TabIndex = 7;
             this.userControl_Modify_Profil1.Visible = false;
             // 
@@ -130,7 +146,7 @@
             this.userControl_Show_Profil1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Show_Profil1.Location = new System.Drawing.Point(0, 0);
             this.userControl_Show_Profil1.Name = "userControl_Show_Profil1";
-            this.userControl_Show_Profil1.Size = new System.Drawing.Size(603, 426);
+            this.userControl_Show_Profil1.Size = new System.Drawing.Size(609, 402);
             this.userControl_Show_Profil1.TabIndex = 6;
             this.userControl_Show_Profil1.Visible = false;
             // 
@@ -140,6 +156,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.userControl_Modify_Profil1);
             this.Controls.Add(this.userControl_Show_Profil1);
             this.Controls.Add(this.button_back);
@@ -148,9 +165,10 @@
             this.Controls.Add(this.button_Modify);
             this.Controls.Add(this.button_Add);
             this.Name = "UserControl_Profil";
-            this.Size = new System.Drawing.Size(603, 426);
+            this.Size = new System.Drawing.Size(609, 402);
             this.Enter += new System.EventHandler(this.UserControl_Profil_Enter);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -167,5 +185,6 @@
         private UserControl_Show_Profil userControl_Show_Profil1;
         private UserControl_Modify_Profil userControl_Modify_Profil1;
         private System.Windows.Forms.Timer timer_refesh;
+        private System.Windows.Forms.Label label7;
     }
 }

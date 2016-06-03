@@ -44,11 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="T1CreateUsers.cs" />
+    <Compile Include="TCreateUsers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="T2Stocks.cs" />
-    <Compile Include="T3CreateRecipe.cs" />
-    <Compile Include="T4RecipesManagement.cs" />
+    <Compile Include="TStocks.cs" />
+    <Compile Include="TCreateRecipe.cs" />
+    <Compile Include="TecipesManagement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
