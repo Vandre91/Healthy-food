@@ -228,15 +228,21 @@ namespace StockFood
 
             #region  Risotto aux crevettes de type chowder
 
-            Ingredient Risotto1 = new Ingredient("matiere_grasse", "bouillon de poulet", 750, DateTime.Today);
-            Ingredient Risotto2 = new Ingredient("boisson", "lait", 750, DateTime.Today);
-            Ingredient Risotto3 = new Ingredient("legume", "carottes", 2, DateTime.Today);
-            Ingredient Risotto4 = new Ingredient("herbe_plante", "céleri", 2, DateTime.Today);
-            Ingredient Risotto5 = new Ingredient("legume", "oignon", 1, DateTime.Today);
-            Ingredient Risotto6 = new Ingredient("matiere_grasse", "huile d'olive", 30, DateTime.Today);
-            Ingredient Risotto7 = new Ingredient("feculent", "riz arborio", 400, DateTime.Today);
-            Ingredient Risotto8 = new Ingredient("boisson", "vin blanc", 125, DateTime.Today);
-            Ingredient Risotto9 = new Ingredient("crustace", "crevettes crues", 454, DateTime.Today);
+            Ingredient risotto1 = new Ingredient("matiere_grasse", "bouillon de poulet", 750, DateTime.Today);
+            Ingredient risotto2 = new Ingredient("boisson", "lait", 750, DateTime.Today);
+            Ingredient risotto3 = new Ingredient("legume", "carottes", 2, DateTime.Today);
+            Ingredient risotto4 = new Ingredient("herbe_plante", "céleri", 2, DateTime.Today);
+            Ingredient risotto5 = new Ingredient("legume", "oignon", 1, DateTime.Today);
+            Ingredient risotto6 = new Ingredient("matiere_grasse", "huile d'olive", 30, DateTime.Today);
+            Ingredient risotto7 = new Ingredient("feculent", "riz arborio", 400, DateTime.Today);
+            Ingredient risotto8 = new Ingredient("boisson", "vin blanc", 125, DateTime.Today);
+            Ingredient risotto9 = new Ingredient("crustace", "crevettes crues", 454, DateTime.Today);
+            Ingredient risotto10 = new Ingredient("herbe_plante", "grains de mais surgelés", 150, DateTime.Today);
+            Ingredient risotto11 = new Ingredient("herbe_plante", "persil frais", 30, DateTime.Today);
+            Ingredient risotto12 = new Ingredient("fruit", "pincée de muscade", 1, DateTime.Today);
+            Ingredient risotto13 = new Ingredient("legume", "sel et poivre", 10, DateTime.Today);
+            List<Ingredient> reciperisotto = new List<Ingredient> { risotto1, risotto2, risotto3, risotto4, risotto5, risotto6, risotto7, risotto8, risotto9, risotto10, risotto11, risotto12, risotto13 };
+            _Allrecipe.AddHealthyrecipe("Risotto aux crevettes de type chowder", reciperisotto, "Dans une casserole à feu élevé, porter à ébullition  le bouillon et le lait.Dès le premier bouillon, fermer le feu. Couvrir  et réserver au chaud. 2 Dans  une grande casserole à feu moyen, attendrir les carottes, le céleri et l'oignon dans l huile. 3 Ajouter le riz et cuire 1 minute  en remuant pour bien  l enrober. Déglacer avec le vin et laisser  réduire presque a sec. 4 À feu moyen, ajouter le mélange de bouillon, environ 250 ml (1 tasse) à la fois, en remuant fréquemment jusqu’à ce qu’il soit complètement absorbé entre chaque ajout. Saler et poivrer. Cuire de 18 à 22 minutes ou jusqu’à ce que le riz soit al dente. Incorporer les crevettes, le maïs, le persil et la muscade. Poursuivre la cuisson environ 2 minutes ou jusqu’à ce que les crevettes soient cuites. ");
 
             #endregion
 
