@@ -16,6 +16,10 @@ namespace Healthyfood
         {
             InitializeComponent();
         }
+        public Menu Root
+        {
+            get { return (Menu)FindForm(); }
+        }
 
         private void button_Back_Click(object sender, EventArgs e)
         {
@@ -38,6 +42,17 @@ namespace Healthyfood
         {
             userControl_World_Recipe1.Visible = true;
             userControl_World_Recipe1.Focus();
+        }
+
+        private void UserControl_Recipe_Enter(object sender, EventArgs e)
+        {
+            comboBox1.Items.Clear();
+
+
+            foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
+            {
+                comboBox1.Items.Add(p.LastName);
+            }
         }
     }
 }
