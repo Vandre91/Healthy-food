@@ -243,7 +243,49 @@ namespace StockFood
             Ingredient risotto13 = new Ingredient("legume", "sel et poivre", 10, DateTime.Today);
             List<Ingredient> reciperisotto = new List<Ingredient> { risotto1, risotto2, risotto3, risotto4, risotto5, risotto6, risotto7, risotto8, risotto9, risotto10, risotto11, risotto12, risotto13 };
             _Allrecipe.AddHealthyrecipe("Risotto aux crevettes de type chowder", reciperisotto, "Dans une casserole à feu élevé, porter à ébullition  le bouillon et le lait.Dès le premier bouillon, fermer le feu. Couvrir  et réserver au chaud. 2 Dans  une grande casserole à feu moyen, attendrir les carottes, le céleri et l'oignon dans l huile. 3 Ajouter le riz et cuire 1 minute  en remuant pour bien  l enrober. Déglacer avec le vin et laisser  réduire presque a sec. 4 À feu moyen, ajouter le mélange de bouillon, environ 250 ml (1 tasse) à la fois, en remuant fréquemment jusqu’à ce qu’il soit complètement absorbé entre chaque ajout. Saler et poivrer. Cuire de 18 à 22 minutes ou jusqu’à ce que le riz soit al dente. Incorporer les crevettes, le maïs, le persil et la muscade. Poursuivre la cuisson environ 2 minutes ou jusqu’à ce que les crevettes soient cuites. ");
+            #endregion
 
+            #region Nouille de chou aux cari et sauté de boeuf
+
+            Ingredient nouille1 = new Ingredient("herbe_plante", "gousse d'ail", 4, DateTime.Today);
+            Ingredient nouille2 = new Ingredient("matiere_grasse", "huile d'olive", 15, DateTime.Today);
+            Ingredient nouille3 = new Ingredient("legume", "chou vert", 680, DateTime.Today);
+            Ingredient nouille4 = new Ingredient("herbe_plante", "poudre de cari", 10, DateTime.Today);
+            Ingredient nouille5 = new Ingredient("viande", "sauté de boeuf", 10, DateTime.Today);
+            Ingredient nouille6 = new Ingredient("feculent", "fecule de mais", 10, DateTime.Today);
+            Ingredient nouille7 = new Ingredient("boisson", "eau", 60, DateTime.Today);
+            Ingredient nouille8 = new Ingredient("herbe_plante", "sauce de soja", 30, DateTime.Today);
+            Ingredient nouille9 = new Ingredient("dessert_sucrerie", "miel", 30, DateTime.Today);
+            Ingredient nouille10 = new Ingredient("herbe_plante", "poudre de cari", 10, DateTime.Today);
+            Ingredient nouille11 = new Ingredient("viande", "boeuf haché", 454, DateTime.Today);
+            Ingredient nouille12 = new Ingredient("herbe_plante", "oignon", 1, DateTime.Today);
+            Ingredient nouille13 = new Ingredient("matiere_grasse", "huile d'olive", 15, DateTime.Today);
+            Ingredient nouille14 = new Ingredient("legume", "poivrons de couleur", 2, DateTime.Today);
+            Ingredient nouille15 = new Ingredient("legume", "épépinés", 1, DateTime.Today);
+            Ingredient nouille16 = new Ingredient("herbe_plante", "aneth frais", 30, DateTime.Today);
+            List<Ingredient> recipenouille = new List<Ingredient> { nouille1, nouille2, nouille3, nouille4, nouille5, nouille6, nouille7, nouille8, nouille9, nouille10, nouille11, nouille12, nouille13, nouille14, nouille15, nouille16 };
+            _Allrecipe.AddHealthyrecipe("Nouille de chou aux cari et sauté de boeuf", recipenouille, "1 Dans une grande poêle à feu moyen‐élevé, dorer l’ail dans l’huile. Ajouter le chou et le cari. Poursuivre la cuisson environ 8 minutes en remuant fréquemment ou jusqu’à ce que le chou soit al dente. Réserver au chaud. 2 Dans un bol, délayer la fécule dans l’eau. Ajouter la sauce soya, le miel et le cari. Réserver la sauce. 3 Dans une autre grande poêle à feu élevé, dorer le boeuf et l’oignon dans l’huile. Ajouter les poivrons et poursuivre la cuisson jusqu’à ce qu’ils soient tendres. Ajouter la sauce et porter à ébullition en remuant fréquemment. 3 Dans 4 bols, repartir les nouilles de chou. Garnir du saute de boeuf et parsemer d aneth ");
+            #endregion
+            #region Riz aux lentilles  et aux choux  de Bruxelles:
+
+            Ingredient lentilles1 = new Ingredient("herbe_plante", "oignon", 1, DateTime.Today);
+            Ingredient lentilles2 = new Ingredient("herbe_plante", "céleri", 1, DateTime.Today);
+            Ingredient lentilles3 = new Ingredient("herbe_plante", "gousse d'ail", 2, DateTime.Today);
+            Ingredient lentilles4 = new Ingredient("matiere_grasse", "huile d'olive", 60, DateTime.Today);
+            Ingredient lentilles5 = new Ingredient("fruit", "lentilles du Puy", 215, DateTime.Today);
+            Ingredient lentilles6 = new Ingredient("herbe_plante", "bouillon de poulet", 500, DateTime.Today);
+            Ingredient lentilles7 = new Ingredient("legume", "coulis de tomates", 375, DateTime.Today);
+            Ingredient lentilles8 = new Ingredient("herbe_plante", "origan", 5, DateTime.Today);
+            Ingredient lentilles9 = new Ingredient("herbe_plante", "moutarde", 5, DateTime.Today);
+            Ingredient lentilles10 = new Ingredient("herbe_céleri", "céleri", 5, DateTime.Today);
+            Ingredient lentilles11 = new Ingredient("herbe_plante", "céleri", 3, DateTime.Today);
+            Ingredient lentilles12 = new Ingredient("legume", "pincée de poivre", 1, DateTime.Today);
+            Ingredient lentilles13 = new Ingredient("feculent", "riz", 125, DateTime.Today);
+            Ingredient lentilles14 = new Ingredient("herbe_plante", "persil frais", 10, DateTime.Today);
+            Ingredient lentilles15 = new Ingredient("legume", "feuilles de choux", 675, DateTime.Today);
+            Ingredient lentilles16 = new Ingredient("legume", "Sel et poivre", 30, DateTime.Today);
+            List<Ingredient> recipelentilles = new List<Ingredient> { lentilles1, lentilles2, lentilles3, lentilles4, lentilles4, lentilles5, lentilles6, lentilles7, lentilles8, lentilles9, lentilles10, lentilles11, lentilles12, lentilles13, lentilles14, lentilles15, lentilles16 };
+            _Allrecipe.AddHealthyrecipe(" Riz aux lentilles et aux choux de Bruxelles", recipelentilles, "1 Dans une grande poêle à feu moyen‐élevé, dorer l’oignon, le céleri et l’ail dans la moitié de l’huile (30 ml/2 c. à soupe). Ajouter les lentilles, le bouillon, le coulis de tomates et les épices. Saler, poivrer et porter à ébullition. Couvrir. Laisser mijoter 10 minutes. Incorporer le riz, couvrir à nouveau et laisser mijoter 20 minutes jusqu’à ce que le riz soit tendre mais encore légèrement croquant. Laisser reposer 5 minutes à découvert. Ajouter le persil. 2 Placer deux grilles au centre du four. Préchauffer le four à 200 °C (400 °F). Tapisser deux plaques de cuisson de papier parchemin. 3 Répartir les feuilles des choux de Bruxelles sur les plaques. Arroser du reste de l’huile (30 ml/2 c. à soupe). Saler et poivrer. Cuire les deux plaques au four de 12 à 15 minutes ou jusqu’à ce que les feuilles soient légèrement dorées. 4. Au moment de servir, déposer les feuilles de chou de Bruxelles rôties sur le dessus du mélange de riz et de lentilles. ");
             #endregion
 
 
