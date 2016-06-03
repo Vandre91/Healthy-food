@@ -202,6 +202,45 @@ namespace StockFood
             List<Ingredient> recipepoulet = new List<Ingredient> { poulet1, poulet2, poulet3, poulet4, poulet5, poulet6, poulet7, poulet8, poulet9, poulet10 };
             _Allrecipe.AddHealthyrecipe("Casserole de poulet au mais, aux petits pois et aux tomates succotash", recipepoulet, "1 Dans un petit bol, mélanger la coriandre, la moutarde et le piment. Sur une assiette, frotter le poulet avec le melange d epices. Saler et poivrer. 2 Dans une grande poele antiadhesive à feu élevé, dorer le poulet  dans l huile environ 2 minutes de chaque coté.Ajouter le bouillon et les légumes. Porter à ébullition et couvrir.Laisser mijoter environ 8 minutes ou jusqu’à ce que le poulet soit bien cuit. Rectifier l assaisonnement");
             #endregion
+            #region Trempette aux poivrons rouges rotis  et aux tomates séchées
+
+            Ingredient trempette1 = new Ingredient("fruit", "noix de grenoble", 25, DateTime.Today);
+            Ingredient trempette2 = new Ingredient("legume", "tomates séchées", 60, DateTime.Today);
+            Ingredient trempette3 = new Ingredient("herbe_plante", "ail séchée", 1, DateTime.Today);
+            Ingredient trempette4 = new Ingredient("fruit", "jus de citron", 15, DateTime.Today);
+            Ingredient trempette5 = new Ingredient("legume", "poivrons rouges", 2, DateTime.Today);
+            Ingredient trempette6 = new Ingredient("legume", "épepinées", 20, DateTime.Today);
+            Ingredient trempette7 = new Ingredient("legume", "sel et poivre", 10, DateTime.Today);
+            List<Ingredient> recipetrempette = new List<Ingredient> { trempette1, trempette2, trempette3, trempette4, trempette5, trempette6, trempette7 };
+            _Allrecipe.AddHealthyrecipe(" Tremepette aux poivrons rouges rotis et aux tomates séchées", recipetrempette, "1 Au robot culinaire, hacher les noix, les tomates et l’ail avec le jus de citron.2 Ajouter les poivrons et mélanger quelques secondes à la fois jusqu’à ce que les poivrons soient presque réduits en purée. Saler et poivrer.3 Servir avec des tranches de baguette grillée, des crudités, ou les deux.");
+            #endregion
+            #region Trempette aux haricots  et aux artichaux
+
+            Ingredient trempetteharicot1 = new Ingredient("feculent", "haricots blancs", 549, DateTime.Today);
+            Ingredient trempetteharicot2 = new Ingredient("herbe_plante", "artichauts", 170, DateTime.Today);
+            Ingredient trempetteharicot3 = new Ingredient("matiere_grasse", "huile d'olive", 30, DateTime.Today);
+            Ingredient trempetteharicot4 = new Ingredient("fruit", "jus de citron", 15, DateTime.Today);
+            Ingredient trempetteharicot5 = new Ingredient("herbe_plante", "ail", 1, DateTime.Today);
+            Ingredient trempetteharicot6 = new Ingredient("legume", "sel et poivre", 10, DateTime.Today);
+            List<Ingredient> recipetrempetteharicot = new List<Ingredient> { trempetteharicot1, trempetteharicot2, trempetteharicot3, trempetteharicot4, trempetteharicot5, trempetteharicot6 };
+            _Allrecipe.AddHealthyrecipe(" Trempette aux haricots et aux artichaux", recipetrempetteharicot, "1 Au robot culinaire, broyer tous les ingredients jusqu'à l'obtention  d'une purée lisse. Saler et poivrer. 2 Servir avec des chips de pita, des crudités, ou les deux");
+            #endregion
+
+            #region  Risotto aux crevettes de type chowder
+
+            Ingredient Risotto1 = new Ingredient("matiere_grasse", "bouillon de poulet", 750, DateTime.Today);
+            Ingredient Risotto2 = new Ingredient("boisson", "lait", 750, DateTime.Today);
+            Ingredient Risotto3 = new Ingredient("legume", "carottes", 2, DateTime.Today);
+            Ingredient Risotto4 = new Ingredient("herbe_plante", "céleri", 2, DateTime.Today);
+            Ingredient Risotto5 = new Ingredient("legume", "oignon", 1, DateTime.Today);
+            Ingredient Risotto6 = new Ingredient("matiere_grasse", "huile d'olive", 30, DateTime.Today);
+            Ingredient Risotto7 = new Ingredient("feculent", "riz arborio", 400, DateTime.Today);
+            Ingredient Risotto8 = new Ingredient("boisson", "vin blanc", 125, DateTime.Today);
+            Ingredient Risotto9 = new Ingredient("crustace", "crevettes crues", 454, DateTime.Today);
+
+            #endregion
+
+
 
         }
     }
