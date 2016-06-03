@@ -24,38 +24,60 @@ namespace Healthyfood
 
         private void button_Add_Click(object sender, EventArgs e)
         {
+            label7.Visible = false;
             userControl_Show_Profil1.Visible = true;
         }
 
         private void button_back_Click_1(object sender, EventArgs e)
         {
+            label7.Visible = false;
             this.Visible = false;
             timer_refesh.Stop();
         }
 
         private void button_Modify_Click(object sender, EventArgs e)
         {
+            label7.Visible = false;
             if (listView1.Items.Count <= 0)
             {
                 button_Modify.Enabled = true;
             }
             else
             {
-                string name = listView1.SelectedItems[0].SubItems[0].Text;
-                string lastname = listView1.SelectedItems[0].SubItems[1].Text;
-                UserProfile profil = Root.Healthy.Utilisateur.FindUser(name, lastname);
-                Root.Healthy.Profil = profil; 
-                userControl_Modify_Profil1.Visible = true;
-                userControl_Modify_Profil1.Focus();
+                try
+                {
+                    string name = listView1.SelectedItems[0].SubItems[0].Text;
+                    string lastname = listView1.SelectedItems[0].SubItems[1].Text;
+                    UserProfile profil = Root.Healthy.Utilisateur.FindUser(name, lastname);
+                    Root.Healthy.Profil = profil;
+                    userControl_Modify_Profil1.Visible = true;
+                    userControl_Modify_Profil1.Focus();
+                }
+                catch (ArgumentException)
+                {
+                    label7.Text = "Selectioner un Utilisateur";
+                    label7.Visible = true;
+                }
             }
         }
 
         private void button_Delete_Click(object sender, EventArgs e)
         {
-            string name = listView1.SelectedItems[0].SubItems[0].Text;
-            string lastname = listView1.SelectedItems[0].SubItems[1].Text;
-            Root.Healthy.Utilisateur.RemoveUser(name, lastname);
-            listView1.Items.RemoveAt(listView1.SelectedIndices[0]);
+            label7.Visible = false;
+            try
+            {
+                string name = listView1.SelectedItems[0].SubItems[0].Text;
+                string lastname = listView1.SelectedItems[0].SubItems[1].Text;
+                Root.Healthy.Utilisateur.RemoveUser(name, lastname);
+                label7.Text = "Utilisateur Suprimer";
+                label7.Visible = true;
+                listView1.Items.RemoveAt(listView1.SelectedIndices[0]);
+            }
+            catch (ArgumentException)
+            {
+                label7.Text = "Selectioner un Utilisateur";
+                label7.Visible = true;
+            }
         }
         
         public void UserControl_Profil_Enter(object sender, EventArgs e)

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Healthyfood;
+using System.Text.RegularExpressions;
 
 namespace Healthyfood
 {
@@ -38,12 +39,16 @@ namespace Healthyfood
             label5.Text = null;
             label6.Text = null;
             label7.Text = null;
-            if (textBox_Name.Text == null || textBox_Name.Text == string.Empty || string.IsNullOrWhiteSpace(textBox_Name.Text))
+            bool validn = Regex.IsMatch(textBox_Name.Text, "[a - zA - Z]");
+            bool validf = Regex.IsMatch(textBox_Fisrtname.Text, "[a - zA - Z]");
+            bool check = false;
+
+            if (!validn ||textBox_Name.Text == null || textBox_Name.Text == string.Empty || string.IsNullOrWhiteSpace(textBox_Name.Text))
             { label1.Text = "Le texte est invalide";
                 x = 1;
             }
            
-            if (textBox_Fisrtname.Text == null || textBox_Fisrtname.Text == string.Empty || string.IsNullOrWhiteSpace(textBox_Fisrtname.Text))
+            if (!validf||textBox_Fisrtname.Text == null || textBox_Fisrtname.Text == string.Empty || string.IsNullOrWhiteSpace(textBox_Fisrtname.Text))
             {
                 label2.Text = "Le texte est invalide";
                 x = 1;
@@ -83,19 +88,23 @@ namespace Healthyfood
                 x = 1;
             }
 
-            if (comboBox_Sex.Text == null || comboBox_Sex.Text == string.Empty || string.IsNullOrWhiteSpace(comboBox_Sex.Text))
+            if (checkBoxM.Checked == false && checkBox2.Checked == false|| checkBoxM.Checked == true && checkBox2.Checked == true)
             {
                 label4.Text = "Aucun sexe sélectionné";
                 x = 1;
 
             }
+            if (!checkBox2.Checked)
+            {
+                check = true;
+            }
 
-            if (!(textBox_Name.Text == null || textBox_Name.Text == string.Empty || string.IsNullOrWhiteSpace(textBox_Name.Text)) 
-                && !(textBox_Fisrtname.Text == null || textBox_Fisrtname.Text == string.Empty || string.IsNullOrWhiteSpace(textBox_Fisrtname.Text))
+            if (!(!validn||textBox_Name.Text == null || textBox_Name.Text == string.Empty || string.IsNullOrWhiteSpace(textBox_Name.Text)) 
+                && !(!validf||textBox_Fisrtname.Text == null || textBox_Fisrtname.Text == string.Empty || string.IsNullOrWhiteSpace(textBox_Fisrtname.Text))
                 && (Int32.TryParse(textBox_Age.Text, out age1))
                 && (Int32.TryParse(textBox_Height.Text, out age1))
                 && (Int32.TryParse(textBox_Weight.Text, out age1))
-                && !(comboBox_Sex.Text == null || comboBox_Sex.Text == string.Empty || string.IsNullOrWhiteSpace(comboBox_Sex.Text)))
+                && !(checkBoxM.Checked == false && checkBox2.Checked == false || checkBoxM.Checked == true && checkBox2.Checked == true))
             {
 
                 label7.Text = "Utilisateur enregistré";
@@ -103,7 +112,7 @@ namespace Healthyfood
                 int Weight = Int32.Parse(textBox_Weight.Text);
                 int Height = Int32.Parse(textBox_Height.Text);
 
-                Root.Healthy.Utilisateur.CreateUser(textBox_Name.Text, textBox_Fisrtname.Text, Age, Weight, Height, false, false);
+                Root.Healthy.Utilisateur.CreateUser(textBox_Name.Text, textBox_Fisrtname.Text, Age, Weight, Height, check, false);
 
                 textBox_Name.Clear();
                 textBox_Fisrtname.Clear();
