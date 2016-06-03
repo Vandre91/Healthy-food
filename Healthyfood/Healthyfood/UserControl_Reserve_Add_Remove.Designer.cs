@@ -289,6 +289,7 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl_Add_Remove = new System.Windows.Forms.TabControl();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.tabPage_Fat_Boulangerie.SuspendLayout();
             this.panel13.SuspendLayout();
             this.tabPage_Herbes_Plants.SuspendLayout();
@@ -2836,6 +2837,7 @@
             // 
             // tabPage_Beef
             // 
+            this.tabPage_Beef.Controls.Add(this.monthCalendar1);
             this.tabPage_Beef.Controls.Add(this.panel2);
             this.tabPage_Beef.Controls.Add(this.button_ajouter_viande);
             this.tabPage_Beef.Controls.Add(this.text_error4);
@@ -3007,6 +3009,7 @@
             this.textBox_Date.Name = "textBox_Date";
             this.textBox_Date.Size = new System.Drawing.Size(100, 20);
             this.textBox_Date.TabIndex = 3;
+            this.textBox_Date.Click += new System.EventHandler(this.textBox_Date_Click);
             // 
             // textBox_Quantity
             // 
@@ -3064,6 +3067,14 @@
             this.tabControl_Add_Remove.SelectedIndex = 0;
             this.tabControl_Add_Remove.Size = new System.Drawing.Size(576, 406);
             this.tabControl_Add_Remove.TabIndex = 1;
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(212, 135);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 25;
+            this.monthCalendar1.Visible = false;
+            this.monthCalendar1.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateSelected);
             // 
             // UserControl_Reserve_Add_Remove
             // 
@@ -3393,5 +3404,6 @@
         private System.Windows.Forms.Label label90;
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }

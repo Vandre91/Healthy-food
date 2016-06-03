@@ -11,7 +11,7 @@ namespace HealthyFoodTests
 {
     [TestFixture]
 
-    public class T4RecipesManagement
+    public class TRecipesManagement
 
     {
         [Test]

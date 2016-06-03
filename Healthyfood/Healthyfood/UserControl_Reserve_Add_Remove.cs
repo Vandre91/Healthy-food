@@ -449,6 +449,7 @@ namespace Healthyfood
         {
             DateTime date;
             int quantity;
+            monthCalendar1.Visible = false;
             if (!(DateTime.TryParse(textBox_Date.Text, out date)) || !(Int32.TryParse(textBox_Quantity.Text, out quantity)))
             {
                 text_error1.Text = "Le format est invalide";
@@ -966,6 +967,17 @@ namespace Healthyfood
             UserControl_Reserve_Add_Remove_Enter(_s, _e);
             }
         }
-#endregion
+        #endregion
+
+
+        private void textBox_Date_Click(object sender, EventArgs e)
+        {
+            monthCalendar1.Visible = true;
+        }
+
+        private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            textBox_Date.Text = monthCalendar1.SelectionRange.Start.ToShortDateString();
+        }
     }
 }
