@@ -39,8 +39,8 @@ namespace Healthyfood
             label5.Text = null;
             label6.Text = null;
             label7.Text = null;
-            bool validn = Regex.IsMatch(textBox_Name.Text, "[a - zA - Z]");
-            bool validf = Regex.IsMatch(textBox_Fisrtname.Text, "[a - zA - Z]");
+            bool validn = Regex.IsMatch(textBox_Name.Text, "[a-zA-Z]");
+            bool validf = Regex.IsMatch(textBox_Fisrtname.Text, "[a-zA-Z]");
             bool check = false;
 
             if (!validn ||textBox_Name.Text == null || textBox_Name.Text == string.Empty || string.IsNullOrWhiteSpace(textBox_Name.Text))
