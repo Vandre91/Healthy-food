@@ -347,6 +347,20 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe("Cakes aux olives et au jambon", recipecake, " Dans un saladier, travaillez le vin, l'huile et les oeufs cassés un par un. Ajoutez la farine, le gruyère râpé, la farine, la levure, le sel et terminez par le jambon (en dés) et les olives coupées en 2. Faites cuire dans un moule à cake beurré et fariné pendant 45 min, à 190°C (thermostat 6/7).");
             #endregion
 
+            #region Cookies simple et  delicieux 
+
+            Ingredient cookie1 = new Ingredient("herbe_plante", "farine", 220, DateTime.Today);
+            Ingredient cookie2 = new Ingredient("produit_laitier", "beurre mou", 100, DateTime.Today);
+            Ingredient cookie3 = new Ingredient("dessert_sucrerie", "sucre blanc", 100, DateTime.Today);
+            Ingredient cookie4 = new Ingredient("dessert_sucrerie", "cassonade", 100, DateTime.Today);
+            Ingredient cookie5 = new Ingredient("dessert_sucrerie", "chocolat de patissier", 100, DateTime.Today);
+            Ingredient cookie6 = new Ingredient("volaille", "oeuf", 1, DateTime.Today);
+            Ingredient cookie7 = new Ingredient("herbe_plante", "bicarbonate alimentaire", 1, DateTime.Today);
+            Ingredient cookie8 = new Ingredient("legume", "pincé de sel", 10, DateTime.Today);
+            List<Ingredient> recipecookie = new List<Ingredient> { cookie1, cookie2, cookie3, cookie4, cookie5, cookie6, cookie7, cookie8 };
+            _Allrecipe.AddHealthyrecipe("Cookies simple et delicieux", recipecookie, "Hacher le chocolat grossièrement, et mélanger le beurre mou avec les deux sucres et l'oeuf.Ajouter la farine, le bicarbonate, le sel et enfin le chocolat.Travailler la pâte à la main.Faire des boules, et les disposer sur une plaque recouverte de papier sulfurisé. Enfourner une quinzaine de minutes dans le four préchauffé à 180°C (thermostat 6).");
+
+            #endregion
 
         }
     }
