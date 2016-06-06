@@ -107,7 +107,7 @@ namespace StockFood
 
         public int Imc
         {
-            get { return (_weight / (_height * _height) / 100); }
+            get { return (_weight / ((_height/100) * (_height/ 100))); }
         }
     }
 }
