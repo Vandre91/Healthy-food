@@ -32,6 +32,8 @@ namespace StockFood
                 throw new ArgumentException();
             }
 
+            if (ing.Count == 0) throw new ArgumentException("This list is null", nameof(ing));
+            if (describe == null || describe == string.Empty) throw new ArgumentException("The description is empty", nameof(describe));
             Recipe c = new Recipe(name,ing,describe);
             _healthyrecipe.Add(name, c);
             return c;
@@ -85,6 +87,10 @@ namespace StockFood
             {
                 throw new ArgumentException();
             }
+
+            if (ing.Count == 0) throw new ArgumentException("This list is null", nameof(ing));
+
+            if (describe == null || describe == string.Empty) throw new ArgumentException("The description is empty", nameof(describe));
 
             Recipe c = new Recipe(name, ing, describe);
             _yourrecipe.Add(name, c);
@@ -140,6 +146,10 @@ namespace StockFood
             {
                 throw new ArgumentException();
             }
+
+            if (describe == null || describe == string.Empty) throw new ArgumentException("The description is empty", nameof(describe));
+
+            if (ing.Count == 0) throw new ArgumentException("This list is null", nameof(ing));
 
             Recipe c = new Recipe(name, ing, describe);
             _worldrecipe.Add(name, c);

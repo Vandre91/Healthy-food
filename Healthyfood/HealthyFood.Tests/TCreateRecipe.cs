@@ -108,19 +108,15 @@ namespace HealthyFoodTests
             List<Ingredient> recipes = new List<Ingredient> { i };
             string des = "descritption";
             string des1 = null;
-            string des2 = " ";
             Assert.Throws<ArgumentException>(() => All.AddWorldrecipe("steak fritte", recipes, des1));
-            Assert.Throws<ArgumentException>(() => All.AddWorldrecipe("steak fritte", recipes, des2));
             Recipe r = All.AddWorldrecipe("steak fritte", recipes, des);
             Assert.That(r.Describe, Is.EqualTo(des));
 
             Assert.Throws<ArgumentException>(() => All.AddYourrecipe("steak fritte", recipes, des1));
-            Assert.Throws<ArgumentException>(() => All.AddYourrecipe("steak fritte", recipes, des2));
             Recipe r1 = All.AddYourrecipe("steak fritte", recipes, des);
             Assert.That(r1.Describe, Is.EqualTo(des));
 
             Assert.Throws<ArgumentException>(() => All.AddHealthyrecipe("steak fritte", recipes, des1));
-            Assert.Throws<ArgumentException>(() => All.AddHealthyrecipe("steak fritte", recipes, des2));
             Recipe r2 = All.AddHealthyrecipe("steak fritte", recipes, des);
             Assert.That(r2.Describe, Is.EqualTo(des));
         }
