@@ -113,9 +113,6 @@ namespace Healthyfood
                     ListViewItem item = new ListViewItem(row);
                     listView1.Items.Add(item);
                 }
-                //string[] row = { p.Name, p.Describe,_allcalories.ToString() };
-                //ListViewItem item = new ListViewItem(row);
-                //listView1.Items.Add(item);
             }
 
         }
