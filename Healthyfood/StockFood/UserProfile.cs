@@ -105,14 +105,15 @@ namespace StockFood
             }
         }
 
-        public double Imc
+        public int Imc
         {
         
             get { 
                 double w = Convert.ToDouble(_weigth);
                 double h = Convert.ToDouble(_heigth);
                 h = (h / 100)*(h/100);
-                return (w/h); }
+                int imc = Convert.ToInt32(w / h);
+                return imc; }
         }
     }
 }
