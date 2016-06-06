@@ -362,6 +362,35 @@ namespace StockFood
 
             #endregion
 
+            #region Endives au jambon
+            Ingredient endives1 = new Ingredient("herbe_plante", "chicons", 4, DateTime.Today);
+            Ingredient endives2 = new Ingredient("viande", "jambon", 4, DateTime.Today);
+            Ingredient endives3 = new Ingredient("herbe_plante", "farine", 40, DateTime.Today);
+            Ingredient endives4 = new Ingredient("produit_laitier", "beurre", 40, DateTime.Today);
+            Ingredient endives5 = new Ingredient("boisson", "lait", 60, DateTime.Today);
+            Ingredient endives6 = new Ingredient("legume", "sel et poivre", 20, DateTime.Today);
+            Ingredient endives7 = new Ingredient("fruit", "mouscade", 1, DateTime.Today);
+            List<Ingredient> recipeendives = new List<Ingredient> { endives1, endives2, endives3, endives4, endives5, endives6, endives7 };
+            _Allrecipe.AddHealthyrecipe("Endives au jambon", recipeendives, "Préparez une grande quantité de sauce béchamel. N'hésitez pas sur le noix de muscade en assaisonnant. Enroulez chaque chicon dans une tranche de jambon et disposez-les dans le plat. Prévoyez 2 chicons par personne. Remplissez le plat avec la sauce. Saupoudrez de gruyère râpé. Hop au four 180°C pendant 45 min. Servez avec une purée maison éventuellement gratinée elle aussi.");
+
+            #endregion
+
+            #region Boeuf Bourguignon
+            Ingredient bourguignon1 = new Ingredient("viande", "boeuf", 800, DateTime.Today);
+            Ingredient bourguignon2 = new Ingredient("viande", "lardons", 100, DateTime.Today);
+            Ingredient bourguignon3 = new Ingredient("produit_laitier", "beurre", 50, DateTime.Today);
+            Ingredient bourguignon4 = new Ingredient("boisson", "vin rouge", 70, DateTime.Today);
+            Ingredient bourguignon5 = new Ingredient("herbe_plante", "oignons", 2, DateTime.Today);
+            Ingredient bourguignon6 = new Ingredient("herbe_plante", "ail", 1, DateTime.Today);
+            Ingredient bourguignon7 = new Ingredient("herbe_plante", "farine", 5, DateTime.Today);
+            Ingredient bourguignon8 = new Ingredient("herbe_plante", "bouquet garni", 1, DateTime.Today);
+            Ingredient bourguignon9 = new Ingredient("legume", "sel et poivre", 20, DateTime.Today);
+            Ingredient bourguignon10 = new Ingredient("herbe_plante", "champignons de Paris", 250, DateTime.Today);
+            List<Ingredient> recipebourguignon = new List<Ingredient> { bourguignon1, bourguignon2, bourguignon3, bourguignon4, bourguignon5, bourguignon6, bourguignon7, bourguignon8, bourguignon9, bourguignon10 };
+            _Allrecipe.AddHealthyrecipe("Boeuf Bourguignon", recipebourguignon, "Dans une cocotte minute, faire roussir la viande et les lardons dans l’huile ou le beurre. Ajouter les oignons coupés en petits morceaux. Ajouter la boîte de champignons. Saupoudrer de farine. Mélanger. Laisser dorer un instant. Mouiller avec le vin rouge qui doit recouvrir la viande. Saler et poivrer. Ajouter l’ail et le bouquet garni. Fermer la cocotte minute. Laisser cuire doucement 60 mn à partir de la mise en rotation de la soupape.");
+
+            #endregion
+
         }
     }
 }
