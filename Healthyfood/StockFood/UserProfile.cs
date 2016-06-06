@@ -15,8 +15,8 @@ namespace StockFood
         string _firstName;
         string _lastName;
         int _age;
-        int _weight;
-        int _height;
+        int _weigth;
+        int _heigth;
         bool _isFemale;
         bool _isVegetarian;
         //int _imc;
@@ -31,8 +31,8 @@ namespace StockFood
             _firstName = firstName;
             _lastName = lastName;
             _age = age;
-            _weight = weigth;
-            _height = heigth;
+            _weigth = weigth;
+            _heigth = heigth;
             _isFemale = isFemale;
             _isVegetarian = isVegetarian;
         }
@@ -69,21 +69,21 @@ namespace StockFood
 
         public int Weight
         {
-            get { return _weight; }
+            get { return _weigth; }
             set
             {
                 if (value < 2 || value > 230) throw new ArgumentException("The weight must be more than 2 and less than 230", nameof(value));
-                _weight = value;
+                _weigth = value;
             }
         }
 
         public int Height
         {
-            get { return _height; }
+            get { return _heigth; }
             set
             {
                 if (value < 30 || value > 250) throw new ArgumentException("The weight must be more than 30 and less than 250", nameof(value));
-                _height = value;
+                _heigth = value;
             }
         }
 
@@ -105,9 +105,14 @@ namespace StockFood
             }
         }
 
-        public int Imc
+        public double Imc
         {
-            get { return (_weight / ((_height/100) * (_height/ 100))); }
+        
+            get { 
+                double w = Convert.ToDouble(_weigth);
+                double h = Convert.ToDouble(_heigth);
+                h = (h / 100)*(h/100);
+                return (w/h); }
         }
     }
 }
