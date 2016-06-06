@@ -19,7 +19,7 @@ namespace StockFood
         int _height;
         bool _isFemale;
         bool _isVegetarian;
-        int _imc;
+        //int _imc;
 
         internal UserProfile(string firstName, string lastName, int age, int weigth, int heigth, bool isFemale, bool isVegetarian)
         {

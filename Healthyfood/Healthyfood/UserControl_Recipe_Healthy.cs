@@ -64,6 +64,9 @@ namespace Healthyfood
             foreach (var p in Root.Healthy.AllRecipe.Healthyrecipe)
             {
                 double _allcalories = 0.0;
+                int _light = 0;
+                int _normal = 0;
+                int _fat = 0;
                 foreach (var r in p.IRecipe)
                 {
                     foreach (KeyValuePair<string, int> Currentpair in Root.Healthy.Calories.Cal )
@@ -79,10 +82,40 @@ namespace Healthyfood
                     }
 
                 }
+                if(Root.Healthy.Profil.Imc <= 18)
+                {
+                    _light = 1;
+                }
+                else if (Root.Healthy.Profil.Imc <= 25 && Root.Healthy.Profil.Imc >= 19)
+                {
+                    _normal = 1;
+                }
+                else if (Root.Healthy.Profil.Imc > 25)
+                {
+                    _fat = 1;
+                }
 
-                string[] row = { p.Name, p.Describe,_allcalories.ToString() };
-                ListViewItem item = new ListViewItem(row);
-                listView1.Items.Add(item);
+                if(_light == 1 && _allcalories > 2700)
+                {
+                    string[] row = { p.Name, p.Describe, _allcalories.ToString() };
+                    ListViewItem item = new ListViewItem(row);
+                    listView1.Items.Add(item);
+                }
+                if (_normal == 1 && _allcalories > 2000 && _allcalories <2700)
+                {
+                    string[] row = { p.Name, p.Describe, _allcalories.ToString() };
+                    ListViewItem item = new ListViewItem(row);
+                    listView1.Items.Add(item);
+                }
+                if (_fat == 1 && _allcalories < 2000)
+                {
+                    string[] row = { p.Name, p.Describe, _allcalories.ToString() };
+                    ListViewItem item = new ListViewItem(row);
+                    listView1.Items.Add(item);
+                }
+                //string[] row = { p.Name, p.Describe,_allcalories.ToString() };
+                //ListViewItem item = new ListViewItem(row);
+                //listView1.Items.Add(item);
             }
 
         }

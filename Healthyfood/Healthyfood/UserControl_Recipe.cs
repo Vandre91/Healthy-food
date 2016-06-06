@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StockFood;
 
 namespace Healthyfood
 {
@@ -16,6 +17,10 @@ namespace Healthyfood
         {
             InitializeComponent();
         }
+        public Menu Root
+        {
+            get { return (Menu)FindForm(); }
+        }
 
         private void button_Back_Click(object sender, EventArgs e)
         {
@@ -24,8 +29,12 @@ namespace Healthyfood
 
         private void button1_Click(object sender, EventArgs e)
         {
-            userControl_Recipe_Healthy1.Visible = true;
-            userControl_Recipe_Healthy1.Focus();
+                string name = listView1.SelectedItems[0].SubItems[0].Text;
+                string lastname = listView1.SelectedItems[0].SubItems[1].Text;
+                UserProfile profil = Root.Healthy.Utilisateur.FindUser(name, lastname);
+                Root.Healthy.Profil = profil;
+                userControl_Recipe_Healthy1.Visible = true;
+                userControl_Recipe_Healthy1.Focus();
         }
 
         private void button2_yours_recipes_Click(object sender, EventArgs e)
@@ -38,6 +47,19 @@ namespace Healthyfood
         {
             userControl_World_Recipe1.Visible = true;
             userControl_World_Recipe1.Focus();
+        }
+
+        private void UserControl_Recipe_Enter(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+
+
+            foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
+            {
+                string[] row = { p.FirstName, p.LastName };
+                ListViewItem item = new ListViewItem(row);
+                listView1.Items.Add(item);
+            }
         }
     }
 }
