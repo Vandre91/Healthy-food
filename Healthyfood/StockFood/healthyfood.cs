@@ -288,6 +288,64 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe(" Riz aux lentilles et aux choux de Bruxelles", recipelentilles, "1 Dans une grande poêle à feu moyen‐élevé, dorer l’oignon, le céleri et l’ail dans la moitié de l’huile (30 ml/2 c. à soupe). Ajouter les lentilles, le bouillon, le coulis de tomates et les épices. Saler, poivrer et porter à ébullition. Couvrir. Laisser mijoter 10 minutes. Incorporer le riz, couvrir à nouveau et laisser mijoter 20 minutes jusqu’à ce que le riz soit tendre mais encore légèrement croquant. Laisser reposer 5 minutes à découvert. Ajouter le persil. 2 Placer deux grilles au centre du four. Préchauffer le four à 200 °C (400 °F). Tapisser deux plaques de cuisson de papier parchemin. 3 Répartir les feuilles des choux de Bruxelles sur les plaques. Arroser du reste de l’huile (30 ml/2 c. à soupe). Saler et poivrer. Cuire les deux plaques au four de 12 à 15 minutes ou jusqu’à ce que les feuilles soient légèrement dorées. 4. Au moment de servir, déposer les feuilles de chou de Bruxelles rôties sur le dessus du mélange de riz et de lentilles. ");
             #endregion
 
+            #region Tajine de légumes
+
+            Ingredient tajine1 = new Ingredient("legume", "courgettes", 4, DateTime.Today);
+            Ingredient tajine2 = new Ingredient("herbe_plante", "carottes", 5, DateTime.Today);
+            Ingredient tajine3 = new Ingredient("poivrons", "poivron rouge", 1, DateTime.Today);
+            Ingredient tajine4 = new Ingredient("poivrons", "poivron vert", 1, DateTime.Today);
+            Ingredient tajine5 = new Ingredient("herbe_plante", "oignon", 1, DateTime.Today);
+            Ingredient tajine6 = new Ingredient("legume", "boite de tomates concassées", 1, DateTime.Today);
+            Ingredient tajine7 = new Ingredient("legume", "tomates séchées", 3, DateTime.Today);
+            Ingredient tajine8 = new Ingredient("matiere_grasse", "huile d'olive", 30, DateTime.Today);
+            Ingredient tajine9 = new Ingredient("legume", "sel et poivre", 30, DateTime.Today);
+            Ingredient tajine10 = new Ingredient("herbe_plante", "ras el hanout", 20, DateTime.Today);
+            Ingredient tajine11 = new Ingredient("herbe_plante", "Cannelle", 20, DateTime.Today);
+            List<Ingredient> recipetajine = new List<Ingredient> { tajine1, tajine2, tajine3, tajine4, tajine5, tajine6, tajine7, tajine8, tajine9, tajine10, tajine11 };
+            _Allrecipe.AddHealthyrecipe("Tajine de légumes", recipetajine, "Eplucher l'oignon, l'émincer et le faire dorer dans une cocotte avec un peu d'huile d'olive. Eplucher les courgettes, les carottes, les couper en rondelles; couper les poivrons en lanières. Ajouter les légumes dans la cocotte, verser la boîte de tomates concassées, découper les tomates séchées en petits morceaux, les ajouter; saler et poivrer. Ajouter une bonne cuillère à café de Ras el Hanout, et une demi cuillère à café de cannelle. Couvrir et laisser mijoter à feu très doux pendant 45 min, les légumes doivent être fondants. Servir avec de la semoule.");
+
+            #endregion
+
+            #region Filet de poulet à la crème de poivron facile
+
+            Ingredient filet1 = new Ingredient("volaille", "filets de poulet", 6, DateTime.Today);
+            Ingredient filet2 = new Ingredient("poivrons", "poivrons rouges", 2, DateTime.Today);
+            Ingredient filet3 = new Ingredient("produit_laitier", "crème liquide", 20, DateTime.Today);
+            Ingredient filet4 = new Ingredient("produit_laitier", "crème epaisse", 5, DateTime.Today);
+            Ingredient filet5 = new Ingredient("produit_laitier", "beurre", 10, DateTime.Today);
+            Ingredient filet6 = new Ingredient("legume", "sel et poivre", 30, DateTime.Today);
+            List<Ingredient> recipefilet = new List<Ingredient> { filet1, filet2, filet3, filet4, filet5, filet6 };
+            _Allrecipe.AddHealthyrecipe("Filet de poulet à la crème de poivron facile", recipefilet, "Découper les filets de poulet en petites lamelles (environ 3cm x 1cm). Les mettre dans une sauteuse dans laquelle le beurre a doucement fondu. Pendant qu'il 'bronze', couper en tous petits dés le poivron (bien enlever les parties blanches).Rajouter le poivron au poulet et les laisser faire connaissance jusqu'à ce que le poulet rosisse! A ce moment là, rajouter la crème liquide, le sel et le poivre, remuer pour bien tout mélanger et laisser cuire TRES doucement environ 20 minutes. Juste avant de servir, rajouter, pour lier la sauce, 2 ou 3 cuillères à soupe de crème fraîche épaisse. On peut le servir simplement avec du riz sauvage... et attendre les compliments (version light avec crème allégée à 15 % et toujours aussi bon!). ");
+
+            #endregion
+
+            #region  Sauce Bolognaise
+
+            Ingredient sauce1 = new Ingredient("produit_laitier", "beurre", 30, DateTime.Today);
+            Ingredient sauce2 = new Ingredient("matiere_grasse", "huile d'olive", 5, DateTime.Today);
+            Ingredient sauce3 = new Ingredient("legume", "coulis de tomate", 30, DateTime.Today);
+            Ingredient sauce4 = new Ingredient("viande", "viande hachée", 200, DateTime.Today);
+            Ingredient sauce5 = new Ingredient("herbe_plante", "ail", 1, DateTime.Today);
+            Ingredient sauce6 = new Ingredient("herbe_plante", "oignon", 1, DateTime.Today);
+            Ingredient sauce7 = new Ingredient("legume", "sel et poivre", 30, DateTime.Today);
+            List<Ingredient> recipesauce = new List<Ingredient> { sauce1, sauce2, sauce3, sauce4, sauce5, sauce6, sauce7 };
+            _Allrecipe.AddHealthyrecipe("Sauce Bolognaise", recipesauce, "Dans une grande casserole, faites revenir l'ail et l'oignon dans l'huile d'olive. Ajouter progressivement la viande hachée....Salez, poivrez. Ajouter ensuite le coulis de tomate. Si la sauce semble trop épaisse, ajouter un 1/2 verre d'eau.... Laisser mijoter à feu doux durant 10 minutes. En fin de cuisson, faites fondre le beurre dans la sauce...");
+            #endregion
+
+            #region Cakes aux olives et au jambon
+
+            Ingredient cakes1 = new Ingredient("boisson", "vin blanc sec", 15, DateTime.Today);
+            Ingredient cakes2 = new Ingredient("matiere_grasse", "huile d'olive", 15, DateTime.Today);
+            Ingredient cakes3 = new Ingredient("volaille", "oeufs", 4, DateTime.Today);
+            Ingredient cakes4 = new Ingredient("produit_laitier", "gruyère rapé", 100, DateTime.Today);
+            Ingredient cakes5 = new Ingredient("herbe_plante", "farine", 250, DateTime.Today);
+            Ingredient cakes6 = new Ingredient("produit_laitier", "levure", 1, DateTime.Today);
+            Ingredient cakes7 = new Ingredient("legume", "sel", 1, DateTime.Today);
+            Ingredient cakes8 = new Ingredient("viande", "jambon en dés", 200, DateTime.Today);
+            Ingredient cakes9 = new Ingredient("fruit", "olives vertes", 200, DateTime.Today);
+            List<Ingredient> recipecake = new List<Ingredient> { cakes1, cakes2, cakes3, cakes4, cakes5, cakes6, cakes7, cakes8, cakes9 };
+            _Allrecipe.AddHealthyrecipe("Cakes aux olives et au jambon", recipecake, " Dans un saladier, travaillez le vin, l'huile et les oeufs cassés un par un. Ajoutez la farine, le gruyère râpé, la farine, la levure, le sel et terminez par le jambon (en dés) et les olives coupées en 2. Faites cuire dans un moule à cake beurré et fariné pendant 45 min, à 190°C (thermostat 6/7).");
+            #endregion
 
 
         }
