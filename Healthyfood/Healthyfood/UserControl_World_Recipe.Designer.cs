@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "Le abdul",
             "belle et bien présenter"}, -1);
             this.panel_Show_Recipes = new System.Windows.Forms.Panel();
@@ -41,11 +41,15 @@
             this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader_Description = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader_Note = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.panel_Show_Recipes.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_Show_Recipes
             // 
+            this.panel_Show_Recipes.Controls.Add(this.richTextBox2);
+            this.panel_Show_Recipes.Controls.Add(this.richTextBox1);
             this.panel_Show_Recipes.Controls.Add(this.label_Describes);
             this.panel_Show_Recipes.Controls.Add(this.button_Read);
             this.panel_Show_Recipes.Controls.Add(this.button_Heat);
@@ -116,7 +120,7 @@
             this.columnHeader_Description,
             this.columnHeader_Note});
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem2});
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(587, 357);
@@ -140,6 +144,22 @@
             this.columnHeader_Note.Text = "Note";
             this.columnHeader_Note.Width = 43;
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(33, 42);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(133, 52);
+            this.richTextBox1.TabIndex = 4;
+            this.richTextBox1.Text = "";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(33, 101);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(318, 81);
+            this.richTextBox2.TabIndex = 5;
+            this.richTextBox2.Text = "";
+            // 
             // UserControl_World_Recipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,6 +169,7 @@
             this.Controls.Add(this.listView1);
             this.Name = "UserControl_World_Recipe";
             this.Size = new System.Drawing.Size(590, 399);
+            this.Enter += new System.EventHandler(this.UserControl_World_Recipe_Enter);
             this.panel_Show_Recipes.ResumeLayout(false);
             this.panel_Show_Recipes.PerformLayout();
             this.ResumeLayout(false);
@@ -167,5 +188,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader_Name;
         private System.Windows.Forms.ColumnHeader columnHeader_Description;
         private System.Windows.Forms.ColumnHeader columnHeader_Note;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
