@@ -9,12 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using StockFood;
 using System.IO;
+using System.Speech.Synthesis;
 
 namespace Healthyfood
 {
     public partial class UserControl_Recipe_Healthy : UserControl
     {
-        
+        public SpeechSynthesizer _parole = new SpeechSynthesizer();
         public UserControl_Recipe_Healthy()
         {
             InitializeComponent();
@@ -57,7 +58,8 @@ namespace Healthyfood
 
         private void button_Read_Click(object sender, EventArgs e)
         {
-
+            _parole.SelectVoice("ScanSoft Virginie_Dri40_16kHz");
+            _parole.SpeakAsync(richTextBox_Describe.Text);
         }
 
         private void button_Heat_Click(object sender, EventArgs e)
