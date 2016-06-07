@@ -269,6 +269,7 @@
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Beef = new System.Windows.Forms.TabPage();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label87 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -289,7 +290,18 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl_Add_Remove = new System.Windows.Forms.TabControl();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar3 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar4 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar5 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar6 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar7 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar8 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar9 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar10 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar11 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar12 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar13 = new System.Windows.Forms.MonthCalendar();
             this.tabPage_Fat_Boulangerie.SuspendLayout();
             this.panel13.SuspendLayout();
             this.tabPage_Herbes_Plants.SuspendLayout();
@@ -321,6 +333,7 @@
             // 
             // tabPage_Fat_Boulangerie
             // 
+            this.tabPage_Fat_Boulangerie.Controls.Add(this.monthCalendar13);
             this.tabPage_Fat_Boulangerie.Controls.Add(this.panel13);
             this.tabPage_Fat_Boulangerie.Controls.Add(this.button_ajout_boulangerie);
             this.tabPage_Fat_Boulangerie.Controls.Add(this.label84);
@@ -461,6 +474,7 @@
             this.textBox37.Name = "textBox37";
             this.textBox37.Size = new System.Drawing.Size(100, 20);
             this.textBox37.TabIndex = 6;
+            this.textBox37.Click += new System.EventHandler(this.textBox37_Click);
             // 
             // textBox36
             // 
@@ -526,6 +540,7 @@
             // 
             // tabPage_Herbes_Plants
             // 
+            this.tabPage_Herbes_Plants.Controls.Add(this.monthCalendar12);
             this.tabPage_Herbes_Plants.Controls.Add(this.panel12);
             this.tabPage_Herbes_Plants.Controls.Add(this.button_ajouter_herbe);
             this.tabPage_Herbes_Plants.Controls.Add(this.label80);
@@ -695,6 +710,7 @@
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(100, 20);
             this.textBox32.TabIndex = 12;
+            this.textBox32.Click += new System.EventHandler(this.textBox32_Click);
             // 
             // textBox33
             // 
@@ -736,6 +752,7 @@
             // 
             // tabPage_Féculent
             // 
+            this.tabPage_Féculent.Controls.Add(this.monthCalendar11);
             this.tabPage_Féculent.Controls.Add(this.panel11);
             this.tabPage_Féculent.Controls.Add(this.button_ajouter_feculent);
             this.tabPage_Féculent.Controls.Add(this.label76);
@@ -905,6 +922,7 @@
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(100, 20);
             this.textBox29.TabIndex = 12;
+            this.textBox29.Click += new System.EventHandler(this.textBox29_Click);
             // 
             // textBox30
             // 
@@ -946,6 +964,7 @@
             // 
             // tabPage_Fat_Content
             // 
+            this.tabPage_Fat_Content.Controls.Add(this.monthCalendar10);
             this.tabPage_Fat_Content.Controls.Add(this.panel10);
             this.tabPage_Fat_Content.Controls.Add(this.button_ajouter_matiére_grasse);
             this.tabPage_Fat_Content.Controls.Add(this.label72);
@@ -1115,6 +1134,7 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(100, 20);
             this.textBox26.TabIndex = 12;
+            this.textBox26.Click += new System.EventHandler(this.textBox26_Click);
             // 
             // textBox27
             // 
@@ -1156,6 +1176,7 @@
             // 
             // tabPage_Milk_product
             // 
+            this.tabPage_Milk_product.Controls.Add(this.monthCalendar9);
             this.tabPage_Milk_product.Controls.Add(this.panel9);
             this.tabPage_Milk_product.Controls.Add(this.button_ajouter_produit_laitier);
             this.tabPage_Milk_product.Controls.Add(this.label68);
@@ -1325,6 +1346,7 @@
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(100, 20);
             this.textBox23.TabIndex = 12;
+            this.textBox23.Click += new System.EventHandler(this.textBox23_Click);
             // 
             // textBox24
             // 
@@ -1366,6 +1388,7 @@
             // 
             // tabPage_Fruit
             // 
+            this.tabPage_Fruit.Controls.Add(this.monthCalendar8);
             this.tabPage_Fruit.Controls.Add(this.panel8);
             this.tabPage_Fruit.Controls.Add(this.button_ajouter_fruit);
             this.tabPage_Fruit.Controls.Add(this.label64);
@@ -1535,6 +1558,7 @@
             this.txt_dateperemtion_fruit.Name = "txt_dateperemtion_fruit";
             this.txt_dateperemtion_fruit.Size = new System.Drawing.Size(100, 20);
             this.txt_dateperemtion_fruit.TabIndex = 12;
+            this.txt_dateperemtion_fruit.Click += new System.EventHandler(this.txt_dateperemtion_fruit_Click);
             // 
             // txt_quantity_fruit
             // 
@@ -1576,6 +1600,7 @@
             // 
             // tabPage_Vegetables
             // 
+            this.tabPage_Vegetables.Controls.Add(this.monthCalendar7);
             this.tabPage_Vegetables.Controls.Add(this.panel7);
             this.tabPage_Vegetables.Controls.Add(this.button_ajouter_legumes);
             this.tabPage_Vegetables.Controls.Add(this.label60);
@@ -1745,6 +1770,7 @@
             this.txt_dateperemtion_vegetable.Name = "txt_dateperemtion_vegetable";
             this.txt_dateperemtion_vegetable.Size = new System.Drawing.Size(100, 20);
             this.txt_dateperemtion_vegetable.TabIndex = 12;
+            this.txt_dateperemtion_vegetable.Click += new System.EventHandler(this.txt_dateperemtion_vegetable_Click);
             // 
             // txt_quantity_vegetable
             // 
@@ -1786,6 +1812,7 @@
             // 
             // tabPage_Poultry
             // 
+            this.tabPage_Poultry.Controls.Add(this.monthCalendar6);
             this.tabPage_Poultry.Controls.Add(this.panel6);
             this.tabPage_Poultry.Controls.Add(this.button_ajouter_volailles);
             this.tabPage_Poultry.Controls.Add(this.label56);
@@ -1955,6 +1982,7 @@
             this.txt_dateperemtion_poultry.Name = "txt_dateperemtion_poultry";
             this.txt_dateperemtion_poultry.Size = new System.Drawing.Size(100, 20);
             this.txt_dateperemtion_poultry.TabIndex = 12;
+            this.txt_dateperemtion_poultry.Click += new System.EventHandler(this.txt_dateperemtion_poultry_Click);
             // 
             // txt_quantity_poultry
             // 
@@ -1996,6 +2024,7 @@
             // 
             // tabPage_Fish
             // 
+            this.tabPage_Fish.Controls.Add(this.monthCalendar5);
             this.tabPage_Fish.Controls.Add(this.panel5);
             this.tabPage_Fish.Controls.Add(this.button_ajouter_poisson);
             this.tabPage_Fish.Controls.Add(this.label52);
@@ -2165,6 +2194,7 @@
             this.txt_dateperemption_fish.Name = "txt_dateperemption_fish";
             this.txt_dateperemption_fish.Size = new System.Drawing.Size(100, 20);
             this.txt_dateperemption_fish.TabIndex = 12;
+            this.txt_dateperemption_fish.Click += new System.EventHandler(this.txt_dateperemption_fish_Click);
             // 
             // txt_quantity_fish
             // 
@@ -2206,6 +2236,7 @@
             // 
             // tabPage_Crustacean
             // 
+            this.tabPage_Crustacean.Controls.Add(this.monthCalendar4);
             this.tabPage_Crustacean.Controls.Add(this.panel4);
             this.tabPage_Crustacean.Controls.Add(this.button_ajouter_crustacé);
             this.tabPage_Crustacean.Controls.Add(this.label48);
@@ -2375,6 +2406,7 @@
             this.txt_dateperemption_crust.Name = "txt_dateperemption_crust";
             this.txt_dateperemption_crust.Size = new System.Drawing.Size(100, 20);
             this.txt_dateperemption_crust.TabIndex = 12;
+            this.txt_dateperemption_crust.Click += new System.EventHandler(this.txt_dateperemption_crust_Click);
             // 
             // txt_quantity_crust
             // 
@@ -2416,6 +2448,7 @@
             // 
             // tabPage_Dessert
             // 
+            this.tabPage_Dessert.Controls.Add(this.monthCalendar3);
             this.tabPage_Dessert.Controls.Add(this.panel3);
             this.tabPage_Dessert.Controls.Add(this.button_ajouter_dessert);
             this.tabPage_Dessert.Controls.Add(this.label44);
@@ -2585,6 +2618,7 @@
             this.txt_dateperemtion_dessert.Name = "txt_dateperemtion_dessert";
             this.txt_dateperemtion_dessert.Size = new System.Drawing.Size(100, 20);
             this.txt_dateperemtion_dessert.TabIndex = 12;
+            this.txt_dateperemtion_dessert.Click += new System.EventHandler(this.txt_dateperemtion_dessert_Click);
             // 
             // txt_quantity_dessert
             // 
@@ -2626,6 +2660,7 @@
             // 
             // tabPage_Drink
             // 
+            this.tabPage_Drink.Controls.Add(this.monthCalendar2);
             this.tabPage_Drink.Controls.Add(this.panel1);
             this.tabPage_Drink.Controls.Add(this.button_ajouter_boisson);
             this.tabPage_Drink.Controls.Add(this.label40);
@@ -2796,6 +2831,7 @@
             this.textbox_datePeremption.Name = "textbox_datePeremption";
             this.textbox_datePeremption.Size = new System.Drawing.Size(100, 20);
             this.textbox_datePeremption.TabIndex = 12;
+            this.textbox_datePeremption.Click += new System.EventHandler(this.textbox_datePeremption_Click);
             // 
             // textbox_quantity_drink
             // 
@@ -2860,6 +2896,14 @@
             this.tabPage_Beef.TabIndex = 0;
             this.tabPage_Beef.Text = "Viande";
             this.tabPage_Beef.UseVisualStyleBackColor = true;
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(212, 135);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 25;
+            this.monthCalendar1.Visible = false;
+            this.monthCalendar1.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateSelected);
             // 
             // panel2
             // 
@@ -3068,13 +3112,101 @@
             this.tabControl_Add_Remove.Size = new System.Drawing.Size(576, 406);
             this.tabControl_Add_Remove.TabIndex = 1;
             // 
-            // monthCalendar1
+            // monthCalendar2
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(212, 135);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 25;
-            this.monthCalendar1.Visible = false;
-            this.monthCalendar1.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateSelected);
+            this.monthCalendar2.Location = new System.Drawing.Point(214, 128);
+            this.monthCalendar2.Name = "monthCalendar2";
+            this.monthCalendar2.TabIndex = 24;
+            this.monthCalendar2.Visible = false;
+            this.monthCalendar2.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar2_DateSelected);
+            // 
+            // monthCalendar3
+            // 
+            this.monthCalendar3.Location = new System.Drawing.Point(223, 128);
+            this.monthCalendar3.Name = "monthCalendar3";
+            this.monthCalendar3.TabIndex = 25;
+            this.monthCalendar3.Visible = false;
+            this.monthCalendar3.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar3_DateSelected);
+            // 
+            // monthCalendar4
+            // 
+            this.monthCalendar4.Location = new System.Drawing.Point(259, 127);
+            this.monthCalendar4.Name = "monthCalendar4";
+            this.monthCalendar4.TabIndex = 25;
+            this.monthCalendar4.Visible = false;
+            this.monthCalendar4.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar4_DateSelected);
+            // 
+            // monthCalendar5
+            // 
+            this.monthCalendar5.Location = new System.Drawing.Point(208, 122);
+            this.monthCalendar5.Name = "monthCalendar5";
+            this.monthCalendar5.TabIndex = 25;
+            this.monthCalendar5.Visible = false;
+            this.monthCalendar5.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar5_DateSelected);
+            // 
+            // monthCalendar6
+            // 
+            this.monthCalendar6.Location = new System.Drawing.Point(232, 137);
+            this.monthCalendar6.Name = "monthCalendar6";
+            this.monthCalendar6.TabIndex = 25;
+            this.monthCalendar6.Visible = false;
+            this.monthCalendar6.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar6_DateSelected);
+            // 
+            // monthCalendar7
+            // 
+            this.monthCalendar7.Location = new System.Drawing.Point(249, 132);
+            this.monthCalendar7.Name = "monthCalendar7";
+            this.monthCalendar7.TabIndex = 25;
+            this.monthCalendar7.Visible = false;
+            this.monthCalendar7.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar7_DateSelected);
+            // 
+            // monthCalendar8
+            // 
+            this.monthCalendar8.Location = new System.Drawing.Point(231, 134);
+            this.monthCalendar8.Name = "monthCalendar8";
+            this.monthCalendar8.TabIndex = 25;
+            this.monthCalendar8.Visible = false;
+            this.monthCalendar8.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar8_DateSelected);
+            // 
+            // monthCalendar9
+            // 
+            this.monthCalendar9.Location = new System.Drawing.Point(231, 134);
+            this.monthCalendar9.Name = "monthCalendar9";
+            this.monthCalendar9.TabIndex = 25;
+            this.monthCalendar9.Visible = false;
+            this.monthCalendar9.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar9_DateSelected);
+            // 
+            // monthCalendar10
+            // 
+            this.monthCalendar10.Location = new System.Drawing.Point(303, 135);
+            this.monthCalendar10.Name = "monthCalendar10";
+            this.monthCalendar10.TabIndex = 25;
+            this.monthCalendar10.Visible = false;
+            this.monthCalendar10.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar10_DateSelected);
+            // 
+            // monthCalendar11
+            // 
+            this.monthCalendar11.Location = new System.Drawing.Point(245, 140);
+            this.monthCalendar11.Name = "monthCalendar11";
+            this.monthCalendar11.TabIndex = 25;
+            this.monthCalendar11.Visible = false;
+            this.monthCalendar11.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar11_DateSelected);
+            // 
+            // monthCalendar12
+            // 
+            this.monthCalendar12.Location = new System.Drawing.Point(206, 128);
+            this.monthCalendar12.Name = "monthCalendar12";
+            this.monthCalendar12.TabIndex = 25;
+            this.monthCalendar12.Visible = false;
+            this.monthCalendar12.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar12_DateSelected);
+            // 
+            // monthCalendar13
+            // 
+            this.monthCalendar13.Location = new System.Drawing.Point(258, 144);
+            this.monthCalendar13.Name = "monthCalendar13";
+            this.monthCalendar13.TabIndex = 25;
+            this.monthCalendar13.Visible = false;
+            this.monthCalendar13.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar13_DateSelected);
             // 
             // UserControl_Reserve_Add_Remove
             // 
@@ -3405,5 +3537,17 @@
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.MonthCalendar monthCalendar2;
+        private System.Windows.Forms.MonthCalendar monthCalendar3;
+        private System.Windows.Forms.MonthCalendar monthCalendar4;
+        private System.Windows.Forms.MonthCalendar monthCalendar5;
+        private System.Windows.Forms.MonthCalendar monthCalendar6;
+        private System.Windows.Forms.MonthCalendar monthCalendar7;
+        private System.Windows.Forms.MonthCalendar monthCalendar8;
+        private System.Windows.Forms.MonthCalendar monthCalendar9;
+        private System.Windows.Forms.MonthCalendar monthCalendar10;
+        private System.Windows.Forms.MonthCalendar monthCalendar11;
+        private System.Windows.Forms.MonthCalendar monthCalendar12;
+        private System.Windows.Forms.MonthCalendar monthCalendar13;
     }
 }

@@ -469,6 +469,7 @@ namespace Healthyfood
         {
             DateTime date;
             int quantity;
+            monthCalendar2.Visible = false;
             if (!(DateTime.TryParse(textbox_datePeremption.Text, out date)) || !(Int32.TryParse(textbox_quantity_drink.Text, out quantity)))
             {
 
@@ -490,6 +491,7 @@ namespace Healthyfood
         {
             DateTime date;
             int quantity;
+            monthCalendar3.Visible = false;
             if (!(DateTime.TryParse(txt_dateperemtion_dessert.Text, out date)) || !(Int32.TryParse(txt_quantity_dessert.Text, out quantity)))
             {
                 label41.Text = "Le format est invalide";
@@ -509,6 +511,7 @@ namespace Healthyfood
         {
             DateTime date;
             int quantity;
+            monthCalendar4.Visible = false;
             if (!(DateTime.TryParse(txt_dateperemption_crust.Text, out date)) || !(Int32.TryParse(txt_quantity_crust.Text, out quantity)))
             {
                 label45.Text = "Le format est invalide";
@@ -529,6 +532,7 @@ namespace Healthyfood
         {
             DateTime date;
             int quantity;
+            monthCalendar5.Visible = false;
             if (!(DateTime.TryParse(txt_dateperemption_fish.Text, out date)) || !(Int32.TryParse(txt_quantity_fish.Text, out quantity)))
             {
                 label49.Text = "Le format est invalide";
@@ -548,6 +552,7 @@ namespace Healthyfood
         {
             DateTime date;
             int quantity;
+            monthCalendar6.Visible = false;
             if (!(DateTime.TryParse(txt_dateperemtion_poultry.Text, out date)) || !(Int32.TryParse(txt_quantity_poultry.Text, out quantity)))
             {
                 label53.Text = "Le format est invalide";
@@ -568,6 +573,7 @@ namespace Healthyfood
         {
             DateTime date;
             int quantity;
+            monthCalendar7.Visible = false;
             if (!(DateTime.TryParse(txt_dateperemtion_vegetable.Text, out date)) || !(Int32.TryParse(txt_quantity_vegetable.Text, out quantity)))
             {
                 label57.Text = "Le format est invalide";
@@ -588,6 +594,7 @@ namespace Healthyfood
         {
             DateTime date;
             int quantity;
+            monthCalendar8.Visible = false;
             if (!(DateTime.TryParse(txt_dateperemtion_fruit.Text, out date)) || !(Int32.TryParse(txt_quantity_fruit.Text, out quantity)))
             {
                 label61.Text = "Le format est invalide";
@@ -608,6 +615,7 @@ namespace Healthyfood
         {
             DateTime date;
             int quantity;
+            monthCalendar9.Visible = false;
             if (!(DateTime.TryParse(textBox23.Text, out date)) || !(Int32.TryParse(textBox24.Text, out quantity)))
             {
                 label65.Text = "Le format est invalide";
@@ -628,6 +636,7 @@ namespace Healthyfood
         {
             DateTime date;
             int quantity;
+            monthCalendar10.Visible = false;
             if (!(DateTime.TryParse(textBox26.Text, out date)) || !(Int32.TryParse(textBox27.Text, out quantity)))
             {
                 label69.Text = "Le format est invalide";
@@ -648,6 +657,7 @@ namespace Healthyfood
         {
             DateTime date;
             int quantity;
+            monthCalendar11.Visible = false;
             if (!(DateTime.TryParse(textBox29.Text, out date)) || !(Int32.TryParse(textBox30.Text, out quantity)))
             {
                 label73.Text = "Le format est invalide";
@@ -668,6 +678,7 @@ namespace Healthyfood
         {
             DateTime date;
             int quantity;
+            monthCalendar12.Visible = false;
             if (!(DateTime.TryParse(textBox32.Text, out date)) || !(Int32.TryParse(textBox33.Text, out quantity)))
             {
                 label77.Text = "Le format est invalide";
@@ -688,6 +699,7 @@ namespace Healthyfood
         {
             DateTime date;
             int quantity;
+            monthCalendar13.Visible = false;
             if (!(DateTime.TryParse(textBox37.Text, out date)) || !(Int32.TryParse(textBox36.Text, out quantity)))
             {
                 label81.Text = "Le format est invalide";
@@ -969,7 +981,7 @@ namespace Healthyfood
         }
         #endregion
 
-
+        #region Calendar
         private void textBox_Date_Click(object sender, EventArgs e)
         {
             monthCalendar1.Visible = true;
@@ -979,5 +991,126 @@ namespace Healthyfood
         {
             textBox_Date.Text = monthCalendar1.SelectionRange.Start.ToShortDateString();
         }
+
+        private void textbox_datePeremption_Click(object sender, EventArgs e)
+        {
+            monthCalendar2.Visible = true;
+        }
+
+        private void monthCalendar2_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            textbox_datePeremption.Text = monthCalendar2.SelectionRange.Start.ToShortDateString();
+        }
+
+        private void txt_dateperemtion_dessert_Click(object sender, EventArgs e)
+        {
+            monthCalendar3.Visible = true;
+        }
+
+        private void monthCalendar3_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            txt_dateperemtion_dessert.Text = monthCalendar3.SelectionRange.Start.ToShortDateString();
+        }
+
+        private void txt_dateperemption_crust_Click(object sender, EventArgs e)
+        {
+            monthCalendar4.Visible = true;
+        }
+
+        private void monthCalendar4_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            txt_dateperemption_crust.Text = monthCalendar4.SelectionRange.Start.ToShortDateString();
+        }
+
+        private void txt_dateperemption_fish_Click(object sender, EventArgs e)
+        {
+            monthCalendar5.Visible = true;
+        }
+
+        private void monthCalendar5_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            txt_dateperemption_fish.Text = monthCalendar5.SelectionRange.Start.ToShortDateString();
+        }
+
+        private void txt_dateperemtion_poultry_Click(object sender, EventArgs e)
+        {
+            monthCalendar6.Visible = true;
+        }
+
+        private void monthCalendar6_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            txt_dateperemtion_poultry.Text = monthCalendar6.SelectionRange.Start.ToShortDateString();
+        }
+
+        private void txt_dateperemtion_vegetable_Click(object sender, EventArgs e)
+        {
+            monthCalendar7.Visible = true;
+        }
+
+        private void monthCalendar7_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            txt_dateperemtion_vegetable.Text = monthCalendar7.SelectionRange.Start.ToShortDateString();
+        }
+
+        private void txt_dateperemtion_fruit_Click(object sender, EventArgs e)
+        {
+            monthCalendar8.Visible = true;
+        }
+
+        private void monthCalendar8_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            txt_dateperemtion_fruit.Text = monthCalendar8.SelectionRange.Start.ToShortDateString();
+        }
+
+        private void textBox23_Click(object sender, EventArgs e)
+        {
+            monthCalendar9.Visible = true;
+        }
+
+        private void monthCalendar9_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            textBox23.Text = monthCalendar9.SelectionRange.Start.ToShortDateString();
+        }
+
+        private void textBox26_Click(object sender, EventArgs e)
+        {
+            monthCalendar10.Visible = true;
+        }
+
+        private void monthCalendar10_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            textBox26.Text = monthCalendar10.SelectionRange.Start.ToShortDateString();
+        }
+
+        private void textBox29_Click(object sender, EventArgs e)
+        {
+            monthCalendar11.Visible = true;
+        }
+
+        private void monthCalendar11_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            textBox29.Text = monthCalendar11.SelectionRange.Start.ToShortDateString();
+        }
+
+        private void textBox32_Click(object sender, EventArgs e)
+        {
+            monthCalendar12.Visible = true;
+        }
+
+        private void monthCalendar12_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            textBox32.Text = monthCalendar12.SelectionRange.Start.ToShortDateString();
+        }
+
+        private void textBox37_Click(object sender, EventArgs e)
+        {
+            monthCalendar13.Visible = true;
+        }
+
+        private void monthCalendar13_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            textBox37.Text = monthCalendar13.SelectionRange.Start.ToShortDateString();
+        }
+        #endregion
     }
 }
