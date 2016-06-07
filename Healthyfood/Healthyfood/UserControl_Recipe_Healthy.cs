@@ -100,7 +100,7 @@ namespace Healthyfood
             else
             {
                 label1.ForeColor = Color.Red;
-                label1.Text = "Les ingrédients sont absents du stock";
+                label1.Text = "Ingredients manquants";
             }
 
         }

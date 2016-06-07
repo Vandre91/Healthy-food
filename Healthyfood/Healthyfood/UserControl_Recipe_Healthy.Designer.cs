@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "Le abdul",
             "belle et bien présenter"}, -1);
             this.listView1 = new System.Windows.Forms.ListView();
@@ -57,7 +57,7 @@
             this.columnHeader_Description,
             this.columnHeader_calories});
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem2});
             this.listView1.Location = new System.Drawing.Point(4, 16);
             this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listView1.Name = "listView1";
@@ -95,6 +95,7 @@
             // 
             // panel_Show_Recipes
             // 
+            this.panel_Show_Recipes.Controls.Add(this.label1);
             this.panel_Show_Recipes.Controls.Add(this.richTextBox1);
             this.panel_Show_Recipes.Controls.Add(this.richTextBox_Describe);
             this.panel_Show_Recipes.Controls.Add(this.label_Name);
@@ -173,7 +174,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(172, 347);
+            this.label1.Location = new System.Drawing.Point(271, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 17);
             this.label1.TabIndex = 3;
@@ -182,7 +183,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel_Show_Recipes);
             this.Controls.Add(this.button_Back);
             this.Controls.Add(this.listView1);
@@ -193,7 +193,6 @@
             this.panel_Show_Recipes.ResumeLayout(false);
             this.panel_Show_Recipes.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
