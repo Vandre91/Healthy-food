@@ -53,6 +53,7 @@ namespace Healthyfood
 
         private void button_Back_Panel_Click(object sender, EventArgs e)
         {
+            label1.Text = null;
             panel_Show_Recipes.Visible = false;
         }
 
@@ -64,6 +65,43 @@ namespace Healthyfood
 
         private void button_Heat_Click(object sender, EventArgs e)
         {
+            Recipe rec = Root.Healthy.AllRecipe.FindHealthyrecipe(label_Name.Text);
+            bool contain = false;
+            int count = 0;
+            foreach( Ingredient ingred in rec.IRecipe)
+            {
+                foreach (Ingredient ing in Root.Healthy.Stocks._stock.Values)
+                {
+                    if (ingred.Name == ing.Name && ingred.Balance < ing.Balance)
+                    { count++;
+                      contain = true;
+                    }
+                    if (contain) break;
+                }
+                contain = false;
+            }
+            if (count == rec.IRecipe.Count)
+            {
+                foreach(Ingredient ingred in rec.IRecipe)
+                {
+                    foreach (Ingredient ing in Root.Healthy.Stocks._stock.Values)
+                    {
+                        if (ingred.Name == ing.Name && ingred.Balance < ing.Balance)
+                        {
+                            Root.Healthy.Stocks.ReduceIngredient(ing.Name, ingred.Balance, ing.Expiration_Date);
+                            break;
+                        }
+                    }
+                }
+                label1.ForeColor = Color.Green;
+                label1.Text = "Validé";
+            }
+
+            else
+            {
+                label1.ForeColor = Color.Red;
+                label1.Text = "Les ingrédients sont absents du stock";
+            }
 
         }
 
