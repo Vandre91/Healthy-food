@@ -33,13 +33,14 @@
             this.button1_recipe_health = new System.Windows.Forms.Button();
             this.button2_yours_recipes = new System.Windows.Forms.Button();
             this.button3_world_recipes = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.label1 = new System.Windows.Forms.Label();
+            this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader_Lastname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label2 = new System.Windows.Forms.Label();
             this.userControl_World_Recipe1 = new Healthyfood.UserControl_World_Recipe();
             this.userControl_Your_Recipes1 = new Healthyfood.UserControl_Your_Recipes();
             this.userControl_Recipe_Healthy1 = new Healthyfood.UserControl_Recipe_Healthy();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader_FirstName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // button_Back
@@ -95,15 +96,47 @@
             this.button3_world_recipes.UseVisualStyleBackColor = true;
             this.button3_world_recipes.Click += new System.EventHandler(this.button3_world_recipes_Click);
             // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader_Name,
+            this.columnHeader_Lastname});
+            this.listView1.Location = new System.Drawing.Point(478, 70);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(121, 97);
+            this.listView1.TabIndex = 4;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(461, 17);
+            this.label1.Location = new System.Drawing.Point(475, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 13);
-            this.label1.TabIndex = 8;
+            this.label1.TabIndex = 5;
             this.label1.Text = "Selection de l\'utilisateur";
+            // 
+            // columnHeader_Name
+            // 
+            this.columnHeader_Name.Text = "Nom";
+            // 
+            // columnHeader_Lastname
+            // 
+            this.columnHeader_Lastname.Text = "Prenom";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(478, 180);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Selectioner un  utilisateur";
+            this.label2.Visible = false;
             // 
             // userControl_World_Recipe1
             // 
@@ -111,7 +144,7 @@
             this.userControl_World_Recipe1.Location = new System.Drawing.Point(0, 0);
             this.userControl_World_Recipe1.Name = "userControl_World_Recipe1";
             this.userControl_World_Recipe1.Size = new System.Drawing.Size(623, 447);
-            this.userControl_World_Recipe1.TabIndex = 6;
+            this.userControl_World_Recipe1.TabIndex = 8;
             this.userControl_World_Recipe1.Visible = false;
             // 
             // userControl_Your_Recipes1
@@ -120,7 +153,7 @@
             this.userControl_Your_Recipes1.Location = new System.Drawing.Point(0, 0);
             this.userControl_Your_Recipes1.Name = "userControl_Your_Recipes1";
             this.userControl_Your_Recipes1.Size = new System.Drawing.Size(623, 447);
-            this.userControl_Your_Recipes1.TabIndex = 5;
+            this.userControl_Your_Recipes1.TabIndex = 7;
             this.userControl_Your_Recipes1.Visible = false;
             // 
             // userControl_Recipe_Healthy1
@@ -129,30 +162,8 @@
             this.userControl_Recipe_Healthy1.Location = new System.Drawing.Point(0, 0);
             this.userControl_Recipe_Healthy1.Name = "userControl_Recipe_Healthy1";
             this.userControl_Recipe_Healthy1.Size = new System.Drawing.Size(623, 447);
-            this.userControl_Recipe_Healthy1.TabIndex = 4;
+            this.userControl_Recipe_Healthy1.TabIndex = 6;
             this.userControl_Recipe_Healthy1.Visible = false;
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader_Name,
-            this.columnHeader_FirstName});
-            this.listView1.Location = new System.Drawing.Point(446, 47);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(160, 117);
-            this.listView1.TabIndex = 9;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader_Name
-            // 
-            this.columnHeader_Name.Text = "Nom";
-            this.columnHeader_Name.Width = 87;
-            // 
-            // columnHeader_FirstName
-            // 
-            this.columnHeader_FirstName.Text = "Prenom";
-            this.columnHeader_FirstName.Width = 67;
             // 
             // UserControl_Recipe
             // 
@@ -160,11 +171,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.userControl_World_Recipe1);
             this.Controls.Add(this.userControl_Your_Recipes1);
             this.Controls.Add(this.userControl_Recipe_Healthy1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.button3_world_recipes);
             this.Controls.Add(this.button2_yours_recipes);
             this.Controls.Add(this.button1_recipe_health);
@@ -183,12 +195,13 @@
         private System.Windows.Forms.Button button1_recipe_health;
         private System.Windows.Forms.Button button2_yours_recipes;
         private System.Windows.Forms.Button button3_world_recipes;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Label label1;
         private UserControl_Recipe_Healthy userControl_Recipe_Healthy1;
         private UserControl_Your_Recipes userControl_Your_Recipes1;
         private UserControl_World_Recipe userControl_World_Recipe1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader_Name;
-        private System.Windows.Forms.ColumnHeader columnHeader_FirstName;
+        private System.Windows.Forms.ColumnHeader columnHeader_Lastname;
+        private System.Windows.Forms.Label label2;
     }
 }
