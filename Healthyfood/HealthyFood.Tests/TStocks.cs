@@ -14,7 +14,7 @@ namespace HealthyFoodTests
     public class TStocks
     {
         [Test]
-        public void t01_add_ingredient_with_correct_category()
+        public void Add_ingredient_with_correct_category()
         {
             Stocks stocks = new Stocks();
             DateTime date = new DateTime(2017, 10, 10);
@@ -28,7 +28,7 @@ namespace HealthyFoodTests
         }
 
         [Test]
-        public void t02_add_ingredient_with_correct_name()
+        public void Add_ingredient_with_correct_name()
         {
             Stocks stocks = new Stocks();
             DateTime date = new DateTime(2017, 10, 10);
@@ -42,7 +42,7 @@ namespace HealthyFoodTests
         }
 
         [Test]
-        public void t03_add_ingredient_with_correct_balance_and_expiration_date()
+        public void Add_ingredient_with_correct_balance_and_expiration_date()
         {
             Stocks stocks = new Stocks();
             DateTime date = new DateTime(2017, 10, 10);
@@ -61,7 +61,7 @@ namespace HealthyFoodTests
         }
 
         [Test]
-        public void t04_remove_ingredient_correctly()
+        public void Remove_ingredient_correctly()
         {
             Stocks stocks = new Stocks();
             DateTime date = new DateTime(2017, 10, 10);
@@ -77,7 +77,7 @@ namespace HealthyFoodTests
         }
 
         [Test]
-        public void t05_add_ingredient_which_already_exist ()
+        public void Add_ingredient_which_already_exist ()
         {
             Stocks stocks = new Stocks();
             DateTime date = new DateTime(2017, 10, 10);
@@ -87,7 +87,7 @@ namespace HealthyFoodTests
         }
 
         [Test]
-        public void t06_reduce_ingredient_correctly()
+        public void Reduce_ingredient_correctly()
         {
             Stocks stocks = new Stocks();
             DateTime date = new DateTime(2017, 10, 10);
@@ -101,15 +101,6 @@ namespace HealthyFoodTests
             Assert.That(i.Balance, Is.EqualTo(50));
         }
 
-        [Test]
-        public void t07_create_new_ingredient ()
-        {
-            //Stocks stocks = new Stocks();
-            //DateTime date = new DateTime(2017, 10, 10);
-            //Assert.Throws<ArgumentException>(() => stocks.CreateIngredient("viande", "lait"));
-            //stocks.CreateIngredient("viande", "steak de chien");
-            //Assert.That(Ingredients.viande.Contains("steak de chien"), Is.EqualTo(true));
-        }
     }
 }
  
