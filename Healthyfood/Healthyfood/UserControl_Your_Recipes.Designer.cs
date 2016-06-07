@@ -41,25 +41,29 @@
             this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader_Description = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader_Note = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.panel_Show_Recipes.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_Show_Recipes
             // 
+            this.panel_Show_Recipes.Controls.Add(this.richTextBox2);
+            this.panel_Show_Recipes.Controls.Add(this.richTextBox1);
             this.panel_Show_Recipes.Controls.Add(this.label_Describes);
             this.panel_Show_Recipes.Controls.Add(this.button_Read);
             this.panel_Show_Recipes.Controls.Add(this.button_Heat);
             this.panel_Show_Recipes.Controls.Add(this.button_Back_Panel);
-            this.panel_Show_Recipes.Location = new System.Drawing.Point(144, 62);
+            this.panel_Show_Recipes.Location = new System.Drawing.Point(114, 41);
             this.panel_Show_Recipes.Name = "panel_Show_Recipes";
-            this.panel_Show_Recipes.Size = new System.Drawing.Size(375, 231);
+            this.panel_Show_Recipes.Size = new System.Drawing.Size(420, 258);
             this.panel_Show_Recipes.TabIndex = 5;
             this.panel_Show_Recipes.Visible = false;
             // 
             // label_Describes
             // 
             this.label_Describes.AutoSize = true;
-            this.label_Describes.Location = new System.Drawing.Point(30, 25);
+            this.label_Describes.Location = new System.Drawing.Point(30, 15);
             this.label_Describes.Name = "label_Describes";
             this.label_Describes.Size = new System.Drawing.Size(60, 13);
             this.label_Describes.TabIndex = 3;
@@ -67,7 +71,7 @@
             // 
             // button_Read
             // 
-            this.button_Read.Location = new System.Drawing.Point(147, 188);
+            this.button_Read.Location = new System.Drawing.Point(168, 218);
             this.button_Read.Name = "button_Read";
             this.button_Read.Size = new System.Drawing.Size(75, 23);
             this.button_Read.TabIndex = 2;
@@ -77,7 +81,7 @@
             // 
             // button_Heat
             // 
-            this.button_Heat.Location = new System.Drawing.Point(30, 188);
+            this.button_Heat.Location = new System.Drawing.Point(50, 218);
             this.button_Heat.Name = "button_Heat";
             this.button_Heat.Size = new System.Drawing.Size(75, 23);
             this.button_Heat.TabIndex = 1;
@@ -87,7 +91,7 @@
             // 
             // button_Back_Panel
             // 
-            this.button_Back_Panel.Location = new System.Drawing.Point(276, 188);
+            this.button_Back_Panel.Location = new System.Drawing.Point(286, 218);
             this.button_Back_Panel.Name = "button_Back_Panel";
             this.button_Back_Panel.Size = new System.Drawing.Size(75, 23);
             this.button_Back_Panel.TabIndex = 0;
@@ -140,6 +144,22 @@
             this.columnHeader_Note.Text = "Note";
             this.columnHeader_Note.Width = 43;
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(33, 41);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(178, 64);
+            this.richTextBox1.TabIndex = 4;
+            this.richTextBox1.Text = "";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(33, 112);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(350, 96);
+            this.richTextBox2.TabIndex = 5;
+            this.richTextBox2.Text = "";
+            // 
             // UserControl_Your_Recipes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -168,5 +188,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader_Name;
         private System.Windows.Forms.ColumnHeader columnHeader_Description;
         private System.Windows.Forms.ColumnHeader columnHeader_Note;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

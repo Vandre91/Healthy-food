@@ -36,6 +36,14 @@ namespace Healthyfood
             Recipe recipe = Root.Healthy.AllRecipe.FindHealthyrecipe(name);
 
             label_Name.Text = recipe.Name;
+            StringBuilder builder = new StringBuilder();
+            foreach (var p in recipe.IRecipe)
+            {
+                builder.Append(p.Balance).Append(" ");
+                builder.Append(p.Name).Append('\n');
+            }
+            string result = builder.ToString();
+            richTextBox1.Text = result;
             richTextBox_Describe.Text = recipe.Describe;
             panel_Show_Recipes.Visible = true;
             panel_Show_Recipes.Focus();
