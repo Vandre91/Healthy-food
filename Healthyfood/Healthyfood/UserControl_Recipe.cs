@@ -29,12 +29,19 @@ namespace Healthyfood
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try {
                 string name = listView1.SelectedItems[0].SubItems[0].Text;
                 string lastname = listView1.SelectedItems[0].SubItems[1].Text;
                 UserProfile profil = Root.Healthy.Utilisateur.FindUser(name, lastname);
                 Root.Healthy.Profil = profil;
+                label2.Visible = false;
                 userControl_Recipe_Healthy1.Visible = true;
                 userControl_Recipe_Healthy1.Focus();
+            }
+            catch(ArgumentException)
+            {
+                label2.Visible = true;
+            }
         }
 
         private void button2_yours_recipes_Click(object sender, EventArgs e)
@@ -53,7 +60,6 @@ namespace Healthyfood
         {
             listView1.Items.Clear();
 
-
             foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
             {
                 string[] row = { p.FirstName, p.LastName };
@@ -61,5 +67,6 @@ namespace Healthyfood
                 listView1.Items.Add(item);
             }
         }
+        
     }
 }

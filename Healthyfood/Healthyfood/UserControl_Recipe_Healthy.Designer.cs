@@ -42,6 +42,7 @@
             this.button_Read = new System.Windows.Forms.Button();
             this.button_Heat = new System.Windows.Forms.Button();
             this.button_Back_Panel = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel_Show_Recipes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,6 +92,7 @@
             // 
             // panel_Show_Recipes
             // 
+            this.panel_Show_Recipes.Controls.Add(this.richTextBox1);
             this.panel_Show_Recipes.Controls.Add(this.richTextBox_Describe);
             this.panel_Show_Recipes.Controls.Add(this.label_Name);
             this.panel_Show_Recipes.Controls.Add(this.button_Read);
@@ -104,7 +106,7 @@
             // 
             // richTextBox_Describe
             // 
-            this.richTextBox_Describe.Location = new System.Drawing.Point(30, 58);
+            this.richTextBox_Describe.Location = new System.Drawing.Point(30, 84);
             this.richTextBox_Describe.Name = "richTextBox_Describe";
             this.richTextBox_Describe.Size = new System.Drawing.Size(304, 98);
             this.richTextBox_Describe.TabIndex = 5;
@@ -113,7 +115,7 @@
             // label_Name
             // 
             this.label_Name.AutoSize = true;
-            this.label_Name.Location = new System.Drawing.Point(27, 25);
+            this.label_Name.Location = new System.Drawing.Point(27, 11);
             this.label_Name.Name = "label_Name";
             this.label_Name.Size = new System.Drawing.Size(35, 13);
             this.label_Name.TabIndex = 4;
@@ -149,6 +151,14 @@
             this.button_Back_Panel.UseVisualStyleBackColor = true;
             this.button_Back_Panel.Click += new System.EventHandler(this.button_Back_Panel_Click);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(30, 28);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(152, 50);
+            this.richTextBox1.TabIndex = 6;
+            this.richTextBox1.Text = "";
+            // 
             // UserControl_Recipe_Healthy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,5 +188,6 @@
         private System.Windows.Forms.RichTextBox richTextBox_Describe;
         private System.Windows.Forms.Label label_Name;
         private System.Windows.Forms.ColumnHeader columnHeader_calories;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

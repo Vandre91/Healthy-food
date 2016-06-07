@@ -43,7 +43,21 @@ namespace Healthyfood
 
         private void listView1_MouseClick(object sender, MouseEventArgs e)
         {
+            string name = listView1.SelectedItems[0].SubItems[0].Text;
+            Recipe recipe = Root.Healthy.AllRecipe.FindHealthyrecipe(name);
+
+            label_Describes.Text = recipe.Name;
+            StringBuilder builder = new StringBuilder();
+            foreach (var p in recipe.IRecipe)
+            {
+                builder.Append(p.Balance).Append(" ");
+                builder.Append(p.Name).Append('\n');
+            }
+            string result = builder.ToString();
+            richTextBox1.Text = result;
+            richTextBox2.Text = recipe.Describe;
             panel_Show_Recipes.Visible = true;
+            panel_Show_Recipes.Focus();
         }
 
         private void UserControl_Your_Recipes_Enter(object sender, EventArgs e)
