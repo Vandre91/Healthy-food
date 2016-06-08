@@ -391,6 +391,46 @@ namespace StockFood
 
             #endregion
 
+            #region Salade Melon, feta, jambon
+
+            Ingredient salademel1 = new Ingredient("legume", "coeur de salade", 1, DateTime.Today);
+            Ingredient salademel2 = new Ingredient("legume", "melon", 1, DateTime.Today);
+            Ingredient salademel3 = new Ingredient("produit_laitier", "feta", 200, DateTime.Today);
+            Ingredient salademel4 = new Ingredient("viande", "jambon", 4, DateTime.Today);
+            Ingredient salademel5 = new Ingredient("fruit", "jus de citron", 4, DateTime.Today);
+            Ingredient salademel6 = new Ingredient("matiere_grasse", "huile d'olive ", 4, DateTime.Today);
+            Ingredient salademel7 = new Ingredient("boisson", "café de thym ", 1, DateTime.Today);
+            Ingredient salademel8 = new Ingredient("legume", "sel et poivre ", 20, DateTime.Today);
+            Ingredient salademel9 = new Ingredient("boisson", "eau ", 2, DateTime.Today);
+            List<Ingredient> recipesalademelon = new List<Ingredient> { salademel1, salademel2, salademel3, salademel4, salademel5, salademel6, salademel7, salademel8, salademel9 };
+            _Allrecipe.AddHealthyrecipe("Salade Melon, feta, jambon", recipesalademelon, "Eplucher le melon, et couper la chair en petits cubes. Couper les tranches de jambon cru en fines lanières. Couper la feta en cubes.Pour la sauce : verser le jus de citron dans un bol, saler, poivrer (allonger d'eau si désiré); bien mélanger. Ajouter l'huile d'olive, mélanger énergiquement, afin d'obtenir une belle émulsion et incorporer le thym. Mettre la salade, le melon, le jambon, la feta et la sauce dans un saladier, et remuer juste avant de servir.");
+            #endregion
+
+            #region Salade au saumon fumé
+            Ingredient saumon1 = new Ingredient("poisson", "tranches de saumon fumé", 4, DateTime.Today);
+            Ingredient saumon2 = new Ingredient("herbe_plante", "concombre", 1, DateTime.Today);
+            Ingredient saumon3 = new Ingredient("legume", "salade", 200, DateTime.Today);
+            Ingredient saumon4 = new Ingredient("produit_laitier", "feta", 100, DateTime.Today);
+            
+            Ingredient saumon5 = new Ingredient("fruit", "jus de citron", 1, DateTime.Today);
+            Ingredient saumon6 = new Ingredient("legume", "sel et poivre", 20, DateTime.Today);
+            Ingredient saumon7 = new Ingredient("herbe_plante", "cornichons aigres doux", 4, DateTime.Today);
+            Ingredient saumon8 = new Ingredient("herbe_plante", "echalote", 1, DateTime.Today);
+            Ingredient saumon9 = new Ingredient("herbe_plante", "cornichons aigres doux", 4, DateTime.Today);
+            Ingredient saumon10 = new Ingredient("matiere_grasse", "huile d'olive", 1, DateTime.Today);
+            Ingredient saumon11 = new Ingredient("legume", "sel et poivre", 20, DateTime.Today);
+            List<Ingredient> recipesaumon = new List<Ingredient> { saumon1, saumon2, saumon3, saumon4, saumon5, saumon6, saumon7, saumon8, saumon9, saumon10, saumon11 };
+            _Allrecipe.AddHealthyrecipe("Salade au saumon fumé", recipesaumon, "Préparer la sauce : émincer finement l'échalote et couper les cornichons en petits cubes. Dans un bol, mélanger le fromage blanc avec l'échalote, les cornichons Amora et l'huile d'olive. Assaisonner et réserver. Laver ensuite le demi-concombre et le détailler en rondelles.Couper les tranches de saumon fumé en lanières. Mélanger ensuite dans un saladier le saumon avec le concombre et la feta. Ajouter le jus de citron et assaisonner. Au moment de servir, déposer quelques feuilles de jeunes pousses Au moment de servir, déposer quelques feuilles de jeunes pousses dans des assiettes et ajouter le mélange au saumon fumé. Verser un peu de sauce blanche et déguster.  ");
+            #endregion
+
+
+
+
+
+
+
+
+
         }
     }
 }
