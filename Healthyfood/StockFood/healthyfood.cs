@@ -446,6 +446,29 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe("Sauté de Veau", recipesaute, "Faire revenir veau et oignons émincés jusqu'à coloration. Ajouter le chorizo en rondelles (oter sa peau), puis la pulpe de tomate, le basilic haché et enfin les olives. Couvrir et faire mijoter à feux doux 1 heure minimum. Ce plat est encore meilleur préparé la veille et réchauffé le jour même.");
             #endregion
 
+            #region Gigot d'Agneau aux pommes boulangères
+            Ingredient gigot1 = new Ingredient("viande", "gigot d'agneau", 2, DateTime.Today);
+            Ingredient gigot2 = new Ingredient("herbe_plante", "pomme de terre", 8, DateTime.Today);
+            Ingredient gigot3 = new Ingredient("herbe_plante", "gousses d'ail", 2, DateTime.Today);
+            Ingredient gigot4 = new Ingredient("herbe_plante", "brin de thym", 10, DateTime.Today);
+            Ingredient gigot5 = new Ingredient("produit_laitier", "copeaux de beurre", 100, DateTime.Today);
+            Ingredient gigot6 = new Ingredient("legume", "sel et poivre", 20, DateTime.Today);
+            List<Ingredient> recipegigot = new List<Ingredient> { gigot1, gigot2, gigot3, gigot4, gigot5, gigot6 };
+            _Allrecipe.AddHealthyrecipe("Gigot d'Agneau aux pommes boulangères", recipegigot, "Préchauffer le four à thermostat 7 (210°C).Peler, laver, sécher et tailler les pommes de terre en rondelles à l’aide d’une râpe. Les poser en couches égales dans le fond du plat et parsemer avec les copeaux de beurre. Déposer le gigot et enfourner. Après 15 min, lorsque le gigot commence à dorer, le retourner. Laisser cuire encore 15 min et le retourner à nouveau. Baisser le thermostat à 6 (180°C) et laisser la cuisson se poursuivre 40 min. Ajouter les gousses d'ail en chemise durant les 30 dernières minutes de cuisson. Eteindre et laisser reposer dans le four pendant 10 min. Le gigot sera moelleux et les pommes de terre imprégnées d’un délicieux goût d’agneau.");
+
+            #endregion
+
+            #region Pommes de terre boulangères
+            Ingredient pomme1 = new Ingredient("herbe_plante", "pommes de terre", 1000, DateTime.Today);
+            Ingredient pomme2 = new Ingredient("herbe_plante", "oignons", 4, DateTime.Today);
+            Ingredient pomme3 = new Ingredient("herbe_plante", "bouquet garni", 1, DateTime.Today);
+            Ingredient pomme4 = new Ingredient("herbe_plante", "oignons", 4, DateTime.Today);
+            Ingredient pomme5 = new Ingredient("matiere_grasse", "cube de bouillon", 1, DateTime.Today);
+            Ingredient pomme6 = new Ingredient("produit_laitier", "beurre", 50, DateTime.Today);
+            List<Ingredient> recipepomme = new List<Ingredient> { pomme1, pomme2, pomme3, pomme4, pomme6 };
+            _Allrecipe.AddHealthyrecipe("Pommes de terre boulangère", recipepomme, "Peler les pommes de terre et les couper en rondelles assez fines et régulières. Peler les oignons et les émincer assez finement. Beurrer un moule à bord assez haut et disposer une couche de pommes de terre. Disposer par-dessus les oignons et finir par le reste de pommes de terre. Ajouter le bouquet garni ou, à défaut, parsemer simplement de thym ou d'herbes de Provence. Saler et poivrer. Ajouter le cube de bouillon dissout dans assez d'eau pour couvrir presque toutes les pommes de terre. Parsemer de noisettes de beurre et mettre au four environ 40 min à 220°C. ");
+            #endregion
+
 
 
 
