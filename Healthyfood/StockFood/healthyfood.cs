@@ -422,8 +422,29 @@ namespace StockFood
             List<Ingredient> recipesaumon = new List<Ingredient> { saumon1, saumon2, saumon3, saumon4, saumon5, saumon6, saumon7, saumon8, saumon9, saumon10, saumon11 };
             _Allrecipe.AddHealthyrecipe("Salade au saumon fumé", recipesaumon, "Préparer la sauce : émincer finement l'échalote et couper les cornichons en petits cubes. Dans un bol, mélanger le fromage blanc avec l'échalote, les cornichons Amora et l'huile d'olive. Assaisonner et réserver. Laver ensuite le demi-concombre et le détailler en rondelles.Couper les tranches de saumon fumé en lanières. Mélanger ensuite dans un saladier le saumon avec le concombre et la feta. Ajouter le jus de citron et assaisonner. Au moment de servir, déposer quelques feuilles de jeunes pousses Au moment de servir, déposer quelques feuilles de jeunes pousses dans des assiettes et ajouter le mélange au saumon fumé. Verser un peu de sauce blanche et déguster.  ");
             #endregion
+            #region Entrecotes moutardées
+            Ingredient entrecote1 = new Ingredient("viande", "pièces d'entrecotes", 1200, DateTime.Today);
+            Ingredient entrecote2 = new Ingredient("matiere_grasse", "huile", 2, DateTime.Today);
+            Ingredient entrecote3 = new Ingredient("herbe_plante", "moutarde", 3, DateTime.Today);
+            Ingredient entrecote4 = new Ingredient("boisson", "Cognac", 3, DateTime.Today);
+            Ingredient entrecote5 = new Ingredient("matiere_grasse", "soupe de crème", 9, DateTime.Today);
+            Ingredient entrecote6 = new Ingredient("legume", "sel et poivre", 20, DateTime.Today);
+            List<Ingredient> recipeentrecote = new List<Ingredient> { entrecote1, entrecote2, entrecote3, entrecote4, entrecote5, entrecote6 };
+            _Allrecipe.AddHealthyrecipe("Entrecotes moutardées", recipeentrecote, "Enduire chaque entrecôte d'huile puis d'1 cuillère à soupe de moutarde. Laisser reposer 30 minutes. Graisser une poêle et saisir la viande à feu vif. Faire cuire 2-3 minutes de chaque côté pour une viande bleue, 4-5 minutes pour une viande saignante, plus longtemps pour une viande à point.Retirer la viande de la poêle. Saler, poivrer et réserver au chaud. Mettre la moutarde restante dans la poêle avec la moitié de la crème. Gratter le fond de la poêle pour décoller les sucs de cuisson de la viande puis réduire de moitié sur feu vif. Verser le cognac et la crème. Retirer du feu dès que la sauce atteint l'ébullition. Rectifier l'assaisonnement et verser sur l'entrecôte.");
+            #endregion
 
-
+            #region Sauté de Veau au Chorizo
+            Ingredient saute1 = new Ingredient("viande", "sauté de veau", 1000, DateTime.Today);
+            Ingredient saute2 = new Ingredient("viande", "chorizo", 1, DateTime.Today);
+            Ingredient saute3 = new Ingredient("legume", "pulpe de tomate", 2, DateTime.Today);
+            Ingredient saute4 = new Ingredient("fruit", "olives vertes", 1, DateTime.Today);
+            Ingredient saute5 = new Ingredient("herbe_plante", "oignons", 4, DateTime.Today);
+            Ingredient saute6 = new Ingredient("herbe_plante", "bouquet de basilic", 1, DateTime.Today);
+            Ingredient saute7 = new Ingredient("herbe_plante", "bouquet garni", 1, DateTime.Today);
+            Ingredient saute8 = new Ingredient("herbe_plante", "gousse d'ail", 1, DateTime.Today);
+            List<Ingredient> recipesaute = new List<Ingredient> { saute1, saute2, saute3, saute4, saute5, saute6, saute7, saute8 };
+            _Allrecipe.AddHealthyrecipe("Sauté de Veau", recipesaute, "Faire revenir veau et oignons émincés jusqu'à coloration. Ajouter le chorizo en rondelles (oter sa peau), puis la pulpe de tomate, le basilic haché et enfin les olives. Couvrir et faire mijoter à feux doux 1 heure minimum. Ce plat est encore meilleur préparé la veille et réchauffé le jour même.");
+            #endregion
 
 
 
