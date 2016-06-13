@@ -508,6 +508,21 @@ namespace StockFood
 
             #endregion
 
+            #region  Amour de saumon en papillotte
+
+            Ingredient amour1 = new Ingredient("poisson", "saumons frais", 40, DateTime.Today);
+            Ingredient amour2 = new Ingredient("legume", "tomates cerises", 20, DateTime.Today);
+            Ingredient amour3 = new Ingredient("herbe_plante", "champignons frais", 20, DateTime.Today);
+            Ingredient amour4 = new Ingredient("herbe_plante", "gousse d'ail", 1, DateTime.Today);
+            Ingredient amour5 = new Ingredient("herbe_plante", "brins d'aneth", 4, DateTime.Today);
+            Ingredient amour6 = new Ingredient("matiere_grasse", "huile d'olive", 5, DateTime.Today);
+            Ingredient amour7 = new Ingredient("fruit", "citron jaune", 1, DateTime.Today);
+            Ingredient amour8 = new Ingredient("legume", "sel et poivre", 10, DateTime.Today);
+            List<Ingredient> recipesaumonam = new List<Ingredient> { amour1, amour2, amour3, amour4, amour5, amour6, amour7, amour8 };
+            _Allrecipe.AddHealthyrecipe("Amour de saumon en papillotte", recipesaumonam, "Matériel : - 4 belles feuilles de papier aluminium  beaucoup d'amour. Laver, essorer et ciseler l'aneth. Peler et émincer la gousse d'ail finement. Réserver. Couper les tomates cerises en deux. Emincer les champignons après les avoir nettoyés. Déposer au centre de chaque feuille de papier aluminium un pavé de saumon, ajouter les tomates et les champignons tout autour. Parsemer les pavés de saumon d'aneth et d'ail et les arroser d'un filet de jus de citron. Poivrer, saler et terminer par un filet d'huile d'olive. Fermer les papillotes et les mettre au four pendant 25 à 30 minutes à 180°C (thermostat 6).");
+            #endregion
+
+
 
 
 
