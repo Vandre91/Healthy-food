@@ -469,6 +469,48 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe("Pommes de terre boulangère", recipepomme, "Peler les pommes de terre et les couper en rondelles assez fines et régulières. Peler les oignons et les émincer assez finement. Beurrer un moule à bord assez haut et disposer une couche de pommes de terre. Disposer par-dessus les oignons et finir par le reste de pommes de terre. Ajouter le bouquet garni ou, à défaut, parsemer simplement de thym ou d'herbes de Provence. Saler et poivrer. Ajouter le cube de bouillon dissout dans assez d'eau pour couvrir presque toutes les pommes de terre. Parsemer de noisettes de beurre et mettre au four environ 40 min à 220°C. ");
             #endregion
 
+            #region Crumble de saumon citronné
+
+            Ingredient crumble1 = new Ingredient("herbe_plante", "moutarde savora amora", 20, DateTime.Today);
+            Ingredient crumble2 = new Ingredient("poisson", "saumon", 150, DateTime.Today);
+            Ingredient crumble3 = new Ingredient("herbe_plante", "oignons", 2, DateTime.Today);
+            Ingredient crumble4 = new Ingredient("fruit", "citron vert", 1, DateTime.Today);
+            Ingredient crumble5 = new Ingredient("fruit", "orange", 1, DateTime.Today);
+            Ingredient crumble6 = new Ingredient("matiere_grasse", "huile d'olive", 20, DateTime.Today);
+            Ingredient crumble7 = new Ingredient("legume", "sel et poivre", 10, DateTime.Today);
+            Ingredient crumble8 = new Ingredient("herbe_plante", "moutarde Savora Amora", 40, DateTime.Today);
+            Ingredient crumble9 = new Ingredient("herbe_plante", "farine", 40, DateTime.Today);
+            Ingredient crumble10 = new Ingredient("produit_laitier", "beurre", 40, DateTime.Today);
+            Ingredient crumble11 = new Ingredient("fruit", "noisettes", 40, DateTime.Today);
+            Ingredient crumble12 = new Ingredient("legume", "fleur de sel", 5, DateTime.Today);
+
+            List<Ingredient> recipecrumble = new List<Ingredient> { crumble1, crumble2, crumble3, crumble4, crumble5, crumble6, crumble7, crumble8, crumble9, crumble10, crumble11, crumble12 };
+            _Allrecipe.AddHealthyrecipe("Crumble de saumon citronné", recipecrumble, "Préchauffer le four à 180°C (thermostat 6).Pour le crumble : Mélanger le beurre, la farine, la poudre de noisettes et la fleur de sel puis la moutarde Savora Amora. Sur une plaque de cuisson, déposer du papier sulfurisé puis le crumble et cuire 15 à 20 minutes.Pour le poisson : Ciseler les oignons et la ciboulette. Récupérer le jus du citron vert et de l'orange et mélanger en ajoutant la Savora Amora et l'huile d'olive. Couper le poisson en petits morceaux puis mélanger dans un bol le saumon et la sauce. Assaisonner. Servir dans une verrine avec une couche de saumon et une couche de crumble.");
+
+            #endregion
+
+            #region  Poke  bowl à l'hawaienne
+
+            Ingredient poke1 = new Ingredient("poisson", "saumons frais cru", 1000, DateTime.Today);
+            Ingredient poke2 = new Ingredient("fruit", "avocats", 3, DateTime.Today);
+            Ingredient poke3 = new Ingredient("fruit", "mangue", 1, DateTime.Today);
+            Ingredient poke4 = new Ingredient("herbe_plante", "oignons", 3, DateTime.Today);
+            Ingredient poke5 = new Ingredient("feculent", "riz", 250, DateTime.Today);
+            Ingredient poke6 = new Ingredient("feculent", "sesame", 100, DateTime.Today);
+            Ingredient poke7 = new Ingredient("herbe_plante", "coriandre", 1, DateTime.Today);
+            Ingredient poke8 = new Ingredient("herbe_plante", "gigembre", 10, DateTime.Today);
+            Ingredient poke9 = new Ingredient("matiere_grasse", "huile sesame", 5, DateTime.Today);
+            Ingredient poke10 = new Ingredient("matiere_grasse", "sauce teriyaki", 10, DateTime.Today);
+            Ingredient poke11 = new Ingredient("boisson", "vinaigre de riz", 10, DateTime.Today);
+            Ingredient poke12 = new Ingredient("fruit", "piment de cayenne", 5, DateTime.Today);
+            List<Ingredient> recipepoke = new List<Ingredient> { poke1, poke2, poke3, poke4, poke5, poke6, poke7, poke8, poke9, poke10, poke11, poke12 };
+            _Allrecipe.AddHealthyrecipe("Poke  bowl à l'hawaienne", recipepoke, "Préparer la marinade avec l'huile de sésame, la sauce teriyaki, le vinaigre de riz, le gingembre frais à râper, la coriandre (garder quelques feuilles), quelques cuillères à café de graines de sésame, le piment de Cayenne. Verser la marinade dans le saladier contenant le saumon et bien mélanger. Couper les avocats et la mangue en petits cubes. Emincer finement les petits  oignons Les mettre dans le saladier contenant le saumon et bien mélanger le Tout. Placer  au frais. Faire bouillir de l'eau puis faire cuire le riz pour 4 personnes. Égoutter le riz et le servir dans 4 petits bols, saupoudrer de graines de sésame et décorer avec quelques feuilles de coriandre. Sortir la préparation saumon-avocat-mangue-marinade du frigo, bien mélanger à nouveau et servir à table.  ");
+
+            #endregion
+
+
+
+
 
 
 
