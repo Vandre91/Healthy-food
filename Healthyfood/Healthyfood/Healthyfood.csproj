@@ -88,6 +88,12 @@
     <Compile Include="UserControl_Recipe_Healthy.Designer.cs">
       <DependentUpon>UserControl_Recipe_Healthy.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_Recipe_Utilisateur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Recipe_Utilisateur.Designer.cs">
+      <DependentUpon>UserControl_Recipe_Utilisateur.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_Reserve.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Recipe_Healthy.resx">
       <DependentUpon>UserControl_Recipe_Healthy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Recipe_Utilisateur.resx">
+      <DependentUpon>UserControl_Recipe_Utilisateur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Reserve.resx">
       <DependentUpon>UserControl_Reserve.cs</DependentUpon>
