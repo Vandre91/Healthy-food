@@ -607,6 +607,21 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe("Poulet basquaise", recipebasquaise, " Faire chauffer 4 cuillères à soupe d'huile dans une cocotte. Y faire  dorer les oignons, l'ail pressé, les poivrons taillés en lanières. Laisser cuire 5 min. Laver, éplucher et couper les tomates en morceaux, les ajouter à la cocotte, sel, poivre. Couvrir et laisser mijoter 20 min. Dans une sauteuse, faire dorer dans l'huile d'olive les morceaux de  poulet salés et poivrés. les ajouter aux légumes, couvrir, ajouter le bouquet garni et le vin blanc et c'est parti pour 35 min. ");
 
             #endregion
+            #region Chili con carne express
+            Ingredient chili1 = new Ingredient("herbe_plante", "oignon", 10, DateTime.Today);
+            Ingredient chili2 = new Ingredient("herbe_plante", "gousse d'ail", 10, DateTime.Today);
+            Ingredient chili3 = new Ingredient("viande", "viande hachée", 400, DateTime.Today);
+            Ingredient chili4 = new Ingredient("feculent", "haricots rouge", 400, DateTime.Today);
+            Ingredient chili5 = new Ingredient("legume", "tomates pelées ", 400, DateTime.Today);
+            Ingredient chili6 = new Ingredient("herbe_plante", "poudre de chili", 10, DateTime.Today);
+            Ingredient chili7 = new Ingredient("legume", "sel et poivre", 20, DateTime.Today);
+            Ingredient chili8 = new Ingredient("matiere_grasse", "huile d olive", 20, DateTime.Today);
+            List<Ingredient> recipechili = new List<Ingredient> { chili1, chili2, chili3, chili4, chili5, chili6, chili7, chili8 };
+            _Allrecipe.AddHealthyrecipe(" Chili con carne express", recipechili, "Hacher oignon et ail. Faire chauffer l'huile dans une cocotte, faire fondre l'oignon et l'ail. Ajouter la viande hachée, la laisser prendre couleur. Ajouter la  poudre a chili (suivant les goûts, + ou - pimenté). Egoutter les haricots, les versez dans la cocotte avec les tomates. Remuer et assaisonner. Laisser frémir 20 minutes.");
+
+            #endregion
+
+
         }
     }
 }
