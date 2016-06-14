@@ -70,6 +70,11 @@ namespace Healthyfood
                 listView1.Items.Add(item);
             }
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            userControl_Recipe_Utilisateur1.Visible = true;
+        }
         
     }
 }

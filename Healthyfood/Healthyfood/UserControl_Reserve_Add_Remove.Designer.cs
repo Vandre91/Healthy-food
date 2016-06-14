@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.tabPage_Fat_Boulangerie = new System.Windows.Forms.TabPage();
+            this.monthCalendar13 = new System.Windows.Forms.MonthCalendar();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label97 = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
@@ -49,6 +50,7 @@
             this.listView13 = new System.Windows.Forms.ListView();
             this.columnHeader34 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Herbes_Plants = new System.Windows.Forms.TabPage();
+            this.monthCalendar12 = new System.Windows.Forms.MonthCalendar();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label96 = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
@@ -69,6 +71,7 @@
             this.listView12 = new System.Windows.Forms.ListView();
             this.columnHeader31 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Féculent = new System.Windows.Forms.TabPage();
+            this.monthCalendar11 = new System.Windows.Forms.MonthCalendar();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label95 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
@@ -89,6 +92,7 @@
             this.listView11 = new System.Windows.Forms.ListView();
             this.columnHeader28 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Fat_Content = new System.Windows.Forms.TabPage();
+            this.monthCalendar10 = new System.Windows.Forms.MonthCalendar();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label94 = new System.Windows.Forms.Label();
             this.button10 = new System.Windows.Forms.Button();
@@ -109,6 +113,7 @@
             this.listView10 = new System.Windows.Forms.ListView();
             this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Milk_product = new System.Windows.Forms.TabPage();
+            this.monthCalendar9 = new System.Windows.Forms.MonthCalendar();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label93 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
@@ -129,6 +134,7 @@
             this.listView9 = new System.Windows.Forms.ListView();
             this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Fruit = new System.Windows.Forms.TabPage();
+            this.monthCalendar8 = new System.Windows.Forms.MonthCalendar();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label92 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
@@ -149,6 +155,7 @@
             this.listView8 = new System.Windows.Forms.ListView();
             this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Vegetables = new System.Windows.Forms.TabPage();
+            this.monthCalendar7 = new System.Windows.Forms.MonthCalendar();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label91 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
@@ -169,6 +176,7 @@
             this.listView7 = new System.Windows.Forms.ListView();
             this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Poultry = new System.Windows.Forms.TabPage();
+            this.monthCalendar6 = new System.Windows.Forms.MonthCalendar();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label90 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
@@ -189,6 +197,7 @@
             this.listView6 = new System.Windows.Forms.ListView();
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Fish = new System.Windows.Forms.TabPage();
+            this.monthCalendar5 = new System.Windows.Forms.MonthCalendar();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label89 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
@@ -209,6 +218,7 @@
             this.listView5 = new System.Windows.Forms.ListView();
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Crustacean = new System.Windows.Forms.TabPage();
+            this.monthCalendar4 = new System.Windows.Forms.MonthCalendar();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label86 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
@@ -229,6 +239,7 @@
             this.listView4 = new System.Windows.Forms.ListView();
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Dessert = new System.Windows.Forms.TabPage();
+            this.monthCalendar3 = new System.Windows.Forms.MonthCalendar();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label85 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -249,6 +260,7 @@
             this.listView3 = new System.Windows.Forms.ListView();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Drink = new System.Windows.Forms.TabPage();
+            this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label88 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -290,18 +302,6 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl_Add_Remove = new System.Windows.Forms.TabControl();
-            this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
-            this.monthCalendar3 = new System.Windows.Forms.MonthCalendar();
-            this.monthCalendar4 = new System.Windows.Forms.MonthCalendar();
-            this.monthCalendar5 = new System.Windows.Forms.MonthCalendar();
-            this.monthCalendar6 = new System.Windows.Forms.MonthCalendar();
-            this.monthCalendar7 = new System.Windows.Forms.MonthCalendar();
-            this.monthCalendar8 = new System.Windows.Forms.MonthCalendar();
-            this.monthCalendar9 = new System.Windows.Forms.MonthCalendar();
-            this.monthCalendar10 = new System.Windows.Forms.MonthCalendar();
-            this.monthCalendar11 = new System.Windows.Forms.MonthCalendar();
-            this.monthCalendar12 = new System.Windows.Forms.MonthCalendar();
-            this.monthCalendar13 = new System.Windows.Forms.MonthCalendar();
             this.tabPage_Fat_Boulangerie.SuspendLayout();
             this.panel13.SuspendLayout();
             this.tabPage_Herbes_Plants.SuspendLayout();
@@ -356,6 +356,14 @@
             this.tabPage_Fat_Boulangerie.TabIndex = 12;
             this.tabPage_Fat_Boulangerie.Text = "Boulangérie";
             this.tabPage_Fat_Boulangerie.UseVisualStyleBackColor = true;
+            // 
+            // monthCalendar13
+            // 
+            this.monthCalendar13.Location = new System.Drawing.Point(258, 144);
+            this.monthCalendar13.Name = "monthCalendar13";
+            this.monthCalendar13.TabIndex = 25;
+            this.monthCalendar13.Visible = false;
+            this.monthCalendar13.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar13_DateSelected);
             // 
             // panel13
             // 
@@ -562,6 +570,14 @@
             this.tabPage_Herbes_Plants.TabIndex = 11;
             this.tabPage_Herbes_Plants.Text = "Herbe/Plante";
             this.tabPage_Herbes_Plants.UseVisualStyleBackColor = true;
+            // 
+            // monthCalendar12
+            // 
+            this.monthCalendar12.Location = new System.Drawing.Point(206, 128);
+            this.monthCalendar12.Name = "monthCalendar12";
+            this.monthCalendar12.TabIndex = 25;
+            this.monthCalendar12.Visible = false;
+            this.monthCalendar12.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar12_DateSelected);
             // 
             // panel12
             // 
@@ -775,6 +791,14 @@
             this.tabPage_Féculent.Text = "Féculent";
             this.tabPage_Féculent.UseVisualStyleBackColor = true;
             // 
+            // monthCalendar11
+            // 
+            this.monthCalendar11.Location = new System.Drawing.Point(245, 140);
+            this.monthCalendar11.Name = "monthCalendar11";
+            this.monthCalendar11.TabIndex = 25;
+            this.monthCalendar11.Visible = false;
+            this.monthCalendar11.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar11_DateSelected);
+            // 
             // panel11
             // 
             this.panel11.Controls.Add(this.label95);
@@ -986,6 +1010,14 @@
             this.tabPage_Fat_Content.TabIndex = 9;
             this.tabPage_Fat_Content.Text = "Matière Grasse";
             this.tabPage_Fat_Content.UseVisualStyleBackColor = true;
+            // 
+            // monthCalendar10
+            // 
+            this.monthCalendar10.Location = new System.Drawing.Point(303, 135);
+            this.monthCalendar10.Name = "monthCalendar10";
+            this.monthCalendar10.TabIndex = 25;
+            this.monthCalendar10.Visible = false;
+            this.monthCalendar10.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar10_DateSelected);
             // 
             // panel10
             // 
@@ -1199,6 +1231,14 @@
             this.tabPage_Milk_product.Text = "Produit Laitier";
             this.tabPage_Milk_product.UseVisualStyleBackColor = true;
             // 
+            // monthCalendar9
+            // 
+            this.monthCalendar9.Location = new System.Drawing.Point(231, 134);
+            this.monthCalendar9.Name = "monthCalendar9";
+            this.monthCalendar9.TabIndex = 25;
+            this.monthCalendar9.Visible = false;
+            this.monthCalendar9.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar9_DateSelected);
+            // 
             // panel9
             // 
             this.panel9.Controls.Add(this.label93);
@@ -1410,6 +1450,14 @@
             this.tabPage_Fruit.TabIndex = 7;
             this.tabPage_Fruit.Text = "Fruits";
             this.tabPage_Fruit.UseVisualStyleBackColor = true;
+            // 
+            // monthCalendar8
+            // 
+            this.monthCalendar8.Location = new System.Drawing.Point(231, 134);
+            this.monthCalendar8.Name = "monthCalendar8";
+            this.monthCalendar8.TabIndex = 25;
+            this.monthCalendar8.Visible = false;
+            this.monthCalendar8.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar8_DateSelected);
             // 
             // panel8
             // 
@@ -1623,6 +1671,14 @@
             this.tabPage_Vegetables.Text = "Légumes";
             this.tabPage_Vegetables.UseVisualStyleBackColor = true;
             // 
+            // monthCalendar7
+            // 
+            this.monthCalendar7.Location = new System.Drawing.Point(249, 132);
+            this.monthCalendar7.Name = "monthCalendar7";
+            this.monthCalendar7.TabIndex = 25;
+            this.monthCalendar7.Visible = false;
+            this.monthCalendar7.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar7_DateSelected);
+            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.label91);
@@ -1834,6 +1890,14 @@
             this.tabPage_Poultry.TabIndex = 5;
             this.tabPage_Poultry.Text = "Volailles";
             this.tabPage_Poultry.UseVisualStyleBackColor = true;
+            // 
+            // monthCalendar6
+            // 
+            this.monthCalendar6.Location = new System.Drawing.Point(232, 137);
+            this.monthCalendar6.Name = "monthCalendar6";
+            this.monthCalendar6.TabIndex = 25;
+            this.monthCalendar6.Visible = false;
+            this.monthCalendar6.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar6_DateSelected);
             // 
             // panel6
             // 
@@ -2047,6 +2111,14 @@
             this.tabPage_Fish.Text = "Poisson";
             this.tabPage_Fish.UseVisualStyleBackColor = true;
             // 
+            // monthCalendar5
+            // 
+            this.monthCalendar5.Location = new System.Drawing.Point(208, 122);
+            this.monthCalendar5.Name = "monthCalendar5";
+            this.monthCalendar5.TabIndex = 25;
+            this.monthCalendar5.Visible = false;
+            this.monthCalendar5.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar5_DateSelected);
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.label89);
@@ -2258,6 +2330,14 @@
             this.tabPage_Crustacean.TabIndex = 3;
             this.tabPage_Crustacean.Text = "Crustacé";
             this.tabPage_Crustacean.UseVisualStyleBackColor = true;
+            // 
+            // monthCalendar4
+            // 
+            this.monthCalendar4.Location = new System.Drawing.Point(259, 127);
+            this.monthCalendar4.Name = "monthCalendar4";
+            this.monthCalendar4.TabIndex = 25;
+            this.monthCalendar4.Visible = false;
+            this.monthCalendar4.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar4_DateSelected);
             // 
             // panel4
             // 
@@ -2471,6 +2551,14 @@
             this.tabPage_Dessert.Text = "Dessert/Sucrerie";
             this.tabPage_Dessert.UseVisualStyleBackColor = true;
             // 
+            // monthCalendar3
+            // 
+            this.monthCalendar3.Location = new System.Drawing.Point(223, 128);
+            this.monthCalendar3.Name = "monthCalendar3";
+            this.monthCalendar3.TabIndex = 25;
+            this.monthCalendar3.Visible = false;
+            this.monthCalendar3.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar3_DateSelected);
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label85);
@@ -2683,6 +2771,14 @@
             this.tabPage_Drink.TabIndex = 1;
             this.tabPage_Drink.Text = "Boisson";
             this.tabPage_Drink.UseVisualStyleBackColor = true;
+            // 
+            // monthCalendar2
+            // 
+            this.monthCalendar2.Location = new System.Drawing.Point(214, 128);
+            this.monthCalendar2.Name = "monthCalendar2";
+            this.monthCalendar2.TabIndex = 24;
+            this.monthCalendar2.Visible = false;
+            this.monthCalendar2.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar2_DateSelected);
             // 
             // panel1
             // 
@@ -2899,7 +2995,8 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(212, 135);
+            this.monthCalendar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.monthCalendar1.Location = new System.Drawing.Point(332, 138);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 25;
             this.monthCalendar1.Visible = false;
@@ -2907,6 +3004,7 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.label87);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox2);
@@ -2945,6 +3043,7 @@
             // 
             // button_ajouter_viande
             // 
+            this.button_ajouter_viande.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_ajouter_viande.Location = new System.Drawing.Point(361, 274);
             this.button_ajouter_viande.Name = "button_ajouter_viande";
             this.button_ajouter_viande.Size = new System.Drawing.Size(187, 23);
@@ -3111,102 +3210,6 @@
             this.tabControl_Add_Remove.SelectedIndex = 0;
             this.tabControl_Add_Remove.Size = new System.Drawing.Size(576, 406);
             this.tabControl_Add_Remove.TabIndex = 1;
-            // 
-            // monthCalendar2
-            // 
-            this.monthCalendar2.Location = new System.Drawing.Point(214, 128);
-            this.monthCalendar2.Name = "monthCalendar2";
-            this.monthCalendar2.TabIndex = 24;
-            this.monthCalendar2.Visible = false;
-            this.monthCalendar2.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar2_DateSelected);
-            // 
-            // monthCalendar3
-            // 
-            this.monthCalendar3.Location = new System.Drawing.Point(223, 128);
-            this.monthCalendar3.Name = "monthCalendar3";
-            this.monthCalendar3.TabIndex = 25;
-            this.monthCalendar3.Visible = false;
-            this.monthCalendar3.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar3_DateSelected);
-            // 
-            // monthCalendar4
-            // 
-            this.monthCalendar4.Location = new System.Drawing.Point(259, 127);
-            this.monthCalendar4.Name = "monthCalendar4";
-            this.monthCalendar4.TabIndex = 25;
-            this.monthCalendar4.Visible = false;
-            this.monthCalendar4.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar4_DateSelected);
-            // 
-            // monthCalendar5
-            // 
-            this.monthCalendar5.Location = new System.Drawing.Point(208, 122);
-            this.monthCalendar5.Name = "monthCalendar5";
-            this.monthCalendar5.TabIndex = 25;
-            this.monthCalendar5.Visible = false;
-            this.monthCalendar5.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar5_DateSelected);
-            // 
-            // monthCalendar6
-            // 
-            this.monthCalendar6.Location = new System.Drawing.Point(232, 137);
-            this.monthCalendar6.Name = "monthCalendar6";
-            this.monthCalendar6.TabIndex = 25;
-            this.monthCalendar6.Visible = false;
-            this.monthCalendar6.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar6_DateSelected);
-            // 
-            // monthCalendar7
-            // 
-            this.monthCalendar7.Location = new System.Drawing.Point(249, 132);
-            this.monthCalendar7.Name = "monthCalendar7";
-            this.monthCalendar7.TabIndex = 25;
-            this.monthCalendar7.Visible = false;
-            this.monthCalendar7.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar7_DateSelected);
-            // 
-            // monthCalendar8
-            // 
-            this.monthCalendar8.Location = new System.Drawing.Point(231, 134);
-            this.monthCalendar8.Name = "monthCalendar8";
-            this.monthCalendar8.TabIndex = 25;
-            this.monthCalendar8.Visible = false;
-            this.monthCalendar8.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar8_DateSelected);
-            // 
-            // monthCalendar9
-            // 
-            this.monthCalendar9.Location = new System.Drawing.Point(231, 134);
-            this.monthCalendar9.Name = "monthCalendar9";
-            this.monthCalendar9.TabIndex = 25;
-            this.monthCalendar9.Visible = false;
-            this.monthCalendar9.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar9_DateSelected);
-            // 
-            // monthCalendar10
-            // 
-            this.monthCalendar10.Location = new System.Drawing.Point(303, 135);
-            this.monthCalendar10.Name = "monthCalendar10";
-            this.monthCalendar10.TabIndex = 25;
-            this.monthCalendar10.Visible = false;
-            this.monthCalendar10.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar10_DateSelected);
-            // 
-            // monthCalendar11
-            // 
-            this.monthCalendar11.Location = new System.Drawing.Point(245, 140);
-            this.monthCalendar11.Name = "monthCalendar11";
-            this.monthCalendar11.TabIndex = 25;
-            this.monthCalendar11.Visible = false;
-            this.monthCalendar11.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar11_DateSelected);
-            // 
-            // monthCalendar12
-            // 
-            this.monthCalendar12.Location = new System.Drawing.Point(206, 128);
-            this.monthCalendar12.Name = "monthCalendar12";
-            this.monthCalendar12.TabIndex = 25;
-            this.monthCalendar12.Visible = false;
-            this.monthCalendar12.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar12_DateSelected);
-            // 
-            // monthCalendar13
-            // 
-            this.monthCalendar13.Location = new System.Drawing.Point(258, 144);
-            this.monthCalendar13.Name = "monthCalendar13";
-            this.monthCalendar13.TabIndex = 25;
-            this.monthCalendar13.Visible = false;
-            this.monthCalendar13.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar13_DateSelected);
             // 
             // UserControl_Reserve_Add_Remove
             // 
