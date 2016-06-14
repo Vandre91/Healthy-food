@@ -564,7 +564,28 @@ namespace StockFood
             Ingredient pina6 = new Ingredient("herbe_plante", "baton de cannelle", 10, DateTime.Today);
             Ingredient pina7 = new Ingredient("fruit", "muscade rapé", 5, DateTime.Today);
             List<Ingredient> recipepina = new List<Ingredient> { pina1, pina2, pina3, pina4, pina5, pina6, pina7 };
+            _Allrecipe.AddHealthyrecipe("Pina colada", recipepina, " Ustensiles : 1 blender ou à défaut un mixer La veille verser les jus d'ananas et de banane ainsi que le rhum dans un grand saladier, rajouter la vanille, le bâton de cannelle et le râpé  un grand saladier, rajouter la vanille, le bâton de cannelle et le râpé quelques essais je la trouve meilleure ainsi. Mélanger le tout puis passer au blender avec le lait de coco, mettez ensuite le saladier au frigo jusqu'à environ 10 mn de l'apéro. Au moment de servir verser dans le blender à travers une passoire afin de récuperer la cannelle (pas forcément agréable sous la dent) puis faites mousser avant de remplir les verres sans avoir oublié le lit de glace pilée et enfin déguster. Alors bien sûr comme c'est frais le rhum ne se sent pas de suite mais il est bien présent, vous pouvez donc diminuer ou même enlever le rhum, ce serra toujours aussi bon et les enfants pourront en profiter.");
             #endregion
+            #region Cocktail la vie en rose
+            Ingredient vie1 = new Ingredient("fruit", "liqueur de framboise", 4, DateTime.Today);
+            Ingredient vie2 = new Ingredient("boisson", "Gin", 1, DateTime.Today);
+            Ingredient vie3 = new Ingredient("boisson", "vin mousseux", 10, DateTime.Today);
+            List<Ingredient> recipevie = new List<Ingredient> { vie1, vie2, vie3 };
+            _Allrecipe.AddHealthyrecipe("Cocktail la vie en rose", recipevie, " Verser dans une flûte à champagne la liqueur de framboise, ajouter  le gin puis compléter avec du mousseux. Remuer. Possibilité de décorer le verre avec du sucre et du sirop.");
+            #endregion
+
+            #region Mojito cubain
+            Ingredient mojito1 = new Ingredient("legume", "sucre", 5, DateTime.Today);
+            Ingredient mojito2 = new Ingredient("fruit", "citron vert", 10, DateTime.Today);
+            Ingredient mojito3 = new Ingredient("herbe_plante", "branche de menthe", 10, DateTime.Today);
+            Ingredient mojito4 = new Ingredient("boisson", "eau", 20, DateTime.Today);
+            Ingredient mojito5 = new Ingredient("boisson", "rhum", 20, DateTime.Today);
+            Ingredient mojito6 = new Ingredient("boisson", "glacons", 20, DateTime.Today);
+            List<Ingredient> recipemojito = new List<Ingredient> { mojito1, mojito2, mojito3, mojito4, mojito5, mojito6 };
+            _Allrecipe.AddHealthyrecipe("Mojito cubain", recipemojito, " Dans un verre de taille moyenne (contenance 40 cl environ), mettez 3 cuillères à café de sucre de canne. Ajoutez-y le jus d'1/2 citron vert. Coupez en 3 ou 4 votre branche de menthe et mettez-la dans le verre (le fait de la couper permet à la saveur de la menthe de mieux  se diffuser). Ajoutez un peu d'eau gazeuse (environ 3 cl) puis avec une cuillère à  café, remuez bien le tout et écrasez la menthe (insistez sur les branches plus que sur les feuilles, sinon il y aura pleins de petits bouts de menthe assez désagréables au moment de déguster votre cocktail!). Ajoutez 5 glaçons environ. Ensuite versez 6 cl de rhum (en versant à débit moyen). Pour la dose plutôt chargée, comptez jusqu'à 5; pour la dose légère jusqu'à 4. Enfin, complétez avec de l'eau gazeuse. ");
+            #endregion
+
+
         }
     }
 }
