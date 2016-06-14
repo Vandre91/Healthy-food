@@ -522,16 +522,49 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe("Amour de saumon en papillotte", recipesaumonam, "Matériel : - 4 belles feuilles de papier aluminium  beaucoup d'amour. Laver, essorer et ciseler l'aneth. Peler et émincer la gousse d'ail finement. Réserver. Couper les tomates cerises en deux. Emincer les champignons après les avoir nettoyés. Déposer au centre de chaque feuille de papier aluminium un pavé de saumon, ajouter les tomates et les champignons tout autour. Parsemer les pavés de saumon d'aneth et d'ail et les arroser d'un filet de jus de citron. Poivrer, saler et terminer par un filet d'huile d'olive. Fermer les papillotes et les mettre au four pendant 25 à 30 minutes à 180°C (thermostat 6).");
             #endregion
 
+            #region Crème d'avocat
+            Ingredient crème1 = new Ingredient("fruit", "avocats", 3, DateTime.Today);
+            Ingredient crème2 = new Ingredient("fruit", "citron", 1, DateTime.Today);
+            Ingredient crème3 = new Ingredient("boisson", "lait", 2, DateTime.Today);
+            Ingredient crème4 = new Ingredient("produit_laitier", "crème fraiche", 5, DateTime.Today);
+            Ingredient crème5 = new Ingredient("matiere_grasse", "huile d'olive", 5, DateTime.Today);
+            List<Ingredient> recipecreme = new List<Ingredient> { crème1, crème2, crème3, crème4, crème5 };
+            _Allrecipe.AddHealthyrecipe("Crème d'avocat", recipecreme, "Dénoyautez les avocats et enlevez la peau et mettez les dans un mixer avec le jus de citron. Mélangez. Ajoutez un peu de lait , crème et huile. C'est prêt ! Mettre au frais avant de se servir");
+            #endregion
 
+            #region Cornets de jambon
+            Ingredient cornet1 = new Ingredient("viande", "tranches de jambon", 10, DateTime.Today);
+            Ingredient cornet2 = new Ingredient("legume", "macédoine de légumes", 10, DateTime.Today);
+            Ingredient cornet3 = new Ingredient("herbe_plante", "pomme de terre", 10, DateTime.Today);
+            Ingredient cornet4 = new Ingredient("fruit", "pomme grany smith", 5, DateTime.Today);
+            Ingredient cornet5 = new Ingredient("produit_laitier", "mayonnaise", 5, DateTime.Today);
+            Ingredient cornet6 = new Ingredient("legume", "feuilles de laitues", 10, DateTime.Today);
+            Ingredient cornet7 = new Ingredient("legume", "tomates", 10, DateTime.Today);
+            Ingredient cornet8 = new Ingredient("legume", "sel et poivre", 10, DateTime.Today);
+            List<Ingredient> recipecornet = new List<Ingredient> { cornet1, cornet2, cornet3, cornet4, cornet5, cornet6, cornet7, cornet8 };
+            _Allrecipe.AddHealthyrecipe("Cornets de jambon", recipecornet, "Peler les pommes de terre et les faire cuire en petits dés. Laisser refroidir. Dans un saladier, mélanger la macédoine de légumes, la pomme Grany Smith coupée en cubes et la mayonnaise. Saler et poivrer. Lorsque les pommes de terre sont refroidies, les incorporer au mélange macédoine/pomme Granny. Garnir votre plat de présentation de feuilles de laitue. Confectionner un cornet avec une tranche de jambon et le remplir de l'appareil macédoine/Granny/pommes de terre. Le déposer sur votre plat de service. Faire de même pour les trois tranches restantes. Décorer de quelques rondelles de tomates.");
+            #endregion
 
-
-
-
-
-
-
-
-
+            #region Cocktail tropical délicieux
+            Ingredient cocktail1 = new Ingredient("fruit", "jus d'orange", 25, DateTime.Today);
+            Ingredient cocktail2 = new Ingredient("fruit", "jus de pamplemousse", 25, DateTime.Today);
+            Ingredient cocktail3 = new Ingredient("fruit", "jus d'ananas", 25, DateTime.Today);
+            Ingredient cocktail4 = new Ingredient("fruit", "citron", 100, DateTime.Today);
+            Ingredient cocktail5 = new Ingredient("boisson", "malibu", 20, DateTime.Today);
+            Ingredient cocktail6 = new Ingredient("boisson", "sirop de grenadine", 10, DateTime.Today);
+            List<Ingredient> recipecocktail = new List<Ingredient> { cocktail1, cocktail2, cocktail3, cocktail4, cocktail5, cocktail6 };
+            _Allrecipe.AddHealthyrecipe("Cocktail tropical délicieux", recipecocktail, "Pour 1 verre : verser 5 cl de malibu, ajouter ensuite 1/3 de pamplemousse, 1/3 d'orange et 1/3 d'ananas ; ajouter ensuite un zeste de jus de citron et 1 trait de grenadine pour la déco.");
+            #endregion
+            #region Pina colada
+            Ingredient pina1 = new Ingredient("fruit", "lait de coco", 40, DateTime.Today);
+            Ingredient pina2 = new Ingredient("fruit", "jus d'ananas", 100, DateTime.Today);
+            Ingredient pina3 = new Ingredient("fruit", "jus de banane", 50, DateTime.Today);
+            Ingredient pina4 = new Ingredient("boisson", "rhum blanc", 25, DateTime.Today);
+            Ingredient pina5 = new Ingredient("herbe_plante", "extrait de vanille", 5, DateTime.Today);
+            Ingredient pina6 = new Ingredient("herbe_plante", "baton de cannelle", 10, DateTime.Today);
+            Ingredient pina7 = new Ingredient("fruit", "muscade rapé", 5, DateTime.Today);
+            List<Ingredient> recipepina = new List<Ingredient> { pina1, pina2, pina3, pina4, pina5, pina6, pina7 };
+            #endregion
         }
     }
 }
