@@ -469,12 +469,102 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe("Pommes de terre boulangère", recipepomme, "Peler les pommes de terre et les couper en rondelles assez fines et régulières. Peler les oignons et les émincer assez finement. Beurrer un moule à bord assez haut et disposer une couche de pommes de terre. Disposer par-dessus les oignons et finir par le reste de pommes de terre. Ajouter le bouquet garni ou, à défaut, parsemer simplement de thym ou d'herbes de Provence. Saler et poivrer. Ajouter le cube de bouillon dissout dans assez d'eau pour couvrir presque toutes les pommes de terre. Parsemer de noisettes de beurre et mettre au four environ 40 min à 220°C. ");
             #endregion
 
+            #region Crumble de saumon citronné
 
+            Ingredient crumble1 = new Ingredient("herbe_plante", "moutarde savora amora", 20, DateTime.Today);
+            Ingredient crumble2 = new Ingredient("poisson", "saumon", 150, DateTime.Today);
+            Ingredient crumble3 = new Ingredient("herbe_plante", "oignons", 2, DateTime.Today);
+            Ingredient crumble4 = new Ingredient("fruit", "citron vert", 1, DateTime.Today);
+            Ingredient crumble5 = new Ingredient("fruit", "orange", 1, DateTime.Today);
+            Ingredient crumble6 = new Ingredient("matiere_grasse", "huile d'olive", 20, DateTime.Today);
+            Ingredient crumble7 = new Ingredient("legume", "sel et poivre", 10, DateTime.Today);
+            Ingredient crumble8 = new Ingredient("herbe_plante", "moutarde Savora Amora", 40, DateTime.Today);
+            Ingredient crumble9 = new Ingredient("herbe_plante", "farine", 40, DateTime.Today);
+            Ingredient crumble10 = new Ingredient("produit_laitier", "beurre", 40, DateTime.Today);
+            Ingredient crumble11 = new Ingredient("fruit", "noisettes", 40, DateTime.Today);
+            Ingredient crumble12 = new Ingredient("legume", "fleur de sel", 5, DateTime.Today);
 
+            List<Ingredient> recipecrumble = new List<Ingredient> { crumble1, crumble2, crumble3, crumble4, crumble5, crumble6, crumble7, crumble8, crumble9, crumble10, crumble11, crumble12 };
+            _Allrecipe.AddHealthyrecipe("Crumble de saumon citronné", recipecrumble, "Préchauffer le four à 180°C (thermostat 6).Pour le crumble : Mélanger le beurre, la farine, la poudre de noisettes et la fleur de sel puis la moutarde Savora Amora. Sur une plaque de cuisson, déposer du papier sulfurisé puis le crumble et cuire 15 à 20 minutes.Pour le poisson : Ciseler les oignons et la ciboulette. Récupérer le jus du citron vert et de l'orange et mélanger en ajoutant la Savora Amora et l'huile d'olive. Couper le poisson en petits morceaux puis mélanger dans un bol le saumon et la sauce. Assaisonner. Servir dans une verrine avec une couche de saumon et une couche de crumble.");
 
+            #endregion
 
+            #region  Poke  bowl à l'hawaienne
 
+            Ingredient poke1 = new Ingredient("poisson", "saumons frais cru", 1000, DateTime.Today);
+            Ingredient poke2 = new Ingredient("fruit", "avocats", 3, DateTime.Today);
+            Ingredient poke3 = new Ingredient("fruit", "mangue", 1, DateTime.Today);
+            Ingredient poke4 = new Ingredient("herbe_plante", "oignons", 3, DateTime.Today);
+            Ingredient poke5 = new Ingredient("feculent", "riz", 250, DateTime.Today);
+            Ingredient poke6 = new Ingredient("feculent", "sesame", 100, DateTime.Today);
+            Ingredient poke7 = new Ingredient("herbe_plante", "coriandre", 1, DateTime.Today);
+            Ingredient poke8 = new Ingredient("herbe_plante", "gigembre", 10, DateTime.Today);
+            Ingredient poke9 = new Ingredient("matiere_grasse", "huile sesame", 5, DateTime.Today);
+            Ingredient poke10 = new Ingredient("matiere_grasse", "sauce teriyaki", 10, DateTime.Today);
+            Ingredient poke11 = new Ingredient("boisson", "vinaigre de riz", 10, DateTime.Today);
+            Ingredient poke12 = new Ingredient("fruit", "piment de cayenne", 5, DateTime.Today);
+            List<Ingredient> recipepoke = new List<Ingredient> { poke1, poke2, poke3, poke4, poke5, poke6, poke7, poke8, poke9, poke10, poke11, poke12 };
+            _Allrecipe.AddHealthyrecipe("Poke  bowl à l'hawaienne", recipepoke, "Préparer la marinade avec l'huile de sésame, la sauce teriyaki, le vinaigre de riz, le gingembre frais à râper, la coriandre (garder quelques feuilles), quelques cuillères à café de graines de sésame, le piment de Cayenne. Verser la marinade dans le saladier contenant le saumon et bien mélanger. Couper les avocats et la mangue en petits cubes. Emincer finement les petits  oignons Les mettre dans le saladier contenant le saumon et bien mélanger le Tout. Placer  au frais. Faire bouillir de l'eau puis faire cuire le riz pour 4 personnes. Égoutter le riz et le servir dans 4 petits bols, saupoudrer de graines de sésame et décorer avec quelques feuilles de coriandre. Sortir la préparation saumon-avocat-mangue-marinade du frigo, bien mélanger à nouveau et servir à table.  ");
 
+            #endregion
+
+            #region  Amour de saumon en papillotte
+
+            Ingredient amour1 = new Ingredient("poisson", "saumons frais", 40, DateTime.Today);
+            Ingredient amour2 = new Ingredient("legume", "tomates cerises", 20, DateTime.Today);
+            Ingredient amour3 = new Ingredient("herbe_plante", "champignons frais", 20, DateTime.Today);
+            Ingredient amour4 = new Ingredient("herbe_plante", "gousse d'ail", 1, DateTime.Today);
+            Ingredient amour5 = new Ingredient("herbe_plante", "brins d'aneth", 4, DateTime.Today);
+            Ingredient amour6 = new Ingredient("matiere_grasse", "huile d'olive", 5, DateTime.Today);
+            Ingredient amour7 = new Ingredient("fruit", "citron jaune", 1, DateTime.Today);
+            Ingredient amour8 = new Ingredient("legume", "sel et poivre", 10, DateTime.Today);
+            List<Ingredient> recipesaumonam = new List<Ingredient> { amour1, amour2, amour3, amour4, amour5, amour6, amour7, amour8 };
+            _Allrecipe.AddHealthyrecipe("Amour de saumon en papillotte", recipesaumonam, "Matériel : - 4 belles feuilles de papier aluminium  beaucoup d'amour. Laver, essorer et ciseler l'aneth. Peler et émincer la gousse d'ail finement. Réserver. Couper les tomates cerises en deux. Emincer les champignons après les avoir nettoyés. Déposer au centre de chaque feuille de papier aluminium un pavé de saumon, ajouter les tomates et les champignons tout autour. Parsemer les pavés de saumon d'aneth et d'ail et les arroser d'un filet de jus de citron. Poivrer, saler et terminer par un filet d'huile d'olive. Fermer les papillotes et les mettre au four pendant 25 à 30 minutes à 180°C (thermostat 6).");
+            #endregion
+
+            #region Crème d'avocat
+            Ingredient crème1 = new Ingredient("fruit", "avocats", 3, DateTime.Today);
+            Ingredient crème2 = new Ingredient("fruit", "citron", 1, DateTime.Today);
+            Ingredient crème3 = new Ingredient("boisson", "lait", 2, DateTime.Today);
+            Ingredient crème4 = new Ingredient("produit_laitier", "crème fraiche", 5, DateTime.Today);
+            Ingredient crème5 = new Ingredient("matiere_grasse", "huile d'olive", 5, DateTime.Today);
+            List<Ingredient> recipecreme = new List<Ingredient> { crème1, crème2, crème3, crème4, crème5 };
+            _Allrecipe.AddHealthyrecipe("Crème d'avocat", recipecreme, "Dénoyautez les avocats et enlevez la peau et mettez les dans un mixer avec le jus de citron. Mélangez. Ajoutez un peu de lait , crème et huile. C'est prêt ! Mettre au frais avant de se servir");
+            #endregion
+
+            #region Cornets de jambon
+            Ingredient cornet1 = new Ingredient("viande", "tranches de jambon", 10, DateTime.Today);
+            Ingredient cornet2 = new Ingredient("legume", "macédoine de légumes", 10, DateTime.Today);
+            Ingredient cornet3 = new Ingredient("herbe_plante", "pomme de terre", 10, DateTime.Today);
+            Ingredient cornet4 = new Ingredient("fruit", "pomme grany smith", 5, DateTime.Today);
+            Ingredient cornet5 = new Ingredient("produit_laitier", "mayonnaise", 5, DateTime.Today);
+            Ingredient cornet6 = new Ingredient("legume", "feuilles de laitues", 10, DateTime.Today);
+            Ingredient cornet7 = new Ingredient("legume", "tomates", 10, DateTime.Today);
+            Ingredient cornet8 = new Ingredient("legume", "sel et poivre", 10, DateTime.Today);
+            List<Ingredient> recipecornet = new List<Ingredient> { cornet1, cornet2, cornet3, cornet4, cornet5, cornet6, cornet7, cornet8 };
+            _Allrecipe.AddHealthyrecipe("Cornets de jambon", recipecornet, "Peler les pommes de terre et les faire cuire en petits dés. Laisser refroidir. Dans un saladier, mélanger la macédoine de légumes, la pomme Grany Smith coupée en cubes et la mayonnaise. Saler et poivrer. Lorsque les pommes de terre sont refroidies, les incorporer au mélange macédoine/pomme Granny. Garnir votre plat de présentation de feuilles de laitue. Confectionner un cornet avec une tranche de jambon et le remplir de l'appareil macédoine/Granny/pommes de terre. Le déposer sur votre plat de service. Faire de même pour les trois tranches restantes. Décorer de quelques rondelles de tomates.");
+            #endregion
+
+            #region Cocktail tropical délicieux
+            Ingredient cocktail1 = new Ingredient("fruit", "jus d'orange", 25, DateTime.Today);
+            Ingredient cocktail2 = new Ingredient("fruit", "jus de pamplemousse", 25, DateTime.Today);
+            Ingredient cocktail3 = new Ingredient("fruit", "jus d'ananas", 25, DateTime.Today);
+            Ingredient cocktail4 = new Ingredient("fruit", "citron", 100, DateTime.Today);
+            Ingredient cocktail5 = new Ingredient("boisson", "malibu", 20, DateTime.Today);
+            Ingredient cocktail6 = new Ingredient("boisson", "sirop de grenadine", 10, DateTime.Today);
+            List<Ingredient> recipecocktail = new List<Ingredient> { cocktail1, cocktail2, cocktail3, cocktail4, cocktail5, cocktail6 };
+            _Allrecipe.AddHealthyrecipe("Cocktail tropical délicieux", recipecocktail, "Pour 1 verre : verser 5 cl de malibu, ajouter ensuite 1/3 de pamplemousse, 1/3 d'orange et 1/3 d'ananas ; ajouter ensuite un zeste de jus de citron et 1 trait de grenadine pour la déco.");
+            #endregion
+            #region Pina colada
+            Ingredient pina1 = new Ingredient("fruit", "lait de coco", 40, DateTime.Today);
+            Ingredient pina2 = new Ingredient("fruit", "jus d'ananas", 100, DateTime.Today);
+            Ingredient pina3 = new Ingredient("fruit", "jus de banane", 50, DateTime.Today);
+            Ingredient pina4 = new Ingredient("boisson", "rhum blanc", 25, DateTime.Today);
+            Ingredient pina5 = new Ingredient("herbe_plante", "extrait de vanille", 5, DateTime.Today);
+            Ingredient pina6 = new Ingredient("herbe_plante", "baton de cannelle", 10, DateTime.Today);
+            Ingredient pina7 = new Ingredient("fruit", "muscade rapé", 5, DateTime.Today);
+            List<Ingredient> recipepina = new List<Ingredient> { pina1, pina2, pina3, pina4, pina5, pina6, pina7 };
+            #endregion
         }
     }
 }
