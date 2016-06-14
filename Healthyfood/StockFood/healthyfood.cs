@@ -584,8 +584,29 @@ namespace StockFood
             List<Ingredient> recipemojito = new List<Ingredient> { mojito1, mojito2, mojito3, mojito4, mojito5, mojito6 };
             _Allrecipe.AddHealthyrecipe("Mojito cubain", recipemojito, " Dans un verre de taille moyenne (contenance 40 cl environ), mettez 3 cuillères à café de sucre de canne. Ajoutez-y le jus d'1/2 citron vert. Coupez en 3 ou 4 votre branche de menthe et mettez-la dans le verre (le fait de la couper permet à la saveur de la menthe de mieux  se diffuser). Ajoutez un peu d'eau gazeuse (environ 3 cl) puis avec une cuillère à  café, remuez bien le tout et écrasez la menthe (insistez sur les branches plus que sur les feuilles, sinon il y aura pleins de petits bouts de menthe assez désagréables au moment de déguster votre cocktail!). Ajoutez 5 glaçons environ. Ensuite versez 6 cl de rhum (en versant à débit moyen). Pour la dose plutôt chargée, comptez jusqu'à 5; pour la dose légère jusqu'à 4. Enfin, complétez avec de l'eau gazeuse. ");
             #endregion
+            #region Escalope en papillote
+            Ingredient escalope1 = new Ingredient("viande", "escalopes de dinde", 50, DateTime.Today);
+            Ingredient escalope2 = new Ingredient("produit_laitier", "crème fraîche épaisse", 10, DateTime.Today);
+            Ingredient escalope3 = new Ingredient("herbe_plante", "cuillère café de moutarde", 5, DateTime.Today);
+            Ingredient escalope4 = new Ingredient("legume", "pulpe de tomate", 10, DateTime.Today);
+            Ingredient escalope5 = new Ingredient("herbe_plante", "paprika", 5, DateTime.Today);
+            List<Ingredient> recipeescalopepa = new List<Ingredient> { escalope1, escalope2, escalope3, escalope4, escalope5 };
+            _Allrecipe.AddHealthyrecipe("Escalope en papillote", recipeescalopepa, " 1 / mélanger la crème fraîche, la moutarde et le paprika. 2 / disposer les escalopes sur un carré de papier alu et les recouvrir  du mélange. 3 / entourer les escalopes recouvertes de crème par la pulpe de tomate.  4 / saupoudrer d'herbes de Provence. 5 / fermer les papillotes et les enfourner à 170°C pendant 30 min environ");
+            #endregion
+            #region Poulet basquaise
+            Ingredient basquaise1 = new Ingredient("viande", "poulet", 50, DateTime.Today);
+            Ingredient basquaise2 = new Ingredient("legume", "tomates", 1000, DateTime.Today);
+            Ingredient basquaise3 = new Ingredient("legume", "poivrons", 700, DateTime.Today);
+            Ingredient basquaise4 = new Ingredient("herbe_plante", "oignons", 20, DateTime.Today);
+            Ingredient basquaise5 = new Ingredient("herbe_plante", "gousses d'ail", 10, DateTime.Today);
+            Ingredient basquaise6 = new Ingredient("boisson", "vin blanc", 20, DateTime.Today);
+            Ingredient basquaise7 = new Ingredient("herbe_plante", "bouquet garni", 20, DateTime.Today);
+            Ingredient basquaise8 = new Ingredient("matiere_grasse", "huile d'olive", 15, DateTime.Today);
+            Ingredient basquaise9 = new Ingredient("legume", "sel et poivre", 30, DateTime.Today);
+            List<Ingredient> recipebasquaise = new List<Ingredient> { basquaise1, basquaise2, basquaise3, basquaise4, basquaise5, basquaise6, basquaise7, basquaise8, basquaise9 };
+            _Allrecipe.AddHealthyrecipe("Poulet basquaise", recipebasquaise, " Faire chauffer 4 cuillères à soupe d'huile dans une cocotte. Y faire  dorer les oignons, l'ail pressé, les poivrons taillés en lanières. Laisser cuire 5 min. Laver, éplucher et couper les tomates en morceaux, les ajouter à la cocotte, sel, poivre. Couvrir et laisser mijoter 20 min. Dans une sauteuse, faire dorer dans l'huile d'olive les morceaux de  poulet salés et poivrés. les ajouter aux légumes, couvrir, ajouter le bouquet garni et le vin blanc et c'est parti pour 35 min. ");
 
-
+            #endregion
         }
     }
 }
