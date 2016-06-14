@@ -359,8 +359,12 @@
             // 
             // monthCalendar13
             // 
+<<<<<<< HEAD
             this.monthCalendar13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar13.Location = new System.Drawing.Point(335, 140);
+=======
+            this.monthCalendar13.Location = new System.Drawing.Point(258, 144);
+>>>>>>> Vic
             this.monthCalendar13.Name = "monthCalendar13";
             this.monthCalendar13.TabIndex = 25;
             this.monthCalendar13.Visible = false;
@@ -576,8 +580,12 @@
             // 
             // monthCalendar12
             // 
+<<<<<<< HEAD
             this.monthCalendar12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar12.Location = new System.Drawing.Point(335, 137);
+=======
+            this.monthCalendar12.Location = new System.Drawing.Point(206, 128);
+>>>>>>> Vic
             this.monthCalendar12.Name = "monthCalendar12";
             this.monthCalendar12.TabIndex = 25;
             this.monthCalendar12.Visible = false;
@@ -799,8 +807,12 @@
             // 
             // monthCalendar11
             // 
+<<<<<<< HEAD
             this.monthCalendar11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar11.Location = new System.Drawing.Point(335, 137);
+=======
+            this.monthCalendar11.Location = new System.Drawing.Point(245, 140);
+>>>>>>> Vic
             this.monthCalendar11.Name = "monthCalendar11";
             this.monthCalendar11.TabIndex = 25;
             this.monthCalendar11.Visible = false;
@@ -1021,8 +1033,12 @@
             // 
             // monthCalendar10
             // 
+<<<<<<< HEAD
             this.monthCalendar10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar10.Location = new System.Drawing.Point(-24, -9);
+=======
+            this.monthCalendar10.Location = new System.Drawing.Point(303, 135);
+>>>>>>> Vic
             this.monthCalendar10.Name = "monthCalendar10";
             this.monthCalendar10.TabIndex = 25;
             this.monthCalendar10.Visible = false;
@@ -1244,8 +1260,12 @@
             // 
             // monthCalendar9
             // 
+<<<<<<< HEAD
             this.monthCalendar9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar9.Location = new System.Drawing.Point(-24, -12);
+=======
+            this.monthCalendar9.Location = new System.Drawing.Point(231, 134);
+>>>>>>> Vic
             this.monthCalendar9.Name = "monthCalendar9";
             this.monthCalendar9.TabIndex = 25;
             this.monthCalendar9.Visible = false;
@@ -1468,8 +1488,12 @@
             // 
             // monthCalendar8
             // 
+<<<<<<< HEAD
             this.monthCalendar8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar8.Location = new System.Drawing.Point(335, 137);
+=======
+            this.monthCalendar8.Location = new System.Drawing.Point(231, 134);
+>>>>>>> Vic
             this.monthCalendar8.Name = "monthCalendar8";
             this.monthCalendar8.TabIndex = 25;
             this.monthCalendar8.Visible = false;
@@ -1691,8 +1715,12 @@
             // 
             // monthCalendar7
             // 
+<<<<<<< HEAD
             this.monthCalendar7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar7.Location = new System.Drawing.Point(335, 137);
+=======
+            this.monthCalendar7.Location = new System.Drawing.Point(249, 132);
+>>>>>>> Vic
             this.monthCalendar7.Name = "monthCalendar7";
             this.monthCalendar7.TabIndex = 25;
             this.monthCalendar7.Visible = false;
@@ -1914,8 +1942,12 @@
             // 
             // monthCalendar6
             // 
+<<<<<<< HEAD
             this.monthCalendar6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar6.Location = new System.Drawing.Point(335, 134);
+=======
+            this.monthCalendar6.Location = new System.Drawing.Point(232, 137);
+>>>>>>> Vic
             this.monthCalendar6.Name = "monthCalendar6";
             this.monthCalendar6.TabIndex = 25;
             this.monthCalendar6.Visible = false;
@@ -2137,8 +2169,12 @@
             // 
             // monthCalendar5
             // 
+<<<<<<< HEAD
             this.monthCalendar5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar5.Location = new System.Drawing.Point(335, 137);
+=======
+            this.monthCalendar5.Location = new System.Drawing.Point(208, 122);
+>>>>>>> Vic
             this.monthCalendar5.Name = "monthCalendar5";
             this.monthCalendar5.TabIndex = 25;
             this.monthCalendar5.Visible = false;
@@ -2360,8 +2396,12 @@
             // 
             // monthCalendar4
             // 
+<<<<<<< HEAD
             this.monthCalendar4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar4.Location = new System.Drawing.Point(335, 137);
+=======
+            this.monthCalendar4.Location = new System.Drawing.Point(259, 127);
+>>>>>>> Vic
             this.monthCalendar4.Name = "monthCalendar4";
             this.monthCalendar4.TabIndex = 25;
             this.monthCalendar4.Visible = false;
@@ -2583,8 +2623,12 @@
             // 
             // monthCalendar3
             // 
+<<<<<<< HEAD
             this.monthCalendar3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar3.Location = new System.Drawing.Point(335, 137);
+=======
+            this.monthCalendar3.Location = new System.Drawing.Point(223, 128);
+>>>>>>> Vic
             this.monthCalendar3.Name = "monthCalendar3";
             this.monthCalendar3.TabIndex = 25;
             this.monthCalendar3.Visible = false;
@@ -2807,8 +2851,12 @@
             // 
             // monthCalendar2
             // 
+<<<<<<< HEAD
             this.monthCalendar2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar2.Location = new System.Drawing.Point(335, 137);
+=======
+            this.monthCalendar2.Location = new System.Drawing.Point(214, 128);
+>>>>>>> Vic
             this.monthCalendar2.Name = "monthCalendar2";
             this.monthCalendar2.TabIndex = 24;
             this.monthCalendar2.Visible = false;
