@@ -51,5 +51,7 @@ namespace StockFood
             get { return _balance; }
             set { _balance = value; }
         }
+
+        
     }
 }
