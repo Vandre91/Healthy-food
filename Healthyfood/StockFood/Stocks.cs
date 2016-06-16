@@ -89,28 +89,21 @@ namespace StockFood
             public ICollection<Ingredient> IStock
             {
             get { return _stock.Values; }
-            }  
-        public void CheckExpirationDate(string name, DateTime expiration_date)
+            }
+        public void CheckExpirationDate(Ingredient ing)
         {
+           
+            DateTime d = new DateTime(2016, 8, 30);
+
+            foreach (Ingredient ingre in _stock)
+            {
+                if (ing == ingre.Ingredient) throw new InvalidOperationException();
+            }
             
 
-            if (string.IsNullOrWhiteSpace(name))
-            {
-                throw new NullReferenceException();
-            }
 
-            if(_stock.ContainsKey(name))
-                {
 
-                Dictionary<string, Ingredient> MyDic = new Dictionary<string, Ingredient>();
-                foreach (string nom in MyDic)
-                {
-                    Console.WriteLine(nom);
-                }
-                Console.WriteLine();
-                }
-            }
-        }                 
+        }
     }
- }
+   
 
