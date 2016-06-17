@@ -124,6 +124,12 @@
     <Compile Include="UserControl_Show_Reserve.Designer.cs">
       <DependentUpon>UserControl_Show_Reserve.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_Show_Reserve2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Show_Reserve2.Designer.cs">
+      <DependentUpon>UserControl_Show_Reserve2.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_World_Recipe.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Show_Reserve.resx">
       <DependentUpon>UserControl_Show_Reserve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Show_Reserve2.resx">
+      <DependentUpon>UserControl_Show_Reserve2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_World_Recipe.resx">
       <DependentUpon>UserControl_World_Recipe.cs</DependentUpon>
