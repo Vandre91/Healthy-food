@@ -24,8 +24,10 @@ namespace Healthyfood
 
         private void button_Show_Click(object sender, EventArgs e)
         {
-            userControl_Show1.Visible = true;
-            userControl_Show1.Focus();
+            userControl_Show_Reserve21.Visible = true;
+            userControl_Show_Reserve21.Focus();
+            //userControl_Show1.Visible = true;
+            //userControl_Show1.Focus();
         }
 
         private void button_Add_Remove_Click(object sender, EventArgs e)
