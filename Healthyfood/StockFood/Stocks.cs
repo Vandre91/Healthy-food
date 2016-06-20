@@ -13,7 +13,7 @@ namespace StockFood
 
         public Stocks ()
         {
-            _stock = new Dictionary<string, Ingredient>();
+            _stock = new Dictionary<string, Ingredient> ();
         }
 
        public static string naming (Ingredient ingred)
@@ -89,7 +89,9 @@ namespace StockFood
             public ICollection<Ingredient> IStock
             {
             get { return _stock.Values; }
-            }                   
+            }   
+        
+         
     }
  }
 
