@@ -90,7 +90,7 @@ namespace StockFood
         public ICollection<Ingredient> IStock
         {
             get { return _stock.Values; }
-<<<<<<< HEAD
+
         }
         public void CheckExpirationDate(Stocks ing)
         {
@@ -108,12 +108,10 @@ namespace StockFood
             }
 
         }
-=======
+
             }   
         
-         
->>>>>>> KABOBO
-    }
+
 
      
     
