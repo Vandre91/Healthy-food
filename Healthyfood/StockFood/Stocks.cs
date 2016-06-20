@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace StockFood
 {
@@ -94,14 +95,15 @@ namespace StockFood
         {
 
             Dictionary<string, Ingredient> myDic = new Dictionary<string, Ingredient>();
-            DateTime d = new DateTime(2016, 8, 30);
+            DateTime d = new DateTime();
 
             foreach (KeyValuePair<string, Ingredient> ingre in _stock)
-            {
+           
                 if (d >= DateTime.Today)
                 {
-                    Console.WriteLine("The product is out-of-date because the expiry date is reached!");
+                     MessageBox.Show ("The product is out-of-date because the expiry date is reached!");
                 }
+                else { }
             }
 
         }
