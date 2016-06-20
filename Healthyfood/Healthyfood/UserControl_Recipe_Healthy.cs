@@ -70,7 +70,7 @@ namespace Healthyfood
             int count = 0;
             foreach( Ingredient ingred in rec.IRecipe)
             {
-                foreach (Ingredient ing in Root.Healthy.Stocks._stock.Values)
+                foreach (Ingredient ing in Root.Healthy.Stocks.IStock)
                 {
                     if (ingred.Name == ing.Name && ingred.Balance < ing.Balance)
                     { count++;
@@ -84,7 +84,7 @@ namespace Healthyfood
             {
                 foreach(Ingredient ingred in rec.IRecipe)
                 {
-                    foreach (Ingredient ing in Root.Healthy.Stocks._stock.Values)
+                    foreach (Ingredient ing in Root.Healthy.Stocks.IStock)
                     {
                         if (ingred.Name == ing.Name && ingred.Balance < ing.Balance)
                         {
