@@ -102,6 +102,8 @@ namespace Healthyfood
                 int Age = Int32.Parse(textBox_Age.Text);
                 int Weight = Int32.Parse(textBox_Weight.Text);
                 int Height = Int32.Parse(textBox_Height.Text);
+                if (checkBox2.Checked) check = true;
+                else check = false;
 
                 Root.Healthy.Utilisateur.CreateUser(textBox_Name.Text, textBox_Fisrtname.Text, Age, Weight, Height, check, false);
 
@@ -115,5 +117,7 @@ namespace Healthyfood
             
 
         }
+
+
     }
 }

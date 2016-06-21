@@ -30,161 +30,294 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Profil));
-            this.button_Add = new System.Windows.Forms.Button();
-            this.button_Modify = new System.Windows.Forms.Button();
-            this.button_Delete = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader_LastName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader_Firstname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader_Age = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button_back = new System.Windows.Forms.Button();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer_refesh = new System.Windows.Forms.Timer(this.components);
-            this.label7 = new System.Windows.Forms.Label();
-            this.userControl_Modify_Profil1 = new Healthyfood.UserControl_Modify_Profil();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.userControl_Show_Profil1 = new Healthyfood.UserControl_Show_Profil();
+            this.userControl_Modify_Profil1 = new Healthyfood.UserControl_Modify_Profil();
+            this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button_Add
+            // panel1
             // 
-            this.button_Add.Location = new System.Drawing.Point(85, 349);
-            this.button_Add.Name = "button_Add";
-            this.button_Add.Size = new System.Drawing.Size(75, 23);
-            this.button_Add.TabIndex = 0;
-            this.button_Add.Text = "Ajouter";
-            this.button_Add.UseVisualStyleBackColor = true;
-            this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
+            this.panel1.Controls.Add(this.userControl_Modify_Profil1);
+            this.panel1.Controls.Add(this.userControl_Show_Profil1);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.listView2);
+            this.panel1.Controls.Add(this.listView1);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1015, 780);
+            this.panel1.TabIndex = 0;
             // 
-            // button_Modify
+            // textBox1
             // 
-            this.button_Modify.Location = new System.Drawing.Point(206, 349);
-            this.button_Modify.Name = "button_Modify";
-            this.button_Modify.Size = new System.Drawing.Size(75, 23);
-            this.button_Modify.TabIndex = 1;
-            this.button_Modify.Text = "Modifier";
-            this.button_Modify.UseVisualStyleBackColor = true;
-            this.button_Modify.Click += new System.EventHandler(this.button_Modify_Click);
+            this.textBox1.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Red;
+            this.textBox1.Location = new System.Drawing.Point(332, 499);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(309, 25);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.Text = "Veuillez sélectionner un utilisateur";
             // 
-            // button_Delete
+            // panel5
             // 
-            this.button_Delete.Location = new System.Drawing.Point(320, 349);
-            this.button_Delete.Name = "button_Delete";
-            this.button_Delete.Size = new System.Drawing.Size(75, 23);
-            this.button_Delete.TabIndex = 2;
-            this.button_Delete.Text = "Suprimer";
-            this.button_Delete.UseVisualStyleBackColor = true;
-            this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.button3);
+            this.panel5.Controls.Add(this.button2);
+            this.panel5.Controls.Add(this.button1);
+            this.panel5.Location = new System.Drawing.Point(165, 570);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(654, 108);
+            this.panel5.TabIndex = 5;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button3.Location = new System.Drawing.Point(457, 24);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(158, 33);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Supprimer";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button2.Location = new System.Drawing.Point(241, 24);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(158, 33);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Modifier";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(6, 24);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(158, 33);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Ajouter";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.panel6);
+            this.panel4.Controls.Add(this.button4);
+            this.panel4.Location = new System.Drawing.Point(815, 137);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 541);
+            this.panel4.TabIndex = 4;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = global::Healthyfood.Properties.Resources.mario_docteur1;
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel6.Location = new System.Drawing.Point(3, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(197, 451);
+            this.panel6.TabIndex = 4;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button4.Location = new System.Drawing.Point(10, 457);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(175, 65);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Retour";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackgroundImage = global::Healthyfood.Properties.Resources.carte_de_sourire_de_fixation_de_chef_de_cuisine_de_dessin_anim_236982622;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Location = new System.Drawing.Point(0, 137);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(165, 540);
+            this.panel3.TabIndex = 3;
+            // 
+            // listView2
+            // 
+            this.listView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4});
+            this.listView2.Font = new System.Drawing.Font("Lucida Handwriting", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView2.Location = new System.Drawing.Point(734, 137);
+            this.listView2.Name = "listView2";
+            this.listView2.Scrollable = false;
+            this.listView2.Size = new System.Drawing.Size(85, 433);
+            this.listView2.SmallImageList = this.imageList1;
+            this.listView2.TabIndex = 2;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "IMC";
+            this.columnHeader4.Width = 70;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "profil-FEM.png");
+            this.imageList1.Images.SetKeyName(1, "user-33638_960_720.png");
+            this.imageList1.Images.SetKeyName(2, "téléchargement (2).jpg");
+            this.imageList1.Images.SetKeyName(3, "téléchargement (1).jpg");
+            this.imageList1.Images.SetKeyName(4, "16537110-Emoticon-montrant-pouce-vers-le-haut-Banque-d\'images.jpg");
+            this.imageList1.Images.SetKeyName(5, "téléchargement.jpg");
+            this.imageList1.Images.SetKeyName(6, "0000951777.jpg");
             // 
             // listView1
             // 
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader_LastName,
-            this.columnHeader_Firstname,
-            this.columnHeader_Age});
-            this.listView1.Location = new System.Drawing.Point(66, 51);
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.listView1.Font = new System.Drawing.Font("Lucida Handwriting", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.FullRowSelect = true;
+            this.listView1.Location = new System.Drawing.Point(165, 137);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(477, 238);
-            this.listView1.TabIndex = 3;
+            this.listView1.Size = new System.Drawing.Size(591, 433);
+            this.listView1.SmallImageList = this.imageList1;
+            this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.Enter += new System.EventHandler(this.listView1_Enter);
             // 
-            // columnHeader_LastName
+            // columnHeader1
             // 
-            this.columnHeader_LastName.Text = "Nom";
-            this.columnHeader_LastName.Width = 203;
+            this.columnHeader1.Text = "Nom";
+            this.columnHeader1.Width = 170;
             // 
-            // columnHeader_Firstname
+            // columnHeader2
             // 
-            this.columnHeader_Firstname.Text = "Prenom";
-            this.columnHeader_Firstname.Width = 210;
+            this.columnHeader2.Text = "Prenom";
+            this.columnHeader2.Width = 170;
             // 
-            // columnHeader_Age
+            // columnHeader3
             // 
-            this.columnHeader_Age.Text = "Age";
-            this.columnHeader_Age.Width = 48;
+            this.columnHeader3.Text = "Age";
+            this.columnHeader3.Width = 100;
             // 
-            // button_back
+            // panel2
             // 
-            this.button_back.Location = new System.Drawing.Point(430, 349);
-            this.button_back.Name = "button_back";
-            this.button_back.Size = new System.Drawing.Size(75, 23);
-            this.button_back.TabIndex = 5;
-            this.button_back.Text = "Retour";
-            this.button_back.UseVisualStyleBackColor = true;
-            this.button_back.Click += new System.EventHandler(this.button_back_Click_1);
+            this.panel2.BackgroundImage = global::Healthyfood.Properties.Resources.bani2;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Location = new System.Drawing.Point(0, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1012, 137);
+            this.panel2.TabIndex = 0;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
             // 
             // timer_refesh
             // 
-            this.timer_refesh.Interval = 5000;
-            this.timer_refesh.Tick += new System.EventHandler(this.timer_refesh_Tick);
+            this.timer_refesh.Interval = 1000;
             // 
-            // label7
+            // timer2
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Lime;
-            this.label7.Location = new System.Drawing.Point(203, 304);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 24);
-            this.label7.TabIndex = 35;
-            this.label7.Visible = false;
-            // 
-            // userControl_Modify_Profil1
-            // 
-            this.userControl_Modify_Profil1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl_Modify_Profil1.Location = new System.Drawing.Point(0, 0);
-            this.userControl_Modify_Profil1.Name = "userControl_Modify_Profil1";
-            this.userControl_Modify_Profil1.Size = new System.Drawing.Size(609, 402);
-            this.userControl_Modify_Profil1.TabIndex = 7;
-            this.userControl_Modify_Profil1.Visible = false;
+            this.timer2.Interval = 1000;
             // 
             // userControl_Show_Profil1
             // 
+            this.userControl_Show_Profil1.BackColor = System.Drawing.Color.White;
             this.userControl_Show_Profil1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl_Show_Profil1.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userControl_Show_Profil1.Location = new System.Drawing.Point(0, 0);
+            this.userControl_Show_Profil1.Margin = new System.Windows.Forms.Padding(4);
             this.userControl_Show_Profil1.Name = "userControl_Show_Profil1";
-            this.userControl_Show_Profil1.Size = new System.Drawing.Size(609, 402);
-            this.userControl_Show_Profil1.TabIndex = 6;
-            this.userControl_Show_Profil1.Visible = false;
+            this.userControl_Show_Profil1.Size = new System.Drawing.Size(1015, 780);
+            this.userControl_Show_Profil1.TabIndex = 7;
+            // 
+            // userControl_Modify_Profil1
+            // 
+            this.userControl_Modify_Profil1.BackColor = System.Drawing.Color.White;
+            this.userControl_Modify_Profil1.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControl_Modify_Profil1.Location = new System.Drawing.Point(0, 0);
+            this.userControl_Modify_Profil1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControl_Modify_Profil1.Name = "userControl_Modify_Profil1";
+            this.userControl_Modify_Profil1.Size = new System.Drawing.Size(1015, 678);
+            this.userControl_Modify_Profil1.TabIndex = 1;
             // 
             // UserControl_Profil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.userControl_Modify_Profil1);
-            this.Controls.Add(this.userControl_Show_Profil1);
-            this.Controls.Add(this.button_back);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.button_Delete);
-            this.Controls.Add(this.button_Modify);
-            this.Controls.Add(this.button_Add);
+            this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControl_Profil";
-            this.Size = new System.Drawing.Size(609, 402);
-            this.Enter += new System.EventHandler(this.UserControl_Profil_Enter);
+            this.Size = new System.Drawing.Size(1015, 678);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button_Add;
-        private System.Windows.Forms.Button button_Modify;
-        private System.Windows.Forms.Button button_Delete;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader_LastName;
-        private System.Windows.Forms.ColumnHeader columnHeader_Firstname;
-        private System.Windows.Forms.ColumnHeader columnHeader_Age;
-        private System.Windows.Forms.Button button_back;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Timer timer_refesh;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TextBox textBox1;
         private UserControl_Show_Profil userControl_Show_Profil1;
         private UserControl_Modify_Profil userControl_Modify_Profil1;
-        private System.Windows.Forms.Timer timer_refesh;
-        private System.Windows.Forms.Label label7;
     }
 }
