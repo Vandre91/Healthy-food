@@ -34,6 +34,7 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader_quantity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader_Categorie = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label3 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button_Save = new System.Windows.Forms.Button();
@@ -57,13 +58,18 @@
             this.label_Beef = new System.Windows.Forms.Label();
             this.button_Ok = new System.Windows.Forms.Button();
             this.button_back1 = new System.Windows.Forms.Button();
-            this.columnHeader_Categorie = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBox_quantity = new System.Windows.Forms.TextBox();
             this.textBox_categorie = new System.Windows.Forms.TextBox();
             this.textBox_name = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label_name = new System.Windows.Forms.Label();
+            this.label_ing = new System.Windows.Forms.Label();
+            this.label_prep = new System.Windows.Forms.Label();
+            this.label_save = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -119,6 +125,10 @@
             this.columnHeader_quantity.Text = "Quantité";
             this.columnHeader_quantity.Width = 85;
             // 
+            // columnHeader_Categorie
+            // 
+            this.columnHeader_Categorie.Text = "Categorie";
+            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -135,7 +145,7 @@
             this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.richTextBox1.Location = new System.Drawing.Point(44, 332);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(346, 102);
+            this.richTextBox1.Size = new System.Drawing.Size(382, 102);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
@@ -164,7 +174,7 @@
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button1.Location = new System.Drawing.Point(506, 250);
+            this.button1.Location = new System.Drawing.Point(453, 284);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
@@ -380,14 +390,10 @@
             this.button_back1.Visible = false;
             this.button_back1.Click += new System.EventHandler(this.button3_Click);
             // 
-            // columnHeader_Categorie
-            // 
-            this.columnHeader_Categorie.Text = "Categorie";
-            // 
             // textBox_quantity
             // 
             this.textBox_quantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_quantity.Location = new System.Drawing.Point(490, 184);
+            this.textBox_quantity.Location = new System.Drawing.Point(493, 233);
             this.textBox_quantity.Name = "textBox_quantity";
             this.textBox_quantity.Size = new System.Drawing.Size(100, 20);
             this.textBox_quantity.TabIndex = 12;
@@ -395,7 +401,7 @@
             // textBox_categorie
             // 
             this.textBox_categorie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_categorie.Location = new System.Drawing.Point(493, 106);
+            this.textBox_categorie.Location = new System.Drawing.Point(493, 161);
             this.textBox_categorie.Name = "textBox_categorie";
             this.textBox_categorie.Size = new System.Drawing.Size(100, 20);
             this.textBox_categorie.TabIndex = 13;
@@ -404,7 +410,7 @@
             // textBox_name
             // 
             this.textBox_name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_name.Location = new System.Drawing.Point(493, 41);
+            this.textBox_name.Location = new System.Drawing.Point(493, 87);
             this.textBox_name.Name = "textBox_name";
             this.textBox_name.Size = new System.Drawing.Size(100, 20);
             this.textBox_name.TabIndex = 14;
@@ -414,7 +420,7 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(476, 22);
+            this.label4.Location = new System.Drawing.Point(476, 57);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 13);
             this.label4.TabIndex = 15;
@@ -424,7 +430,7 @@
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(479, 81);
+            this.label5.Location = new System.Drawing.Point(476, 131);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 16;
@@ -434,16 +440,94 @@
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(479, 165);
+            this.label6.Location = new System.Drawing.Point(481, 201);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 13);
             this.label6.TabIndex = 17;
             this.label6.Text = "Quantité";
             // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(493, 27);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 20);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Ingredient";
+            // 
+            // label_name
+            // 
+            this.label_name.AutoSize = true;
+            this.label_name.BackColor = System.Drawing.Color.Transparent;
+            this.label_name.ForeColor = System.Drawing.Color.DarkRed;
+            this.label_name.Location = new System.Drawing.Point(41, 87);
+            this.label_name.Name = "label_name";
+            this.label_name.Size = new System.Drawing.Size(132, 13);
+            this.label_name.TabIndex = 19;
+            this.label_name.Text = "La valeur n\'est pas correct";
+            this.label_name.Visible = false;
+            // 
+            // label_ing
+            // 
+            this.label_ing.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label_ing.AutoSize = true;
+            this.label_ing.BackColor = System.Drawing.Color.Transparent;
+            this.label_ing.ForeColor = System.Drawing.Color.DarkRed;
+            this.label_ing.Location = new System.Drawing.Point(41, 255);
+            this.label_ing.Name = "label_ing";
+            this.label_ing.Size = new System.Drawing.Size(80, 13);
+            this.label_ing.TabIndex = 20;
+            this.label_ing.Text = "La liste est vide";
+            this.label_ing.Visible = false;
+            // 
+            // label_prep
+            // 
+            this.label_prep.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label_prep.AutoSize = true;
+            this.label_prep.BackColor = System.Drawing.Color.Transparent;
+            this.label_prep.ForeColor = System.Drawing.Color.DarkRed;
+            this.label_prep.Location = new System.Drawing.Point(41, 316);
+            this.label_prep.Name = "label_prep";
+            this.label_prep.Size = new System.Drawing.Size(132, 13);
+            this.label_prep.TabIndex = 21;
+            this.label_prep.Text = "La valeur n\'est pas correct";
+            this.label_prep.Visible = false;
+            // 
+            // label_save
+            // 
+            this.label_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_save.AutoSize = true;
+            this.label_save.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.label_save.Location = new System.Drawing.Point(479, 355);
+            this.label_save.Name = "label_save";
+            this.label_save.Size = new System.Drawing.Size(68, 13);
+            this.label_save.TabIndex = 22;
+            this.label_save.Text = "Sauvegarder";
+            this.label_save.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button2.Location = new System.Drawing.Point(534, 284);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Suprimer";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // UserControl_Recipe_Utilisateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label_save);
+            this.Controls.Add(this.label_prep);
+            this.Controls.Add(this.label_ing);
+            this.Controls.Add(this.label_name);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -509,5 +593,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label_name;
+        private System.Windows.Forms.Label label_ing;
+        private System.Windows.Forms.Label label_prep;
+        private System.Windows.Forms.Label label_save;
+        private System.Windows.Forms.Button button2;
     }
 }
