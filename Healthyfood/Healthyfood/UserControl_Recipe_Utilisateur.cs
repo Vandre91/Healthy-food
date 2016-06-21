@@ -23,26 +23,47 @@ namespace Healthyfood
         }
         private void button_Save_Click(object sender, EventArgs e)
         {
+            label_prep.Visible = false;
+            label_ing.Visible = false;
+            label_name.Visible = false;
+            label_save.Visible = false;
+           
             string n = "";
             string q = "";
             string c = "";
-
-            List<Ingredient> ing = new List<Ingredient> {};
-            foreach(ListViewItem l in listView1.Items)
+            
+            if (textBox1.Text == null || textBox1.Text == "")
+            {
+                label_name.Visible = true;
+            }
+            if (listView1.Items.Count <=0)
+            {
+                label_ing.Visible = true;
+            }
+            if (richTextBox1.Text == null || richTextBox1.Text == "")
+            {
+                label_prep.Visible = true;
+            }
+            else
+            { 
+            List<Ingredient> ing = new List<Ingredient> { };
+            foreach (ListViewItem l in listView1.Items)
             {
                 n = l.Text;
                 q = l.SubItems[1].Text;
                 c = l.SubItems[2].Text;
                 int numVal = Int32.Parse(q);
-                Ingredient i = new Ingredient(c,n , numVal, DateTime.Today);
+                Ingredient i = new Ingredient(c, n, numVal, DateTime.Today);
                 ing.Add(i);
             }
 
             Root.Healthy.AllRecipe.AddHealthyrecipe(textBox1.Text, ing, richTextBox1.Text);
 
+            label_save.Visible = true;
             textBox1.Clear();
             listView1.Clear();
             richTextBox1.Clear();
+            }
         }
 
         private void button_Back_Click(object sender, EventArgs e)
@@ -367,6 +388,11 @@ namespace Healthyfood
         private void textBox_categorie_Click(object sender, EventArgs e)
         {
             panel1.Visible = true;
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            listView1.Clear();
         }
     }
 }
