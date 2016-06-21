@@ -76,6 +76,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_Menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Menu.Designer.cs">
+      <DependentUpon>UserControl_Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_Modify_Profil.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -156,6 +162,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Menu.resx">
+      <DependentUpon>UserControl_Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Modify_Profil.resx">
       <DependentUpon>UserControl_Modify_Profil.cs</DependentUpon>
     </EmbeddedResource>
@@ -221,10 +230,6 @@
     <None Include="Resources\Utilisateur.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ObjectListViewFull-2.9.1\ObjectListViewDemo\ObjectListView\ObjectListView2012.csproj">
-      <Project>{18FEDA0C-D147-4286-B39A-01204808106A}</Project>
-      <Name>ObjectListView2012</Name>
-    </ProjectReference>
     <ProjectReference Include="..\StockFood\StockFood.csproj">
       <Project>{d00722a5-a98b-4402-a9bc-5058f907cfd2}</Project>
       <Name>StockFood</Name>
@@ -247,6 +252,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cuisto1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bani.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bani2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mario-docteur.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mario-docteur1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carte-de-sourire-de-fixation-de-chef-de-cuisine-de-dessin-anim-23698262.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carte-de-sourire-de-fixation-de-chef-de-cuisine-de-dessin-anim-236982621.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carte-de-sourire-de-fixation-de-chef-de-cuisine-de-dessin-anim-236982622.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bani21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bani22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bani23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bani24.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

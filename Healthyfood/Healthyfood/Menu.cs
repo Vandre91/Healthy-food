@@ -73,5 +73,11 @@ namespace Healthyfood
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            userControl_Menu1.Visible = true;
+            userControl_Menu1.Focus();
+        }
     }
 }
