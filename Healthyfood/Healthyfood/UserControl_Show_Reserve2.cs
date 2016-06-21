@@ -36,6 +36,7 @@ namespace Healthyfood
         private void UserControl_Show_Reserve2_Enter(object sender, EventArgs e)
         {
             listView1.Items.Clear();
+            listView2.Items.Clear();
             int i = 0;
             foreach (var p in Root.Healthy.Stocks.IStock)
             {

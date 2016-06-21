@@ -152,6 +152,14 @@ namespace Healthyfood
             textBox_Age.Text = Root.Healthy.Profil.Age.ToString();
             textBox_Weight.Text = Root.Healthy.Profil.Weight.ToString();
             textBox_Height.Text = Root.Healthy.Profil.Height.ToString();
+            if (Root.Healthy.Profil.IsFemale == true)
+            { checkBox2.Checked = true;
+                checkBox1.Checked = false; }
+
+            else {
+                checkBox1.Checked = true;
+                checkBox2.Checked = false;
+            }
         }
     }
 }

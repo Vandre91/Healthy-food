@@ -63,6 +63,96 @@ namespace Healthyfood.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bani {
+            get {
+                object obj = ResourceManager.GetObject("bani", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bani2 {
+            get {
+                object obj = ResourceManager.GetObject("bani2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bani21 {
+            get {
+                object obj = ResourceManager.GetObject("bani21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bani22 {
+            get {
+                object obj = ResourceManager.GetObject("bani22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bani23 {
+            get {
+                object obj = ResourceManager.GetObject("bani23", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bani24 {
+            get {
+                object obj = ResourceManager.GetObject("bani24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carte_de_sourire_de_fixation_de_chef_de_cuisine_de_dessin_anim_23698262 {
+            get {
+                object obj = ResourceManager.GetObject("carte-de-sourire-de-fixation-de-chef-de-cuisine-de-dessin-anim-23698262", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carte_de_sourire_de_fixation_de_chef_de_cuisine_de_dessin_anim_236982621 {
+            get {
+                object obj = ResourceManager.GetObject("carte-de-sourire-de-fixation-de-chef-de-cuisine-de-dessin-anim-236982621", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carte_de_sourire_de_fixation_de_chef_de_cuisine_de_dessin_anim_236982622 {
+            get {
+                object obj = ResourceManager.GetObject("carte-de-sourire-de-fixation-de-chef-de-cuisine-de-dessin-anim-236982622", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cuisto {
             get {
                 object obj = ResourceManager.GetObject("cuisto", resourceCulture);
@@ -76,6 +166,26 @@ namespace Healthyfood.Properties {
         internal static System.Drawing.Bitmap cuisto1 {
             get {
                 object obj = ResourceManager.GetObject("cuisto1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mario_docteur {
+            get {
+                object obj = ResourceManager.GetObject("mario-docteur", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mario_docteur1 {
+            get {
+                object obj = ResourceManager.GetObject("mario-docteur1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
