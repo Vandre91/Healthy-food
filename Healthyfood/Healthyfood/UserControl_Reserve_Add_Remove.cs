@@ -19,6 +19,7 @@ namespace Healthyfood
         public UserControl_Reserve_Add_Remove()
         {
             InitializeComponent();
+            tabPage_Beef.ImageIndex = 0;
         }
         public Menu Root
         {
@@ -115,84 +116,135 @@ namespace Healthyfood
             Root.Healthy._feculent.CopyTo(_feculent);
             Root.Healthy._herbe_plante.CopyTo(_herbe_plante);
             Root.Healthy._boulangerie.CopyTo(_boulangerie);
-
+            int i = 0;
             foreach (var p in _beef)
             {
                 ListViewItem item = new ListViewItem(_beef[v]);
                 listView1.Items.Add(item);
+                if ((i % 2) == 0) listView1.Items[i].BackColor = Color.WhiteSmoke;
+                else listView1.Items[i].BackColor = Color.White;
+                i++;
                 v++;
             }
+            i = 0;
             foreach (var p in _drink)
             {
                 ListViewItem item = new ListViewItem(_drink[b]);
                 listView2.Items.Add(item);
+                if ((i % 2) == 0) listView2.Items[i].BackColor = Color.WhiteSmoke;
+                else listView2.Items[i].BackColor = Color.White;
+                i++;
                 b++;
             }
+            i = 0;
             foreach (var p in _sucrerie_dessert)
             {
                 ListViewItem item = new ListViewItem(_sucrerie_dessert[s]);
                 listView3.Items.Add(item);
+                if ((i % 2) == 0) listView3.Items[i].BackColor = Color.WhiteSmoke;
+                else listView3.Items[i].BackColor = Color.White;
+                i++;
                 s++;
             }
+            i = 0;
             foreach ( var p in _crustace)
             {
                 ListViewItem item = new ListViewItem(_crustace[c]);
                 listView4.Items.Add(item);
+                if ((i % 2) == 0) listView4.Items[i].BackColor = Color.WhiteSmoke;
+                else listView4.Items[i].BackColor = Color.White;
+                i++;
                 c++;
             }
+            i = 0;
             foreach (var p in _poisson)
             {
                 ListViewItem item = new ListViewItem(_poisson[po]);
                 listView5.Items.Add(item);
+                if ((i % 2) == 0) listView5.Items[i].BackColor = Color.WhiteSmoke;
+                else listView5.Items[i].BackColor = Color.White;
+                i++;
                 po++;
             }
+            i = 0;
             foreach (var p in _volaile)
             {
                 ListViewItem item = new ListViewItem(_volaile[vo]);
                 listView6.Items.Add(item);
+                if ((i % 2) == 0) listView6.Items[i].BackColor = Color.WhiteSmoke;
+                else listView6.Items[i].BackColor = Color.White;
+                i++;
                 vo++;
             }
+            i = 0;
             foreach ( var p in _legume)
             {
                 ListViewItem item = new ListViewItem(_legume[l]);
                 listView7.Items.Add(item);
+                if ((i % 2) == 0) listView7.Items[i].BackColor = Color.WhiteSmoke;
+                else listView7.Items[i].BackColor = Color.White;
+                i++;
                 l++;
             }
+            i = 0;
             foreach (var p in _fruit)
             {
                 ListViewItem item = new ListViewItem(_fruit[f]);
                 listView8.Items.Add(item);
+                if ((i % 2) == 0) listView8.Items[i].BackColor = Color.WhiteSmoke;
+                else listView8.Items[i].BackColor = Color.White;
+                i++;
                 f++;
 
             }
+            i = 0;
             foreach (var p in _produit_laitier)
             {
                 ListViewItem item = new ListViewItem(_produit_laitier[pf]);
                 listView9.Items.Add(item);
+                if ((i % 2) == 0) listView9.Items[i].BackColor = Color.WhiteSmoke;
+                else listView9.Items[i].BackColor = Color.White;
+                i++;
                 pf++;
             }
+            i = 0;
             foreach (var p in _matière_grasse)
             {
                 ListViewItem item = new ListViewItem(_matière_grasse[mg]);
                 listView10.Items.Add(item);
+                if ((i % 2) == 0) listView10.Items[i].BackColor = Color.WhiteSmoke;
+                else listView10.Items[i].BackColor = Color.White;
+                i++;
                 mg++;
             }
+            i = 0;
             foreach (var p in _feculent)
             {
                 ListViewItem item = new ListViewItem(_feculent[fe]);
                 listView11.Items.Add(item);
+                if ((i % 2) == 0) listView11.Items[i].BackColor = Color.WhiteSmoke;
+                else listView11.Items[i].BackColor = Color.White;
+                i++;
                 fe++;
             }
+            i = 0;
             foreach ( var p in _herbe_plante)
             {
                 ListViewItem item = new ListViewItem(_herbe_plante[hp]);
                 listView12.Items.Add(item);
                 hp++;
+                if ((i % 2) == 0) listView12.Items[i].BackColor = Color.WhiteSmoke;
+                else listView12.Items[i].BackColor = Color.White;
+                i++;
             }
+            i = 0;
             foreach (var p in _boulangerie)
             {
                 ListViewItem item = new ListViewItem(_boulangerie[bl]);
                 listView13.Items.Add(item);
+                if ((i % 2) == 0) listView13.Items[i].BackColor = Color.WhiteSmoke;
+                else listView13.Items[i].BackColor = Color.White;
+                i++;
                 bl++;
             }
         }
@@ -789,6 +841,18 @@ namespace Healthyfood
             {
                 textBox1.BackColor = Color.Red;
                 label88.Text = "Ingrédient déjà existant";
+                int i = 0;
+                foreach (ListViewItem item in listView2.Items)
+                {
+                    if (item.Text == textBox1.Text)
+                    {
+                        listView2.Items[i].Selected = true;
+                        listView2.Select();
+
+                    }
+
+                    i++;
+                }
             }
             else
             {
@@ -804,6 +868,17 @@ namespace Healthyfood
             {
                 textBox2.BackColor = Color.Red;
                 label87.Text = "Ingrédient déjà existant";
+                int i = 0;
+                foreach (ListViewItem item in listView1.Items)
+                {
+                    if (item.Text == textBox2.Text)
+                    { listView1.Items[i].Selected = true;
+                        listView1.Select();
+
+                    }
+                    
+                    i++;
+                }
             }
             else
             {
@@ -820,6 +895,18 @@ namespace Healthyfood
             {
                 textBox3.BackColor = Color.Red;
                 label85.Text = "Ingrédient déjà existant";
+                int i = 0;
+                foreach (ListViewItem item in listView3.Items)
+                {
+                    if (item.Text == textBox3.Text)
+                    {
+                        listView3.Items[i].Selected = true;
+                        listView3.Select();
+
+                    }
+
+                    i++;
+                }
             }
             else
             {
@@ -835,6 +922,18 @@ namespace Healthyfood
             {
                 textBox4.BackColor = Color.Red;
                 label86.Text = "Ingrédient déjà existant";
+                int i = 0;
+                foreach (ListViewItem item in listView4.Items)
+                {
+                    if (item.Text == textBox4.Text)
+                    {
+                        listView4.Items[i].Selected = true;
+                        listView4.Select();
+
+                    }
+
+                    i++;
+                }
             }
             else
             {
@@ -850,6 +949,18 @@ namespace Healthyfood
             {
                 textBox5.BackColor = Color.Red;
                 label89.Text = "Ingrédient déjà existant";
+                int i = 0;
+                foreach (ListViewItem item in listView5.Items)
+                {
+                    if (item.Text == textBox5.Text)
+                    {
+                        listView5.Items[i].Selected = true;
+                        listView5.Select();
+
+                    }
+
+                    i++;
+                }
             }
             else
             {
@@ -865,6 +976,18 @@ namespace Healthyfood
             {
                 textBox6.BackColor = Color.Red;
                 label90.Text = "Ingrédient déjà existant";
+                int i = 0;
+                foreach (ListViewItem item in listView6.Items)
+                {
+                    if (item.Text == textBox6.Text)
+                    {
+                        listView6.Items[i].Selected = true;
+                        listView6.Select();
+
+                    }
+
+                    i++;
+                }
             }
             else
             {
@@ -881,6 +1004,18 @@ namespace Healthyfood
             {
                 textBox7.BackColor = Color.Red;
                 label91.Text = "Ingrédient déjà existant";
+                int i = 0;
+                foreach (ListViewItem item in listView7.Items)
+                {
+                    if (item.Text == textBox7.Text)
+                    {
+                        listView7.Items[i].Selected = true;
+                        listView7.Select();
+
+                    }
+
+                    i++;
+                }
             }
             else
             {
@@ -896,6 +1031,18 @@ namespace Healthyfood
             {
                 textBox8.BackColor = Color.Red;
                 label92.Text = "Ingrédient déjà existant";
+                int i = 0;
+                foreach (ListViewItem item in listView8.Items)
+                {
+                    if (item.Text == textBox8.Text)
+                    {
+                        listView8.Items[i].Selected = true;
+                        listView8.Select();
+
+                    }
+
+                    i++;
+                }
             }
             else
             {
@@ -911,6 +1058,18 @@ namespace Healthyfood
             {
                 textBox9.BackColor = Color.Red;
                 label93.Text = "Ingrédient déjà existant";
+                int i = 0;
+                foreach (ListViewItem item in listView9.Items)
+                {
+                    if (item.Text == textBox9.Text)
+                    {
+                        listView9.Items[i].Selected = true;
+                        listView9.Select();
+
+                    }
+
+                    i++;
+                }
             }
             else
             {
@@ -926,6 +1085,18 @@ namespace Healthyfood
             {
                 textBox10.BackColor = Color.Red;
                 label94.Text = "Ingrédient déjà existant";
+                int i = 0;
+                foreach (ListViewItem item in listView10.Items)
+                {
+                    if (item.Text == textBox10.Text)
+                    {
+                        listView10.Items[i].Selected = true;
+                        listView10.Select();
+
+                    }
+
+                    i++;
+                }
             }
             else
             {
@@ -941,6 +1112,18 @@ namespace Healthyfood
             {
                 textBox11.BackColor = Color.Red;
                 label95.Text = "Ingrédient déjà existant";
+                int i = 0;
+                foreach (ListViewItem item in listView11.Items)
+                {
+                    if (item.Text == textBox11.Text)
+                    {
+                        listView11.Items[i].Selected = true;
+                        listView11.Select();
+
+                    }
+
+                    i++;
+                }
             }
             else
             {
@@ -956,6 +1139,18 @@ namespace Healthyfood
             {
                 textBox12.BackColor = Color.Red;
                 label96.Text = "Ingrédient déjà existant";
+                int i = 0;
+                foreach (ListViewItem item in listView12.Items)
+                {
+                    if (item.Text == textBox12.Text)
+                    {
+                        listView12.Items[i].Selected = true;
+                        listView12.Select();
+
+                    }
+
+                    i++;
+                }
             }
             else
             {
@@ -971,6 +1166,18 @@ namespace Healthyfood
             {
                 textBox13.BackColor = Color.Red;
                 label97.Text = "Ingrédient déjà existant";
+                int i = 0;
+                foreach (ListViewItem item in listView13.Items)
+                {
+                    if (item.Text == textBox13.Text)
+                    {
+                        listView13.Items[i].Selected = true;
+                        listView13.Select();
+
+                    }
+
+                    i++;
+                }
             }
             else
             {
@@ -1122,5 +1329,7 @@ namespace Healthyfood
             textBox26.Text = monthCalendar15.SelectionRange.Start.ToShortDateString();
         }
         #endregion
+
+      
     }
 }
