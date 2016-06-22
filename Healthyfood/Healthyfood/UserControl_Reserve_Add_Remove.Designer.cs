@@ -92,8 +92,9 @@
             this.listView11 = new System.Windows.Forms.ListView();
             this.columnHeader28 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Fat_Content = new System.Windows.Forms.TabPage();
-            this.monthCalendar10 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar15 = new System.Windows.Forms.MonthCalendar();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.monthCalendar10 = new System.Windows.Forms.MonthCalendar();
             this.label94 = new System.Windows.Forms.Label();
             this.button10 = new System.Windows.Forms.Button();
             this.textBox10 = new System.Windows.Forms.TextBox();
@@ -113,8 +114,9 @@
             this.listView10 = new System.Windows.Forms.ListView();
             this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage_Milk_product = new System.Windows.Forms.TabPage();
-            this.monthCalendar9 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar14 = new System.Windows.Forms.MonthCalendar();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.monthCalendar9 = new System.Windows.Forms.MonthCalendar();
             this.label93 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -352,7 +354,7 @@
             this.tabPage_Fat_Boulangerie.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Fat_Boulangerie.Name = "tabPage_Fat_Boulangerie";
             this.tabPage_Fat_Boulangerie.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Fat_Boulangerie.Size = new System.Drawing.Size(568, 380);
+            this.tabPage_Fat_Boulangerie.Size = new System.Drawing.Size(689, 505);
             this.tabPage_Fat_Boulangerie.TabIndex = 12;
             this.tabPage_Fat_Boulangerie.Text = "Boulangérie";
             this.tabPage_Fat_Boulangerie.UseVisualStyleBackColor = true;
@@ -360,8 +362,7 @@
             // monthCalendar13
             // 
             this.monthCalendar13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar13.Location = new System.Drawing.Point(335, 140);
-            this.monthCalendar13.Location = new System.Drawing.Point(258, 144);
+            this.monthCalendar13.Location = new System.Drawing.Point(462, 107);
             this.monthCalendar13.Name = "monthCalendar13";
             this.monthCalendar13.TabIndex = 25;
             this.monthCalendar13.Visible = false;
@@ -373,7 +374,7 @@
             this.panel13.Controls.Add(this.label97);
             this.panel13.Controls.Add(this.button13);
             this.panel13.Controls.Add(this.textBox13);
-            this.panel13.Location = new System.Drawing.Point(352, 162);
+            this.panel13.Location = new System.Drawing.Point(473, 287);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(200, 100);
             this.panel13.TabIndex = 24;
@@ -409,7 +410,7 @@
             // button_ajout_boulangerie
             // 
             this.button_ajout_boulangerie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_ajout_boulangerie.Location = new System.Drawing.Point(352, 271);
+            this.button_ajout_boulangerie.Location = new System.Drawing.Point(473, 396);
             this.button_ajout_boulangerie.Name = "button_ajout_boulangerie";
             this.button_ajout_boulangerie.Size = new System.Drawing.Size(187, 23);
             this.button_ajout_boulangerie.TabIndex = 14;
@@ -460,7 +461,7 @@
             // button_back_bukery
             // 
             this.button_back_bukery.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_back_bukery.Location = new System.Drawing.Point(462, 304);
+            this.button_back_bukery.Location = new System.Drawing.Point(583, 429);
             this.button_back_bukery.Name = "button_back_bukery";
             this.button_back_bukery.Size = new System.Drawing.Size(100, 70);
             this.button_back_bukery.TabIndex = 8;
@@ -471,7 +472,7 @@
             // button23
             // 
             this.button23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button23.Location = new System.Drawing.Point(352, 304);
+            this.button23.Location = new System.Drawing.Point(473, 429);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(97, 70);
             this.button23.TabIndex = 7;
@@ -482,7 +483,7 @@
             // textBox37
             // 
             this.textBox37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox37.Location = new System.Drawing.Point(462, 111);
+            this.textBox37.Location = new System.Drawing.Point(583, 85);
             this.textBox37.Name = "textBox37";
             this.textBox37.Size = new System.Drawing.Size(100, 20);
             this.textBox37.TabIndex = 6;
@@ -491,7 +492,7 @@
             // textBox36
             // 
             this.textBox36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox36.Location = new System.Drawing.Point(462, 73);
+            this.textBox36.Location = new System.Drawing.Point(583, 50);
             this.textBox36.Name = "textBox36";
             this.textBox36.Size = new System.Drawing.Size(100, 20);
             this.textBox36.TabIndex = 5;
@@ -500,7 +501,7 @@
             // 
             this.text_name_bakery.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_bakery.Enabled = false;
-            this.text_name_bakery.Location = new System.Drawing.Point(462, 33);
+            this.text_name_bakery.Location = new System.Drawing.Point(583, 15);
             this.text_name_bakery.Name = "text_name_bakery";
             this.text_name_bakery.Size = new System.Drawing.Size(100, 20);
             this.text_name_bakery.TabIndex = 4;
@@ -508,16 +509,16 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(349, 118);
+            this.label36.Location = new System.Drawing.Point(480, 85);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(100, 13);
+            this.label36.Size = new System.Drawing.Size(106, 13);
             this.label36.TabIndex = 3;
-            this.label36.Text = "Date de péremption";
+            this.label36.Text = "Date de péremption :";
             // 
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(349, 80);
+            this.label35.Location = new System.Drawing.Point(533, 50);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(53, 13);
             this.label35.TabIndex = 2;
@@ -526,7 +527,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(349, 40);
+            this.label34.Location = new System.Drawing.Point(542, 15);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(35, 13);
             this.label34.TabIndex = 1;
@@ -570,19 +571,15 @@
             this.tabPage_Herbes_Plants.Controls.Add(this.listView12);
             this.tabPage_Herbes_Plants.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Herbes_Plants.Name = "tabPage_Herbes_Plants";
-            this.tabPage_Herbes_Plants.Size = new System.Drawing.Size(568, 380);
+            this.tabPage_Herbes_Plants.Size = new System.Drawing.Size(689, 505);
             this.tabPage_Herbes_Plants.TabIndex = 11;
             this.tabPage_Herbes_Plants.Text = "Herbe/Plante";
             this.tabPage_Herbes_Plants.UseVisualStyleBackColor = true;
             // 
             // monthCalendar12
             // 
-
             this.monthCalendar12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar12.Location = new System.Drawing.Point(335, 137);
-
-            this.monthCalendar12.Location = new System.Drawing.Point(206, 128);
-
+            this.monthCalendar12.Location = new System.Drawing.Point(453, 129);
             this.monthCalendar12.Name = "monthCalendar12";
             this.monthCalendar12.TabIndex = 25;
             this.monthCalendar12.Visible = false;
@@ -594,7 +591,7 @@
             this.panel12.Controls.Add(this.label96);
             this.panel12.Controls.Add(this.button12);
             this.panel12.Controls.Add(this.textBox12);
-            this.panel12.Location = new System.Drawing.Point(353, 156);
+            this.panel12.Location = new System.Drawing.Point(486, 303);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(200, 100);
             this.panel12.TabIndex = 24;
@@ -630,7 +627,7 @@
             // button_ajouter_herbe
             // 
             this.button_ajouter_herbe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_ajouter_herbe.Location = new System.Drawing.Point(359, 273);
+            this.button_ajouter_herbe.Location = new System.Drawing.Point(499, 409);
             this.button_ajouter_herbe.Name = "button_ajouter_herbe";
             this.button_ajouter_herbe.Size = new System.Drawing.Size(187, 23);
             this.button_ajouter_herbe.TabIndex = 22;
@@ -682,7 +679,7 @@
             // 
             this.label31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(350, 115);
+            this.label31.Location = new System.Drawing.Point(474, 92);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(106, 13);
             this.label31.TabIndex = 17;
@@ -692,7 +689,7 @@
             // 
             this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(350, 74);
+            this.label32.Location = new System.Drawing.Point(527, 56);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(53, 13);
             this.label32.TabIndex = 16;
@@ -702,7 +699,7 @@
             // 
             this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(350, 36);
+            this.label33.Location = new System.Drawing.Point(545, 20);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(35, 13);
             this.label33.TabIndex = 15;
@@ -711,7 +708,7 @@
             // button_back_grass
             // 
             this.button_back_grass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_back_grass.Location = new System.Drawing.Point(464, 302);
+            this.button_back_grass.Location = new System.Drawing.Point(591, 438);
             this.button_back_grass.Name = "button_back_grass";
             this.button_back_grass.Size = new System.Drawing.Size(98, 68);
             this.button_back_grass.TabIndex = 14;
@@ -722,7 +719,7 @@
             // button22
             // 
             this.button22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button22.Location = new System.Drawing.Point(359, 302);
+            this.button22.Location = new System.Drawing.Point(483, 437);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(99, 68);
             this.button22.TabIndex = 13;
@@ -733,7 +730,7 @@
             // textBox32
             // 
             this.textBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox32.Location = new System.Drawing.Point(462, 112);
+            this.textBox32.Location = new System.Drawing.Point(586, 92);
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(100, 20);
             this.textBox32.TabIndex = 12;
@@ -742,7 +739,7 @@
             // textBox33
             // 
             this.textBox33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox33.Location = new System.Drawing.Point(462, 74);
+            this.textBox33.Location = new System.Drawing.Point(586, 56);
             this.textBox33.Name = "textBox33";
             this.textBox33.Size = new System.Drawing.Size(100, 20);
             this.textBox33.TabIndex = 11;
@@ -751,7 +748,7 @@
             // 
             this.text_name_plant.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_plant.Enabled = false;
-            this.text_name_plant.Location = new System.Drawing.Point(462, 36);
+            this.text_name_plant.Location = new System.Drawing.Point(586, 20);
             this.text_name_plant.Name = "text_name_plant";
             this.text_name_plant.Size = new System.Drawing.Size(100, 20);
             this.text_name_plant.TabIndex = 10;
@@ -766,7 +763,7 @@
             this.listView12.GridLines = true;
             this.listView12.Location = new System.Drawing.Point(3, -1);
             this.listView12.Name = "listView12";
-            this.listView12.Size = new System.Drawing.Size(191, 378);
+            this.listView12.Size = new System.Drawing.Size(191, 506);
             this.listView12.TabIndex = 9;
             this.listView12.UseCompatibleStateImageBehavior = false;
             this.listView12.View = System.Windows.Forms.View.Details;
@@ -797,19 +794,15 @@
             this.tabPage_Féculent.Controls.Add(this.listView11);
             this.tabPage_Féculent.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Féculent.Name = "tabPage_Féculent";
-            this.tabPage_Féculent.Size = new System.Drawing.Size(568, 380);
+            this.tabPage_Féculent.Size = new System.Drawing.Size(689, 505);
             this.tabPage_Féculent.TabIndex = 10;
             this.tabPage_Féculent.Text = "Féculent";
             this.tabPage_Féculent.UseVisualStyleBackColor = true;
             // 
             // monthCalendar11
             // 
-
             this.monthCalendar11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar11.Location = new System.Drawing.Point(335, 137);
-
-            this.monthCalendar11.Location = new System.Drawing.Point(245, 140);
-
+            this.monthCalendar11.Location = new System.Drawing.Point(462, 109);
             this.monthCalendar11.Name = "monthCalendar11";
             this.monthCalendar11.TabIndex = 25;
             this.monthCalendar11.Visible = false;
@@ -821,7 +814,7 @@
             this.panel11.Controls.Add(this.label95);
             this.panel11.Controls.Add(this.button11);
             this.panel11.Controls.Add(this.textBox11);
-            this.panel11.Location = new System.Drawing.Point(357, 158);
+            this.panel11.Location = new System.Drawing.Point(478, 283);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(200, 100);
             this.panel11.TabIndex = 24;
@@ -857,7 +850,7 @@
             // button_ajouter_feculent
             // 
             this.button_ajouter_feculent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_ajouter_feculent.Location = new System.Drawing.Point(359, 273);
+            this.button_ajouter_feculent.Location = new System.Drawing.Point(480, 398);
             this.button_ajouter_feculent.Name = "button_ajouter_feculent";
             this.button_ajouter_feculent.Size = new System.Drawing.Size(187, 23);
             this.button_ajouter_feculent.TabIndex = 22;
@@ -909,7 +902,7 @@
             // 
             this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(350, 115);
+            this.label28.Location = new System.Drawing.Point(473, 86);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(106, 13);
             this.label28.TabIndex = 17;
@@ -919,7 +912,7 @@
             // 
             this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(350, 74);
+            this.label29.Location = new System.Drawing.Point(520, 48);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(53, 13);
             this.label29.TabIndex = 16;
@@ -929,7 +922,7 @@
             // 
             this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(350, 36);
+            this.label30.Location = new System.Drawing.Point(538, 16);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(35, 13);
             this.label30.TabIndex = 15;
@@ -938,7 +931,7 @@
             // button_back_starchyfood
             // 
             this.button_back_starchyfood.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_back_starchyfood.Location = new System.Drawing.Point(464, 302);
+            this.button_back_starchyfood.Location = new System.Drawing.Point(585, 427);
             this.button_back_starchyfood.Name = "button_back_starchyfood";
             this.button_back_starchyfood.Size = new System.Drawing.Size(98, 68);
             this.button_back_starchyfood.TabIndex = 14;
@@ -949,7 +942,7 @@
             // button20
             // 
             this.button20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button20.Location = new System.Drawing.Point(359, 302);
+            this.button20.Location = new System.Drawing.Point(480, 427);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(99, 68);
             this.button20.TabIndex = 13;
@@ -960,7 +953,7 @@
             // textBox29
             // 
             this.textBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox29.Location = new System.Drawing.Point(462, 112);
+            this.textBox29.Location = new System.Drawing.Point(583, 83);
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(100, 20);
             this.textBox29.TabIndex = 12;
@@ -969,7 +962,7 @@
             // textBox30
             // 
             this.textBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox30.Location = new System.Drawing.Point(462, 74);
+            this.textBox30.Location = new System.Drawing.Point(583, 48);
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(100, 20);
             this.textBox30.TabIndex = 11;
@@ -978,7 +971,7 @@
             // 
             this.text_name_starchy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_starchy.Enabled = false;
-            this.text_name_starchy.Location = new System.Drawing.Point(462, 36);
+            this.text_name_starchy.Location = new System.Drawing.Point(583, 13);
             this.text_name_starchy.Name = "text_name_starchy";
             this.text_name_starchy.Size = new System.Drawing.Size(100, 20);
             this.text_name_starchy.TabIndex = 10;
@@ -993,7 +986,7 @@
             this.listView11.GridLines = true;
             this.listView11.Location = new System.Drawing.Point(12, 3);
             this.listView11.Name = "listView11";
-            this.listView11.Size = new System.Drawing.Size(201, 371);
+            this.listView11.Size = new System.Drawing.Size(322, 496);
             this.listView11.TabIndex = 9;
             this.listView11.UseCompatibleStateImageBehavior = false;
             this.listView11.View = System.Windows.Forms.View.Details;
@@ -1006,6 +999,7 @@
             // 
             // tabPage_Fat_Content
             // 
+            this.tabPage_Fat_Content.Controls.Add(this.monthCalendar15);
             this.tabPage_Fat_Content.Controls.Add(this.panel10);
             this.tabPage_Fat_Content.Controls.Add(this.button_ajouter_matiére_grasse);
             this.tabPage_Fat_Content.Controls.Add(this.label72);
@@ -1023,23 +1017,18 @@
             this.tabPage_Fat_Content.Controls.Add(this.listView10);
             this.tabPage_Fat_Content.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Fat_Content.Name = "tabPage_Fat_Content";
-            this.tabPage_Fat_Content.Size = new System.Drawing.Size(568, 380);
+            this.tabPage_Fat_Content.Size = new System.Drawing.Size(689, 505);
             this.tabPage_Fat_Content.TabIndex = 9;
             this.tabPage_Fat_Content.Text = "Matière Grasse";
             this.tabPage_Fat_Content.UseVisualStyleBackColor = true;
             // 
-            // monthCalendar10
+            // monthCalendar15
             // 
-
-            this.monthCalendar10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar10.Location = new System.Drawing.Point(-24, -9);
-
-            this.monthCalendar10.Location = new System.Drawing.Point(303, 135);
-
-            this.monthCalendar10.Name = "monthCalendar10";
-            this.monthCalendar10.TabIndex = 25;
-            this.monthCalendar10.Visible = false;
-            this.monthCalendar10.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar10_DateSelected);
+            this.monthCalendar15.Location = new System.Drawing.Point(462, 108);
+            this.monthCalendar15.Name = "monthCalendar15";
+            this.monthCalendar15.TabIndex = 25;
+            this.monthCalendar15.Visible = false;
+            this.monthCalendar15.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar15_DateSelected);
             // 
             // panel10
             // 
@@ -1048,11 +1037,20 @@
             this.panel10.Controls.Add(this.label94);
             this.panel10.Controls.Add(this.button10);
             this.panel10.Controls.Add(this.textBox10);
-            this.panel10.Location = new System.Drawing.Point(359, 146);
+            this.panel10.Location = new System.Drawing.Point(480, 271);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(200, 100);
             this.panel10.TabIndex = 24;
             this.panel10.Visible = false;
+            // 
+            // monthCalendar10
+            // 
+            this.monthCalendar10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.monthCalendar10.Location = new System.Drawing.Point(303, 135);
+            this.monthCalendar10.Name = "monthCalendar10";
+            this.monthCalendar10.TabIndex = 25;
+            this.monthCalendar10.Visible = false;
+            this.monthCalendar10.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar10_DateSelected);
             // 
             // label94
             // 
@@ -1084,7 +1082,7 @@
             // button_ajouter_matiére_grasse
             // 
             this.button_ajouter_matiére_grasse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_ajouter_matiére_grasse.Location = new System.Drawing.Point(361, 273);
+            this.button_ajouter_matiére_grasse.Location = new System.Drawing.Point(482, 398);
             this.button_ajouter_matiére_grasse.Name = "button_ajouter_matiére_grasse";
             this.button_ajouter_matiére_grasse.Size = new System.Drawing.Size(187, 23);
             this.button_ajouter_matiére_grasse.TabIndex = 22;
@@ -1136,7 +1134,7 @@
             // 
             this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(350, 115);
+            this.label25.Location = new System.Drawing.Point(473, 86);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(106, 13);
             this.label25.TabIndex = 17;
@@ -1146,7 +1144,7 @@
             // 
             this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(350, 74);
+            this.label26.Location = new System.Drawing.Point(524, 50);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(53, 13);
             this.label26.TabIndex = 16;
@@ -1156,7 +1154,7 @@
             // 
             this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(350, 36);
+            this.label27.Location = new System.Drawing.Point(540, 15);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(35, 13);
             this.label27.TabIndex = 15;
@@ -1165,7 +1163,7 @@
             // button_back_fat
             // 
             this.button_back_fat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_back_fat.Location = new System.Drawing.Point(464, 302);
+            this.button_back_fat.Location = new System.Drawing.Point(585, 427);
             this.button_back_fat.Name = "button_back_fat";
             this.button_back_fat.Size = new System.Drawing.Size(98, 68);
             this.button_back_fat.TabIndex = 14;
@@ -1176,7 +1174,7 @@
             // button18
             // 
             this.button18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button18.Location = new System.Drawing.Point(359, 302);
+            this.button18.Location = new System.Drawing.Point(480, 427);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(99, 68);
             this.button18.TabIndex = 13;
@@ -1187,7 +1185,7 @@
             // textBox26
             // 
             this.textBox26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox26.Location = new System.Drawing.Point(462, 112);
+            this.textBox26.Location = new System.Drawing.Point(585, 83);
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(100, 20);
             this.textBox26.TabIndex = 12;
@@ -1196,7 +1194,7 @@
             // textBox27
             // 
             this.textBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox27.Location = new System.Drawing.Point(462, 74);
+            this.textBox27.Location = new System.Drawing.Point(585, 47);
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(100, 20);
             this.textBox27.TabIndex = 11;
@@ -1205,7 +1203,7 @@
             // 
             this.text_name_fat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_fat.Enabled = false;
-            this.text_name_fat.Location = new System.Drawing.Point(462, 36);
+            this.text_name_fat.Location = new System.Drawing.Point(585, 12);
             this.text_name_fat.Name = "text_name_fat";
             this.text_name_fat.Size = new System.Drawing.Size(100, 20);
             this.text_name_fat.TabIndex = 10;
@@ -1220,7 +1218,7 @@
             this.listView10.GridLines = true;
             this.listView10.Location = new System.Drawing.Point(3, -1);
             this.listView10.Name = "listView10";
-            this.listView10.Size = new System.Drawing.Size(269, 378);
+            this.listView10.Size = new System.Drawing.Size(390, 503);
             this.listView10.TabIndex = 9;
             this.listView10.UseCompatibleStateImageBehavior = false;
             this.listView10.View = System.Windows.Forms.View.Details;
@@ -1233,6 +1231,7 @@
             // 
             // tabPage_Milk_product
             // 
+            this.tabPage_Milk_product.Controls.Add(this.monthCalendar14);
             this.tabPage_Milk_product.Controls.Add(this.panel9);
             this.tabPage_Milk_product.Controls.Add(this.button_ajouter_produit_laitier);
             this.tabPage_Milk_product.Controls.Add(this.label68);
@@ -1250,23 +1249,19 @@
             this.tabPage_Milk_product.Controls.Add(this.listView9);
             this.tabPage_Milk_product.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Milk_product.Name = "tabPage_Milk_product";
-            this.tabPage_Milk_product.Size = new System.Drawing.Size(568, 380);
+            this.tabPage_Milk_product.Size = new System.Drawing.Size(689, 505);
             this.tabPage_Milk_product.TabIndex = 8;
             this.tabPage_Milk_product.Text = "Produit Laitier";
             this.tabPage_Milk_product.UseVisualStyleBackColor = true;
             // 
-            // monthCalendar9
+            // monthCalendar14
             // 
-
-            this.monthCalendar9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar9.Location = new System.Drawing.Point(-24, -12);
-
-            this.monthCalendar9.Location = new System.Drawing.Point(231, 134);
-
-            this.monthCalendar9.Name = "monthCalendar9";
-            this.monthCalendar9.TabIndex = 25;
-            this.monthCalendar9.Visible = false;
-            this.monthCalendar9.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar9_DateSelected);
+            this.monthCalendar14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.monthCalendar14.Location = new System.Drawing.Point(462, 110);
+            this.monthCalendar14.Name = "monthCalendar14";
+            this.monthCalendar14.TabIndex = 25;
+            this.monthCalendar14.Visible = false;
+            this.monthCalendar14.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar14_DateSelected);
             // 
             // panel9
             // 
@@ -1275,11 +1270,20 @@
             this.panel9.Controls.Add(this.label93);
             this.panel9.Controls.Add(this.button9);
             this.panel9.Controls.Add(this.textBox9);
-            this.panel9.Location = new System.Drawing.Point(359, 149);
+            this.panel9.Location = new System.Drawing.Point(480, 274);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(200, 100);
             this.panel9.TabIndex = 24;
             this.panel9.Visible = false;
+            // 
+            // monthCalendar9
+            // 
+            this.monthCalendar9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.monthCalendar9.Location = new System.Drawing.Point(231, 134);
+            this.monthCalendar9.Name = "monthCalendar9";
+            this.monthCalendar9.TabIndex = 25;
+            this.monthCalendar9.Visible = false;
+            this.monthCalendar9.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar9_DateSelected);
             // 
             // label93
             // 
@@ -1311,7 +1315,7 @@
             // button_ajouter_produit_laitier
             // 
             this.button_ajouter_produit_laitier.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_ajouter_produit_laitier.Location = new System.Drawing.Point(362, 273);
+            this.button_ajouter_produit_laitier.Location = new System.Drawing.Point(483, 398);
             this.button_ajouter_produit_laitier.Name = "button_ajouter_produit_laitier";
             this.button_ajouter_produit_laitier.Size = new System.Drawing.Size(187, 23);
             this.button_ajouter_produit_laitier.TabIndex = 22;
@@ -1363,7 +1367,7 @@
             // 
             this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(350, 115);
+            this.label22.Location = new System.Drawing.Point(477, 88);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(106, 13);
             this.label22.TabIndex = 17;
@@ -1373,7 +1377,7 @@
             // 
             this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(350, 74);
+            this.label23.Location = new System.Drawing.Point(526, 53);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(53, 13);
             this.label23.TabIndex = 16;
@@ -1383,7 +1387,7 @@
             // 
             this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(350, 36);
+            this.label24.Location = new System.Drawing.Point(540, 16);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(35, 13);
             this.label24.TabIndex = 15;
@@ -1392,7 +1396,7 @@
             // button_back_dairyproduct
             // 
             this.button_back_dairyproduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_back_dairyproduct.Location = new System.Drawing.Point(464, 302);
+            this.button_back_dairyproduct.Location = new System.Drawing.Point(585, 427);
             this.button_back_dairyproduct.Name = "button_back_dairyproduct";
             this.button_back_dairyproduct.Size = new System.Drawing.Size(98, 68);
             this.button_back_dairyproduct.TabIndex = 14;
@@ -1403,7 +1407,7 @@
             // button16
             // 
             this.button16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button16.Location = new System.Drawing.Point(359, 302);
+            this.button16.Location = new System.Drawing.Point(480, 427);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(99, 68);
             this.button16.TabIndex = 13;
@@ -1414,7 +1418,7 @@
             // textBox23
             // 
             this.textBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox23.Location = new System.Drawing.Point(462, 112);
+            this.textBox23.Location = new System.Drawing.Point(586, 85);
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(100, 20);
             this.textBox23.TabIndex = 12;
@@ -1423,7 +1427,7 @@
             // textBox24
             // 
             this.textBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox24.Location = new System.Drawing.Point(462, 74);
+            this.textBox24.Location = new System.Drawing.Point(585, 50);
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(100, 20);
             this.textBox24.TabIndex = 11;
@@ -1432,7 +1436,7 @@
             // 
             this.text_name_milk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_milk.Enabled = false;
-            this.text_name_milk.Location = new System.Drawing.Point(462, 36);
+            this.text_name_milk.Location = new System.Drawing.Point(586, 13);
             this.text_name_milk.Name = "text_name_milk";
             this.text_name_milk.Size = new System.Drawing.Size(100, 20);
             this.text_name_milk.TabIndex = 10;
@@ -1447,7 +1451,7 @@
             this.listView9.GridLines = true;
             this.listView9.Location = new System.Drawing.Point(3, -1);
             this.listView9.Name = "listView9";
-            this.listView9.Size = new System.Drawing.Size(196, 378);
+            this.listView9.Size = new System.Drawing.Size(317, 503);
             this.listView9.TabIndex = 9;
             this.listView9.UseCompatibleStateImageBehavior = false;
             this.listView9.View = System.Windows.Forms.View.Details;
@@ -1478,19 +1482,15 @@
             this.tabPage_Fruit.Controls.Add(this.listView8);
             this.tabPage_Fruit.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Fruit.Name = "tabPage_Fruit";
-            this.tabPage_Fruit.Size = new System.Drawing.Size(568, 380);
+            this.tabPage_Fruit.Size = new System.Drawing.Size(689, 505);
             this.tabPage_Fruit.TabIndex = 7;
             this.tabPage_Fruit.Text = "Fruits";
             this.tabPage_Fruit.UseVisualStyleBackColor = true;
             // 
             // monthCalendar8
             // 
-
             this.monthCalendar8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar8.Location = new System.Drawing.Point(335, 137);
-
-            this.monthCalendar8.Location = new System.Drawing.Point(231, 134);
-
+            this.monthCalendar8.Location = new System.Drawing.Point(457, 109);
             this.monthCalendar8.Name = "monthCalendar8";
             this.monthCalendar8.TabIndex = 25;
             this.monthCalendar8.Visible = false;
@@ -1502,7 +1502,7 @@
             this.panel8.Controls.Add(this.label92);
             this.panel8.Controls.Add(this.button8);
             this.panel8.Controls.Add(this.textBox8);
-            this.panel8.Location = new System.Drawing.Point(359, 158);
+            this.panel8.Location = new System.Drawing.Point(480, 283);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(200, 100);
             this.panel8.TabIndex = 24;
@@ -1538,7 +1538,7 @@
             // button_ajouter_fruit
             // 
             this.button_ajouter_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_ajouter_fruit.Location = new System.Drawing.Point(360, 273);
+            this.button_ajouter_fruit.Location = new System.Drawing.Point(481, 398);
             this.button_ajouter_fruit.Name = "button_ajouter_fruit";
             this.button_ajouter_fruit.Size = new System.Drawing.Size(187, 23);
             this.button_ajouter_fruit.TabIndex = 22;
@@ -1590,7 +1590,7 @@
             // 
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(350, 115);
+            this.label19.Location = new System.Drawing.Point(473, 87);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(106, 13);
             this.label19.TabIndex = 17;
@@ -1600,7 +1600,7 @@
             // 
             this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(350, 74);
+            this.label20.Location = new System.Drawing.Point(524, 47);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(53, 13);
             this.label20.TabIndex = 16;
@@ -1610,7 +1610,7 @@
             // 
             this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(350, 36);
+            this.label21.Location = new System.Drawing.Point(540, 15);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(35, 13);
             this.label21.TabIndex = 15;
@@ -1619,7 +1619,7 @@
             // button_back_fruit
             // 
             this.button_back_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_back_fruit.Location = new System.Drawing.Point(464, 302);
+            this.button_back_fruit.Location = new System.Drawing.Point(585, 427);
             this.button_back_fruit.Name = "button_back_fruit";
             this.button_back_fruit.Size = new System.Drawing.Size(98, 68);
             this.button_back_fruit.TabIndex = 14;
@@ -1630,7 +1630,7 @@
             // btn_enreg_fruit
             // 
             this.btn_enreg_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_enreg_fruit.Location = new System.Drawing.Point(359, 302);
+            this.btn_enreg_fruit.Location = new System.Drawing.Point(480, 427);
             this.btn_enreg_fruit.Name = "btn_enreg_fruit";
             this.btn_enreg_fruit.Size = new System.Drawing.Size(99, 68);
             this.btn_enreg_fruit.TabIndex = 13;
@@ -1641,7 +1641,7 @@
             // txt_dateperemtion_fruit
             // 
             this.txt_dateperemtion_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_dateperemtion_fruit.Location = new System.Drawing.Point(462, 112);
+            this.txt_dateperemtion_fruit.Location = new System.Drawing.Point(586, 84);
             this.txt_dateperemtion_fruit.Name = "txt_dateperemtion_fruit";
             this.txt_dateperemtion_fruit.Size = new System.Drawing.Size(100, 20);
             this.txt_dateperemtion_fruit.TabIndex = 12;
@@ -1650,7 +1650,7 @@
             // txt_quantity_fruit
             // 
             this.txt_quantity_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_quantity_fruit.Location = new System.Drawing.Point(462, 74);
+            this.txt_quantity_fruit.Location = new System.Drawing.Point(586, 47);
             this.txt_quantity_fruit.Name = "txt_quantity_fruit";
             this.txt_quantity_fruit.Size = new System.Drawing.Size(100, 20);
             this.txt_quantity_fruit.TabIndex = 11;
@@ -1659,7 +1659,7 @@
             // 
             this.text_name_fruit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_fruit.Enabled = false;
-            this.text_name_fruit.Location = new System.Drawing.Point(462, 36);
+            this.text_name_fruit.Location = new System.Drawing.Point(586, 12);
             this.text_name_fruit.Name = "text_name_fruit";
             this.text_name_fruit.Size = new System.Drawing.Size(100, 20);
             this.text_name_fruit.TabIndex = 10;
@@ -1674,7 +1674,7 @@
             this.listView8.GridLines = true;
             this.listView8.Location = new System.Drawing.Point(3, -1);
             this.listView8.Name = "listView8";
-            this.listView8.Size = new System.Drawing.Size(198, 378);
+            this.listView8.Size = new System.Drawing.Size(319, 503);
             this.listView8.TabIndex = 9;
             this.listView8.UseCompatibleStateImageBehavior = false;
             this.listView8.View = System.Windows.Forms.View.Details;
@@ -1705,18 +1705,15 @@
             this.tabPage_Vegetables.Controls.Add(this.listView7);
             this.tabPage_Vegetables.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Vegetables.Name = "tabPage_Vegetables";
-            this.tabPage_Vegetables.Size = new System.Drawing.Size(568, 380);
+            this.tabPage_Vegetables.Size = new System.Drawing.Size(689, 505);
             this.tabPage_Vegetables.TabIndex = 6;
             this.tabPage_Vegetables.Text = "Légumes";
             this.tabPage_Vegetables.UseVisualStyleBackColor = true;
             // 
             // monthCalendar7
-            //
+            // 
             this.monthCalendar7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar7.Location = new System.Drawing.Point(335, 137);
-
-            this.monthCalendar7.Location = new System.Drawing.Point(249, 132);
-
+            this.monthCalendar7.Location = new System.Drawing.Point(457, 122);
             this.monthCalendar7.Name = "monthCalendar7";
             this.monthCalendar7.TabIndex = 25;
             this.monthCalendar7.Visible = false;
@@ -1728,7 +1725,7 @@
             this.panel7.Controls.Add(this.label91);
             this.panel7.Controls.Add(this.button7);
             this.panel7.Controls.Add(this.textBox7);
-            this.panel7.Location = new System.Drawing.Point(358, 161);
+            this.panel7.Location = new System.Drawing.Point(486, 299);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(200, 100);
             this.panel7.TabIndex = 24;
@@ -1764,7 +1761,7 @@
             // button_ajouter_legumes
             // 
             this.button_ajouter_legumes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_ajouter_legumes.Location = new System.Drawing.Point(360, 273);
+            this.button_ajouter_legumes.Location = new System.Drawing.Point(490, 405);
             this.button_ajouter_legumes.Name = "button_ajouter_legumes";
             this.button_ajouter_legumes.Size = new System.Drawing.Size(187, 23);
             this.button_ajouter_legumes.TabIndex = 22;
@@ -1816,7 +1813,7 @@
             // 
             this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(350, 115);
+            this.label16.Location = new System.Drawing.Point(465, 93);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(106, 13);
             this.label16.TabIndex = 17;
@@ -1826,7 +1823,7 @@
             // 
             this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(350, 74);
+            this.label17.Location = new System.Drawing.Point(518, 51);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(53, 13);
             this.label17.TabIndex = 16;
@@ -1836,7 +1833,7 @@
             // 
             this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(350, 36);
+            this.label18.Location = new System.Drawing.Point(536, 17);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(35, 13);
             this.label18.TabIndex = 15;
@@ -1845,7 +1842,7 @@
             // button_back_vegetable
             // 
             this.button_back_vegetable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_back_vegetable.Location = new System.Drawing.Point(464, 302);
+            this.button_back_vegetable.Location = new System.Drawing.Point(588, 434);
             this.button_back_vegetable.Name = "button_back_vegetable";
             this.button_back_vegetable.Size = new System.Drawing.Size(98, 68);
             this.button_back_vegetable.TabIndex = 14;
@@ -1856,7 +1853,7 @@
             // btn_enreg_vegetable
             // 
             this.btn_enreg_vegetable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_enreg_vegetable.Location = new System.Drawing.Point(359, 302);
+            this.btn_enreg_vegetable.Location = new System.Drawing.Point(483, 434);
             this.btn_enreg_vegetable.Name = "btn_enreg_vegetable";
             this.btn_enreg_vegetable.Size = new System.Drawing.Size(99, 68);
             this.btn_enreg_vegetable.TabIndex = 13;
@@ -1867,7 +1864,7 @@
             // txt_dateperemtion_vegetable
             // 
             this.txt_dateperemtion_vegetable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_dateperemtion_vegetable.Location = new System.Drawing.Point(462, 112);
+            this.txt_dateperemtion_vegetable.Location = new System.Drawing.Point(577, 90);
             this.txt_dateperemtion_vegetable.Name = "txt_dateperemtion_vegetable";
             this.txt_dateperemtion_vegetable.Size = new System.Drawing.Size(100, 20);
             this.txt_dateperemtion_vegetable.TabIndex = 12;
@@ -1876,7 +1873,7 @@
             // txt_quantity_vegetable
             // 
             this.txt_quantity_vegetable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_quantity_vegetable.Location = new System.Drawing.Point(462, 74);
+            this.txt_quantity_vegetable.Location = new System.Drawing.Point(577, 51);
             this.txt_quantity_vegetable.Name = "txt_quantity_vegetable";
             this.txt_quantity_vegetable.Size = new System.Drawing.Size(100, 20);
             this.txt_quantity_vegetable.TabIndex = 11;
@@ -1885,7 +1882,7 @@
             // 
             this.text_name_vegetable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_vegetable.Enabled = false;
-            this.text_name_vegetable.Location = new System.Drawing.Point(462, 36);
+            this.text_name_vegetable.Location = new System.Drawing.Point(577, 14);
             this.text_name_vegetable.Name = "text_name_vegetable";
             this.text_name_vegetable.Size = new System.Drawing.Size(100, 20);
             this.text_name_vegetable.TabIndex = 10;
@@ -1900,7 +1897,7 @@
             this.listView7.GridLines = true;
             this.listView7.Location = new System.Drawing.Point(3, -1);
             this.listView7.Name = "listView7";
-            this.listView7.Size = new System.Drawing.Size(198, 378);
+            this.listView7.Size = new System.Drawing.Size(369, 503);
             this.listView7.TabIndex = 9;
             this.listView7.UseCompatibleStateImageBehavior = false;
             this.listView7.View = System.Windows.Forms.View.Details;
@@ -1931,19 +1928,15 @@
             this.tabPage_Poultry.Controls.Add(this.listView6);
             this.tabPage_Poultry.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Poultry.Name = "tabPage_Poultry";
-            this.tabPage_Poultry.Size = new System.Drawing.Size(568, 380);
+            this.tabPage_Poultry.Size = new System.Drawing.Size(689, 505);
             this.tabPage_Poultry.TabIndex = 5;
             this.tabPage_Poultry.Text = "Volailles";
             this.tabPage_Poultry.UseVisualStyleBackColor = true;
             // 
             // monthCalendar6
             // 
-
             this.monthCalendar6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar6.Location = new System.Drawing.Point(335, 134);
-
-            this.monthCalendar6.Location = new System.Drawing.Point(232, 137);
-
+            this.monthCalendar6.Location = new System.Drawing.Point(457, 116);
             this.monthCalendar6.Name = "monthCalendar6";
             this.monthCalendar6.TabIndex = 25;
             this.monthCalendar6.Visible = false;
@@ -1955,7 +1948,7 @@
             this.panel6.Controls.Add(this.label90);
             this.panel6.Controls.Add(this.button6);
             this.panel6.Controls.Add(this.textBox6);
-            this.panel6.Location = new System.Drawing.Point(353, 156);
+            this.panel6.Location = new System.Drawing.Point(489, 303);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(200, 100);
             this.panel6.TabIndex = 24;
@@ -1991,7 +1984,7 @@
             // button_ajouter_volailles
             // 
             this.button_ajouter_volailles.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_ajouter_volailles.Location = new System.Drawing.Point(362, 273);
+            this.button_ajouter_volailles.Location = new System.Drawing.Point(499, 409);
             this.button_ajouter_volailles.Name = "button_ajouter_volailles";
             this.button_ajouter_volailles.Size = new System.Drawing.Size(187, 23);
             this.button_ajouter_volailles.TabIndex = 22;
@@ -2043,7 +2036,7 @@
             // 
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(350, 115);
+            this.label13.Location = new System.Drawing.Point(474, 84);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(106, 13);
             this.label13.TabIndex = 17;
@@ -2053,7 +2046,7 @@
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(350, 74);
+            this.label14.Location = new System.Drawing.Point(527, 48);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(53, 13);
             this.label14.TabIndex = 16;
@@ -2063,7 +2056,7 @@
             // 
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(350, 36);
+            this.label15.Location = new System.Drawing.Point(545, 15);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(35, 13);
             this.label15.TabIndex = 15;
@@ -2072,7 +2065,7 @@
             // button_back_poultry
             // 
             this.button_back_poultry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_back_poultry.Location = new System.Drawing.Point(464, 302);
+            this.button_back_poultry.Location = new System.Drawing.Point(591, 437);
             this.button_back_poultry.Name = "button_back_poultry";
             this.button_back_poultry.Size = new System.Drawing.Size(98, 68);
             this.button_back_poultry.TabIndex = 14;
@@ -2083,7 +2076,7 @@
             // btn_enreg_poultry
             // 
             this.btn_enreg_poultry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_enreg_poultry.Location = new System.Drawing.Point(359, 302);
+            this.btn_enreg_poultry.Location = new System.Drawing.Point(486, 438);
             this.btn_enreg_poultry.Name = "btn_enreg_poultry";
             this.btn_enreg_poultry.Size = new System.Drawing.Size(99, 68);
             this.btn_enreg_poultry.TabIndex = 13;
@@ -2094,7 +2087,7 @@
             // txt_dateperemtion_poultry
             // 
             this.txt_dateperemtion_poultry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_dateperemtion_poultry.Location = new System.Drawing.Point(462, 112);
+            this.txt_dateperemtion_poultry.Location = new System.Drawing.Point(586, 84);
             this.txt_dateperemtion_poultry.Name = "txt_dateperemtion_poultry";
             this.txt_dateperemtion_poultry.Size = new System.Drawing.Size(100, 20);
             this.txt_dateperemtion_poultry.TabIndex = 12;
@@ -2103,7 +2096,7 @@
             // txt_quantity_poultry
             // 
             this.txt_quantity_poultry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_quantity_poultry.Location = new System.Drawing.Point(462, 74);
+            this.txt_quantity_poultry.Location = new System.Drawing.Point(586, 48);
             this.txt_quantity_poultry.Name = "txt_quantity_poultry";
             this.txt_quantity_poultry.Size = new System.Drawing.Size(100, 20);
             this.txt_quantity_poultry.TabIndex = 11;
@@ -2112,7 +2105,7 @@
             // 
             this.text_name_poultry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_poultry.Enabled = false;
-            this.text_name_poultry.Location = new System.Drawing.Point(462, 36);
+            this.text_name_poultry.Location = new System.Drawing.Point(586, 12);
             this.text_name_poultry.Name = "text_name_poultry";
             this.text_name_poultry.Size = new System.Drawing.Size(100, 20);
             this.text_name_poultry.TabIndex = 10;
@@ -2127,7 +2120,7 @@
             this.listView6.GridLines = true;
             this.listView6.Location = new System.Drawing.Point(3, -1);
             this.listView6.Name = "listView6";
-            this.listView6.Size = new System.Drawing.Size(191, 378);
+            this.listView6.Size = new System.Drawing.Size(408, 506);
             this.listView6.TabIndex = 9;
             this.listView6.UseCompatibleStateImageBehavior = false;
             this.listView6.View = System.Windows.Forms.View.Details;
@@ -2158,19 +2151,15 @@
             this.tabPage_Fish.Controls.Add(this.listView5);
             this.tabPage_Fish.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Fish.Name = "tabPage_Fish";
-            this.tabPage_Fish.Size = new System.Drawing.Size(568, 380);
+            this.tabPage_Fish.Size = new System.Drawing.Size(689, 505);
             this.tabPage_Fish.TabIndex = 4;
             this.tabPage_Fish.Text = "Poisson";
             this.tabPage_Fish.UseVisualStyleBackColor = true;
             // 
             // monthCalendar5
             // 
-
             this.monthCalendar5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar5.Location = new System.Drawing.Point(335, 137);
-
-            this.monthCalendar5.Location = new System.Drawing.Point(208, 122);
-
+            this.monthCalendar5.Location = new System.Drawing.Point(462, 116);
             this.monthCalendar5.Name = "monthCalendar5";
             this.monthCalendar5.TabIndex = 25;
             this.monthCalendar5.Visible = false;
@@ -2182,7 +2171,7 @@
             this.panel5.Controls.Add(this.label89);
             this.panel5.Controls.Add(this.button5);
             this.panel5.Controls.Add(this.textBox5);
-            this.panel5.Location = new System.Drawing.Point(353, 153);
+            this.panel5.Location = new System.Drawing.Point(486, 299);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 100);
             this.panel5.TabIndex = 24;
@@ -2218,7 +2207,7 @@
             // button_ajouter_poisson
             // 
             this.button_ajouter_poisson.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_ajouter_poisson.Location = new System.Drawing.Point(359, 273);
+            this.button_ajouter_poisson.Location = new System.Drawing.Point(499, 405);
             this.button_ajouter_poisson.Name = "button_ajouter_poisson";
             this.button_ajouter_poisson.Size = new System.Drawing.Size(187, 23);
             this.button_ajouter_poisson.TabIndex = 22;
@@ -2270,7 +2259,7 @@
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(350, 115);
+            this.label10.Location = new System.Drawing.Point(474, 87);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(106, 13);
             this.label10.TabIndex = 17;
@@ -2280,7 +2269,7 @@
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(350, 74);
+            this.label11.Location = new System.Drawing.Point(527, 51);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(53, 13);
             this.label11.TabIndex = 16;
@@ -2290,7 +2279,7 @@
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(350, 36);
+            this.label12.Location = new System.Drawing.Point(545, 13);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(35, 13);
             this.label12.TabIndex = 15;
@@ -2299,7 +2288,7 @@
             // button_Back_fish
             // 
             this.button_Back_fish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Back_fish.Location = new System.Drawing.Point(464, 302);
+            this.button_Back_fish.Location = new System.Drawing.Point(588, 434);
             this.button_Back_fish.Name = "button_Back_fish";
             this.button_Back_fish.Size = new System.Drawing.Size(98, 68);
             this.button_Back_fish.TabIndex = 14;
@@ -2310,7 +2299,7 @@
             // btn_enreg_fish
             // 
             this.btn_enreg_fish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_enreg_fish.Location = new System.Drawing.Point(359, 302);
+            this.btn_enreg_fish.Location = new System.Drawing.Point(483, 434);
             this.btn_enreg_fish.Name = "btn_enreg_fish";
             this.btn_enreg_fish.Size = new System.Drawing.Size(99, 68);
             this.btn_enreg_fish.TabIndex = 13;
@@ -2321,7 +2310,7 @@
             // txt_dateperemption_fish
             // 
             this.txt_dateperemption_fish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_dateperemption_fish.Location = new System.Drawing.Point(462, 112);
+            this.txt_dateperemption_fish.Location = new System.Drawing.Point(586, 84);
             this.txt_dateperemption_fish.Name = "txt_dateperemption_fish";
             this.txt_dateperemption_fish.Size = new System.Drawing.Size(100, 20);
             this.txt_dateperemption_fish.TabIndex = 12;
@@ -2330,7 +2319,7 @@
             // txt_quantity_fish
             // 
             this.txt_quantity_fish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_quantity_fish.Location = new System.Drawing.Point(462, 74);
+            this.txt_quantity_fish.Location = new System.Drawing.Point(586, 48);
             this.txt_quantity_fish.Name = "txt_quantity_fish";
             this.txt_quantity_fish.Size = new System.Drawing.Size(100, 20);
             this.txt_quantity_fish.TabIndex = 11;
@@ -2339,7 +2328,7 @@
             // 
             this.text_name_fish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_fish.Enabled = false;
-            this.text_name_fish.Location = new System.Drawing.Point(462, 36);
+            this.text_name_fish.Location = new System.Drawing.Point(586, 13);
             this.text_name_fish.Name = "text_name_fish";
             this.text_name_fish.Size = new System.Drawing.Size(100, 20);
             this.text_name_fish.TabIndex = 10;
@@ -2354,7 +2343,7 @@
             this.listView5.GridLines = true;
             this.listView5.Location = new System.Drawing.Point(3, -1);
             this.listView5.Name = "listView5";
-            this.listView5.Size = new System.Drawing.Size(193, 378);
+            this.listView5.Size = new System.Drawing.Size(418, 503);
             this.listView5.TabIndex = 9;
             this.listView5.UseCompatibleStateImageBehavior = false;
             this.listView5.View = System.Windows.Forms.View.Details;
@@ -2385,19 +2374,15 @@
             this.tabPage_Crustacean.Controls.Add(this.listView4);
             this.tabPage_Crustacean.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Crustacean.Name = "tabPage_Crustacean";
-            this.tabPage_Crustacean.Size = new System.Drawing.Size(568, 380);
+            this.tabPage_Crustacean.Size = new System.Drawing.Size(689, 505);
             this.tabPage_Crustacean.TabIndex = 3;
             this.tabPage_Crustacean.Text = "Crustacé";
             this.tabPage_Crustacean.UseVisualStyleBackColor = true;
             // 
             // monthCalendar4
             // 
-
             this.monthCalendar4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar4.Location = new System.Drawing.Point(335, 137);
-
-            this.monthCalendar4.Location = new System.Drawing.Point(259, 127);
-
+            this.monthCalendar4.Location = new System.Drawing.Point(453, 127);
             this.monthCalendar4.Name = "monthCalendar4";
             this.monthCalendar4.TabIndex = 25;
             this.monthCalendar4.Visible = false;
@@ -2409,7 +2394,7 @@
             this.panel4.Controls.Add(this.label86);
             this.panel4.Controls.Add(this.button4);
             this.panel4.Controls.Add(this.textBox4);
-            this.panel4.Location = new System.Drawing.Point(359, 151);
+            this.panel4.Location = new System.Drawing.Point(486, 301);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 100);
             this.panel4.TabIndex = 24;
@@ -2445,7 +2430,7 @@
             // button_ajouter_crustacé
             // 
             this.button_ajouter_crustacé.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_ajouter_crustacé.Location = new System.Drawing.Point(359, 273);
+            this.button_ajouter_crustacé.Location = new System.Drawing.Point(499, 405);
             this.button_ajouter_crustacé.Name = "button_ajouter_crustacé";
             this.button_ajouter_crustacé.Size = new System.Drawing.Size(187, 23);
             this.button_ajouter_crustacé.TabIndex = 22;
@@ -2497,7 +2482,7 @@
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(350, 115);
+            this.label7.Location = new System.Drawing.Point(474, 86);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(106, 13);
             this.label7.TabIndex = 17;
@@ -2507,7 +2492,7 @@
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(350, 74);
+            this.label8.Location = new System.Drawing.Point(527, 53);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 13);
             this.label8.TabIndex = 16;
@@ -2517,7 +2502,7 @@
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(350, 36);
+            this.label9.Location = new System.Drawing.Point(545, 14);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(35, 13);
             this.label9.TabIndex = 15;
@@ -2526,7 +2511,7 @@
             // button_back_crustacean
             // 
             this.button_back_crustacean.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_back_crustacean.Location = new System.Drawing.Point(464, 302);
+            this.button_back_crustacean.Location = new System.Drawing.Point(588, 434);
             this.button_back_crustacean.Name = "button_back_crustacean";
             this.button_back_crustacean.Size = new System.Drawing.Size(98, 68);
             this.button_back_crustacean.TabIndex = 14;
@@ -2537,7 +2522,7 @@
             // btn_enreg_crustaceam
             // 
             this.btn_enreg_crustaceam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_enreg_crustaceam.Location = new System.Drawing.Point(359, 302);
+            this.btn_enreg_crustaceam.Location = new System.Drawing.Point(483, 434);
             this.btn_enreg_crustaceam.Name = "btn_enreg_crustaceam";
             this.btn_enreg_crustaceam.Size = new System.Drawing.Size(99, 68);
             this.btn_enreg_crustaceam.TabIndex = 13;
@@ -2548,7 +2533,7 @@
             // txt_dateperemption_crust
             // 
             this.txt_dateperemption_crust.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_dateperemption_crust.Location = new System.Drawing.Point(462, 112);
+            this.txt_dateperemption_crust.Location = new System.Drawing.Point(586, 86);
             this.txt_dateperemption_crust.Name = "txt_dateperemption_crust";
             this.txt_dateperemption_crust.Size = new System.Drawing.Size(100, 20);
             this.txt_dateperemption_crust.TabIndex = 12;
@@ -2557,7 +2542,7 @@
             // txt_quantity_crust
             // 
             this.txt_quantity_crust.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_quantity_crust.Location = new System.Drawing.Point(462, 74);
+            this.txt_quantity_crust.Location = new System.Drawing.Point(586, 50);
             this.txt_quantity_crust.Name = "txt_quantity_crust";
             this.txt_quantity_crust.Size = new System.Drawing.Size(100, 20);
             this.txt_quantity_crust.TabIndex = 11;
@@ -2565,8 +2550,7 @@
             // txt_name_crust
             // 
             this.txt_name_crust.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_name_crust.Enabled = false;
-            this.txt_name_crust.Location = new System.Drawing.Point(462, 36);
+            this.txt_name_crust.Location = new System.Drawing.Point(586, 14);
             this.txt_name_crust.Name = "txt_name_crust";
             this.txt_name_crust.Size = new System.Drawing.Size(100, 20);
             this.txt_name_crust.TabIndex = 10;
@@ -2581,7 +2565,7 @@
             this.listView4.GridLines = true;
             this.listView4.Location = new System.Drawing.Point(-3, 0);
             this.listView4.Name = "listView4";
-            this.listView4.Size = new System.Drawing.Size(231, 378);
+            this.listView4.Size = new System.Drawing.Size(431, 502);
             this.listView4.TabIndex = 9;
             this.listView4.UseCompatibleStateImageBehavior = false;
             this.listView4.View = System.Windows.Forms.View.Details;
@@ -2612,19 +2596,15 @@
             this.tabPage_Dessert.Controls.Add(this.listView3);
             this.tabPage_Dessert.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Dessert.Name = "tabPage_Dessert";
-            this.tabPage_Dessert.Size = new System.Drawing.Size(568, 380);
+            this.tabPage_Dessert.Size = new System.Drawing.Size(689, 505);
             this.tabPage_Dessert.TabIndex = 2;
             this.tabPage_Dessert.Text = "Dessert/Sucrerie";
             this.tabPage_Dessert.UseVisualStyleBackColor = true;
             // 
             // monthCalendar3
             // 
-
             this.monthCalendar3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar3.Location = new System.Drawing.Point(335, 137);
-
-            this.monthCalendar3.Location = new System.Drawing.Point(223, 128);
-
+            this.monthCalendar3.Location = new System.Drawing.Point(457, 115);
             this.monthCalendar3.Name = "monthCalendar3";
             this.monthCalendar3.TabIndex = 25;
             this.monthCalendar3.Visible = false;
@@ -2636,7 +2616,7 @@
             this.panel3.Controls.Add(this.label85);
             this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Location = new System.Drawing.Point(349, 155);
+            this.panel3.Location = new System.Drawing.Point(480, 289);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 100);
             this.panel3.TabIndex = 24;
@@ -2672,7 +2652,7 @@
             // button_ajouter_dessert
             // 
             this.button_ajouter_dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_ajouter_dessert.Location = new System.Drawing.Point(362, 273);
+            this.button_ajouter_dessert.Location = new System.Drawing.Point(483, 398);
             this.button_ajouter_dessert.Name = "button_ajouter_dessert";
             this.button_ajouter_dessert.Size = new System.Drawing.Size(187, 23);
             this.button_ajouter_dessert.TabIndex = 22;
@@ -2724,7 +2704,7 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(350, 115);
+            this.label4.Location = new System.Drawing.Point(480, 93);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 13);
             this.label4.TabIndex = 17;
@@ -2734,7 +2714,7 @@
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(350, 74);
+            this.label5.Location = new System.Drawing.Point(530, 51);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 13);
             this.label5.TabIndex = 16;
@@ -2744,7 +2724,7 @@
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(350, 36);
+            this.label6.Location = new System.Drawing.Point(545, 14);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 15;
@@ -2753,7 +2733,7 @@
             // button_back_dessert
             // 
             this.button_back_dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_back_dessert.Location = new System.Drawing.Point(464, 302);
+            this.button_back_dessert.Location = new System.Drawing.Point(585, 427);
             this.button_back_dessert.Name = "button_back_dessert";
             this.button_back_dessert.Size = new System.Drawing.Size(98, 68);
             this.button_back_dessert.TabIndex = 14;
@@ -2764,7 +2744,7 @@
             // btn_enregistrer
             // 
             this.btn_enregistrer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_enregistrer.Location = new System.Drawing.Point(359, 302);
+            this.btn_enregistrer.Location = new System.Drawing.Point(480, 427);
             this.btn_enregistrer.Name = "btn_enregistrer";
             this.btn_enregistrer.Size = new System.Drawing.Size(99, 68);
             this.btn_enregistrer.TabIndex = 13;
@@ -2775,7 +2755,7 @@
             // txt_dateperemtion_dessert
             // 
             this.txt_dateperemtion_dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_dateperemtion_dessert.Location = new System.Drawing.Point(462, 112);
+            this.txt_dateperemtion_dessert.Location = new System.Drawing.Point(586, 90);
             this.txt_dateperemtion_dessert.Name = "txt_dateperemtion_dessert";
             this.txt_dateperemtion_dessert.Size = new System.Drawing.Size(100, 20);
             this.txt_dateperemtion_dessert.TabIndex = 12;
@@ -2784,7 +2764,7 @@
             // txt_quantity_dessert
             // 
             this.txt_quantity_dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_quantity_dessert.Location = new System.Drawing.Point(462, 74);
+            this.txt_quantity_dessert.Location = new System.Drawing.Point(586, 51);
             this.txt_quantity_dessert.Name = "txt_quantity_dessert";
             this.txt_quantity_dessert.Size = new System.Drawing.Size(100, 20);
             this.txt_quantity_dessert.TabIndex = 11;
@@ -2793,7 +2773,7 @@
             // 
             this.text_name_dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_dessert.Enabled = false;
-            this.text_name_dessert.Location = new System.Drawing.Point(462, 36);
+            this.text_name_dessert.Location = new System.Drawing.Point(586, 14);
             this.text_name_dessert.Name = "text_name_dessert";
             this.text_name_dessert.Size = new System.Drawing.Size(100, 20);
             this.text_name_dessert.TabIndex = 10;
@@ -2808,7 +2788,7 @@
             this.listView3.GridLines = true;
             this.listView3.Location = new System.Drawing.Point(0, 0);
             this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(200, 378);
+            this.listView3.Size = new System.Drawing.Size(409, 503);
             this.listView3.TabIndex = 9;
             this.listView3.UseCompatibleStateImageBehavior = false;
             this.listView3.View = System.Windows.Forms.View.Details;
@@ -2840,19 +2820,15 @@
             this.tabPage_Drink.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Drink.Name = "tabPage_Drink";
             this.tabPage_Drink.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Drink.Size = new System.Drawing.Size(568, 380);
+            this.tabPage_Drink.Size = new System.Drawing.Size(689, 505);
             this.tabPage_Drink.TabIndex = 1;
             this.tabPage_Drink.Text = "Boisson";
             this.tabPage_Drink.UseVisualStyleBackColor = true;
             // 
             // monthCalendar2
             // 
-
             this.monthCalendar2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar2.Location = new System.Drawing.Point(335, 137);
-
-            this.monthCalendar2.Location = new System.Drawing.Point(214, 128);
-
+            this.monthCalendar2.Location = new System.Drawing.Point(457, 115);
             this.monthCalendar2.Name = "monthCalendar2";
             this.monthCalendar2.TabIndex = 24;
             this.monthCalendar2.Visible = false;
@@ -2864,7 +2840,7 @@
             this.panel1.Controls.Add(this.label88);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(353, 166);
+            this.panel1.Location = new System.Drawing.Point(474, 291);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 100);
             this.panel1.TabIndex = 23;
@@ -2900,7 +2876,7 @@
             // button_ajouter_boisson
             // 
             this.button_ajouter_boisson.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_ajouter_boisson.Location = new System.Drawing.Point(359, 273);
+            this.button_ajouter_boisson.Location = new System.Drawing.Point(480, 398);
             this.button_ajouter_boisson.Name = "button_ajouter_boisson";
             this.button_ajouter_boisson.Size = new System.Drawing.Size(187, 23);
             this.button_ajouter_boisson.TabIndex = 22;
@@ -2952,7 +2928,7 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(350, 115);
+            this.label1.Location = new System.Drawing.Point(477, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 13);
             this.label1.TabIndex = 17;
@@ -2962,7 +2938,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(350, 74);
+            this.label2.Location = new System.Drawing.Point(530, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 16;
@@ -2972,7 +2948,7 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(350, 36);
+            this.label3.Location = new System.Drawing.Point(548, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 15;
@@ -2981,7 +2957,7 @@
             // button_back1
             // 
             this.button_back1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_back1.Location = new System.Drawing.Point(464, 302);
+            this.button_back1.Location = new System.Drawing.Point(585, 427);
             this.button_back1.Name = "button_back1";
             this.button_back1.Size = new System.Drawing.Size(98, 68);
             this.button_back1.TabIndex = 14;
@@ -2992,7 +2968,7 @@
             // button_save_drink
             // 
             this.button_save_drink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_save_drink.Location = new System.Drawing.Point(359, 302);
+            this.button_save_drink.Location = new System.Drawing.Point(480, 427);
             this.button_save_drink.Name = "button_save_drink";
             this.button_save_drink.Size = new System.Drawing.Size(99, 68);
             this.button_save_drink.TabIndex = 13;
@@ -3003,7 +2979,7 @@
             // textbox_datePeremption
             // 
             this.textbox_datePeremption.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textbox_datePeremption.Location = new System.Drawing.Point(462, 112);
+            this.textbox_datePeremption.Location = new System.Drawing.Point(586, 83);
             this.textbox_datePeremption.Name = "textbox_datePeremption";
             this.textbox_datePeremption.Size = new System.Drawing.Size(100, 20);
             this.textbox_datePeremption.TabIndex = 12;
@@ -3012,7 +2988,7 @@
             // textbox_quantity_drink
             // 
             this.textbox_quantity_drink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textbox_quantity_drink.Location = new System.Drawing.Point(462, 74);
+            this.textbox_quantity_drink.Location = new System.Drawing.Point(586, 44);
             this.textbox_quantity_drink.Name = "textbox_quantity_drink";
             this.textbox_quantity_drink.Size = new System.Drawing.Size(100, 20);
             this.textbox_quantity_drink.TabIndex = 11;
@@ -3021,7 +2997,7 @@
             // 
             this.text_name_drink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_drink.Enabled = false;
-            this.text_name_drink.Location = new System.Drawing.Point(462, 36);
+            this.text_name_drink.Location = new System.Drawing.Point(586, 6);
             this.text_name_drink.Name = "text_name_drink";
             this.text_name_drink.Size = new System.Drawing.Size(100, 20);
             this.text_name_drink.TabIndex = 10;
@@ -3036,7 +3012,7 @@
             this.listView2.GridLines = true;
             this.listView2.Location = new System.Drawing.Point(-4, 0);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(175, 381);
+            this.listView2.Size = new System.Drawing.Size(390, 506);
             this.listView2.TabIndex = 9;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -3068,7 +3044,7 @@
             this.tabPage_Beef.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Beef.Name = "tabPage_Beef";
             this.tabPage_Beef.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Beef.Size = new System.Drawing.Size(568, 380);
+            this.tabPage_Beef.Size = new System.Drawing.Size(689, 505);
             this.tabPage_Beef.TabIndex = 0;
             this.tabPage_Beef.Text = "Viande";
             this.tabPage_Beef.UseVisualStyleBackColor = true;
@@ -3076,7 +3052,7 @@
             // monthCalendar1
             // 
             this.monthCalendar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar1.Location = new System.Drawing.Point(332, 138);
+            this.monthCalendar1.Location = new System.Drawing.Point(466, 97);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 25;
             this.monthCalendar1.Visible = false;
@@ -3088,7 +3064,7 @@
             this.panel2.Controls.Add(this.label87);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Location = new System.Drawing.Point(356, 155);
+            this.panel2.Location = new System.Drawing.Point(477, 280);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 100);
             this.panel2.TabIndex = 24;
@@ -3124,7 +3100,7 @@
             // button_ajouter_viande
             // 
             this.button_ajouter_viande.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_ajouter_viande.Location = new System.Drawing.Point(361, 274);
+            this.button_ajouter_viande.Location = new System.Drawing.Point(482, 399);
             this.button_ajouter_viande.Name = "button_ajouter_viande";
             this.button_ajouter_viande.Size = new System.Drawing.Size(187, 23);
             this.button_ajouter_viande.TabIndex = 13;
@@ -3176,7 +3152,7 @@
             // 
             this.label_Date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Date.AutoSize = true;
-            this.label_Date.Location = new System.Drawing.Point(347, 116);
+            this.label_Date.Location = new System.Drawing.Point(471, 75);
             this.label_Date.Name = "label_Date";
             this.label_Date.Size = new System.Drawing.Size(106, 13);
             this.label_Date.TabIndex = 8;
@@ -3186,7 +3162,7 @@
             // 
             this.label_Quantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Quantity.AutoSize = true;
-            this.label_Quantity.Location = new System.Drawing.Point(347, 75);
+            this.label_Quantity.Location = new System.Drawing.Point(524, 40);
             this.label_Quantity.Name = "label_Quantity";
             this.label_Quantity.Size = new System.Drawing.Size(53, 13);
             this.label_Quantity.TabIndex = 7;
@@ -3196,7 +3172,7 @@
             // 
             this.label_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Name.AutoSize = true;
-            this.label_Name.Location = new System.Drawing.Point(347, 37);
+            this.label_Name.Location = new System.Drawing.Point(542, 9);
             this.label_Name.Name = "label_Name";
             this.label_Name.Size = new System.Drawing.Size(35, 13);
             this.label_Name.TabIndex = 6;
@@ -3205,7 +3181,7 @@
             // button_Back
             // 
             this.button_Back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Back.Location = new System.Drawing.Point(461, 303);
+            this.button_Back.Location = new System.Drawing.Point(582, 428);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(98, 68);
             this.button_Back.TabIndex = 5;
@@ -3216,7 +3192,7 @@
             // button_Save
             // 
             this.button_Save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Save.Location = new System.Drawing.Point(356, 303);
+            this.button_Save.Location = new System.Drawing.Point(477, 428);
             this.button_Save.Name = "button_Save";
             this.button_Save.Size = new System.Drawing.Size(99, 68);
             this.button_Save.TabIndex = 4;
@@ -3228,7 +3204,7 @@
             // 
             this.textBox_Date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_Date.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox_Date.Location = new System.Drawing.Point(459, 113);
+            this.textBox_Date.Location = new System.Drawing.Point(583, 72);
             this.textBox_Date.Name = "textBox_Date";
             this.textBox_Date.Size = new System.Drawing.Size(100, 20);
             this.textBox_Date.TabIndex = 3;
@@ -3237,7 +3213,7 @@
             // textBox_Quantity
             // 
             this.textBox_Quantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_Quantity.Location = new System.Drawing.Point(459, 75);
+            this.textBox_Quantity.Location = new System.Drawing.Point(583, 37);
             this.textBox_Quantity.Name = "textBox_Quantity";
             this.textBox_Quantity.Size = new System.Drawing.Size(100, 20);
             this.textBox_Quantity.TabIndex = 2;
@@ -3246,7 +3222,7 @@
             // 
             this.text_name_meat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.text_name_meat.Enabled = false;
-            this.text_name_meat.Location = new System.Drawing.Point(459, 37);
+            this.text_name_meat.Location = new System.Drawing.Point(583, 6);
             this.text_name_meat.Name = "text_name_meat";
             this.text_name_meat.Size = new System.Drawing.Size(100, 20);
             this.text_name_meat.TabIndex = 1;
@@ -3260,7 +3236,7 @@
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(240, 378);
+            this.listView1.Size = new System.Drawing.Size(439, 503);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -3290,7 +3266,7 @@
             this.tabControl_Add_Remove.Location = new System.Drawing.Point(0, 0);
             this.tabControl_Add_Remove.Name = "tabControl_Add_Remove";
             this.tabControl_Add_Remove.SelectedIndex = 0;
-            this.tabControl_Add_Remove.Size = new System.Drawing.Size(576, 406);
+            this.tabControl_Add_Remove.Size = new System.Drawing.Size(697, 531);
             this.tabControl_Add_Remove.TabIndex = 1;
             // 
             // UserControl_Reserve_Add_Remove
@@ -3299,7 +3275,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl_Add_Remove);
             this.Name = "UserControl_Reserve_Add_Remove";
-            this.Size = new System.Drawing.Size(576, 406);
+            this.Size = new System.Drawing.Size(697, 531);
             this.Enter += new System.EventHandler(this.UserControl_Reserve_Add_Remove_Enter);
             this.tabPage_Fat_Boulangerie.ResumeLayout(false);
             this.tabPage_Fat_Boulangerie.PerformLayout();
@@ -3634,5 +3610,7 @@
         private System.Windows.Forms.MonthCalendar monthCalendar11;
         private System.Windows.Forms.MonthCalendar monthCalendar12;
         private System.Windows.Forms.MonthCalendar monthCalendar13;
+        private System.Windows.Forms.MonthCalendar monthCalendar14;
+        private System.Windows.Forms.MonthCalendar monthCalendar15;
     }
 }
