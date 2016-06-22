@@ -19,6 +19,7 @@ namespace Healthyfood
         public UserControl_Reserve_Add_Remove()
         {
             InitializeComponent();
+            tabPage_Beef.ImageIndex = 0;
         }
         public Menu Root
         {

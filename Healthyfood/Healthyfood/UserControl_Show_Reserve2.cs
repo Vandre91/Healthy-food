@@ -45,7 +45,7 @@ namespace Healthyfood
                 ListViewItem item = new ListViewItem(row);
                 listView1.Items.Add(item);
                 listView1.Items[i].ImageIndex = categoryImage(p.Category1);
-                if ((i % 2) == 0) listView1.Items[i].BackColor = Color.LightGray;
+                if ((i % 2) == 0) listView1.Items[i].BackColor = Color.WhiteSmoke;
                 else listView1.Items[i].BackColor = Color.White;
                 listView2.Items.Add(" ");
                 listView2.Items[i].ImageIndex = DateImage(p.Expiration_Date);

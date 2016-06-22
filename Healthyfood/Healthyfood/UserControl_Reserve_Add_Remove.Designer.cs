@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Reserve_Add_Remove));
             this.tabPage_Fat_Boulangerie = new System.Windows.Forms.TabPage();
             this.monthCalendar13 = new System.Windows.Forms.MonthCalendar();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -304,6 +306,7 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl_Add_Remove = new System.Windows.Forms.TabControl();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabPage_Fat_Boulangerie.SuspendLayout();
             this.panel13.SuspendLayout();
             this.tabPage_Herbes_Plants.SuspendLayout();
@@ -351,6 +354,7 @@
             this.tabPage_Fat_Boulangerie.Controls.Add(this.label35);
             this.tabPage_Fat_Boulangerie.Controls.Add(this.label34);
             this.tabPage_Fat_Boulangerie.Controls.Add(this.listView13);
+            this.tabPage_Fat_Boulangerie.ImageIndex = 9;
             this.tabPage_Fat_Boulangerie.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Fat_Boulangerie.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Fat_Boulangerie.Name = "tabPage_Fat_Boulangerie";
@@ -581,6 +585,7 @@
             this.tabPage_Herbes_Plants.Controls.Add(this.textBox33);
             this.tabPage_Herbes_Plants.Controls.Add(this.text_name_plant);
             this.tabPage_Herbes_Plants.Controls.Add(this.listView12);
+            this.tabPage_Herbes_Plants.ImageIndex = 4;
             this.tabPage_Herbes_Plants.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Herbes_Plants.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Herbes_Plants.Name = "tabPage_Herbes_Plants";
@@ -816,6 +821,7 @@
             this.tabPage_Féculent.Controls.Add(this.textBox30);
             this.tabPage_Féculent.Controls.Add(this.text_name_starchy);
             this.tabPage_Féculent.Controls.Add(this.listView11);
+            this.tabPage_Féculent.ImageIndex = 8;
             this.tabPage_Féculent.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Féculent.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Féculent.Name = "tabPage_Féculent";
@@ -1051,6 +1057,7 @@
             this.tabPage_Fat_Content.Controls.Add(this.textBox27);
             this.tabPage_Fat_Content.Controls.Add(this.text_name_fat);
             this.tabPage_Fat_Content.Controls.Add(this.listView10);
+            this.tabPage_Fat_Content.ImageIndex = 12;
             this.tabPage_Fat_Content.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Fat_Content.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Fat_Content.Name = "tabPage_Fat_Content";
@@ -1296,6 +1303,7 @@
             this.tabPage_Milk_product.Controls.Add(this.textBox24);
             this.tabPage_Milk_product.Controls.Add(this.text_name_milk);
             this.tabPage_Milk_product.Controls.Add(this.listView9);
+            this.tabPage_Milk_product.ImageIndex = 6;
             this.tabPage_Milk_product.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Milk_product.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Milk_product.Name = "tabPage_Milk_product";
@@ -1542,6 +1550,7 @@
             this.tabPage_Fruit.Controls.Add(this.txt_quantity_fruit);
             this.tabPage_Fruit.Controls.Add(this.text_name_fruit);
             this.tabPage_Fruit.Controls.Add(this.listView8);
+            this.tabPage_Fruit.ImageIndex = 10;
             this.tabPage_Fruit.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Fruit.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Fruit.Name = "tabPage_Fruit";
@@ -1777,6 +1786,7 @@
             this.tabPage_Vegetables.Controls.Add(this.txt_quantity_vegetable);
             this.tabPage_Vegetables.Controls.Add(this.text_name_vegetable);
             this.tabPage_Vegetables.Controls.Add(this.listView7);
+            this.tabPage_Vegetables.ImageIndex = 7;
             this.tabPage_Vegetables.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Vegetables.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Vegetables.Name = "tabPage_Vegetables";
@@ -2012,6 +2022,7 @@
             this.tabPage_Poultry.Controls.Add(this.txt_quantity_poultry);
             this.tabPage_Poultry.Controls.Add(this.text_name_poultry);
             this.tabPage_Poultry.Controls.Add(this.listView6);
+            this.tabPage_Poultry.ImageIndex = 3;
             this.tabPage_Poultry.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Poultry.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Poultry.Name = "tabPage_Poultry";
@@ -2247,6 +2258,7 @@
             this.tabPage_Fish.Controls.Add(this.txt_quantity_fish);
             this.tabPage_Fish.Controls.Add(this.text_name_fish);
             this.tabPage_Fish.Controls.Add(this.listView5);
+            this.tabPage_Fish.ImageIndex = 1;
             this.tabPage_Fish.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Fish.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Fish.Name = "tabPage_Fish";
@@ -2482,6 +2494,7 @@
             this.tabPage_Crustacean.Controls.Add(this.txt_quantity_crust);
             this.tabPage_Crustacean.Controls.Add(this.txt_name_crust);
             this.tabPage_Crustacean.Controls.Add(this.listView4);
+            this.tabPage_Crustacean.ImageIndex = 11;
             this.tabPage_Crustacean.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Crustacean.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Crustacean.Name = "tabPage_Crustacean";
@@ -2716,6 +2729,7 @@
             this.tabPage_Dessert.Controls.Add(this.txt_quantity_dessert);
             this.tabPage_Dessert.Controls.Add(this.text_name_dessert);
             this.tabPage_Dessert.Controls.Add(this.listView3);
+            this.tabPage_Dessert.ImageIndex = 5;
             this.tabPage_Dessert.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Dessert.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Dessert.Name = "tabPage_Dessert";
@@ -2951,6 +2965,7 @@
             this.tabPage_Drink.Controls.Add(this.textbox_quantity_drink);
             this.tabPage_Drink.Controls.Add(this.text_name_drink);
             this.tabPage_Drink.Controls.Add(this.listView2);
+            this.tabPage_Drink.ImageIndex = 2;
             this.tabPage_Drink.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Drink.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Drink.Name = "tabPage_Drink";
@@ -3187,6 +3202,7 @@
             this.tabPage_Beef.Controls.Add(this.textBox_Quantity);
             this.tabPage_Beef.Controls.Add(this.text_name_meat);
             this.tabPage_Beef.Controls.Add(this.listView1);
+            this.tabPage_Beef.ImageIndex = 0;
             this.tabPage_Beef.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Beef.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Beef.Name = "tabPage_Beef";
@@ -3422,12 +3438,32 @@
             this.tabControl_Add_Remove.Controls.Add(this.tabPage_Fat_Boulangerie);
             this.tabControl_Add_Remove.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl_Add_Remove.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl_Add_Remove.ImageList = this.imageList1;
             this.tabControl_Add_Remove.Location = new System.Drawing.Point(0, 0);
             this.tabControl_Add_Remove.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl_Add_Remove.Name = "tabControl_Add_Remove";
             this.tabControl_Add_Remove.SelectedIndex = 0;
             this.tabControl_Add_Remove.Size = new System.Drawing.Size(929, 654);
             this.tabControl_Add_Remove.TabIndex = 1;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "30734901-Vector-viande-Ic-ne-Banque-d\'images.jpg");
+            this.imageList1.Images.SetKeyName(1, "1466380491_findingnemo2.png");
+            this.imageList1.Images.SetKeyName(2, "1466380583_Drinks-24.png");
+            this.imageList1.Images.SetKeyName(3, "1466380667_chiken_leg.png");
+            this.imageList1.Images.SetKeyName(4, "1466435749_ingredient_32.png");
+            this.imageList1.Images.SetKeyName(5, "1466435797_cake_20.png");
+            this.imageList1.Images.SetKeyName(6, "1466435847_travel_journey-08.png");
+            this.imageList1.Images.SetKeyName(7, "1466435869_carrot.png");
+            this.imageList1.Images.SetKeyName(8, "1466435916_arroz.png");
+            this.imageList1.Images.SetKeyName(9, "1466435931_bread.png");
+            this.imageList1.Images.SetKeyName(10, "1466443214_iconos_-_ice_cream_-_fruts_Berry.png");
+            this.imageList1.Images.SetKeyName(11, "crabe1.jpg");
+            this.imageList1.Images.SetKeyName(12, "22336387-Symbole-de-branche-d-olivier-stylis-bouteille-avec-de-l-huile-d-olive-ic" +
+        "-ne-illustration-vectorielle-Banque-d\'images.jpg");
             // 
             // UserControl_Reserve_Add_Remove
             // 
@@ -3773,5 +3809,6 @@
         private System.Windows.Forms.MonthCalendar monthCalendar13;
         private System.Windows.Forms.MonthCalendar monthCalendar14;
         private System.Windows.Forms.MonthCalendar monthCalendar15;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
