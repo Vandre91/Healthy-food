@@ -1064,22 +1064,22 @@ namespace Healthyfood
 
         private void textBox23_Click(object sender, EventArgs e)
         {
-            monthCalendar9.Visible = true;
+            monthCalendar14.Visible = true;
         }
 
         private void monthCalendar9_DateSelected(object sender, DateRangeEventArgs e)
         {
-            textBox23.Text = monthCalendar9.SelectionRange.Start.ToShortDateString();
+            textBox23.Text = monthCalendar14.SelectionRange.Start.ToShortDateString();
         }
 
         private void textBox26_Click(object sender, EventArgs e)
         {
-            monthCalendar10.Visible = true;
+            monthCalendar15.Visible = true;
         }
 
         private void monthCalendar10_DateSelected(object sender, DateRangeEventArgs e)
         {
-            textBox26.Text = monthCalendar10.SelectionRange.Start.ToShortDateString();
+            textBox26.Text = monthCalendar15.SelectionRange.Start.ToShortDateString();
         }
 
         private void textBox29_Click(object sender, EventArgs e)
@@ -1110,6 +1110,16 @@ namespace Healthyfood
         private void monthCalendar13_DateSelected(object sender, DateRangeEventArgs e)
         {
             textBox37.Text = monthCalendar13.SelectionRange.Start.ToShortDateString();
+        }
+
+        private void monthCalendar14_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            textBox23.Text = monthCalendar14.SelectionRange.Start.ToShortDateString();
+        }
+
+        private void monthCalendar15_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            textBox26.Text = monthCalendar15.SelectionRange.Start.ToShortDateString();
         }
         #endregion
     }
