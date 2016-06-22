@@ -52,6 +52,7 @@ namespace Healthyfood
                 i++;
 
             }
+            Root.Healthy.Stocks.DateIng();
         }
 
         private void button2_Click(object sender, EventArgs e)

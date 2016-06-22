@@ -10,11 +10,13 @@ namespace StockFood
     [Serializable]
     public class Stocks
     {
+
         public Dictionary<string, Ingredient> _stock;
+        public DateTime expiration_date;
 
         public Stocks()
         {
-            _stock = new Dictionary<string, Ingredient> ();
+            _stock = new Dictionary<string, Ingredient>();
         }
 
         public static string naming(Ingredient ingred)
@@ -92,24 +94,23 @@ namespace StockFood
             get { return _stock.Values; }
 
         }
-        public void CheckExpirationDate(Stocks ing)
+        public void DateIng()
         {
-
-            Dictionary<string, Ingredient> myDic = new Dictionary<string, Ingredient>();
-            DateTime d = new DateTime();
-
-            foreach (KeyValuePair<string, Ingredient> ingre in _stock)
-           
-                if (d >= DateTime.Today)
+            DateTime expiration = Convert.ToDateTime(expiration_date);
+            foreach (Ingredient ingre in IStock)
+            {
+                if (ingre.Expiration_Date <= DateTime.Today.AddDays(2)) 
                 {
-                     MessageBox.Show ("The product is out-of-date because the expiry date is reached!");
+                    MessageBox.Show("Lingredient "+ingre.Name+"approche de ca date dexpiration !");
                 }
-                else { }
+
+
             }
 
         }
 
-            }   
+    }
+}
         
 
 
