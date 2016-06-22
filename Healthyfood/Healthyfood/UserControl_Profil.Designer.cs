@@ -51,8 +51,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer_refesh = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.userControl_Show_Profil1 = new Healthyfood.UserControl_Show_Profil();
             this.userControl_Modify_Profil1 = new Healthyfood.UserControl_Modify_Profil();
+            this.userControl_Show_Profil1 = new Healthyfood.UserControl_Show_Profil();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -60,6 +60,9 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.userControl_Modify_Profil1);
             this.panel1.Controls.Add(this.userControl_Show_Profil1);
             this.panel1.Controls.Add(this.textBox1);
@@ -70,37 +73,43 @@
             this.panel1.Controls.Add(this.listView1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1015, 780);
+            this.panel1.Size = new System.Drawing.Size(761, 634);
             this.panel1.TabIndex = 0;
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.Red;
-            this.textBox1.Location = new System.Drawing.Point(332, 499);
+            this.textBox1.Location = new System.Drawing.Point(249, 405);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(309, 25);
+            this.textBox1.Size = new System.Drawing.Size(233, 22);
             this.textBox1.TabIndex = 6;
             this.textBox1.Text = "Veuillez sélectionner un utilisateur";
             // 
             // panel5
             // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.button3);
             this.panel5.Controls.Add(this.button2);
             this.panel5.Controls.Add(this.button1);
-            this.panel5.Location = new System.Drawing.Point(165, 570);
+            this.panel5.Location = new System.Drawing.Point(124, 463);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(654, 108);
+            this.panel5.Size = new System.Drawing.Size(490, 88);
             this.panel5.TabIndex = 5;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button3.Location = new System.Drawing.Point(457, 24);
+            this.button3.Location = new System.Drawing.Point(343, 20);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(158, 33);
+            this.button3.Size = new System.Drawing.Size(118, 27);
             this.button3.TabIndex = 2;
             this.button3.Text = "Supprimer";
             this.button3.UseVisualStyleBackColor = false;
@@ -109,9 +118,10 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.Location = new System.Drawing.Point(241, 24);
+            this.button2.Location = new System.Drawing.Point(181, 20);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 33);
+            this.button2.Size = new System.Drawing.Size(118, 27);
             this.button2.TabIndex = 1;
             this.button2.Text = "Modifier";
             this.button2.UseVisualStyleBackColor = false;
@@ -121,9 +131,10 @@
             // 
             this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(6, 24);
+            this.button1.Location = new System.Drawing.Point(4, 20);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 33);
+            this.button1.Size = new System.Drawing.Size(118, 27);
             this.button1.TabIndex = 0;
             this.button1.Text = "Ajouter";
             this.button1.UseVisualStyleBackColor = false;
@@ -134,26 +145,31 @@
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.button4);
-            this.panel4.Location = new System.Drawing.Point(815, 137);
+            this.panel4.Location = new System.Drawing.Point(611, 111);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 541);
+            this.panel4.Size = new System.Drawing.Size(150, 440);
             this.panel4.TabIndex = 4;
             // 
             // panel6
             // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackgroundImage = global::Healthyfood.Properties.Resources.mario_docteur1;
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel6.Location = new System.Drawing.Point(3, 0);
+            this.panel6.Location = new System.Drawing.Point(2, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(197, 451);
+            this.panel6.Size = new System.Drawing.Size(148, 366);
             this.panel6.TabIndex = 4;
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button4.Location = new System.Drawing.Point(10, 457);
+            this.button4.Location = new System.Drawing.Point(8, 371);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(175, 65);
+            this.button4.Size = new System.Drawing.Size(131, 53);
             this.button4.TabIndex = 3;
             this.button4.Text = "Retour";
             this.button4.UseVisualStyleBackColor = false;
@@ -161,24 +177,31 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BackgroundImage = global::Healthyfood.Properties.Resources.carte_de_sourire_de_fixation_de_chef_de_cuisine_de_dessin_anim_236982622;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel3.Location = new System.Drawing.Point(0, 137);
+            this.panel3.Location = new System.Drawing.Point(0, 111);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(165, 540);
+            this.panel3.Size = new System.Drawing.Size(124, 439);
             this.panel3.TabIndex = 3;
             // 
             // listView2
             // 
+            this.listView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader4});
             this.listView2.Font = new System.Drawing.Font("Lucida Handwriting", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView2.Location = new System.Drawing.Point(734, 137);
+            this.listView2.Location = new System.Drawing.Point(550, 111);
+            this.listView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView2.Name = "listView2";
             this.listView2.Scrollable = false;
-            this.listView2.Size = new System.Drawing.Size(85, 433);
+            this.listView2.Size = new System.Drawing.Size(64, 352);
             this.listView2.SmallImageList = this.imageList1;
             this.listView2.TabIndex = 2;
             this.listView2.UseCompatibleStateImageBehavior = false;
@@ -203,6 +226,9 @@
             // 
             // listView1
             // 
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
@@ -210,9 +236,10 @@
             this.columnHeader3});
             this.listView1.Font = new System.Drawing.Font("Lucida Handwriting", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.FullRowSelect = true;
-            this.listView1.Location = new System.Drawing.Point(165, 137);
+            this.listView1.Location = new System.Drawing.Point(124, 111);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(591, 433);
+            this.listView1.Size = new System.Drawing.Size(443, 352);
             this.listView1.SmallImageList = this.imageList1;
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
@@ -236,12 +263,15 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackgroundImage = global::Healthyfood.Properties.Resources.bani2;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Location = new System.Drawing.Point(0, 3);
+            this.panel2.Location = new System.Drawing.Point(0, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1012, 137);
+            this.panel2.Size = new System.Drawing.Size(760, 105);
             this.panel2.TabIndex = 0;
             // 
             // timer1
@@ -256,6 +286,17 @@
             // 
             this.timer2.Interval = 1000;
             // 
+            // userControl_Modify_Profil1
+            // 
+            this.userControl_Modify_Profil1.BackColor = System.Drawing.Color.White;
+            this.userControl_Modify_Profil1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl_Modify_Profil1.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControl_Modify_Profil1.Location = new System.Drawing.Point(0, 0);
+            this.userControl_Modify_Profil1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControl_Modify_Profil1.Name = "userControl_Modify_Profil1";
+            this.userControl_Modify_Profil1.Size = new System.Drawing.Size(761, 634);
+            this.userControl_Modify_Profil1.TabIndex = 1;
+            // 
             // userControl_Show_Profil1
             // 
             this.userControl_Show_Profil1.BackColor = System.Drawing.Color.White;
@@ -264,29 +305,18 @@
             this.userControl_Show_Profil1.Location = new System.Drawing.Point(0, 0);
             this.userControl_Show_Profil1.Margin = new System.Windows.Forms.Padding(4);
             this.userControl_Show_Profil1.Name = "userControl_Show_Profil1";
-            this.userControl_Show_Profil1.Size = new System.Drawing.Size(1015, 780);
+            this.userControl_Show_Profil1.Size = new System.Drawing.Size(761, 634);
             this.userControl_Show_Profil1.TabIndex = 7;
-            // 
-            // userControl_Modify_Profil1
-            // 
-            this.userControl_Modify_Profil1.BackColor = System.Drawing.Color.White;
-            this.userControl_Modify_Profil1.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userControl_Modify_Profil1.Location = new System.Drawing.Point(0, 0);
-            this.userControl_Modify_Profil1.Margin = new System.Windows.Forms.Padding(4);
-            this.userControl_Modify_Profil1.Name = "userControl_Modify_Profil1";
-            this.userControl_Modify_Profil1.Size = new System.Drawing.Size(1015, 678);
-            this.userControl_Modify_Profil1.TabIndex = 1;
             // 
             // UserControl_Profil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControl_Profil";
-            this.Size = new System.Drawing.Size(1015, 678);
+            this.Size = new System.Drawing.Size(761, 551);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
