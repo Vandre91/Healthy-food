@@ -10,7 +10,7 @@ namespace StockFood
     [Serializable]
     public class Stocks
     {
-
+        public Dictionary<string, Recipe> _recipe;
         public Dictionary<string, Ingredient> _stock;
         public DateTime expiration_date;
 
@@ -18,7 +18,7 @@ namespace StockFood
         {
             _stock = new Dictionary<string, Ingredient>();
         }
-
+       
         public static string naming(Ingredient ingred)
         {
             return ((ingred.Name) + " " + Convert.ToString(ingred.Expiration_Date));
@@ -94,6 +94,11 @@ namespace StockFood
             get { return _stock.Values; }
 
         }
+
+        public ICollection<Recipe> IRecipe
+        {
+            get { return _recipe.Values; }
+        }
         public void DateIng()
         {
             DateTime expiration = Convert.ToDateTime(expiration_date);
@@ -101,10 +106,22 @@ namespace StockFood
             {
                 if (ingre.Expiration_Date <= DateTime.Today.AddDays(2)) 
                 {
-                    MessageBox.Show("Lingredient "+ingre.Name+"approche de ca date dexpiration !");
+                    MessageBox.Show("L'ingredient "+ingre.Name+"approche de sa date dexpiration !");
                 }
 
+            }
 
+            
+            foreach ( Recipe recip in IRecipe )
+            {
+                foreach(Ingredient ingred in recip.IRecipe)
+                {
+                    if (ingred.Expiration_Date <= DateTime.Today.AddDays(2))
+                    {
+                        MessageBox.Show("L'ingredient " + ingred.Name + "se trouvant dans votre recette approche de sa date d'expiration");
+                    }
+                }
+                   
             }
 
         }
