@@ -286,6 +286,42 @@
   <ItemGroup>
     <None Include="Resources\bani24.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backshowprofil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backshowprofil1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profilback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fond.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fond1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fridge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\liste.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

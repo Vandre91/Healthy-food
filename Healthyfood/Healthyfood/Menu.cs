@@ -19,6 +19,10 @@ namespace Healthyfood
         public Menu()
         {
             InitializeComponent();
+            userControl_Profil1.Visible = false;
+            userControl_Recipe1.Visible = false;
+            userControl_Reserve_Add_Remove1.Visible = false;
+            userControl_Show_Reserve21.Visible = false;
             _food = new healthyfood();
         }
 
@@ -34,16 +38,18 @@ namespace Healthyfood
             userControl_Profil1.Focus();
         }
 
+        //visualiser
         private void button_Provisions_Click(object sender, EventArgs e)
         {
-            userControl_Reserve1.Visible = true;
-            userControl_Reserve1.Focus();
+           userControl_Show_Reserve21.Visible = true;
+            userControl_Show_Reserve21.Focus();
         }
 
         private void button_Recette_Click(object sender, EventArgs e)
         {
             userControl_Recipe1.Visible = true;
             userControl_Recipe1.Focus();
+
         }
 
         private void saugarderToolStripMenuItem_Click(object sender, EventArgs e)
@@ -74,10 +80,19 @@ namespace Healthyfood
             }
         }
 
+        //menu
         private void button1_Click(object sender, EventArgs e)
         {
-            userControl_Menu1.Visible = true;
-            userControl_Menu1.Focus();
+            //userControl_Menu1.Visible = true;
+            //userControl_Menu1.Focus();
+        }
+
+        //ajouter
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            userControl_Reserve_Add_Remove1.Visible = true;
+            userControl_Reserve_Add_Remove1.Focus();
         }
     }
 }

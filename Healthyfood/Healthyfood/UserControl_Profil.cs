@@ -25,46 +25,6 @@ namespace Healthyfood
             get { return (Menu)FindForm(); }
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-            textBox1.Visible = false;
-            try
-            {
-                string name = listView1.SelectedItems[0].SubItems[0].Text;
-                string lastname = listView1.SelectedItems[0].SubItems[1].Text;
-                Root.Healthy.Utilisateur.RemoveUser(name, lastname);
-                textBox1.Visible = false;
-                listView1.Items.RemoveAt(listView1.SelectedIndices[0]);
-                listView2.Items.RemoveAt(listView2.SelectedIndices[0]);
-            }
-            catch (ArgumentException)
-            {
-                textBox1.Visible = false;
-            }
-        }
-
-        private void listView1_Enter(object sender, EventArgs e)
-        {
-            listView1.Items.Clear();
-            listView2.Items.Clear();
-            timer1.Start();
-            timer2.Start();
-            int i = 0;
-
-            foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
-            {
-                string[] row = { p.FirstName, p.LastName, p.Age.ToString() };
-                ListViewItem item = new ListViewItem(row);
-                listView1.Items.Add(item);
-                listView1.Items[i].ImageIndex = SexImage(p.IsFemale);
-
-                listView2.Items.Add("");
-                listView2.Items[i].ImageIndex = ImcImage(p.Imc);
-                i++;
-            }
-        }
-
         private int SexImage (bool isfemale)
         {
             if (isfemale) return 0;
@@ -80,27 +40,45 @@ namespace Healthyfood
             else return 6;
         }
 
-        private void button4_Click_1(object sender, EventArgs e)
+
+      
+
+        private void listView1_Enter_1(object sender, EventArgs e)
         {
-            this.Visible = false;
-            timer1.Stop();
-            timer2.Stop();
+            listView1.Items.Clear();
+            listView2.Items.Clear();
             textBox1.Visible = false;
+            timer1.Start();
+            int i = 0;
+
+            foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
+            {
+                string[] row = { p.FirstName, p.LastName, p.Age.ToString() };
+                ListViewItem item = new ListViewItem(row);
+                listView1.Items.Add(item);
+                listView1.Items[i].ImageIndex = SexImage(p.IsFemale);
+
+                listView2.Items.Add("");
+                listView2.Items[i].ImageIndex = ImcImage(p.Imc);
+                i++;
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        //ajouter
+        private void button1_Click_1(object sender, EventArgs e)
         {
             userControl_Show_Profil1.Visible = true;
             userControl_Show_Profil1.BringToFront();
-
-            textBox1.Visible = false;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        //modifier
+        private void button2_Click_1(object sender, EventArgs e)
         {
             if (listView1.Items.Count <= 0)
             {
-                //button_Modify.Enabled = true;
+                button2.Enabled = true;
+                textBox1.Text = "Aucun utilisateur dans la liste";
+                textBox1.Visible = true;
             }
             else
             {
@@ -115,9 +93,38 @@ namespace Healthyfood
                 }
                 catch (ArgumentException)
                 {
+                    textBox1.Text = "Aucun utilisateur sélectionné";
                     textBox1.Visible = true;
                 }
             }
+        }
+
+        //supprimer
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Visible = false;
+            try
+            {
+                string name = listView1.SelectedItems[0].SubItems[0].Text;
+                string lastname = listView1.SelectedItems[0].SubItems[1].Text;
+                Root.Healthy.Utilisateur.RemoveUser(name, lastname);
+                textBox1.Visible = false;
+                listView1.Items.RemoveAt(listView1.SelectedIndices[0]);
+                listView2.Items.RemoveAt(listView2.SelectedIndices[0]);
+            }
+            catch (ArgumentException)
+            {
+                textBox1.Text = "Aucun utilisateur sélectionné";
+                textBox1.Visible = false;
+            }
+        }
+
+        //retour
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            timer1.Stop();
+            textBox1.Visible = false;
         }
 
         //private void button_Add_Click(object sender, EventArgs e)

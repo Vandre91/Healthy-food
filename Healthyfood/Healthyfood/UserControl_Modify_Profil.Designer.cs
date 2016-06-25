@@ -50,14 +50,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // button_Save
             // 
             this.button_Save.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button_Save.Location = new System.Drawing.Point(160, 461);
-            this.button_Save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Save.Margin = new System.Windows.Forms.Padding(4);
             this.button_Save.Name = "button_Save";
             this.button_Save.Size = new System.Drawing.Size(228, 53);
             this.button_Save.TabIndex = 41;
@@ -68,7 +67,7 @@
             // textBox_Weight
             // 
             this.textBox_Weight.Location = new System.Drawing.Point(207, 413);
-            this.textBox_Weight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Weight.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Weight.Name = "textBox_Weight";
             this.textBox_Weight.Size = new System.Drawing.Size(148, 25);
             this.textBox_Weight.TabIndex = 40;
@@ -76,7 +75,7 @@
             // textBox_Height
             // 
             this.textBox_Height.Location = new System.Drawing.Point(207, 367);
-            this.textBox_Height.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Height.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Height.Name = "textBox_Height";
             this.textBox_Height.Size = new System.Drawing.Size(148, 25);
             this.textBox_Height.TabIndex = 39;
@@ -84,7 +83,7 @@
             // textBox_Age
             // 
             this.textBox_Age.Location = new System.Drawing.Point(207, 251);
-            this.textBox_Age.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Age.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Age.Name = "textBox_Age";
             this.textBox_Age.Size = new System.Drawing.Size(148, 25);
             this.textBox_Age.TabIndex = 38;
@@ -92,7 +91,7 @@
             // textBox_Fisrtname
             // 
             this.textBox_Fisrtname.Location = new System.Drawing.Point(207, 198);
-            this.textBox_Fisrtname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Fisrtname.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Fisrtname.Name = "textBox_Fisrtname";
             this.textBox_Fisrtname.Size = new System.Drawing.Size(148, 25);
             this.textBox_Fisrtname.TabIndex = 37;
@@ -160,7 +159,7 @@
             // textBox_Name
             // 
             this.textBox_Name.Location = new System.Drawing.Point(207, 140);
-            this.textBox_Name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Name.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Name.Name = "textBox_Name";
             this.textBox_Name.Size = new System.Drawing.Size(148, 25);
             this.textBox_Name.TabIndex = 29;
@@ -169,7 +168,7 @@
             // 
             this.button_Back.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button_Back.Location = new System.Drawing.Point(472, 461);
-            this.button_Back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Back.Margin = new System.Windows.Forms.Padding(4);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(218, 53);
             this.button_Back.TabIndex = 28;
@@ -257,7 +256,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(332, 307);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(103, 23);
             this.checkBox1.TabIndex = 49;
@@ -268,28 +267,19 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(207, 307);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(97, 23);
             this.checkBox2.TabIndex = 50;
             this.checkBox2.Text = "Feminin";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::Healthyfood.Properties.Resources.bani24;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(912, 93);
-            this.panel1.TabIndex = 51;
-            // 
             // UserControl_Modify_Profil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panel1);
+            this.BackgroundImage = global::Healthyfood.Properties.Resources.backshowprofil;
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label7);
@@ -313,9 +303,9 @@
             this.Controls.Add(this.textBox_Name);
             this.Controls.Add(this.button_Back);
             this.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControl_Modify_Profil";
-            this.Size = new System.Drawing.Size(913, 576);
+            this.Size = new System.Drawing.Size(1015, 678);
             this.Load += new System.EventHandler(this.UserControl_Modify_Profil_Load);
             this.Enter += new System.EventHandler(this.UserControl_Modify_Profil_Enter);
             this.ResumeLayout(false);
@@ -347,6 +337,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -50,7 +50,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.checkBoxM = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // button_Save
@@ -70,7 +69,7 @@
             this.textBox_Weight.Location = new System.Drawing.Point(207, 413);
             this.textBox_Weight.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Weight.Name = "textBox_Weight";
-            this.textBox_Weight.Size = new System.Drawing.Size(148, 22);
+            this.textBox_Weight.Size = new System.Drawing.Size(148, 25);
             this.textBox_Weight.TabIndex = 26;
             // 
             // textBox_Height
@@ -78,7 +77,7 @@
             this.textBox_Height.Location = new System.Drawing.Point(207, 360);
             this.textBox_Height.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Height.Name = "textBox_Height";
-            this.textBox_Height.Size = new System.Drawing.Size(148, 22);
+            this.textBox_Height.Size = new System.Drawing.Size(148, 25);
             this.textBox_Height.TabIndex = 25;
             // 
             // textBox_Age
@@ -86,15 +85,15 @@
             this.textBox_Age.Location = new System.Drawing.Point(207, 235);
             this.textBox_Age.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Age.Name = "textBox_Age";
-            this.textBox_Age.Size = new System.Drawing.Size(148, 22);
+            this.textBox_Age.Size = new System.Drawing.Size(148, 25);
             this.textBox_Age.TabIndex = 24;
             // 
             // textBox_Fisrtname
             // 
-            this.textBox_Fisrtname.Location = new System.Drawing.Point(207, 173);
+            this.textBox_Fisrtname.Location = new System.Drawing.Point(207, 179);
             this.textBox_Fisrtname.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Fisrtname.Name = "textBox_Fisrtname";
-            this.textBox_Fisrtname.Size = new System.Drawing.Size(148, 22);
+            this.textBox_Fisrtname.Size = new System.Drawing.Size(148, 25);
             this.textBox_Fisrtname.TabIndex = 23;
             // 
             // label6_Weight
@@ -103,7 +102,7 @@
             this.label6_Weight.Location = new System.Drawing.Point(108, 413);
             this.label6_Weight.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6_Weight.Name = "label6_Weight";
-            this.label6_Weight.Size = new System.Drawing.Size(49, 15);
+            this.label6_Weight.Size = new System.Drawing.Size(61, 19);
             this.label6_Weight.TabIndex = 21;
             this.label6_Weight.Text = "Poids :";
             // 
@@ -113,7 +112,7 @@
             this.label_height.Location = new System.Drawing.Point(104, 360);
             this.label_height.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_height.Name = "label_height";
-            this.label_height.Size = new System.Drawing.Size(50, 15);
+            this.label_height.Size = new System.Drawing.Size(65, 19);
             this.label_height.TabIndex = 20;
             this.label_height.Text = "Taille :";
             // 
@@ -123,7 +122,7 @@
             this.label4_Sex.Location = new System.Drawing.Point(108, 301);
             this.label4_Sex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4_Sex.Name = "label4_Sex";
-            this.label4_Sex.Size = new System.Drawing.Size(40, 15);
+            this.label4_Sex.Size = new System.Drawing.Size(52, 19);
             this.label4_Sex.TabIndex = 19;
             this.label4_Sex.Text = "Sexe :";
             // 
@@ -133,36 +132,36 @@
             this.label3_Age.Location = new System.Drawing.Point(112, 235);
             this.label3_Age.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3_Age.Name = "label3_Age";
-            this.label3_Age.Size = new System.Drawing.Size(37, 15);
+            this.label3_Age.Size = new System.Drawing.Size(48, 19);
             this.label3_Age.TabIndex = 18;
             this.label3_Age.Text = "Age :";
             // 
             // label_Firstname
             // 
             this.label_Firstname.AutoSize = true;
-            this.label_Firstname.Location = new System.Drawing.Point(112, 173);
+            this.label_Firstname.Location = new System.Drawing.Point(108, 179);
             this.label_Firstname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Firstname.Name = "label_Firstname";
-            this.label_Firstname.Size = new System.Drawing.Size(63, 15);
+            this.label_Firstname.Size = new System.Drawing.Size(80, 19);
             this.label_Firstname.TabIndex = 17;
             this.label_Firstname.Text = "Prenom :";
             // 
             // label_Name
             // 
             this.label_Name.AutoSize = true;
-            this.label_Name.Location = new System.Drawing.Point(104, 108);
+            this.label_Name.Location = new System.Drawing.Point(104, 127);
             this.label_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Name.Name = "label_Name";
-            this.label_Name.Size = new System.Drawing.Size(43, 15);
+            this.label_Name.Size = new System.Drawing.Size(54, 19);
             this.label_Name.TabIndex = 16;
             this.label_Name.Text = "Nom :";
             // 
             // textBox_Name
             // 
-            this.textBox_Name.Location = new System.Drawing.Point(207, 108);
+            this.textBox_Name.Location = new System.Drawing.Point(207, 127);
             this.textBox_Name.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Name.Name = "textBox_Name";
-            this.textBox_Name.Size = new System.Drawing.Size(148, 22);
+            this.textBox_Name.Size = new System.Drawing.Size(148, 25);
             this.textBox_Name.TabIndex = 15;
             // 
             // button_Back
@@ -185,7 +184,7 @@
             this.label1.Location = new System.Drawing.Point(468, 114);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 15);
+            this.label1.Size = new System.Drawing.Size(0, 19);
             this.label1.TabIndex = 28;
             // 
             // label2
@@ -196,7 +195,7 @@
             this.label2.Location = new System.Drawing.Point(468, 179);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 15);
+            this.label2.Size = new System.Drawing.Size(0, 19);
             this.label2.TabIndex = 29;
             // 
             // label3
@@ -207,7 +206,7 @@
             this.label3.Location = new System.Drawing.Point(468, 241);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 15);
+            this.label3.Size = new System.Drawing.Size(0, 19);
             this.label3.TabIndex = 30;
             // 
             // label4
@@ -218,7 +217,7 @@
             this.label4.Location = new System.Drawing.Point(468, 305);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 15);
+            this.label4.Size = new System.Drawing.Size(0, 19);
             this.label4.TabIndex = 31;
             // 
             // label5
@@ -229,7 +228,7 @@
             this.label5.Location = new System.Drawing.Point(468, 366);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 15);
+            this.label5.Size = new System.Drawing.Size(0, 19);
             this.label5.TabIndex = 32;
             // 
             // label6
@@ -240,7 +239,7 @@
             this.label6.Location = new System.Drawing.Point(468, 419);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 15);
+            this.label6.Size = new System.Drawing.Size(0, 19);
             this.label6.TabIndex = 33;
             // 
             // label7
@@ -250,7 +249,7 @@
             this.label7.Location = new System.Drawing.Point(476, 419);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 15);
+            this.label7.Size = new System.Drawing.Size(0, 19);
             this.label7.TabIndex = 34;
             // 
             // checkBoxM
@@ -259,7 +258,7 @@
             this.checkBoxM.Location = new System.Drawing.Point(327, 301);
             this.checkBoxM.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxM.Name = "checkBoxM";
-            this.checkBoxM.Size = new System.Drawing.Size(83, 19);
+            this.checkBoxM.Size = new System.Drawing.Size(103, 23);
             this.checkBoxM.TabIndex = 35;
             this.checkBoxM.Text = "Masculin";
             this.checkBoxM.UseVisualStyleBackColor = true;
@@ -270,26 +269,17 @@
             this.checkBox2.Location = new System.Drawing.Point(207, 301);
             this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(79, 19);
+            this.checkBox2.Size = new System.Drawing.Size(97, 23);
             this.checkBox2.TabIndex = 36;
             this.checkBox2.Text = "Feminin";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::Healthyfood.Properties.Resources.bani24;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(912, 93);
-            this.panel1.TabIndex = 37;
-            // 
             // UserControl_Show_Profil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panel1);
+            this.BackgroundImage = global::Healthyfood.Properties.Resources.backshowprofil1;
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBoxM);
             this.Controls.Add(this.label7);
@@ -315,7 +305,7 @@
             this.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControl_Show_Profil";
-            this.Size = new System.Drawing.Size(768, 542);
+            this.Size = new System.Drawing.Size(1015, 678);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,6 +335,5 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox checkBoxM;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Panel panel1;
     }
 }
