@@ -37,13 +37,13 @@
             this.columnHeader_calories = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button_Back = new System.Windows.Forms.Button();
             this.panel_Show_Recipes = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox_Describe = new System.Windows.Forms.RichTextBox();
             this.label_Name = new System.Windows.Forms.Label();
             this.button_Read = new System.Windows.Forms.Button();
             this.button_Heat = new System.Windows.Forms.Button();
             this.button_Back_Panel = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel_Show_Recipes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,9 +59,9 @@
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem2});
             this.listView1.Location = new System.Drawing.Point(4, 16);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(764, 372);
+            this.listView1.Size = new System.Drawing.Size(730, 487);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -84,8 +84,8 @@
             // button_Back
             // 
             this.button_Back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Back.Location = new System.Drawing.Point(639, 380);
-            this.button_Back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Back.Location = new System.Drawing.Point(601, 511);
+            this.button_Back.Margin = new System.Windows.Forms.Padding(4);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(123, 28);
             this.button_Back.TabIndex = 1;
@@ -103,16 +103,25 @@
             this.panel_Show_Recipes.Controls.Add(this.button_Heat);
             this.panel_Show_Recipes.Controls.Add(this.button_Back_Panel);
             this.panel_Show_Recipes.Location = new System.Drawing.Point(127, 50);
-            this.panel_Show_Recipes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_Show_Recipes.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Show_Recipes.Name = "panel_Show_Recipes";
             this.panel_Show_Recipes.Size = new System.Drawing.Size(488, 279);
             this.panel_Show_Recipes.TabIndex = 2;
             this.panel_Show_Recipes.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(271, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.TabIndex = 3;
+            // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(40, 34);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(201, 61);
             this.richTextBox1.TabIndex = 6;
@@ -121,7 +130,7 @@
             // richTextBox_Describe
             // 
             this.richTextBox_Describe.Location = new System.Drawing.Point(40, 103);
-            this.richTextBox_Describe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox_Describe.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox_Describe.Name = "richTextBox_Describe";
             this.richTextBox_Describe.Size = new System.Drawing.Size(404, 120);
             this.richTextBox_Describe.TabIndex = 5;
@@ -140,7 +149,7 @@
             // button_Read
             // 
             this.button_Read.Location = new System.Drawing.Point(196, 231);
-            this.button_Read.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Read.Margin = new System.Windows.Forms.Padding(4);
             this.button_Read.Name = "button_Read";
             this.button_Read.Size = new System.Drawing.Size(100, 28);
             this.button_Read.TabIndex = 2;
@@ -151,7 +160,7 @@
             // button_Heat
             // 
             this.button_Heat.Location = new System.Drawing.Point(40, 231);
-            this.button_Heat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Heat.Margin = new System.Windows.Forms.Padding(4);
             this.button_Heat.Name = "button_Heat";
             this.button_Heat.Size = new System.Drawing.Size(100, 28);
             this.button_Heat.TabIndex = 1;
@@ -162,22 +171,13 @@
             // button_Back_Panel
             // 
             this.button_Back_Panel.Location = new System.Drawing.Point(368, 231);
-            this.button_Back_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Back_Panel.Margin = new System.Windows.Forms.Padding(4);
             this.button_Back_Panel.Name = "button_Back_Panel";
             this.button_Back_Panel.Size = new System.Drawing.Size(100, 28);
             this.button_Back_Panel.TabIndex = 0;
             this.button_Back_Panel.Text = "Retour";
             this.button_Back_Panel.UseVisualStyleBackColor = true;
             this.button_Back_Panel.Click += new System.EventHandler(this.button_Back_Panel_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(271, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 17);
-            this.label1.TabIndex = 3;
             // 
             // UserControl_Recipe_Healthy
             // 
@@ -186,9 +186,9 @@
             this.Controls.Add(this.panel_Show_Recipes);
             this.Controls.Add(this.button_Back);
             this.Controls.Add(this.listView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControl_Recipe_Healthy";
-            this.Size = new System.Drawing.Size(765, 421);
+            this.Size = new System.Drawing.Size(1015, 678);
             this.Enter += new System.EventHandler(this.UserControl_Recipe_Healthy_Enter);
             this.panel_Show_Recipes.ResumeLayout(false);
             this.panel_Show_Recipes.PerformLayout();

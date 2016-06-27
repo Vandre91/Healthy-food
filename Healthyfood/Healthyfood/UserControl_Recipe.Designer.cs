@@ -48,7 +48,7 @@
             // button_Back
             // 
             this.button_Back.Location = new System.Drawing.Point(653, 471);
-            this.button_Back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Back.Margin = new System.Windows.Forms.Padding(4);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(100, 28);
             this.button_Back.TabIndex = 0;
@@ -105,7 +105,7 @@
             this.columnHeader_Name,
             this.columnHeader_Lastname});
             this.listView1.Location = new System.Drawing.Point(605, 86);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(183, 118);
             this.listView1.TabIndex = 4;
@@ -147,7 +147,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(619, 255);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 28);
             this.button1.TabIndex = 10;
@@ -159,7 +159,7 @@
             // 
             this.userControl_Recipe_Utilisateur1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Recipe_Utilisateur1.Location = new System.Drawing.Point(0, 0);
-            this.userControl_Recipe_Utilisateur1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.userControl_Recipe_Utilisateur1.Margin = new System.Windows.Forms.Padding(5);
             this.userControl_Recipe_Utilisateur1.Name = "userControl_Recipe_Utilisateur1";
             this.userControl_Recipe_Utilisateur1.Size = new System.Drawing.Size(831, 550);
             this.userControl_Recipe_Utilisateur1.TabIndex = 14;
@@ -169,7 +169,7 @@
             // 
             this.userControl_World_Recipe1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_World_Recipe1.Location = new System.Drawing.Point(0, 0);
-            this.userControl_World_Recipe1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.userControl_World_Recipe1.Margin = new System.Windows.Forms.Padding(5);
             this.userControl_World_Recipe1.Name = "userControl_World_Recipe1";
             this.userControl_World_Recipe1.Size = new System.Drawing.Size(831, 550);
             this.userControl_World_Recipe1.TabIndex = 13;
@@ -179,7 +179,7 @@
             // 
             this.userControl_Your_Recipes1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Your_Recipes1.Location = new System.Drawing.Point(0, 0);
-            this.userControl_Your_Recipes1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.userControl_Your_Recipes1.Margin = new System.Windows.Forms.Padding(5);
             this.userControl_Your_Recipes1.Name = "userControl_Your_Recipes1";
             this.userControl_Your_Recipes1.Size = new System.Drawing.Size(831, 550);
             this.userControl_Your_Recipes1.TabIndex = 12;
@@ -189,7 +189,7 @@
             // 
             this.userControl_Recipe_Healthy1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Recipe_Healthy1.Location = new System.Drawing.Point(0, 0);
-            this.userControl_Recipe_Healthy1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.userControl_Recipe_Healthy1.Margin = new System.Windows.Forms.Padding(5);
             this.userControl_Recipe_Healthy1.Name = "userControl_Recipe_Healthy1";
             this.userControl_Recipe_Healthy1.Size = new System.Drawing.Size(831, 550);
             this.userControl_Recipe_Healthy1.TabIndex = 11;
@@ -213,7 +213,7 @@
             this.Controls.Add(this.button2_yours_recipes);
             this.Controls.Add(this.button1_recipe_health);
             this.Controls.Add(this.button_Back);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControl_Recipe";
             this.Size = new System.Drawing.Size(831, 550);
             this.Enter += new System.EventHandler(this.UserControl_Recipe_Enter);

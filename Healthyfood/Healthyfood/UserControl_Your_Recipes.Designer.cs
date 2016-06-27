@@ -135,7 +135,7 @@
             // button_Back
             // 
             this.button_Back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Back.Location = new System.Drawing.Point(735, 466);
+            this.button_Back.Location = new System.Drawing.Point(589, 499);
             this.button_Back.Margin = new System.Windows.Forms.Padding(4);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(135, 33);
@@ -158,7 +158,7 @@
             this.listView1.Location = new System.Drawing.Point(4, 4);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(864, 454);
+            this.listView1.Size = new System.Drawing.Size(730, 487);
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -188,7 +188,7 @@
             this.Controls.Add(this.listView1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControl_Your_Recipes";
-            this.Size = new System.Drawing.Size(873, 503);
+            this.Size = new System.Drawing.Size(1015, 678);
             this.Enter += new System.EventHandler(this.UserControl_Your_Recipes_Enter);
             this.panel_Show_Recipes.ResumeLayout(false);
             this.panel_Show_Recipes.PerformLayout();

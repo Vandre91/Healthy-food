@@ -17,10 +17,6 @@ namespace Healthyfood
         public UserControl_Show_Reserve2()
         {
             InitializeComponent();
-            string[] row = { "Steak de boeuf", "1500", "10/10" };
-            ListViewItem item = new ListViewItem(row);
-            listView1.Items.Add(item);
-            listView1.Items[0].ImageIndex =3 ; 
             columnHeader1.ImageIndex =2 ;
             columnHeader2.ImageIndex = 1;
             columnHeader3.ImageIndex = 0;
@@ -52,7 +48,7 @@ namespace Healthyfood
                 i++;
 
             }
-            Root.Healthy.Stocks.DateIng();
+            //Root.Healthy.Stocks.DateIng();
         }
 
         private void button2_Click(object sender, EventArgs e)
