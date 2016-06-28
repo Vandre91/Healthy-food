@@ -86,6 +86,7 @@ namespace Healthyfood
         {
             userControl_Menu1.Visible = true;
             userControl_Menu1.Focus();
+
         }
 
         //ajouter
