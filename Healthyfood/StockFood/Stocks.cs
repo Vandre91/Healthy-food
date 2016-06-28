@@ -106,23 +106,23 @@ namespace StockFood
             {
                 if (ingre.Expiration_Date <= DateTime.Today.AddDays(2)) 
                 {
-                    MessageBox.Show("L'ingredient "+ingre.Name+"approche de sa date dexpiration !");
+                    MessageBox.Show("L'ingredient "+ingre.Name+" approche de sa date dexpiration !");
                 }
 
             }
 
             
-            foreach ( Recipe recip in IRecipe )
-            {
-                foreach(Ingredient ingred in recip.IRecipe)
-                {
-                    if (ingred.Expiration_Date <= DateTime.Today.AddDays(2))
-                    {
-                        MessageBox.Show("L'ingredient " + ingred.Name + "se trouvant dans votre recette approche de sa date d'expiration");
-                    }
-                }
+            //foreach ( Recipe recip in IRecipe )
+            //{
+            //    foreach(Ingredient ingred in recip.IRecipe)
+            //    {
+            //        if (ingred.Expiration_Date <= DateTime.Today.AddDays(2))
+            //        {
+            //            MessageBox.Show("L'ingredient " + ingred.Name + "se trouvant dans votre recette approche de sa date d'expiration");
+            //        }
+            //    }
                    
-            }
+            //}
 
         }
 
