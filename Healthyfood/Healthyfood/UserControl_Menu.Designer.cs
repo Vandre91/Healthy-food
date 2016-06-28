@@ -37,10 +37,12 @@
             this.columnHeader_db = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader_de = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label2 = new System.Windows.Forms.Label();
+            this.button_view = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.userControl_Modify_Menu1 = new Healthyfood.UserControl_Modify_Menu();
             this.userControl_Add_Menu1 = new Healthyfood.UserControl_Add_Menu();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -125,52 +127,76 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.DarkRed;
-            this.label2.Location = new System.Drawing.Point(571, 149);
+            this.label2.Location = new System.Drawing.Point(571, 193);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Selectionner un Menu";
             this.label2.Visible = false;
             // 
+            // button_view
+            // 
+            this.button_view.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_view.Location = new System.Drawing.Point(589, 149);
+            this.button_view.Name = "button_view";
+            this.button_view.Size = new System.Drawing.Size(75, 23);
+            this.button_view.TabIndex = 12;
+            this.button_view.Text = "Visualiser";
+            this.button_view.UseVisualStyleBackColor = true;
+            this.button_view.Click += new System.EventHandler(this.button_view_Click_1);
+            // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.richTextBox1);
-            this.panel1.Location = new System.Drawing.Point(182, 71);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Location = new System.Drawing.Point(183, 72);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(503, 410);
-            this.panel1.TabIndex = 9;
+            this.panel1.Size = new System.Drawing.Size(502, 409);
+            this.panel1.TabIndex = 13;
             this.panel1.Visible = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(263, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Liste de course";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(3, 29);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(488, 352);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(416, 384);
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(430, 383);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
+            this.button2.TabIndex = 0;
             this.button2.Text = "Retour";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.Location = new System.Drawing.Point(18, 61);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(406, 329);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(213, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Liste des course";
+            // 
+            // userControl_Modify_Menu1
+            // 
+            this.userControl_Modify_Menu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl_Modify_Menu1.Location = new System.Drawing.Point(0, 0);
+            this.userControl_Modify_Menu1.Name = "userControl_Modify_Menu1";
+            this.userControl_Modify_Menu1.Size = new System.Drawing.Size(685, 481);
+            this.userControl_Modify_Menu1.TabIndex = 15;
+            this.userControl_Modify_Menu1.Visible = false;
             // 
             // userControl_Add_Menu1
             // 
@@ -178,15 +204,17 @@
             this.userControl_Add_Menu1.Location = new System.Drawing.Point(0, 0);
             this.userControl_Add_Menu1.Name = "userControl_Add_Menu1";
             this.userControl_Add_Menu1.Size = new System.Drawing.Size(685, 481);
-            this.userControl_Add_Menu1.TabIndex = 10;
+            this.userControl_Add_Menu1.TabIndex = 14;
             this.userControl_Add_Menu1.Visible = false;
             // 
             // UserControl_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.userControl_Modify_Menu1);
             this.Controls.Add(this.userControl_Add_Menu1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.button_view);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.button1);
@@ -214,10 +242,12 @@
         private System.Windows.Forms.ColumnHeader columnHeader_db;
         private System.Windows.Forms.ColumnHeader columnHeader_de;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button_view;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button2;
         private UserControl_Add_Menu userControl_Add_Menu1;
+        private UserControl_Modify_Menu userControl_Modify_Menu1;
     }
 }

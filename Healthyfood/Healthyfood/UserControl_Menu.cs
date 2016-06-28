@@ -34,7 +34,8 @@ namespace Healthyfood
         private void button1_Click(object sender, EventArgs e)
         {
             label2.Visible = false;
-            try {
+            try
+            {
                 string name = listView1.SelectedItems[0].SubItems[0].Text.ToString();
                 StockFood.Menu men = Root.Healthy.AllMenu.FindMenu(name);
                 Root.Healthy.AllMenu.RemoveMenu(men);
@@ -79,7 +80,25 @@ namespace Healthyfood
             
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button_view_Click_1(object sender, EventArgs e)
+        {
+            label2.Visible = false;
+            try
+            {
+                string name = listView1.SelectedItems[0].SubItems[0].Text.ToString();
+                StockFood.Menu men = Root.Healthy.AllMenu.FindMenu(name);
+                Root.Healthy.Menu = men;
+                userControl_Modify_Menu1.Visible = true;
+                userControl_Modify_Menu1.Focus();
+            }
+            catch (ArgumentException)
+            {
+                label2.Visible = true;
+            }
+            
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
             panel1.Visible = false;
         }
