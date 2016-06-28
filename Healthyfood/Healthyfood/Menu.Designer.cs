@@ -194,11 +194,11 @@
             // 
             // userControl_Recipe1
             // 
-            this.userControl_Recipe1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_Recipe1.BackgroundImage")));
+            this.userControl_Recipe1.BackgroundImage = global::Healthyfood.Properties.Resources.cuisine;
             this.userControl_Recipe1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.userControl_Recipe1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Recipe1.Location = new System.Drawing.Point(0, 28);
-            this.userControl_Recipe1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userControl_Recipe1.Margin = new System.Windows.Forms.Padding(4);
             this.userControl_Recipe1.Name = "userControl_Recipe1";
             this.userControl_Recipe1.Size = new System.Drawing.Size(1015, 678);
             this.userControl_Recipe1.TabIndex = 12;
