@@ -21,5 +21,35 @@ namespace Healthyfood
         {
             this.Visible = false;
         }
+
+        private void listView1_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void button_Add_Click(object sender, EventArgs e)
+        {
+            userControl_Add_Menu1.Visible = true;
+        }
+
+        private void button_modify_Click(object sender, EventArgs e)
+        {
+            userControl_Modify_Menu1.Visible = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserControl_Menu_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
