@@ -38,10 +38,11 @@
             this.chargerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.userControl_Menu1 = new Healthyfood.UserControl_Menu();
+            this.userControl_Recipe1 = new Healthyfood.UserControl_Recipe();
             this.userControl_Reserve_Add_Remove1 = new Healthyfood.UserControl_Reserve_Add_Remove();
             this.userControl_Show_Reserve21 = new Healthyfood.UserControl_Show_Reserve2();
             this.userControl_Profil1 = new Healthyfood.UserControl_Profil();
-            this.userControl_Recipe1 = new Healthyfood.UserControl_Recipe();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -162,6 +163,25 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // userControl_Menu1
+            // 
+            this.userControl_Menu1.Location = new System.Drawing.Point(0, 0);
+            this.userControl_Menu1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControl_Menu1.Name = "userControl_Menu1";
+            this.userControl_Menu1.Size = new System.Drawing.Size(1015, 706);
+            this.userControl_Menu1.TabIndex = 13;
+            // 
+            // userControl_Recipe1
+            // 
+            this.userControl_Recipe1.BackgroundImage = global::Healthyfood.Properties.Resources.cuisine;
+            this.userControl_Recipe1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userControl_Recipe1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl_Recipe1.Location = new System.Drawing.Point(0, 28);
+            this.userControl_Recipe1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControl_Recipe1.Name = "userControl_Recipe1";
+            this.userControl_Recipe1.Size = new System.Drawing.Size(1015, 678);
+            this.userControl_Recipe1.TabIndex = 12;
+            // 
             // userControl_Reserve_Add_Remove1
             // 
             this.userControl_Reserve_Add_Remove1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -192,17 +212,6 @@
             this.userControl_Profil1.Size = new System.Drawing.Size(1015, 678);
             this.userControl_Profil1.TabIndex = 9;
             // 
-            // userControl_Recipe1
-            // 
-            this.userControl_Recipe1.BackgroundImage = global::Healthyfood.Properties.Resources.cuisine;
-            this.userControl_Recipe1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userControl_Recipe1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl_Recipe1.Location = new System.Drawing.Point(0, 28);
-            this.userControl_Recipe1.Margin = new System.Windows.Forms.Padding(4);
-            this.userControl_Recipe1.Name = "userControl_Recipe1";
-            this.userControl_Recipe1.Size = new System.Drawing.Size(1015, 678);
-            this.userControl_Recipe1.TabIndex = 12;
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -210,6 +219,7 @@
             this.BackgroundImage = global::Healthyfood.Properties.Resources.fond1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1015, 706);
+            this.Controls.Add(this.userControl_Menu1);
             this.Controls.Add(this.userControl_Recipe1);
             this.Controls.Add(this.userControl_Reserve_Add_Remove1);
             this.Controls.Add(this.userControl_Show_Reserve21);
@@ -246,6 +256,7 @@
         private UserControl_Show_Reserve2 userControl_Show_Reserve21;
         private UserControl_Reserve_Add_Remove userControl_Reserve_Add_Remove1;
         private UserControl_Recipe userControl_Recipe1;
+        private UserControl_Menu userControl_Menu1;
     }
 }
 
