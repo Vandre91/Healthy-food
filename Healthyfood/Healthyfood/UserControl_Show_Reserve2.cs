@@ -13,7 +13,7 @@ namespace Healthyfood
 {
     public partial class UserControl_Show_Reserve2 : UserControl
     {
-        
+        int repeat = 0;
         public UserControl_Show_Reserve2()
         {
             InitializeComponent();
@@ -48,7 +48,11 @@ namespace Healthyfood
                 i++;
 
             }
-            //Root.Healthy.Stocks.DateIng();
+            if (repeat == 0)
+            {
+                Root.Healthy.Stocks.DateIng();
+                repeat++;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -90,7 +94,7 @@ namespace Healthyfood
         private int DateImage (DateTime date)
         {
             if (date < DateTime.Today) return 17;
-            else if (date == DateTime.Today) return 18;
+            else if (date >= DateTime.Today && date <= DateTime.Today.AddDays(2)) return 18;
             else return 16;
         }
     }

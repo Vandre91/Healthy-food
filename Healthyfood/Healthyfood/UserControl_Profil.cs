@@ -67,8 +67,16 @@ namespace Healthyfood
         //ajouter
         private void button1_Click_1(object sender, EventArgs e)
         {
-            userControl_Show_Profil1.Visible = true;
-            userControl_Show_Profil1.BringToFront();
+            if (listView1.Items.Count == 5)
+            {
+                textBox1.Text = "Nombre max atteint";
+                textBox1.Visible = true;
+            }
+            else
+            {
+                userControl_Show_Profil1.Visible = true;
+                userControl_Show_Profil1.BringToFront();
+            }
         }
 
         //modifier
@@ -115,7 +123,7 @@ namespace Healthyfood
             catch (ArgumentException)
             {
                 textBox1.Text = "Aucun utilisateur sélectionné";
-                textBox1.Visible = false;
+                textBox1.Visible = true;
             }
         }
 
