@@ -63,12 +63,13 @@
             this.label_g = new System.Windows.Forms.Label();
             this.label_d = new System.Windows.Forms.Label();
             this.label_n = new System.Windows.Forms.Label();
+            this.label_combo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button_Back
             // 
             this.button_Back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Back.Location = new System.Drawing.Point(567, 439);
+            this.button_Back.Location = new System.Drawing.Point(589, 432);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(75, 53);
             this.button_Back.TabIndex = 0;
@@ -160,7 +161,7 @@
             // button_Save
             // 
             this.button_Save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Save.Location = new System.Drawing.Point(478, 439);
+            this.button_Save.Location = new System.Drawing.Point(500, 432);
             this.button_Save.Name = "button_Save";
             this.button_Save.Size = new System.Drawing.Size(83, 53);
             this.button_Save.TabIndex = 10;
@@ -280,7 +281,7 @@
             // 
             this.label_b.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label_b.AutoSize = true;
-            this.label_b.Location = new System.Drawing.Point(517, 76);
+            this.label_b.Location = new System.Drawing.Point(539, 76);
             this.label_b.Name = "label_b";
             this.label_b.Size = new System.Drawing.Size(27, 13);
             this.label_b.TabIndex = 23;
@@ -290,7 +291,7 @@
             // 
             this.label_e.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label_e.AutoSize = true;
-            this.label_e.Location = new System.Drawing.Point(513, 118);
+            this.label_e.Location = new System.Drawing.Point(535, 118);
             this.label_e.Name = "label_e";
             this.label_e.Size = new System.Drawing.Size(31, 13);
             this.label_e.TabIndex = 24;
@@ -299,7 +300,7 @@
             // textBox_b
             // 
             this.textBox_b.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_b.Location = new System.Drawing.Point(554, 73);
+            this.textBox_b.Location = new System.Drawing.Point(576, 73);
             this.textBox_b.Name = "textBox_b";
             this.textBox_b.Size = new System.Drawing.Size(100, 20);
             this.textBox_b.TabIndex = 25;
@@ -308,7 +309,7 @@
             // textBox_e
             // 
             this.textBox_e.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_e.Location = new System.Drawing.Point(554, 116);
+            this.textBox_e.Location = new System.Drawing.Point(576, 116);
             this.textBox_e.Name = "textBox_e";
             this.textBox_e.Size = new System.Drawing.Size(100, 20);
             this.textBox_e.TabIndex = 26;
@@ -317,7 +318,7 @@
             // monthCalendar1
             // 
             this.monthCalendar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar1.Location = new System.Drawing.Point(427, 162);
+            this.monthCalendar1.Location = new System.Drawing.Point(449, 162);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 27;
             this.monthCalendar1.Visible = false;
@@ -326,7 +327,7 @@
             // monthCalendar2
             // 
             this.monthCalendar2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar2.Location = new System.Drawing.Point(427, 162);
+            this.monthCalendar2.Location = new System.Drawing.Point(449, 162);
             this.monthCalendar2.Name = "monthCalendar2";
             this.monthCalendar2.TabIndex = 28;
             this.monthCalendar2.Visible = false;
@@ -336,7 +337,7 @@
             // 
             this.label_name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label_name.AutoSize = true;
-            this.label_name.Location = new System.Drawing.Point(509, 35);
+            this.label_name.Location = new System.Drawing.Point(531, 35);
             this.label_name.Name = "label_name";
             this.label_name.Size = new System.Drawing.Size(35, 13);
             this.label_name.TabIndex = 29;
@@ -345,7 +346,7 @@
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(554, 35);
+            this.textBox1.Location = new System.Drawing.Point(576, 35);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 30;
@@ -364,6 +365,7 @@
             // 
             // label_g
             // 
+            this.label_g.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label_g.AutoSize = true;
             this.label_g.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_g.ForeColor = System.Drawing.Color.LimeGreen;
@@ -398,10 +400,23 @@
             this.label_n.Text = "Entrer un nom valide";
             this.label_n.Visible = false;
             // 
+            // label_combo
+            // 
+            this.label_combo.AutoSize = true;
+            this.label_combo.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_combo.ForeColor = System.Drawing.Color.DarkRed;
+            this.label_combo.Location = new System.Drawing.Point(427, 349);
+            this.label_combo.Name = "label_combo";
+            this.label_combo.Size = new System.Drawing.Size(177, 18);
+            this.label_combo.TabIndex = 35;
+            this.label_combo.Text = "Remplisez tout les jours";
+            this.label_combo.Visible = false;
+            // 
             // UserControl_Add_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label_combo);
             this.Controls.Add(this.label_n);
             this.Controls.Add(this.label_d);
             this.Controls.Add(this.label_g);
@@ -438,7 +453,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_Back);
             this.Name = "UserControl_Add_Menu";
-            this.Size = new System.Drawing.Size(657, 507);
+            this.Size = new System.Drawing.Size(679, 500);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -481,5 +496,6 @@
         private System.Windows.Forms.Label label_g;
         private System.Windows.Forms.Label label_d;
         private System.Windows.Forms.Label label_n;
+        private System.Windows.Forms.Label label_combo;
     }
 }

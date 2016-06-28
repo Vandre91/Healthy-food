@@ -146,6 +146,7 @@ namespace Healthyfood
             label_n.Visible = false;
             label_g.Visible = false;
             label_erreur.Visible = false;
+            label_combo.Visible = false;
 
             string name = textBox1.Text;
             Dictionary<string, Recipe> recipe = new Dictionary<string, Recipe>();
@@ -191,14 +192,13 @@ namespace Healthyfood
             }
             catch(NullReferenceException)
             {
-
+                label_combo.Visible = true;
             }
             if (textBox1.Text == "")
             {
                 label_n.Visible = true;
             }
             
-
             if (textBox_b.Text == "" || textBox_e.Text == "")
             {
                 label_d.Visible = true;
