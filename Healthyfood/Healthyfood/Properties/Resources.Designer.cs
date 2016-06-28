@@ -183,6 +183,16 @@ namespace Healthyfood.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chef {
+            get {
+                object obj = ResourceManager.GetObject("chef", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cuisine {
             get {
                 object obj = ResourceManager.GetObject("cuisine", resourceCulture);
@@ -293,9 +303,49 @@ namespace Healthyfood.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mesrecettes {
+            get {
+                object obj = ResourceManager.GetObject("mesrecettes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mesrecettes1 {
+            get {
+                object obj = ResourceManager.GetObject("mesrecettes1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Monde {
+            get {
+                object obj = ResourceManager.GetObject("Monde", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap profilback {
             get {
                 object obj = ResourceManager.GetObject("profilback", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap santé {
+            get {
+                object obj = ResourceManager.GetObject("santé", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

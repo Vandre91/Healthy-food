@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "Le abdul",
             "belle et bien présenter"}, -1);
             this.panel_Show_Recipes = new System.Windows.Forms.Panel();
@@ -135,7 +135,7 @@
             // button_Back
             // 
             this.button_Back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Back.Location = new System.Drawing.Point(601, 495);
+            this.button_Back.Location = new System.Drawing.Point(520, 495);
             this.button_Back.Margin = new System.Windows.Forms.Padding(4);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(117, 27);
@@ -154,11 +154,11 @@
             this.columnHeader_Description,
             this.columnHeader_Note});
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
+            listViewItem1});
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(730, 487);
+            this.listView1.Size = new System.Drawing.Size(691, 487);
             this.listView1.TabIndex = 6;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;

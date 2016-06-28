@@ -56,7 +56,7 @@
             this.panel_Show_Recipes.Controls.Add(this.button_Read);
             this.panel_Show_Recipes.Controls.Add(this.button_Heat);
             this.panel_Show_Recipes.Controls.Add(this.button_Back_Panel);
-            this.panel_Show_Recipes.Location = new System.Drawing.Point(152, 50);
+            this.panel_Show_Recipes.Location = new System.Drawing.Point(101, 55);
             this.panel_Show_Recipes.Margin = new System.Windows.Forms.Padding(4);
             this.panel_Show_Recipes.Name = "panel_Show_Recipes";
             this.panel_Show_Recipes.Size = new System.Drawing.Size(560, 318);
@@ -135,7 +135,7 @@
             // button_Back
             // 
             this.button_Back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Back.Location = new System.Drawing.Point(589, 499);
+            this.button_Back.Location = new System.Drawing.Point(526, 480);
             this.button_Back.Margin = new System.Windows.Forms.Padding(4);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(135, 33);
@@ -158,7 +158,7 @@
             this.listView1.Location = new System.Drawing.Point(4, 4);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(730, 487);
+            this.listView1.Size = new System.Drawing.Size(700, 468);
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
