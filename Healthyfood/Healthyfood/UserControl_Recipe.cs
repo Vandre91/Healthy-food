@@ -16,6 +16,10 @@ namespace Healthyfood
         public UserControl_Recipe()
         {
             InitializeComponent();
+            userControl_Recipe_Healthy1.Visible = false;
+            userControl_Recipe_Utilisateur1.Visible = false;
+            userControl_Your_Recipes1.Visible = false;
+            userControl_World_Recipe1.Visible = false;
         }
         public Menu Root
         {
