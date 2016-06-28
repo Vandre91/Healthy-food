@@ -34,9 +34,10 @@
             // button_back
             // 
             this.button_back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_back.Location = new System.Drawing.Point(532, 323);
+            this.button_back.Location = new System.Drawing.Point(369, 230);
+            this.button_back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_back.Name = "button_back";
-            this.button_back.Size = new System.Drawing.Size(89, 59);
+            this.button_back.Size = new System.Drawing.Size(119, 73);
             this.button_back.TabIndex = 0;
             this.button_back.Text = "Retour";
             this.button_back.UseVisualStyleBackColor = true;
@@ -44,11 +45,12 @@
             // 
             // UserControl_Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button_back);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UserControl_Menu";
-            this.Size = new System.Drawing.Size(624, 385);
+            this.Size = new System.Drawing.Size(832, 474);
             this.ResumeLayout(false);
 
         }

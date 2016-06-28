@@ -23,6 +23,7 @@ namespace Healthyfood
             userControl_Recipe1.Visible = false;
             userControl_Reserve_Add_Remove1.Visible = false;
             userControl_Show_Reserve21.Visible = false;
+            userControl_Menu1.Visible = false;
             _food = new healthyfood();
         }
 
@@ -83,8 +84,8 @@ namespace Healthyfood
         //menu
         private void button1_Click(object sender, EventArgs e)
         {
-            //userControl_Menu1.Visible = true;
-            //userControl_Menu1.Focus();
+            userControl_Menu1.Visible = true;
+            userControl_Menu1.Focus();
         }
 
         //ajouter
