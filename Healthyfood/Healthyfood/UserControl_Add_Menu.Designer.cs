@@ -51,12 +51,24 @@
             this.comboBox_ss = new System.Windows.Forms.ComboBox();
             this.comboBox_dm = new System.Windows.Forms.ComboBox();
             this.comboBoxds = new System.Windows.Forms.ComboBox();
+            this.label_b = new System.Windows.Forms.Label();
+            this.label_e = new System.Windows.Forms.Label();
+            this.textBox_b = new System.Windows.Forms.TextBox();
+            this.textBox_e = new System.Windows.Forms.TextBox();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
+            this.label_name = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label_erreur = new System.Windows.Forms.Label();
+            this.label_g = new System.Windows.Forms.Label();
+            this.label_d = new System.Windows.Forms.Label();
+            this.label_n = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button_Back
             // 
             this.button_Back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Back.Location = new System.Drawing.Point(568, 435);
+            this.button_Back.Location = new System.Drawing.Point(567, 439);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(75, 53);
             this.button_Back.TabIndex = 0;
@@ -130,7 +142,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(135, 24);
+            this.comboBox1.Location = new System.Drawing.Point(103, 24);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(302, 21);
             this.comboBox1.TabIndex = 8;
@@ -139,7 +151,7 @@
             // comboBox_ls
             // 
             this.comboBox_ls.FormattingEnabled = true;
-            this.comboBox_ls.Location = new System.Drawing.Point(135, 51);
+            this.comboBox_ls.Location = new System.Drawing.Point(103, 51);
             this.comboBox_ls.Name = "comboBox_ls";
             this.comboBox_ls.Size = new System.Drawing.Size(302, 21);
             this.comboBox_ls.TabIndex = 9;
@@ -148,7 +160,7 @@
             // button_Save
             // 
             this.button_Save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Save.Location = new System.Drawing.Point(479, 435);
+            this.button_Save.Location = new System.Drawing.Point(478, 439);
             this.button_Save.Name = "button_Save";
             this.button_Save.Size = new System.Drawing.Size(83, 53);
             this.button_Save.TabIndex = 10;
@@ -159,7 +171,7 @@
             // comboBox_mm
             // 
             this.comboBox_mm.FormattingEnabled = true;
-            this.comboBox_mm.Location = new System.Drawing.Point(135, 88);
+            this.comboBox_mm.Location = new System.Drawing.Point(103, 88);
             this.comboBox_mm.Name = "comboBox_mm";
             this.comboBox_mm.Size = new System.Drawing.Size(302, 21);
             this.comboBox_mm.TabIndex = 11;
@@ -168,7 +180,7 @@
             // comboBox_ms
             // 
             this.comboBox_ms.FormattingEnabled = true;
-            this.comboBox_ms.Location = new System.Drawing.Point(135, 115);
+            this.comboBox_ms.Location = new System.Drawing.Point(103, 115);
             this.comboBox_ms.Name = "comboBox_ms";
             this.comboBox_ms.Size = new System.Drawing.Size(302, 21);
             this.comboBox_ms.TabIndex = 12;
@@ -177,7 +189,7 @@
             // comboBox_mem
             // 
             this.comboBox_mem.FormattingEnabled = true;
-            this.comboBox_mem.Location = new System.Drawing.Point(135, 154);
+            this.comboBox_mem.Location = new System.Drawing.Point(103, 154);
             this.comboBox_mem.Name = "comboBox_mem";
             this.comboBox_mem.Size = new System.Drawing.Size(302, 21);
             this.comboBox_mem.TabIndex = 13;
@@ -186,7 +198,7 @@
             // comboBox_mes
             // 
             this.comboBox_mes.FormattingEnabled = true;
-            this.comboBox_mes.Location = new System.Drawing.Point(135, 181);
+            this.comboBox_mes.Location = new System.Drawing.Point(103, 181);
             this.comboBox_mes.Name = "comboBox_mes";
             this.comboBox_mes.Size = new System.Drawing.Size(302, 21);
             this.comboBox_mes.TabIndex = 14;
@@ -195,7 +207,7 @@
             // comboBox_jm
             // 
             this.comboBox_jm.FormattingEnabled = true;
-            this.comboBox_jm.Location = new System.Drawing.Point(135, 221);
+            this.comboBox_jm.Location = new System.Drawing.Point(103, 221);
             this.comboBox_jm.Name = "comboBox_jm";
             this.comboBox_jm.Size = new System.Drawing.Size(302, 21);
             this.comboBox_jm.TabIndex = 15;
@@ -204,7 +216,7 @@
             // comboBox_js
             // 
             this.comboBox_js.FormattingEnabled = true;
-            this.comboBox_js.Location = new System.Drawing.Point(135, 248);
+            this.comboBox_js.Location = new System.Drawing.Point(103, 248);
             this.comboBox_js.Name = "comboBox_js";
             this.comboBox_js.Size = new System.Drawing.Size(302, 21);
             this.comboBox_js.TabIndex = 16;
@@ -213,7 +225,7 @@
             // comboBox_vm
             // 
             this.comboBox_vm.FormattingEnabled = true;
-            this.comboBox_vm.Location = new System.Drawing.Point(135, 286);
+            this.comboBox_vm.Location = new System.Drawing.Point(103, 286);
             this.comboBox_vm.Name = "comboBox_vm";
             this.comboBox_vm.Size = new System.Drawing.Size(302, 21);
             this.comboBox_vm.TabIndex = 17;
@@ -222,7 +234,7 @@
             // comboBox_vs
             // 
             this.comboBox_vs.FormattingEnabled = true;
-            this.comboBox_vs.Location = new System.Drawing.Point(135, 311);
+            this.comboBox_vs.Location = new System.Drawing.Point(103, 311);
             this.comboBox_vs.Name = "comboBox_vs";
             this.comboBox_vs.Size = new System.Drawing.Size(302, 21);
             this.comboBox_vs.TabIndex = 18;
@@ -231,7 +243,7 @@
             // comboBox_sm
             // 
             this.comboBox_sm.FormattingEnabled = true;
-            this.comboBox_sm.Location = new System.Drawing.Point(135, 349);
+            this.comboBox_sm.Location = new System.Drawing.Point(103, 349);
             this.comboBox_sm.Name = "comboBox_sm";
             this.comboBox_sm.Size = new System.Drawing.Size(302, 21);
             this.comboBox_sm.TabIndex = 19;
@@ -240,7 +252,7 @@
             // comboBox_ss
             // 
             this.comboBox_ss.FormattingEnabled = true;
-            this.comboBox_ss.Location = new System.Drawing.Point(135, 375);
+            this.comboBox_ss.Location = new System.Drawing.Point(103, 375);
             this.comboBox_ss.Name = "comboBox_ss";
             this.comboBox_ss.Size = new System.Drawing.Size(302, 21);
             this.comboBox_ss.TabIndex = 20;
@@ -249,7 +261,7 @@
             // comboBox_dm
             // 
             this.comboBox_dm.FormattingEnabled = true;
-            this.comboBox_dm.Location = new System.Drawing.Point(135, 419);
+            this.comboBox_dm.Location = new System.Drawing.Point(103, 419);
             this.comboBox_dm.Name = "comboBox_dm";
             this.comboBox_dm.Size = new System.Drawing.Size(302, 21);
             this.comboBox_dm.TabIndex = 21;
@@ -258,16 +270,150 @@
             // comboBoxds
             // 
             this.comboBoxds.FormattingEnabled = true;
-            this.comboBoxds.Location = new System.Drawing.Point(135, 446);
+            this.comboBoxds.Location = new System.Drawing.Point(103, 446);
             this.comboBoxds.Name = "comboBoxds";
             this.comboBoxds.Size = new System.Drawing.Size(302, 21);
             this.comboBoxds.TabIndex = 22;
             this.comboBoxds.Click += new System.EventHandler(this.comboBoxds_Click);
             // 
+            // label_b
+            // 
+            this.label_b.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_b.AutoSize = true;
+            this.label_b.Location = new System.Drawing.Point(517, 76);
+            this.label_b.Name = "label_b";
+            this.label_b.Size = new System.Drawing.Size(27, 13);
+            this.label_b.TabIndex = 23;
+            this.label_b.Text = "Du :";
+            // 
+            // label_e
+            // 
+            this.label_e.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_e.AutoSize = true;
+            this.label_e.Location = new System.Drawing.Point(513, 118);
+            this.label_e.Name = "label_e";
+            this.label_e.Size = new System.Drawing.Size(31, 13);
+            this.label_e.TabIndex = 24;
+            this.label_e.Text = "Aux :";
+            // 
+            // textBox_b
+            // 
+            this.textBox_b.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_b.Location = new System.Drawing.Point(554, 73);
+            this.textBox_b.Name = "textBox_b";
+            this.textBox_b.Size = new System.Drawing.Size(100, 20);
+            this.textBox_b.TabIndex = 25;
+            this.textBox_b.Click += new System.EventHandler(this.textBox1_Click);
+            // 
+            // textBox_e
+            // 
+            this.textBox_e.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_e.Location = new System.Drawing.Point(554, 116);
+            this.textBox_e.Name = "textBox_e";
+            this.textBox_e.Size = new System.Drawing.Size(100, 20);
+            this.textBox_e.TabIndex = 26;
+            this.textBox_e.Click += new System.EventHandler(this.textBox2_Click);
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.monthCalendar1.Location = new System.Drawing.Point(427, 162);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 27;
+            this.monthCalendar1.Visible = false;
+            this.monthCalendar1.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateSelected);
+            // 
+            // monthCalendar2
+            // 
+            this.monthCalendar2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.monthCalendar2.Location = new System.Drawing.Point(427, 162);
+            this.monthCalendar2.Name = "monthCalendar2";
+            this.monthCalendar2.TabIndex = 28;
+            this.monthCalendar2.Visible = false;
+            this.monthCalendar2.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar2_DateSelected);
+            // 
+            // label_name
+            // 
+            this.label_name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_name.AutoSize = true;
+            this.label_name.Location = new System.Drawing.Point(509, 35);
+            this.label_name.Name = "label_name";
+            this.label_name.Size = new System.Drawing.Size(35, 13);
+            this.label_name.TabIndex = 29;
+            this.label_name.Text = "Nom :";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(554, 35);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 30;
+            // 
+            // label_erreur
+            // 
+            this.label_erreur.AutoSize = true;
+            this.label_erreur.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_erreur.ForeColor = System.Drawing.Color.DarkRed;
+            this.label_erreur.Location = new System.Drawing.Point(424, 418);
+            this.label_erreur.Name = "label_erreur";
+            this.label_erreur.Size = new System.Drawing.Size(50, 18);
+            this.label_erreur.TabIndex = 31;
+            this.label_erreur.Text = "label8";
+            this.label_erreur.Visible = false;
+            // 
+            // label_g
+            // 
+            this.label_g.AutoSize = true;
+            this.label_g.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_g.ForeColor = System.Drawing.Color.LimeGreen;
+            this.label_g.Location = new System.Drawing.Point(424, 388);
+            this.label_g.Name = "label_g";
+            this.label_g.Size = new System.Drawing.Size(225, 18);
+            this.label_g.TabIndex = 32;
+            this.label_g.Text = "Le menu a bien été enregistrer";
+            this.label_g.Visible = false;
+            // 
+            // label_d
+            // 
+            this.label_d.AutoSize = true;
+            this.label_d.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_d.ForeColor = System.Drawing.Color.DarkRed;
+            this.label_d.Location = new System.Drawing.Point(437, 139);
+            this.label_d.Name = "label_d";
+            this.label_d.Size = new System.Drawing.Size(212, 18);
+            this.label_d.TabIndex = 33;
+            this.label_d.Text = "Une des date n\'est pas valide";
+            this.label_d.Visible = false;
+            // 
+            // label_n
+            // 
+            this.label_n.AutoSize = true;
+            this.label_n.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_n.ForeColor = System.Drawing.Color.DarkRed;
+            this.label_n.Location = new System.Drawing.Point(475, 56);
+            this.label_n.Name = "label_n";
+            this.label_n.Size = new System.Drawing.Size(137, 16);
+            this.label_n.TabIndex = 34;
+            this.label_n.Text = "Entrer un nom valide";
+            this.label_n.Visible = false;
+            // 
             // UserControl_Add_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label_n);
+            this.Controls.Add(this.label_d);
+            this.Controls.Add(this.label_g);
+            this.Controls.Add(this.label_erreur);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label_name);
+            this.Controls.Add(this.monthCalendar2);
+            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.textBox_e);
+            this.Controls.Add(this.textBox_b);
+            this.Controls.Add(this.label_e);
+            this.Controls.Add(this.label_b);
             this.Controls.Add(this.comboBoxds);
             this.Controls.Add(this.comboBox_dm);
             this.Controls.Add(this.comboBox_ss);
@@ -292,7 +438,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_Back);
             this.Name = "UserControl_Add_Menu";
-            this.Size = new System.Drawing.Size(658, 503);
+            this.Size = new System.Drawing.Size(657, 507);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,5 +469,17 @@
         private System.Windows.Forms.ComboBox comboBox_ss;
         private System.Windows.Forms.ComboBox comboBox_dm;
         private System.Windows.Forms.ComboBox comboBoxds;
+        private System.Windows.Forms.Label label_b;
+        private System.Windows.Forms.Label label_e;
+        private System.Windows.Forms.TextBox textBox_b;
+        private System.Windows.Forms.TextBox textBox_e;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.MonthCalendar monthCalendar2;
+        private System.Windows.Forms.Label label_name;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label_erreur;
+        private System.Windows.Forms.Label label_g;
+        private System.Windows.Forms.Label label_d;
+        private System.Windows.Forms.Label label_n;
     }
 }

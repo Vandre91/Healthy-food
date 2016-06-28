@@ -17,6 +17,7 @@ namespace StockFood
         AllRecipe _Allrecipe;
         Calories _Calories;
         AllMenu _Allmenu;
+        Menu _menu;
 
         public List<string> _viande;
         public List<string> _boisson;
@@ -100,6 +101,11 @@ namespace StockFood
         {
             get { return _Allmenu; }
             set { _Allmenu = value; }
+        }
+        public Menu Menu
+        {
+            get { return _menu; }
+            set { _menu = value; }
         }
         public void CreateIngredient(string category, string name)
         {

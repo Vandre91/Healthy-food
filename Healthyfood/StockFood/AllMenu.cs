@@ -26,8 +26,6 @@ namespace StockFood
             {
                 throw new ArgumentException();
             }
-
-            if (recipe.Count == 0) throw new ArgumentException("This list is null", nameof(recipe));
             if (datef == null ) throw new ArgumentException("The description is empty", nameof(datef));
             if (datel == null) throw new ArgumentException("The description is empty", nameof(datel));
             Menu m = new Menu(name, recipe, datef,datel);
@@ -49,7 +47,7 @@ namespace StockFood
                 throw new ArgumentException();
             }
         }
-        public bool RemoveMenu(Recipe i)
+        public bool RemoveMenu(Menu i)
         {
             if (i == null)
                 throw new NullReferenceException();
