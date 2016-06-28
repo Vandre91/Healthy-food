@@ -76,11 +76,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_Add_Menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Add_Menu.Designer.cs">
+      <DependentUpon>UserControl_Add_Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_Menu.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControl_Menu.Designer.cs">
       <DependentUpon>UserControl_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Modify_Menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Modify_Menu.Designer.cs">
+      <DependentUpon>UserControl_Modify_Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl_Modify_Profil.cs">
       <SubType>UserControl</SubType>
@@ -162,8 +174,14 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Add_Menu.resx">
+      <DependentUpon>UserControl_Add_Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Menu.resx">
       <DependentUpon>UserControl_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Modify_Menu.resx">
+      <DependentUpon>UserControl_Modify_Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Modify_Profil.resx">
       <DependentUpon>UserControl_Modify_Profil.cs</DependentUpon>
