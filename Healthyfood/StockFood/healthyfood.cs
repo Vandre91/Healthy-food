@@ -145,9 +145,12 @@ namespace StockFood
             Ingredient g = new Ingredient("herbe_plante", "poivre", 2, DateTime.Today);
             Ingredient h = new Ingredient("herbe_plante", "sel", 2, DateTime.Today);
             List<Ingredient> recipe = new List<Ingredient> { e, f, g, h };
-            _Allrecipe.AddHealthyrecipe("Côtes de porc au citron", recipe, "Faire cuire les 2 côtes de porc dans la magarine. 10 minutes avant la fin de la cuisson, saler, poivrer, couper le citron en 2, arroser les côtes avec son jus.Mettre aussi les 2 bouts de citrons dans la poêle, ça donnera plus de goût. S'accompagne très bien avec des frites. ");
+            _Allrecipe.AddHealthyrecipe("Côtes de porc", recipe, "Faire cuire les 2 côtes de porc dans la magarine. 10 minutes avant la fin de la cuisson, saler, poivrer, couper le citron en 2, arroser les côtes avec son jus.Mettre aussi les 2 bouts de citrons dans la poêle, ça donnera plus de goût. S'accompagne très bien avec des frites. ");
             #endregion
+
+
             
+
             #region Salade de tomates,  de haricots verts et d'aiglefin poché au vin 
             Ingredient salade1 = new Ingredient("poisson", "aiglefin frais",225, DateTime.Today);
             Ingredient salade2 = new Ingredient("boisson", "vin blanc", 60, DateTime.Today);
