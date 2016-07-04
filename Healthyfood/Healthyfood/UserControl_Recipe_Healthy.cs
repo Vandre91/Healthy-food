@@ -104,6 +104,26 @@ namespace Healthyfood
             }
 
         }
+        public int IngredientCal(string ingred)
+        {
+            int cal = 100;
+            if (Root.Healthy.Calories.Cal.ContainsKey(ingred))
+            {
+                cal = Root.Healthy.Calories.Cal[ingred];
+            }
+            return cal;
+        }
+
+        public int RecipeCal(Recipe Rec)
+        {
+            int cal = 0;
+            foreach (Ingredient ing in Rec.IRecipe)
+            {
+                cal = cal + ((ing.Balance * IngredientCal(ing.Name))/100);
+            }
+
+            return cal;
+        }
 
         private void UserControl_Recipe_Healthy_Enter(object sender, EventArgs e)
         {
@@ -115,21 +135,21 @@ namespace Healthyfood
                 int _light = 0;
                 int _normal = 0;
                 int _fat = 0;
-                foreach (var r in p.IRecipe)
-                {
-                    foreach (KeyValuePair<string, int> Currentpair in Root.Healthy.Calories.Cal )
-                    {
-                        if (Currentpair.Key == r.Name)
-                        {
-                            double cal = Currentpair.Value;
-                            double quantity = r.Balance;
-                            double allcal = Root.Healthy.CalculCal(quantity,cal);
-                            _allcalories += allcal;
-                            break;
-                        }
-                    }
+                //foreach (var r in p.IRecipe)
+                //{
+                //    foreach (KeyValuePair<string, int> Currentpair in Root.Healthy.Calories.Cal )
+                //    {
+                //        if (Currentpair.Key == r.Name)
+                //        {
+                //            double cal = Currentpair.Value;
+                //            double quantity = r.Balance;
+                //            double allcal = Root.Healthy.CalculCal(quantity,cal);
+                //            _allcalories += allcal;
+                //            break;
+                //        }
+                //    }
 
-                }
+                //}
                 if(Root.Healthy.Profil.Imc <= 18)
                 {
                     _light = 1;
@@ -143,21 +163,21 @@ namespace Healthyfood
                     _fat = 1;
                 }
 
-                if(_light == 1 && _allcalories > 2700)
+                if(_light == 1 && RecipeCal(p) > 900)
                 {
-                    string[] row = { p.Name, p.Describe, _allcalories.ToString() };
+                    string[] row = { p.Name, p.Describe, RecipeCal(p).ToString() };
                     ListViewItem item = new ListViewItem(row);
                     listView1.Items.Add(item);
                 }
-                if (_normal == 1 && _allcalories > 2000 && _allcalories <2700)
+                if (_normal == 1 && RecipeCal(p) > 666 && RecipeCal(p) < 900)
                 {
-                    string[] row = { p.Name, p.Describe, _allcalories.ToString() };
+                    string[] row = { p.Name, p.Describe, RecipeCal(p).ToString() };
                     ListViewItem item = new ListViewItem(row);
                     listView1.Items.Add(item);
                 }
-                if (_fat == 1 && _allcalories < 2000)
+                if (_fat == 1 && RecipeCal(p) < 666)
                 {
-                    string[] row = { p.Name, p.Describe, _allcalories.ToString() };
+                    string[] row = { p.Name, p.Describe, RecipeCal(p).ToString() };
                     ListViewItem item = new ListViewItem(row);
                     listView1.Items.Add(item);
                 }
