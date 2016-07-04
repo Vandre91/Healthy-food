@@ -49,7 +49,27 @@ namespace Healthyfood
             listView2.Items.Clear();
             textBox1.Visible = false;
             timer1.Start();
+            timer2.Start();
             int i = 0;
+
+            foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
+            {
+                string[] row = { p.FirstName, p.LastName, p.Age.ToString() };
+                ListViewItem item = new ListViewItem(row);
+                listView1.Items.Add(item);
+                listView1.Items[i].ImageIndex = SexImage(p.IsFemale);
+
+                listView2.Items.Add("");
+                listView2.Items[i].ImageIndex = ImcImage(p.Imc);
+                i++;
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            int i = 0;
+            listView1.Items.Clear();
+
 
             foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
             {
@@ -134,6 +154,27 @@ namespace Healthyfood
             timer1.Stop();
             textBox1.Visible = false;
         }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            int i = 0;
+            listView1.Items.Clear();
+
+
+            foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
+            {
+                string[] row = { p.FirstName, p.LastName, p.Age.ToString() };
+                ListViewItem item = new ListViewItem(row);
+                listView1.Items.Add(item);
+                listView1.Items[i].ImageIndex = SexImage(p.IsFemale);
+
+                listView2.Items.Add("");
+                listView2.Items[i].ImageIndex = ImcImage(p.Imc);
+                i++;
+            }
+        }
+
+
 
         //private void button_Add_Click(object sender, EventArgs e)
         //{

@@ -44,6 +44,7 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.userControl_Show_Profil1 = new Healthyfood.UserControl_Show_Profil();
             this.userControl_Modify_Profil1 = new Healthyfood.UserControl_Modify_Profil();
             this.SuspendLayout();
@@ -177,31 +178,34 @@
             // timer1
             // 
             this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 200;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // userControl_Show_Profil1
             // 
             this.userControl_Show_Profil1.BackColor = System.Drawing.Color.White;
             this.userControl_Show_Profil1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_Show_Profil1.BackgroundImage")));
-            this.userControl_Show_Profil1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userControl_Show_Profil1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Show_Profil1.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userControl_Show_Profil1.Location = new System.Drawing.Point(0, 0);
+            this.userControl_Show_Profil1.Location = new System.Drawing.Point(2, 2);
             this.userControl_Show_Profil1.Margin = new System.Windows.Forms.Padding(4);
             this.userControl_Show_Profil1.Name = "userControl_Show_Profil1";
             this.userControl_Show_Profil1.Size = new System.Drawing.Size(1015, 678);
-            this.userControl_Show_Profil1.TabIndex = 8;
+            this.userControl_Show_Profil1.TabIndex = 7;
             // 
             // userControl_Modify_Profil1
             // 
             this.userControl_Modify_Profil1.BackColor = System.Drawing.Color.White;
-            this.userControl_Modify_Profil1.BackgroundImage = global::Healthyfood.Properties.Resources.backshowprofil;
-            this.userControl_Modify_Profil1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userControl_Modify_Profil1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_Modify_Profil1.BackgroundImage")));
             this.userControl_Modify_Profil1.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userControl_Modify_Profil1.Location = new System.Drawing.Point(-1, -1);
+            this.userControl_Modify_Profil1.Location = new System.Drawing.Point(1, 1);
             this.userControl_Modify_Profil1.Margin = new System.Windows.Forms.Padding(4);
             this.userControl_Modify_Profil1.Name = "userControl_Modify_Profil1";
             this.userControl_Modify_Profil1.Size = new System.Drawing.Size(1015, 678);
-            this.userControl_Modify_Profil1.TabIndex = 7;
+            this.userControl_Modify_Profil1.TabIndex = 8;
             // 
             // UserControl_Profil
             // 
@@ -209,8 +213,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Healthyfood.Properties.Resources.profilback;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.userControl_Show_Profil1);
             this.Controls.Add(this.userControl_Modify_Profil1);
+            this.Controls.Add(this.userControl_Show_Profil1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.listView1);
@@ -241,7 +245,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Timer timer1;
-        private UserControl_Modify_Profil userControl_Modify_Profil1;
+        private System.Windows.Forms.Timer timer2;
         private UserControl_Show_Profil userControl_Show_Profil1;
+        private UserControl_Modify_Profil userControl_Modify_Profil1;
     }
 }
