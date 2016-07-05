@@ -34,6 +34,7 @@ namespace Healthyfood
         private void listView1_MouseClick(object sender, MouseEventArgs e)
         {
             text_name_meat.Text = listView1.SelectedItems[0].Text;
+            textBox_Quantity.Text = "En grammes";
         }
 
         private void button_back1_Click(object sender, EventArgs e)
@@ -252,11 +253,13 @@ namespace Healthyfood
         private void listView2_MouseClick(object sender, MouseEventArgs e)
         {
             text_name_drink.Text = listView2.SelectedItems[0].Text;
+            textbox_quantity_drink.Text = " En ml";
         }
 
         private void listView3_MouseClick(object sender, MouseEventArgs e)
         {
             text_name_dessert.Text = listView3.SelectedItems[0].Text;
+            txt_quantity_dessert.Text = "Par unité";
         }
 
 
@@ -347,52 +350,65 @@ namespace Healthyfood
         private void listView4_MouseClick(object sender, MouseEventArgs e)
         {
             txt_name_crust.Text = listView4.SelectedItems[0].Text;
+            txt_quantity_crust.Text = "Par unité";
 
         }
 
         private void listView5_MouseClick(object sender, MouseEventArgs e)
         {
             text_name_fish.Text = listView5.SelectedItems[0].Text;
+            txt_quantity_fish.Text = "Par unité";
         }
 
         private void listView6_MouseClick(object sender, MouseEventArgs e)
         {
             text_name_poultry.Text = listView6.SelectedItems[0].Text;
+            txt_quantity_poultry.Text = "Par unité";
         }
 
         private void listView7_MouseClick(object sender, MouseEventArgs e)
         {
             text_name_vegetable.Text = listView7.SelectedItems[0].Text;
+            txt_quantity_vegetable.Text = "Par unité";
         }
 
         private void listView8_MouseClick(object sender, MouseEventArgs e)
         {
             text_name_fruit.Text = listView8.SelectedItems[0].Text;
+            txt_quantity_fruit.Text = "Par unité";
         }
 
         private void listView9_MouseClick(object sender, MouseEventArgs e)
         {
             text_name_milk.Text = listView9.SelectedItems[0].Text;
+            if (text_name_milk.Text == "beurre" || text_name_milk.Text == "lait en poudre" || text_name_milk.Text == "fromage frais"
+                ||text_name_milk.Text == "fromage fermier" ) textBox24.Text = "En grammes";
+            else textBox24.Text = "En ml";
         }
 
         private void listView10_MouseClick(object sender, MouseEventArgs e)
         {
             text_name_fat.Text = listView10.SelectedItems[0].Text;
+            if (text_name_fat.Text == "beurre") textBox27.Text = "En grammes";
+            else textBox27.Text = "En ml";
         }
 
         private void listView11_MouseClick(object sender, MouseEventArgs e)
         {
             text_name_starchy.Text = listView11.SelectedItems[0].Text;
+            textBox30.Text = "En grammes";
         }
 
         private void listView12_MouseClick(object sender, MouseEventArgs e)
         {
             text_name_plant.Text = listView12.SelectedItems[0].Text;
+            textBox33.Text = "En grammes";
         }
 
         private void listView13_MouseClick(object sender, MouseEventArgs e)
         {
             text_name_bakery.Text = listView13.SelectedItems[0].Text;
+            textBox36.Text = "Par unité";
         }
         #endregion
         #region Verrif_error
@@ -1328,8 +1344,74 @@ namespace Healthyfood
         {
             textBox26.Text = monthCalendar15.SelectionRange.Start.ToShortDateString();
         }
+
+
         #endregion
 
-      
+        private void textBox_Quantity_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox_Quantity.Text = null;
+        }
+
+        private void textbox_quantity_drink_MouseClick(object sender, MouseEventArgs e)
+        {
+            textbox_quantity_drink.Text = null;
+        }
+
+        private void txt_quantity_dessert_MouseClick(object sender, MouseEventArgs e)
+        {
+            txt_quantity_dessert.Text = null;
+        }
+
+        private void txt_quantity_crust_MouseClick(object sender, MouseEventArgs e)
+        {
+            txt_quantity_crust.Text = null;
+        }
+
+        private void txt_quantity_fish_MouseClick(object sender, MouseEventArgs e)
+        {
+            txt_quantity_fish.Text = null;
+        }
+
+        private void txt_quantity_poultry_MouseClick(object sender, MouseEventArgs e)
+        {
+            txt_quantity_poultry.Text = null;
+        }
+
+        private void txt_quantity_vegetable_MouseClick(object sender, MouseEventArgs e)
+        {
+            txt_quantity_vegetable.Text = null;
+
+        }
+
+        private void txt_quantity_fruit_MouseClick(object sender, MouseEventArgs e)
+        {
+            txt_quantity_fruit.Text = null;
+        }
+
+        private void textBox24_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox24.Text = null;
+        }
+
+        private void textBox27_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox27.Text = null;
+        }
+
+        private void textBox30_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox30.Text = null;
+        }
+
+        private void textBox33_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox33.Text = null;
+        }
+
+        private void textBox36_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox36.Text = null;
+        }
     }
 }

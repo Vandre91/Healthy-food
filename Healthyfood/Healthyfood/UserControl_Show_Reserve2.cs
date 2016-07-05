@@ -103,7 +103,7 @@ namespace Healthyfood
         string unit;
         if (ingred.Category1 == "boisson") unit = " ml";
         else if (ingred.Category1 == "boulangerie" || ingred.Category1 == "fruit" || ingred.Category1 == "legume"
-        || ingred.Category1 == "poisson" || ingred.Category1 == "crustace" || ingred.Category1 == "dessert_sucrerie")
+        || ingred.Category1 == "poisson" || ingred.Category1 == "crustace" || ingred.Category1 == "dessert_sucrerie" || ingred.Category1 == "volaille")
             unit = " unités";
         else if (ingred.Category1 == "feculent" || ingred.Category1 == "herbe_plante") unit = " g";
         else if (ingred.Category1 == "viande") unit = " g";

@@ -359,7 +359,7 @@
             this.tabPage_Fat_Boulangerie.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Fat_Boulangerie.Name = "tabPage_Fat_Boulangerie";
             this.tabPage_Fat_Boulangerie.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage_Fat_Boulangerie.Size = new System.Drawing.Size(921, 624);
+            this.tabPage_Fat_Boulangerie.Size = new System.Drawing.Size(1007, 648);
             this.tabPage_Fat_Boulangerie.TabIndex = 12;
             this.tabPage_Fat_Boulangerie.Text = "Boulangérie";
             this.tabPage_Fat_Boulangerie.UseVisualStyleBackColor = true;
@@ -505,6 +505,7 @@
             this.textBox36.Name = "textBox36";
             this.textBox36.Size = new System.Drawing.Size(132, 25);
             this.textBox36.TabIndex = 5;
+            this.textBox36.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox36_MouseClick);
             // 
             // text_name_bakery
             // 
@@ -589,7 +590,7 @@
             this.tabPage_Herbes_Plants.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Herbes_Plants.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Herbes_Plants.Name = "tabPage_Herbes_Plants";
-            this.tabPage_Herbes_Plants.Size = new System.Drawing.Size(921, 624);
+            this.tabPage_Herbes_Plants.Size = new System.Drawing.Size(1007, 648);
             this.tabPage_Herbes_Plants.TabIndex = 11;
             this.tabPage_Herbes_Plants.Text = "Herbe/Plante";
             this.tabPage_Herbes_Plants.UseVisualStyleBackColor = true;
@@ -768,6 +769,7 @@
             this.textBox33.Name = "textBox33";
             this.textBox33.Size = new System.Drawing.Size(132, 25);
             this.textBox33.TabIndex = 11;
+            this.textBox33.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox33_MouseClick);
             // 
             // text_name_plant
             // 
@@ -825,7 +827,7 @@
             this.tabPage_Féculent.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Féculent.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Féculent.Name = "tabPage_Féculent";
-            this.tabPage_Féculent.Size = new System.Drawing.Size(921, 624);
+            this.tabPage_Féculent.Size = new System.Drawing.Size(1007, 648);
             this.tabPage_Féculent.TabIndex = 10;
             this.tabPage_Féculent.Text = "Féculent";
             this.tabPage_Féculent.UseVisualStyleBackColor = true;
@@ -1004,6 +1006,7 @@
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(132, 25);
             this.textBox30.TabIndex = 11;
+            this.textBox30.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox30_MouseClick);
             // 
             // text_name_starchy
             // 
@@ -1061,7 +1064,7 @@
             this.tabPage_Fat_Content.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Fat_Content.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Fat_Content.Name = "tabPage_Fat_Content";
-            this.tabPage_Fat_Content.Size = new System.Drawing.Size(921, 624);
+            this.tabPage_Fat_Content.Size = new System.Drawing.Size(1007, 648);
             this.tabPage_Fat_Content.TabIndex = 9;
             this.tabPage_Fat_Content.Text = "Matière Grasse";
             this.tabPage_Fat_Content.UseVisualStyleBackColor = true;
@@ -1250,6 +1253,7 @@
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(132, 25);
             this.textBox27.TabIndex = 11;
+            this.textBox27.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox27_MouseClick);
             // 
             // text_name_fat
             // 
@@ -1307,7 +1311,7 @@
             this.tabPage_Milk_product.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Milk_product.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Milk_product.Name = "tabPage_Milk_product";
-            this.tabPage_Milk_product.Size = new System.Drawing.Size(921, 624);
+            this.tabPage_Milk_product.Size = new System.Drawing.Size(1007, 648);
             this.tabPage_Milk_product.TabIndex = 8;
             this.tabPage_Milk_product.Text = "Produit Laitier";
             this.tabPage_Milk_product.UseVisualStyleBackColor = true;
@@ -1497,6 +1501,7 @@
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(132, 25);
             this.textBox24.TabIndex = 11;
+            this.textBox24.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox24_MouseClick);
             // 
             // text_name_milk
             // 
@@ -1554,7 +1559,7 @@
             this.tabPage_Fruit.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Fruit.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Fruit.Name = "tabPage_Fruit";
-            this.tabPage_Fruit.Size = new System.Drawing.Size(921, 624);
+            this.tabPage_Fruit.Size = new System.Drawing.Size(1007, 648);
             this.tabPage_Fruit.TabIndex = 7;
             this.tabPage_Fruit.Text = "Fruits";
             this.tabPage_Fruit.UseVisualStyleBackColor = true;
@@ -1733,6 +1738,7 @@
             this.txt_quantity_fruit.Name = "txt_quantity_fruit";
             this.txt_quantity_fruit.Size = new System.Drawing.Size(132, 25);
             this.txt_quantity_fruit.TabIndex = 11;
+            this.txt_quantity_fruit.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_quantity_fruit_MouseClick);
             // 
             // text_name_fruit
             // 
@@ -1790,7 +1796,7 @@
             this.tabPage_Vegetables.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Vegetables.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Vegetables.Name = "tabPage_Vegetables";
-            this.tabPage_Vegetables.Size = new System.Drawing.Size(921, 624);
+            this.tabPage_Vegetables.Size = new System.Drawing.Size(1007, 648);
             this.tabPage_Vegetables.TabIndex = 6;
             this.tabPage_Vegetables.Text = "Légumes";
             this.tabPage_Vegetables.UseVisualStyleBackColor = true;
@@ -1969,6 +1975,7 @@
             this.txt_quantity_vegetable.Name = "txt_quantity_vegetable";
             this.txt_quantity_vegetable.Size = new System.Drawing.Size(132, 25);
             this.txt_quantity_vegetable.TabIndex = 11;
+            this.txt_quantity_vegetable.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_quantity_vegetable_MouseClick);
             // 
             // text_name_vegetable
             // 
@@ -2026,7 +2033,7 @@
             this.tabPage_Poultry.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Poultry.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Poultry.Name = "tabPage_Poultry";
-            this.tabPage_Poultry.Size = new System.Drawing.Size(921, 624);
+            this.tabPage_Poultry.Size = new System.Drawing.Size(1007, 648);
             this.tabPage_Poultry.TabIndex = 5;
             this.tabPage_Poultry.Text = "Volailles";
             this.tabPage_Poultry.UseVisualStyleBackColor = true;
@@ -2205,6 +2212,7 @@
             this.txt_quantity_poultry.Name = "txt_quantity_poultry";
             this.txt_quantity_poultry.Size = new System.Drawing.Size(132, 25);
             this.txt_quantity_poultry.TabIndex = 11;
+            this.txt_quantity_poultry.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_quantity_poultry_MouseClick);
             // 
             // text_name_poultry
             // 
@@ -2262,7 +2270,7 @@
             this.tabPage_Fish.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Fish.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Fish.Name = "tabPage_Fish";
-            this.tabPage_Fish.Size = new System.Drawing.Size(921, 624);
+            this.tabPage_Fish.Size = new System.Drawing.Size(1007, 648);
             this.tabPage_Fish.TabIndex = 4;
             this.tabPage_Fish.Text = "Poisson";
             this.tabPage_Fish.UseVisualStyleBackColor = true;
@@ -2441,6 +2449,7 @@
             this.txt_quantity_fish.Name = "txt_quantity_fish";
             this.txt_quantity_fish.Size = new System.Drawing.Size(132, 25);
             this.txt_quantity_fish.TabIndex = 11;
+            this.txt_quantity_fish.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_quantity_fish_MouseClick);
             // 
             // text_name_fish
             // 
@@ -2498,7 +2507,7 @@
             this.tabPage_Crustacean.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Crustacean.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Crustacean.Name = "tabPage_Crustacean";
-            this.tabPage_Crustacean.Size = new System.Drawing.Size(921, 624);
+            this.tabPage_Crustacean.Size = new System.Drawing.Size(1007, 648);
             this.tabPage_Crustacean.TabIndex = 3;
             this.tabPage_Crustacean.Text = "Crustacé";
             this.tabPage_Crustacean.UseVisualStyleBackColor = true;
@@ -2677,10 +2686,12 @@
             this.txt_quantity_crust.Name = "txt_quantity_crust";
             this.txt_quantity_crust.Size = new System.Drawing.Size(132, 25);
             this.txt_quantity_crust.TabIndex = 11;
+            this.txt_quantity_crust.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_quantity_crust_MouseClick);
             // 
             // txt_name_crust
             // 
             this.txt_name_crust.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_name_crust.Enabled = false;
             this.txt_name_crust.Location = new System.Drawing.Point(781, 17);
             this.txt_name_crust.Margin = new System.Windows.Forms.Padding(4);
             this.txt_name_crust.Name = "txt_name_crust";
@@ -2733,7 +2744,7 @@
             this.tabPage_Dessert.Location = new System.Drawing.Point(4, 26);
             this.tabPage_Dessert.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Dessert.Name = "tabPage_Dessert";
-            this.tabPage_Dessert.Size = new System.Drawing.Size(921, 624);
+            this.tabPage_Dessert.Size = new System.Drawing.Size(1007, 648);
             this.tabPage_Dessert.TabIndex = 2;
             this.tabPage_Dessert.Text = "Dessert/Sucrerie";
             this.tabPage_Dessert.UseVisualStyleBackColor = true;
@@ -2912,6 +2923,7 @@
             this.txt_quantity_dessert.Name = "txt_quantity_dessert";
             this.txt_quantity_dessert.Size = new System.Drawing.Size(132, 25);
             this.txt_quantity_dessert.TabIndex = 11;
+            this.txt_quantity_dessert.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_quantity_dessert_MouseClick);
             // 
             // text_name_dessert
             // 
@@ -2970,7 +2982,7 @@
             this.tabPage_Drink.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_Drink.Name = "tabPage_Drink";
             this.tabPage_Drink.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage_Drink.Size = new System.Drawing.Size(921, 624);
+            this.tabPage_Drink.Size = new System.Drawing.Size(1007, 648);
             this.tabPage_Drink.TabIndex = 1;
             this.tabPage_Drink.Text = "Boisson";
             this.tabPage_Drink.UseVisualStyleBackColor = true;
@@ -3149,6 +3161,7 @@
             this.textbox_quantity_drink.Name = "textbox_quantity_drink";
             this.textbox_quantity_drink.Size = new System.Drawing.Size(132, 25);
             this.textbox_quantity_drink.TabIndex = 11;
+            this.textbox_quantity_drink.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textbox_quantity_drink_MouseClick);
             // 
             // text_name_drink
             // 
@@ -3387,6 +3400,7 @@
             this.textBox_Quantity.Name = "textBox_Quantity";
             this.textBox_Quantity.Size = new System.Drawing.Size(132, 25);
             this.textBox_Quantity.TabIndex = 2;
+            this.textBox_Quantity.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox_Quantity_MouseClick);
             // 
             // text_name_meat
             // 
