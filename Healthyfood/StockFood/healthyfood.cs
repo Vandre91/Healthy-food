@@ -35,7 +35,7 @@ namespace StockFood
 
         public healthyfood()
         {
-            _viande = new List<string> { "Steak de boeuf", "Collier de boeuf", "Entrecote de boeuf", "Cote de boeuf", "Rumsteck de boeuf", "Filet de boeuf", "Jarret de boeuf", "Onglet de boeuf", "Flanchet de boeuf", "Poitrine de boeuf", "Bifteck de boeuf", "Collier d'agneau", "Cote d'agneau", "Filet d'agneau", "Gigot d'agneau", "Poitrine d'agneau", "Epaule d'agneau", "Collier de veau", "Cote de veau", "Filet de veau", "Poitrine de veau", "Epaule de veau", "Jarret de veau", "Flanchet de veau", "Tendron de veau", "Echine de porc", "Cote de porc", "Filet de porc", "Jambon de porc", "Jarret de porc", "Collier de cheval", "Cote de cheval", "Entrecote de cheval", "Filet de cheval", "Rumsteck de cheval", "Gite de cheval", "Jaret de cheval", "Onglet de cheval" };
+            _viande = new List<string> { "Steak de boeuf", "Collier de boeuf", "Entrecote de boeuf", "Cote de boeuf", "Rumsteck de boeuf", "Filet de boeuf", "Jarret de boeuf", "Onglet de boeuf", "Flanchet de boeuf", "Poitrine de boeuf", "Bifteck de boeuf", "Collier d'agneau", "Cote d'agneau", "Filet d'agneau", "Gigot d'agneau", "Poitrine d'agneau", "Epaule d'agneau", "Collier de veau", "Cote de veau", "Filet de veau", "Poitrine de veau", "Epaule de veau", "Jarret de veau", "Flanchet de veau", "Tendron de veau", "Echine de porc", "Cote de porc", "Filet de porc", "Jambon de porc", "Jarret de porc", "Collier de cheval", "Cote de cheval", "Entrecote de cheval", "Filet de cheval", "Rumsteck de cheval", "Gite de cheval", "Jaret de cheval", "Onglet de cheval", "chorizo"};
             _boisson = new List<string> { "vin blanc", "lait", "absinthe", "allasch", "amaro", "amoroso", "café", "calvados", "champagne", "cognac", "eau de vie", "frambroise", "irish mist", "prunelle", "sirop", "tequila", "vin", "vodka", "whisky" };
             _dessert_sucrerie = new List<string> { "gâteau stonehenge", "american apple pie", "tarte aux cérises", "gâteau au yaourt", "pomme et caramel", "salade de fruits", "pain perdu", "tarte à la crème de marron et de coco", "tarte aux pommes et à la vergeoise", "streusel brownies", "biscuits de la joie", "mimi au choco", "gâteau à la courge de nice", "caramel mou au beurre salé", "muffins aux pommes", "baba au rhum", "poire au rapudara", "moelleux au chocolat", "poires au vin", "tarte à la rhubarbe", "mousse crémeuse chocolat aubergine", "charlotte russe aux pommes", "pommes au four", "cake au citron et aux graines de pavot", "fondant au chocolat", "salade orientale de fraises à la menthe", "douceur à la caroube", "gâteau au carotte", "makrouts", "quatre quart caramélisé aux pommes", "cheese cake aux spéculoos", "cookies aux deux noix", "alfajores de maicena", "muffins vegan cacoo noisette", "cookies noisettes", "épeautre et chocolat", "fraises au yaourt", "madeleines de commercy", "cake poire noisette chocolat", "muffins au chocolat noir" };
             _crustace = new List<string> { "araignee de mer", "cigale de mer", "crabe", "crevette geante", "crevette grise", "crevette rose", "ecrevisse", "etrille", "gambas", "homard", "langouste", "langoustine", "limule", "tourteau", "Coque", "bucarde", "rigadeau", "rigadelle", "sourdon", "hénon", "demoiselle", "maillot", "mourgue", "pagne", "berberechos", "huitre", "moule", "palourde", "clovisse", "petoncle", "mye", "couteau de mer", "vernis", "poulpe", "pieuvre", "buccin", "gros buccin", "bourgot", "bulot", "meduse" };
@@ -636,9 +636,26 @@ namespace StockFood
 
             #endregion
 
-           
+            #region pates crème chorizo
+            Ingredient i1 = new Ingredient("feculent", "pate", 125, DateTime.Today);
+            Ingredient i2 = new Ingredient("produit_laitier", "crème fraiche", 200, DateTime.Today);
+            Ingredient i3 = new Ingredient("viande", "chorizo", 80, DateTime.Today);
+            Ingredient i4 = new Ingredient("herbe_plante", "poivre", 1, DateTime.Today);
+            List<Ingredient> i5 = new List<Ingredient> { i1, i2, i3, i4 };
+            _Allrecipe.AddHealthyrecipe("pates crème chorizo ", i5, "Faites bouillir de l'eau salée.Coupez le chorizo en dès.Mettez vos pâtes à cuire.Pendant ce temps, faites revenir les dès de chorizo dans une poêle sans huile.Une fois qu'ils sont un petit peu croustillants, ajoutez la crème, poivrez.");
 
+            #endregion
+            #region One-Pot Pasta: Poulet & Crème
+            Ingredient i11 = new Ingredient("feculent", "pate", 125, DateTime.Today);
+            Ingredient i21 = new Ingredient("produit_laitier", "crème fraiche", 200, DateTime.Today);
+            Ingredient i31 = new Ingredient("viande", "filet de poulet", 100, DateTime.Today);
+            Ingredient i41 = new Ingredient("herbe_plante", "poivre", 1, DateTime.Today);
+            Ingredient i42 = new Ingredient("herbe_plante", "ail", 1, DateTime.Today);
+            Ingredient i43 = new Ingredient("matiere_grasse", "huile d'olive", 1, DateTime.Today);
+            List<Ingredient> i51 = new List<Ingredient> { i1, i2, i3, i41,i42,i43 };
+            _Allrecipe.AddHealthyrecipe("One-Pot Pasta: Poulet & Crème ", i51, " Préparer un bouillon de volaille, réserver.Faire revenir le poulet et l'ail dans de l'huile d'olive dans une casserole, assaisonner.Lorsque le poulet est saisit, ajouter le bouillon, la crème et les pâtes crues.Faire réduire l'eau jusqu'à ce que les pâtes soient cuites et qu'assez d'eau soit évaporée pour que la sauce soit onctueuse.");
 
+            #endregion
         }
     }
 }
