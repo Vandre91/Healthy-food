@@ -52,7 +52,7 @@ namespace StockFood
             _Utilisateur = new Users();
             _Stocks = new Stocks();
             _Allrecipe = new AllRecipe();
-            _Calories = new Calories();
+        _Calories = new Calories();
             _Allmenu = new AllMenu();
             CreateRecipes();
         }

@@ -37,7 +37,7 @@ namespace Healthyfood
             foreach (var p in Root.Healthy.Stocks.IStock)
             {
                 string date = Convert.ToString(p.Expiration_Date);
-                string[] row = { p.Name, p.Balance.ToString(), date };
+                string[] row = { p.Name, p.Balance.ToString()+ Unite(p), date };
                 ListViewItem item = new ListViewItem(row);
                 listView1.Items.Add(item);
                 listView1.Items[i].ImageIndex = categoryImage(p.Category1);
@@ -72,21 +72,21 @@ namespace Healthyfood
 
         private int categoryImage (string category)
         {
-            if (category == "viande") return 3;
-            else if (category == "poisson") return 4;
-            else if (category == "crustace") return 15;
-            else if (category == "dessert_sucrerie") return 8;
-            else if (category == "boisson") return 5;
+            if (category == "viande") return 3;//
+            else if (category == "poisson") return 4;//
+            else if (category == "crustace") return 15;//
+            else if (category == "dessert_sucrerie") return 8;//
+            else if (category == "boisson") return 5;//
             else if (category == "volaille") return 6;
-            else if (category == "legume") return 10;
-            else if (category == "fruit") return 14;
-            else if (category == "produit_laitier") return 9;
+            else if (category == "legume") return 10;//
+            else if (category == "fruit") return 14;//
+            else if (category == "produit_laitier") return 9;//
 
             else if (category == "matiere_grasse") return 13;
 
-            else if (category == "feculent") return 11;
+            else if (category == "feculent") return 11;//
 
-            else if (category == "boulangerie") return 12;
+            else if (category == "boulangerie") return 12;//
 
             else return 7;
         }
@@ -97,5 +97,34 @@ namespace Healthyfood
             else if (date >= DateTime.Today && date <= DateTime.Today.AddDays(2)) return 18;
             else return 16;
         }
+
+        private string Unite (StockFood.Ingredient ingred)
+    {
+        string unit;
+        if (ingred.Category1 == "boisson") unit = " ml";
+        else if (ingred.Category1 == "boulangerie" || ingred.Category1 == "fruit" || ingred.Category1 == "legume"
+        || ingred.Category1 == "poisson" || ingred.Category1 == "crustace" || ingred.Category1 == "dessert_sucrerie")
+            unit = " unités";
+        else if (ingred.Category1 == "feculent" || ingred.Category1 == "herbe_plante") unit = " g";
+        else if (ingred.Category1 == "viande") unit = " g";
+        else if (ingred.Category1 == "produit_laitier")
+        {
+            if (ingred.Name == "beurre" || ingred.Name == "lait en poudre" || ingred.Name == "fromage frais" || ingred.Name == "fromage fermier" ||
+                ingred.Name == "fromage affiné" || ingred.Name == "caséine") unit = " g";
+            else unit = " ml";
+        }
+        else if (ingred.Category1 == "matiere_grasse")
+        {
+            if (ingred.Name == "beurre") unit = " g";
+            else unit = " ml";
+        }
+        else unit = " g";
+
+
+        return unit; 
     }
 }
+}
+
+
+
