@@ -37,16 +37,16 @@ namespace StockFood
         {
             _viande = new List<string> { "Steak de boeuf", "Collier de boeuf", "Entrecote de boeuf", "Cote de boeuf", "Rumsteck de boeuf", "Filet de boeuf", "Jarret de boeuf", "Onglet de boeuf", "Flanchet de boeuf", "Poitrine de boeuf", "Bifteck de boeuf", "Collier d'agneau", "Cote d'agneau", "Filet d'agneau", "Gigot d'agneau", "Poitrine d'agneau", "Epaule d'agneau", "Collier de veau", "Cote de veau", "Filet de veau", "Poitrine de veau", "Epaule de veau", "Jarret de veau", "Flanchet de veau", "Tendron de veau", "Echine de porc", "Cote de porc", "Filet de porc", "Jambon de porc", "Jarret de porc", "Collier de cheval", "Cote de cheval", "Entrecote de cheval", "Filet de cheval", "Rumsteck de cheval", "Gite de cheval", "Jaret de cheval", "Onglet de cheval", "chorizo"};
             _boisson = new List<string> { "vin blanc", "lait", "absinthe", "allasch", "amaro", "amoroso", "café", "calvados", "champagne", "cognac", "eau de vie", "frambroise", "irish mist", "prunelle", "sirop", "tequila", "vin", "vodka", "whisky" };
-            _dessert_sucrerie = new List<string> { "gâteau stonehenge", "american apple pie", "tarte aux cérises", "gâteau au yaourt", "pomme et caramel", "salade de fruits", "pain perdu", "tarte à la crème de marron et de coco", "tarte aux pommes et à la vergeoise", "streusel brownies", "biscuits de la joie", "mimi au choco", "gâteau à la courge de nice", "caramel mou au beurre salé", "muffins aux pommes", "baba au rhum", "poire au rapudara", "moelleux au chocolat", "poires au vin", "tarte à la rhubarbe", "mousse crémeuse chocolat aubergine", "charlotte russe aux pommes", "pommes au four", "cake au citron et aux graines de pavot", "fondant au chocolat", "salade orientale de fraises à la menthe", "douceur à la caroube", "gâteau au carotte", "makrouts", "quatre quart caramélisé aux pommes", "cheese cake aux spéculoos", "cookies aux deux noix", "alfajores de maicena", "muffins vegan cacoo noisette", "cookies noisettes", "épeautre et chocolat", "fraises au yaourt", "madeleines de commercy", "cake poire noisette chocolat", "muffins au chocolat noir" };
+            _dessert_sucrerie = new List<string> {"miel", "gâteau stonehenge", "american apple pie", "tarte aux cérises", "gâteau au yaourt", "pomme et caramel", "salade de fruits", "pain perdu", "tarte à la crème de marron et de coco", "tarte aux pommes et à la vergeoise", "streusel brownies", "biscuits de la joie", "mimi au choco", "gâteau à la courge de nice", "caramel mou au beurre salé", "muffins aux pommes", "baba au rhum", "poire au rapudara", "moelleux au chocolat", "poires au vin", "tarte à la rhubarbe", "mousse crémeuse chocolat aubergine", "charlotte russe aux pommes", "pommes au four", "cake au citron et aux graines de pavot", "fondant au chocolat", "salade orientale de fraises à la menthe", "douceur à la caroube", "gâteau au carotte", "makrouts", "quatre quart caramélisé aux pommes", "cheese cake aux spéculoos", "cookies aux deux noix", "alfajores de maicena", "muffins vegan cacoo noisette", "cookies noisettes", "épeautre et chocolat", "fraises au yaourt", "madeleines de commercy", "cake poire noisette chocolat", "muffins au chocolat noir" };
             _crustace = new List<string> { "araignee de mer", "cigale de mer", "crabe", "crevette geante", "crevette grise", "crevette rose", "ecrevisse", "etrille", "gambas", "homard", "langouste", "langoustine", "limule", "tourteau", "Coque", "bucarde", "rigadeau", "rigadelle", "sourdon", "hénon", "demoiselle", "maillot", "mourgue", "pagne", "berberechos", "huitre", "moule", "palourde", "clovisse", "petoncle", "mye", "couteau de mer", "vernis", "poulpe", "pieuvre", "buccin", "gros buccin", "bourgot", "bulot", "meduse" };
             _poisson = new List<string> { "anchois", "aiglefin frais", "anguille", "brochet", "cabillaud", "colin", "daurade royale", "flétan", "loup de mer", "merlan", "omble chevalier", "perche", "plie", "raie", "rascasse du nord", "rouget barbet", "sandre", "sardine", "saumon", "sole", "thon" };
-            _volaille = new List<string> { "blanc de poulet", "cuisses de poulet", "pattes de poulet", "pilons de poulet", "ailes de poulet", "gesier de poulet", "foie de poulet", "coeur de poulet", "blanc de dinde", "aiguillette de dinde", "escalope de dinde", "filet de dinde", "supreme de dinde", "aileron de dinde", "manchon de dinde", "cuisses de dinde", "pilon de dinde", "aiguillettes de canard", "cuisses de canard", "filet de canard", "tournedos de canard", "aiguillettes de pintade", "cuisses de pintade", "filet de pintade", "tournedos de pintade" };
-            _fruit = new List<string> { "abricot", "airelle", "aki", "alberge", "amande", "ananas", "arbouse", "aronia", "avocat", "banane", "barbadine", "bergamote", "bigarade", "boysenberry", "brugnon", "cabosse", "cacahuète", "calamondin", "canneberge", "carambole", "casseille", "cassis", "cédrat", "cériman", "cerise", "citron", "citandrin", "citrange", "clémentine", "datte", "fraise", "frambroise", "girembelle", "goyave", "grenade", "grenadelle", "merise", "melon", "pistache", "pastèque", "poire", "pomme", "raisin" };
-            _legume = new List<string> { "aubergine", "tomates cerises", "concombre", "cornichon", "courgette", "couge de siam", "melon", "pastèque", "piment fort", "poivre melon", "tomate", "poivrons" };
-            _produit_laitier = new List<string> { "yaourt", "fromage", "beurre", "lait de vache", "lait cru", "lait pasteurisé", "lait stérilisé", "lait UHT", "lait concentré", "lait en poudre", "lait demi écrémé", "lait entier", "lait écrémé", "crème", "crème glacée", "kefir", "viili", "lait au bifidus", "fromage frais", "fromage fermier", "fromage affiné", "fromage fondu", "caséine", "babeur", "lactosérum", "milkshake" };
-            _matiere_grasse = new List<string> { "huile et margarine de tournesol", "beurre", "huile de palme", "huile d'olive", "huiles de soja", "huiles vegetale", "chévre" };
-            _feculent = new List<string> { "pate","pate fraiche","fève", "boulgour", "coco nain", "flageolet", "haricot rouge", "haricot blanc", "lentille", "patate douce", "pore de terre cochet", "pois cassé", "polanta", "pomme de terre", "quinoa", "riz", "soisson", "manioc" };
-            _herbe_plante = new List<string> { "agave", "ail des ours", "arachide", "bardane", "bourrache", "camomille", "cerfeuil", "consoude", "conandre", "guimauve", "hysope", "laurier sauce", "marjolaine", "nepeta", "persil", "raifort", "romarin", "sarriette", "sauge", "thym", "verveine", "archillée", "ajowan", "amande amère", "anis", "câpres", "cardamonne", "carmin", "carvi", "casse", "graine de céléri", "chili ciboulette", "coniaque", "cumin", "oignon", "ciboule", "échalote", "mélisse officinale", "faux poivre", "piment", "muscade", "tamarin", "monarde", "moutarde", "blanche", "badiane", "genièvre", "armoise", "ase fétide", "bigaradier", "cédrat", "an", "eth", "fenouil", "feugrec", "galanga", "safran", "sariette", "rue", "sésame","salade","poivre","sel" };
+            _volaille = new List<string> { "filet de poulet","blanc de poulet", "cuisses de poulet", "pattes de poulet", "pilons de poulet", "ailes de poulet", "gesier de poulet", "foie de poulet", "coeur de poulet", "blanc de dinde", "aiguillette de dinde", "escalope de dinde", "filet de dinde", "supreme de dinde", "aileron de dinde", "manchon de dinde", "cuisses de dinde", "pilon de dinde", "aiguillettes de canard", "cuisses de canard", "filet de canard", "tournedos de canard", "aiguillettes de pintade", "cuisses de pintade", "filet de pintade", "tournedos de pintade" };
+            _fruit = new List<string> {"olive","carotte" ,"citron", "noix", "abricot", "airelle", "aki", "alberge", "amande", "ananas", "arbouse", "aronia", "avocat", "banane", "barbadine", "bergamote", "bigarade", "boysenberry", "brugnon", "cabosse", "cacahuète", "calamondin", "canneberge", "carambole", "casseille", "cassis", "cédrat", "cériman", "cerise", "citron", "citandrin", "citrange", "clémentine", "datte", "fraise", "frambroise", "girembelle", "goyave", "grenade", "grenadelle", "merise", "melon", "pistache", "pastèque", "poire", "pomme", "raisin" };
+            _legume = new List<string> { "oignon","aubergine", "tomates cerises", "concombre", "cornichon", "courgette", "couge de siam", "melon", "pastèque", "piment fort", "poivre melon", "tomate", "poivrons" };
+            _produit_laitier = new List<string> { "crème liquide", "crème epaisse", "crème fraiche", "yaourt", "fromage", "beurre", "lait de vache", "lait cru", "lait pasteurisé", "lait stérilisé", "lait UHT", "lait concentré", "lait en poudre", "lait demi écrémé", "lait entier", "lait écrémé", "crème", "crème glacée", "kefir", "viili", "lait au bifidus", "fromage frais", "fromage fermier", "fromage affiné", "fromage fondu", "caséine", "babeur", "lactosérum", "milkshake" };
+            _matiere_grasse = new List<string> {"moutarde", "mayonnaise", "huile et margarine de tournesol", "beurre", "huile de palme", "huile d'olive", "huiles de soja", "huiles vegetale", "chévre" };
+            _feculent = new List<string> { "couscous", "haricots blancs", "pate","pate fraiche","fève", "boulgour", "coco nain", "flageolet", "haricot rouge", "haricot blanc", "lentille", "patate douce", "pore de terre cochet", "pois cassé", "polanta", "pomme de terre", "quinoa", "riz", "soisson", "manioc" };
+            _herbe_plante = new List<string> {"paprika", "artichauts","agave", "ail", "arachide", "bardane", "bourrache", "camomille", "cerfeuil", "consoude", "conandre", "guimauve", "hysope", "laurier sauce", "marjolaine", "nepeta", "persil", "raifort", "romarin", "sarriette", "sauge", "thym", "verveine", "archillée", "ajowan", "amande amère", "anis", "câpres", "cardamonne", "carmin", "carvi", "casse", "graine de céléri", "chili ciboulette", "coniaque", "cumin", "oignon", "ciboule", "échalote", "mélisse officinale", "faux poivre", "piment", "muscade", "tamarin", "monarde", "moutarde", "blanche", "badiane", "genièvre", "armoise", "ase fétide", "bigaradier", "cédrat", "an", "eth", "fenouil", "feugrec", "galanga", "safran", "sariette", "rue", "sésame","salade","poivre","sel" };
             _boulangerie = new List<string> { "apéro crunch", "babelys", "barbarines aux noix", "bâtonnets croustillants vaudois", "biscômes", "biscuits_de_noel", "bonbons aux fruits", "brioche", "croquettes", "croquets", "cuchaule", "farine à la meule", "farine bise", "farine complète", "farine fleur bio", "flûtes aux fromages", "flûtes nature", "lin en grains", "pain", "pain breulottier", "pain jura région", "pain au chanvre", "pain_campangnard au triticale", "pain de seigle", "pain du dézaley", "pain GRTA", "pain pavé", "pain paysan", "pain sâlois", "pain vadais", "pain vaudois", "pain au levain", "pâtes au blé dur", "petits biscuits", "pois chiche", "prunelle", "quenus", "quiche vaudoisée", "sablés", "sablée au fromage", "spirales", "tagliatelles", "tailleule neuchâteloise", "taillés aux grebons", "téotché", "téotché du boulanger", "téotché vadais", "tresse", "tresse aux beurre", "tresse aux lard", "truffes à la raisnée", "truffes aux miels", "croissant", "pain au chocolat", "croissant_beurre" };
 
             _Utilisateur = new Users();
@@ -131,6 +131,7 @@ namespace StockFood
         } 
         public void CreateRecipes()
         {
+            // Recettes avec ingrédients conformes et présents
             #region Tomates au chévre
             Ingredient a = new Ingredient("legume", "tomate", 100, DateTime.Today);
             Ingredient b = new Ingredient("matiere_grasse", "chévre", 100, DateTime.Today);
@@ -140,16 +141,109 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe("Tomates au chèvre frais", recipes, "Evider les tomates et conserver le chapeau. les remplir de chèvre, fermer avec le chapeau de la tomate.Mettre à four moyen une vingtaine de minutes.Servir avec une salade.");
             #endregion
             #region Cote de porc
-            Ingredient e = new Ingredient("viande", "Cotes de porc ", 400, DateTime.Today);
+            Ingredient e = new Ingredient("viande", "Cote de porc", 400, DateTime.Today);
             Ingredient f = new Ingredient("matiere_grasse", "beurre", 100, DateTime.Today);
             Ingredient g = new Ingredient("herbe_plante", "poivre", 2, DateTime.Today);
             Ingredient h = new Ingredient("herbe_plante", "sel", 2, DateTime.Today);
             List<Ingredient> recipe = new List<Ingredient> { e, f, g, h };
             _Allrecipe.AddHealthyrecipe("Côtes de porc", recipe, "Faire cuire les 2 côtes de porc dans la magarine. 10 minutes avant la fin de la cuisson, saler, poivrer, couper le citron en 2, arroser les côtes avec son jus.Mettre aussi les 2 bouts de citrons dans la poêle, ça donnera plus de goût. S'accompagne très bien avec des frites. ");
             #endregion
+            #region couscous au jus  de carotte
+            Ingredient Couscous1 = new Ingredient("fruit", "carotte", 4, DateTime.Today);
+            Ingredient Couscous2 = new Ingredient("dessert_sucrerie", "miel", 15, DateTime.Today);
+            Ingredient couscous3 = new Ingredient("herbe_plante", "poivre", 2, DateTime.Today);
+            Ingredient couscous4 = new Ingredient("feculent", "couscous", 200, DateTime.Today);
+            List<Ingredient> recipecouscous = new List<Ingredient> { Couscous1, Couscous2, couscous3, couscous4 };
+            _Allrecipe.AddHealthyrecipe("couscous au jus de carotte", recipecouscous, "Dans un bol, mélanger le couscous, les carottes et les petits pois. Ajouter l'eau bouillante, couvrir et laisser reposer pendant 5 minutes ou jusqu'à ce que les légumes soient tendres mais encore croquants et que l'eau soit absorbée. À l'aide d'une fourchette, détacher les grains de couscous.");
+            #endregion
+            #region Trempette aux haricots  et aux artichaux
+
+            Ingredient trempetteharicot1 = new Ingredient("feculent", "haricots blancs", 100, DateTime.Today);
+            Ingredient trempetteharicot2 = new Ingredient("herbe_plante", "artichauts", 150, DateTime.Today);
+            Ingredient trempetteharicot3 = new Ingredient("matiere_grasse", "huile d'olive", 5, DateTime.Today);
+            Ingredient trempetteharicot4 = new Ingredient("fruit", "citron", 2, DateTime.Today);
+            Ingredient trempetteharicot5 = new Ingredient("herbe_plante", "ail", 1, DateTime.Today);
+            Ingredient trempetteharicot6 = new Ingredient("legume", "sel", 2, DateTime.Today);
+            List<Ingredient> recipetrempetteharicot = new List<Ingredient> { trempetteharicot1, trempetteharicot2, trempetteharicot3, trempetteharicot4, trempetteharicot5, trempetteharicot6 };
+            _Allrecipe.AddHealthyrecipe(" Trempette aux haricots et aux artichaux", recipetrempetteharicot, "1 Au robot culinaire, broyer tous les ingredients jusqu'à l'obtention  d'une purée lisse. Saler et poivrer. 2 Servir avec des chips de pita, des crudités, ou les deux");
+            #endregion
+            #region Sauté de Veau au Chorizo
+            Ingredient saute1 = new Ingredient("viande", "Filet de veau", 200, DateTime.Today);
+            Ingredient saute2 = new Ingredient("viande", "chorizo", 20, DateTime.Today);
+            Ingredient saute3 = new Ingredient("legume", "tomate", 2, DateTime.Today);
+            Ingredient saute4 = new Ingredient("fruit", "olive", 5, DateTime.Today);
+            Ingredient saute5 = new Ingredient("herbe_plante", "oignon", 4, DateTime.Today);
+            Ingredient saute8 = new Ingredient("herbe_plante", "ail", 1, DateTime.Today);
+            List<Ingredient> recipesaute = new List<Ingredient> { saute1, saute2, saute3, saute4, saute5, saute8 };
+            _Allrecipe.AddHealthyrecipe("Sauté de Veau", recipesaute, "Faire revenir veau et oignons émincés jusqu'à coloration. Ajouter le chorizo en rondelles (oter sa peau), puis la pulpe de tomate, le basilic haché et enfin les olives. Couvrir et faire mijoter à feux doux 1 heure minimum. Ce plat est encore meilleur préparé la veille et réchauffé le jour même.");
+            #endregion
+            #region Crème d'avocat
+            Ingredient crème1 = new Ingredient("fruit", "avocat", 3, DateTime.Today);
+            Ingredient crème2 = new Ingredient("fruit", "citron", 1, DateTime.Today);
+            Ingredient crème3 = new Ingredient("boisson", "lait", 50, DateTime.Today);
+            Ingredient crème4 = new Ingredient("produit_laitier", "crème fraiche", 5, DateTime.Today);
+            Ingredient crème5 = new Ingredient("matiere_grasse", "huile d'olive", 5, DateTime.Today);
+            List<Ingredient> recipecreme = new List<Ingredient> { crème1, crème2, crème3, crème4, crème5 };
+            _Allrecipe.AddHealthyrecipe("Crème d'avocat", recipecreme, "Dénoyautez les avocats et enlevez la peau et mettez les dans un mixer avec le jus de citron. Mélangez. Ajoutez un peu de lait , crème et huile. C'est prêt ! Mettre au frais avant de se servir");
+            #endregion
+            #region Poulet basquaise
+            Ingredient basquaise1 = new Ingredient("volaille", "blanc de poulet", 200, DateTime.Today);
+            Ingredient basquaise2 = new Ingredient("legume", "tomate", 3, DateTime.Today);
+            Ingredient basquaise3 = new Ingredient("legume", "poivrons", 2, DateTime.Today);
+            Ingredient basquaise4 = new Ingredient("herbe_plante", "oignon", 2, DateTime.Today);
+            Ingredient basquaise5 = new Ingredient("herbe_plante", "ail", 1, DateTime.Today);
+            Ingredient basquaise6 = new Ingredient("boisson", "vin blanc", 20, DateTime.Today);
+            Ingredient basquaise8 = new Ingredient("matiere_grasse", "huile d'olive", 15, DateTime.Today);
+            Ingredient basquaise9 = new Ingredient("herbe_plante", "sel", 2, DateTime.Today);
+            List<Ingredient> recipebasquaise = new List<Ingredient> { basquaise1, basquaise2, basquaise3, basquaise4, basquaise5, basquaise6, basquaise8, basquaise9 };
+            _Allrecipe.AddHealthyrecipe("Poulet basquaise", recipebasquaise, " Faire chauffer 4 cuillères à soupe d'huile dans une cocotte. Y faire  dorer les oignons, l'ail pressé, les poivrons taillés en lanières. Laisser cuire 5 min. Laver, éplucher et couper les tomates en morceaux, les ajouter à la cocotte, sel, poivre. Couvrir et laisser mijoter 20 min. Dans une sauteuse, faire dorer dans l'huile d'olive les morceaux de  poulet salés et poivrés. les ajouter aux légumes, couvrir, ajouter le bouquet garni et le vin blanc et c'est parti pour 35 min. ");
+
+            #endregion
+            #region pates crème chorizo
+            Ingredient i1 = new Ingredient("feculent", "pate", 125, DateTime.Today);
+            Ingredient i2 = new Ingredient("produit_laitier", "crème fraiche", 200, DateTime.Today);
+            Ingredient i3 = new Ingredient("viande", "chorizo", 80, DateTime.Today);
+            Ingredient i4 = new Ingredient("herbe_plante", "poivre", 1, DateTime.Today);
+            List<Ingredient> i5 = new List<Ingredient> { i1, i2, i3, i4 };
+            _Allrecipe.AddHealthyrecipe("pates crème chorizo ", i5, "Faites bouillir de l'eau salée.Coupez le chorizo en dès.Mettez vos pâtes à cuire.Pendant ce temps, faites revenir les dès de chorizo dans une poêle sans huile.Une fois qu'ils sont un petit peu croustillants, ajoutez la crème, poivrez.");
+
+            #endregion
+            #region One-Pot Pasta: Poulet & Crème
+            Ingredient i11 = new Ingredient("feculent", "pate", 125, DateTime.Today);
+            Ingredient i21 = new Ingredient("produit_laitier", "crème fraiche", 200, DateTime.Today);
+            Ingredient i31 = new Ingredient("viande", "filet de poulet", 100, DateTime.Today);
+            Ingredient i41 = new Ingredient("herbe_plante", "poivre", 1, DateTime.Today);
+            Ingredient i42 = new Ingredient("herbe_plante", "ail", 1, DateTime.Today);
+            Ingredient i43 = new Ingredient("matiere_grasse", "huile d'olive", 1, DateTime.Today);
+            List<Ingredient> i51 = new List<Ingredient> { i1, i2, i3, i41, i42, i43 };
+            _Allrecipe.AddHealthyrecipe("One-Pot Pasta: Poulet & Crème ", i51, " Préparer un bouillon de volaille, réserver.Faire revenir le poulet et l'ail dans de l'huile d'olive dans une casserole, assaisonner.Lorsque le poulet est saisit, ajouter le bouillon, la crème et les pâtes crues.Faire réduire l'eau jusqu'à ce que les pâtes soient cuites et qu'assez d'eau soit évaporée pour que la sauce soit onctueuse.");
+
+            #endregion
+            #region Filet de poulet à la crème de poivron facile
+
+            Ingredient filet1 = new Ingredient("volaille", "filet de poulet", 200, DateTime.Today);
+            Ingredient filet2 = new Ingredient("legume", "poivrons", 2, DateTime.Today);
+            Ingredient filet3 = new Ingredient("produit_laitier", "crème liquide", 20, DateTime.Today);
+            Ingredient filet4 = new Ingredient("produit_laitier", "crème epaisse", 5, DateTime.Today);
+            Ingredient filet5 = new Ingredient("produit_laitier", "beurre", 10, DateTime.Today);
+            Ingredient filet6 = new Ingredient("herbe_plante", "sel", 2, DateTime.Today);
+            List<Ingredient> recipefilet = new List<Ingredient> { filet1, filet2, filet3, filet4, filet5, filet6 };
+            _Allrecipe.AddHealthyrecipe("Filet de poulet à la crème de poivron facile", recipefilet, "Découper les filets de poulet en petites lamelles (environ 3cm x 1cm). Les mettre dans une sauteuse dans laquelle le beurre a doucement fondu. Pendant qu'il 'bronze', couper en tous petits dés le poivron (bien enlever les parties blanches).Rajouter le poivron au poulet et les laisser faire connaissance jusqu'à ce que le poulet rosisse! A ce moment là, rajouter la crème liquide, le sel et le poivre, remuer pour bien tout mélanger et laisser cuire TRES doucement environ 20 minutes. Juste avant de servir, rajouter, pour lier la sauce, 2 ou 3 cuillères à soupe de crème fraîche épaisse. On peut le servir simplement avec du riz sauvage... et attendre les compliments (version light avec crème allégée à 15 % et toujours aussi bon!). ");
+
+            #endregion
+            #region Escalope en papillote
+            Ingredient escalope1 = new Ingredient("viande", "filet de dinde", 200, DateTime.Today);
+            Ingredient escalope2 = new Ingredient("produit_laitier", "crème epaisse", 10, DateTime.Today);
+            Ingredient escalope3 = new Ingredient("matiere_grasse", "moutarde", 5, DateTime.Today);
+            Ingredient escalope4 = new Ingredient("legume", "tomate", 10, DateTime.Today);
+            Ingredient escalope5 = new Ingredient("herbe_plante", "paprika", 5, DateTime.Today);
+            List<Ingredient> recipeescalopepa = new List<Ingredient> { escalope1, escalope2, escalope3, escalope4, escalope5 };
+            _Allrecipe.AddHealthyrecipe("Escalope en papillote", recipeescalopepa, " 1 / mélanger la crème fraîche, la moutarde et le paprika. 2 / disposer les escalopes sur un carré de papier alu et les recouvrir  du mélange. 3 / entourer les escalopes recouvertes de crème par la pulpe de tomate.  4 / saupoudrer d'herbes de Provence. 5 / fermer les papillotes et les enfourner à 170°C pendant 30 min environ");
+            #endregion
 
 
-            
+
+            //Recettes à valider
 
             #region Salade de tomates,  de haricots verts et d'aiglefin poché au vin 
             Ingredient salade1 = new Ingredient("poisson", "aiglefin frais",225, DateTime.Today);
@@ -165,14 +259,7 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe(" Salade de tomates, de haricots verts et d'aiglefin poché au vin", recipesalade, "Dans une poêle antiadhésive, placer l’aiglefin et le vin blanc. Couvrir et porter à ébullition. Laisser mijoter environ 4 minutes ou jusqu’à ce que le poisson soit cuit et qu’il se défasse en gros flocons., Dans une casserole d’eau bouillante salée, cuire les haricots jusqu’à ce qu’ils soient tendres. Plonger dans l’eau glacée et égoutter. Séparer les haricots en deux sur la longueur si désiré.,Dans un bol, mélanger les haricots, les tomates, les herbes, le jus de citron et l’huile d’olive. Saler et poivrer. Répartir dans 4 assiettes. Garnir de gros flocons de poisson et d’un demi-oeuf dur.");
             #endregion
 
-            #region couscous au jus  de carotte
-            Ingredient Couscous1 = new Ingredient("dessert_sucrerie", "jus de carotte", 500, DateTime.Today);
-            Ingredient Couscous2 = new Ingredient("dessert_sucrerie", "miel", 15, DateTime.Today);
-            Ingredient couscous3 = new Ingredient("legume", "poivre noir concassé", 2, DateTime.Today);
-            Ingredient couscous4 = new Ingredient("herbe_plante", " couscous", 400, DateTime.Today);
-            List<Ingredient> recipecouscous = new List<Ingredient> { Couscous1, Couscous2, couscous3, couscous4 };
-            _Allrecipe.AddHealthyrecipe("couscous au jus de carotte", recipecouscous, "Dans un bol, mélanger le couscous, les carottes et les petits pois. Ajouter l'eau bouillante, couvrir et laisser reposer pendant 5 minutes ou jusqu'à ce que les légumes soient tendres mais encore croquants et que l'eau soit absorbée. À l'aide d'une fourchette, détacher les grains de couscous.");
-            #endregion
+           
             #region salade de chou-fleur et de petits pois
             Ingredient chou1 = new Ingredient("legume", "chou-fleur", 600, DateTime.Today);
             Ingredient chou2 = new Ingredient("legume", "tomates cerises", 280, DateTime.Today);
@@ -219,27 +306,16 @@ namespace StockFood
             #endregion
             #region Trempette aux poivrons rouges rotis  et aux tomates séchées
 
-            Ingredient trempette1 = new Ingredient("fruit", "noix de grenoble", 25, DateTime.Today);
-            Ingredient trempette2 = new Ingredient("legume", "tomates séchées", 60, DateTime.Today);
-            Ingredient trempette3 = new Ingredient("herbe_plante", "ail séchée", 1, DateTime.Today);
-            Ingredient trempette4 = new Ingredient("fruit", "jus de citron", 15, DateTime.Today);
-            Ingredient trempette5 = new Ingredient("legume", "poivrons rouges", 2, DateTime.Today);
-            Ingredient trempette6 = new Ingredient("legume", "épepinées", 20, DateTime.Today);
-            Ingredient trempette7 = new Ingredient("legume", "sel et poivre", 10, DateTime.Today);
-            List<Ingredient> recipetrempette = new List<Ingredient> { trempette1, trempette2, trempette3, trempette4, trempette5, trempette6, trempette7 };
+            Ingredient trempette1 = new Ingredient("fruit", "noix", 10, DateTime.Today);
+            Ingredient trempette2 = new Ingredient("legume", "tomate", 2, DateTime.Today);
+            Ingredient trempette3 = new Ingredient("herbe_plante", "ail", 1, DateTime.Today);
+            Ingredient trempette4 = new Ingredient("fruit", "citron", 2, DateTime.Today);
+            Ingredient trempette5 = new Ingredient("legume", "poivrons", 2, DateTime.Today);
+            Ingredient trempette7 = new Ingredient("legume", "sel", 2, DateTime.Today);
+            List<Ingredient> recipetrempette = new List<Ingredient> { trempette1, trempette2, trempette3, trempette4, trempette5, trempette7 };
             _Allrecipe.AddHealthyrecipe(" Tremepette aux poivrons rouges rotis et aux tomates séchées", recipetrempette, "1 Au robot culinaire, hacher les noix, les tomates et l’ail avec le jus de citron.2 Ajouter les poivrons et mélanger quelques secondes à la fois jusqu’à ce que les poivrons soient presque réduits en purée. Saler et poivrer.3 Servir avec des tranches de baguette grillée, des crudités, ou les deux.");
             #endregion
-            #region Trempette aux haricots  et aux artichaux
-
-            Ingredient trempetteharicot1 = new Ingredient("feculent", "haricots blancs", 549, DateTime.Today);
-            Ingredient trempetteharicot2 = new Ingredient("herbe_plante", "artichauts", 170, DateTime.Today);
-            Ingredient trempetteharicot3 = new Ingredient("matiere_grasse", "huile d'olive", 30, DateTime.Today);
-            Ingredient trempetteharicot4 = new Ingredient("fruit", "jus de citron", 15, DateTime.Today);
-            Ingredient trempetteharicot5 = new Ingredient("herbe_plante", "ail", 1, DateTime.Today);
-            Ingredient trempetteharicot6 = new Ingredient("legume", "sel et poivre", 10, DateTime.Today);
-            List<Ingredient> recipetrempetteharicot = new List<Ingredient> { trempetteharicot1, trempetteharicot2, trempetteharicot3, trempetteharicot4, trempetteharicot5, trempetteharicot6 };
-            _Allrecipe.AddHealthyrecipe(" Trempette aux haricots et aux artichaux", recipetrempetteharicot, "1 Au robot culinaire, broyer tous les ingredients jusqu'à l'obtention  d'une purée lisse. Saler et poivrer. 2 Servir avec des chips de pita, des crudités, ou les deux");
-            #endregion
+            
 
             #region  Risotto aux crevettes de type chowder
 
@@ -321,18 +397,7 @@ namespace StockFood
 
             #endregion
 
-            #region Filet de poulet à la crème de poivron facile
-
-            Ingredient filet1 = new Ingredient("volaille", "filets de poulet", 6, DateTime.Today);
-            Ingredient filet2 = new Ingredient("poivrons", "poivrons rouges", 2, DateTime.Today);
-            Ingredient filet3 = new Ingredient("produit_laitier", "crème liquide", 20, DateTime.Today);
-            Ingredient filet4 = new Ingredient("produit_laitier", "crème epaisse", 5, DateTime.Today);
-            Ingredient filet5 = new Ingredient("produit_laitier", "beurre", 10, DateTime.Today);
-            Ingredient filet6 = new Ingredient("legume", "sel et poivre", 30, DateTime.Today);
-            List<Ingredient> recipefilet = new List<Ingredient> { filet1, filet2, filet3, filet4, filet5, filet6 };
-            _Allrecipe.AddHealthyrecipe("Filet de poulet à la crème de poivron facile", recipefilet, "Découper les filets de poulet en petites lamelles (environ 3cm x 1cm). Les mettre dans une sauteuse dans laquelle le beurre a doucement fondu. Pendant qu'il 'bronze', couper en tous petits dés le poivron (bien enlever les parties blanches).Rajouter le poivron au poulet et les laisser faire connaissance jusqu'à ce que le poulet rosisse! A ce moment là, rajouter la crème liquide, le sel et le poivre, remuer pour bien tout mélanger et laisser cuire TRES doucement environ 20 minutes. Juste avant de servir, rajouter, pour lier la sauce, 2 ou 3 cuillères à soupe de crème fraîche épaisse. On peut le servir simplement avec du riz sauvage... et attendre les compliments (version light avec crème allégée à 15 % et toujours aussi bon!). ");
-
-            #endregion
+            
 
             #region  Sauce Bolognaise
 
@@ -448,18 +513,7 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe("Entrecotes moutardées", recipeentrecote, "Enduire chaque entrecôte d'huile puis d'1 cuillère à soupe de moutarde. Laisser reposer 30 minutes. Graisser une poêle et saisir la viande à feu vif. Faire cuire 2-3 minutes de chaque côté pour une viande bleue, 4-5 minutes pour une viande saignante, plus longtemps pour une viande à point.Retirer la viande de la poêle. Saler, poivrer et réserver au chaud. Mettre la moutarde restante dans la poêle avec la moitié de la crème. Gratter le fond de la poêle pour décoller les sucs de cuisson de la viande puis réduire de moitié sur feu vif. Verser le cognac et la crème. Retirer du feu dès que la sauce atteint l'ébullition. Rectifier l'assaisonnement et verser sur l'entrecôte.");
             #endregion
 
-            #region Sauté de Veau au Chorizo
-            Ingredient saute1 = new Ingredient("viande", "sauté de veau", 1000, DateTime.Today);
-            Ingredient saute2 = new Ingredient("viande", "chorizo", 1, DateTime.Today);
-            Ingredient saute3 = new Ingredient("legume", "pulpe de tomate", 2, DateTime.Today);
-            Ingredient saute4 = new Ingredient("fruit", "olives vertes", 1, DateTime.Today);
-            Ingredient saute5 = new Ingredient("herbe_plante", "oignons", 4, DateTime.Today);
-            Ingredient saute6 = new Ingredient("herbe_plante", "bouquet de basilic", 1, DateTime.Today);
-            Ingredient saute7 = new Ingredient("herbe_plante", "bouquet garni", 1, DateTime.Today);
-            Ingredient saute8 = new Ingredient("herbe_plante", "gousse d'ail", 1, DateTime.Today);
-            List<Ingredient> recipesaute = new List<Ingredient> { saute1, saute2, saute3, saute4, saute5, saute6, saute7, saute8 };
-            _Allrecipe.AddHealthyrecipe("Sauté de Veau", recipesaute, "Faire revenir veau et oignons émincés jusqu'à coloration. Ajouter le chorizo en rondelles (oter sa peau), puis la pulpe de tomate, le basilic haché et enfin les olives. Couvrir et faire mijoter à feux doux 1 heure minimum. Ce plat est encore meilleur préparé la veille et réchauffé le jour même.");
-            #endregion
+           
 
             #region Gigot d'Agneau aux pommes boulangères
             Ingredient gigot1 = new Ingredient("viande", "gigot d'agneau", 2, DateTime.Today);
@@ -537,15 +591,7 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe("Amour de saumon en papillotte", recipesaumonam, "Matériel : - 4 belles feuilles de papier aluminium  beaucoup d'amour. Laver, essorer et ciseler l'aneth. Peler et émincer la gousse d'ail finement. Réserver. Couper les tomates cerises en deux. Emincer les champignons après les avoir nettoyés. Déposer au centre de chaque feuille de papier aluminium un pavé de saumon, ajouter les tomates et les champignons tout autour. Parsemer les pavés de saumon d'aneth et d'ail et les arroser d'un filet de jus de citron. Poivrer, saler et terminer par un filet d'huile d'olive. Fermer les papillotes et les mettre au four pendant 25 à 30 minutes à 180°C (thermostat 6).");
             #endregion
 
-            #region Crème d'avocat
-            Ingredient crème1 = new Ingredient("fruit", "avocats", 3, DateTime.Today);
-            Ingredient crème2 = new Ingredient("fruit", "citron", 1, DateTime.Today);
-            Ingredient crème3 = new Ingredient("boisson", "lait", 2, DateTime.Today);
-            Ingredient crème4 = new Ingredient("produit_laitier", "crème fraiche", 5, DateTime.Today);
-            Ingredient crème5 = new Ingredient("matiere_grasse", "huile d'olive", 5, DateTime.Today);
-            List<Ingredient> recipecreme = new List<Ingredient> { crème1, crème2, crème3, crème4, crème5 };
-            _Allrecipe.AddHealthyrecipe("Crème d'avocat", recipecreme, "Dénoyautez les avocats et enlevez la peau et mettez les dans un mixer avec le jus de citron. Mélangez. Ajoutez un peu de lait , crème et huile. C'est prêt ! Mettre au frais avant de se servir");
-            #endregion
+           
 
             #region Cornets de jambon
             Ingredient cornet1 = new Ingredient("viande", "tranches de jambon", 10, DateTime.Today);
@@ -599,29 +645,8 @@ namespace StockFood
             List<Ingredient> recipemojito = new List<Ingredient> { mojito1, mojito2, mojito3, mojito4, mojito5, mojito6 };
             _Allrecipe.AddHealthyrecipe("Mojito cubain", recipemojito, " Dans un verre de taille moyenne (contenance 40 cl environ), mettez 3 cuillères à café de sucre de canne. Ajoutez-y le jus d'1/2 citron vert. Coupez en 3 ou 4 votre branche de menthe et mettez-la dans le verre (le fait de la couper permet à la saveur de la menthe de mieux  se diffuser). Ajoutez un peu d'eau gazeuse (environ 3 cl) puis avec une cuillère à  café, remuez bien le tout et écrasez la menthe (insistez sur les branches plus que sur les feuilles, sinon il y aura pleins de petits bouts de menthe assez désagréables au moment de déguster votre cocktail!). Ajoutez 5 glaçons environ. Ensuite versez 6 cl de rhum (en versant à débit moyen). Pour la dose plutôt chargée, comptez jusqu'à 5; pour la dose légère jusqu'à 4. Enfin, complétez avec de l'eau gazeuse. ");
             #endregion
-            #region Escalope en papillote
-            Ingredient escalope1 = new Ingredient("viande", "escalopes de dinde", 50, DateTime.Today);
-            Ingredient escalope2 = new Ingredient("produit_laitier", "crème fraîche épaisse", 10, DateTime.Today);
-            Ingredient escalope3 = new Ingredient("herbe_plante", "cuillère café de moutarde", 5, DateTime.Today);
-            Ingredient escalope4 = new Ingredient("legume", "pulpe de tomate", 10, DateTime.Today);
-            Ingredient escalope5 = new Ingredient("herbe_plante", "paprika", 5, DateTime.Today);
-            List<Ingredient> recipeescalopepa = new List<Ingredient> { escalope1, escalope2, escalope3, escalope4, escalope5 };
-            _Allrecipe.AddHealthyrecipe("Escalope en papillote", recipeescalopepa, " 1 / mélanger la crème fraîche, la moutarde et le paprika. 2 / disposer les escalopes sur un carré de papier alu et les recouvrir  du mélange. 3 / entourer les escalopes recouvertes de crème par la pulpe de tomate.  4 / saupoudrer d'herbes de Provence. 5 / fermer les papillotes et les enfourner à 170°C pendant 30 min environ");
-            #endregion
-            #region Poulet basquaise
-            Ingredient basquaise1 = new Ingredient("viande", "poulet", 50, DateTime.Today);
-            Ingredient basquaise2 = new Ingredient("legume", "tomates", 1000, DateTime.Today);
-            Ingredient basquaise3 = new Ingredient("legume", "poivrons", 700, DateTime.Today);
-            Ingredient basquaise4 = new Ingredient("herbe_plante", "oignons", 20, DateTime.Today);
-            Ingredient basquaise5 = new Ingredient("herbe_plante", "gousses d'ail", 10, DateTime.Today);
-            Ingredient basquaise6 = new Ingredient("boisson", "vin blanc", 20, DateTime.Today);
-            Ingredient basquaise7 = new Ingredient("herbe_plante", "bouquet garni", 20, DateTime.Today);
-            Ingredient basquaise8 = new Ingredient("matiere_grasse", "huile d'olive", 15, DateTime.Today);
-            Ingredient basquaise9 = new Ingredient("legume", "sel et poivre", 30, DateTime.Today);
-            List<Ingredient> recipebasquaise = new List<Ingredient> { basquaise1, basquaise2, basquaise3, basquaise4, basquaise5, basquaise6, basquaise7, basquaise8, basquaise9 };
-            _Allrecipe.AddHealthyrecipe("Poulet basquaise", recipebasquaise, " Faire chauffer 4 cuillères à soupe d'huile dans une cocotte. Y faire  dorer les oignons, l'ail pressé, les poivrons taillés en lanières. Laisser cuire 5 min. Laver, éplucher et couper les tomates en morceaux, les ajouter à la cocotte, sel, poivre. Couvrir et laisser mijoter 20 min. Dans une sauteuse, faire dorer dans l'huile d'olive les morceaux de  poulet salés et poivrés. les ajouter aux légumes, couvrir, ajouter le bouquet garni et le vin blanc et c'est parti pour 35 min. ");
-
-            #endregion
+            
+            
             #region Chili con carne express
             Ingredient chili1 = new Ingredient("herbe_plante", "oignon", 10, DateTime.Today);
             Ingredient chili2 = new Ingredient("herbe_plante", "gousse d'ail", 10, DateTime.Today);
@@ -636,26 +661,7 @@ namespace StockFood
 
             #endregion
 
-            #region pates crème chorizo
-            Ingredient i1 = new Ingredient("feculent", "pate", 125, DateTime.Today);
-            Ingredient i2 = new Ingredient("produit_laitier", "crème fraiche", 200, DateTime.Today);
-            Ingredient i3 = new Ingredient("viande", "chorizo", 80, DateTime.Today);
-            Ingredient i4 = new Ingredient("herbe_plante", "poivre", 1, DateTime.Today);
-            List<Ingredient> i5 = new List<Ingredient> { i1, i2, i3, i4 };
-            _Allrecipe.AddHealthyrecipe("pates crème chorizo ", i5, "Faites bouillir de l'eau salée.Coupez le chorizo en dès.Mettez vos pâtes à cuire.Pendant ce temps, faites revenir les dès de chorizo dans une poêle sans huile.Une fois qu'ils sont un petit peu croustillants, ajoutez la crème, poivrez.");
-
-            #endregion
-            #region One-Pot Pasta: Poulet & Crème
-            Ingredient i11 = new Ingredient("feculent", "pate", 125, DateTime.Today);
-            Ingredient i21 = new Ingredient("produit_laitier", "crème fraiche", 200, DateTime.Today);
-            Ingredient i31 = new Ingredient("viande", "filet de poulet", 100, DateTime.Today);
-            Ingredient i41 = new Ingredient("herbe_plante", "poivre", 1, DateTime.Today);
-            Ingredient i42 = new Ingredient("herbe_plante", "ail", 1, DateTime.Today);
-            Ingredient i43 = new Ingredient("matiere_grasse", "huile d'olive", 1, DateTime.Today);
-            List<Ingredient> i51 = new List<Ingredient> { i1, i2, i3, i41,i42,i43 };
-            _Allrecipe.AddHealthyrecipe("One-Pot Pasta: Poulet & Crème ", i51, " Préparer un bouillon de volaille, réserver.Faire revenir le poulet et l'ail dans de l'huile d'olive dans une casserole, assaisonner.Lorsque le poulet est saisit, ajouter le bouillon, la crème et les pâtes crues.Faire réduire l'eau jusqu'à ce que les pâtes soient cuites et qu'assez d'eau soit évaporée pour que la sauce soit onctueuse.");
-
-            #endregion
+           
         }
     }
 }
