@@ -131,7 +131,6 @@ namespace Healthyfood
             
             foreach (var p in Root.Healthy.AllRecipe.Healthyrecipe)
             {
-                double _allcalories = 0.0;
                 int _light = 0;
                 int _normal = 0;
                 int _fat = 0;
