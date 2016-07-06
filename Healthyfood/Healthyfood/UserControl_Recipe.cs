@@ -20,6 +20,7 @@ namespace Healthyfood
             userControl_Recipe_Utilisateur1.Visible = false;
             userControl_Your_Recipes1.Visible = false;
             userControl_World_Recipe1.Visible = false;
+            userControl_RecipeExpiration1.Visible = false;
         }
         public Menu Root
         {
@@ -79,6 +80,10 @@ namespace Healthyfood
         {
             userControl_Recipe_Utilisateur1.Visible = true;
         }
-        
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            userControl_RecipeExpiration1.Visible = true;
+        }
     }
 }

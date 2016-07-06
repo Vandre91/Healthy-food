@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Recipe));
             this.button_Back = new System.Windows.Forms.Button();
             this.button1_recipe_health = new System.Windows.Forms.Button();
             this.button2_yours_recipes = new System.Windows.Forms.Button();
@@ -38,10 +39,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.userControl_Recipe_Utilisateur1 = new Healthyfood.UserControl_Recipe_Utilisateur();
+            this.button2 = new System.Windows.Forms.Button();
             this.userControl_Recipe_Healthy1 = new Healthyfood.UserControl_Recipe_Healthy();
+            this.userControl_Recipe_Utilisateur1 = new Healthyfood.UserControl_Recipe_Utilisateur();
             this.userControl_Your_Recipes1 = new Healthyfood.UserControl_Your_Recipes();
             this.userControl_World_Recipe1 = new Healthyfood.UserControl_World_Recipe();
+            this.userControl_RecipeExpiration1 = new Healthyfood.UserControl_RecipeExpiration();
             this.SuspendLayout();
             // 
             // button_Back
@@ -167,30 +170,41 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // userControl_Recipe_Utilisateur1
+            // button2
             // 
-            this.userControl_Recipe_Utilisateur1.AutoScroll = true;
-            this.userControl_Recipe_Utilisateur1.AutoSize = true;
-            this.userControl_Recipe_Utilisateur1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl_Recipe_Utilisateur1.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userControl_Recipe_Utilisateur1.Location = new System.Drawing.Point(0, 0);
-            this.userControl_Recipe_Utilisateur1.Margin = new System.Windows.Forms.Padding(4);
-            this.userControl_Recipe_Utilisateur1.Name = "userControl_Recipe_Utilisateur1";
-            this.userControl_Recipe_Utilisateur1.Size = new System.Drawing.Size(1015, 678);
-            this.userControl_Recipe_Utilisateur1.TabIndex = 11;
+            this.button2.BackgroundImage = global::Healthyfood.Properties.Resources.mangezvite;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(297, 537);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(246, 127);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "Mangez vite!";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // userControl_Recipe_Healthy1
             // 
-            this.userControl_Recipe_Healthy1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Recipe_Healthy1.Location = new System.Drawing.Point(0, 0);
             this.userControl_Recipe_Healthy1.Margin = new System.Windows.Forms.Padding(4);
             this.userControl_Recipe_Healthy1.Name = "userControl_Recipe_Healthy1";
             this.userControl_Recipe_Healthy1.Size = new System.Drawing.Size(1015, 678);
-            this.userControl_Recipe_Healthy1.TabIndex = 12;
+            this.userControl_Recipe_Healthy1.TabIndex = 15;
+            // 
+            // userControl_Recipe_Utilisateur1
+            // 
+            this.userControl_Recipe_Utilisateur1.AutoScroll = true;
+            this.userControl_Recipe_Utilisateur1.AutoSize = true;
+            this.userControl_Recipe_Utilisateur1.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControl_Recipe_Utilisateur1.Location = new System.Drawing.Point(0, 0);
+            this.userControl_Recipe_Utilisateur1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControl_Recipe_Utilisateur1.Name = "userControl_Recipe_Utilisateur1";
+            this.userControl_Recipe_Utilisateur1.Size = new System.Drawing.Size(1142, 720);
+            this.userControl_Recipe_Utilisateur1.TabIndex = 14;
             // 
             // userControl_Your_Recipes1
             // 
-            this.userControl_Your_Recipes1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Your_Recipes1.Location = new System.Drawing.Point(0, 0);
             this.userControl_Your_Recipes1.Margin = new System.Windows.Forms.Padding(4);
             this.userControl_Your_Recipes1.Name = "userControl_Your_Recipes1";
@@ -199,12 +213,20 @@
             // 
             // userControl_World_Recipe1
             // 
-            this.userControl_World_Recipe1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_World_Recipe1.Location = new System.Drawing.Point(0, 0);
             this.userControl_World_Recipe1.Margin = new System.Windows.Forms.Padding(4);
             this.userControl_World_Recipe1.Name = "userControl_World_Recipe1";
             this.userControl_World_Recipe1.Size = new System.Drawing.Size(1015, 678);
-            this.userControl_World_Recipe1.TabIndex = 14;
+            this.userControl_World_Recipe1.TabIndex = 12;
+            // 
+            // userControl_RecipeExpiration1
+            // 
+            this.userControl_RecipeExpiration1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_RecipeExpiration1.BackgroundImage")));
+            this.userControl_RecipeExpiration1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userControl_RecipeExpiration1.Location = new System.Drawing.Point(0, 0);
+            this.userControl_RecipeExpiration1.Name = "userControl_RecipeExpiration1";
+            this.userControl_RecipeExpiration1.Size = new System.Drawing.Size(1015, 678);
+            this.userControl_RecipeExpiration1.TabIndex = 16;
             // 
             // UserControl_Recipe
             // 
@@ -212,10 +234,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Healthyfood.Properties.Resources.cuisine;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.userControl_World_Recipe1);
-            this.Controls.Add(this.userControl_Your_Recipes1);
+            this.Controls.Add(this.userControl_RecipeExpiration1);
             this.Controls.Add(this.userControl_Recipe_Healthy1);
             this.Controls.Add(this.userControl_Recipe_Utilisateur1);
+            this.Controls.Add(this.userControl_Your_Recipes1);
+            this.Controls.Add(this.userControl_World_Recipe1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -245,9 +269,11 @@
         private System.Windows.Forms.ColumnHeader columnHeader_Lastname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private UserControl_World_Recipe userControl_World_Recipe1;
+        private UserControl_Your_Recipes userControl_Your_Recipes1;
         private UserControl_Recipe_Utilisateur userControl_Recipe_Utilisateur1;
         private UserControl_Recipe_Healthy userControl_Recipe_Healthy1;
-        private UserControl_Your_Recipes userControl_Your_Recipes1;
-        private UserControl_World_Recipe userControl_World_Recipe1;
+        private UserControl_RecipeExpiration userControl_RecipeExpiration1;
     }
 }

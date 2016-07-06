@@ -106,6 +106,12 @@
     <Compile Include="UserControl_Profil.Designer.cs">
       <DependentUpon>UserControl_Profil.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_RecipeExpiration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_RecipeExpiration.Designer.cs">
+      <DependentUpon>UserControl_RecipeExpiration.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_Recipe_Healthy.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -191,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Recipe.resx">
       <DependentUpon>UserControl_Recipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_RecipeExpiration.resx">
+      <DependentUpon>UserControl_RecipeExpiration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Recipe_Healthy.resx">
       <DependentUpon>UserControl_Recipe_Healthy.cs</DependentUpon>
@@ -357,6 +366,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mesrecettes1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mangezvite.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

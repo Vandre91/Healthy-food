@@ -42,23 +42,23 @@ namespace Healthyfood
         private void button_Heat_Click(object sender, EventArgs e)
         {
             Recipe rec = Root.Healthy.AllRecipe.FindHealthyrecipe(label_Describes.Text);
-            bool contain = false;
-            int count = 0;
-            foreach (Ingredient ingred in rec.IRecipe)
-            {
-                foreach (Ingredient ing in Root.Healthy.Stocks.IStock)
-                {
-                    if (ingred.Name == ing.Name && ingred.Balance < ing.Balance)
-                    {
-                        count++;
-                        contain = true;
-                    }
-                    if (contain) break;
-                }
-                contain = false;
-            }
-            if (count == rec.IRecipe.Count)
-            {
+            //bool contain = false;
+            //int count = 0;
+            //foreach (Ingredient ingred in rec.IRecipe)
+            //{
+            //    foreach (Ingredient ing in Root.Healthy.Stocks.IStock)
+            //    {
+            //        if (ingred.Name == ing.Name && ingred.Balance < ing.Balance)
+            //        {
+            //            count++;
+            //            contain = true;
+            //        }
+            //        if (contain) break;
+            //    }
+            //    contain = false;
+            //}
+            //if (count == rec.IRecipe.Count)
+            //{
                 foreach (Ingredient ingred in rec.IRecipe)
                 {
                     foreach (Ingredient ing in Root.Healthy.Stocks.IStock)
@@ -70,15 +70,17 @@ namespace Healthyfood
                         }
                     }
                 }
-                label1.ForeColor = Color.Green;
-                label1.Text = "Validé";
-            }
 
-            else
-            {
-                label1.ForeColor = Color.Red;
-                label1.Text = "Ingredients manquants";
-            }
+                MessageBox.Show("Bon appetit");
+            //}
+
+            //else
+            //{
+            //    foreach (Ingredient i in EatPossible(rec))
+            //    {
+            //        MessageBox.Show("Il vous manque l'ingredient suivant : " + i.Name + " , Quantité : " + Convert.ToString(i.Balance) + Unite(i));
+            //    }
+            //}
         }
 
         private void listView1_MouseClick(object sender, MouseEventArgs e)
@@ -112,7 +114,7 @@ namespace Healthyfood
                     bool inginfrigo = false;
                     foreach (var s in Root.Healthy.Stocks.IStock)
                     {
-                        if (r.Name == s.Name)
+                        if (r.Name == s.Name && s.Balance>=r.Balance)
                         {
                             inginfrigo= true;
                             break;
@@ -132,6 +134,54 @@ namespace Healthyfood
                     listView1.Items.Add(item);
                 }
             }
+        }
+        public List<Ingredient> EatPossible(Recipe rec)
+        {
+            List<Ingredient> liste = new List<Ingredient>();
+            int quant;
+            foreach (Ingredient ingred in rec.IRecipe)
+            {
+                quant = 0;
+                foreach (Ingredient ing in Root.Healthy.Stocks.IStock)
+                {
+                    if (ing.Name == ingred.Name && ing.Expiration_Date > DateTime.Today)
+                    {
+                        quant = quant + ing.Balance;
+                    }
+                }
+                if (quant < ingred.Balance)
+                {
+                    Ingredient i = new Ingredient(ingred.Category1, ingred.Name, ingred.Balance - quant, DateTime.Today);
+                    liste.Add(i);
+                }
+            }
+            return liste;
+        }
+
+        public string Unite(StockFood.Ingredient ingred)
+        {
+            string unit;
+            if (ingred.Category1 == "boisson") unit = " ml";
+            else if (ingred.Category1 == "boulangerie" || ingred.Category1 == "fruit" || ingred.Category1 == "legume"
+            || ingred.Category1 == "poisson" || ingred.Category1 == "crustace" || ingred.Category1 == "dessert_sucrerie" || ingred.Category1 == "volaille")
+                unit = " unités";
+            else if (ingred.Category1 == "feculent" || ingred.Category1 == "herbe_plante") unit = " g";
+            else if (ingred.Category1 == "viande") unit = " g";
+            else if (ingred.Category1 == "produit_laitier")
+            {
+                if (ingred.Name == "beurre" || ingred.Name == "lait en poudre" || ingred.Name == "fromage frais" || ingred.Name == "fromage fermier" ||
+                    ingred.Name == "fromage affiné" || ingred.Name == "caséine") unit = " g";
+                else unit = " ml";
+            }
+            else if (ingred.Category1 == "matiere_grasse")
+            {
+                if (ingred.Name == "beurre") unit = " g";
+                else unit = " ml";
+            }
+            else unit = " g";
+
+
+            return unit;
         }
     }
 }

@@ -98,7 +98,7 @@ namespace Healthyfood
             else return 16;
         }
 
-        private string Unite (StockFood.Ingredient ingred)
+        public string Unite (StockFood.Ingredient ingred)
     {
         string unit;
         if (ingred.Category1 == "boisson") unit = " ml";
@@ -123,7 +123,16 @@ namespace Healthyfood
 
         return unit; 
     }
-}
+
+        private void panel3_MouseClick(object sender, MouseEventArgs e)
+        {
+            //foreach (var ingred in Root.Healthy.Stocks.IStock)
+            //{
+            //    if (ingred.Expiration_Date < DateTime.Today) Root.Healthy.Stocks.RemoveIngredient(ingred.Name, ingred.Expiration_Date);
+            //}
+            //UserControl_Show_Reserve2_Enter(sender, e);
+        }
+    }
 }
 
 

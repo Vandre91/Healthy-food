@@ -283,6 +283,16 @@ namespace Healthyfood.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mangezvite {
+            get {
+                object obj = ResourceManager.GetObject("mangezvite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mario_docteur {
             get {
                 object obj = ResourceManager.GetObject("mario-docteur", resourceCulture);

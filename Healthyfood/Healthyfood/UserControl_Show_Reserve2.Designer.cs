@@ -151,6 +151,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(191, 300);
             this.panel3.TabIndex = 3;
+            this.panel3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseClick);
             // 
             // panel2
             // 
