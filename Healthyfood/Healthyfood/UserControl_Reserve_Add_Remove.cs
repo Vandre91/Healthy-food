@@ -507,7 +507,7 @@ namespace Healthyfood
                 error1.Text = null;
                 error2.Text = null;
                 error3.Text = null;
-                error4.Text = "Aliment enregistré";
+                MessageBox.Show( "Aliment enregistré");
                 return 1;
             }
         }
