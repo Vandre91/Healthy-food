@@ -129,7 +129,8 @@ namespace Healthyfood
         private void UserControl_Recipe_Healthy_Enter(object sender, EventArgs e)
         {
             listView1.Items.Clear();
-            
+
+            int x = 0;
             foreach (var p in Root.Healthy.AllRecipe.Healthyrecipe)
             {
                 int _light = 0;
@@ -168,18 +169,36 @@ namespace Healthyfood
                     string[] row = { p.Name, p.Describe, RecipeCal(p).ToString() };
                     ListViewItem item = new ListViewItem(row);
                     listView1.Items.Add(item);
+                    if (EatPossible(p).Count > 1)
+                    {
+                        listView1.Items[x].ImageIndex = 1;
+                    }
+                    else listView1.Items[x].ImageIndex = 0;
+                    x++;
                 }
-                if (_normal == 1 && RecipeCal(p) > 666 && RecipeCal(p) < 900)
+                else if (_normal == 1 && RecipeCal(p) > 666 && RecipeCal(p) < 900)
                 {
                     string[] row = { p.Name, p.Describe, RecipeCal(p).ToString() };
                     ListViewItem item = new ListViewItem(row);
                     listView1.Items.Add(item);
+                    if (EatPossible(p).Count > 1)
+                    {
+                        listView1.Items[x].ImageIndex = 1;
+                    }
+                    else listView1.Items[x].ImageIndex = 0;
+                    x++;
                 }
-                if (_fat == 1 && RecipeCal(p) < 666)
+                else if (_fat == 1 && RecipeCal(p) < 666)
                 {
                     string[] row = { p.Name, p.Describe, RecipeCal(p).ToString() };
                     ListViewItem item = new ListViewItem(row);
                     listView1.Items.Add(item);
+                    if (EatPossible(p).Count > 1)
+                    {
+                        listView1.Items[x].ImageIndex = 1;
+                    }
+                    else listView1.Items[x].ImageIndex = 0;
+                    x++;
                 }
             }
 
@@ -233,6 +252,7 @@ namespace Healthyfood
 
             return unit;
         }
+
     }
 
 }

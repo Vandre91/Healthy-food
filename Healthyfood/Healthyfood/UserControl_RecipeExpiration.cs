@@ -34,6 +34,7 @@ namespace Healthyfood
 
         private void listView1_Enter(object sender, EventArgs e)
         {
+            int x = 0;
             listView1.Items.Clear();
             Dictionary<string, Recipe> expir = new Dictionary<string, Recipe>();
             foreach (Ingredient ingre in Root.Healthy.Stocks.IStock)
@@ -44,7 +45,7 @@ namespace Healthyfood
                     {
                         foreach (Ingredient ing in rec.IRecipe)
                         {
-                            if (ing.Name == ingre.Name)
+                            if (ing.Name == ingre.Name && !(expir.ContainsKey(rec.Name)))
                             {
                                 expir.Add(rec.Name, rec);
                             }
@@ -61,6 +62,12 @@ namespace Healthyfood
                     string[] row = { p.Name, p.Describe, RecipeCal(p).ToString() };
                     ListViewItem item = new ListViewItem(row);
                     listView1.Items.Add(item);
+                    if (EatPossible(p).Count > 1)
+                    {
+                        listView1.Items[x].ImageIndex = 1;
+                    }
+                    else listView1.Items[x].ImageIndex = 0;
+                    x++;
                 }
             }
 

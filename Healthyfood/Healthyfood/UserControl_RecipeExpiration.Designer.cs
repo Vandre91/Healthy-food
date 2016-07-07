@@ -28,18 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_RecipeExpiration));
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button1 = new System.Windows.Forms.Button();
             this.panel_Show_Recipes = new System.Windows.Forms.Panel();
-            this.label_Name = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox_Describe = new System.Windows.Forms.RichTextBox();
-            this.button_Heat = new System.Windows.Forms.Button();
-            this.button_Read = new System.Windows.Forms.Button();
             this.button_Back_Panel = new System.Windows.Forms.Button();
+            this.button_Read = new System.Windows.Forms.Button();
+            this.button_Heat = new System.Windows.Forms.Button();
+            this.richTextBox_Describe = new System.Windows.Forms.RichTextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label_Name = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel_Show_Recipes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +58,7 @@
             this.listView1.Location = new System.Drawing.Point(0, 124);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(880, 554);
+            this.listView1.SmallImageList = this.imageList1;
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -101,40 +105,15 @@
             this.panel_Show_Recipes.Size = new System.Drawing.Size(488, 279);
             this.panel_Show_Recipes.TabIndex = 2;
             // 
-            // label_Name
+            // button_Back_Panel
             // 
-            this.label_Name.AutoSize = true;
-            this.label_Name.Location = new System.Drawing.Point(36, 10);
-            this.label_Name.Name = "label_Name";
-            this.label_Name.Size = new System.Drawing.Size(46, 17);
-            this.label_Name.TabIndex = 0;
-            this.label_Name.Text = "label1";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(39, 30);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(201, 61);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
-            // 
-            // richTextBox_Describe
-            // 
-            this.richTextBox_Describe.Location = new System.Drawing.Point(39, 97);
-            this.richTextBox_Describe.Name = "richTextBox_Describe";
-            this.richTextBox_Describe.Size = new System.Drawing.Size(404, 120);
-            this.richTextBox_Describe.TabIndex = 2;
-            this.richTextBox_Describe.Text = "";
-            // 
-            // button_Heat
-            // 
-            this.button_Heat.Location = new System.Drawing.Point(39, 235);
-            this.button_Heat.Name = "button_Heat";
-            this.button_Heat.Size = new System.Drawing.Size(75, 23);
-            this.button_Heat.TabIndex = 3;
-            this.button_Heat.Text = "Manger";
-            this.button_Heat.UseVisualStyleBackColor = true;
-            this.button_Heat.Click += new System.EventHandler(this.button_Heat_Click);
+            this.button_Back_Panel.Location = new System.Drawing.Point(299, 235);
+            this.button_Back_Panel.Name = "button_Back_Panel";
+            this.button_Back_Panel.Size = new System.Drawing.Size(75, 23);
+            this.button_Back_Panel.TabIndex = 5;
+            this.button_Back_Panel.Text = "Retour";
+            this.button_Back_Panel.UseVisualStyleBackColor = true;
+            this.button_Back_Panel.Click += new System.EventHandler(this.button_Back_Panel_Click);
             // 
             // button_Read
             // 
@@ -146,15 +125,47 @@
             this.button_Read.UseVisualStyleBackColor = true;
             this.button_Read.Click += new System.EventHandler(this.button_Read_Click);
             // 
-            // button_Back_Panel
+            // button_Heat
             // 
-            this.button_Back_Panel.Location = new System.Drawing.Point(299, 235);
-            this.button_Back_Panel.Name = "button_Back_Panel";
-            this.button_Back_Panel.Size = new System.Drawing.Size(75, 23);
-            this.button_Back_Panel.TabIndex = 5;
-            this.button_Back_Panel.Text = "Retour";
-            this.button_Back_Panel.UseVisualStyleBackColor = true;
-            this.button_Back_Panel.Click += new System.EventHandler(this.button_Back_Panel_Click);
+            this.button_Heat.Location = new System.Drawing.Point(39, 235);
+            this.button_Heat.Name = "button_Heat";
+            this.button_Heat.Size = new System.Drawing.Size(75, 23);
+            this.button_Heat.TabIndex = 3;
+            this.button_Heat.Text = "Manger";
+            this.button_Heat.UseVisualStyleBackColor = true;
+            this.button_Heat.Click += new System.EventHandler(this.button_Heat_Click);
+            // 
+            // richTextBox_Describe
+            // 
+            this.richTextBox_Describe.Location = new System.Drawing.Point(39, 97);
+            this.richTextBox_Describe.Name = "richTextBox_Describe";
+            this.richTextBox_Describe.Size = new System.Drawing.Size(404, 120);
+            this.richTextBox_Describe.TabIndex = 2;
+            this.richTextBox_Describe.Text = "";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(39, 30);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(201, 61);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
+            // 
+            // label_Name
+            // 
+            this.label_Name.AutoSize = true;
+            this.label_Name.Location = new System.Drawing.Point(36, 10);
+            this.label_Name.Name = "label_Name";
+            this.label_Name.Size = new System.Drawing.Size(46, 17);
+            this.label_Name.TabIndex = 0;
+            this.label_Name.Text = "label1";
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "1466380345_Circle_Green.png");
+            this.imageList1.Images.SetKeyName(1, "1466380352_Circle_Red.png");
             // 
             // UserControl_RecipeExpiration
             // 
@@ -187,5 +198,6 @@
         private System.Windows.Forms.Button button_Back_Panel;
         private System.Windows.Forms.Button button_Read;
         private System.Windows.Forms.Button button_Heat;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
