@@ -12,7 +12,7 @@ namespace StockFood
 
         public Dictionary<string, int> _Cal = new Dictionary<string, int>
         {
-            {"Steak de boeuf", 148},{"Collier de boeuf",124},{"Entrecote de boeuf", 192}, {"Cote de boeuf",355}, { "Rumsteck de boeuf", 123},
+            {"oeuf",155 }, {" Steak de boeuf", 148},{"Collier de boeuf",124},{"Entrecote de boeuf", 192}, {"Cote de boeuf",355}, { "Rumsteck de boeuf", 123},
             {"Jarret de boeuf", 170}, {"Onglet de boeuf", 200}, {"Flanchet de boeuf", 194},{"Poitrine de boeuf", 148},{ "Bifteck de boeuf",147 },
             {"Collier d'agneau", 251}, {"Cote d'agneau", 234 },{"Filet d'agneau", 114}, {"Gigot d'agneau", 294 },{ "Poitrine d'agneau", 172},
             {"Epaule d'agneau", 172 }, {"Collier de veau", 124}, {"Cote de veau", 234}, {"Filet de veau", 138}, {"Poitrine de veau",120},

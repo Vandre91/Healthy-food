@@ -104,7 +104,7 @@ namespace Healthyfood
             StringBuilder builder = new StringBuilder();
             foreach (var p in recipe.IRecipe)
             {
-                builder.Append(p.Balance).Append(" ");
+                builder.Append(p.Balance).Append(" ").Append(Unite(p)).Append(" ");
                 builder.Append(p.Name).Append('\n');
             }
             string result = builder.ToString();
