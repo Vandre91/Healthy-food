@@ -105,6 +105,7 @@ namespace Healthyfood
         private void UserControl_Your_Recipes_Enter(object sender, EventArgs e)
         {
             listView1.Items.Clear();
+            int x = 0;
 
             foreach (var p in Root.Healthy.AllRecipe.Healthyrecipe)
             {
@@ -129,9 +130,15 @@ namespace Healthyfood
                 }
                 if (toutfrigo)
                 {
-                    string[] row = { p.Name, p.Describe };
+                    string[] row = { p.Name, p.Describe, RecipeCal(p).ToString() };
                     ListViewItem item = new ListViewItem(row);
                     listView1.Items.Add(item);
+                    if (EatPossible(p).Count > 1)
+                    {
+                        listView1.Items[x].ImageIndex = 1;
+                    }
+                    else listView1.Items[x].ImageIndex = 0;
+                    x++;
                 }
             }
         }
@@ -182,6 +189,26 @@ namespace Healthyfood
 
 
             return unit;
+        }
+        public int RecipeCal(Recipe Rec)
+        {
+            int cal = 0;
+            foreach (Ingredient ing in Rec.IRecipe)
+            {
+                cal = cal + ((ing.Balance * IngredientCal(ing.Name)) / 100);
+            }
+
+            return cal;
+        }
+
+        public int IngredientCal(string ingred)
+        {
+            int cal = 100;
+            if (Root.Healthy.Calories.Cal.ContainsKey(ingred))
+            {
+                cal = Root.Healthy.Calories.Cal[ingred];
+            }
+            return cal;
         }
     }
 }
