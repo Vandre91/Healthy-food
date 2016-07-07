@@ -40,7 +40,7 @@ namespace StockFood
             _dessert_sucrerie = new List<string> {"miel", "gâteau stonehenge", "american apple pie", "tarte aux cérises", "gâteau au yaourt", "pomme et caramel", "salade de fruits", "pain perdu", "tarte à la crème de marron et de coco", "tarte aux pommes et à la vergeoise", "streusel brownies", "biscuits de la joie", "mimi au choco", "gâteau à la courge de nice", "caramel mou au beurre salé", "muffins aux pommes", "baba au rhum", "poire au rapudara", "moelleux au chocolat", "poires au vin", "tarte à la rhubarbe", "mousse crémeuse chocolat aubergine", "charlotte russe aux pommes", "pommes au four", "cake au citron et aux graines de pavot", "fondant au chocolat", "salade orientale de fraises à la menthe", "douceur à la caroube", "gâteau au carotte", "makrouts", "quatre quart caramélisé aux pommes", "cheese cake aux spéculoos", "cookies aux deux noix", "alfajores de maicena", "muffins vegan cacoo noisette", "cookies noisettes", "épeautre et chocolat", "fraises au yaourt", "madeleines de commercy", "cake poire noisette chocolat", "muffins au chocolat noir" };
             _crustace = new List<string> { "araignee de mer", "cigale de mer", "crabe", "crevette geante", "crevette grise", "crevette rose", "ecrevisse", "etrille", "gambas", "homard", "langouste", "langoustine", "limule", "tourteau", "Coque", "bucarde", "rigadeau", "rigadelle", "sourdon", "hénon", "demoiselle", "maillot", "mourgue", "pagne", "berberechos", "huitre", "moule", "palourde", "clovisse", "petoncle", "mye", "couteau de mer", "vernis", "poulpe", "pieuvre", "buccin", "gros buccin", "bourgot", "bulot", "meduse" };
             _poisson = new List<string> { "anchois", "aiglefin frais", "anguille", "brochet", "cabillaud", "colin", "daurade royale", "flétan", "loup de mer", "merlan", "omble chevalier", "perche", "plie", "raie", "rascasse du nord", "rouget barbet", "sandre", "sardine", "saumon", "sole", "thon" };
-            _volaille = new List<string> { "filet de poulet","blanc de poulet", "cuisses de poulet", "pattes de poulet", "pilons de poulet", "ailes de poulet", "gesier de poulet", "foie de poulet", "coeur de poulet", "blanc de dinde", "aiguillette de dinde", "escalope de dinde", "filet de dinde", "supreme de dinde", "aileron de dinde", "manchon de dinde", "cuisses de dinde", "pilon de dinde", "aiguillettes de canard", "cuisses de canard", "filet de canard", "tournedos de canard", "aiguillettes de pintade", "cuisses de pintade", "filet de pintade", "tournedos de pintade" };
+            _volaille = new List<string> { "oeuf","filet de poulet","blanc de poulet", "cuisses de poulet", "pattes de poulet", "pilons de poulet", "ailes de poulet", "gesier de poulet", "foie de poulet", "coeur de poulet", "blanc de dinde", "aiguillette de dinde", "escalope de dinde", "filet de dinde", "supreme de dinde", "aileron de dinde", "manchon de dinde", "cuisses de dinde", "pilon de dinde", "aiguillettes de canard", "cuisses de canard", "filet de canard", "tournedos de canard", "aiguillettes de pintade", "cuisses de pintade", "filet de pintade", "tournedos de pintade" };
             _fruit = new List<string> {"olive","carotte" ,"citron", "noix", "abricot", "airelle", "aki", "alberge", "amande", "ananas", "arbouse", "aronia", "avocat", "banane", "barbadine", "bergamote", "bigarade", "boysenberry", "brugnon", "cabosse", "cacahuète", "calamondin", "canneberge", "carambole", "casseille", "cassis", "cédrat", "cériman", "cerise", "citron", "citandrin", "citrange", "clémentine", "datte", "fraise", "frambroise", "girembelle", "goyave", "grenade", "grenadelle", "merise", "melon", "pistache", "pastèque", "poire", "pomme", "raisin" };
             _legume = new List<string> { "oignon","aubergine", "tomates cerises", "concombre", "cornichon", "courgette", "couge de siam", "melon", "pastèque", "piment fort", "poivre melon", "tomate", "poivrons" };
             _produit_laitier = new List<string> { "crème liquide", "crème epaisse", "crème fraiche", "yaourt", "fromage", "beurre", "lait de vache", "lait cru", "lait pasteurisé", "lait stérilisé", "lait UHT", "lait concentré", "lait en poudre", "lait demi écrémé", "lait entier", "lait écrémé", "crème", "crème glacée", "kefir", "viili", "lait au bifidus", "fromage frais", "fromage fermier", "fromage affiné", "fromage fondu", "caséine", "babeur", "lactosérum", "milkshake" };
@@ -128,7 +128,7 @@ namespace StockFood
             double cal = calcent / 100;
             double calend = quantity * cal;
             return calend;
-        } 
+        }
         public void CreateRecipes()
         {
             // Recettes avec ingrédients conformes et présents
@@ -137,7 +137,7 @@ namespace StockFood
             Ingredient b = new Ingredient("matiere_grasse", "chévre", 100, DateTime.Today);
             Ingredient c = new Ingredient("herbe_plante", "poivre", 2, DateTime.Today);
             Ingredient d = new Ingredient("herbe_plante", "salade", 100, DateTime.Today);
-            List<Ingredient> recipes = new List<Ingredient> { a,b,c,d };
+            List<Ingredient> recipes = new List<Ingredient> { a, b, c, d };
             _Allrecipe.AddHealthyrecipe("Tomates au chèvre frais", recipes, "Evider les tomates et conserver le chapeau. les remplir de chèvre, fermer avec le chapeau de la tomate.Mettre à four moyen une vingtaine de minutes.Servir avec une salade.");
             #endregion
             #region Cote de porc
@@ -239,6 +239,14 @@ namespace StockFood
             Ingredient escalope5 = new Ingredient("herbe_plante", "paprika", 5, DateTime.Today);
             List<Ingredient> recipeescalopepa = new List<Ingredient> { escalope1, escalope2, escalope3, escalope4, escalope5 };
             _Allrecipe.AddHealthyrecipe("Escalope en papillote", recipeescalopepa, " 1 / mélanger la crème fraîche, la moutarde et le paprika. 2 / disposer les escalopes sur un carré de papier alu et les recouvrir  du mélange. 3 / entourer les escalopes recouvertes de crème par la pulpe de tomate.  4 / saupoudrer d'herbes de Provence. 5 / fermer les papillotes et les enfourner à 170°C pendant 30 min environ");
+            #endregion
+
+            #region Oeuf dur
+            Ingredient oeuf = new Ingredient("volaille", "oeuf", 1, DateTime.Today);
+            Ingredient sel = new Ingredient("herbe_plante", "sel", 5, DateTime.Today);
+            List<Ingredient> oeufdur = new List<Ingredient> { oeuf, sel };
+
+            _Allrecipe.AddHealthyrecipe("Oeuf dur", oeufdur, "Mettre à chauffer une casserole d'eau salée. A ébullition, y plonger doucement l'oeuf. Retirer après 8 min, bon appétit");
             #endregion
 
 

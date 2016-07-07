@@ -67,21 +67,21 @@ namespace Healthyfood
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            int i = 0;
-            listView1.Items.Clear();
+            //int i = 0;
+            //listView1.Items.Clear();
 
 
-            foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
-            {
-                string[] row = { p.FirstName, p.LastName, p.Age.ToString() };
-                ListViewItem item = new ListViewItem(row);
-                listView1.Items.Add(item);
-                listView1.Items[i].ImageIndex = SexImage(p.IsFemale);
+            //foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
+            //{
+            //    string[] row = { p.FirstName, p.LastName, p.Age.ToString() };
+            //    ListViewItem item = new ListViewItem(row);
+            //    listView1.Items.Add(item);
+            //    listView1.Items[i].ImageIndex = SexImage(p.IsFemale);
 
-                listView2.Items.Add("");
-                listView2.Items[i].ImageIndex = ImcImage(p.Imc);
-                i++;
-            }
+            //    listView2.Items.Add("");
+            //    listView2.Items[i].ImageIndex = ImcImage(p.Imc);
+            //    i++;
+            //}
         }
 
         //ajouter
@@ -157,21 +157,21 @@ namespace Healthyfood
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            int i = 0;
-            listView1.Items.Clear();
+            //int i = 0;
+            //listView1.Items.Clear();
 
 
-            foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
-            {
-                string[] row = { p.FirstName, p.LastName, p.Age.ToString() };
-                ListViewItem item = new ListViewItem(row);
-                listView1.Items.Add(item);
-                listView1.Items[i].ImageIndex = SexImage(p.IsFemale);
+            //foreach (var p in Root.Healthy.Utilisateur.IUtilisateur)
+            //{
+            //    string[] row = { p.FirstName, p.LastName, p.Age.ToString() };
+            //    ListViewItem item = new ListViewItem(row);
+            //    listView1.Items.Add(item);
+            //    listView1.Items[i].ImageIndex = SexImage(p.IsFemale);
 
-                listView2.Items.Add("");
-                listView2.Items[i].ImageIndex = ImcImage(p.Imc);
-                i++;
-            }
+            //    listView2.Items.Add("");
+            //    listView2.Items[i].ImageIndex = ImcImage(p.Imc);
+            //    i++;
+            //}
         }
 
 

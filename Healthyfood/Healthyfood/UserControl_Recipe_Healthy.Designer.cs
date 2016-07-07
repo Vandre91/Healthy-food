@@ -37,6 +37,7 @@
             this.columnHeader_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader_Description = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader_calories = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.button_Back = new System.Windows.Forms.Button();
             this.panel_Show_Recipes = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.button_Read = new System.Windows.Forms.Button();
             this.button_Heat = new System.Windows.Forms.Button();
             this.button_Back_Panel = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel_Show_Recipes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +66,7 @@
             this.listView1.Location = new System.Drawing.Point(4, 16);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(699, 487);
+            this.listView1.Size = new System.Drawing.Size(641, 435);
             this.listView1.SmallImageList = this.imageList1;
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
@@ -81,16 +81,23 @@
             // columnHeader_Description
             // 
             this.columnHeader_Description.Text = "Déscription";
-            this.columnHeader_Description.Width = 232;
+            this.columnHeader_Description.Width = 400;
             // 
             // columnHeader_calories
             // 
             this.columnHeader_calories.Text = "Calories";
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "1466380345_Circle_Green.png");
+            this.imageList1.Images.SetKeyName(1, "1466380352_Circle_Red.png");
+            // 
             // button_Back
             // 
             this.button_Back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Back.Location = new System.Drawing.Point(560, 511);
+            this.button_Back.Location = new System.Drawing.Point(511, 459);
             this.button_Back.Margin = new System.Windows.Forms.Padding(4);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(123, 28);
@@ -184,13 +191,6 @@
             this.button_Back_Panel.Text = "Retour";
             this.button_Back_Panel.UseVisualStyleBackColor = true;
             this.button_Back_Panel.Click += new System.EventHandler(this.button_Back_Panel_Click);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "1466380345_Circle_Green.png");
-            this.imageList1.Images.SetKeyName(1, "1466380352_Circle_Red.png");
             // 
             // UserControl_Recipe_Healthy
             // 

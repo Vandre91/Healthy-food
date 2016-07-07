@@ -45,8 +45,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.userControl_Show_Profil1 = new Healthyfood.UserControl_Show_Profil();
             this.userControl_Modify_Profil1 = new Healthyfood.UserControl_Modify_Profil();
+            this.userControl_Show_Profil1 = new Healthyfood.UserControl_Show_Profil();
             this.SuspendLayout();
             // 
             // imageList1
@@ -177,24 +177,13 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 200;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // timer2
             // 
             this.timer2.Interval = 200;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // userControl_Show_Profil1
-            // 
-            this.userControl_Show_Profil1.BackColor = System.Drawing.Color.White;
-            this.userControl_Show_Profil1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_Show_Profil1.BackgroundImage")));
-            this.userControl_Show_Profil1.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userControl_Show_Profil1.Location = new System.Drawing.Point(2, 2);
-            this.userControl_Show_Profil1.Margin = new System.Windows.Forms.Padding(4);
-            this.userControl_Show_Profil1.Name = "userControl_Show_Profil1";
-            this.userControl_Show_Profil1.Size = new System.Drawing.Size(1015, 678);
-            this.userControl_Show_Profil1.TabIndex = 7;
             // 
             // userControl_Modify_Profil1
             // 
@@ -206,6 +195,17 @@
             this.userControl_Modify_Profil1.Name = "userControl_Modify_Profil1";
             this.userControl_Modify_Profil1.Size = new System.Drawing.Size(1015, 678);
             this.userControl_Modify_Profil1.TabIndex = 8;
+            // 
+            // userControl_Show_Profil1
+            // 
+            this.userControl_Show_Profil1.BackColor = System.Drawing.Color.White;
+            this.userControl_Show_Profil1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_Show_Profil1.BackgroundImage")));
+            this.userControl_Show_Profil1.Font = new System.Drawing.Font("Lucida Handwriting", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControl_Show_Profil1.Location = new System.Drawing.Point(2, 2);
+            this.userControl_Show_Profil1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControl_Show_Profil1.Name = "userControl_Show_Profil1";
+            this.userControl_Show_Profil1.Size = new System.Drawing.Size(1015, 678);
+            this.userControl_Show_Profil1.TabIndex = 7;
             // 
             // UserControl_Profil
             // 

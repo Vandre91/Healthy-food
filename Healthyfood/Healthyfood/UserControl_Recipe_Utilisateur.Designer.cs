@@ -158,7 +158,7 @@
             // button_Save
             // 
             this.button_Save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Save.Location = new System.Drawing.Point(613, 499);
+            this.button_Save.Location = new System.Drawing.Point(490, 465);
             this.button_Save.Margin = new System.Windows.Forms.Padding(4);
             this.button_Save.Name = "button_Save";
             this.button_Save.Size = new System.Drawing.Size(112, 78);
@@ -170,7 +170,7 @@
             // button_Back
             // 
             this.button_Back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_Back.Location = new System.Drawing.Point(745, 499);
+            this.button_Back.Location = new System.Drawing.Point(639, 465);
             this.button_Back.Margin = new System.Windows.Forms.Padding(4);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(112, 78);
@@ -539,7 +539,7 @@
             this.label_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label_save.AutoSize = true;
             this.label_save.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.label_save.Location = new System.Drawing.Point(640, 465);
+            this.label_save.Location = new System.Drawing.Point(625, 434);
             this.label_save.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_save.Name = "label_save";
             this.label_save.Size = new System.Drawing.Size(111, 19);
