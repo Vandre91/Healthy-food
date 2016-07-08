@@ -133,7 +133,7 @@ namespace StockFood
         {
             // Recettes avec ingrédients conformes et présents
             #region Tomates au chévre
-            Ingredient a = new Ingredient("legume", "tomate", 100, DateTime.Today);
+            Ingredient a = new Ingredient("legume", "tomate", 2, DateTime.Today);
             Ingredient b = new Ingredient("matiere_grasse", "chévre", 100, DateTime.Today);
             Ingredient c = new Ingredient("herbe_plante", "poivre", 2, DateTime.Today);
             Ingredient d = new Ingredient("herbe_plante", "salade", 100, DateTime.Today);
@@ -141,7 +141,7 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe("Tomates au chèvre frais", recipes, "Evider les tomates et conserver le chapeau. les remplir de chèvre, fermer avec le chapeau de la tomate.Mettre à four moyen une vingtaine de minutes.Servir avec une salade.");
             #endregion
             #region Cote de porc
-            Ingredient e = new Ingredient("viande", "Cote de porc", 400, DateTime.Today);
+            Ingredient e = new Ingredient("viande", "Cote de porc", 200, DateTime.Today);
             Ingredient f = new Ingredient("matiere_grasse", "beurre", 100, DateTime.Today);
             Ingredient g = new Ingredient("herbe_plante", "poivre", 2, DateTime.Today);
             Ingredient h = new Ingredient("herbe_plante", "sel", 2, DateTime.Today);
@@ -187,7 +187,7 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe("Crème d'avocat", recipecreme, "Dénoyautez les avocats et enlevez la peau et mettez les dans un mixer avec le jus de citron. Mélangez. Ajoutez un peu de lait , crème et huile. C'est prêt ! Mettre au frais avant de se servir");
             #endregion
             #region Poulet basquaise
-            Ingredient basquaise1 = new Ingredient("volaille", "blanc de poulet", 200, DateTime.Today);
+            Ingredient basquaise1 = new Ingredient("volaille", "blanc de poulet", 2, DateTime.Today);
             Ingredient basquaise2 = new Ingredient("legume", "tomate", 3, DateTime.Today);
             Ingredient basquaise3 = new Ingredient("legume", "poivrons", 2, DateTime.Today);
             Ingredient basquaise4 = new Ingredient("herbe_plante", "oignon", 2, DateTime.Today);
@@ -211,17 +211,17 @@ namespace StockFood
             #region One-Pot Pasta: Poulet & Crème
             Ingredient i11 = new Ingredient("feculent", "pate", 125, DateTime.Today);
             Ingredient i21 = new Ingredient("produit_laitier", "crème fraiche", 200, DateTime.Today);
-            Ingredient i31 = new Ingredient("viande", "filet de poulet", 100, DateTime.Today);
+            Ingredient i31 = new Ingredient("viande", "filet de poulet", 1, DateTime.Today);
             Ingredient i41 = new Ingredient("herbe_plante", "poivre", 1, DateTime.Today);
             Ingredient i42 = new Ingredient("herbe_plante", "ail", 1, DateTime.Today);
-            Ingredient i43 = new Ingredient("matiere_grasse", "huile d'olive", 1, DateTime.Today);
+            Ingredient i43 = new Ingredient("matiere_grasse", "huile d'olive", 80, DateTime.Today);
             List<Ingredient> i51 = new List<Ingredient> { i1, i2, i3, i41, i42, i43 };
             _Allrecipe.AddHealthyrecipe("One-Pot Pasta: Poulet & Crème ", i51, " Préparer un bouillon de volaille, réserver.Faire revenir le poulet et l'ail dans de l'huile d'olive dans une casserole, assaisonner.Lorsque le poulet est saisit, ajouter le bouillon, la crème et les pâtes crues.Faire réduire l'eau jusqu'à ce que les pâtes soient cuites et qu'assez d'eau soit évaporée pour que la sauce soit onctueuse.");
 
             #endregion
             #region Filet de poulet à la crème de poivron facile
 
-            Ingredient filet1 = new Ingredient("volaille", "filet de poulet", 200, DateTime.Today);
+            Ingredient filet1 = new Ingredient("volaille", "filet de poulet", 2, DateTime.Today);
             Ingredient filet2 = new Ingredient("legume", "poivrons", 2, DateTime.Today);
             Ingredient filet3 = new Ingredient("produit_laitier", "crème liquide", 20, DateTime.Today);
             Ingredient filet4 = new Ingredient("produit_laitier", "crème epaisse", 5, DateTime.Today);
@@ -232,7 +232,7 @@ namespace StockFood
 
             #endregion
             #region Escalope en papillote
-            Ingredient escalope1 = new Ingredient("viande", "filet de dinde", 200, DateTime.Today);
+            Ingredient escalope1 = new Ingredient("viande", "filet de dinde", 1, DateTime.Today);
             Ingredient escalope2 = new Ingredient("produit_laitier", "crème epaisse", 10, DateTime.Today);
             Ingredient escalope3 = new Ingredient("matiere_grasse", "moutarde", 5, DateTime.Today);
             Ingredient escalope4 = new Ingredient("legume", "tomate", 10, DateTime.Today);
@@ -242,9 +242,9 @@ namespace StockFood
             #endregion
 
             #region Oeuf dur
-            Ingredient oeuf = new Ingredient("volaille", "oeuf", 1, DateTime.Today);
+            Ingredient oeuff = new Ingredient("volaille","oeuf", 1, DateTime.Today);
             Ingredient sel = new Ingredient("herbe_plante", "sel", 5, DateTime.Today);
-            List<Ingredient> oeufdur = new List<Ingredient> { oeuf, sel };
+            List<Ingredient> oeufdur = new List<Ingredient> { oeuff, sel };
 
             _Allrecipe.AddHealthyrecipe("Oeuf dur", oeufdur, "Mettre à chauffer une casserole d'eau salée. A ébullition, y plonger doucement l'oeuf. Retirer après 8 min, bon appétit");
             #endregion
