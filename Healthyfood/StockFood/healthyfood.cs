@@ -187,7 +187,7 @@ namespace StockFood
             _Allrecipe.AddHealthyrecipe("Crème d'avocat", recipecreme, "Dénoyautez les avocats et enlevez la peau et mettez les dans un mixer avec le jus de citron. Mélangez. Ajoutez un peu de lait , crème et huile. C'est prêt ! Mettre au frais avant de se servir");
             #endregion
             #region Poulet basquaise
-            Ingredient basquaise1 = new Ingredient("volaille", "blanc de poulet", 200, DateTime.Today);
+            Ingredient basquaise1 = new Ingredient("volaille", "blanc de poulet", 2, DateTime.Today);
             Ingredient basquaise2 = new Ingredient("legume", "tomate", 3, DateTime.Today);
             Ingredient basquaise3 = new Ingredient("legume", "poivrons", 2, DateTime.Today);
             Ingredient basquaise4 = new Ingredient("herbe_plante", "oignon", 2, DateTime.Today);
@@ -221,7 +221,7 @@ namespace StockFood
             #endregion
             #region Filet de poulet à la crème de poivron facile
 
-            Ingredient filet1 = new Ingredient("volaille", "filet de poulet", 200, DateTime.Today);
+            Ingredient filet1 = new Ingredient("volaille", "filet de poulet", 2, DateTime.Today);
             Ingredient filet2 = new Ingredient("legume", "poivrons", 2, DateTime.Today);
             Ingredient filet3 = new Ingredient("produit_laitier", "crème liquide", 20, DateTime.Today);
             Ingredient filet4 = new Ingredient("produit_laitier", "crème epaisse", 5, DateTime.Today);
@@ -242,9 +242,9 @@ namespace StockFood
             #endregion
 
             #region Oeuf dur
-            Ingredient oeuf = new Ingredient("volaille", "oeuf", 1, DateTime.Today);
+            Ingredient oeuff = new Ingredient("volaille","oeuf", 1, DateTime.Today);
             Ingredient sel = new Ingredient("herbe_plante", "sel", 5, DateTime.Today);
-            List<Ingredient> oeufdur = new List<Ingredient> { oeuf, sel };
+            List<Ingredient> oeufdur = new List<Ingredient> { oeuff, sel };
 
             _Allrecipe.AddHealthyrecipe("Oeuf dur", oeufdur, "Mettre à chauffer une casserole d'eau salée. A ébullition, y plonger doucement l'oeuf. Retirer après 8 min, bon appétit");
             #endregion

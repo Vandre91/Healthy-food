@@ -120,7 +120,12 @@ namespace Healthyfood
             int cal = 0;
             foreach (Ingredient ing in Rec.IRecipe)
             {
-                cal = cal + ((ing.Balance * IngredientCal(ing.Name))/100);
+                if (Unite(ing) == " unités")
+                cal = cal + ((ing.Balance * IngredientCal(ing.Name)));
+                else
+                {
+                    cal = cal + ((ing.Balance * IngredientCal(ing.Name)) / 100);
+                }
             }
 
             return cal;

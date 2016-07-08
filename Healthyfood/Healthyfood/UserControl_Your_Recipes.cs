@@ -192,12 +192,17 @@ namespace Healthyfood
         }
         public int RecipeCal(Recipe Rec)
         {
+
             int cal = 0;
             foreach (Ingredient ing in Rec.IRecipe)
             {
-                cal = cal + ((ing.Balance * IngredientCal(ing.Name)) / 100);
+                if (Unite(ing) == " unités" && ing.Category1 != "volaille" || ing.Category1 != "poisson")
+                    cal = cal + ((ing.Balance * IngredientCal(ing.Name)));
+                else
+                {
+                    cal = cal + ((ing.Balance * IngredientCal(ing.Name)) / 100);
+                }
             }
-
             return cal;
         }
 
