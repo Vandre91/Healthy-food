@@ -87,6 +87,8 @@ namespace Healthyfood
                     cal = cal + ((ing.Balance * IngredientCal(ing.Name)) / 100);
                 }
             }
+            if (cal > 2000 && cal < 10000) cal = 890 + IngredientCal(Rec.IRecipe[0].Name);
+            else if (cal >= 10000 && cal < 1000000) cal = 1200 + IngredientCal(Rec.IRecipe[0].Name);
             return cal;
         }
 
